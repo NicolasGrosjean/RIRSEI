@@ -1,0 +1,24 @@
+
+Installation (EN)
+
+Manual
+1. Remove any RIRSEI mod folders and .mod files inside Documents\Paradox Interactive\Crusader Kings II\mod
+2. Clear your gfx cache, by deleting the folder Documents\Paradox Interactive\Crusader Kings II\RIRSEI\gfx
+3. Extract the downloaded archive
+4. Enter in the first folder of the extracted file and transfer it's content to Documents\Paradox Interactive\Crusader Kings II\mod (RIRSEI directory and RIRSEI.mod file)
+5. Launch CK2
+6. Select the mod "Rex in regno suo est imperator" in the Mod tab
+7. Play!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Installation (FR)
+ 
+Manuelle:
+1. Supprimez tous les anciens dossiers "RIRSEI" et tous les fichiers .mod dans Documents\Paradox Interactive\Crusader Kings II\mod
+2. Videz votre cache de gfx, en supprimant le dossier Documents\Paradox Interactive\Crusader Kings II\RIRSEI\gfx
+3. Extrayez l'archive téléchargé
+4. Entrez dans le premier dossier et transférez le contenu de ce dossier vers Documents\Paradox Interactive\Crusader Kings II\mod (dossier RIRSEI et fichier RIRSEI.mod)
+5. Lancez CK2
+6. Sélectionnez le mod "Rex in regno suo est imperator" dans l'onglet mod
+7. Jouez!
