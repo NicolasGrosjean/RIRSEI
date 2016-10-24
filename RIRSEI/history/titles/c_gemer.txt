@@ -26,9 +26,39 @@
 894.1.1={
 	holder = 187006
 }
-902.1.1={
+907.7.4=
+{
+	holder=159135
+}
+955.1.1={
+	holder=460
+}
+1000.12.25={
+holder=482
+#law = agnatic_succession
+#law = succ_seniority
+}
+#1038.1.1={
+#holder=497
+#}
+1041.1.1={
+holder=20371
+}
+1044.7.1={
+holder=497
+}
+1046.1.1={
+holder=468
+}
+1060.10.1={
+holder=470
+}
+1063.12.1={
+holder=476
+}
+1066.1.1=
+{
 	liege="d_nyitra"
-	holder=0
 }
 1066.1.1=
 {

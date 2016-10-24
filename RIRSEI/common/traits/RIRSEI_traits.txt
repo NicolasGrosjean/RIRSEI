@@ -1,0 +1,275 @@
+# Ajout par Faras
+roi_oint = {
+        church_opinion = 20
+	vassal_opinion = 15
+	monthly_character_piety = 0.25
+}
+Imp_regn = {
+         stewardship = 5
+         vassal_opinion = 5
+         monthly_character_prestige = 1.0
+         demesne_size = 3
+}
+Roi_esp = {
+         vassal_opinion = 10
+         monthly_character_prestige = 4.0
+         demesne_size = 3
+}
+Roi_norm = {
+         vassal_opinion = 10
+         monthly_character_prestige = 4.0
+         demesne_size = 3
+}
+# Added by Van Diemen
+crowned_by_pope = {
+	diplomacy = 2
+	church_opinion = 20
+	vassal_opinion = 10
+	monthly_character_piety = 0.50
+	monthly_character_prestige = 1.0
+}
+# Ajout par Faras
+roi_des_romains = {
+vassal_opinion = -10
+monthly_character_prestige = 0.5
+}
+stupor_mundi = {
+temple_all_opinion = 15
+vassal_opinion = 15
+rel_head_opinion = -20
+monthly_character_prestige = 1.0
+}
+relique_jacques = {
+        church_opinion = 20
+        diplomacy = 2
+	monthly_character_piety = 0.50
+}
+defenseur_chretiente = {
+church_opinion = 20
+vassal_opinion = 15
+monthly_character_prestige = 0.50
+monthly_character_piety = 0.50
+}
+relique_charles = {
+        vassal_opinion = 5
+        diplomacy = 1
+	monthly_character_prestige = 0.25
+}
+
+# Dunatoi
+aristos = {
+	agnatic = yes 
+	
+	opposites =  {
+		dunatos
+	}
+        martial = 6
+
+intrigue = -5
+	same_opinion = 10
+        opposite_opinion = -50
+command_modifier = {
+		morale_defence = 0.1
+		morale_offence = 0.1
+	}
+	
+}
+
+# aristos
+dunatos = {
+	agnatic = yes 
+	
+	opposites =  {
+		aristos
+	}
+	martial = -6
+intrigue = 5
+monthly_character_prestige = 0.25
+	same_opinion = 10
+        opposite_opinion = -50
+command_modifier = {
+		morale_defence = -0.1
+		morale_offence = -0.1
+	}
+}
+# autocrate
+byz_autocrator = {
+	 
+	
+	
+	martial = 8
+intrigue = 5
+ stewardship = 10
+demesne_size = 5
+monthly_character_prestige = 1.0
+	
+command_modifier = {
+		morale_defence = 0.15
+		morale_offence = 0.15
+	}
+}
+Malikite = {
+	martial = 3
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		mutazilite
+                Shaifisme               
+                Soufi
+                ashari
+	}
+	
+	same_opinion = 25
+	opposite_opinion = -40
+	
+	customizer = no
+	random = no
+}
+
+Hanbalisme = {
+	monthly_character_piety = 1
+        martial = 1
+        intrigue = 1
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		mutazilite
+                Shaifisme
+                Soufi
+                Malikite
+                ashari
+	}
+	
+	same_opinion = 25
+	opposite_opinion = -50
+	
+	customizer = no
+	random = no
+}
+Shaifisme = {
+	monthly_character_piety = 0.5
+        learning = 1
+        intrigue = 1
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		mutazilite
+                Soufi
+                Hanbalisme
+                Malikite
+                ashari
+	}
+	
+	same_opinion = 25
+	opposite_opinion = -30
+	
+	customizer = no
+	random = no
+}
+Soufi = {
+	monthly_character_piety = 2
+        
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		mutazilite
+                Shaifisme
+                Hanbalisme
+                Malikite
+                ashari
+	}
+	
+	same_opinion = 50
+	opposite_opinion = -70
+	
+	customizer = no
+	random = no
+}
+Hanafisme = {
+	monthly_character_piety = 0.25
+        learning = 1
+        
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		mutazilite
+                Shaifisme                           
+                ashari
+                Soufi
+	}
+	
+	same_opinion = 50
+	opposite_opinion = -40
+	
+	customizer = no
+	random = no
+}
+Fulusofiya = {
+	monthly_character_piety = -0.5
+monthly_character_prestige = 0.5
+ stewardship = 3
+        learning = 8
+
+        
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+
+		Hanafisme
+                Shaifisme
+                Hanbalisme
+                Malikite
+                ashari
+                Soufi
+	}
+	
+	same_opinion = 100
+	opposite_opinion = -35
+	
+	customizer = no
+	random = no
+}
+
+
+sultan_sultan = {
+        
+	vassal_opinion = 20
+	monthly_character_prestige = 0.5
+}
+
+amusl = {
+        
+	vassal_opinion = 10
+	monthly_character_piety = 0.5
+        monthly_character_prestige = 0.25
+}
+
+tonsur_mus = {
+
+religious = yes
+martial = 3
+infidel_opinion = -50
+same_opinion_if_same_religion = 50
+
+}
+
+imp_sacer = {
+        church_opinion = 20
+	vassal_opinion = 20
+	monthly_character_prestige = 0.30
+}
+
+Vs_sancti_petri = {
+        church_opinion = 40
+	vassal_opinion = -10
+        rel_head_opinion = 10
+	monthly_character_piety = 0.5
+        global_tax_modifier = 0.15
+	
+}

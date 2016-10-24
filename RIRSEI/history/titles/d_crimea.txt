@@ -2,6 +2,7 @@
 	historical_nomad = yes
 }
 691.1.1= {
+de_jure_liege = k_cuman
 	liege="k_khazaria"
 	holder=74005
 }

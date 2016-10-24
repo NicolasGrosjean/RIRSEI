@@ -16,7 +16,7 @@ b_giovinazzo = temple
 #b_ruvo = castle
 
 # Misc
-culture = lombard
+culture = italian
 religion = catholic
 
 # History

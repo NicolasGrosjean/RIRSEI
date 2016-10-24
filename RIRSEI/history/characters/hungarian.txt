@@ -6166,6 +6166,7 @@
 	mother=182018 #Tomasini Morosini
 	1265.1.2 = {
 		birth="1265.1.2"
+trait = Vs_sancti_petri
 	}
 	1301.1.14 = {
 		death="1301.1.14"
@@ -9510,6 +9511,7 @@
 	}
 	
 	867.1.1 = {
+wealth=1000
 		# Boost the initial strength of the Magyars
 		effect = {
 			spawn_unit = {

@@ -17,7 +17,7 @@ b_valenciennes = city
 #b_avesnes = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History

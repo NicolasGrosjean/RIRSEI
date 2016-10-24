@@ -1,8 +1,6 @@
 1700 = {
 	name="Basileios"
-	dynasty=644
-	dna = dageigbabbe
-	properties = am0aj0000000
+	dynasty=644    trait="aristos"
 	martial=6
 	diplomacy=8
 	intrigue=8
@@ -26,6 +24,7 @@
 	}
 	865.1.1={
 		add_spouse=1761
+
 	}
 	886.8.29={
 		death="886.8.29"
@@ -65,7 +64,7 @@
 
 125701 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1758
@@ -98,7 +97,7 @@
 
 125703 = {
 	name="Anna"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	female=yes
 	religion="orthodox"
 	culture="greek"
@@ -115,7 +114,7 @@
 125704 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -132,7 +131,7 @@
 125705 = {
 	name="Eudokia"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -149,7 +148,7 @@
 125706 = {
 	name="Zoe"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -165,7 +164,7 @@
 
 125707 = {
 	name="Andronikos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -185,7 +184,7 @@
 125708 = {
 	name="Anna"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215530
@@ -200,7 +199,7 @@
 
 125709 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="bastard"
@@ -240,30 +239,42 @@
 
 125711 = {
 	name="Ioannes"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
-	father=215514
 	mother=215524
-	1207.1.1={
-		birth="1207.1.1"
+	1200.1.1={
+		birth="1200.1.1"
 	}
 	1244.1.1={
 		death="1244.1.1"
 	}
 }
 
+125712 = {
+	name="Anna"
+	female=yes
+	dynasty=195 trait="dunatos"
+	religion="orthodox"
+	culture="greek"
+	mother=215524 #father=215524
+	1210.1.1={
+		birth="1210.1.1"
+	}
+	1258.1.1={
+		death="1258.1.1"
+	}
+}
 
 125713 = {
 	name="Eirene"
 	female=yes
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
-	father=215514
-	mother=215524
-	1218.1.1={
-		birth="1218.1.1"
+	mother=215524 #father=215524
+	1222.1.1={
+		birth="1222.1.1"
 	}
 	1260.1.1={
 		death="1260.1.1"
@@ -272,13 +283,12 @@
 
 125714 = {
 	name="Demetrios"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
-	father=215514
-	mother=215524
-	1220.1.1={
-		birth="1220.1.1"
+	mother=215524 #father=215524
+	1225.1.1={
+		birth="1225.1.1"
 	}
 	1246.1.1={
 		death="1246.1.1"
@@ -317,7 +327,7 @@
 
 125717 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215519
@@ -333,7 +343,7 @@
 125718 = {
 	name="Anna"
 	female=yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215519
@@ -365,7 +375,7 @@
 
 125720 = {
 	name="Manuel"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215519
@@ -389,7 +399,7 @@
 
 125721 = {
 	name="Andronikos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125720
@@ -405,7 +415,7 @@
 125722 = {
 	 name="Theodora"
 	 female=yes
-	 dynasty=634
+	 dynasty=634 trait="aristos"
 	 religion="orthodox"
 	 culture="greek"
 	 father=125720
@@ -420,7 +430,7 @@
 
 125723 = {
 	name="Georgios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125720
@@ -436,7 +446,7 @@
 125724 = {
 	name="Maria"
 	female=yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125720
@@ -451,7 +461,7 @@
 
 125725 = {
 	 name="Andronikos"
-	 dynasty=634
+	 dynasty=634 trait="aristos"
 	 religion="orthodox"
 	 culture="greek"
 	 father=465810
@@ -924,7 +934,7 @@
 1701 = {
 	name="Anna"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1702
@@ -939,7 +949,7 @@
 1702 = {
 	name="Leon"
 	# AKA: Leo
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -974,7 +984,7 @@
 
 1704 = {
 	name="Alexandros"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="envious"
@@ -993,7 +1003,7 @@
 
 1706 = {
 	name="Romanos"
-	dynasty=642
+	dynasty=642 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="skilled_tactician"
@@ -1008,7 +1018,7 @@
 
 1708 = {
 	name="Konstantinos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="scholar"
@@ -1044,7 +1054,7 @@
 
 1710 = {
 	name="Romanos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -1077,7 +1087,7 @@
 
 1712 = {
 	name="Nikephoros"
-	dynasty=641
+	dynasty=641 trait="aristos"
 	martial=9
 	religion="orthodox"
 	culture="greek"
@@ -1097,7 +1107,7 @@
 1715 = {
 	name="Theodora"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1708
@@ -1112,7 +1122,7 @@
 
 1716 = {
 	name="Basileios"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	martial=10
 	diplomacy=4
 	intrigue=8
@@ -1132,6 +1142,7 @@
 	}
 	976.1.10={
 		trait="celibate"
+trait = "byz_autocrator"
 	}
 	1025.12.15={
 		death="1025.12.15"
@@ -1141,7 +1152,7 @@
 1717 = {
 	name="Zoe"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -1156,7 +1167,7 @@
 
 1718 = {
 	name="Konstantinos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	martial=3
 	diplomacy=3
 	intrigue=4
@@ -1183,7 +1194,7 @@
 1719 = {
 	name="Theodora"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -1290,7 +1301,7 @@
 
 1730 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1750
@@ -1307,7 +1318,7 @@
 
 1732 = {
 	name="Konstantinos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=3
 	diplomacy=4
 	intrigue=5
@@ -1325,6 +1336,7 @@
 	}
 	1050.1.1={
 		add_spouse=1733
+
 	}
 	1067.5.22={
 		death="1067.5.22"
@@ -1410,7 +1422,7 @@
 1736 = {
 	name="Michael"
 	# AKA: Mikhael 'Parapinakes'
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=2
 	diplomacy=4
 	intrigue=7
@@ -1490,7 +1502,7 @@
 
 1742 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	martial=9
 	diplomacy=9
 	intrigue=8
@@ -1529,7 +1541,7 @@
 1743 = {
 	name="Eirene"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1748
@@ -1544,7 +1556,7 @@
 
 1744 = {
 	name="Andronikos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=5
 	diplomacy=7
 	intrigue=6
@@ -1564,7 +1576,7 @@
 
 1746 = {
 	name="Ioannes"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1744
@@ -1581,7 +1593,7 @@
 
 1748 = {
 	name="Andronikos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1746
@@ -1600,7 +1612,7 @@
 1749 = {
 	name="Anna"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1732
@@ -1616,7 +1628,7 @@
 1750 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	950.1.1={
@@ -1629,7 +1641,7 @@
 
 1752 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1750
@@ -1653,7 +1665,7 @@
 1756 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -1668,7 +1680,7 @@
 
 1758 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -1686,7 +1698,7 @@
 
 1760 = {
 	name="Adrianos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -1704,7 +1716,7 @@
 
 1762 = {
 	name="Nikephoros"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -1781,7 +1793,7 @@
 
 1768 = {
 	name="Andronikos" # C.Paphlagonia
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=8
 	diplomacy=5
 	intrigue=5
@@ -1886,7 +1898,7 @@
 
 1774 = {
 	name="Konstantinos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=5
 	diplomacy=7
 	intrigue=4
@@ -1905,7 +1917,7 @@
 
 1776 = {
 	name="Gregorios"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	martial=7
 	diplomacy=4
 	intrigue=8
@@ -1969,7 +1981,7 @@
 1781 = {
 	name="Ioannes"
 	# AKA: Stephanos
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1748
@@ -1985,7 +1997,7 @@
 1782 = {
 	name="Michael"
 	# AKA: Mikhael
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1748
@@ -2021,7 +2033,7 @@
 
 1785 = {
 	name="Konstantinos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1746
@@ -2618,7 +2630,7 @@
 20518 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	1050.1.1={
@@ -3150,7 +3162,7 @@
 212541 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223024
@@ -3165,7 +3177,7 @@
 213528 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215530
@@ -3281,7 +3293,7 @@
 
 215006 = {
 	name="Ioannes"
-	dynasty=100760
+	dynasty=101099
 	martial=7
 	diplomacy=4
 	intrigue=4
@@ -3577,7 +3589,7 @@
 
 215022 = {
 	name="Konstantinos"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215526
@@ -4001,7 +4013,7 @@
 
 215500 = {
 	name="Isaakios"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	martial=4
 	diplomacy=3
 	intrigue=5
@@ -4033,7 +4045,7 @@
 215501 = {
 	name="Eirene"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215504
@@ -4049,7 +4061,7 @@
 215502 = {
 	name="Theodora"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215504
@@ -4064,7 +4076,7 @@
 
 215503 = {
 	name="Alexios"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	martial=5
 	diplomacy=4
 	intrigue=7
@@ -4089,7 +4101,7 @@
 
 215504 = {
 	name="Andronikos"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
@@ -4109,7 +4121,7 @@
 	name="Eudokia" 
 	# AKA: Eudoxia
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=231059
@@ -4124,7 +4136,7 @@
 215506 = {
 	name="Eirene"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215500
@@ -4139,7 +4151,7 @@
 
 215507 = {
 	name="Alexios"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	martial=4
 	diplomacy=2
 	intrigue=4
@@ -4159,16 +4171,13 @@
 
 215508 = {
 	name="Ioannes"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
 	mother=215555
 	1126.1.2={
 		birth="1126.1.2"
-	}
-	1178.1.1={
-		add_spouse=180999
 	}
 	1200.1.2={
 		death="1200.1.2"
@@ -4177,7 +4186,7 @@
 
 215509 = {
 	name="Konstantinos"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=20518
@@ -4195,7 +4204,7 @@
 215510 = {
 	name="Eirene"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215503
@@ -4211,7 +4220,7 @@
 215511 = {
 	name="Anna"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215503
@@ -4227,7 +4236,7 @@
 215512 = {
 	name="Eudokia"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215503
@@ -4242,7 +4251,7 @@
 
 215513 = {
 	name="Isaakios"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215508
@@ -4256,16 +4265,12 @@
 
 215514 = {
 	name="Theodoros"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215508
-	mother=180999
 	1180.1.1={
 		birth="1180.1.1"
-	}
-	1201.1.1={
-		add_spouse=215524
 	}
 	1230.3.9={
 		trait="blinded"
@@ -4277,11 +4282,10 @@
 
 215515 = {
 	name="Konstantinos"
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215508
-	mother=180999
 	1189.1.2={
 		birth="1189.1.2"
 	}
@@ -4293,11 +4297,10 @@
 215516 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215508
-	mother=180999
 	1187.1.1={
 		birth="1187.1.1"
 	}
@@ -4331,7 +4334,7 @@
 215518 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215529
@@ -4351,7 +4354,7 @@
 
 215519 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215518
@@ -4371,7 +4374,7 @@
 215520 = {
 	name="David"
 	# AKA: Dauid
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215518
@@ -4407,11 +4410,12 @@
 215524 = {
 	name="Maria"
 	female = yes
-	dynasty=101124
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
-	1185.1.2={
-		birth="1185.1.2"
+	father=215508
+	1180.1.2={
+		birth="1180.1.2"
 	}
 	1230.1.2={
 		death="1230.1.2"
@@ -4435,7 +4439,7 @@
 
 215526 = {
 	name="Isaakios"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
@@ -4451,7 +4455,7 @@
 215527 = {
 	name="Eirene"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215526
@@ -4465,7 +4469,7 @@
 
 215528 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -4481,7 +4485,7 @@
 
 215529 = {
 	name="Andronikos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	martial=6
 	diplomacy=2
 	intrigue=5
@@ -4508,7 +4512,7 @@
 215530 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=634
+	dynasty=634 trait="aristos"
 	martial=9
 	diplomacy=9
 	intrigue=6
@@ -4539,7 +4543,7 @@
 
 215531 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -4561,7 +4565,7 @@
 	name="Anna"
 	# AKA: Anna Porphyrogenita
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="scholarly_theologian"
@@ -4580,7 +4584,7 @@
 215533 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -4634,7 +4638,7 @@
 215555 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="born_in_the_purple"
@@ -4651,7 +4655,7 @@
 215560 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215570
@@ -4666,7 +4670,7 @@
 
 215570 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223024
@@ -4883,7 +4887,7 @@
 	name="Helene"
 	# AKA: Elena
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215528
@@ -4898,7 +4902,7 @@
 223016 = {
 	name="Manuel"
 	# AKA: Manouel
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223020
@@ -4914,7 +4918,7 @@
 223017 = {
 	name="Eirene"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223020
@@ -4929,7 +4933,7 @@
 
 223020 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="envious"
@@ -4949,7 +4953,7 @@
 223021 = {
 	name="Eirene"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223022
@@ -4963,7 +4967,7 @@
 
 223022 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -4981,7 +4985,7 @@
 
 223023 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	martial=7
 	diplomacy=7
 	intrigue=6
@@ -5006,7 +5010,7 @@
 
 223024 = {
 	name="Andronikos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -5022,7 +5026,7 @@
 223752 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215570
@@ -5087,7 +5091,7 @@
 
 231059 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223024
@@ -5103,7 +5107,7 @@
 	name="Theodora"
 	# AKA: Theodora 'Kalusine'
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223022
@@ -5309,7 +5313,7 @@
 
 232510 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -5328,7 +5332,7 @@
 232511 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=232510
@@ -5365,7 +5369,7 @@
 232513 = {
 	name="Anna"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -5448,7 +5452,7 @@
 232517 = {
 	name="Eudokia"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=232510
@@ -5664,7 +5668,7 @@
 232543 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223023
@@ -5701,7 +5705,7 @@
 232545 = {
 	name="Eudokia"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223024
@@ -5716,7 +5720,7 @@
 232546 = {
 	name="Eirene"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="bastard"
@@ -5823,7 +5827,7 @@
 232554 = {
 	name="Anna"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=125751
@@ -6069,7 +6073,7 @@
 41100 = {
 	name="Anna"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1710
@@ -6103,7 +6107,7 @@
 
 41301 = {
 	name="Ioannes"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1785
@@ -6721,7 +6725,7 @@
 4533 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -6737,7 +6741,7 @@
 4538 = {
 	name="Eudokia"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -6753,7 +6757,7 @@
 4558 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1752
@@ -7680,7 +7684,7 @@
 
 465800 = {
 	name="Basileios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465810
@@ -7698,7 +7702,7 @@
 
 465801 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465800
@@ -7731,7 +7735,7 @@
 465803 = {
 	name="Maria"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465800
@@ -7748,7 +7752,7 @@
 465804 = {
 	name="Theodora"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="bastard"
@@ -7764,7 +7768,7 @@
 
 465805 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125720
@@ -7800,7 +7804,7 @@
 465807 = {
 	name="Michael"
 	# AKA: Mikhael
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465805
@@ -7839,7 +7843,7 @@
 
 465809 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465807
@@ -7854,7 +7858,7 @@
 
 465810 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465805
@@ -7874,7 +7878,7 @@
 	name="Anna"
 	# AKA: Anna Anachutlu
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="detached_priest"
@@ -7892,7 +7896,7 @@
 	name="Eudokia"
 	# AKA: Evdokia
 	female=yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=465810
@@ -8377,7 +8381,7 @@
 
 70410 = {
 	name="Eudokia"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	female=yes
 	religion="orthodox"
 	culture="greek"
@@ -8793,32 +8797,23 @@
 
 70494 = {
 	name="Michael"
+	# AKA: Mikhael
 	dynasty=8644
 	martial=5
 	diplomacy=8
 	intrigue=4
 	stewardship=6
-	religion="iconoclast"
+	religion="orthodox"
 	culture="greek"
 	trait="just"
 	trait="mystic"
 	trait="naive_appeaser"
-	father=145834
 	
-	768.1.1={
-		birth="768.1.1"
-	}
-	787.10.23={
-		religion="orthodox"
+	770.1.1={
+		birth="770.1.1"
 	}
 	793.1.1={
 		add_spouse=70495
-	}
-	815.1.1={
-		religion="iconoclast"
-	}
-	842.2.19={
-		religion="orthodox"
 	}
 	844.1.11={
 		death="844.1.11"
@@ -8857,20 +8852,12 @@
 	religion="orthodox"
 	culture="greek"
 	trait="hedonist"
-	trait="tough_soldier"
+	trait="incapable"
+	trait="amateurish_plotter"
 	father=70497
 	
 	773.1.1={
 		birth="773.1.1"
-	}
-	807.12.20={
-		add_spouse=145843
-	}
-	811.7.26={
-		trait="maimed"
-	}
-	811.10.2={
-		trait="incapable"
 	}
 	812.1.11={
 		death="812.1.11"
@@ -8909,19 +8896,12 @@
 	stewardship=3
 	religion="orthodox"
 	culture="greek"
+	trait="kinslayer"
 	trait="ambitious"
-	trait="deceitful"
-	trait="charitable"
-	trait="gregarious"
-	trait="zealous"
 	trait="elusive_shadow"
-	father=145803
 	
 	750.1.1={
 		birth="750.1.1"
-	}
-	797.8.15={
-		trait="kinslayer"
 	}
 	803.8.9={
 		death="803.8.9"
@@ -8964,18 +8944,14 @@
 	stewardship=6
 	religion="iconoclast"
 	culture="greek"
-	trait="born_in_the_purple"
-	trait="kind"
-	trait="weak"
-	trait="honest"
-	trait="trusting"
-	trait="charismatic_negotiator"
+	trait="deceitful"
+	trait="wroth"
+	trait="indulgent_wastrel"
 	father=70501
-	mother=145787
 	750.1.25={
 		birth="750.1.25"
 	}
-	768.12.17={
+	769.12.17={
 		add_spouse=70498
 	}
 	780.9.8={
@@ -8993,21 +8969,13 @@
 	stewardship=6
 	religion="iconoclast"
 	culture="greek"
-	trait="born_in_the_purple"
-	trait="brave"
-	trait="diligent"
-	trait="cruel"
-	trait="zealous"
-	trait="skilled_tactician"
+	trait="impaler"
+	trait="quick"
+	trait="thrifty_clerk"
 	father=70502
+	
 	718.9.1={
 		birth="718.9.1"
-	}
-	735.1.1={
-		add_spouse=145787
-	}
-	753.1.1={
-		add_spouse=145788
 	}
 	775.9.14={
 		death="775.9.14"
@@ -9104,7 +9072,7 @@
 70506 = {
 	name="Ioustinianos"
 	# AKA: Ioustinianos 'Rinotmetos'
-	dynasty=1022137
+    dynasty=1022137
 	martial=3
 	diplomacy=3
 	intrigue=8
@@ -9117,21 +9085,13 @@
 	669.1.1={
 		birth="669.1.1"
 	}
-	695.11.1={
-		trait="scarred"
-	}
-	703.1.1={
-		add_spouse=146185
-	}
-	705.08.21={
-		trait="cruel"
-		trait="impaler"
-	}
+    695.11.1={
+		trait="lunatic"
+    }
 	711.11.24={
 		death="711.11.24"
 	}
 }
-
 
 70507 = {
 	name="Konstantinos"
@@ -9651,7 +9611,7 @@
 
 70553 = {
 	name="Stephanos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	martial=2
 	diplomacy=4
 	intrigue=6
@@ -10710,7 +10670,7 @@
 }
 
 7605 = {
-	name="Eleutherius"
+	name="Hegesippus"
 	religion="catholic"
 	culture="greek"
 	trait="diligent"
@@ -10730,11 +10690,15 @@
 }
 
 7606 = {
-	name="Soterius"
+	name="Caius"
 	religion="catholic"
 	culture="greek"
 	120.1.1={
 		birth="120.1.1"
+	}
+	167.4.20={
+	name = "Soter"
+	# AKA: Caius
 	}
 	174.1.1={
 		death="174.1.1"
@@ -10742,7 +10706,7 @@
 }
 
 7607 = {
-	name="Anicetus"
+	name="Polycarp"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10766,7 +10730,7 @@
 }
 
 7608 = {
-	name="Pius"
+	name="Hermas"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10790,7 +10754,7 @@
 }
 
 7609 = {
-	name="Hyginus"
+	name="Irenaeus"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10814,7 +10778,7 @@
 }
 
 7610 = {
-	name="Telesphorus"
+	name="Antonius"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10862,7 +10826,7 @@
 }
 
 7612 = {
-	name="Alexander"
+	name="Hadrian"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10886,7 +10850,7 @@
 }
 
 7613 = {
-	name="Evaristus"
+	name="Yeshua"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10910,7 +10874,7 @@
 }
 
 7614 = {
-	name="Clemens"
+	name="Tertullian"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10925,7 +10889,7 @@
 		birth="20.1.1"
 	}
 	92.1.1={
-	name = "Clemens"
+	name = "Clement"
 	# AKA: Tertullian
 	}
 	99.1.1={
@@ -10934,7 +10898,7 @@
 }
 
 7615 = {
-	name="Anacletus"
+	name="Cletus"
 	martial=6
 	diplomacy=7
 	intrigue=8
@@ -10960,7 +10924,7 @@
 7686 = {
 	name="Theodora"
 	female = yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215500
@@ -10989,7 +10953,7 @@
 		birth="679.1.1"
 	}
 	741.11.28={
-	name = "Zacharias"
+	name = "Zachary"
 	# AKA: Zacharias
 	}
 	752.3.14={
@@ -11013,7 +10977,7 @@
 		birth="690.1.1"
 	}
 	731.2.11={
-	name = "Gregorius"
+	name = "Gregory"
 	# AKA: Zacharias
 	}
 	741.11.28={
@@ -11037,7 +11001,7 @@
 		birth="664.1.1"
 	}
 	708.2.4={
-	name = "Constantinus"
+	name = "Constantine"
 	# AKA: Constantinus
 	}
 	715.4.9={
@@ -11085,7 +11049,7 @@
 		birth="650.1.1"
 	}
 	705.1.11={
-	name = "Ioannes"
+	name = "John"
 	# AKA: Plato
 	}
 	707.10.18={
@@ -11109,7 +11073,7 @@
 		birth="655.1.1"
 	}
 	701.9.8={
-	name = "Ioannes"
+	name = "John"
 	# AKA: Plato
 	}
 	705.1.11={
@@ -11181,7 +11145,7 @@
 		birth="635.1.1"
 	}
 	685.5.8={
-	name = "Ioannes"
+	name = "John"
 	# AKA: Plato
 	}
 	686.8.2={
@@ -11253,7 +11217,7 @@
 		birth="577.1.1"
 	}
 	642.10.12={
-	name = "Theodorus"
+	name = "Theodore"
 	# AKA: Rufinianus
 	}
 	649.5.14={
@@ -11277,7 +11241,7 @@
 		birth="550.1.1"
 	}
 	606.2.22={
-	name = "Bonifatius"
+	name = "Boniface"
 	# AKA: John
 	}
 	607.11.12={
@@ -11513,7 +11477,7 @@
 9809 = {
 	name="Zoe"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1732
@@ -11528,7 +11492,7 @@
 
 9810 = {
 	name="Andronikos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1732
@@ -11549,7 +11513,7 @@
 
 9811 = {
 	name="Konstantios"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1732
@@ -11568,7 +11532,7 @@
 9812 = {
 	name="Theodora"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1732
@@ -12548,22 +12512,64 @@
 34104 = {
 	name="Anna"
 	female=yes
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215514
-	mother=215524
-	1203.1.1={
-		birth="1203.1.1"
+	1202.1.1={
+		birth="1202.1.1"
 	}
 	1258.1.1={
 		death="1258.1.1"
 	}
 }
 
+34105 = {
+	name="Eirene"
+	female=yes
+	dynasty=195 trait="dunatos"
+	religion="orthodox"
+	culture="greek"
+	father=215514
+	1210.1.1={
+		birth="1210.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+
+34106 = {
+	name="Ioannes"
+	dynasty=195 trait="dunatos"
+	religion="orthodox"
+	culture="greek"
+	father=215514
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1244.1.1={
+		death="1244.1.1"
+	}
+}
+
+34107 = {
+	name="Demetrios"
+	dynasty=195 trait="dunatos"
+	religion="orthodox"
+	culture="greek"
+	father=215514
+	1225.1.1={
+		birth="1225.1.1"
+	}
+	1246.12.1={
+		death="1246.12.1"
+	}
+}
+
 34115 = {
 	name="Ioannes"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215500
@@ -12579,7 +12585,7 @@
 34116 = {
 	name="Helena"
 	female=yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34115
@@ -12668,7 +12674,7 @@
 
 34269 = {
 	name="Nikolaos"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=20518
@@ -12682,7 +12688,7 @@
 
 34270 = {
 	name="Ioannes"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=20518
@@ -12696,7 +12702,7 @@
 
 34271 = {
 	name="michael"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=20518
@@ -12711,7 +12717,7 @@
 34272 = {
 	name="Maria"
 	female=yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
@@ -12744,7 +12750,7 @@
 34274 = {
 	name="Zoe"
 	female=yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
@@ -12776,7 +12782,7 @@
 
 34276 = {
 	name="Alexios"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215509
@@ -12791,7 +12797,7 @@
 
 34277 = {
 	name="Michael"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34276
@@ -12805,7 +12811,7 @@
 
 34278 = {
 	name="Ioannes" #Thrakesia 1235
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34277
@@ -12819,7 +12825,7 @@
 
 34279 = {
 	name="Georgios" 
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34278
@@ -12834,7 +12840,7 @@
 34280 = {
 	name="Evdokia" 
 	female=yes
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34278
@@ -12986,7 +12992,7 @@
 
 34291 = {
 	name="Eirene"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	female=yes
 	religion="orthodox"
 	culture="greek"
@@ -13122,7 +13128,7 @@
 34332 = {
 	name="Evdokia"
 	female=yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125701
@@ -13137,7 +13143,7 @@
 
 34333 = {
 	name="Andronikos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125701
@@ -13152,7 +13158,7 @@
 
 34334 = {
 	name="Alexios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125701
@@ -13170,7 +13176,7 @@
 
 34335 = {
 	name="Adrianos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125701
@@ -13185,7 +13191,7 @@
 
 34336 = {
 	name="Adrianos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34334
@@ -13201,7 +13207,7 @@
 34337 = {
 	name="Anna"
 	female=yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34333
@@ -13215,7 +13221,7 @@
 
 34338 = {
 	name="Konstantinos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=1758
@@ -13230,7 +13236,7 @@
 
 34339 = {
 	name="Ioannes"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34338
@@ -13244,7 +13250,7 @@
 
 34340 = {
 	name="Stephanos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34338
@@ -13261,7 +13267,7 @@
 
 34341 = {
 	name="Isaakios"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34338
@@ -13275,7 +13281,7 @@
 
 34342 = {
 	name="Konstantinos"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=34340
@@ -13580,7 +13586,7 @@
 
 34394  = {
 	name="Theodoros"
-	dynasty=195
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=34279
@@ -13655,7 +13661,7 @@
 34406 = {
 	name="Anna"
 	female = yes
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=223024
@@ -13790,9 +13796,9 @@
 }
 
 34415 = {
-	name="Theodora"
+	name="Anna"
 	female = yes
-	dynasty=20075
+	dynasty=195 trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=215508
@@ -14060,7 +14066,7 @@
 34436 = {
 	name="Anna"
 	female = yes
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	father=1748
@@ -14515,7 +14521,7 @@
 
 34573 = {
 	name="Sophia"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	female=yes
 	religion="orthodox"
 	culture="greek"
@@ -15183,7 +15189,7 @@
 
 145074 = {
 	name="Manuel"
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=125725
@@ -15202,7 +15208,7 @@
 145076 = {
 	name="Ioannikios"
 	# proved to be brother of Ioannis I, not son.
-	dynasty=634
+	dynasty=634 trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	father=215519
@@ -15246,7 +15252,7 @@
 145080 = {
 	 name="Evdokia"
 	 female=yes
-	 dynasty=634
+	 dynasty=634 trait="aristos"
 	 religion="orthodox"
 	 culture="greek"
 	 father=125720
@@ -15261,7 +15267,7 @@
 
 145082 = {
 	  name="Michael"
-	  dynasty=634
+	  dynasty=634 trait="aristos"
 	  religion="orthodox"
 	  culture="greek"
 	  father=465810
@@ -15276,7 +15282,7 @@
 
 145083 = {
 	  name="Georgios"
-	  dynasty=634
+	  dynasty=634 trait="aristos"
 	  religion="orthodox"
 	  culture="greek"
 	  father=465810
@@ -15952,7 +15958,7 @@
 	dynasty=1029094
 	religion="orthodox"
 	culture="greek"
-	father=159542
+	father=159452
 	1130.1.1={
 		birth="1130.1.1" #Unknown
 	}
@@ -15965,7 +15971,7 @@
 	dynasty=1029094
 	religion="orthodox"
 	culture="greek"
-	father=159542
+	father=159452
 	1150.1.1={
 		birth="1150.1.1" #Unknown
 	}
@@ -15978,7 +15984,7 @@
 	dynasty=1029095
 	religion="orthodox"
 	culture="greek"
-	father=159542
+	father=159452
 	1135.1.1={
 		birth="1135.1.1" #Unknown
 	}
@@ -16160,7 +16166,6 @@
 	dynasty=1022148
 	religion="orthodox"
 	culture="greek"
-	father=145842
 
 	828.1.1={
 		birth="828.1.1"
@@ -16283,19 +16288,16 @@
 }
 
 145125 = {
-	name="Eugenios"
+	name="Eugenios" # C.Senj
 	dynasty=1022154
-	religion="iconoclast"
+	religion="orthodox"
 	culture="greek"
 
-	739.1.1={
-		birth="739.1.1"
+	842.1.1={
+		birth="842.1.1"
 	}
-	787.10.23={
-		religion="orthodox"
-	}
-	800.1.1={
-		death="800.1.1"
+	902.1.1={
+		death="902.1.1"
 	}
 }
 
@@ -16343,7 +16345,7 @@
 
 145129 = {
 	name="Bardas"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="tough_soldier"
@@ -16357,7 +16359,7 @@
 
 145130 = {
 	name="Marinos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="tough_soldier"
@@ -16388,7 +16390,7 @@
 
 145132 = {
 	name="Anastasia"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	female = yes
 	religion="orthodox"
 	culture="greek"
@@ -16404,7 +16406,7 @@
 
 145133 = {
 	name="Konstantinos"
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
 	trait="skilled_tactician"
@@ -16626,15 +16628,8 @@
 	religion="iconoclast"
 	culture="greek"
 	trait="skilled_tactician"
-	father=145806
 	760.1.1={
 		birth="760.1.1"
-	}
-	787.10.23={
-		religion="orthodox"
-	}
-	815.1.1={
-		religion="iconoclast"
 	}
 	820.1.1={
 		death="820.1.1"
@@ -16737,7 +16732,7 @@
 145155 = {
 	name="Gregoria"
 	female = yes
-	dynasty=644
+	dynasty=644    trait="aristos"
 	religion="orthodox"
 	culture="greek"
         father=145130
@@ -16873,7 +16868,7 @@
 
 145164 = {
 	name="Konstantinos" # D.Paphlagonia/C.Herakleia
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="skilled_tactician"
@@ -16887,7 +16882,7 @@
 
 145165 = {
 	name="Nikolaos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="tough_soldier"
@@ -16902,7 +16897,7 @@
 
 145166 = {
 	name="Michael"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="underhanded_rogue"
@@ -16917,7 +16912,7 @@
 
 145167 = {
 	name="Stephanos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="charismatic_negotiator"
@@ -16935,7 +16930,7 @@
 
 145168 = {
 	name="Andronikos"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="tough_soldier"
@@ -16950,7 +16945,7 @@
 
 145169 = {
 	name="Christophoros"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="tough_soldier"
@@ -16965,7 +16960,7 @@
 
 145170 = {
 	name="Bardas"
-	dynasty=633
+	dynasty=633    trait="dunatos"
 	religion="orthodox"
 	culture="greek"
 	trait="underhanded_rogue"
@@ -17300,14 +17295,10 @@
 145194 = {
 	name="Theodoros" # D.Samos/C.Ephesos
 	dynasty=101348
-	religion="iconoclast"
+	religion="orthodox"
 	culture="greek"
-	father=145831
 	832.1.1={
 		birth="832.1.1"
-	}
-	842.2.19={
-		religion="orthodox"
 	}
 	898.1.1={
 		death="898.1.1"
@@ -17512,7 +17503,7 @@
 		birth="896.1.1"
 	}
 	963.4.18={
-		death="963.4.18"
+		death="963.18.4"
 	}
 }
 
@@ -18582,7 +18573,7 @@
 }
 
 145291 = {
-	name="Linus"
+	name="Linos"
 	religion="catholic"
 	culture="greek"
 	trait="diligent"
@@ -18602,7 +18593,7 @@
 }
 
 145292 = {
-	name="Petrus"
+	name="Simon"
 	religion="catholic"
 	culture="greek"
 	trait="diligent"
@@ -18611,6 +18602,10 @@
 	trait="mastermind_theologian"
 	3.1.1={
 		birth="3.1.1"
+	}
+	30.1.1={
+	name = "Peter"
+	# AKA: Simon
 	}
 	64.10.13={
 		death="64.10.13"
@@ -20644,10 +20639,10 @@
 	culture="greek"
 	father=145932
 	850.1.1={
-		birth=yes
+		birth="850.1.1"
 	}
 	912.1.1={
-		death=yes
+		death="910.1.1"
 	}
 }
 200121={

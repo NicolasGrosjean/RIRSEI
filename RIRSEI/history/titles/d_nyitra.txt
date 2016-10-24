@@ -28,15 +28,16 @@
 }
 978.1.1={
 	holder=487
-}
-1000.12.25={
-	liege="k_hungary"
+liege="k_hungary"
 }
 1029.1.1={
 	holder=466
 }
 1037.1.1={
 	holder=470
+}
+1066.1.1={
+	liege="k_hungary"
 }
 1063.12.1={
 	holder=472

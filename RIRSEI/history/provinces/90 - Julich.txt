@@ -16,9 +16,9 @@ b_prum = temple
 #b_monschau = temple
 
 # Misc
-culture = old_frankish
+culture = german
 religion = catholic
 
 # History
-790.1.1 = { culture = german }
+
 

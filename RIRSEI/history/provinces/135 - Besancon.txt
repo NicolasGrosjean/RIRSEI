@@ -16,7 +16,7 @@ b_montbeliard = castle
 #b_morteau = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History

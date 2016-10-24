@@ -5,6 +5,7 @@ liege=k_germany
 }
 976.1.1={
 	holder = 10084
+de_jure_liege=k_germany
 }
 994.1.1={
 	holder = 7973

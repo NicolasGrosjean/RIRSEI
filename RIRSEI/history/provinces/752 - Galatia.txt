@@ -19,13 +19,11 @@ b_tavia = temple
 
 # Misc
 culture = greek
-religion = orthodox
+religion = paulician
 
 # History
-715.1.1 = { religion = iconoclast }
-#860.1.1 = { religion = orthodox }
 
 # The Seljuks take over Anatolia
-
+920.1.1 = { religion = orthodox }
 1097.8.26 = { culture = turkish }
 1097.8.26 = { religion = sunni }

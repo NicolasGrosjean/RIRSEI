@@ -1,0 +1,159 @@
+#Liege does respects election system
+character_event = {
+	id = RIRSEI.2000000
+	desc = "EVTDESC_RIRSEI_2000000"
+
+	only_rulers = yes
+
+	trigger = {
+		independent = no
+NOT = { year = 1300 }
+                OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = DUKE }
+			}
+		liege = {
+			independent = yes
+			has_law = centralization_0
+                        NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_roman_empire }
+			
+			OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = EMPEROR }
+			}
+			or = {
+				reverse_has_opinion_modifier = {
+					who = ROOT
+					modifier = limited_crown_election 
+				}
+				reverse_has_opinion_modifier = {
+					who = ROOT
+					modifier = maximum_crown_election 
+				}
+			}
+		}
+
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTA_RIRSEI_2000000"
+		hidden_tooltip = {
+			liege = {
+				reverse_remove_opinion = {
+					modifier = limited_crown_election
+					who = ROOT
+				}
+				reverse_remove_opinion = {
+					modifier = maximum_crown_election
+					who = ROOT
+				}
+			}
+		}
+	}
+}
+#Liege does not respect election system
+character_event = {
+	id = RIRSEI.2000005
+	desc = "EVTDESC_RIRSEI_2000005"
+
+	only_rulers = yes
+
+	trigger = {
+		independent = no
+NOT = { year = 1300 }
+                 OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = DUKE }
+			}
+		liege = {
+			independent = yes
+			has_law = centralization_1
+                        NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_roman_empire }
+			
+			OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = EMPEROR }
+			}
+		not = { reverse_has_opinion_modifier = { who = ROOT modifier = limited_crown_election } }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTA_RIRSEI_2000005"
+			hidden_tooltip = {
+				liege = {
+					reverse_opinion = {
+						modifier = limited_crown_election
+						who = ROOT
+						years = 80
+					}
+					reverse_remove_opinion = {
+						modifier = maximum_crown_election
+						who = ROOT
+					}
+				}
+			}
+	}
+}
+#Liege does not respect election system
+character_event = {
+	id = RIRSEI.2000010
+	desc = "EVTDESC_RIRSEI_2000010"
+
+	only_rulers = yes
+
+	trigger = {
+		independent = no
+NOT = { year = 1300 }
+                 OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = DUKE }
+			}
+		liege = {
+			independent = yes
+			
+		        has_law = centralization_2
+                        NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_roman_empire }
+				
+			
+			
+			OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = EMPEROR }
+			}
+		NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = maximum_crown_election } }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTA_RIRSEI_2000010"
+		hidden_tooltip = {
+			liege = {
+				reverse_opinion = {
+					modifier = maximum_crown_election
+					who = ROOT
+					years = 80
+				}
+				reverse_remove_opinion = {
+					modifier = limited_crown_election
+					who = ROOT
+				}
+			}
+		}
+	}
+}

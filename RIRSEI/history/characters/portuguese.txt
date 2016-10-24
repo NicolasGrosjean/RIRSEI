@@ -709,6 +709,9 @@
 	1261.10.9={
 		birth="1261.10.9"
 	}
+1279.4.18={
+trait = Vs_sancti_petri
+}
 	1287.6.24={
 		add_spouse = 460591
 	}
@@ -22812,7 +22815,7 @@
 	religion=catholic
 	culture=portuguese
 
-	1108.1.1={
+	1122.1.1={
 		birth=yes
 	}
 	1160.1.1={
@@ -22827,10 +22830,10 @@
 	religion=catholic
 	culture=portuguese
 
-	1085.1.1={
+	1105.1.1={
 		birth=yes
 	}
-	1122.1.1={
+	1140.1.1={
 		add_spouse=72877
 	}
 	1145.1.1={

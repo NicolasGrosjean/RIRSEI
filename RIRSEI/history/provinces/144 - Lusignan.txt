@@ -16,8 +16,11 @@ b_niort = city
 #b_stmaixent = temple
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
+
+# History
+790.1.1 = { culture = occitan }
 
 # History
 1214.1.1 = {

@@ -19175,6 +19175,7 @@
 	1294.12.13 = {
 	name="Bonifatius"
 	# AKA: Benedetto
+trait = proud
 	}
 	1303.10.11 = {
 		death="1303.10.11"
@@ -36727,7 +36728,7 @@
 	culture="italian"
 	father=91353
 	mother=167545
-	1280.1.1={
+	1290.1.1={
 		birth="1290.1.1"
 	}
 	1349.1.1={
@@ -42732,6 +42733,7 @@
 	religion="catholic"
 	culture="italian"
 	father=166623
+	add_trait="charismatic_negotiator"
 	add_trait="quick"
 	add_trait="gregarious"
 	add_trait="socializer"

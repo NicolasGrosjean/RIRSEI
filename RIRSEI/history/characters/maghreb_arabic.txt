@@ -2244,11 +2244,11 @@
 32991={
 	name="Buluggin"
 	dynasty=595
-
+	religion="sunni"
+	culture="maghreb_arabic"
 	father=45016
 
-	religion=sunni
-	culture=maghreb_arabic
+
 
 	1038.1.1={
 		birth=yes
@@ -2261,42 +2261,62 @@
 	}
 }
 
-32951={
+32951 = {
 	name="Tamim"
 	dynasty=595
-
+	religion="sunni"
+	culture="maghreb_arabic"
 	father=32991
-	mother=200235
-
-	religion=sunni
-	culture=maghreb_arabic
-
-	1055.1.1={
-		birth=yes
+	1055.1.1 = {
+		birth="1055.1.1"
+	}
+	1073.1.1 = {
+		add_claim = d_zaragoza
+		add_claim = d_valencia
+		add_claim = d_mallorca
+		add_claim = d_murcia
+		add_claim = d_toledo
+		add_claim = d_cordoba
+		add_claim = d_badajoz
+		add_claim = d_sevilla
+		add_claim = d_granada
+	}
+	1085.5.25 = {
+		remove_claim = d_toledo
 	}
 	1090.1.1 = {
-		death=yes
+		death="1090.1.1"
 	}
 }
 
-32952={
+32952 = {
 	name="Abdallah"
 	dynasty=595
-
+	religion="sunni"
+	culture="maghreb_arabic"
 	father=32991
-	mother=200235
-
-	religion=sunni
-	culture=maghreb_arabic
-
-	1057.1.1={
-		birth=yes
+	1057.1.1 = {
+		birth="1057.1.1"
 	}
-	1090.1.1={
-		add_claim=d_granada
+	1073.1.1 = {
+		add_claim = d_zaragoza
+		add_claim = d_valencia
+		add_claim = d_mallorca
+		add_claim = d_murcia
+		add_claim = d_toledo
+		add_claim = d_cordoba
+		add_claim = d_badajoz
+		add_claim = d_sevilla
+		add_claim = d_granada
 	}
-	1100.1.1={
-		death=yes
+	1085.5.25 = {
+		remove_claim = d_toledo
+	}
+	1090.1.1 = {
+		add_claim = d_granada
+	}
+	1100.1.1 = {
+		death="1100.1.1"
 	}
 }
 
@@ -2709,7 +2729,7 @@
 32978 = {
 	name="Abd-al-Mu'min" #Mauretania 1147-1163
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	1094.1.1={
 		birth="1094.1.1"
@@ -2747,7 +2767,7 @@
 32979 = {
 	name="Muhammed" 
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32978
 	1110.1.1={
@@ -2761,7 +2781,7 @@
 32980 = {
 	name="Ya'qub" #1184-1199
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=224000
 	1155.1.1 = {
@@ -2775,7 +2795,7 @@
 32981 = {
 	name="Yusuf" #1213-1224
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=224005
 	1197.1.1 = {
@@ -2789,7 +2809,7 @@
 32982 = {
 	name="Abdul-Wahid" #1224
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32981
 	1217.1.1 = {
@@ -2803,7 +2823,7 @@
 32983 = {
 	name="Abdallah" #1225-1227
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32980
 	1175.1.1 = {
@@ -2817,7 +2837,7 @@
 32984 = {
 	name="Yahya" #1227-1229
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=224005
 	1195.1.1 = {
@@ -2831,7 +2851,7 @@
 32985 = {
 	name="Idris" #1229-1233
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32980
 	1174.1.1 = {
@@ -2845,7 +2865,7 @@
 32986 = {
 	name="Abdul-Wahid" #1233-1242
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32985
 	1200.1.1 = {
@@ -2859,7 +2879,7 @@
 32987 = {
 	name="Ali" #1242-1248
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32985
 	1199.1.1 = {
@@ -2873,7 +2893,7 @@
 32988 = {
 	name="Ishaq" 
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32980
 	1180.1.1 = {
@@ -2886,7 +2906,7 @@
 32989 = {
 	name="Umar" #1248-1266
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32988
 	1210.1.1 = {
@@ -2900,7 +2920,7 @@
 32990 = {
 	name="Idris" #1266-1269
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32989
 	1240.1.1 = {
@@ -2914,7 +2934,7 @@
 32992 = {
 	name="Mussa" 
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32980
 	1173.1.1 = {
@@ -3904,7 +3924,7 @@
 	diplomacy=5
 	intrigue=5
 	stewardship=8
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	trait="just"
 	trait="tough_soldier"
@@ -3924,7 +3944,7 @@
 	diplomacy=5
 	intrigue=4
 	stewardship=5
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	trait="stutter"
 	trait="tough_soldier"
@@ -4155,33 +4175,39 @@
 	}
 }
 
-224001={
-	name="Abd-al-Razzaq"
+224001 = {
+	name="Abdul-Razzaq"
 	dynasty=12225
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	1126.1.1={
-		birth=yes
+	martial=4
+	diplomacy=6
+	intrigue=7
+	stewardship=7
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="amateurish_plotter"
+	1126.1.1 = {
+		birth="1126.1.1"
 	}
-	1189.1.1={
-		death=yes
+	1189.1.1 = {
+		death="1189.1.1"
 	}
 }
 
-224010={
-	name="Abd-al-Aziz"
+224010 = {
+	name="Abdul-Aziz"
 	dynasty=12218
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	1133.1.1={
-		birth=yes
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=4
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="arbitrary"
+	1133.1.1 = {
+		birth="1133.1.1"
 	}
-	1188.1.1={
-		death=yes
+	1188.1.1 = {
+		death="1188.1.1"
 	}
 }
 
@@ -4259,18 +4285,24 @@
 	}
 }
 
-224009={
-	name="Abd-al-Aziz"
+224009 = {
+	name="Abdul-Aziz"
 	dynasty=12217
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	1119.1.1={
-		birth=yes
+	martial=5
+	diplomacy=7
+	intrigue=5
+	stewardship=5
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="chaste"
+	trait="slothful"
+	trait="brave"
+	trait="tough_soldier"
+	1119.1.1 = {
+		birth="1119.1.1"
 	}
-	1172.1.1={
-		death=yes
+	1172.1.1 = {
+		death="1172.1.1"
 	}
 }
 
@@ -5531,18 +5563,16 @@
 	}
 }
 
-73613={
-	name="Abd-al-Rahman"
-	dynasty=12258
-
-	religion=shiite
-	culture=maghreb_arabic
-
+73613 = {
+	name="Abdul-Rahman"
+	dynasty = 12258
+	religion="shiite"
+	culture="maghreb_arabic"
 	1145.1.1={
-		birth=yes
+		birth="1145.1.1"
 	}
 	1205.1.1={
-		death=yes
+		death="1205.1.1"
 	}
 }
 
@@ -5629,20 +5659,26 @@
 	}
 }
 
-73620={
-	name="Abd-al-Rahman"
-	dynasty=7276
-
+73620 = {
+	name="Abdul-Rahman"
+	dynasty = 7276
+	religion="sunni"
+	culture="maghreb_arabic"
 	father=73619
-
-	religion=sunni
-	culture=maghreb_arabic
-
 	1198.1.1={
-		birth=yes
+		birth="1198.1.1"
+	}
+	1224.1.1 = {
+		add_claim = d_valencia
+		add_claim = d_mallorca
+		add_claim = d_murcia
+		add_claim = d_cordoba
+		add_claim = d_badajoz
+		add_claim = d_sevilla
+		add_claim = d_granada
 	}
 	1227.1.1={
-		death=yes
+		death="1227.1.1"
 	}
 }
 
@@ -5790,7 +5826,7 @@
 155085 = {
 	name="Umar"
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32978
 	1138.1.1 = {
@@ -5804,7 +5840,7 @@
 155086 = {
 	name="Uthman"
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32978
 	1138.1.1 = {
@@ -5818,7 +5854,7 @@
 155087 = {
 	name="Abd-'Allah"
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32978
 	1120.1.1 = {
@@ -5832,7 +5868,7 @@
 155088 = {
 	name="Ali"
 	dynasty=101875
-	religion="sunni"
+	religion="Almohade"
 	culture="maghreb_arabic"
 	father=32978
 	1112.1.1 = {
@@ -7003,56 +7039,45 @@
 }
 159498={
 	name="Idris"
-	dynasty=7501
-
-	father=73690
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	trait=sayyid
-
+	dynasty = 7501
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="sayyid"
+	father=159495
 	1005.1.1={
-		birth=yes
+		birth="1005.1.1"
 	}
 	1060.5.12={
-		death=yes
+		death="1060.5.12"
 	}
 }
 159499={
 	name="Muhammad"
-	dynasty=7501
-
-	father=159497
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	trait=sayyid
-
-	1010.1.1={
-		birth=yes
+	dynasty = 7501
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="sayyid"
+	father=159495
+	1040.1.1={
+		birth="1040.1.1"
+		add_claim = c_malaga
 	}
 	1070.5.12={
-		death=yes
+		death="1070.5.12"
 	}
 }
 159500={
 	name="Yahya"
-	dynasty=7501
-
-	father=159498
-
-	religion=shiite
-	culture=maghreb_arabic
-
-	trait=sayyid
-
-	1035.1.1={
-		birth=yes
+	dynasty = 7501
+	religion="shiite"
+	culture="maghreb_arabic"
+	trait="sayyid"
+	father=159495
+	1040.1.2={
+		birth="1040.1.2"
 	}
 	1065.12.16={
-		death=yes
+		death="1065.12.16"
 	}
 }
 
@@ -7314,7 +7339,6 @@
 	dynasty = 808
 	religion="ibadi"
 	culture="maghreb_arabic"
-	father=210030 #added father
 	800.1.1={
 		birth="800.1.1"
 	}

@@ -11,15 +11,12 @@ de_jure_laws = {
 		default = yes
 		
 		feudal_opinion = 5
-		city_opinion = 5
-		temple_opinion = 5
 		
 		allow = {
 			holder_scope = { is_republic = no }
 			has_law = crown_authority_1
 		}
 		potential = {
-			NOT = { has_dlc = "Zeus" }
 			holder_scope = {
 				is_tribal = no
 				is_nomadic = no
@@ -42,6 +39,39 @@ de_jure_laws = {
 				revoke_law = crown_authority_3
 				revoke_law = crown_authority_4
 			}
+
+if = {
+limit = {
+has_law = centralization_1
+}
+revoke_law = centralization_1
+add_law_w_cooldown = centralization_0
+}
+if = {
+limit = {
+has_law = centralization_2
+}
+revoke_law = centralization_2
+add_law_w_cooldown = centralization_1
+}
+
+if = {
+limit = {
+has_law = centralization_3
+}
+revoke_law = centralization_3
+add_law_w_cooldown = centralization_2
+}
+
+if = {
+limit = {
+has_law = centralization_4
+}
+revoke_law = centralization_4
+add_law_w_cooldown = centralization_3
+}
+
+
 			
 #			set_appoint_generals = no
 #			set_appoint_regents = no
@@ -63,17 +93,21 @@ de_jure_laws = {
 		group = crown_authority
 		
 		feudal_opinion = -5
-		city_opinion = -5
-		temple_opinion = -5
+
 		
 		allow = {
+holder_scope = {
+OR = {
+NOT = { has_landed_title = e_hre } 
+trait = crowned_by_pope
+}
+}
 			OR = {
 				has_law = crown_authority_0
 				has_law = crown_authority_2
 			}
 		}
 		potential = {
-			NOT = { has_dlc = "Zeus" }
 			holder_scope = {
 				is_tribal = no
 				is_nomadic = no
@@ -124,32 +158,58 @@ de_jure_laws = {
 				revoke_law = crown_authority_3
 				revoke_law = crown_authority_4
 			}
+if = {
+limit = {
+has_law = centralization_2
+}
+revoke_law = centralization_2
+add_law_w_cooldown = centralization_1
+}
+
+if = {
+limit = {
+has_law = centralization_3
+}
+revoke_law = centralization_3
+add_law_w_cooldown = centralization_2
+}
+
+if = {
+limit = {
+has_law = centralization_4
+}
+revoke_law = centralization_4
+add_law_w_cooldown = centralization_3
+}
 #			set_appoint_generals = yes
 #			set_appoint_regents = no
 			set_the_kings_peace = no
 			set_the_kings_full_peace = no
 			set_protected_inheritance = no
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = no
+			set_allow_title_revokation = no
+			set_allow_free_infidel_revokation = yes
 #			set_allow_free_revokation = no
 		}
 		
 		city_vassal_min_levy = 0.2
 		castle_vassal_min_levy = 0.2
 		temple_vassal_min_levy = 0.2
+
 	}
 	
 	crown_authority_2 = {
 		show_as_title = yes
 		group = crown_authority
 		
-		feudal_opinion = -10
-		city_opinion = -10
-		temple_opinion = -10
+		feudal_opinion = -15
 		
 		allow = {
 			holder_scope = { 
-				is_republic = no 
+OR = {
+NOT = { has_landed_title = e_hre } 
+trait = crowned_by_pope
+} 
+				
 				
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
@@ -167,7 +227,6 @@ de_jure_laws = {
 			}
 		}
 		potential = {
-			NOT = { has_dlc = "Zeus" }
 			holder_scope = {
 				is_tribal = no
 				is_nomadic = no
@@ -221,6 +280,12 @@ de_jure_laws = {
 				revoke_law = crown_authority_3
 				revoke_law = crown_authority_4
 			}
+if = {
+limit = {
+has_law = imperial_administration
+}
+set_law = feudal_administration
+}
 #			set_appoint_generals = yes
 #			set_appoint_regents = no
 			set_the_kings_peace = yes
@@ -240,13 +305,27 @@ de_jure_laws = {
 		show_as_title = yes
 		group = crown_authority
 		
-		feudal_opinion = -20
-		city_opinion = -20
-		temple_opinion = -20
-		
-		allow = {
-			holder_scope = { 
-				is_republic = no 
+		feudal_opinion = -15
+	        allow = {
+OR = {
+has_law = centralization_2
+has_law = centralization_3
+has_law = centralization_4
+}
+
+
+
+			holder_scope = {
+NOT = { trait = Vs_sancti_petri }
+OR = {
+year = 1020
+has_landed_title = e_byzantium
+} 
+OR = {
+NOT = { has_landed_title = e_hre } 
+trait = crowned_by_pope
+}
+				
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
@@ -263,7 +342,6 @@ de_jure_laws = {
 			}
 		}
 		potential = {
-			NOT = { has_dlc = "Zeus" }
 			holder_scope = {
 				is_tribal = no
 				is_nomadic = no
@@ -341,11 +419,30 @@ de_jure_laws = {
 		group = crown_authority
 		
 		feudal_opinion = -30
-		city_opinion = -30
-		temple_opinion = -30
 		
 		allow = {
+
+
+
 			holder_scope = { 
+OR = {
+year = 1020
+has_landed_title = e_byzantium
+} 
+OR = {
+NOT = { has_landed_title = e_hre } 
+trait = crowned_by_pope
+} 
+OR = {
+NOT = { religion_group = muslim } 
+trait = sultan_sultan
+has_landed_title = d_sunni
+has_landed_title = d_almomh
+has_landed_title = d_khad
+has_landed_title = d_shiite
+has_landed_title = d_ibadi
+}
+
 				is_republic = no 
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
@@ -360,7 +457,6 @@ de_jure_laws = {
 			has_law = crown_authority_3
 		}
 		potential = {
-			NOT = { has_dlc = "Zeus" }
 			holder_scope = {
 				is_tribal = no
 				is_nomadic = no
@@ -451,7 +547,11 @@ de_jure_laws = {
 			}
 		}
 		allow = {
-			year = 1000
+has_global_flag = reforme_gregorienne
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+
 		}
 		revoke_allowed = {
 			always = no
@@ -488,11 +588,13 @@ de_jure_laws = {
 				is_nomadic = no
 			}
 		}
+allow = {
+			NOT = { has_global_flag = que_investvic }
+		}
 		revoke_allowed = {
 			always = no
 		}			
 		ai_will_do = {
-			factor = 1
 			modifier = {
 				factor = 0.002 # Rare to do this
 			}

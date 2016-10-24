@@ -27,7 +27,7 @@
 	holder=145955
 }
 852.1.1={
-	liege = "d_transylvania"
+	liege = "k_bulgaria"
 }
 852.1.1={
 	holder=168069

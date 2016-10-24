@@ -4,11 +4,13 @@
 	law = succ_primogeniture
 	law = crown_authority_2
 	law = investiture_law_1
+
 }
 
 927.7.12={
 	holder=33350 # Aethelstan the Glorious
 	law = succ_feudal_elective
+effect = { set_coa = k_britannia }
 }
 939.10.28={
 	holder=102 # Edmund the Magnificent
@@ -51,11 +53,14 @@
 }
 1066.1.5={
 	holder=122 # Harold Godwinson
+
 }
 1066.10.14={
 	holder=140 # William the Conqueror
 	conquest_culture = norman
 	law = succ_primogeniture
+set_global_flag = drapal_leopard 
+effect = { reset_coa = THIS }
 }
 1087.9.9={
 	holder = 146 #William II Rufus

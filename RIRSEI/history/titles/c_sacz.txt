@@ -24,7 +24,7 @@
 	liege="k_poland"
 }
 1033.1.1={
-	holder = 82265
+	holder = 82262
 }
 1061.1.1={
 	holder=96098
@@ -79,6 +79,9 @@
 }
 1294.1.1={
 	holder=96114
+}
+1295.6.27={
+	liege="k_polandball"
 }
 1320.2.7={
 	holder=96115

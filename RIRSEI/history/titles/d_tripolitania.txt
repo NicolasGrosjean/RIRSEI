@@ -1,9 +1,8 @@
 768.1.1={
 	holder=210031
+liege="k_africa"
 }
-866.1.1={
-	liege="k_africa"
-}
+
 866.1.1={
 	holder = 163147
 }

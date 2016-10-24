@@ -4,6 +4,7 @@
 810.1.1={
 	holder=70300 # Aznar I de Aragón
 	liege=k_aquitaine
+
 }
 820.1.1={
 	holder=70302 # Gartzia I Belascotenes
@@ -38,4 +39,5 @@
 }
 1035.10.18={
 	holder=0
+	de_jure_liege=k_aragon
 }

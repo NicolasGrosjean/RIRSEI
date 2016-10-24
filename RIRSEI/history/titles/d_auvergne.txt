@@ -1,3 +1,12 @@
+700.1.1 = {
+de_jure_liege=k_aquitaine
+}
+
+900.1.1 = {
+de_jure_liege=k_france
+}
+
+
 1337.1.1={
 	liege="k_france"
 #law = succ_primogeniture

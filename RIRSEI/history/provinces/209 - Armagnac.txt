@@ -17,8 +17,11 @@ b_eauze = temple
 #b_laplume = castle
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
+
+# History
+790.1.1 = { culture = occitan }
 
 # History
 #1314.1.1   = { b_condom = temple }

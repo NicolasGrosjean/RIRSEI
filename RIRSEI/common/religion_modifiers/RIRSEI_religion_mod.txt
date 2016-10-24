@@ -1,0 +1,36 @@
+eglise_unie = {
+	authority = 15
+	years = 1
+}
+
+filioque_conteste = {
+	authority = 10
+	years = 1
+}
+schisme_informel = {
+	authority = -5
+	years = 1
+}
+
+schisme_total = {
+	authority = -10
+	years = 1
+}
+
+ref_de_greg  = {
+	authority = 15
+	years = 50
+}
+que_invest_gagne  = {
+	authority = 10
+	years = 50
+}
+que_invest_encours  = {
+	authority = -10
+	years = 45
+}
+
+que_emp_victorieux  = {
+	authority = -15
+	years = 100
+}

@@ -1,0 +1,968 @@
+decisions = {
+pap_script_byz_duna = {
+                is_high_prio = yes
+		potential = {
+OR = {
+			has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+e_byzantium = {
+NOT = { has_law = emp_dunatos }
+}
+e_byzantium = {
+holder_scope = {
+trait=dunatos 
+}
+}                       
+                       
+		}
+		effect = {
+			  e_byzantium = {
+revoke_law = emp_autocrate
+revoke_law = emp_aristos
+add_law_w_cooldown = emp_dunatos
+}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pap_script_byz_aristos = {
+                is_high_prio = yes
+		potential = {
+OR = {
+			has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+e_byzantium = {
+NOT = { has_law = emp_aristos }
+}
+e_byzantium = {
+holder_scope = {
+trait=aristos 
+}
+}                       
+                       
+		}
+		effect = {
+			  e_byzantium = {
+revoke_law = emp_autocrate
+revoke_law = emp_dunatos
+add_law_w_cooldown = emp_aristos
+}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pap_script_byz_autocrator = {
+                is_high_prio = yes
+		potential = {
+OR = {
+			has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+e_byzantium = {
+NOT = { has_law = emp_autocrate }
+}
+e_byzantium = {
+holder_scope = {
+trait=byz_autocrator 
+}
+}                       
+                       
+		}
+		effect = {
+			  e_byzantium = {
+revoke_law = emp_aristos
+revoke_law = emp_dunatos
+add_law_w_cooldown = emp_autocrate
+}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+adm_sor = {
+                is_high_prio = no
+		potential = {
+
+NOT = { has_landed_title = e_byzantium }
+top_liege = {
+NOT = { has_landed_title = e_byzantium }
+}
+ROOT = {
+any_demesne_province  = {
+OR = {
+has_province_modifier = byz_pro_aristos
+has_province_modifier = byz_pro_dunatos
+has_province_modifier = byz_pro_autocrate
+}
+}
+}
+			
+
+
+		}
+		allow = {
+
+prisoner = no
+
+
+                  
+                       
+		}
+		effect = {
+ROOT = {
+any_realm_province  = {
+remove_province_modifier = byz_pro_aristos
+remove_province_modifier = byz_pro_dunatos
+remove_province_modifier = byz_pro_autocrate
+}
+}
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+adm_entr = {
+                is_high_prio = no
+		potential = {
+
+
+top_liege = {
+has_landed_title = e_byzantium 
+}
+
+ROOT = {
+any_realm_province  = {
+NOT = {	
+has_province_modifier = byz_pro_aristos }
+NOT = {
+has_province_modifier = byz_pro_dunatos }
+NOT = { 
+has_province_modifier = byz_pro_autocrate
+}
+
+}
+}
+
+
+
+			
+
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+allow = {
+prisoner = no
+
+                  
+                       
+		}
+effect = {
+
+
+if = {
+limit = {
+e_byzantium = {
+has_law = emp_aristos }
+}		
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = byz_pro_aristos duration = -1 }
+}
+}
+}
+if = {
+limit = {
+e_byzantium = {
+has_law = emp_dunatos }
+}		
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = byz_pro_dunatos duration = -1 }
+}
+}
+}
+if = {
+limit = {
+e_byzantium = {
+has_law = emp_autocrate }
+}		
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = byz_pro_autocrate
+duration = -1 }
+}
+}
+}
+if = {
+limit = {
+has_global_flag = pe_pro_byz
+}
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = byz_pro_pro
+duration = -1 }
+}
+}
+}
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pap_script_trait_autocr = {
+                is_high_prio = yes
+		potential = {
+OR = {
+			has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+e_byzantium = {
+has_law = centralization_4 
+}
+
+e_byzantium = {
+holder_scope = {
+NOT = {
+trait=byz_autocrator
+}
+}
+}                       
+                       
+		}
+		effect = {
+
+
+e_byzantium = {
+holder_scope = {
+
+add_trait = byz_autocrator
+remove_trait = aristos
+remove_trait = dunatos
+narrative_event = { id = RIRSEBYZ.111111 }
+}
+}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+organize_archontopouloi = {
+		is_high_prio = yes
+		potential = {
+			has_landed_title = e_byzantium
+e_byzantium = {
+has_law = pronoia_byz
+has_law = emp_aristos
+}
+			is_female = no
+			prisoner = no
+			age = 16
+			NOT = { has_global_flag = archontopouloi_founded }
+		}
+		allow = {
+			prestige = 500
+			wealth = 500
+		}
+		effect = {
+			set_global_flag = archontopouloi_founded
+			
+			wealth = -500
+			activate_title = { title = d_archontopouloi status = yes }
+			hidden_tooltip = {
+				
+				create_character = {
+					random_traits = yes
+					religion = orthodox
+					culture = greek
+					dynasty = NONE
+					female = no
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_archontopouloi = {
+						grant_title = PREV
+					}
+					set_defacto_liege = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+noble_demander_pronoia = {
+                is_high_prio = yes
+		potential = {
+  OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = DUKE }
+			}
+
+NOT = { has_character_flag = demande_prono }
+top_liege = {
+has_landed_title = e_byzantium 
+}
+NOT = { has_landed_title = e_byzantium }
+e_byzantium = {
+has_law = theme_byz
+OR = {
+has_law = centralization_0
+has_law = centralization_1
+}
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+prestige = 100                      
+                       
+		}
+		effect = {
+
+set_character_flag = demande_prono
+prestige = -200
+piety = -100
+e_byzantium = {
+holder_scope = {
+letter_event = { id = RIRSEBYZ.111112 }
+}
+}
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+usurpation_script = {
+                is_high_prio = yes
+		potential = {
+age = 16
+NOT = { trait = incapable }
+NOT = { has_claim = e_byzantium }
+top_liege = {
+has_landed_title = e_byzantium 
+}
+NOT = { has_landed_title = e_byzantium }
+e_byzantium = {
+holder_scope = {
+OR = {
+NOT = { age = 16 }
+is_female = yes
+trait = lunatic
+trait = incapable
+trait = possessed
+trait = kinslayer
+trait = excommunicated
+trait = imbecile
+}
+}
+} 
+
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+prestige = 1000 
+                    
+                       
+		}
+		effect = {
+add_claim = e_byzantium
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+script_compromis_ser = {
+                is_high_prio = yes
+		potential = {
+age = 16
+NOT = { trait = incapable }
+NOT = { has_global_flag = compromis_cest_non }
+NOT = { has_global_flag = ser_compromis_huitdouze }
+NOT = { has_global_flag = ser_compromis_huitdouze_byz }
+has_global_flag = compromis_serhre
+e_byzantium = {
+has_holder = yes
+}
+e_roman_empire = {
+has_holder = no
+}
+has_landed_title = e_hre
+
+
+
+		}
+		allow = {
+e_byzantium = {
+OR = {
+has_law = crown_authority_0
+has_law = crown_authority_1
+}
+holder_scope = {
+NOT = { completely_controls = k_sicily }
+}
+}
+prestige = 5000
+realm_size = 250
+e_hre = {
+OR = {
+has_law = crown_authority_2
+has_law = crown_authority_3
+has_law = crown_authority_4
+}
+}
+completely_controls = k_italy
+OR = {
+completely_controls = d_benevento
+completely_controls = d_capua 
+completely_controls = d_apulia 
+completely_controls = d_salerno  
+completely_controls = d_calabria
+completely_controls = d_sicily
+completely_controls = d_venice
+}
+                    
+                       
+		}
+		effect = {
+set_global_flag = ser_compromis_huitdouze 
+prestige = -500
+piety = -200
+narrative_event = { id = RIRSEBYZ.111119 }
+e_byzantium = {
+holder_scope = {
+letter_event = { id = RIRSEBYZ.111120 }
+}
+}
+
+
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+}
+script_compromis_byz = {
+                is_high_prio = yes
+		potential = {
+age = 16
+NOT = { trait = incapable }
+NOT = { has_global_flag = ser_compromis_huitdouze }
+NOT = { has_global_flag = ser_compromis_huitdouze_byz }
+NOT = { has_global_flag = compromis_cest_non }
+has_global_flag = compromis_serhre
+e_hre = {
+has_holder = yes
+}
+e_roman_empire = {
+has_holder = no
+}
+has_landed_title = e_byzantium
+
+
+
+		}
+
+		allow = {
+e_hre = {
+OR = {
+has_law = crown_authority_0
+has_law = crown_authority_1
+}
+}
+prestige = 5000
+realm_size = 200
+e_byzantium = {
+OR = {
+has_law = crown_authority_2
+has_law = crown_authority_3
+has_law = crown_authority_4
+}
+}
+completely_controls = k_sicily
+completely_controls = d_venice
+                    
+                       
+		}
+
+		effect = {
+set_global_flag = ser_compromis_huitdouze_byz 
+prestige = -500
+piety = -200
+narrative_event = { id = RIRSEBYZ.111121 }
+e_hre = {
+holder_scope = {
+letter_event = { id = RIRSEBYZ.111122 }
+}
+}
+
+
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+}
+schism_uni_cat_lat = {
+                is_high_prio = yes
+		potential = {
+has_dlc = "Legacy of Rome"
+has_landed_title = k_papal_state
+NOT = { has_global_flag = schism_mended }
+
+
+
+		}
+		allow = {
+religion_authority = 0.9
+c_nikaea = {
+religion = ROOT 
+}
+c_nikomedeia = {
+religion = ROOT 
+}
+c_prusa = {
+religion = ROOT 
+}
+c_kyzikos = {
+religion = ROOT 
+}
+c_ephesos = {
+religion = ROOT 
+}
+c_smyrna = {
+religion = ROOT 
+}
+c_chios = {
+religion = ROOT 
+}
+c_abydos = {
+religion = ROOT 
+}
+c_naxos = {
+religion = ROOT 
+}
+c_euboia = {
+religion = ROOT 
+}
+c_lesbos = {
+religion = ROOT 
+}
+c_kaliopolis = {
+religion = ROOT 
+}
+c_byzantion = {
+religion = ROOT 
+}
+c_thrake = {
+religion = ROOT 
+}
+c_adrianopolis = {
+religion = ROOT 
+}
+c_philippopolis = {
+religion = ROOT 
+}
+c_chalkidike = {
+religion = ROOT 
+}
+c_thessalonike = {
+religion = ROOT 
+}
+c_thessalia = {
+religion = ROOT 
+}
+c_strymon = {
+religion = ROOT 
+}
+c_ochrid = {
+religion = ROOT 
+}
+c_dyrrachion = {
+religion = ROOT 
+}
+c_epeiros = {
+religion = ROOT 
+}
+c_arta = {
+religion = ROOT 
+}
+c_demetrias = {
+religion = ROOT 
+}
+c_hellas = {
+religion = ROOT 
+}
+c_atheniai = {
+religion = ROOT 
+}
+c_cephalonia = {
+religion = ROOT 
+}
+c_achaia = {
+religion = ROOT 
+}
+c_korinthos = {
+religion = ROOT 
+}
+c_methone = {
+religion = ROOT 
+}
+OR = {                     
+e_byzantium = {
+				has_holder = no
+			} 
+e_latin_empire = {
+				has_holder = yes
+			} 
+
+}                      
+		}
+		effect = {
+set_global_flag = schism_mended
+prestige = 5000
+narrative_event = { id = RIRSEBYZ.111130 }
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+schism_uni_cat_byz = {
+                is_high_prio = yes
+		potential = {
+has_dlc = "Legacy of Rome"
+has_landed_title = k_papal_state
+NOT = { has_global_flag = schism_mended }
+
+
+
+		}
+		allow = {
+e_byzantium = {
+holder_scope = {
+religion = ROOT
+}
+}
+religion_authority = 0.7
+c_nikaea = {
+religion = ROOT 
+}
+c_nikomedeia = {
+religion = ROOT 
+}
+c_prusa = {
+religion = ROOT 
+}
+c_kyzikos = {
+religion = ROOT 
+}
+c_ephesos = {
+religion = ROOT 
+}
+c_smyrna = {
+religion = ROOT 
+}
+c_chios = {
+religion = ROOT 
+}
+c_abydos = {
+religion = ROOT 
+}
+c_naxos = {
+religion = ROOT 
+}
+c_euboia = {
+religion = ROOT 
+}
+c_lesbos = {
+religion = ROOT 
+}
+c_kaliopolis = {
+religion = ROOT 
+}
+c_byzantion = {
+religion = ROOT 
+}
+c_thrake = {
+religion = ROOT 
+}
+c_adrianopolis = {
+religion = ROOT 
+}
+c_philippopolis = {
+religion = ROOT 
+}
+c_chalkidike = {
+religion = ROOT 
+}
+c_thessalonike = {
+religion = ROOT 
+}
+c_thessalia = {
+religion = ROOT 
+}
+c_strymon = {
+religion = ROOT 
+}
+c_ochrid = {
+religion = ROOT 
+}
+c_dyrrachion = {
+religion = ROOT 
+}
+c_epeiros = {
+religion = ROOT 
+}
+c_arta = {
+religion = ROOT 
+}
+c_demetrias = {
+religion = ROOT 
+}
+c_hellas = {
+religion = ROOT 
+}
+c_atheniai = {
+religion = ROOT 
+}
+c_cephalonia = {
+religion = ROOT 
+}
+c_achaia = {
+religion = ROOT 
+}
+c_korinthos = {
+religion = ROOT 
+}
+c_methone = {
+religion = ROOT 
+}                    
+e_byzantium = {
+				has_holder = yes
+			} 
+e_latin_empire = {
+				has_holder = no
+			}                        
+		}
+		effect = {
+set_global_flag = schism_mended
+prestige = 5000
+narrative_event = { id = RIRSEBYZ.111132 }
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+byz_appel_aide = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+NOT = { has_character_flag = appel_byz }
+			has_landed_title = e_byzantium
+k_papal_state = {
+holder_scope = {
+religion_authority = 0.7
+}
+}
+e_byzantium = {
+holder_scope = {
+religion = orthodox
+NOT = { realm_size = 55 }
+NOT = { religion_authority = 0.5 }
+
+
+}
+}
+		}
+		allow = {
+			NOT = { trait = zealous }
+                     
+                       
+		}
+		effect = {
+set_character_flag = appel_byz
+                piety = -400	  
+                religion = catholic
+                wealth = 600
+			spawn_unit = {
+				province = 496 # Pest
+				owner = ROOT
+				match_character = ROOT
+				
+				attrition = 0.5
+			}
+			
+
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+}
+  
+moncat_appel_aide = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+independent = yes
+religion = catholic
+NOT = { religion_authority = 0.35 }
+b_roma = {
+holder_scope = {
+NOT = { religion_group = christian }
+}
+}
+e_byzantium = {
+holder_scope = {
+religion = orthodox
+religion_authority = 0.8
+
+
+}
+}
+}
+allow = {
+			NOT = { trait = zealous }
+                     
+                       
+		}
+effect = {
+
+                piety = -400	  
+                religion = orthodox
+           
+			
+
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+}
+
+loi_petit_pro = {
+                is_high_prio = yes
+		potential = {
+
+has_landed_title = e_byzantium
+e_byzantium = {
+has_law = centralization_4 
+}
+e_byzantium = {
+has_law = theme_byz
+}
+NOT = { has_global_flag = pe_pro_byz }
+
+
+		}
+		allow = {
+
+
+prestige = 9000
+stewardship = 30
+NOT = {
+trait = imbecile } 
+NOT = {
+trait = slow }                     
+                       
+		}
+		effect = {
+
+
+set_global_flag = pe_pro_byz
+narrative_event = { id = RIRSEBYZ.111143 }
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+pap_script_pro_pro = {
+                is_high_prio = yes
+		potential = {
+OR = {
+			has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+e_roman_empire = {
+				has_holder = no
+			}
+
+		}
+		allow = {
+NOT = {
+e_byzantium = {
+has_law = centralization_4 
+}
+}
+has_global_flag = pe_pro_byz
+          
+                       
+		}
+		effect = {
+
+
+e_byzantium = {
+holder_scope = {
+narrative_event = { id = RIRSEBYZ.111144 }
+}
+}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+}  

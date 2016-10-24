@@ -17,7 +17,8 @@ b_sijilmasa = castle
 
 # Misc
 culture = maghreb_arabic
-religion = kharijite
+religion = khadjirite
 
 # History
-947.1.1 = { religion = sunni }
+
+947.1.1 = { religion = khadjirite }

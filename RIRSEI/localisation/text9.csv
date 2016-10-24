@@ -1,30 +1,30 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-d_connacht_adj;Connachtian;Connachtiane;Connachter;;Connachtiano;;;;;;;;;x
-d_leinster_adj;Leinsterian;Leinsterienne;Leinsterer;;Leinsteriano;;;;;;;;;x 
-d_munster_adj;Munsterian;Munsteroise;Münsteraner;;Munsteriano;;;;;;;;;x
-d_ulster_adj;Ulsterian;ulsterien;Ulsterer;;Ulsterano;;;;;;;;;x
-d_argyll_adj;Argyllian;Argyllienne;Argyller;;Argylliano;;;;;;;;;x
-d_lothian_adj;Lothian;Lothienne;Lothianer;;Lothiano;;;;;;;;;x
-d_galloway_adj;Gallowayan;Gallowayane;Gallowayer;;Gallowayana;;;;;;;;;x
-d_northumberland_adj;Northumbrian;Northumbrienne;Northumberlandischer;;Northumberlandés;;;;;;;;;x
-d_nikaea_adj;Nikaean;Nicéenne;Nikäer;;Niceno;;;;;;;;;x
-d_gelre_adj;Gelrian;Gueldrienne;Gelrischer;;Gelrianés;;;;;;;;;x
-d_ryazan_adj;Ryazanian;Riazanaise;Ryasanischer;;Ryazanés;;;;;;;;;x
-d_bulgar_adj;Bulgarian;Bulgare;Bulgarischer;;Búlgaro;;;;;;;;;x
-d_mazandaran_adj;Mazandarian;Mazandarani;Masandarischer;;Mazandaraní;;;;;;;;;x
-d_moray_adj;Moray;Morayienne;Morayer;;Morayana;;;;;;;;;x
-d_meath_adj;Meathian;Meathienne;Meathischer;;Meathiano;;;;;;;;;x
-d_deheubarth_adj;Deheubarthian;Deheubarthienne;Deheubarther;;Deheubarthiano;;;;;;;;;x
-d_brunswick_adj;Brunswickian;Brunswickienne;Brunswicker;;Brunswickiano;;;;;;;;;x
-d_dauphine_adj;Dauphinian;Dauphinoise;Dauphiner;;Dauphiniano;;;;;;;;;x
-#d_aquitaine_adj;Aquitainian;Aquitaine;Aquitainer;;Aquitainiano;;;;;;;;;x
-d_valois_adj;Valoisaine;Valoisienne;Valoisainer;;Valoisaino;;;;;;;;;x
-d_constantine_adj;Constantinian;Constantinienne;Constantiner;;Constantiniano;;;;;;;;;x
-d_abbasid_adj;Abbasid;Abbasside;Abbasidischer;;Abbasido;;;;;;;;;x
-d_balearic_adj;Balearic;Baléare;Balearischer;;Balearo;;;;;;;;;x
-d_bergen_adj;Bergener;Bergenienne;Bergener;;Bergeniano;;;;;;;;;x
-d_bordeaux_adj;Bordeauxian;Bordelaise;Bordeauischer;;Bordeauxiano;;;;;;;;;x
-d_gilan_adj;Gilani;Gilani;;;Gilano;;;;;;;;;x
+d_connacht_adj;Connachtian;connachtiane;Connachter;;Connachtiano;;;;;;;;;x
+d_leinster_adj;Leinsterian;leinstérienne;Leinsterer;;Leinsteriano;;;;;;;;;x 
+d_munster_adj;Munsterian;munstéroise;Münsteraner;;Munsteriano;;;;;;;;;x
+d_ulster_adj;Ulsterian;ulstérienne;Ulsterer;;Ulsterano;;;;;;;;;x
+d_argyll_adj;Argyllian;argyllienne;Argyller;;Argylliano;;;;;;;;;x
+d_lothian_adj;Lothian;lothienne;Lothianer;;Lothiano;;;;;;;;;x
+d_galloway_adj;Gallowayan;gallowayane;Gallowayer;;Gallowayana;;;;;;;;;x
+d_northumberland_adj;Northumbrian;northumbrienne;Northumberlandischer;;Northumberlandés;;;;;;;;;x
+d_nikaea_adj;Nikaean;nicéenne;Nikäer;;Niceno;;;;;;;;;x
+d_gelre_adj;Gelrian;gueldrienne;Gelrischer;;Gelrianés;;;;;;;;;x
+d_ryazan_adj;Ryazanian;riazanaise;Ryasanischer;;Ryazanés;;;;;;;;;x
+d_bulgar_adj;Bulgarian;bulgare;Bulgarischer;;Búlgaro;;;;;;;;;x
+d_mazandaran_adj;Mazandarian;mazandarani;Masandarischer;;Mazandaraní;;;;;;;;;x
+d_moray_adj;Moray;morayienne;Morayer;;Morayana;;;;;;;;;x
+d_meath_adj;Meathian;meathienne;Meathischer;;Meathiano;;;;;;;;;x
+d_deheubarth_adj;Deheubarthian;deheubarthienne;Deheubarther;;Deheubarthiano;;;;;;;;;x
+d_brunswick_adj;Brunswickian;brunswickienne;Brunswicker;;Brunswickiano;;;;;;;;;x
+d_dauphine_adj;Dauphinian;dauphinoise;Dauphiner;;Dauphiniano;;;;;;;;;x
+#d_aquitaine_adj;Aquitainian;aquitaine;Aquitainer;;Aquitainiano;;;;;;;;;x
+d_valois_adj;Valoisaine;valoisienne;Valoisainer;;Valoisaino;;;;;;;;;x
+d_constantine_adj;Constantinian;constantinienne;Constantiner;;Constantiniano;;;;;;;;;x
+d_abbasid_adj;Abbasid;abbasside;Abbasidischer;;Abbasido;;;;;;;;;x
+d_balearic_adj;Balearic;baléare;Balearischer;;Balearo;;;;;;;;;x
+d_bergen_adj;Bergener;bergenienne;Bergener;;Bergeniano;;;;;;;;;x
+d_bordeaux_adj;Bordeauxian;bordelaise;Bordeauischer;;Bordeauxiano;;;;;;;;;x
+d_gilan_adj;Gilani;gilaniane;;;Gilano;;;;;;;;;x
 FE_CREATE_GAME;Create Game;Créer une partie;Spiel erstellen;;Crear la Partida;;;;;;;;;x
 HOST_DESC;Host the Game so others can join\nYou will not be able to change the starting date or savegame after you have hosted;Héberger une partie afin que d'autres joueurs puissent la rejoindre.\nVous ne pourrez plus changer de date de départ ou de sauvegarde une fois la partie hébergée.;Spiel hosten admit andere Spieler beitreten können\nNach dem Hosten sind Sie nicht mehr in der Lage das Anfangsdatum zu ändern oder ein Savegame zu laden;;Se anfitriión de la partida para que otros se puedan unir\nNo podrás cambiar la fecha de inicio o una partida guardada después de iniciar;;;;;;;;;x
 DEATH_BY_MURDER_NO_KILLER;was murdered;fut assassiné;wurde ermordet;;fue asesinado;;;;;;;;;x
@@ -42,7 +42,7 @@ EVTDESC7500;My [Root.GetTitle], many of your faithful subjects, myself included,
 EVTOPTA7500;A commendable initiative.;Une initiative louable.;Eine vorbildliche Initiative.;;Una iniciativa encomiable.;;;;;;;;;x
 EVTOPTB7500;I will have no part in this scheme.;Je ne prendrais pas part à cette manigance.;Ich werde an dieser Intrige nicht teilhaben.;;No participaré en esta estratagema;;;;;;;;;x
 EVTTOOLTIP7500;[Root.TopLiege.GetTitledFirstName] receives a letter.;[Root.TopLiege.GetTitledFirstName] reçoit une missive.;[Root.TopLiege.GetTitledFirstName] bekommt einen Brief.;;[Root.TopLiege.GetTitledFirstName] recibe una carta.;;;;;;;;;x
-EVTDESC7501;We must confess to sharing in your concerns regarding the rising affluence of [Root.PlotTarget.GetTitledName]. For the good of the realm, we shall contact [Root.PlotTarget.GetHerHim] forthwith and seek the compromise you suggested.\n\nSigned,\n[From.GetTitledName];Il nous faut admettre que nous partageons vos préoccupations concernant la croissante opulence du [Root.PlotTarget.GetTitledName]. Dans l’intérêt du pays, nous [Root.PlotTarget.GetHerHim] contacterons sans attendre afin de parvenir au compromis que vous suggériez.\n\nSigné,\n[From.GetTitledName];Wir müssen zugeben, dass wir Eure Bedenken hinsichtlich der wachsenden Macht von [Root.PlotTarget.GetTitledName] teilen. Für das Wohl des Reiches warden wir [Root.PlotTarget.GetHerHim] kontaktieren und him den Kompromiss den Ihr vorschlugt unterbreiten.\n\nGezeichnet,\n[From.GetTitledName];;Debemos confesar que compartimos tu preocupación el aumento de la influencia de [Root.PlotTarget.GetTitledName]. Por el bien del reino, debemos contactar [Root.PlotTarget.GetHerHim] inmediatamente y alcanzar el compromiso que has sugerido.\n\nFirmado, \n[From.GetTitledName];;;;;;;;;x
+EVTDESC7501;We must confess to sharing in your concerns regarding the rising affluence of [Root.PlotTarget.GetTitledName]. For the good of the realm, we shall contact [Root.PlotTarget.GetHerHim] forthwith and seek the compromise you suggested.\n\nSigned,\n[From.GetTitledName];Il nous faut admettre que nous partageons vos préoccupations concernant l'insolente opulence du [Root.PlotTarget.GetTitledName]. Dans l’intérêt du pays, nous [Root.PlotTarget.GetHerHim] contacterons sans attendre afin de parvenir au compromis que vous suggériez.\n\nSigné,\n[From.GetTitledName];Wir müssen zugeben, dass wir Eure Bedenken hinsichtlich der wachsenden Macht von [Root.PlotTarget.GetTitledName] teilen. Für das Wohl des Reiches warden wir [Root.PlotTarget.GetHerHim] kontaktieren und him den Kompromiss den Ihr vorschlugt unterbreiten.\n\nGezeichnet,\n[From.GetTitledName];;Debemos confesar que compartimos tu preocupación el aumento de la influencia de [Root.PlotTarget.GetTitledName]. Por el bien del reino, debemos contactar [Root.PlotTarget.GetHerHim] inmediatamente y alcanzar el compromiso que has sugerido.\n\nFirmado, \n[From.GetTitledName];;;;;;;;;x
 EVTOPTA7501;Excellent!;Excellent !;Großartig!;;¡Excelente!;;;;;;;;;x
 EVTTOOLTIP7501;Receives your positive reply.;Reçoit votre réponse positive.;Erhält Ihre positive Antwort..;;Recibe tu respuesta positiva.;;;;;;;;;x
 EVTDESC7502;Don't be a fool, [Root.GetFirstName]! I will not see this realm torn asunder by intrigue and connivery. Abandon this scheme now, or on my oath you'll come to regret it!\n\nSigned,\n[From.GetTitledName];Ne soyez pas idiot, [Root.GetFirstName] ! Moi vivant, vos sournoises intrigues ne vous permettront pas de démembrer ce pays. Abandonnez vos manigances maintenant ou, par Dieu, vous le regretterez !\n\nSigné,\n[From.GetTitledName];Seid kein Narr, [Root.GetFirstName]! Ich werde nicht zusehen wie dieses Reich dutch Intrigen und derlei auseinander gerissen wird. Brecht diese Intrige ab oder ich schwöre, Ihr werdet es bereuhen!\n\nGezeichnet,\n[From.GetTitledName];;¡No seas estupido, [Root.GetFirstName]! No permitiré que este reino se parta en dos por culpa de las intrigas y contubernios. ¡Abandona estas pretensiones ahora mismo, o lo lamentaras!\n\nFirmado,\n[From.GetTitledName];;;;;;;;;x
@@ -50,7 +50,7 @@ EVTOPTA7502;I see.;Je vois.;Aha.;;Ya veo;;;;;;;;;x
 EVTTOOLTIP7502;Receives your negative reply.;Reçoit votre réponse négative.;Erhält Ihre negative Antwort.;;Recibe tu respuesta negativa;;;;;;;;;x
 EVTDESC7504;My dear [Root.GetTitle], we hope this letter finds you in good health. We have been urged by certain concerned parties to take steps in restoring the precarious balance of power in the realm, and we think it best if you voluntarily abdicate the [From.PlotTargetTitle] to one of your vassals. We are certain you will agree.\n\nSigned,\n[From.Liege.GetTitledName];Mon cher [Root.GetTitle], nous espérons que cette missive vous trouvera en bonne santé. Certaines factions nous pressent d’agir afin de restaurer l’équilibre précaire des forces du pays. Nous pensons qu’il serait mieux que vous abdiquiez volontairement le titre de votre [From.PlotTargetTitle] au profit de l’un de vos vassaux. Nous vous savons compréhensif.\n\nSigné,\n[From.Liege.GetTitledName];Mein [Root.GetTitle], wir hoffen dieser Brief erreicht Euch bei gutter Gesundheit. Wir wurden von gewissen besorgten Parteien dazu genötigt Schritte in Richtung einer besseren Machtbalance im Reich zu gehen und sind der Ansicht, dass es am Besten wäre, wenn Ihr freiwillig [From.PlotTargetTitle] an einen surer Vassallen abtreten würdet. Wir sind uns sicher, Ihr werdet das ähnlich sehen.\n\nGezeichnet,\n[From.Liege.GetTitledName];;Mi querido [Root.GetTitle], esperamos que goces de buena salud al recibir esta carta. Se nos ha urgido por parte de un grupo interesado a resturar la precaria estabilidad del reino, y creemos que la mejor forma es que abdiques como [From.PlotTargetTitle] en uno de tus vasallos. Estamos seguros de que aceptarás.\n\nFirmado,\n[From.Liege.GetTitledName];;;;;;;;;x
 EVTOPTA7504;Very well.;Très bien.;Nun gut.;;Muy bien;;;;;;;;;x
-EVTOPTB7504;Has he gone insane?;Est-il devenu fou ?;Ist er verrückt geworden?;;¿Te has vuelto loco?;;;;;;;;;x
+EVTOPTB7504;Has he gone insane ?;Est-il devenu fou ?;Ist er verrückt geworden ?;;¿Te has vuelto loco ?;;;;;;;;;x
 EVTTOOLTIP7504;[Root.PlotTarget.GetTitledName] receives a thinly veiled ultimatum from the [Root.Liege.GetTitle].;[Root.PlotTarget.GetTitledName] reçoit en guise d'ultimatum les menaces à peine voilées de [Root.Liege.GetTitle].;[Root.PlotTarget.GetTitledName] erhält ein Ultimatum vom [Root.Liege.GetTitle].;;[Root.PlotTarget.GetTitledName] recibe un velado ultimatum por parte de [Root.Liege.GetTitle].;;;;;;;;;x
 EVTDESC7505;You have upset the delicate balance of power in the realm, [From.PlotTarget.GetTitledFirstName]. Relinquish control of the [From.PlotTargetTitle.GetFullName] to one of your vassals for the good of all, lest my confederates and I accomplish the same through force of arms.\n\nSigned,\n[From.GetTitledName];Vous avez ébranlé le délicat équilibre des forces du pays, [From.PlotTarget.GetTitledFirstName]. Abandonnez le contrôle du [From.PlotTargetTitle.GetFullName] à l’un de vos vassaux pour le bien de tous, ou nous vous l’imposerons, nos alliés et nous-mêmes, par la force des armes.\n\nSigné,\n[From.GetTitledName];Ihr habt die Machtbalance im Reich durcheinandergebracht, [From.PlotTarget.GetTitledFirstName]. Gebt die Kontrolle über [From.PlotTargetTitle.GetFullName] an einen Eurer Vasallen ab oder meine Unterstützer und ich werden Euch durch Waffengewalt dazu zwingen.\n\nGezeichnet,\n[From.GetTitledName];;Has puesto en peligro la delicada estabilidad del reino, [From.PlotTarget.GetTitledFirstName]. Entrega el poder en [From.PlotTargetTitle.GetFullName] a uno de tus vasallos en pro del bien común, no nos obligues a mi y a mis colegas a imponertelo por la vía de las armas.\n\nFirmado,\n[From.GetTitledName];;;;;;;;;x
 EVTOPTA7505;I have little choice.;Je n’ai pas vraiment le choix.;Ich habe kaum eine Wahl!;;No tengo otra opción;;;;;;;;;x
@@ -92,6 +92,6 @@ THREAT_LOW_LEVIES;Depleted Levies;Levées féodales insuffisantes;keine Streitkräf
 THREAT_OTHER_INDEP_WARS;Current Independence Revolts;Révoltes indépendantistes en cours;Aktuell gibt es Unabhängigkeitsrevolten;;Revueltas independentistas actuales;;;;;;;;;x
 force_converting;Force Conversion;Conversion forcée;Erzwungene Bekehrung;;Conversión Forzosa;;;;;;;;;x
 EVTTOOLTIP3336;cannot be allowed to continue like this! I must tell [This.GetTitledFirstName] how irresponsible [This.GetHerHis] behavior is!;ne peut pas permettre de continuer ainsi ! Je dois dire à [This.GetTitledFirstName] à quel point son comportement est irresponsable !;dare nicht so weitermachen! Ich muss [This.GetTitledFirstName] sagen wie unverantwortlich [This.GetHerHis] Verhalten ist!;;¡No es aceptable que esto siga así! ¡Debo decirle a [This.GetTitledFirstName] lo irresponsabe de su conducta!;;;;;;;;;x
-SongsOfAlbionDLC;Songs of Albion;Chansons d'Albion;Lieder von Albion;;Canciones de Albion;;;;;;;;;x
-SongsOfFaithDLC;Songs of Faith;Chansons de la Foi;Lieder des Glaubens;;Canciones de la Fe;;;;;;;;;x
-SongsOfTheHolyLandDLC;Songs of the Holy Land;Chansons de la Terre Sainte;Lieder des Heiligen Landes;;Canciones de la Tierra Santa;;;;;;;;;x
+SongsOfAlbionDLC;Songs of Albion;Chants d'Albion;Lieder von Albion;;Canciones de Albion;;;;;;;;;x
+SongsOfFaithDLC;Songs of Faith;Chants de la Foi;Lieder des Glaubens;;Canciones de la Fe;;;;;;;;;x
+SongsOfTheHolyLandDLC;Songs of the Holy Land;Chants de la Terre Sainte;Lieder des Heiligen Landes;;Canciones de la Tierra Santa;;;;;;;;;x

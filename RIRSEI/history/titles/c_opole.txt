@@ -95,6 +95,11 @@
 {
 	holder=471722
 }
+1295.6.27={
+	
+
+liege = "k_polandball"
+}
 1313.5.14=
 {
 	holder=471720

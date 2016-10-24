@@ -15,7 +15,7 @@ b_guarda = temple
 #b_almeida = castle
 
 # Misc
-culture = suebi
+culture = ibero
 religion = catholic
 
 # History

@@ -11,9 +11,11 @@ casus_belli = {
 867.1.1 = {
 	add_attacker = 163096
 	add_defender = 1700
+add_defender = 30228
 }
 
 871.2.1 = {
 	rem_attacker = 163096
 	rem_defender = 1700
+rem_defender = 30228
 }

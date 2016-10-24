@@ -1,0 +1,2 @@
+nick_augustus = {}
+nick_premiercour = {}

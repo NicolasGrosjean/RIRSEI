@@ -21,7 +21,6 @@ religion = tengri_pagan
 
 # History
 
-
 1227.1.1 = { religion = sunni } 
 
 1230.1.1 = { culture = mongol } 

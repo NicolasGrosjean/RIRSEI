@@ -6,7 +6,7 @@ title = c_chach
 # Settlements
 max_settlements = 4
 
-b_chach = castle
+b_chach = tribal
 
 #b_navekat = city
 #b_sayram = temple
@@ -17,11 +17,11 @@ b_chach = castle
 #b_turbat = city
 
 # Misc
-culture = sogdian
+culture = persian
 religion = manichean
 
 # History
-900.1.1 = { 
+800.1.1 = { 
 	culture = turkish 
 	religion = tengri_pagan
 }

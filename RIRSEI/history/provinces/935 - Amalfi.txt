@@ -37,7 +37,7 @@ religion = orthodox
 }
 
 898.1.1 = {
-	culture=lombard
+	culture=italian
 	religion=catholic
 }
 

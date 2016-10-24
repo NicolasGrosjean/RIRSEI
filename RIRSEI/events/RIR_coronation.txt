@@ -1,0 +1,489 @@
+###################################
+#
+# Events for Coronation
+#
+# Id 2002000 - 2003000 is reserved
+#
+###################################
+
+# Written by Van Diemen
+
+# Coronation inform Emperor
+namespace = RIRSEI
+
+character_event = {
+	id = RIRSEI.2002000
+	desc = "EVTDESC_RIRSEI_2002000"
+	picture = "GFX_evt_pope"
+	#border = "GFX_event_normal_frame_religion"
+	
+	is_triggered_only = yes # decision coronation
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002000" # I will ask the pope
+		hidden_tooltip = {
+			rightful_religious_head_scope = {
+				letter_event = { id = RIRSEI.2002005 }
+			}
+		}
+	}
+}
+
+# Asking the pope for coronation
+letter_event = {
+	id = RIRSEI.2002005
+	desc = "EVTDESC_RIRSEI_2002005"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002005"	# Accept
+		wealth = 100
+		FROM = {
+			letter_event = { id = RIRSEI.2002010 }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = zealous }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = crusader }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 400 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 600 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 800 }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { piety = 1000 }
+			}
+modifier = {
+				factor = 4.0
+				FROM = { dynasty = 25061 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA_RIRSEI_2002005"	# Reject
+		FROM = {
+			letter_event = { id = RIRSEI.2002015 }
+		}
+		ROOT = {
+			opinion = {
+				modifier = coronation_rejected # should maybe be a new opinion called "Crowned by Pope"
+				who = FROM
+				years = 2
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 2.0
+				FROM = { not = { piety = 400 } }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 2.0
+				FROM = { trait = cynical }
+			}
+		}
+	}
+}
+
+# Inform Emperor Pope accepts coronation + send out the invites to realm lords
+letter_event = {
+	id = RIRSEI.2002010
+	desc = "EVTDESC_RIRSEI_2002010"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002010"	# Excellent, now invite all the lords
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					age = 16
+					#or = {
+					#	is_feudal = yes
+					#	is_theocracy = yes
+					#}
+					or = {
+						tier = count
+						tier = duke
+						tier = king
+					}
+					not = { trait = excommunicated }
+					religion_group = christian
+					NOT = { is_heretic = yes }
+					NOT = { trait = incapable }
+					prisoner = no
+					NOT = { is_female = yes	}
+				}
+				letter_event = { id = RIRSEI.2002020 } # Invitation to coronation
+			}
+		character_event = { id = RIRSEI.2002050 days = 60 } # Coronation by pope
+		}
+	}
+}
+
+# Inform Emperor pope rejects coronation
+letter_event = {
+	id = RIRSEI.2002015
+	desc = "EVTDESC_RIRSEI_2002015"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002015"	# Maybe we should try again later
+		prestige = -50
+		ROOT = {
+			opinion = {
+				modifier = coronation_rejected # should maybe be a new opinion called "Crowned by Pope"
+				who = FROM
+				years = 2
+			}
+		}
+		clr_character_flag = wants_coronation
+	}
+}
+
+# Coronation invites to realm lords
+letter_event = {
+	id = RIRSEI.2002020
+	desc = "EVTDESC_RIRSEI_2002020"
+	#picture = GFX_evt_heretic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002020"	# I will attend the ceremony
+		set_character_flag = attend_coronation
+		ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 40
+					}
+				}
+			}
+			modifier = {
+				factor = 1.6
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 60
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB_RIRSEI_2002020"	# I have more important things to do
+		ROOT = {
+			opinion = {
+				modifier = insulted
+				who = FROM
+				months = 60
+			}
+		}
+		FROM = {
+			letter_event = { id = RIRSEI.2002025 }
+		}
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder
+					}
+				}
+			}
+			modifier = {
+				factor = 2.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_spouse
+					}
+				}
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_child
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = attempted_murder_of_vassal
+					}
+				}
+			}			
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -20
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -40
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -60
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -80
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					not = {
+						opinion = {
+							who = FROM
+							value = -99
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform Emperor of not attending ceremony
+letter_event = {
+	id = RIRSEI.2002025
+	desc = "EVTDESC_RIRSEI_2002025"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002025"	# I have no words for such dishonour
+		ROOT = {
+			opinion = {
+				modifier = insulted
+				who = FROM
+				months = 60
+			}
+		}
+	}
+}
+
+# Emperor crowned by pope
+character_event = {
+	id = RIRSEI.2002050
+	title = "EVTNAME_RIRSEI_2002050"
+	desc = "EVTDESC_RIRSEI_2002050"
+	picture = "GFX_evt_empdeux"
+	#border = "GFX_event_narrative_frame_religion"
+	sound = church_bells
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002050"	# This is the happiest day of my life
+		add_trait = crowned_by_pope
+                remove_trait = roi_des_romains
+remove_trait = roi_oint
+		prestige = 500
+		hidden_tooltip = {
+			rightful_religious_head_scope = {
+				reverse_opinion = {
+					modifier = opinion_grateful
+					who = ROOT
+					months = 60
+				}
+			}
+			any_vassal = {
+				limit = {
+					has_character_flag = attend_coronation
+				}
+				character_event = { id = RIRSEI.2002055 }
+				opinion = {
+					modifier = opinion_attended_ceremony # should maybe be a new opinion called "Crowned by Pope"
+					who = ROOT
+					years = 5
+				}
+			}
+			any_vassal = {
+				limit = {
+					not = { has_character_flag = attend_coronation }
+				}
+				letter_event = { id = RIRSEI.2002060 }
+			}
+			clr_character_flag = wants_coronation
+			narrative_event = { id = RIRSEI.2002065 }
+		}
+	}
+}
+
+# Emperor crowned by pope - attended realm lord inform ceremony
+character_event = {
+	id = RIRSEI.2002055
+	desc = "EVTDESC_RIRSEI_2002055"
+	picture = "GFX_evt_empdeux"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002055"	# The coronation was beautiful
+		prestige = 20
+		clr_character_flag = attend_coronation
+	}
+}
+
+# Emperor crowned by pope - non-attended realm lord inform
+letter_event = {
+	id = RIRSEI.2002060
+	desc = "EVTDESC_RIRSEI_2002060"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002060"	# Ok
+	}
+}
+narrative_event = {
+	id = RIRSEI.2002065
+	title = "EVTNAME_RIRSEI_2002065"
+	desc = "EVTDESC_RIRSEI_2002065"
+	picture = "GFX_evt_empdeux"
+	border = "GFX_event_narrative_frame_religion"
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEI_2002060"	# This is the happiest day of my life
+	}
+}

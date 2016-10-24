@@ -2,6 +2,12 @@
 	liege="e_byzantium"
 	vice_royalty = yes
 }
+
+600.1.1 = {
+de_jure_liege = k_anatolia
+}
+
+
 752.1.1={
 	holder=145851
 }
@@ -57,9 +63,6 @@
 1060.1.1={
 	holder=20463
 }
-1081.4.1={
-	vice_royalty = no
-}
 1085.1.1={
 	holder = 70416
 }
@@ -83,8 +86,7 @@
 }
 1187.1.1=
 {
-	vice_royalty = yes
-	holder=215039
+holder=215039
 }
 1204.4.1=
 {
@@ -94,49 +96,49 @@
 }
 1222.2.1=
 {
-	holder=125719
+holder=125719
 }
 1235.1.1=
 {
-	holder=125717
+holder=125717
 }
 1238.1.1=
 {
-	holder=125720
+holder=125720
 }
 1263.3.1=
 {
-	holder=125721
+holder=125721
 }
 1267.3.4=
 {
-	holder=125723
+holder=125723
 }
 1280.6.1=
 {
-	holder=465805
+holder=465805
 }
 1284.1.1=
 {
-	holder=125722
+holder=125722
 }
 1285.1.1=
 {
-	holder=465805
+holder=465805
 }
 1297.8.16=
 {
-	holder=465810
+holder=465810
 }
 1330.5.3=
 {
-	holder=125725
+holder=125725
 }
 1332.1.8=
 {
-	holder=145074
+holder=145074
 }
 1332.9.22=
 {
-	holder=465800
+holder=465800
 }

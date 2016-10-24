@@ -8,7 +8,7 @@
 # Adopts Mu'tazila
 character_event = {
 	id = SoA.600
-	desc = EVTDESC_SoA_600
+	desc = EVTDESC_SoA_600
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
@@ -19,13 +19,14 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_600
 		add_trait = mutazilite
+                piety = -50
 		if = {
 			limit = {
 				primary_title = { higher_tier_than = COUNT }
 			}
-			economy_techpoints = 25
-			culture_techpoints = 25
-			military_techpoints = 25
+			economy_techpoints = 35
+			culture_techpoints = 35
+			military_techpoints = 35
 		}
 	}
 }
@@ -33,7 +34,7 @@ character_event = {
 # Adopts Ash'ari
 character_event = {
 	id = SoA.601
-	desc = EVTDESC_SoA_601
+	desc = EVTDESC_SoA_601
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
@@ -45,6 +46,14 @@ character_event = {
 		name = EVTOPTA_SoA_600
 		add_trait = ashari
 		piety = 100
+if = {
+			limit = {
+				primary_title = { higher_tier_than = COUNT }
+			}
+			economy_techpoints = -75
+			culture_techpoints = -75
+			military_techpoints = -75
+		}
 	}
 }
 
@@ -56,14 +65,6 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		NOR = {
-			liege = {
-				war = yes
-			}
-			trait = incapable
-			trait = in_hiding
-			prisoner = yes
-		}
 		trait = mutazilite
 		liege = { 
 			trait = ashari 
@@ -80,14 +81,18 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 640
+		months = 320
+	}
+	
+	option = {
+		name = OK
 	}
 }
 
 # Ash'ari liege has Mu'tazila vassal
 character_event = {
 	id = SoA.603
-	desc = EVTDESC_SoA_603
+	desc = EVTDESC_SoA_603
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
@@ -107,7 +112,7 @@ character_event = {
 # Mu'tazila vassal receives letter
 letter_event = {
 	id = SoA.604
-	desc = EVTDESC_SoA_604
+	desc = EVTDESC_SoA_604
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -153,7 +158,7 @@ letter_event = {
 # Mu'tazila vassal complies
 letter_event = {
 	id = SoA.605
-	desc = EVTDESC_SoA_605
+	desc = EVTDESC_SoA_605
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -172,7 +177,7 @@ letter_event = {
 # Mu'tazila vassal refuses
 letter_event = {
 	id = SoA.606
-	desc = EVTDESC_SoA_606
+	desc = EVTDESC_SoA_606
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -190,14 +195,6 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		NOR = {
-			liege = {
-				war = yes
-			}
-			trait = incapable
-			trait = in_hiding
-			prisoner = yes
-		}
 		trait = ashari
 		liege = { 
 			trait = mutazilite
@@ -214,14 +211,18 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 640
+		months = 320
+	}
+	
+	option = {
+		name = OK
 	}
 }
 
 # Mu'tazila liege has Ash'ari vassal
 character_event = {
 	id = SoA.611
-	desc = EVTDESC_SoA_611
+	desc = EVTDESC_SoA_611
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
@@ -241,7 +242,7 @@ character_event = {
 # Ash'ari vassal receives letter
 letter_event = {
 	id = SoA.612
-	desc = EVTDESC_SoA_612
+	desc = EVTDESC_SoA_612
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -287,7 +288,7 @@ letter_event = {
 # Ash'ari vassal complies
 letter_event = {
 	id = SoA.613
-	desc = EVTDESC_SoA_613
+	desc = EVTDESC_SoA_613
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -306,7 +307,7 @@ letter_event = {
 # Ash'ari vassal refuses
 letter_event = {
 	id = SoA.614
-	desc = EVTDESC_SoA_614
+	desc = EVTDESC_SoA_614
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -319,7 +320,7 @@ letter_event = {
 # Cynical Ash'ari considers Mu'tazila
 character_event = {
 	id = SoA.620
-	desc = EVTDESC_SoA_620
+	desc = EVTDESC_SoA_620
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
@@ -366,7 +367,7 @@ character_event = {
 # Zealous Mu'tazila considers Ash'ari
 character_event = {
 	id = SoA.621
-	desc = EVTDESC_SoA_621
+	desc = EVTDESC_SoA_621
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	

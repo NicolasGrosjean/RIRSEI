@@ -444,17 +444,18 @@ TECH_GROUP_ECONOMY = {
 TECH_GROUP_CULTURE = {
 	TECH_NOBLE_CUSTOMS = {
 		modifier = {
-			CASTLE_OPINION = 24
+			CASTLE_OPINION = 16
 		}
+
 	}
 	TECH_POPULAR_CUSTOMS = {
 		modifier = {
-			TOWN_OPINION = 24
+			TOWN_OPINION = 16
 		}
 	}
 	TECH_RELIGIOUS_CUSTOMS = {
 		modifier = {
-			CHURCH_OPINION = 24
+			CHURCH_OPINION = 16
 		}
 	}
 	TECH_MAJESTY = {
@@ -468,8 +469,7 @@ TECH_GROUP_CULTURE = {
 		3 = {}
 		4 = {}
 		5 = {
-			add_decision = imperial_administration
-			add_decision = ze_administration_laws_2
+			
 		}
 	}
 	TECH_CULTURE_FLEX = {
@@ -477,71 +477,41 @@ TECH_GROUP_CULTURE = {
 			CULTURE_FLEX = -0.5
 			RELIGION_FLEX = -0.5
 		}
-		1 = {}
-		2 = {}
-		3 = { add_decision = status_of_women_1 }
-		4 = { add_decision = status_of_women_2 }
-		5 = { add_decision = status_of_women_3 }
-		6 = { add_decision = status_of_women_4 }
-		7 = {}
-		8 = {}
 	}
 	TECH_LEGALISM = {
 		modifier = {
 		}
 		1 = {
-			add_decision = crown_authority_1
-			add_decision = centralization_1
-			add_decision = revoke_title_law_1
+			
 		}
 		2 = {
-			add_decision = crown_authority_2
-			add_decision = centralization_2
-			add_decision = revoke_title_law_2
+	
 		}
 		3 = {
-			add_decision = crown_authority_3
-			add_decision = centralization_3
-			add_decision = ze_administration_laws_1
-			add_decision = out_of_realm_inheritance_law_1
+		
 		}
 		4 = {
-			add_decision = vice_royalty_1
+	
 		}
 		5 = {
-			add_decision = crown_authority_4
-			add_decision = centralization_4
-			add_decision = tax_levy_law_feudal_1
-			add_decision = tax_levy_law_feudal_7
-			add_decision = tax_levy_law_iqta_1
-			add_decision = tax_levy_law_iqta_7
-			add_decision = tax_levy_law_republic_1
-			add_decision = tax_levy_law_republic_7
-			add_decision = tax_levy_law_theocracy_1
-			add_decision = tax_levy_law_theocracy_7
+
 		}
 		6 = {
 			add_decision = feudal_tax_3
 			add_decision = city_tax_3
 			add_decision = temple_tax_3
 			add_decision = iqta_tax_3
-			add_decision = tax_levy_law_feudal_0
-			add_decision = tax_levy_law_feudal_8
-			add_decision = tax_levy_law_iqta_0
-			add_decision = tax_levy_law_iqta_8
-			add_decision = tax_levy_law_republic_0
-			add_decision = tax_levy_law_republic_8
-			add_decision = tax_levy_law_theocracy_0
-			add_decision = tax_levy_law_theocracy_8
+
 		}
 		7 = {
 			add_decision = feudal_contract_3
 			add_decision = city_contract_3
 			add_decision = temple_contract_3
 			add_decision = iqta_contract_3
+
 		}
 		8 = {
-			add_decision = vice_royalty_2
+			
 		}
 	}
 }

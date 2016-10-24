@@ -16,7 +16,7 @@ b_trani = temple
 #b_lucano = castle
 
 # Misc
-culture = lombard
+culture = italian
 religion = catholic
 
 # History

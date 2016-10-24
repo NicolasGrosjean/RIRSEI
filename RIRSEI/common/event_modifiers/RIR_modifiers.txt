@@ -1,0 +1,49 @@
+byz_pro_aristos = {
+castle_levy_size = 0.3
+	city_levy_size = 0.3
+	temple_levy_size = 0.3
+city_tax_modifier = -0.35
+	castle_tax_modifier = -0.35
+	temple_tax_modifier = -0.35
+	icon = 13
+}
+
+byz_pro_dunatos = {
+               castle_levy_size = -0.3
+	city_levy_size = -0.3
+	temple_levy_size = -0.3
+city_tax_modifier = 0.3
+	castle_tax_modifier = 0.3
+	temple_tax_modifier = 0.3
+	icon = 6
+}
+byz_pro_autocrate = {
+                       castle_levy_size = 0.1
+	city_levy_size = 0.1
+	temple_levy_size = 0.1
+city_tax_modifier = 0.1
+	castle_tax_modifier = 0.1
+	temple_tax_modifier = 0.1
+	icon = 18
+}
+byz_pro_pro = {
+                       castle_levy_size = 0.2
+	city_levy_size = 0.2
+	temple_levy_size = 0.2
+city_tax_modifier = 0.2
+	castle_tax_modifier = 0.2
+	temple_tax_modifier = 0.2
+	icon = 18
+}
+
+culte_soufi = {
+	global_revolt_risk = -0.4	
+	icon = 8
+}
+avoue_st_sepu = {
+	church_opinion = 20
+	vassal_opinion = 10
+	monthly_character_prestige = 0.20	
+	monthly_character_piety = 1.50
+	icon = 17
+}

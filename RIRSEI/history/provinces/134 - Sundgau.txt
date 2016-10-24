@@ -16,10 +16,7 @@ b_kolmar = city
 #b_mulhouse = castle
 
 # Misc
-culture = old_frankish
+culture = german
 religion = catholic
 
-# History
-790.1.1 = {
-	culture = german
-}
+

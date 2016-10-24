@@ -14,7 +14,6 @@ b_fortingall = temple
 #b_rannoch = castle
 #b_strathardle = castle
 #b_struan = castle
-#b_anthrachs = castle
 
 # Misc
 culture = pictish

@@ -15,11 +15,11 @@ b_cotlliure = city
 #b_ceret = city
 
 #Misc
-culture = visigothic
+culture = gallo
 religion = catholic
 
 # History
 
-952.1.1 = { culture = catalan }
+790.1.1 = { culture = occitan }
 
 1109.1.1 = { trade_post = b_grimaldi }

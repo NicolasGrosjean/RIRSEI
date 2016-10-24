@@ -1,0 +1,279 @@
+de_jure_laws = {
+emp_aristos = {
+		group = emp_byz_factions
+		default = yes
+		potential = {
+holder_scope = { 
+has_landed_title = e_byzantium }
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+holder_scope = {
+NOT = { has_landed_title = e_roman_empire }
+}
+holder_scope = {
+NOT = { has_landed_title = e_latin_empire }
+}
+holder_scope = {
+religion_group = christian
+}
+}
+                        		
+		
+allow = {
+		always = no
+}
+		
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+revoke_law = emp_autocrate
+revoke_law = emp_dunatos
+military_techpoints = 50
+culture_techpoints = -100
+hidden_tooltip = {
+holder_scope = { 
+any_realm_province = {
+
+add_province_modifier = {
+name = byz_pro_aristos
+duration = -1			
+}
+remove_province_modifier = byz_pro_dunatos
+
+remove_province_modifier = byz_pro_autocrate
+
+	
+}
+}
+
+
+
+
+}
+}
+}
+emp_dunatos = {
+		group = emp_byz_factions
+		
+		potential = {
+holder_scope = { 
+has_landed_title = e_byzantium }
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+holder_scope = {
+NOT = { has_landed_title = e_roman_empire }
+}
+holder_scope = {
+NOT = { has_landed_title = e_latin_empire }
+}
+holder_scope = {
+religion_group = christian
+}
+}
+allow = {
+always = no
+}
+		
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+revoke_law = emp_autocrate
+revoke_law = emp_aristos
+culture_techpoints = 50
+military_techpoints = -100
+hidden_tooltip = {
+holder_scope = { 
+any_realm_province = {
+add_province_modifier = {
+			name = byz_pro_dunatos
+duration = -1
+			
+}
+remove_province_modifier = byz_pro_aristos
+
+
+remove_province_modifier = byz_pro_autocrate
+
+
+}
+}
+
+
+}
+}
+}
+emp_autocrate = {
+		group = emp_byz_factions
+		feudal_opinion = -30
+		potential = {
+holder_scope = { 
+has_landed_title = e_byzantium }
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+holder_scope = {
+NOT = { has_landed_title = e_roman_empire }
+}
+holder_scope = {
+NOT = { has_landed_title = e_latin_empire }
+}
+holder_scope = {
+religion_group = christian
+}
+}
+allow = {
+	always = no
+}
+		
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+
+revoke_law = emp_aristos
+revoke_law = emp_dunatos
+hidden_tooltip = {
+holder_scope = { 
+any_realm_province = {
+add_province_modifier = {
+name = byz_pro_autocrate
+duration = -1
+			
+}
+remove_province_modifier =  byz_pro_dunatos
+
+
+remove_province_modifier = byz_pro_aristos
+
+
+}
+}
+
+
+
+}
+}
+}
+theme_byz = {
+		group = adm_pro_them
+		feudal_opinion = -5
+default = yes
+		potential = {
+holder_scope = { 
+has_landed_title = e_byzantium }
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+holder_scope = {
+NOT = { has_landed_title = e_roman_empire }
+}
+holder_scope = {
+NOT = { has_landed_title = e_latin_empire }
+}
+holder_scope = {
+religion_group = christian
+}
+}
+allow = {
+	has_law = emp_autocrate
+has_law = centralization_4
+}
+		
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+set_allow_free_revokation = yes
+revoke_law = pronoia_byz
+add_law = vice_royalty_2
+		 
+e_byzantium = {
+holder_scope = {
+any_realm_lord = {
+set_character_flag = debut_theme
+}
+}
+}
+
+
+}
+}
+pronoia_byz = {
+		group = adm_pro_them
+		feudal_opinion = 10
+
+		potential = {
+holder_scope = { 
+has_landed_title = e_byzantium }
+holder_scope = {
+NOT = { has_landed_title = e_hre }
+}
+holder_scope = {
+NOT = { has_landed_title = e_roman_empire }
+}
+holder_scope = {
+NOT = { has_landed_title = e_latin_empire }
+}
+holder_scope = {
+religion_group = christian
+}
+}
+allow = {
+	has_law = centralization_1
+has_law = centralization_0
+}
+		
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0.01
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+hidden_tooltip = {
+activate_title = { title = d_archontopouloi status = no }
+}
+set_allow_free_revokation = no
+set_global_flag = pronoia_dispo
+revoke_law = theme_byz
+revoke_law = vice_royalty_2
+
+}
+}
+
+}
+
+
+
+	

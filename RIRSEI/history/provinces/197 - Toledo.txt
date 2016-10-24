@@ -15,7 +15,7 @@ b_talavera = temple
 b_illescas = castle
 
 # Misc
-culture = visigothic
+culture = ibero
 religion = catholic
 
 # History

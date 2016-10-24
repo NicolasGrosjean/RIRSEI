@@ -1,0 +1,28 @@
+europe_road = {
+	wealth = 40			# Total base wealth of silk route
+
+	modifier = {			# How the trade route modifies the provinces it passes
+		castle_tax_modifier = 0.10
+		city_tax_modifier = 0.10
+		temple_tax_modifier = 0.10
+		trade_route_value = 1
+	}
+
+	start = {				# Start provinces of trade route
+		356 # Venise
+		233 # Genes
+	}
+
+	# Genes-Flandres
+	path = {
+233 232 237 227 240 136 130 114 113 94 76 78	
+	}
+	
+	# Venise-Flandres
+path = {
+356 357 319 354 320 235 246 245 250 125 122 123 119 89 91 92 93 78
+	}
+
+
+	
+}

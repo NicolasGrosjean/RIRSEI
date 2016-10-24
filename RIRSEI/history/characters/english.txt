@@ -886,6 +886,9 @@
 		add_claim = c_avranches
 		add_claim = c_arques
 	}
+1213.05.16={
+trait ="Vs_sancti_petri"
+	}
 	1216.10.18 = {
 		death="1216.10.18"
 	}
@@ -3740,6 +3743,9 @@
 	1243.11.23 = {
 		add_spouse=71648 #Sanca de Barcelona
 	}
+1254.5.21 = {
+add_claim = e_hre
+}
 	1269.6.16 = {
 		add_spouse=161696 #Beatrix Flamens
 	}
@@ -5055,10 +5061,10 @@
 	trait="misguided_warrior"
 	father=454111 #Edmund earl of Carrick
 	mother=454112 #born 1265
-	1305.1.6 = {
-		birth=yes
+	1284.1.1 = {
+		birth="1284.1.1"
 	}
-	1327.1.1 = {
+	1300.1.1 = {
 		add_spouse=454564
 	}
 	1338.7.1 = {
@@ -5121,8 +5127,8 @@
 	trait="tough_soldier"
 	father=454110
 	mother=454564
-	1331.1.1 = {
-		birth=yes
+	1305.1.1 = {
+		birth="1305.1.1"
 	}
 	1382.7.1 = {
 		death="1382.7.1"
@@ -5142,8 +5148,8 @@
 	trait="thrifty_clerk"
 	father=454110
 	mother=454564
-	1335.1.1 = {
-		birth=yes
+	1312.1.1 = {
+		birth="1312.1.1"
 	}
 	1382.7.1 = {
 		death="1382.7.1"
@@ -5479,8 +5485,6 @@
 454500 = {
 	name="Edward" # Edward III
 	dynasty=106
-	dna = cdllaaijgan
-	properties = ad0bcc000000
 	martial=7
 	diplomacy=6
 	intrigue=6
@@ -5828,6 +5832,9 @@
 	1271.1.1 = {
 		trait="crusader"
 	}
+1272.11.16={
+	trait = Vs_sancti_petri
+}
 	1299.1.1 = {
 		add_spouse=455527
 	}
@@ -6213,7 +6220,7 @@
 	1259.1.1 = {
 		birth="1259.1.1"
 	}
-	1302.1.1 = {
+	1276.1.1 = {
 		add_spouse=454516
 	}
 	1321.11.6 = {
@@ -6277,8 +6284,8 @@
 	trait="naive_appeaser"
 	father=454561
 	mother=454516
-	1304.10.17 = {
-		birth=yes
+	1287.1.1 = {
+		birth="1287.1.1"
 	}
 	1354.7.1 = {
 		death="1354.7.1"

@@ -1,0 +1,774 @@
+namespace = RIRSEBYZ
+narrative_event = {
+	id = RIRSEBYZ.111111 
+	title = EVTNAME_RIRSEBYZ_111111
+	desc = EVTDESC_RIRSEBYZ_111111
+	
+	picture = GFX_evt_byz_auto
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111111
+	
+		}
+	}	
+# L'empereur refuse
+letter_event = {
+        id = RIRSEBYZ.111114
+	title = EVTNAME_RIRSEBYZ_111114
+	desc = EVTDESC_RIRSEBYZ_111114
+	
+	picture = GFX_evt_polo
+is_triggered_only = yes
+
+option = {
+		name = "EVTOPTA_RIRSEBYZ_111114"
+               
+                prestige = -200
+         ROOT = {
+	        opinion = {
+				modifier = byz_refus_prono
+				who = FROM
+                                years = 10
+				
+}
+}
+}
+}
+# L'empereur accepte les prono
+letter_event = {
+	id = RIRSEBYZ.111113 
+	title = EVTNAME_RIRSEBYZ_111113
+	desc = EVTDESC_RIRSEBYZ_111113
+	
+	picture = GFX_evt_byz_auto
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111113
+
+	
+		}
+	}
+# L'Empereur doit faire son choix
+letter_event = {
+        id = RIRSEBYZ.111112
+	title = EVTNAME_RIRSEBYZ_111112
+	desc = EVTDESC_RIRSEBYZ_111112
+	
+	picture = GFX_evt_holy_emperor
+is_triggered_only = yes
+
+option = {
+		name = "EVTOPTA_RIRSEBYZ_111112"
+e_byzantium = {
+add_law = pronoia_byz
+}
+                FROM = {
+			letter_event = { id = RIRSEBYZ.111113 }
+		}
+		ai_chance = {
+			factor = 0.4
+modifier = {
+				factor = 2.0
+				FROM = { trait = content }
+			}
+		
+}
+}
+option = {
+		name = "EVTOPTB_RIRSEBYZ_111112"
+                FROM = {
+			letter_event = { id = RIRSEBYZ.111114}
+		}
+	
+		ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 2.0
+				FROM = { trait = ambitious }
+			}
+			
+		}
+	}
+
+}
+narrative_event = {    
+	id = RIRSEBYZ.111115
+desc = "EVTDESC_RIRSEBYZ_111115"
+	picture = "GFX_evt_theme_image"
+
+	trigger = {	
+has_landed_title = e_byzantium
+e_byzantium = {
+has_law = theme_byz
+}
+NOT = { has_global_flag = theme_script_pret }
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEBYZ_111115"  
+set_global_flag = theme_script_pret
+		 
+ROOT = {
+any_realm_lord = {
+set_character_flag = debut_theme
+}
+}
+}
+}
+
+ 
+
+narrative_event = {
+	id = RIRSEBYZ.111119 
+	title = EVTNAME_RIRSEBYZ_111119
+	desc = EVTDESC_RIRSEBYZ_111119
+	
+	picture = GFX_evt_compromis_emp
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111119
+
+	
+		}
+	}
+narrative_event = {
+	id = RIRSEBYZ.111120
+	title = EVTNAME_RIRSEBYZ_111120
+	desc = EVTDESC_RIRSEBYZ_111120
+	
+	picture = GFX_evt_compromis_emp
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111120
+ ROOT = {
+	        opinion = {
+				modifier = emp_compro_pas
+				who = FROM
+                                years = 30
+				
+}
+}
+	
+		}
+	}
+narrative_event = {
+	id = RIRSEBYZ.111121
+	title = EVTNAME_RIRSEBYZ_111121
+	desc = EVTDESC_RIRSEBYZ_111121
+	
+	picture = GFX_evt_compromis_emp
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111121
+
+	
+		}
+	}
+narrative_event = {
+	id = RIRSEBYZ.111122
+	title = EVTNAME_RIRSEBYZ_111122
+	desc = EVTDESC_RIRSEBYZ_111122
+	
+	picture = GFX_evt_compromis_emp
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111122
+ ROOT = {
+	        opinion = {
+				modifier = emp_compro_pas
+				who = FROM
+                                years = 30
+				
+}
+}
+	
+		}
+	}
+### The Great Schism Mended
+
+# The Schism Mended
+narrative_event = {
+	id = RIRSEBYZ.111130
+	title = EVTNAME_RIRSEBYZ_111130
+	desc = EVTDESC_RIRSEBYZ_111130
+	
+	picture = GFX_evt_eglise_unies
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111130
+
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = orthodox parent = catholic }
+		}
+		if = {
+			limit = { religion = cathar }
+			set_parent_religion = { religion = orthodox parent = cathar }
+		}
+		if = {
+			limit = { religion = lollard }
+			set_parent_religion = { religion = orthodox parent = lollard }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = orthodox parent = fraticelli }
+		}
+
+		
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = RIRSEBYZ.111131 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = RIRSEBYZ.111131
+	title = EVTNAME_RIRSEBYZ_111131
+	desc = EVTDESC_RIRSEBYZ_111131
+	
+	picture = GFX_evt_eglise_unies
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTA_RIRSEBYZ_111131
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTB_RIRSEBYZ_111131
+		ai_chance = { factor = 25 }
+	}
+}  
+### The Great Schism Mended
+
+# The Schism Mended
+narrative_event = {
+	id = RIRSEBYZ.111132
+	title = EVTNAME_RIRSEBYZ_111132
+	desc = EVTDESC_RIRSEBYZ_111132
+	
+	picture = GFX_evt_eglise_unies
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111132
+
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = orthodox parent = catholic }
+		}
+		if = {
+			limit = { religion = cathar }
+			set_parent_religion = { religion = orthodox parent = cathar }
+		}
+		if = {
+			limit = { religion = lollard }
+			set_parent_religion = { religion = orthodox parent = lollard }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = orthodox parent = fraticelli }
+		}
+
+		
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = RIRSEBYZ.111133 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = RIRSEBYZ.111133
+	title = EVTNAME_RIRSEBYZ_111133
+	desc = EVTDESC_RIRSEBYZ_111133
+	
+	picture = GFX_evt_eglise_unies
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTA_RIRSEBYZ_111133
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTB_RIRSEBYZ_111133
+		ai_chance = { factor = 25 }
+	}
+} 
+# Le chef de la Rus recoit la proposition
+letter_event = {
+        id = RIRSEBYZ.111135
+	title = EVTNAME_RIRSEBYZ_111135
+	desc = EVTDESC_RIRSEBYZ_111135
+	
+	picture = GFX_evt_holy_emperor
+is_triggered_only = yes
+
+option = {
+
+name = "EVTOPTA_RIRSEBYZ_111135"
+remove_spouse = spouse
+religion = orthodox
+set_global_flag = varangian_guard_founded
+
+			activate_title = { title = d_varangian_guard status = yes }
+			hidden_tooltip = {
+				
+				create_character = {
+					random_traits = yes
+					religion = norse_pagan
+					culture = norse
+					dynasty = NONE
+					female = no
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_varangian_guard = {
+						grant_title = PREV
+					}
+					set_defacto_liege = FROM
+				}
+			}
+                FROM = {
+			narrative_event = { id = RIRSEBYZ.111136}
+		}
+		ai_chance = {
+			factor = 0.7
+modifier = {
+				factor = 2.0
+				FROM = { trait = ambitious }
+			}
+
+		
+}
+}
+option = {
+		name = "EVTOPTB_RIRSEBYZ_111135"
+                FROM = {
+			letter_event = { id = RIRSEBYZ.111137}
+		}
+	
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 4.0
+				FROM = { trait = zealous }
+			}
+			
+		}
+	}
+
+} 
+narrative_event = {
+	id = RIRSEBYZ.111136
+	title = EVTNAME_RIRSEBYZ_111136
+	desc = EVTDESC_RIRSEBYZ_111136
+	
+	picture = GFX_evt_g_varegue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111136
+any_child = {
+limit = {
+is_female = yes
+age = 14
+NOT = { age = 40 }
+is_married = no
+trait = born_in_the_purple
+}
+letter_event = { id = RIRSEBYZ.111138 }
+}
+	
+		}
+
+
+	}
+letter_event = {
+	id = RIRSEBYZ.111137
+	title = EVTNAME_RIRSEBYZ_111137
+	desc = EVTDESC_RIRSEBYZ_111137
+	
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111137
+
+	
+		}
+	} 
+letter_event = {
+	id = RIRSEBYZ.111138
+	title = EVTNAME_RIRSEBYZ_111138
+	desc = EVTDESC_RIRSEBYZ_111138
+	
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111138
+if = { 
+limit = {
+FROMFROM = {
+is_married = no
+}
+}
+FROMFROM = { add_spouse = ROOT }
+}
+
+	
+		}
+	}  
+narrative_event = {    
+	id = RIRSEBYZ.111139
+desc = "EVTDESC_RIRSEBYZ_111139"
+	picture = "GFX_evt_theme_aristo"
+
+	trigger = {
+
+in_revolt = no
+liege = {
+	in_revolt = no
+}	
+OR = {
+has_landed_title = e_byzantium
+top_liege = {
+has_landed_title = e_byzantium 
+}
+    
+
+}
+  
+    is_feudal = yes
+    religion_group = christian 
+
+NOT = { 
+OR = {
+trait = byz_autocrator
+trait = dunatos
+trait = aristos
+}
+}
+
+
+
+
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+
+		name = "EVTOPTA_RIRSEBYZ_111139" 
+add_trait = aristos 
+ai_chance = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = misguided_warrior }
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = tough_soldier }
+			} 
+modifier = {
+				factor = 4.0
+				ROOT = { trait = skilled_tactician }
+			}
+modifier = {
+				factor = 4.0
+				ROOT = { trait = brilliant_strategist }
+			}  
+modifier = {
+				factor = 4.0
+				ROOT = { trait = detached_priest }
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = martial_cleric }
+			} 
+modifier = {
+				factor = 4.0
+				ROOT = { trait = scholarly_theologian }
+			}
+modifier = {
+				factor = 4.0
+				ROOT = { trait = mastermind_theologian }
+			}  
+
+
+}
+}
+	option = {
+
+		name = "EVTOPTB_RIRSEBYZ_111139" 
+add_trait = dunatos  
+ai_chance = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = amateurish_plotter }
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = flamboyant_schemer }
+			} 
+modifier = {
+				factor = 4.0
+				ROOT = { trait = intricate_webweaver }
+			}
+modifier = {
+				factor = 4.0
+				ROOT = { trait = elusive_shadow }
+			}  
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = naive_appeaser }
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = underhanded_rogue }
+			} 
+modifier = {
+				factor = 4.0
+				ROOT = { trait = charismatic_negotiator }
+			}
+modifier = {
+				factor = 4.0
+				ROOT = { trait = grey_eminence }
+			}  
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = indulgent_wastrel }
+			}
+			modifier = {
+				factor = 4.0
+				ROOT = { trait = thrifty_clerk }
+			} 
+modifier = {
+				factor = 4.0
+				ROOT = { trait = fortune_builder }
+			}
+modifier = {
+				factor = 4.0
+				ROOT = { trait = midas_touched }
+			}  
+
+}
+
+
+}
+
+
+}   
+character_event = {    
+	id = RIRSEBYZ.111140
+desc = "EVTDESC_RIRSEBYZ_111140"
+	picture = "GFX_evt_theme_aristo"
+
+	trigger = {
+
+in_revolt = no
+liege = {
+	in_revolt = no
+}
+top_liege = {
+NOT = { has_landed_title = e_byzantium }
+}
+NOT = {	
+
+has_landed_title = e_byzantium
+
+}  
+   
+
+OR = {
+trait = byz_autocrator
+trait = dunatos
+trait = aristos
+}
+
+
+
+
+
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+
+		name = "EVTOPTA_RIRSEBYZ_111140" 
+remove_trait = aristos 
+remove_trait = dunatos
+remove_trait = byz_autocrator
+
+	
+
+
+}     
+}
+narrative_event = {
+	id = RIRSEBYZ.111141
+	title = EVTNAME_RIRSEBYZ_111141
+	desc = EVTDESC_RIRSEBYZ_111141
+	
+	picture = GFX_evt_Rumiturc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111141
+                prestige = 2000
+	e_byzantium = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_otto_roum
+		}
+}
+	e_latin_empire = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_otto_roum
+		}
+}
+		e_otto_roum = {
+			grant_title = ROOT
+			
+			
+		}
+any_independent_ruler = {
+                   limit = { has_landed_title = k_orthodox }
+                set_defacto_liege = ROOT
+}
+hidden_tooltip = {
+					b_constantinople = { province_capital = yes }
+					ROOT = {
+						b_constantinople = {
+							usurp_title = PREV
+						}
+					}
+}
+               
+		}
+	}  
+
+narrative_event = {
+	id = RIRSEBYZ.111143
+	title = EVTNAME_RIRSEBYZ_111143
+	desc = EVTDESC_RIRSEBYZ_111143
+	
+	picture = GFX_evt_theme_aristo
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111143
+any_vassal = {
+
+	        opinion = {
+				modifier = op_peti_pro
+				who = FROM
+                                years = 30
+				
+}
+}
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = byz_pro_pro
+duration = -1 }
+}
+}
+
+
+	
+		}
+	}
+
+narrative_event = {
+	id = RIRSEBYZ.111144
+	title = EVTNAME_RIRSEBYZ_111144
+	desc = EVTDESC_RIRSEBYZ_111144
+	
+	picture = GFX_evt_theme_aristo
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RIRSEBYZ_111144
+ROOT = {
+any_realm_province  = {
+remove_province_modifier = byz_pro_pro
+}
+}
+clr_global_flag = pe_pro_byz
+
+
+	}
+}

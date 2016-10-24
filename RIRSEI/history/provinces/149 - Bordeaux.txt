@@ -17,8 +17,8 @@ b_blaye = city
 
 #Misc
 religion = catholic
-culture = basque
-
+culture = gallo
+790.1.1 = { culture = occitan }
 # History
 930.1.1 = {
 	b_castillon = castle	

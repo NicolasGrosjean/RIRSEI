@@ -1,0 +1,137 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ 
+ #<tag> = {
+ #	desc = description used in the tooltip of the building
+ #	trigger = used for tech requirement of the building, set to 0 if no requirement so it can be build automatically on new games
+ #	gold_cost = cost to build the building
+ #	build_time = time to build, in days
+ #	
+ #	ai_creation_factor = weight that the AI uses to determine what building to build
+ #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
+ #}
+ 
+# Castle
+
+castle = {
+duero_depeup_1 = { 
+		potential = {
+OR = {
+FROMFROM = { title = b_porto }
+FROMFROM = { title = b_zamora }
+FROMFROM = { title = b_soria }
+FROMFROM = { title = b_palencia }
+FROMFROM = { title = b_braganza }
+FROMFROM = { title = b_vianadocastelo }
+FROMFROM = { title = b_braga }
+
+FROMFROM = { title = b_chaves }
+
+FROMFROM = { title = b_benavente }
+
+FROMFROM = { title = b_silos }
+FROMFROM = { title = b_castrobarte }
+
+FROMFROM = { title = b_osma }
+}
+			}
+		
+		desc = duero_depeup_1_desc
+		
+		gold_cost = 50
+		build_time = 600 #4y
+		fort_level = 8.0
+                levy_size = -0.8
+                tax_income = -8
+                garrison_size = 1.0
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 0.0
+	}
+duero_depeup_2 = {
+		potential = {
+OR = {
+FROMFROM = { title = b_porto }
+FROMFROM = { title = b_zamora }
+FROMFROM = { title = b_soria }
+FROMFROM = { title = b_palencia }
+FROMFROM = { title = b_braganza }
+FROMFROM = { title = b_vianadocastelo }
+FROMFROM = { title = b_braga }
+FROMFROM = { title = b_chaves }
+FROMFROM = { title = b_benavente }
+FROMFROM = { title = b_silos }
+FROMFROM = { title = b_castrobarte }
+FROMFROM = { title = b_osma }
+}
+			}
+		
+
+
+			
+		
+		desc = duero_depeup_2_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		gold_cost = 300
+		build_time = 630 #4y
+                upgrades_from = duero_depeup_1
+		fort_level = -8.0
+                levy_size = 0.8
+                tax_income = 8
+                garrison_size = -1.0
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 0.0
+	}
+}
+
+# City
+
+city = {
+duero_depeupct_1 = { 
+		potential = {
+OR = {
+FROMFROM = { title = b_guimaraes }
+FROMFROM = { title = b_vilareal }
+FROMFROM = { title = b_toro }
+FROMFROM = { title = b_burgos }
+FROMFROM = { title = b_almazan }
+}
+			}
+
+		desc = duero_depeupct_1_desc
+		
+		gold_cost = 50
+		build_time = 600 #4y
+		fort_level = 8.0
+                levy_size = -0.8
+                tax_income = -8
+                garrison_size = 1.0
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 0.0
+	}
+duero_depeupct_2 = {
+	potential = {
+OR = {
+FROMFROM = { title = b_guimaraes }
+FROMFROM = { title = b_vilareal }
+FROMFROM = { title = b_toro }
+FROMFROM = { title = b_burgos }
+FROMFROM = { title = b_almazan }
+}
+}
+		desc = duero_depeupct_2_desc
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
+		gold_cost = 300
+		build_time = 630 #4y
+                upgrades_from = duero_depeupct_1
+		fort_level = -8.0
+                levy_size = 0.8
+                tax_income = 8
+                garrison_size = -1.0
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 0.0
+	}
+}

@@ -1,0 +1,370 @@
+namespace = RIRSECHARLY
+
+# Notification of founding of the HRE
+narrative_event = {
+	id = RIRSECHARLY.100
+	title = EVTTITLE_RIRSECHARLY_100
+	desc = EVTDESC_RIRSECHARLY_100
+	picture = GFX_evt_found_hre
+
+	
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_100
+		trigger = {
+		
+				has_landed_title = e_hre
+				
+		}
+k_france = {
+de_jure_liege = e_hre }
+k_aquitaine = {
+de_jure_liege = e_hre }
+k_lotharingia = {
+de_jure_liege = e_hre }
+k_germany = {
+de_jure_liege = e_hre }
+k_bavaria = {
+de_jure_liege = e_hre
+}
+k_burgundy = {
+de_jure_liege = e_hre
+}
+add_claim = e_byzantium
+	}
+	option = {
+		name = EVTOPTB_RIRSECHARLY_100
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_byzantium }			
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTC_RIRSECHARLY_100
+		trigger = {
+			NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = e_hre }
+			NOT = { religion = ROOT }
+		}
+	}
+	option = {
+		name = EVTOPTD_RIRSECHARLY_100
+		trigger = {
+			has_landed_title = e_byzantium
+		}
+ ROOT = {
+	        opinion = {
+				modifier = emp_pret_char_byz
+				who = FROM
+                                years = 40
+				
+}
+}
+prestige = -2000
+set_character_flag = infamiebyz_recu
+	}
+}
+
+# Renommer RF-> Austrasie
+narrative_event = {
+	id = RIRSECHARLY.110
+	desc = EVTDESC_RIRSECHARLY_110
+	title = EVTTITLE_RIRSECHARLY_110
+	picture = GFX_evt_book_carolingian_script
+
+
+	
+	trigger = {
+		has_landed_title = k_lotharingia
+independent = yes
+		NOT = { dynasty = 25061 } # Karling dynasty
+		NOT = { has_global_flag = austrasie_renom }
+NOT = { year = 850
+}
+	}
+
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = austrasie_renom 
+	}
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_110
+		
+		k_lotharingia = {
+			set_name = "AUSTRASIA"
+			adjective = "AUSTRASIA_ADJ"
+			reset_coa = THIS
+		}
+	}
+
+	
+}
+
+# Compromis ?
+narrative_event = {
+	id = RIRSECHARLY.120
+	desc = EVTDESC_RIRSECHARLY_120
+	title = EVTTITLE_RIRSECHARLY_120
+	picture = GFX_evt_found_hre
+
+
+	
+is_triggered_only = yes
+
+	
+	
+
+
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_120
+		ai_chance = {
+			factor = 0.7
+}
+prestige = -100
+any_independent_ruler = {
+limit = { has_landed_title = e_hre }
+
+narrative_event = { id = RIRSECHARLY.121 }
+
+}
+}
+
+
+
+	option = {
+		name = EVTOPTB_RIRSECHARLY_120
+		ai_chance = {
+			factor = 0.3
+}
+add_claim = e_hre
+any_independent_ruler = {
+limit = { has_landed_title = e_hre }
+
+narrative_event = { id = RIRSECHARLY.122 }
+
+}
+}
+
+
+		
+		
+	}
+
+	
+
+
+# Compromis ? oui
+narrative_event = {
+	id = RIRSECHARLY.121
+	desc = EVTDESC_RIRSECHARLY_121
+	title = EVTTITLE_RIRSECHARLY_121
+	picture = GFX_evt_byz_auto
+
+
+	
+is_triggered_only = yes
+
+	
+	
+
+
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_121
+		
+prestige = 500
+k_italy = { de_jure_liege = e_hre }
+k_england = { de_jure_liege = e_hre }
+add_claim = k_andalusia
+remove_claim = e_byzantium
+
+
+
+		
+		
+	}
+
+	
+}
+
+# Compromis ? non
+narrative_event = {
+	id = RIRSECHARLY.122
+	desc = EVTDESC_RIRSECHARLY_122
+	title = EVTTITLE_RIRSECHARLY_122
+	picture = GFX_evt_byz_auto
+
+
+	
+is_triggered_only = yes
+
+	
+	
+
+
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_122
+set_global_flag = compromis_cest_non
+ ROOT = {
+	        opinion = {
+				modifier = emp_pret_char_hre
+				who = FROM
+                                years = 40
+				
+}
+}
+		
+prestige = -200
+
+
+
+
+
+		
+		
+	}
+
+	
+}
+
+# Mutazilite
+narrative_event = {
+	id = RIRSECHARLY.123
+	desc = EVTDESC_RIRSECHARLY_123
+	title = EVTTITLE_RIRSECHARLY_123
+	picture = GFX_evt_kaaba
+
+is_triggered_only = yes
+	
+	
+	
+	
+	
+	immediate = {
+		set_global_flag = contro_mutaasha
+	}
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_123
+ai_chance = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.2
+				trait = quick
+			}
+modifier = {
+				factor = 1.2
+				trait = genius
+			}
+}
+add_trait = mutazilite
+character_event = { id = SoA.600 tooltip = EVTTOOLTIP_SoA_600 }
+		
+		
+	}
+
+option = {
+		name = EVTOPTB_RIRSECHARLY_123
+ai_chance = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}			
+			modifier = {
+				factor = 1.2
+				decadence = 40
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 60
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 80
+			}
+}
+add_trait = ashari
+character_event = { id = SoA.601 tooltip = EVTTOOLTIP_SoA_601 }
+		
+		
+	}
+
+	
+}
+
+
+
+# Renommer RF-> Austrasie
+narrative_event = {
+	id = RIRSECHARLY.139
+	desc = EVTDESC_RIRSECHARLY_139
+	title = EVTTITLE_RIRSECHARLY_139
+	picture = GFX_evt_book_carolingian_script
+
+
+	
+	trigger = {
+		has_landed_title = k_england
+independent = yes
+has_landed_title = d_normandy
+OR = {
+culture = norman
+culture = english
+culture = frankish
+}
+		NOT = { has_global_flag = drapal_leopard }
+
+	}
+
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = drapal_leopard 
+	}
+	
+	option = {
+		name = EVTOPTA_RIRSECHARLY_139
+		
+		k_england = {
+			
+			reset_coa = THIS
+		}
+	}
+
+	
+}
+
+
+	

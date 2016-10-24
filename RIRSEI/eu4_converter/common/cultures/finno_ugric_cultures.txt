@@ -1,0 +1,22 @@
+finno_ugric = {
+	lappish = {
+		primary = FIN
+		dynasty_names = $lappish$
+	}
+	komi = {
+		primary = FIN
+		dynasty_names = $komi$
+	}
+	samoyed = {
+		primary = FIN
+		dynasty_names = $samoyed$
+	}
+	mordvin = {
+		primary = FIN
+		dynasty_names = $mordvin$
+	}
+	khanty = {
+		primary = FIN
+		dynasty_names = $khanty$
+	}
+}

@@ -66,6 +66,12 @@
 1294.10.11={
 	holder=125990 #Boleslaw II
 }
+1295.6.27={
+	
+de_jure_liege = k_polandball
+liege = "k_polandball"
+}
+
 1313.4.20={
 	holder = 125991
 }

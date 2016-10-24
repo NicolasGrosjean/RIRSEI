@@ -2,6 +2,7 @@
 	name = AVAR_KHAGANATE
 	adjective = AVAR_KHAGANATE_ADJ
 	effect = { set_coa = k_avaria }
+
 }
 685.1.1 = {
 	holder=146154
@@ -71,15 +72,21 @@
 835.1.1 = {
 	holder=0
 }
+
+
+
+
+
 895.1.1 = {
 	reset_name = yes
 	reset_adjective = yes
 }
-1000.12.25 = {
-	holder=482
-	effect = { insert_title_history = k_magyar }
-	#law = agnatic_succession
-	#law = succ_seniority
+
+1000.12.25={
+holder=482
+set_global_flag = couronne_hongrie
+#law = agnatic_succession
+#law = succ_seniority
 }
 #1038.1.1={
 #holder=497
@@ -153,10 +160,10 @@ holder=98005
 1290.7.10={
 holder=98007
 }
-1301.1.14=
-{
-holder=96003
-}
+#1301.1.14=
+#{
+#holder=96003
+#}
 1305.12.6={
 holder=98009
 }

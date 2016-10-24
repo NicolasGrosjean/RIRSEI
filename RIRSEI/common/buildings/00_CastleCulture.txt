@@ -108,7 +108,9 @@ castle = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
 			FROM = {
-				culture = scottish
+				OR = {
+					culture = scottish
+				}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -125,7 +127,9 @@ castle = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
 			FROM = {
-				culture = scottish
+				OR = {
+					culture = scottish
+				}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -142,7 +146,9 @@ castle = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
 			FROM = {
-				culture = scottish
+				OR = {
+					culture = scottish
+				}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -159,7 +165,9 @@ castle = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
 			FROM = {
-				culture = scottish
+				OR = {
+					culture = scottish
+				}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
@@ -447,7 +455,14 @@ castle = {
 	ca_culture_group_iberian_1 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+					culture = portuguese
+					
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
@@ -462,7 +477,14 @@ castle = {
 	ca_culture_group_iberian_2 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+					culture = portuguese
+					
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_iberian_1
@@ -477,7 +499,14 @@ castle = {
 	ca_culture_group_iberian_3 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+					culture = portuguese
+					
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_group_iberian_2
@@ -492,7 +521,14 @@ castle = {
 	ca_culture_group_iberian_4 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+					culture = portuguese
+					
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
 		upgrades_from = ca_culture_group_iberian_3
@@ -1938,4 +1974,3 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 }
-

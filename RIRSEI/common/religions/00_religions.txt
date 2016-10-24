@@ -8,13 +8,11 @@ christian = {
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 2 # always try to convert
 	
-	color = { 0.8 0.8 0.6 }
-	
 	# Names given only to Christian characters (base names)
 	male_names = {
 		Andrew Antoninus Bartolomeus Benedict Christian Christopher Clement Constantine David Demetrius Eustace George Gregory 
 		Hans Isaac Joakim Jacob John Jordan Joseph Laurence Magnus Marcus Martin Matthew Michael Nicholas Patrick Paul Peter Philip 
-		Salvador Samuel Sebastian Simon Stephen Thomas Abraham Alexander Daniel Jesus Job Joshua Cyrus Luke Zachariah
+		Salvador Samuel Sebastian Simon Stephen Thomas Abraham Alexander Daniel Jesus Job Joshua Cyrus Luke Joseph Zachariah
 	}
 	female_names = {
 		Anna Beatrice Benedicta Brigid Catherine Cecilia Christina Clementia Constance Dorothy Elisabeth Joan Judith Juliana Helen 
@@ -399,8 +397,6 @@ muslim = {
 	ai_convert_other_group = 1 # try to convert if ai_zeal is high
 	ai_fabricate_claims = no
 	
-	color = { 0 0.6 0 }
-	
 	# Names given only to Muslim characters (base names)
 	male_names = {
 		Abbas Abdul Abdullah Abolhassan Abu-Bakr Ahmad Akbar Allahyar Ali Ali-Fay Ali-Kolon Ali-Zalil Hasan Hossein Hussayn Ismail Mahmud Muammar Muhammad
@@ -494,13 +490,16 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
-	ibadi = {
+	Almohade = {
 		graphical_culture = muslimgfx
 
-		icon = 51
-		heresy_icon = 52
+		icon = 3
+		heresy_icon = 8
 		
 		crusade_name = JIHAD
+
+		color = { 0.2 0.6 0.2 }
+crusade_name = JIHAD
 		scripture_name = THE_KORAN
 		priest_title = IMAM_PRIEST
 		
@@ -513,36 +512,17 @@ muslim = {
 		evil_god_names = {
 			IBLIS SHAYTAN
 		}
+		parent = sunni
 
-		color = { 0.3 0.6 0.3 }
 		can_call_crusade = yes
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
-		
-		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes
+landed_kin_prestige_bonus = yes
+attacking_same_religion_piety_loss = yes
 		uses_decadence = yes
 		uses_jizya_tax = yes
-	}
-	kharijite = {
-		graphical_culture = muslimgfx
-
-		icon = 51
-		heresy_icon = 52
-		
-		crusade_name = JIHAD
-
-		color = { 0.4 0.8 0.6 }
-		parent = ibadi
-		can_call_crusade = yes
-		priests_can_marry = yes
-		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
-		max_wives = 4
-		matrilineal_marriages = no
-		
-		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
 		uses_decadence = yes
 		uses_jizya_tax = yes
@@ -568,8 +548,10 @@ muslim = {
 			IBLIS SHAYTAN
 		}
 		
+
 		can_call_crusade = yes
 		priests_can_marry = yes
+	
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
@@ -613,11 +595,64 @@ muslim = {
 
 		priests_can_marry = yes
 		psc_marriage = no
-		can_call_crusade = yes
 		max_wives = 4
 		matrilineal_marriages = no
+landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+	}
+
+khadjirite = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 8
 		
-		landed_kin_prestige_bonus = yes
+		color = { 0 0.6 0 }
+		
+		crusade_name = JIHAD
+		scripture_name = THE_KORAN
+		priest_title = IMAM_PRIEST
+high_god_name = GOD_ALLAH
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		
+		can_call_crusade = yes
+		priests_can_marry = yes
+		
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+	}
+ibadi = {
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 8
+		
+		crusade_name = JIHAD
+
+		color = { 0.3 0.6 0.3 }
+		parent = khadjirite
+		
+		can_call_crusade = yes
+		priests_can_marry = yes
+		
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
 		uses_decadence = yes
 		uses_jizya_tax = yes
@@ -633,8 +668,6 @@ pagan_group = {
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 0	# never try to convert
 	ai_fabricate_claims = no
-	
-	color = { 0.6 0.0 0.0 }
 	
 	# Names given only to Pagan characters (base names)
 	male_names = {
@@ -717,7 +750,7 @@ pagan_group = {
 		allow_viking_invasion = yes
 		seafarer = yes
 		
-		short_reign_opinion_year_mult = 1.5
+		short_reign_opinion_year_mult = 3 # The default is 2
 		
 		aggression = 1.5 # AI aggression factor
 		
@@ -776,7 +809,7 @@ pagan_group = {
 		
 		aggression = 2.0 # AI aggression factor
 		
-		short_reign_opinion_year_mult = 2.5
+		short_reign_opinion_year_mult = 5 # The default is 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -870,10 +903,9 @@ pagan_group = {
 		raised_vassal_opinion_loss = no
 		max_consorts = 3
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = tengri_pagan_reformed
 		ignores_defensive_attrition = yes
 		
-		short_reign_opinion_year_mult = 1.5
+		short_reign_opinion_year_mult = 3 # The default is 2
 		
 		aggression = 2.0 # AI aggression factor
 		
@@ -922,8 +954,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -977,8 +1009,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -993,7 +1025,7 @@ pagan_group = {
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = baltic_pagan_reformed
 		
-		short_reign_opinion_year_mult = 2
+		short_reign_opinion_year_mult = 4 # The default is 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -1040,8 +1072,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -1096,8 +1128,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -1112,7 +1144,7 @@ pagan_group = {
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = finnish_pagan_reformed
 		
-		short_reign_opinion_year_mult = 2
+		short_reign_opinion_year_mult = 4 # The default is 2
 		
 		aggression = 0.2 # AI aggression factor
 		
@@ -1125,7 +1157,7 @@ pagan_group = {
 	aztec_reformed = {
 		graphical_culture = mesoamericangfx
 		
-		secondary_event_pictures = mesoamerican
+		secondary_event_pictures = aztec_pagan
 		
 		icon = 17
 		heresy_icon = 18
@@ -1170,8 +1202,6 @@ pagan_group = {
 		icon = 15
 		heresy_icon = 16
 		color = { 0.8 0.2 0.2 }
-		
-		secondary_event_pictures = mesoamerican
 		
 		high_god_name = GOD_HUITZILOPOCHTLI
 		
@@ -1246,8 +1276,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -1301,8 +1331,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -1319,7 +1349,7 @@ pagan_group = {
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = slavic_pagan_reformed
 		
-		short_reign_opinion_year_mult = 2
+		short_reign_opinion_year_mult = 4 # The default is 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -1423,8 +1453,8 @@ pagan_group = {
 			knights_defensive = 0.8
 			archers_defensive = 0.8
 			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
+			camel_cavalry_DEFENSIVE = 0.8
+			war_elephants_DEFENSIVE = 0.8
 			
 			garrison_size = 0.4
 			
@@ -1566,8 +1596,6 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
-		
-		allow_in_ruler_designer = no
 	}
 }
 
@@ -1578,8 +1606,6 @@ zoroastrian_group = {
 	
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 2	# always try to convert
-	
-	color = { 0.5 0.7 0.2 }
 	
 	# Names given only to Zoroastrian characters (base names)
 	male_names = {
@@ -1700,8 +1726,6 @@ jewish_group = {
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 1	# try to convert if ai_zeal is high
 	
-	color = { 0.1 0.7 1.0 }
-	
 	# Names given only to Jewish characters (base names)
 	male_names = {
 		Belet Ezra Hanukkah Hezekiah Isaac Levi Manasseh Nisi Simeon Yavdi Zebulun
@@ -1795,8 +1819,6 @@ indian_group = {
 	
 	ai_convert_same_group = 1 # try to convert if ai_zeal is high
 	ai_convert_other_group = 2	# always try to convert
-	
-	color = { 0.8 0.4 0.0 }
 	
 	# Names given only to Indian characters (base names)
 	male_names = {

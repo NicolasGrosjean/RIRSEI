@@ -59,9 +59,6 @@
 {
 	holder = 93053
 }
-1220.1.1 = {
-	holder = 194303
-}
 1221.1.1=
 {
 	liege ="e_mongol_empire"
@@ -73,7 +70,7 @@
 #Chagatai khanate
 1227.12.2=
 {
-	liege=e_chagatai
+	liege=k_khiva
 	holder = 93062
 }
 1242.1.1=

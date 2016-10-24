@@ -1,0 +1,1583 @@
+decisions = {
+
+emp_ot_rum = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+culture = turkish
+			NOT = { has_landed_title = e_latin_empire }
+                        NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_byzantium }
+NOT = { has_landed_title = e_hre } 
+NOT = { has_landed_title = e_otto_roum } 
+NOT = { has_landed_title = e_arabia }
+NOT = { has_landed_title = e_persia }                    
+completely_controls = c_byzantion			
+		
+			 NOT = { religion_group = christian }
+religion_group = muslim
+			
+                        
+                        independent = yes
+
+e_roman_empire = {
+			has_holder = no
+		}
+e_otto_roum = {
+			has_holder = no
+		}
+
+		}
+		allow = {
+
+			prestige = 10000
+e_byzantium = {
+			has_holder = no
+		}
+e_serbia = {
+			has_holder = no
+		}
+		e_bulgaria = {
+			has_holder = no
+		}
+e_latin_empire = {
+			has_holder = no
+		}
+                        
+		                       
+completely_controls = k_byzantium
+completely_controls = k_anatolia
+
+			
+		}
+		effect = {
+set_global_flag = otto_sult
+			  narrative_event = { id = RIRSEBYZ.111141 }
+activate_title = { title = e_byzantium status = no }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+dar_al_calife = {
+is_high_prio = yes
+		potential = {
+tier = king
+NOT = { has_landed_title = e_arabia }
+OR = {
+has_landed_title = d_sunni
+has_landed_title = d_shiite
+has_landed_title = d_hurufi
+has_landed_title = d_ibadi
+has_landed_title = d_khad
+has_landed_title = d_almomh
+}
+}
+allow = {
+independent = yes
+prestige = 5000
+OR = {
+AND = {
+719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+}
+AND = {
+728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+}
+}
+
+}
+effect = {
+hidden_tooltip = {
+                e_arabia = {
+			destroy_landed_title = THIS
+		 
+			}
+}
+narrative_event = { id = RIRSEMUS.111111 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+dar_al_autre = {
+is_high_prio = yes
+		potential = {
+OR = {
+tier = king
+tier = emperor
+}
+NOT = { trait = sayyid }
+NOT = { has_landed_title = e_arabia }
+religion_group = muslim
+OR = {
+d_sunni = {
+	 owner = {
+		  is_liege_or_above = ROOT
+							
+						}
+					}
+d_shiite = {
+	 owner = {
+		  is_liege_or_above = ROOT
+							
+						}
+					}
+d_hurufi = {
+	 owner = {
+		  is_liege_or_above = ROOT
+							
+						}
+					}
+d_ibadi = {
+	 owner = {
+		  is_liege_or_above = ROOT
+							
+						}
+					}
+d_khad = {
+	 owner = {
+		  is_liege_or_above = ROOT
+							
+						}
+					}
+}
+}
+allow = {
+independent = yes
+prestige = 8000
+
+719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+
+
+}
+effect = {
+hidden_tooltip = {
+                e_arabia = {
+			destroy_landed_title = THIS
+		 
+			}
+}
+narrative_event = { id = RIRSEMUS.111112 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+sempar_cal = {
+is_high_prio = yes
+		potential = {
+OR = {
+tier = king
+tier = emperor
+}
+trait = sayyid
+independent = yes
+NOT = { has_landed_title = d_sunni }
+NOT = { has_landed_title = d_shiite }
+NOT = { has_landed_title = d_hurufi }
+NOT = { has_landed_title = d_almomh }
+religion_group = muslim
+NOT = { religion = khadjirite }
+NOT = { religion = ibadi }
+
+}
+allow = {
+independent = yes
+prestige = 5500
+piety = 700
+NOT = {
+decadence = 5
+}
+
+719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+
+
+}
+effect = {
+
+narrative_event = { id = RIRSEMUS.111117 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+cal_khadiba = {
+is_high_prio = yes
+		potential = {
+tier = king
+independent = yes
+NOT = { has_landed_title = d_ibadi }
+NOT = { has_landed_title = d_khad }
+d_khad = { 
+has_holder = no		
+}
+d_ibadi = { 
+has_holder = no
+		}
+OR = {
+religion = khadjirite 
+religion = ibadi 
+}
+
+}
+allow = {
+independent = yes
+prestige = 6000
+piety = 750
+NOT = {
+decadence = 5
+}
+
+719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+
+
+}
+effect = {
+
+narrative_event = { id = RIRSEMUS.111120 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+embrace_shaifi = {
+		potential = {
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			NOT = { 
+				OR = {
+					trait = mutazilite
+					trait = ashari
+trait = Malikite 
+					trait = Hanbalisme
+trait = Shaifisme
+					trait = Soufi
+trait = Hanafisme
+				}
+			}
+			is_female = no
+			age = 16
+			prisoner = no
+has_global_flag = contro_mutaasha
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = Shaifisme
+			character_event = { id = RIRSEMUS.111126 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = content
+			}
+modifier = {
+				factor = 1.2
+				trait = humble
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = Shaifisme }
+			}
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+	embrace_maliki = {
+		potential = {	
+			has_dlc = "Sons of Abraham"
+OR = {
+religion = sunni
+religion = Almohade }
+			NOT = { 
+				OR = {
+										trait = mutazilite
+					trait = ashari
+trait = Malikite 
+					trait = Hanbalisme
+trait = Shaifisme
+					trait = Soufi
+trait = Hanafisme
+				}
+			}
+			is_female = no
+			age = 16
+			prisoner = no
+has_global_flag = contro_mutaasha
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = Malikite
+			character_event = { id = RIRSEMUS.111123 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.1
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = Malikite }
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 40
+			}
+modifier = {
+				factor = 1.2
+				trait = brave
+			}
+modifier = {
+				factor = 1.4
+				culture = andalusian_arabic
+			}
+modifier = {
+				factor = 1.4
+				culture = maghreb_arabic
+			}
+			
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+embrace_hanbalisme = {
+		potential = {	
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			NOT = { 
+				OR = {
+										trait = mutazilite
+					trait = ashari
+trait = Malikite 
+					trait = Hanbalisme
+trait = Shaifisme
+					trait = Soufi
+trait = Hanafisme
+				}
+			}
+			is_female = no
+			age = 16
+			prisoner = no
+has_global_flag = contro_mutaasha
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = Hanbalisme
+			character_event = { id = RIRSEMUS.111124 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.1
+				trait = zealous
+			}
+modifier = {
+				factor = 1.2
+				trait = proud
+			}
+
+			modifier = {
+				factor = 1.2
+				liege = { trait = Hanbalisme }
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 40
+			}
+modifier = {
+				factor = 1.2
+				decadence = 60
+			}
+
+modifier = {
+				factor = 1.4
+				culture = levantine_arabic
+			}
+
+			
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+
+embrace_soufi = {
+		potential = {
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			NOT = { 
+				OR = {
+					trait = mutazilite
+					trait = ashari
+trait = Malikite 
+					trait = Hanbalisme
+trait = Shaifisme
+					trait = Soufi
+trait = Hanafisme
+				}
+			}
+			is_female = no
+			age = 16
+			prisoner = no
+has_global_flag = contro_mutaasha
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = Soufi
+			character_event = { id = RIRSEMUS.111127 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			
+modifier = {
+				factor = 1.4
+				trait = mystic
+			}
+modifier = {
+				factor = 1.2
+				trait = humble
+			}
+
+modifier = {
+				factor = 0.2
+				prestige = 300
+			}
+modifier = {
+				factor = 0.4
+				tier = duke
+			}
+modifier = {
+				factor = 0.2
+				tier = king
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = Soufi }
+			}
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+embrace_hanafi = {
+		potential = {	
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			NOT = { 
+				OR = {
+										trait = mutazilite
+					trait = ashari
+trait = Malikite 
+					trait = Hanbalisme
+trait = Shaifisme
+					trait = Soufi
+trait = Hanafisme
+				}
+			}
+			is_female = no
+			age = 16
+			prisoner = no
+has_global_flag = contro_mutaasha
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = Hanafisme
+			character_event = { id = RIRSEMUS.111125 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.05
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = Hanafisme }
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 40
+			}
+modifier = {
+				factor = 1.2
+				trait = scholar
+			}
+modifier = {
+				factor = 1.2
+				trait = poet
+			}
+modifier = {
+				factor = 1.2
+				culture = turkish
+			}
+modifier = {
+				factor = 1.2
+				culture = persian
+			}
+
+			
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+
+
+philo_mutaz = {
+		potential = {	
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			trait = mutazilite
+NOT = { trait = zealous }
+NOT = { trait = Fulusofiya }
+					
+
+			is_female = no
+			age = 16
+			prisoner = no
+		}
+		
+		allow = {
+			
+trait = scholar
+
+		}
+		
+		effect = {
+			add_trait = Fulusofiya
+			narrative_event = { id = RIRSEMUS.111128 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+saint_soufi = {
+		potential = {	
+			has_dlc = "Sons of Abraham"
+			religion = sunni
+			trait = Soufi
+OR = {
+tier = count
+tier = duke
+tier = king
+tier = emperor
+}
+					
+
+			is_ruler = yes
+			age = 16
+			prisoner = no
+NOT = { has_character_flag = cu_tawassuf }
+		}
+		
+		allow = {
+			
+trait = zealous
+piety = 500
+
+		}
+		
+		effect = {
+			
+			narrative_event = { id = RIRSEMUS.111129 }
+                        set_character_flag = cu_tawassuf
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+script_sultan = {
+		is_high_prio = yes
+		potential = {
+NOT = {
+OR ={	
+has_landed_title = d_sunni
+has_landed_title = d_shiite
+has_landed_title = d_hurufi
+has_landed_title = d_ibadi
+has_landed_title = d_khad
+has_landed_title = d_almomh							
+		}
+}
+			
+			age = 16
+			prisoner = no
+                        religion_group = muslim
+NOT = { religion = khadjirite }
+NOT = { religion = ibadi }
+NOT = { has_character_flag = demande_sultan }
+			NOT = { trait = incapable }
+NOT = { trait = sayyid }
+                        NOT = { trait = sultan_sultan }
+OR = {
+			tier = king
+tier = emperor
+}
+                        
+                        independent = yes
+rightful_religious_head_scope = {
+OR = {
+AND = {
+NOT = {
+tier = king }
+NOT = {
+tier = emperor
+}
+}
+independent = no
+}
+			
+		}
+
+
+
+		}
+		allow = {
+NOT = { trait = cynical }
+has_law = crown_authority_3
+			prestige = 7500
+                        piety = 500
+
+}
+
+		effect = {
+rightful_religious_head_scope = {
+narrative_event = { id = RIRSEMUS.111131 }
+}
+set_character_flag = demande_sultan
+
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+Mission_mongol = {
+is_high_prio = yes
+		potential = {	
+has_landed_title = k_papal_state
+e_il-khanate = {
+has_holder = yes
+}
+e_il-khanate = {
+NOT = { religion_group = muslim }
+}
+prisoner = no	
+NOT = { has_global_flag = mission_mong_env }		
+			
+		
+			
+		}
+		
+		allow = {
+			
+        year = 1230
+
+		}
+		
+		effect = {
+		set_global_flag = mission_mong_env
+	 e_il-khanate = {
+holder_scope = {
+narrative_event = { id = RIRSEMUS.111139 }
+}
+}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+khag_il_calife_su = {
+is_high_prio = yes
+		potential = {
+	 e_il-khanate = {
+holder_scope = {
+NOT = { has_character_flag = renonc_khag }
+}
+}	
+has_landed_title = d_sunni
+
+e_il-khanate = {
+has_holder = yes
+}
+e_il-khanate = {
+holder_scope = {
+religion = sunni
+}
+}		
+tier = emperor			
+		
+			
+		}
+		
+		allow = {
+			
+       independent = yes
+  
+     
+
+		}
+		
+		effect = {
+	 e_il-khanate = {
+holder_scope = {
+		set_character_flag = renonc_khag
+}
+}
+	 e_il-khanate = {
+holder_scope = {
+narrative_event = { id = RIRSEMUS.111140 }
+}
+}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+gold_calife_su = {
+is_high_prio = yes
+		potential = {
+	 e_golden_horde = {
+holder_scope = {
+NOT = { has_character_flag = renonc_khag }
+}
+}	
+has_landed_title = d_sunni
+
+e_golden_horde = {
+has_holder = yes
+}
+e_golden_horde = {
+holder_scope = {
+religion = sunni
+}
+}		
+tier = emperor			
+		
+			
+		}
+		
+		allow = {
+			
+       independent = yes
+  
+     
+
+		}
+		
+		effect = {
+	 e_golden_horde = {
+holder_scope = {
+		set_character_flag = renonc_khag
+}
+}
+	 e_golden_horde = {
+holder_scope = {
+narrative_event = { id = RIRSEMUS.111141 }
+}
+}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+khag_il_calife_sh = {
+is_high_prio = yes
+		potential = {
+	 e_il-khanate = {
+holder_scope = {
+NOT = { has_character_flag = renonc_khag }
+}
+}	
+has_landed_title = d_shiite
+
+e_il-khanate = {
+has_holder = yes
+}
+e_il-khanate = {
+holder_scope = {
+religion = shiite
+}
+}		
+tier = emperor			
+		
+			
+		}
+		
+		allow = {
+			
+       independent = yes
+  
+     
+
+		}
+		
+		effect = {
+	 e_il-khanate = {
+holder_scope = {
+		set_character_flag = renonc_khag
+}
+}
+	 e_il-khanate = {
+holder_scope = {
+narrative_event = { id = RIRSEMUS.111142 }
+}
+}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+gold_calife_sh = {
+is_high_prio = yes
+		potential = {
+	 e_golden_horde = {
+holder_scope = {
+NOT = { has_character_flag = renonc_khag }
+}
+}	
+has_landed_title = d_shiite
+
+e_golden_horde = {
+has_holder = yes
+}
+e_golden_horde = {
+holder_scope = {
+religion = shiite
+}
+}		
+tier = emperor			
+		
+			
+		}
+		
+		allow = {
+			
+       independent = yes
+  
+     
+
+		}
+		
+		effect = {
+	 e_golden_horde = {
+holder_scope = {
+		set_character_flag = renonc_khag
+}
+}
+	 e_golden_horde = {
+holder_scope = {
+narrative_event = { id = RIRSEMUS.111143 }
+}
+}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+eran_calif = {
+is_high_prio = yes
+		potential = {
+OR ={	
+has_landed_title = d_sunni
+has_landed_title = d_shiite
+has_landed_title = d_hurufi
+has_landed_title = d_ibadi
+has_landed_title = d_khad
+has_landed_title = d_almomh		
+		
+			
+		}
+NOT = { has_global_flag = integr_iran }
+tier = emperor
+	}	
+		allow = {
+			
+  completely_controls = e_persia
+  has_law = crown_authority_4
+  prestige = 15000
+  
+     
+
+		}
+		
+		effect = {
+narrative_event = { id = RIRSEMUS.111144 }
+set_global_flag = integr_iran
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+amir_musli = {
+is_high_prio = yes
+		potential = {
+OR = {
+has_landed_title = k_mauretania
+has_landed_title = k_africa
+has_landed_title = k_andalusia
+}
+rightful_religious_head_scope = {
+independent = no
+}
+OR = {
+religion = sunni
+religion = shiite
+}
+NOT = { trait = amusl }
+
+	}	
+		allow = {
+OR = {
+completely_controls = k_mauretania
+completely_controls = k_andalusia
+}
+prestige = 5000
+piety = 300			
+NOT = { has_global_flag = amir_donn }
+       
+
+		}
+		
+		effect = {
+narrative_event = { id = RIRSEMUS.111147 }
+set_global_flag = amir_donn
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+fabr_sayy = {
+is_high_prio = yes
+		potential = {
+culture = bedouin_arabic
+has_landed_title = e_arabia
+NOT = {
+trait = sayyid }
+NOT = { has_character_flag = usu_calf }
+
+	}	
+		allow = {
+prestige = 8000
+
+OR = {
+trait = cynical
+trait = proud
+}
+NOT = { trait = zealous }
+has_law = centralization_3
+wealth = 500
+       
+
+		}
+		
+		effect = {
+narrative_event = { id = RIRSEMUS.111148 }
+set_character_flag = usu_calf
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			
+		}
+	}
+
+
+semar_v_cal = {
+is_high_prio = yes
+		potential = {
+tier = king
+NOT = { trait = sayyid }
+NOT = { has_landed_title = e_arabia }
+religion_group = muslim
+719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+
+
+
+NOT = {
+d_sunni = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+NOT = {
+d_shiite = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+
+NOT = {
+d_hurufi = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+
+NOT = {
+d_ibadi = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+NOT = {
+d_khad = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+
+NOT = {
+d_almomh = {
+owner = {
+is_liege_or_above = ROOT
+}
+}
+}
+
+
+
+
+
+}
+
+allow = {
+
+independent = yes
+prestige = 5000
+piety = 300
+any_realm_character = {
+trait = sayyid
+religion = ROOT
+
+}
+
+
+}
+
+
+effect = {
+hidden_tooltip = {
+
+if = {
+limit = {
+religion = sunni
+}
+
+d_sunni = {
+destroy_landed_title = THIS
+}
+}
+
+
+
+if = {
+limit = {
+religion = shiite
+}
+
+d_shiite = {
+destroy_landed_title = THIS
+}
+}
+
+
+if = {
+limit = {
+religion = ibadi
+}
+
+d_ibadi = {
+destroy_landed_title = THIS
+}
+}
+
+
+if = {
+limit = {
+religion = hurufi
+}
+
+d_hurufi = {
+destroy_landed_title = THIS
+}
+}
+
+
+if = {
+limit = {
+religion = khadjirite
+}
+
+d_khad = {
+destroy_landed_title = THIS
+}
+}
+
+
+if = {
+limit = {
+religion = Almohade
+}
+
+d_almomh = {
+destroy_landed_title = THIS
+}
+}
+
+
+
+
+}
+random_realm_character = {
+limit = {
+trait = sayyid
+religion = ROOT
+}
+narrative_event = { id = RIRSEMUS.111151 }
+}
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+tonsure_khad = {
+is_high_prio = yes
+		potential = {
+NOT = {
+trait = tonsur_mus }
+
+religion = khadjirite 
+
+
+}
+allow = {
+trait = zealous
+NOT = {
+decadence = 15
+}
+
+
+
+
+}
+effect = {
+add_trait = tonsur_mus
+prestige = 100
+piety = 120
+
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+cal_vsamir = {
+is_high_prio = yes
+		potential = {
+
+OR = {
+has_landed_title = d_sunni
+has_landed_title = d_shiite
+has_landed_title = d_hurufi
+has_landed_title = d_ibadi
+has_landed_title = d_khad
+has_landed_title = d_almomh
+}
+independent = no
+
+}
+
+allow = {
+
+NOT = { decadence = 1
+}
+NOT = { trait = content }
+liege = {
+decadence = 50
+}
+
+}
+effect = {
+liege = {
+primary_title = {
+add_claim = ROOT
+}
+}
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+
+}

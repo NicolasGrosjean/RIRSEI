@@ -16,7 +16,7 @@ b_ciamberi = city
 #b_bussoleno = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History

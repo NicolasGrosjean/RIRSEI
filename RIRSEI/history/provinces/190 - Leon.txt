@@ -15,7 +15,7 @@ b_sanpedrodeperix = castle
 #b_cistierna = castle
 
 # Misc
-culture = visigothic
+culture = ibero
 religion = catholic
 
 # History

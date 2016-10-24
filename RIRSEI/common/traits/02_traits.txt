@@ -37,7 +37,7 @@ blinded = {
 born_in_the_purple = {
 	customizer = no
 	
-	vassal_opinion = 5
+	vassal_opinion = 10
 	monthly_character_prestige = 0.5
 	
 	male_compliment_adj = COMPL_PURPLE_BORN
@@ -47,8 +47,8 @@ born_in_the_purple = {
 augustus = {
 	customizer = no
 	
-	vassal_opinion = 10
-	monthly_character_prestige = 0.5
+	vassal_opinion = 15
+	monthly_character_prestige = 10
 	
 	male_compliment = COMPL_AUGUSTUS
 	female_compliment = COMPL_AUGUSTUS
@@ -147,9 +147,9 @@ child_of_consort = {
 peasant_leader = {
 	diplomacy = -5
 	
-	same_opinion = 25
+	same_opinion = 50
 	
-	vassal_opinion = -10
+	vassal_opinion = -20
 
 	rebel_inherited = yes
 	customizer = no
@@ -161,9 +161,9 @@ peasant_leader = {
 }
 
 heresiarch = {
-	infidel_opinion = -15
+	infidel_opinion = -30
 	
-	same_religion_opinion = 25
+	same_religion_opinion = 50
 	
 	rebel_inherited = yes
 	customizer = no
@@ -185,7 +185,7 @@ berserker = {
 	diplomacy = -2
 	combat_rating = 3
 	
-	same_opinion = 10
+	same_opinion = 20
 	
 	ai_rationality = -5
 	
@@ -205,13 +205,13 @@ varangian = {
 	
 	combat_rating = 2
 	
-	same_opinion = 10
+	same_opinion = 20
 	
 	customizer = no
 }
 
 saoshyant = {
-	zoroastrian_opinion = 10
+	zoroastrian_opinion = 20
 	
 	customizer = no
 	
@@ -223,7 +223,7 @@ saoshyant = {
 
 saoshyant_descendant = {
 	
-	zoroastrian_opinion = 5
+	zoroastrian_opinion = 10
 	
 	customizer = no
 }
@@ -240,7 +240,7 @@ viking = {
 	monthly_character_prestige = 0.3
 	same_religion_opinion = 15
 	
-	same_opinion = 5
+	same_opinion = 10
 	religious = yes
 	
 	male_insult = COMPL_PIRATE
@@ -258,7 +258,7 @@ monk = {
 	}
 	
 	monthly_character_piety = 0.3
-	same_religion_opinion = 5
+	same_religion_opinion = 10
 	
 	religious = yes # Lost immediately on religion change
 	cannot_marry = yes
@@ -276,7 +276,7 @@ nun = {
 	}
 	
 	monthly_character_piety = 0.3
-	same_religion_opinion = 5
+	same_religion_opinion = 10
 	
 	religious = yes # Lost immediately on religion change
 	cannot_marry = yes
@@ -297,7 +297,7 @@ on_pilgrimage = {
 	cached = yes    # Keep a cache of all trait holders, to use with the corresponding event trigger 
 	
 	monthly_character_piety = 0.2
-	same_religion_opinion = 5
+	same_religion_opinion = 10
 	
 	pilgrimage = yes    # Will need a regent, but can still be guardian to children
 	customizer = no
@@ -325,10 +325,15 @@ mutazilite = {
 	
 	opposites =  {
 		ashari
+                Shaifisme
+                Hanbalisme
+                Soufi
+                Malikite
+                Hanafisme
 	}
 	
-	same_opinion = 15
-	opposite_opinion = -25
+	same_opinion = 25
+	opposite_opinion = -80
 	
 	customizer = no
 	random = no
@@ -341,10 +346,14 @@ ashari = {
 	
 	opposites =  {
 		mutazilite
+                Shaifisme
+                Hanbalisme
+                Soufi               
+                Hanafisme
 	}
 	
-	same_opinion = 15
-	opposite_opinion = -25
+	same_opinion = 25
+	opposite_opinion = -50
 	
 	customizer = no
 	random = no
@@ -361,7 +370,7 @@ sympathy_christendom = {
 
 	tolerates_christian = yes		# Tolerates and is tolerated by Christians
 	
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -385,7 +394,7 @@ sympathy_islam = {
 
 	tolerates_muslim = yes		# Tolerates and is tolerated by Muslims
 
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -409,7 +418,7 @@ sympathy_pagans = {
 
 	tolerates_pagan_group = yes		# Tolerates and is tolerated by Pagans
 
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -433,7 +442,7 @@ sympathy_zoroastrianism = {
 
 	tolerates_zoroastrian_group = yes		# Tolerates and is tolerated by Zoroastrians
 
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -457,7 +466,7 @@ sympathy_judaism = {
 
 	tolerates_jewish_group = yes		# Tolerates and is tolerated by Jews
 
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -480,8 +489,8 @@ bad_priest_christian = {
 		}
 	}
 
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -509,8 +518,8 @@ bad_priest_muslim = {
 		}
 	}
 	
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -537,8 +546,8 @@ bad_priest_norse = {
 		}
 	}
 	
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -564,8 +573,8 @@ bad_priest_tengri = {
 		}
 	}
 	
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -591,8 +600,8 @@ bad_priest_zoroastrian = {
 		}
 	}
 
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -618,8 +627,8 @@ bad_priest_aztec = {
 		}
 	}
 
-	church_opinion = -10
-	same_opinion_if_same_religion = 25
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -695,7 +704,7 @@ sympathy_indian = {
 
 	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions
 
-	same_opinion_if_same_religion = 5
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -920,7 +929,7 @@ in_hiding = {
 
 	monthly_character_prestige = -2
 	diplomacy = -5
-	vassal_opinion = -5
+	vassal_opinion = -10
 	
 	in_hiding = yes
 
@@ -1008,7 +1017,7 @@ administrator = {
 architect = {
 	lifestyle = yes
 	
-	same_opinion = 10
+	same_opinion = 20
 	
 	stewardship = 2
 	martial = 1
@@ -1026,7 +1035,7 @@ architect = {
 strategist = {
 	lifestyle = yes
 	
-	same_opinion = 10
+	same_opinion = 20
 	
 	martial = 2
 	stewardship = 1
@@ -1041,7 +1050,7 @@ strategist = {
 socializer = {
 	lifestyle = yes
 	
-	same_opinion = 10
+	same_opinion = 20
 	sex_appeal_opinion = 10
 	
 	diplomacy = 3
@@ -1058,7 +1067,7 @@ socializer = {
 schemer = {
 	lifestyle = yes
 	
-	same_opinion = -5
+	same_opinion = -10
 	
 	intrigue = 3
 	
@@ -1100,7 +1109,7 @@ gamer = {
 		narrow_flank = 0.3
 	}
 	
-	same_opinion = 10
+	same_opinion = 20
 	
 	ruler_designer_cost = 10
 }
@@ -1113,7 +1122,7 @@ adventurer = {
 	levy_size = 0.2
 	max_manpower_mult = 0.1
 	
-	same_opinion = 10
+	same_opinion = 20
 
 	ai_ambition = 40
 	

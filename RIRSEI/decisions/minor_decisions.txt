@@ -558,7 +558,6 @@ decisions = {
 	
 	observe_ramadan = {
 		potential = {
-			ai = no
 			is_ruler = yes
 			prisoner = no
 			is_adult = yes
@@ -1740,7 +1739,104 @@ decisions = {
 		}
 	}
 	
-	hold_zun_feast = {
+	form_the_hre = {
+		is_high_prio = yes
+		potential = {
+                independent = yes
+has_global_flag = charlemagne_hre
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+			
+			e_hre = {
+				has_holder = no
+			}
+			e_roman_empire = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			prestige = 5000
+			realm_size = 300
+			OR = {
+AND = { 
+has_landed_title = k_germany
+has_landed_title = k_italy
+}
+AND = { 
+has_landed_title = k_france
+has_landed_title = k_italy
+}
+AND = { 
+has_landed_title = k_burgundy
+has_landed_title = k_italy
+}
+AND = { 
+has_landed_title = k_france
+has_landed_title = k_germany
+}
+AND = { 
+has_landed_title = k_aquitaine
+has_landed_title = k_italy
+}
+AND = { 
+has_landed_title = k_aquitaine
+has_landed_title = k_burgundy
+}
+AND = { 
+has_landed_title = k_lotharingia
+has_landed_title = k_burgundy
+}
+AND = { 
+has_landed_title = k_lotharingia
+has_landed_title = k_italy
+}
+}
+OR = {        
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+			
+		}
+		effect = {
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+                prestige = 3000
+			e_hre = {
+				grant_title = ROOT
+				add_law = succ_feudal_elective
+			}
+	any_playable_ruler = {
+				limit = { religion = catholic }
+				
+				narrative_event = { id = RIRSEI.222324 }		 
+}
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+hold_zun_feast = {
 		potential = {
 			has_dlc = "Charlemagne"
 			is_ruler = yes

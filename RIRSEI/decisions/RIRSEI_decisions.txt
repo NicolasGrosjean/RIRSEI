@@ -1,0 +1,3815 @@
+decisions = {
+
+                royaume_bretagne = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_brittany }
+			has_landed_title = d_brittany
+                        
+			religion_group = christian
+                        independent = yes
+                      OR = {
+				
+                        culture="breton"
+                        culture="GalloB"
+}
+		}
+		allow = {
+			prestige = 500
+			completely_controls = d_brittany
+			
+		}
+		effect = {
+			  narrative_event = { id = RIRSEI.404040 tooltip = EVTTOOLTIPRIRSEI.404040 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+royaume_aquitaine = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_aquitaine }
+			has_landed_title = d_aquitaine
+			religion_group = christian
+                        independent = yes
+     k_aquitaine = {
+			has_holder = no
+                        
+		}
+		}
+		allow = {
+			prestige = 500
+			completely_controls = d_aquitaine
+completely_controls = d_toulouse
+completely_controls = d_gascogne
+completely_controls = d_poitou
+completely_controls = d_auvergne	
+completely_controls = d_bourbon		
+		}
+		effect = {
+			  narrative_event = { id = RIRSEI.414141 tooltip = EVTTOOLTIPRIRSEI.414141 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+sacreroifrance = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 14
+			NOT = { trait = incapable }
+			NOT = { trait = roi_oint}
+			has_landed_title = k_france
+			religion = catholic
+                        independent = yes
+		}
+allow = {
+	 completely_controls = c_reims
+NOT = { trait = crowned_by_pope }
+		}
+		
+		effect = {
+			  character_event = { id = RIRSEI.424242 tooltip = EVTTOOLTIPRIRSEI.424242 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_principat = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = k_france }
+                        NOT = { has_global_flag = principat_dejure }
+OR = {
+			has_landed_title = k_aragon
+                        has_landed_title = k_spain 
+}
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+	                completely_controls = c_barcelona
+completely_controls = c_urgell
+completely_controls = c_rosello
+completely_controls = c_empuries
+completely_controls = c_lleida
+completely_controls = c_tarragona
+	
+		}
+		effect = {
+			  set_global_flag = principat_dejure
+set_global_flag = principat_dejure_vrai
+if = {
+limit = {
+has_landed_title = k_aragon
+}
+                          d_barcelona = { de_jure_liege = k_aragon }
+}
+if = {
+limit = {
+has_landed_title = k_spain
+}
+                          d_barcelona = { de_jure_liege = k_spain }
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_comtats = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { completely_controls = c_rosello }
+                        NOT = { has_claim = c_rosello }
+                        has_global_flag = principat_dejure
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = c_rosello
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretnetion_prin_pape = {
+		is_high_prio = yes
+		potential = {
+			
+			year = 1258
+                        has_global_flag = principat_dejure
+NOT = { has_global_flag = principat_dejure_vrai } 
+
+                        has_landed_title = k_papal_state
+
+			
+                      
+                        
+		}
+		allow = {
+age = 16
+			
+	
+		}
+		effect = {
+			  set_global_flag = principat_dejure_vrai
+
+                          d_barcelona = { de_jure_liege = k_aragon }
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+rex_is_imperator = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = rex_imperator_fr }
+                        not = { trait = excommunicated }
+                        has_landed_title = k_france
+                        trait = roi_oint
+			religion_group = christian
+                        independent = yes
+                        year = 1150
+                        demesne_size = 11
+
+                        
+		}
+		allow = {
+                        
+			prestige = 3000
+			OR = {
+                        has_law = crown_authority_3
+                        has_law = crown_authority_4	
+		}
+}
+		effect = {
+			  set_global_flag = rex_imperator_fr
+                          character_event = { id = RIRSEI.454545 tooltip = EVTTOOLTIPRIRSEI.454545 }
+                          
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_forez = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { completely_controls = c_forez }
+                        NOT = { has_claim = c_forez }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = c_forez
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+pretention_barrois = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { completely_controls = c_bar }
+                        NOT = { has_claim = c_bar }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = c_bar
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+confirmer_barrois = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_bar
+                        NOT = { has_global_flag = barrois_dejure }
+                        
+		}
+		allow = {
+			prestige = 1500
+                        e_hre = {
+                        OR = { 
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          c_bar = { de_jure_liege = d_champagne }
+                          set_global_flag = barrois_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+confirmer_forez = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = forez_dejure }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_forez
+                        
+                        
+		}
+		allow = {
+			prestige = 1500
+                        e_hre = {
+                        OR = { 
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          c_forez = { de_jure_liege = d_bourbon }
+                          set_global_flag = forez_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_lyon = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { completely_controls = c_lyon }
+                        NOT = { has_claim = c_lyon }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = c_lyon
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+confirmer_lyon = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = lyon_dejure }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_lyon
+                        
+                        
+		}
+		allow = {
+			prestige = 1500
+                        e_hre = {
+                        OR = { 
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          c_lyon = { de_jure_liege = d_valois }
+                          set_global_flag = lyon_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_vivarais = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { completely_controls = c_viviers }
+                        NOT = { has_claim = c_viviers }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = c_viviers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+confirmer_vivarais = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = vivarais_dejure }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_viviers
+                        
+                        
+		}
+		allow = {
+			prestige = 1500
+                        e_hre = {
+                        OR = { 
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          c_viviers = { de_jure_liege = d_toulouse }
+                          set_global_flag = vivarais_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+confirmer_bourgo = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = bourgo_dejure }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_besancon
+                        
+                        
+		}
+		allow = {
+			prestige = 2000
+                        e_hre = {
+                        
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 70
+}
+}
+
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          c_besancon = { de_jure_liege = d_burgundy }
+                          set_global_flag = bourgo_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+confirmer_dauph = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_global_flag = dauph_dejure }
+                        has_global_flag = rex_imperator_fr
+			has_landed_title = k_france
+			religion_group = christian
+                        independent = yes
+                        completely_controls = c_dauphine_viennois
+                        
+                        
+		}
+		allow = {
+			prestige = 1500
+                        e_hre = {
+                        OR = { 
+                        OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+}
+               holder_scope = {
+opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}
+}
+                          
+	                	
+		}
+		effect = {
+			  
+                          d_dauphine = { de_jure_liege = k_france }
+                          set_global_flag = dauph_dejure
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+restaurer_pologne = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_polandball }
+                        NOT = { has_global_flag = rex_poloniae }
+has_global_flag = polan_millesix 
+NOT = { has_global_flag = rex_poloniae_huit }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+			has_landed_title = k_poland
+			religion_group = christian
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 2000
+			completely_controls = k_poland
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+                        OR = {
+                              has_law = crown_authority_2 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+}
+}	
+		}
+		effect = {
+			  character_event = { id = RIRSEI.474747 tooltip = EVTTOOLTIPRIRSEI.474747 }
+                set_global_flag = rex_poloniae
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_pologne = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = rex_poloniae }
+has_global_flag = polan_millesix 
+                 NOT = { has_landed_title = k_poland }
+                 NOT = { has_landed_title = k_polandball }
+
+k_poland = {
+
+has_holder = yes
+
+}
+                        NOT = { has_character_flag = imp_polo }	
+			has_landed_title = e_hre
+			religion_group = christian
+                        independent = yes
+                        NOT = { completely_controls = k_poland }
+                        OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                        
+		}
+		allow = {
+			prestige = 6000
+			
+                        k_poland = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+}
+}	
+		}
+		effect = {
+                          k_poland = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.494949}
+}
+}
+                set_character_flag = imp_polo
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Rex_romanum = {
+is_high_prio = yes
+		potential = {
+                        
+NOT = { trait = roi_des_romains }                        
+NOT = { trait = crowned_by_pope }
+has_landed_title = e_hre
+}
+allow = {
+age = 16
+NOT = { trait = incapable }
+        
+}
+effect = {
+        add_trait = roi_des_romains
+if = {
+     limit = { has_global_flag = emp_vic_quer }
+     add_trait = imp_sacer
+}
+
+}
+ai_will_do = {
+			factor = 1
+		}
+}
+phare_christ = {
+ is_high_prio = yes
+potential = {
+			
+			not = { trait = excommunicated }
+			independent = yes
+			religion = catholic
+                         
+			NOT = { is_female = yes	}
+			NOT = { is_heretic = yes }
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = ren_imp }
+                        NOT = { trait = stupor_mundi }
+  OR = { 
+                              has_law = crown_authority_2
+                             has_law = crown_authority_3
+has_law = crown_authority_4
+}
+			trait = crowned_by_pope 
+			tier = emperor
+			primary_title = {
+				title = e_hre
+			}
+		}
+		allow = {
+			prisoner = no
+			age = 16
+			prestige = 8000
+			
+}
+effect = {
+        add_trait = stupor_mundi
+        character_event = { id = RIRSEI.595959 }
+        any_independent_ruler = {
+                   limit = { religion = catholic } 
+                   letter_event = { id = RIRSEI.535353 }
+}
+
+if = {
+limit = {
+has_global_flag = que_investvic
+}
+                          e_hre = {
+			set_name ="SACRIMR"
+			
+		}
+}
+}
+ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_france = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = rex_imperator_fr }
+                        NOT = { has_landed_title = k_france }
+                        NOT = { has_claim = k_france }
+                        NOT = { has_global_flag = ren_imp }
+                        year = 1020 
+               	        has_landed_title = e_hre
+			religion_group = christian
+                        independent = yes
+                        OR = {
+trait = stupor_mundi
+dynasty = 25061
+}
+                        NOT = { completely_controls = k_france }
+                        OR = { 
+                              has_law = crown_authority_3
+                             has_law = crown_authority_4
+}
+                        
+		}
+		allow = {
+			prestige = 9000
+OR = {
+                        demesne_size = 12
+dynasty = 25061
+}
+			
+                        k_france = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             
+}
+}	
+		}
+		effect = {
+                          add_claim = k_france
+                          set_character_flag = recl_fr
+                          k_france = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.545454}
+}
+}
+}
+ai_will_do = {
+			factor = 1
+		}
+}
+renova_imperi = {
+is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = ren_imp }
+                        has_landed_title = e_hre
+			religion_group = christian
+                        independent = yes
+OR = {
+                        trait = stupor_mundi
+                        dynasty = 25061
+}
+}
+allow = {
+			prestige = 10000
+OR = {
+demesne_size = 15
+dynasty = 25061
+}
+                        has_landed_title = k_france
+                        has_landed_title = k_italy
+                        has_landed_title = k_germany
+                        OR = { 
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+effect = {
+         set_global_flag = ren_imp
+         character_event = { id = RIRSEI.555555}
+}                        
+ai_will_do = {
+			factor = 1
+		}
+}
+restore_roman_empire_hre = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = rome_restored }
+                        has_global_flag = ren_imp
+			has_landed_title = e_hre
+			religion_group = christian
+		}
+		allow = {
+			prestige = 10000
+			completely_controls = k_france
+			OR = { 
+completely_controls = k_england
+completely_controls = k_britannia
+}
+			completely_controls = d_castilla
+			completely_controls = d_toledo
+completely_controls = d_badajoz
+completely_controls = d_granada
+completely_controls = d_valencia
+completely_controls = d_murcia
+completely_controls = d_cordoba
+completely_controls = d_sevilla
+completely_controls = d_toulouse
+completely_controls = d_verona
+completely_controls = d_susa
+completely_controls = d_lombardia
+completely_controls = d_toscana
+completely_controls = d_ancona
+completely_controls = d_galicia
+			completely_controls = d_brittany
+			completely_controls = d_aquitaine
+			completely_controls = k_germany
+ OR = { 
+                              has_law = centralization_3
+                              has_law = centralization_4
+}
+		}
+		effect = {
+			set_global_flag = rome_restored
+                        set_global_flag = rome_hre
+			narrative_event = { id = RIRSEI.575757 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+restore_roman_empire_hre_deux = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = rome_restored }
+			has_landed_title = e_hre
+OR = {
+has_landed_title = e_latin_empire
+has_landed_title = e_byzantium
+}
+			religion_group = christian
+		}
+		allow = {
+			prestige = 12000
+			completely_controls = k_germany
+                        completely_controls = k_byzantium
+
+ OR = { 
+                              has_law = centralization_3
+                              has_law = centralization_4
+}
+		}
+		effect = {
+			set_global_flag = rome_restored
+                        set_global_flag = rome_hre
+			narrative_event = { id = RIRSEI.959595 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+unifier_hre = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_character_flag = demande_unihre }
+                        has_landed_title = e_hre
+                        religion_group = christian
+                        trait = stupor_mundi
+e_byzantium = {
+   
+OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+}
+                        holder_scope = {
+                     
+NOT =  { completely_controls = k_anatolia }
+NOT =  { completely_controls = k_byzantium }
+NOT =  { completely_controls = k_bulgaria }
+NOT =  { completely_controls = k_serbia }
+NOT = { demesne_size = 5 }
+
+
+                        NOT = { prestige = 2000 }
+                        
+}
+}
+                        
+}
+		allow = {
+
+                         prestige = 8000
+                         demesne_size = 10
+                         OR = { 
+                              has_law = centralization_3
+                              has_law = centralization_4
+}
+}
+effect = {
+			set_character_flag = demande_unihre
+                        e_byzantium = {
+holder_scope = {
+			letter_event = { id = RIRSEI.606060 }
+}
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+unifier_er = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_character_flag = demande_er }
+                        has_landed_title = e_roman_empire
+                        has_global_flag = rome_hre
+                        religion_group = christian
+                        
+e_byzantium = {
+   
+OR = {
+                             has_law = centralization_0
+                             has_law = centralization_1
+                             has_law = centralization_2
+                             has_law = centralization_3
+}
+                        holder_scope = {
+                     
+NOT =  { completely_controls = e_byzantium }
+NOT = { demesne_size = 8 }
+
+
+                        NOT = { prestige = 4000 }
+                        
+}
+}
+                        
+}
+		allow = {
+
+                         prestige = 5000
+                         demesne_size = 6
+                         OR = { 
+                              has_law = centralization_2
+                              has_law = centralization_3
+                              has_law = centralization_4
+}
+}
+effect = {
+			set_character_flag = demande_er
+                        e_byzantium = {
+holder_scope = {
+			letter_event = { id = RIRSEI.646464 }
+}
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+demander_imp = {
+		is_high_prio = yes
+		potential = {
+                        age = 17
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { trait = Imp_regn }
+                        NOT = { trait = excommunicated }
+                        NOT = { has_character_flag = emp_guerre }
+                        religion = catholic
+                        NOT = { has_landed_title = k_polandball }
+                        primary_title = { tier = KING }
+                        
+                        independent = yes
+                        e_hre = {
+OR = {
+                                 has_law = crown_authority_0
+                                 has_law = crown_authority_1
+}
+                        holder_scope = {
+                        trait = roi_des_romains
+                        
+
+OR = {
+     trait = excommunicated
+AND = {
+NOT = { realm_size = 300 }
+NOT =  { completely_controls = e_hre }
+NOT = { rightful_religious_head_scope = {
+                        opinion = {
+          who = PREV
+          value = 0 
+}
+}
+}
+}
+}
+}
+}
+}
+
+                allow = {
+
+                         prestige = 8000
+                         demesne_size = 8
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                         rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+}
+          effect = {
+                   add_claim = e_hre
+                   set_character_flag = emp_guerre
+                    e_hre = {
+holder_scope = {
+			letter_event = { id = RIRSEI.686868 }
+any_vassal = {
+letter_event = { id = RIRSEI.696969 }
+}
+}
+
+}
+                character_event = { id = RIRSEI.727272 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+demander_imp_fr = {
+		is_high_prio = yes
+		potential = {
+                        age = 17
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_character_flag = emp_guerre }
+                        NOT = { trait = excommunicated }
+                        religion = catholic
+                        OR = { 
+                        has_landed_title = k_polandball
+                        trait = Imp_regn
+} 
+                        primary_title = { tier = KING }
+                        
+                        independent = yes
+                        e_hre = {
+OR = {
+                                 has_law = crown_authority_0
+                                 has_law = crown_authority_1
+}
+                        holder_scope = {
+                        trait = roi_des_romains
+                        
+
+OR = {
+     trait = excommunicated
+AND = {
+NOT = { realm_size = 250 }
+NOT =  { completely_controls = e_hre }
+NOT = { rightful_religious_head_scope = {
+                        opinion = {
+          who = PREV
+          value = 0 
+}
+}
+}
+}
+}
+}
+}
+}
+
+                allow = {
+
+                         prestige = 10000
+                         demesne_size = 12
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                         rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+}
+          effect = {
+                   add_claim = e_hre
+                   set_character_flag = emp_guerre
+                    e_hre = {
+holder_scope = {
+			letter_event = { id = RIRSEI.686868 }
+any_vassal = {
+letter_event = { id = RIRSEI.696969 }
+}
+}
+
+}
+                character_event = { id = RIRSEI.727272 }
+
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+royaume_normannia = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_normannia }
+			OR = { 
+has_landed_title = k_sweden
+has_landed_title = k_denmark
+has_landed_title = k_norway
+			}
+                        culture_group = north_germanic
+                        independent = yes
+		}
+		allow = {
+			prestige = 4000
+OR = {
+                                 
+                                 has_law = crown_authority_3
+                             has_law = crown_authority_4
+}
+			OR = { 
+AND = { 
+completely_controls = k_sweden
+completely_controls = k_denmark
+completely_controls = k_norway	
+		}
+AND = {
+has_landed_title = k_sweden
+has_landed_title = k_denmark
+has_landed_title = k_norway
+}
+}
+}
+		effect = {
+			  narrative_event = { id = RIRSEI.737373 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+creer_empire_russie_det = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = empire_russie }
+                        
+has_landed_title = k_rus
+
+completely_controls = k_rus
+
+                        religion = orthodox
+
+
+   e_byzantium = {
+			has_holder = no
+		} 
+
+   e_roman_empire = {
+			has_holder = no
+		} 
+}
+
+		allow = {
+
+                         prestige = 5000
+                         piety = 500
+                         demesne_size = 10
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			set_global_flag = empire_russie
+                narrative_event = { id = RIRSEI.747474 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+creer_empire_russie_fai = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = empire_russie }
+                         
+has_landed_title = k_rus
+
+completely_controls = k_rus
+
+                        religion = orthodox
+e_roman_empire = {
+			has_holder = no
+		} 
+
+
+  e_byzantium = {
+			has_holder = yes
+		} 
+OR = {
+e_byzantium = {
+holder_scope = {
+NOT =  { completely_controls = c_byzantion }
+}
+}
+AND = {
+e_byzantium = {
+
+			OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             
+}
+}
+e_byzantium = {
+                        holder_scope = {
+                     
+NOT =  { completely_controls = k_anatolia }
+NOT =  { completely_controls = k_byzantium }
+NOT = { demesne_size = 5 }
+
+
+                        NOT = { prestige = 1500 }
+                        
+}
+}
+}
+}
+
+}
+ 
+
+		allow = {
+
+                         prestige = 8000
+                         piety = 500
+                         demesne_size = 14
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			set_global_flag = empire_russie
+                narrative_event = { id = RIRSEI.757575 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+creer_empire_serbie_det = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_landed_title = e_serbia }
+                        has_landed_title = k_serbia
+                        independent = yes
+                        religion = orthodox
+                        culture = serbian
+
+
+   e_byzantium = {
+			has_holder = no
+		} 
+
+   e_roman_empire = {
+			has_holder = no
+		} 
+}
+
+		allow = {
+
+                         prestige = 4000
+                         piety = 500
+                         completely_controls = k_serbia
+
+completely_controls = d_thessalonika
+completely_controls = d_epirus
+completely_controls = d_dyrrachion
+
+
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			
+                narrative_event = { id = RIRSEI.777777 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+creer_empire_serbie_fai = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_landed_title = e_serbia }
+                        has_landed_title = k_serbia
+                        independent = yes
+                        religion = orthodox
+                        culture = serbian
+e_roman_empire = {
+			has_holder = no
+		} 
+
+e_byzantium = {
+			has_holder = yes
+		} 
+OR = {
+e_byzantium = {
+holder_scope = {
+NOT =  { completely_controls = c_byzantion }
+}
+}
+AND = {
+e_byzantium = {
+
+			OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             
+}
+}
+e_byzantium = {
+                        holder_scope = {
+                     
+NOT =  { completely_controls = k_anatolia }
+NOT =  { completely_controls = k_byzantium }
+NOT = { demesne_size = 5 }
+
+
+                        NOT = { prestige = 1500 }
+                        
+}
+}
+}
+}
+
+
+   
+
+}
+ 
+
+		allow = {
+
+
+
+
+                         prestige = 8000
+                         piety = 500
+                         demesne_size = 6
+
+completely_controls = k_serbia
+completely_controls = d_thessalonika
+completely_controls = d_epirus
+completely_controls = d_dyrrachion
+completely_controls = d_vidin
+
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			
+                narrative_event = { id = RIRSEI.787878 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+creer_empire_bulgarie_det = {
+		is_high_prio = yes
+		potential = {
+                        age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_landed_title = e_bulgaria }
+                        has_landed_title = k_bulgaria
+                        independent = yes
+                        religion = orthodox
+                        culture = bulgarian
+
+
+   e_byzantium = {
+			has_holder = no
+		} 
+
+   e_roman_empire = {
+			has_holder = no
+		} 
+}
+
+		allow = {
+
+                         prestige = 4000
+                         piety = 500
+                         completely_controls = k_bulgaria
+
+completely_controls = d_thessalonika
+completely_controls = d_epirus
+completely_controls = d_dyrrachion
+
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			
+                narrative_event = { id = RIRSEI.808080 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+creer_empire_bulgarie_fai = {
+		is_high_prio = yes
+		potential = {
+                     age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_landed_title = e_bulgaria }
+                        has_landed_title = k_bulgaria
+                        independent = yes
+                        religion = orthodox
+                        culture = bulgarian
+e_roman_empire = {
+			has_holder = no
+		} 
+e_byzantium = {
+			has_holder = yes
+		} 
+OR = {
+e_byzantium = {
+holder_scope = {
+NOT =  { completely_controls = c_byzantion }
+}
+}
+AND = {
+e_byzantium = {
+
+			OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             
+}
+}
+e_byzantium = {
+                        holder_scope = {
+                     
+NOT =  { completely_controls = k_anatolia }
+NOT =  { completely_controls = k_byzantium }
+NOT = { demesne_size = 5 }
+
+
+                        NOT = { prestige = 1500 }
+                        
+}
+}
+}
+}
+
+}
+ 
+
+		allow = {
+
+                         prestige = 8000
+                         piety = 500
+                         demesne_size = 6
+completely_controls = k_bulgaria
+
+
+completely_controls = d_thessalonika
+completely_controls = d_epirus
+completely_controls = d_dyrrachion
+completely_controls = d_wallachia
+
+                         OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+effect = {
+			
+                narrative_event = { id = RIRSEI.818181 }
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+reno_byz = {
+		is_high_prio = yes
+		potential = {
+                     age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_landed_title = e_byzantium }
+                        OR ={ 
+                        has_landed_title = e_bulgaria
+                        has_landed_title = e_serbia
+                        has_landed_title = e_russia
+}
+                        independent = yes
+                        religion = orthodox
+}
+allow = {
+
+                         prestige = 9000
+                         piety = 500
+                         demesne_size = 10
+                         completely_controls = c_byzantion
+OR = { 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+}
+                        
+effect = {
+			
+                narrative_event = { id = RIRSEI.838383 }
+hidden_tooltip = {
+                e_byzantium = {
+			destroy_landed_title = THIS
+		 
+			}
+}
+         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+protecrelique = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { trait = relique_jacques}
+                        not = { trait = excommunicated }
+			 OR = { 
+has_landed_title = k_asturias
+has_landed_title = k_leon
+has_landed_title = k_castille
+has_landed_title = k_aragon
+has_landed_title = k_navarra
+has_landed_title = k_spanish_galicia
+has_landed_title = k_portugal
+has_landed_title = k_spain
+}
+			religion = catholic
+                        culture_group = latin
+                        independent = yes
+		}
+allow = {
+	 completely_controls = c_santiago
+		}
+		
+		effect = {
+			  character_event = { id = RIRSEI.848484 }
+any_independent_ruler = {
+                   limit = { trait = relique_jacques } 
+                   letter_event = { id = RIRSEI.858585}
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+defensor_christ = {
+ is_high_prio = yes
+potential = {
+			
+			not = { trait = excommunicated }
+			independent = yes
+			religion = catholic
+			NOT = { is_female = yes	}
+			NOT = { is_heretic = yes }
+			NOT = { trait = incapable }
+                        culture_group = latin
+                        primary_title = { tier = KING }
+                        NOT = { trait = defenseur_chretiente }
+  OR = { 
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+			trait = relique_jacques 
+		
+		
+OR = {
+completely_controls = d_toledo
+completely_controls = d_badajoz
+completely_controls = d_beja
+completely_controls = d_valencia
+completely_controls = d_murcia
+}
+}
+		allow = {
+			prisoner = no
+			age = 16
+			prestige = 4000
+			piety = 500
+rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 20 
+}
+}
+}
+effect = {
+        
+        character_event = { id = RIRSEI.868686 }
+        any_independent_ruler = {
+                   limit = { 
+OR = {
+culture = catalan
+culture = castillan
+culture = portuguese
+culture = basque
+}
+primary_title = { tier = KING } 
+} 
+                   letter_event = { id = RIRSEI.878787}
+}
+ any_independent_ruler = {
+                   limit = { 
+OR = {
+has_landed_title = d_knights_templar
+has_landed_title = d_teutonic_order
+has_landed_title = d_knights_hospitaler
+has_landed_title = d_knights_santiago
+has_landed_title = d_knights_calatrava
+
+}
+}
+letter_event = { id = RIRSEI.888888}
+}
+any_vassal = {
+                   limit = { 
+OR = {
+has_landed_title = d_knights_templar
+has_landed_title = d_teutonic_order
+has_landed_title = d_knights_hospitaler
+has_landed_title = d_knights_santiago
+has_landed_title = d_knights_calatrava
+
+}
+}
+letter_event = { id = RIRSEI.888888}
+}
+}
+ai_will_do = {
+			factor = 1
+		}
+}
+royaume_espagne = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_spain }
+                        NOT = { has_global_flag = royaume_esp }
+                        trait = relique_jacques
+OR = {
+AND = { 
+has_landed_title = k_aragon
+has_landed_title = k_castille
+has_landed_title = k_leon
+}
+AND = { 
+has_landed_title = k_portugal
+has_landed_title = k_castille
+has_landed_title = k_leon
+}
+			}
+
+
+                        culture_group = latin
+                        independent = yes
+		}
+		allow = {
+			prestige = 7000
+                        piety = 800
+			
+                        has_law = crown_authority_4
+
+			OR = { 
+AND = { 
+completely_controls = d_toledo
+completely_controls = d_badajoz
+completely_controls = d_cordoba
+completely_controls = d_granada
+completely_controls = d_sevilla
+completely_controls = d_algarve
+completely_controls = d_murcia
+
+		}
+AND = {
+completely_controls = d_toledo
+completely_controls = d_badajoz
+completely_controls = d_granada
+completely_controls = d_valencia
+completely_controls = d_murcia
+completely_controls = d_cordoba
+completely_controls = d_sevilla
+
+}
+}
+}
+		effect = {
+			  narrative_event = { id = RIRSEI.898989 }
+                          set_global_flag = royaume_esp
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+                royaume_bretwalda = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_britannia }
+			has_landed_title = k_england
+			religion_group = christian
+                        independent = yes
+                      OR = {
+				
+                        culture="breton"
+                        culture="scottish"
+                        culture="irish"
+                        culture="welsh"
+}
+		}
+		allow = {
+			prestige = 5000
+                        
+			
+			
+		}
+		effect = {
+			  narrative_event = { id = RIRSEI.909090  }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+const_venise = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			has_landed_title = k_venice
+			capital_scope = {
+				NOT = { province_id = 496 }
+			}
+						OR = { 
+                        any_realm_lord = { has_landed_title = c_byzantion }
+                        has_landed_title = c_byzantion
+}
+			
+		}
+		allow = {
+			has_landed_title = k_venice
+			OR = { 
+                        any_realm_lord = { has_landed_title = c_byzantion }
+                        has_landed_title = c_byzantion
+}
+                        prestige = 5000
+                        wealth = 3000
+		}
+		effect = {
+wealth = -3000
+			custom_tooltip = {
+				text = venice_capital
+				hidden_tooltip = {
+					b_galata = { province_capital = yes }
+					ROOT = {
+						b_galata = {
+							usurp_title = PREV
+						}
+					}
+					#b_roma = { set_name = Lateran }
+					b_galata = { 
+						set_name = Constantinopolis 
+						ROOT = { capital = PREV }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+emp_latin_venise = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_latin_empire }
+                        NOT = { has_landed_title = e_roman_empire }
+			has_landed_title = k_venice
+			OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+                        capital_scope = { province_id = 496 }
+                        independent = yes
+e_latin_empire = {
+			has_holder = no
+		}
+
+		}
+		allow = {
+			prestige = 7000
+                        wealth = 2500
+			OR = {
+                        AND = {
+completely_controls = d_thrace
+completely_controls = d_adrianopolis
+completely_controls = d_thessalonika
+completely_controls = d_athens
+completely_controls = d_achaia
+}
+AND = {
+completely_controls = d_nikaea
+completely_controls = d_samos
+completely_controls = d_cibyrrhaeot
+completely_controls = c_lykia
+}
+}			
+		}
+		effect = {
+wealth = -2500
+			  narrative_event = { id = RIRSEI.919191 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+emp_latin_autres = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_latin_empire }
+                        NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = k_venice }
+                        is_merchant_republic = no
+			completely_controls = c_byzantion
+			OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+                        
+                        independent = yes
+e_latin_empire = {
+			has_holder = no
+		}
+e_roman_empire = {
+			has_holder = no
+		}
+
+		}
+		allow = {
+			prestige = 6500
+                        
+			OR = {
+                        AND = {
+completely_controls = d_thrace
+completely_controls = d_adrianopolis
+completely_controls = d_thessalonika
+completely_controls = d_athens
+completely_controls = d_achaia
+}
+AND = {
+completely_controls = d_nikaea
+completely_controls = d_samos
+completely_controls = d_cibyrrhaeot
+completely_controls = c_lykia
+}
+}			
+		}
+		effect = {
+
+			  narrative_event = { id = RIRSEI.929292 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+emp_latin_dejure = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = emp_latin_jur }
+			has_landed_title = e_latin_empire
+			OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+                        
+                        independent = yes
+
+e_roman_empire = {
+			has_holder = no
+		}
+
+		}
+		allow = {
+			prestige = 10000
+e_byzantium = {
+			has_holder = no
+		}
+e_serbia = {
+			has_holder = no
+		}
+		e_bulgaria = {
+			has_holder = no
+		}
+                        
+			
+		}
+		effect = {
+set_global_flag = emp_latin_jur
+e_byzantium = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_latin_empire
+				}
+			}
+e_otto_roum = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_latin_empire
+				}
+			}
+activate_title = { title = e_byzantium status = no }
+			  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+restore_roman_empire_latin = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = rome_restored }
+                        has_global_flag = emp_latin_jur
+			has_landed_title = e_latin_empire
+			religion_group = christian
+		}
+		allow = {
+			prestige = 6000
+			
+			completely_controls = d_venice
+			completely_controls = d_ferrara
+			completely_controls = d_sicily
+			completely_controls = d_genoa
+			completely_controls = d_capua
+			completely_controls = d_apulia
+			completely_controls = d_thrace
+			completely_controls = d_antioch
+			completely_controls = d_jerusalem
+			completely_controls = d_alexandria
+			completely_controls = d_athens
+			completely_controls = d_tunis
+			completely_controls = d_croatia
+completely_controls = d_aswan
+		completely_controls = d_damietta
+		completely_controls = d_cairo
+                completely_controls = d_cyrenaica
+completely_controls = d_ascalon
+completely_controls = d_galilee
+		}
+		effect = {
+			set_global_flag = rome_restored
+			narrative_event = { id = RIRSEI.939393 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+Basileia_nova = {
+is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+                        NOT = { has_global_flag = Basileia_nova }
+                        has_landed_title = e_byzantium
+			religion_group = christian
+                        independent = yes
+                        
+}
+allow = {
+			prestige = 9000
+                        demesne_size = 10
+                        completely_controls = e_byzantium
+                        OR = { 
+has_law = crown_authority_3
+has_law = crown_authority_4
+}
+}
+effect = {
+         set_global_flag = Basileia_nova
+         character_event = { id = RIRSEI.111213}
+}                        
+ai_will_do = {
+			factor = 1
+		}
+}
+aquit_fr = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+                        NOT = { has_global_flag = aquit_france }
+                        
+			has_landed_title = k_france
+                        has_landed_title = k_aquitaine
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1500
+year = 900
+	                	
+		}
+		effect = {
+			  set_global_flag = aquit_france
+                          d_aquitaine = { de_jure_liege = k_france }
+                          d_poitou = { de_jure_liege = k_france }
+                          d_auvergne = { de_jure_liege = k_france }
+                          d_toulouse = { de_jure_liege = k_france }
+                          d_gascogne = { de_jure_liege = k_france }
+                          d_bourbon = { de_jure_liege = k_france }
+k_aquitaine = {
+			destroy_landed_title = THIS
+		}
+ activate_title = { title = k_aquitaine status = no }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_bretduc = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = france_bret }
+                        NOT = { year = 1020 }
+    k_brittany = {
+			has_holder = no
+		}
+d_brittany = {
+			has_holder = yes
+                        
+		}
+
+			religion_group = christian
+                        independent = yes
+                        NOT = { completely_controls = d_brittany }
+                        OR = { 
+has_landed_title = k_france
+AND = {
+has_landed_title = e_hre 
+completely_controls = k_france
+}
+}
+           
+                        
+		}
+		allow = {
+
+			prestige = 1500
+OR = {        
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+
+			
+	
+		}
+		effect = {
+                          d_brittany = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.131415}
+}
+}
+                set_global_flag = france_bret
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_bretroy = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = france_bret }
+                        k_brittany = {
+			has_holder = yes
+                        
+		}
+
+     k_brittany = {
+			independent = yes
+                        
+		}
+			religion_group = christian
+                        independent = yes
+                        NOT = { completely_controls = d_brittany }
+                        OR = { 
+has_landed_title = k_france
+AND = {
+has_landed_title = e_hre 
+completely_controls = k_france
+}
+}
+           
+                        
+		}
+		allow = {
+			prestige = 2500
+OR = {        
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+k_brittany = {
+                              has_law = crown_authority_0
+                              has_law = crown_authority_1
+}
+			
+	
+		}
+		effect = {
+                          k_brittany = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.141516}
+}
+}
+                set_global_flag = france_bret
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pape_script_detruire_hre = {
+		is_high_prio = yes
+		potential = {
+			
+			
+			
+			
+			has_landed_title = k_papal_state
+                        NOT = { year = 1020 }
+NOT = { has_global_flag = hre_mort }
+			
+
+		}
+		allow = {
+			e_hre = {
+holder_scope = {
+NOT = { dynasty = 25061 }
+NOT = { trait = crowned_by_pope } 
+NOT = { realm_size = 100 }
+NOT = { completely_controls = k_italy }
+NOT = { prestige = 1500 }
+}
+}		
+			
+		}
+		effect = {
+set_global_flag = hre_mort
+e_hre = {
+			destroy_landed_title = THIS
+		}
+	any_playable_ruler = {
+				limit = { religion = catholic }
+				
+				narrative_event = { id = RIRSEI.212223 }		 
+}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+pape_script_dejure_hre = {
+		is_high_prio = yes
+		potential = {
+			
+			
+			
+			NOT = { has_global_flag = de_jure_fr_hre }
+			has_landed_title = k_papal_state
+has_global_flag = charlemagne_hre
+                        NOT = { year = 950 }
+			
+
+		}
+		allow = {
+			prestige = 1
+			
+			
+		}
+		effect = {
+			  k_france = {
+de_jure_liege = e_hre
+}
+k_aquitaine = {
+de_jure_liege = e_hre
+}
+set_global_flag = de_jure_fr_hre
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+pretention_fr_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_france }
+                        NOT = { completely_controls = k_france }
+                        NOT = { has_claim = k_france }
+                        dynasty = 25061 
+                       OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_france
+}
+NOT = {
+			k_france = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_ehre_carol = {
+		is_high_prio = yes
+		potential = {
+e_hre = {
+				has_holder = yes
+			}
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+                        NOT = { completely_controls = e_hre }
+                        NOT = { has_claim = e_hre }
+dynasty = 25061
+                       OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = KING }
+}
+
+NOT = {
+			e_hre = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 1000
+				
+		}
+		effect = {
+			  add_claim = e_hre
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_germ_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_germany }
+                        NOT = { completely_controls = k_germany }
+                        NOT = { has_claim = k_germany }
+dynasty = 25061
+                                               OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_germany
+}
+NOT = {
+			k_germany = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_germany
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_ita_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_italy }
+                        NOT = { completely_controls = k_italy }
+                        NOT = { has_claim = k_italy }
+dynasty = 25061
+                                               OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_italy
+}
+NOT = {
+			k_italy = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_italy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_loth_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_lotharingia }
+                        NOT = { completely_controls = k_lotharingia }
+                        NOT = { has_claim = k_lotharingia }
+dynasty = 25061
+                                               OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_lotharingia
+}
+NOT = {
+			k_lotharingia = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_lotharingia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_bourg_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_burgundy }
+                        NOT = { completely_controls = k_burgundy }
+                        NOT = { has_claim = k_burgundy }
+dynasty = 25061
+                                               OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_burgundy
+}
+NOT = {
+			k_burgundy = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_burgundy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pretention_aqui_carol = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_aquitaine }
+                        NOT = { completely_controls = k_aquitaine }
+                        NOT = { has_claim = k_aquitaine }
+dynasty = 25061
+                                               OR = {
+ primary_title = { tier = DUKE }
+ primary_title = { tier = COUNT }
+}
+liege = {
+			independent = yes
+                        has_landed_title = k_aquitaine
+}
+NOT = {
+			k_aquitaine = {
+holder_scope = {
+dynasty = 25061  
+}
+}
+}                      
+			religion_group = christian
+                        
+				
+				
+			
+                        
+		}
+		allow = {
+			prestige = 100
+				
+		}
+		effect = {
+			  add_claim = k_aquitaine
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+royaume_baviere = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_bavaria }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+			has_landed_title = d_bavaria
+			religion_group = christian
+                        independent = yes
+     k_bavaria = {
+			has_holder = no
+                        
+		}
+		}
+		allow = {
+			prestige = 500
+			completely_controls = d_bavaria
+completely_controls = d_osterreich
+completely_controls = d_tyrol
+	
+		}
+		effect = {
+			  narrative_event = { id = RIRSEI.232425 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+bav_inte = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+                        NOT = { has_global_flag = bav_germ }
+                        
+			has_landed_title = k_germany
+                        has_landed_title = k_bavaria
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+			prestige = 1500
+                        year = 920
+	                	
+		}
+		effect = {
+			  set_global_flag = bav_germ
+                          d_bavaria = { de_jure_liege = k_germany }
+                          d_tyrol = { de_jure_liege = k_germany }
+                          d_osterreich = { de_jure_liege = k_germany }
+                          d_carinthia = { de_jure_liege = k_germany }
+k_bavaria = {
+			destroy_landed_title = THIS
+		}
+ activate_title = { title = k_bavaria status = no }
+                         
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pape_script_mutation = {
+		is_high_prio = yes
+		potential = {
+			
+			
+			
+			NOT = { has_global_flag = mutare }
+			has_landed_title = k_papal_state
+                        NOT = { year = 1020 }
+			
+
+		}
+		allow = {
+			prestige = 1
+			
+			
+		}
+		effect = {
+any_playable_ruler = {
+				
+				
+				narrative_event = { id = RIRSEI.242526 }		 
+}
+set_global_flag = mutare
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+pape_script_central = {
+		is_high_prio = yes
+		potential = {
+			
+			
+			
+			NOT = { has_global_flag = central }
+			has_landed_title = k_papal_state
+                        year = 1020 
+			
+
+		}
+		allow = {
+			prestige = 1
+			
+			
+		}
+		effect = {
+any_playable_ruler = {
+				
+				
+				narrative_event = { id = RIRSEI.252627 }		 
+}
+set_global_flag = central
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+reliquecharles = {
+		is_high_prio = yes
+		potential = {
+			has_global_flag = charlemagne_hre
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { trait = relique_charles}
+                        NOT = { has_global_flag = relique_char_fr }
+completely_controls = c_julich
+
+			religion_group = christian
+                        
+                        independent = yes
+		}
+allow = {
+			 OR = { 
+has_landed_title = k_lotharingia
+has_landed_title = k_france
+has_landed_title = k_burgundy
+has_landed_title = k_germany
+has_landed_title = k_aquitaine
+has_landed_title = k_italy
+has_landed_title = k_bavaria
+has_landed_title = e_hre
+}
+	 
+		}
+		
+		effect = {
+character_event = { id = RIRSEI.262728 }
+any_independent_ruler = {
+                   limit = { trait = relique_charles } 
+                   letter_event = { id = RIRSEI.272829}
+}
+
+
+
+
+}
+		
+		ai_will_do = {
+			factor = 1
+		}
+}
+reliquecharlesfr = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { trait = relique_charles}
+has_global_flag = charlemagne_hre
+                        has_global_flag = relique_char_fr 
+                        completely_controls = c_ile_de_france
+			religion_group = christian
+                        
+                        independent = yes
+		}
+allow = {
+	 			 OR = { 
+has_landed_title = k_lotharingia
+has_landed_title = k_france
+has_landed_title = k_burgundy
+has_landed_title = k_germany
+has_landed_title = k_aquitaine
+has_landed_title = k_italy
+has_landed_title = k_bavaria
+has_landed_title = e_hre
+}
+
+		}
+		
+		effect = {
+character_event = { id = RIRSEI.262728 }
+any_independent_ruler = {
+                   limit = { trait = relique_charles } 
+                   letter_event = { id = RIRSEI.272829}
+}
+
+
+
+
+}
+		
+		ai_will_do = {
+			factor = 1
+		}
+}
+pape_hongrie = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+                        NOT = { has_landed_title = k_moravia }
+                        NOT = { has_global_flag = couronne_hongrie }
+k_hungary = {
+				has_holder = no
+			}
+			has_landed_title = k_magyar
+
+			religion = catholic
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 2500
+			completely_controls = d_pest
+			OR = {
+				completely_controls = d_transylvania
+				completely_controls = d_ungvar
+				completely_controls = d_nyitra
+			}
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+                        OR = {
+                              has_law = crown_authority_2 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                        
+		}
+		effect = {
+			  
+                set_global_flag = couronne_hongrie
+narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			prestige = 1000
+			wealth = 1000
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_hongrie = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = couronne_hongrie }
+NOT = { has_global_flag = ehre_hongrie }
+k_hungary = {
+				has_holder = no
+			}
+                        NOT = { has_landed_title = k_hungary }
+NOT = { has_landed_title = k_magyar }
+                        NOT = { has_global_flag = imp_hong }	
+			has_landed_title = e_hre
+			religion = catholic
+                        independent = yes
+completely_controls = d_osterreich
+
+
+                        NOT = { completely_controls = k_hungary }
+ 
+k_magyar = {
+ 
+holder_scope = {
+religion_group = christian
+independent = yes
+}
+}
+                        
+		}
+		allow = {
+			prestige = 7000
+                       OR = { 
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+			
+                        k_magyar = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             
+}
+}	
+		}
+		effect = {
+                          k_magyar = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.303132}
+}
+}
+                set_global_flag = ehre_hongrie
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_boheme = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = couronne_boheme }
+NOT = { has_global_flag = ehre_boheme }
+k_bohemia = {
+				has_holder = no
+			}
+k_moravia = {
+				has_holder = no
+			}
+                        NOT = { has_landed_title = k_moravia }
+NOT = { has_landed_title = k_bohemia }
+                        	
+		
+has_landed_title = e_hre
+
+
+
+			religion_group = christian
+                        independent = yes
+OR = {
+completely_controls = d_osterreich
+completely_controls = d_bavaria
+}
+
+                        NOT = { completely_controls = d_bohemia }
+ 
+d_bohemia = {
+ 
+holder_scope = {
+religion_group = christian
+independent = yes
+}
+}
+                        
+		}
+		allow = {
+			prestige = 4000
+                       OR = { 
+                              has_law = crown_authority_1
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+			
+                        d_bohemia = {
+NOT = { prestige = 2000 }
+
+                               
+}	
+		}
+		effect = {
+                          d_bohemia = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.333435}
+}
+}
+                set_global_flag = ehre_boheme
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+boheme_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_bohemia }
+k_bohemia = {
+				has_holder = no
+			}
+k_moravia = {
+				has_holder = no
+			}
+                        NOT = { has_global_flag = couronne_boheme }
+			has_landed_title = d_bohemia
+			religion_group = christian
+top_liege = {
+has_landed_title = e_hre 
+}
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = d_bohemia
+OR = {
+has_landed_title = d_moravia
+completely_controls = d_moravia
+}
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+}
+}	
+		}
+		effect = {
+			  character_event = { id = RIRSEI.363738 }
+                set_global_flag = couronne_boheme
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+boheme_roi_emp = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_bohemia }
+k_bohemia = {
+				has_holder = no
+			}
+k_moravia = {
+				has_holder = no
+			}
+                        NOT = { has_global_flag = couronne_boheme }
+			has_landed_title = d_bohemia
+			religion_group = christian
+top_liege = {
+has_landed_title = e_hre 
+}
+                        
+                        
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = d_bohemia
+OR = {
+                        completely_controls = d_moravia
+                        has_landed_title = d_moravia
+}
+
+
+e_hre = {
+                        
+                        holder_scope = {
+                        opinion = {
+          who = ROOT
+          value = 50
+}
+}
+}                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+                             has_law = crown_authority_3
+}
+}	
+		}
+		effect = {
+			  character_event = { id = RIRSEI.383940 }
+                set_global_flag = couronne_boheme
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+boheme_roi_pape_ind = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_bohemia }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+k_bohemia = {
+				has_holder = no
+			}
+k_moravia = {
+				has_holder = no
+			}
+                        NOT = { has_global_flag = couronne_boheme }
+			has_landed_title = d_bohemia
+			religion_group = christian
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 3000
+			completely_controls = d_bohemia
+OR = {
+                        completely_controls = d_moravia
+                        has_landed_title = d_moravia
+}
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+                        
+                       
+		}
+		effect = {
+			  character_event = { id = RIRSEI.394041 }
+                set_global_flag = couronne_boheme
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+pol_reclam_boh = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+
+NOT = { has_landed_title = k_bohemia }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+
+NOT = { has_landed_title = d_bohemia }
+NOT = { has_landed_title = d_moravia }
+
+
+                        NOT = { year = 1020 }
+
+k_bohemia = {
+				has_holder = no
+			}
+
+k_moravia = {
+				has_holder = no
+			}
+                        NOT = { has_global_flag = boh_pol_ld }
+OR = {
+			has_landed_title = k_poland
+has_landed_title = k_polandball
+}
+			religion_group = christian
+                        independent = yes
+NOT = { has_claim = d_bohemia }
+NOT = { has_claim = d_moravia }
+NOT = { completely_controls = d_bohemia }
+                        
+		}
+		allow = {
+			prestige = 2000
+			completely_controls = k_poland
+
+                       
+OR = {
+                             has_law = crown_authority_2
+                             has_law = crown_authority_3
+                             has_law = crown_authority_4
+                             
+}
+                        
+                       
+		}
+		effect = {
+			  add_claim = d_bohemia
+                          add_claim = d_moravia
+              
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+boh_reclam_pol = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+
+NOT = { has_landed_title = k_poland }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+
+NOT = { has_landed_title = k_polandball }
+
+
+                        NOT = { year = 1020 }
+
+k_poland = {
+				has_holder = yes
+			}
+
+k_polandball = {
+				has_holder = no
+			}
+                       
+OR = {
+			has_landed_title = d_bohemia
+has_landed_title = k_bohemia
+}
+			religion_group = christian
+                        independent = yes
+NOT = { has_claim = k_poland }
+NOT = { completely_controls = k_poland }
+
+                        
+		}
+		allow = {
+			prestige = 2000
+			completely_controls = k_bohemia
+
+k_poland = {
+   NOT = {                    
+OR = {
+                             
+                             has_law = crown_authority_3
+                             has_law = crown_authority_4
+}                             
+}
+}                        
+                       
+		}
+		effect = {
+			  add_claim = k_poland
+                          
+              
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+boh_heritage_moravie = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }                    
+
+k_moravia = {
+				has_holder = no
+			}
+NOT = { completely_controls = d_silesia }
+NOT = { completely_controls = d_nyitra }
+NOT = { completely_controls = d_esztergom }
+NOT = { completely_controls = d_meissen }
+
+              has_landed_title = k_bohemia
+NOT = { has_character_flag = fini_herit }
+
+			religion_group = christian
+                        
+NOT = { has_claim = d_silesia }
+NOT = { has_claim = d_nyitra }
+NOT = { has_claim = d_esztergom }
+NOT = { has_claim = d_meissen }
+NOT = { has_landed_title = d_silesia }
+NOT = { has_landed_title = d_nyitra }
+NOT = { has_landed_title = d_esztergom }
+NOT = { has_landed_title = d_meissen}
+
+
+
+                        
+		}
+		allow = {
+			prestige = 6000
+			completely_controls = k_bohemia
+
+                       
+                       
+		}
+		effect = {
+			  add_claim = d_silesia
+add_claim = d_nyitra
+add_claim = d_esztergom
+add_claim = d_meissen
+set_character_flag = fini_herit
+                          
+              
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+croate_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_croatia }
+k_croatia = {
+				has_holder = no
+			}
+
+                        OR = {
+has_landed_title = d_slavonia
+			has_landed_title = d_croatia
+}
+culture = croatian
+			religion = catholic
+                       independent = yes                       
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = d_croatia
+                       OR = {
+ has_landed_title = d_bosnia
+has_landed_title = d_slavonia
+}
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 35 
+}
+}
+                        
+                       
+		}
+		effect = {
+			  character_event = { id = RIRSEI.414243 }
+                
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+creer_pologne = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_polandball }
+                        NOT = { has_global_flag = rex_poloniae }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+NOT = { has_global_flag = rex_poloniae_huit }
+			has_landed_title = k_poland
+			religion = catholic
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = k_poland
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+                        OR = {
+                              has_law = crown_authority_2 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                       
+		}
+		effect = {
+			  character_event = { id = RIRSEI.424344 }
+                set_global_flag = rex_poloniae_huit
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+creer_pologne_ortho = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_polandball }
+                        NOT = { has_global_flag = rex_poloniae }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+NOT = { has_global_flag = rex_poloniae_huit }
+			has_landed_title = k_poland
+			religion = orthodox
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = k_poland
+                       e_byzantium = {
+
+holder_scope = {
+                        opinion = {
+          who = ROOT
+          value = 30
+}
+}
+}
+                        OR = {
+                              has_law = crown_authority_2 
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                       
+		}
+		effect = {
+			  character_event = { id = RIRSEI.434445 }
+                set_global_flag = rex_poloniae_huit
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+reclamer_pologne_huit = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+		        NOT = { has_global_flag = rex_poloniae }
+
+                 NOT = { has_landed_title = k_poland }
+                 NOT = { has_landed_title = k_polandball }
+
+k_poland = {
+
+has_holder = yes
+
+}
+                        NOT = { has_character_flag = imp_polo }	
+			has_landed_title = e_hre
+			religion_group = christian
+                        independent = yes
+                        NOT = { completely_controls = k_poland }
+                        OR = { 
+                              has_law = crown_authority_2
+                              has_law = crown_authority_3
+                              has_law = crown_authority_4
+}
+                        
+		}
+		allow = {
+			prestige = 6000
+			
+                        k_poland = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                            
+}
+}	
+		}
+		effect = {
+                          k_poland = {
+holder_scope = {
+			  letter_event = { id = RIRSEI.494949}
+}
+}
+                set_character_flag = imp_polo
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+serbe_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_serbia }
+k_serbia = {
+				has_holder = no
+			}
+e_serbia = {
+			has_holder = no
+		} 
+
+                        OR = {
+has_landed_title = d_dioclea
+			has_landed_title = d_rashka
+}
+culture = serbian
+			religion_group = christian
+                       independent = yes                       
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = d_rashka
+                       OR = {
+ has_landed_title = d_dioclea
+completely_controls = d_dioclea
+}
+k_papal_state = {
+holder_scope = {
+                        
+                        opinion = {
+          who = ROOT
+          value = 30
+}
+}
+}                        
+                       
+		}
+		effect = {
+			  character_event = { id = RIRSEI.444546 }
+                religion = catholic
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+serbe_roi_basi = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_serbia }
+k_serbia = {
+				has_holder = no
+			}
+e_byzantium = {
+				has_holder = yes
+			}
+e_serbia = {
+			has_holder = no
+		} 
+
+                        OR = {
+has_landed_title = d_dioclea
+			has_landed_title = d_rashka
+}
+culture = serbian
+			religion = orthodox
+                       OR = { 
+independent = yes
+e_byzantium = {
+holder_scope = {
+
+is_liege_of = ROOT
+}
+}
+}                       
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 1000
+			completely_controls = d_rashka
+                       OR = {
+ has_landed_title = d_dioclea
+completely_controls = d_dioclea
+}
+e_byzantium = {
+holder_scope = {
+                        
+                        opinion = {
+          who = ROOT
+          value = 30 
+}
+}
+}                        
+                       
+		}
+		effect = {
+e_byzantium = {
+holder_scope = {
+letter_event = { id = RIRSEI.474849 }
+			  
+}
+}
+                          
+                
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+anti_emp_orth = {
+		is_high_prio = yes
+		potential = {
+			
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }                      
+			has_landed_title = e_byzantium
+has_global_flag = otto_sult
+		religion_group = christian
+                        
+                        independent = yes
+
+e_roman_empire = {
+			has_holder = no
+		}
+
+		}
+		allow = {
+			prestige = 5000
+OR = {
+e_otto_roum = {
+			has_holder = no
+                        
+			
+		}
+completely_controls = k_byzantium
+completely_controls = k_anatolia
+}
+}
+		effect = {
+clr_global_flag = otto_sult
+e_otto_roum = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_byzantium
+				}
+			}
+
+			
+activate_title = { title = e_otto_roum status = no }
+			  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}                                         
+		
+
+

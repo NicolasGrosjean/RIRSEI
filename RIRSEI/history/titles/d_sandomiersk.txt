@@ -28,6 +28,11 @@
 1288.9.30={
 	holder=471510
 }
+1295.6.27={
+	
+de_jure_liege = k_polandball
+liege = "k_polandball"
+}
 1306.8.4={
 	holder=0
 }

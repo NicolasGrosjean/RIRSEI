@@ -2225,18 +2225,21 @@
 34002 = {
 	name="Al-Mansur"
 	dynasty=101727
-	dna = beegiscaaad
-	properties = ml0ag0000000
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34000
 	trait="sayyid"
+trait="decadent"
 	714.1.1={
 		birth=yes
 	}
 	732.1.1={
 		add_spouse=188746
 	}
+	769.1.1 = {
+		add_claim = k_sindh  # Vassal but de facto independent
+		add_claim = k_armenia  # Vassal but de facto independent
+			}
 	775.1.1={
 		death=yes
 	}
@@ -2420,8 +2423,6 @@
 34014 = {
 	name="Al-Mu'tazz"
 	dynasty=101727
-	dna = csdeypeevjm
-	properties = eo0bb0000000
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34010
@@ -5980,8 +5981,6 @@
 73679={
 	name="Abd-al-Rahman"
 	dynasty=597
-	dna = cmedkpffaax
-	properties = mj0afa000000
 
 	father=163000
 
@@ -5992,6 +5991,7 @@
 
 	731.3.1={
 		birth=yes
+add_claim = e_arabia
 	}
 	788.10.7={
 		death=yes
@@ -12578,8 +12578,8 @@
 	769.1.1={
 		add_claim = d_tripolitania
 	}
-	771.11.27={
-		death=yes
+	771.1.1={
+		death="771.1.1"
 	}
 }
 210015 = {

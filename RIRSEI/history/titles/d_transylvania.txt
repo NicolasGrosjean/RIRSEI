@@ -35,6 +35,10 @@
 895.1.1={
 	liege="k_magyar"
 }
+
+
+
+
 940.1.1=
 {
 holder=70370
@@ -46,6 +50,7 @@ holder=70371
 986.1.1=
 {
 holder=70373
+liege="k_magyar"
 }
 1000.12.25={
 	liege="k_hungary"

@@ -2048,7 +2048,7 @@
 }
 
 1799 = {
-	name="Foulques"
+	name="Folques"
 	dynasty=723
 	martial=4
 	diplomacy=8
@@ -3201,7 +3201,9 @@
 		add_claim = d_poitou
 		add_claim = c_poitiers
 		add_claim = c_thouars
-		give_nickname=nick_the_great
+		give_nickname=nick_augustus
+trait ="Imp_regn"
+
 	}
 	1222.9.1 = {
 		trait="ill"
@@ -4229,43 +4231,6 @@
 	}
 	1239.1.1 = {
 		death="1239.1.1"
-	}
-}
-
-217508 = {
-	name="Pierre" #Pierre de Courtenay
-	dynasty=9301 #de Courtenay
-	religion="catholic"
-	culture="frankish"
-	father=205727 #Robert II de Courtenay
-	#mother= #Mahaut de Mehun
-	1218.1.1 = {
-		birth = yes
-	}
-	#1249.1.1 = {
-	#	add_spouse = #Petronille de Joigny
-	#}
-	1250.2.8 = {
-		death = yes
-	}
-}
-
-217509 = {
-	name="Amicie" #Amicie de Courtenay
-	dynasty=9301 #de Courtenay
-	religion="catholic"
-	culture="frankish"
-	father=217508 #Pierre de Courtenay
-	#mother= #Petronille de Joigny
-	female = yes
-	1250.1.1 = {
-		birth = yes
-	}
-	#1259.1.1 = {
-	#	add_spouse = 455546 #Robert II d'Artois
-	#}
-	1275.1.1 = {
-		death = yes
 	}
 }
 
@@ -9877,6 +9842,7 @@
 	}
 	852.1.1={
 		add_spouse=167894
+        trait=crowned_by_pope
 	}
 	875.8.12={
 		death=yes
@@ -9919,8 +9885,6 @@
 	# AKA: Yolande
 	female=yes
 	dynasty=80 #Brienne
-	dna = ajgdamibabj
-	properties = aj0bba000000
 	religion="catholic"
 	culture="frankish"
 	father=461742 #Jean de Brienne
@@ -11326,7 +11290,7 @@
 }
 
 370 = {
-	name="Foulques"
+	name="Folques"
 	dynasty=723
 	martial=4
 	diplomacy=8
@@ -11392,7 +11356,7 @@
 }
 
 374 = {
-	name="Foulques"
+	name="Folques"
 	dynasty=723
 	martial=5
 	diplomacy=7
@@ -11527,7 +11491,7 @@
 }
 
 380 = {
-	name="Foulques"
+	name="Folques"
 	# AKA: Foulques 'le Rechin'
 	dynasty=723
 	martial=8
@@ -11546,9 +11510,6 @@
 	mother=375
 	1043.1.1 = {
 		birth="1043.1.1"
-	}
-	1060.1.1 = {
-		add_claim = d_anjou
 	}
 	1109.4.14 = {
 		death="1109.4.14"
@@ -14620,6 +14581,7 @@
 	mother=167830
 	847.1.2 = {
 		birth="847.1.2"
+trait=roi_oint
 	}
 	866.1.30 = {
 		death="866.1.30"
@@ -15595,6 +15557,9 @@
 	1246.1.31 = {
 		add_spouse=455407
 	}
+1254.5.21 = {
+add_claim = k_sicily
+}
 	1285.1.7 = {
 		death="1285.1.7"
 	}
@@ -16462,8 +16427,6 @@
 455500 = {
 	name="Philippe"
 	dynasty=101
-	dna = caekgncfabw
-	properties = ad0aha000000
 	martial=3
 	diplomacy=6
 	intrigue=4
@@ -16827,7 +16790,7 @@
 	culture="frankish"
 	trait="scholarly_theologian"
 	father=455546
-	mother=217509
+	mother=455547
 	1269.1.2 = {
 		birth="1269.1.2"
 	}
@@ -16877,8 +16840,8 @@
 	trait="amateurish_plotter"
 	father=455516
 	mother=455517
-	1296.1.2 = {
-		birth=yes
+	1309.1.2 = {
+		birth="1309.1.2"
 	}
 	1369.1.2 = {
 		death="1369.1.2"
@@ -17098,6 +17061,9 @@
 	1245.1.31 = {
 		birth="1245.1.31"
 	}
+1254.5.21 = {
+add_claim = e_hre
+}
 	1262.5.28 = {
 		add_spouse=455529
 	}
@@ -17296,9 +17262,6 @@
 	mother=455408
 	1250.1.2 = {
 		birth="1250.1.2"
-	}
-	1259.1.1 = {
-		add_spouse = 217509 #Amicie de Courtenay
 	}
 	1302.7.11 = {
 		death="1302.7.11"
@@ -19445,7 +19408,7 @@
 	}
 }
 
-457637={
+457637 = {
 	name="Jean"
 	dynasty=713
 
@@ -19711,6 +19674,9 @@
 	1273.1.2 = {
 		add_spouse=461711
 	}
+1285.1.7={
+	trait = Vs_sancti_petri
+}
 	1309.5.5 = {
 		death="1309.5.5"
 	}
@@ -21288,8 +21254,8 @@
 	trait="flamboyant_schemer"
 	father=462742
 	mother=455501 # Jeanne, Countess of Hainaut
-	1311.1.1 = {
-		birth=yes
+	1306.1.1 = {
+		birth="1306.1.1"
 	}
 	1356.6.23 = {
 		death="1356.6.23"
@@ -22206,7 +22172,8 @@
 6531={
 	name="Henri" #Henri de Bourgogne (comte de Portugal)
 	dynasty=741 #Capetian house of Burgundy
-
+	religion="catholic"
+	culture="frankish"
 	father=218 #Henri of Burgundy
 	mother=110531 #Sibylle of Barcelone
 
@@ -24533,6 +24500,7 @@
 
 71564={
 	name="Blanche"
+	dynasty=721
 	female=yes
 	dynasty=721
 
@@ -26897,8 +26865,6 @@
 	name="Charles"
 	# AKA: Charles 'le Chauvre'
 	dynasty=25061
-	dna = cjlcjygaaar
-	properties = an0abb000000
 	martial=6
 	diplomacy=5
 	intrigue=7
@@ -26907,8 +26873,8 @@
 	culture="frankish"
 	father=90095
 	mother=7986
-	#dna="bjejdjafdbz"
-	#properties="0k00h0"
+	dna="bjejdjafdbz"
+	properties="0k00h0"
 	
 	823.1.14 = {
 		birth=yes
@@ -29378,7 +29344,7 @@
 	trait="ambitious"
 	trait="quick"
 	father=455546 #Robert II d'Artois
-	mother=217509 #Amicie de Courtenay
+	#Amicie de Courtenay
 	1268.1.1 = {
 		birth="1268.1.1"
 	}
@@ -37973,8 +37939,8 @@
 	father=205897 #Étienne II, count of Blois
 	mother=205898 #Adela de Normandie
 	trait="incapable"
-	1085.1.1 = {
-		birth=yes
+	1070.1.1 = {
+		birth="1070.1.1"
 	}
 	1104.1.1 = {
 		add_spouse = 91329 #Agnès de Sully
@@ -37991,8 +37957,8 @@
 	culture="frankish"
 	father=91331 #Guillaume de Blois
 	mother=91329 #Agnès de Sully
-	1108.1.1 = {
-		birth=yes
+	1090.1.1 = {
+		birth="1090.1.1"
 	}
 	1130.1.1 = {
 		name="Archambaud"
@@ -38008,8 +37974,8 @@
 	religion="catholic"
 	culture="frankish"
 	father=91332 #Eudes/Archambaud de Sully
-	1130.1.1 = {
-		birth=yes
+	1110.1.1 = {
+		birth="1110.1.1"
 	}
 	1195.1.1 = {
 		death="1195.1.1"
@@ -38022,7 +37988,7 @@
 	religion="catholic"
 	culture="frankish"
 	father=91333 #Gilles III de Sully
-	1160.1.1 = {
+	1130.1.1 = {
 		birth="1130.1.1"
 	}
 	1235.2.10 = {
@@ -38036,8 +38002,8 @@
 	religion="catholic"
 	culture="frankish"
 	father=91334 #Archambaud IV de Sully
-	1185.1.1 = {
-		birth=yes
+	1150.1.1 = {
+		birth="1150.1.1"
 	}
 	1250.1.1 = {
 		death="1250.1.1" #after 1248
@@ -38050,8 +38016,8 @@
 	religion="catholic"
 	culture="frankish"
 	father=91335 #Henri I de Sully
-	1224.1.1 = {
-		birth=yes
+	1170.1.1 = {
+		birth="1170.1.1"
 	}
 	1269.1.1 = {
 		death="1269.1.1"
@@ -38064,8 +38030,8 @@
 	religion="catholic"
 	culture="frankish"
 	father=91336 #Henri II de Sully
-	1252.1.1 = {
-		birth=yes
+	1190.1.1 = {
+		birth="1190.1.1"
 	}
 	1285.1.1 = {
 		death="1285.1.1"
@@ -42443,7 +42409,7 @@
 	religion="catholic"
 	culture="frankish"
 	father=93504	
-	1137.1.1={
+	1142.1.1={
 		birth="1142.1.1"
 	}	
 	1180.1.1={
@@ -42458,11 +42424,11 @@
 	religion="catholic"
 	culture="frankish"
 	father=93504	
-	1138.1.1={
+	1144.1.1={
 		birth="1144.1.1"
 	}	
-	1174.1.1={
-		death="1174.1.1"
+	1194.1.1={
+		death="1194.1.1"
 	}
 }
 
@@ -46520,63 +46486,4 @@
 		death=yes
 	}
 }
-73786={
-	name="Salomon"
-	dynasty=629
 
-	religion=catholic
-	culture=frankish
-
-	815.1.1={
-		birth=yes
-	}
-	870.1.1={
-		death=yes
-	}
-}
-127019={
-	name="Bernard"
-	dynasty=100217
-
-	father=163063
-	mother=168141
-
-	martial=7
-	diplomacy=8
-	intrigue=5
-	stewardship=6
-
-	religion=catholic
-	culture=frankish
-
-	841.3.22={
-		birth=yes
-	}
-	864.1.1={
-		add_spouse=127020
-	}
-	886.1.6={
-		death=yes
-	}
-}
-183345 = {
-	name="Geoffroy"
-	# AKA: Geoffroy IV 'Martel'
-	dynasty=723
-	religion="catholic"
-	culture="frankish"
-	add_trait="just"
-	add_trait="kind"
-	add_trait="zealous"
-	add_trait="midas_touched"
-	father=380
-	1070.1.2 = {
-		birth="1070.1.2"
-	}
-	1100.1.1 = {
-		give_nickname=nick_the_hammer
-	}
-	1106.5.19 = {
-		death="1106.5.19"
-	}
-}

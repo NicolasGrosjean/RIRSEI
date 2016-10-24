@@ -1,11 +1,13 @@
 769.1.1={
 	holder = 190514 #Guillaume
+de_jure_liege=k_aquitaine
 }
 769.1.1={
 	liege=k_lotharingia
 }
 778.1.1={
 	liege = "k_aquitaine"
+
 }
 790.1.1 = {
 	holder = 168130 #Guillaume I Gellones
@@ -37,6 +39,7 @@
 }
 884.12.12={
 	liege = "k_france"
+de_jure_liege=k_france
 }
 918.6.17 = {
 	holder = 40234 #Raymond II de Toulouse

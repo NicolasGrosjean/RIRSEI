@@ -1,3 +1,6 @@
+
+
+
 962.1.1={
 	holder = 754
 	#law = agnatic_succession
@@ -17,6 +20,7 @@
 }
 1034.5.11={
 	holder = 760
+set_global_flag = polan_millesix
 }
 1058.11.28=
 {
@@ -118,23 +122,7 @@ holder=125984
 {
 holder=125909
 }
-1290.6.24=
+1295.6.25=
 {
-holder=125977
-}
-1296.2.8=
-{
-holder=96002
-}
-1305.6.21=
-{
-holder=96003
-}
-1306.8.4=
-{
-holder=471510
-}
-1333.3.2=
-{
-holder=471500
+holder=0
 }

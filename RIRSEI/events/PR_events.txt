@@ -1,0 +1,1661 @@
+namespace = RIRPR
+
+# reforme gregorienne	
+
+narrative_event = {
+        id = RIRPR.901
+	title = EVTITLE_RIRPR_901
+	desc = "EVTDESC_RIRPR_901"
+	sound = church_bells
+	picture = GFX_evt_pr_ref_g
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_901"
+trigger = {
+NOT = { has_landed_title = e_hre }
+}
+
+
+}
+option = {
+ name = "EVTOPTB_RIRPR_901"
+trigger = {
+has_landed_title = e_hre }
+}
+}
+
+narrative_event = {
+        id = RIRPR.902
+	title = EVTITLE_RIRPR_902
+	desc = "EVTDESC_RIRPR_902"
+	sound = church_bells
+	picture = GFX_evt_pr_ref_g
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_902"
+
+
+
+}
+}
+
+#Demande du Pape a l'Empereur
+
+narrative_event = {
+        id = RIRPR.903
+	title = EVTITLE_RIRPR_903
+	desc = "EVTDESC_RIRPR_903"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_903"
+ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.3
+				trait = crowned_by_pope 
+			}
+modifier = {
+				factor = 1.1
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_4 }
+			}
+
+}
+piety = -50
+prestige = 200
+k_papal_state = {
+holder_scope = {
+letter_event = { id = RIRPR.906 days = 60 }
+}
+}
+}
+option = {
+ name = "EVTOPTB_RIRPR_903"
+ai_chance = {
+			factor = 0.2
+						modifier = {
+				factor = 1.5
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+modifier = {
+				factor = 1.2
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.1
+				trait = content
+			}
+}
+piety = 200
+prestige = -2000
+set_global_flag = que_investvic
+clr_global_flag = test_inves_un
+religion_authority = { modifier = que_invest_gagne }
+e_hre = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.905 days = 10 }
+}
+
+ROOT = {
+any_vassal = {
+				limit = {
+					
+					
+					
+					NOT = { trait = excommunicated }
+					religion_group = christian
+					
+				}
+				letter_event = { id = RIRPR.909 } 
+			}
+}
+
+}
+}
+
+#Victoire du Pape et annonce aux autres
+
+narrative_event = {
+        id = RIRPR.905
+	title = EVTITLE_RIRPR_905
+	desc = "EVTDESC_RIRPR_905"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_905"
+if = {
+limit = {
+has_law = investiture_law_1
+}
+primary_title = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+}
+
+}
+}
+
+#Le Pape envoie des legats (temps)
+
+letter_event = {
+        id = RIRPR.906
+	title = EVTITLE_RIRPR_906
+	desc = "EVTDESC_RIRPR_906"
+	sound = church_bells
+	picture = GFX_evt_pr_ref_g
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_906"
+e_hre = {
+holder_scope = {
+narrative_event = { id = RIRPR.907 days = 60 }
+}
+}
+
+
+}
+}
+
+# Les legats pontificaux : soumission ou exco !
+
+narrative_event = {
+        id = RIRPR.907
+	title = EVTITLE_RIRPR_907
+	desc = "EVTDESC_RIRPR_907"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_907"
+ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.3
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.1
+				trait = ambitious
+			}
+
+}
+piety = -200
+prestige = 400
+religion_authority = { modifier = que_invest_encours }
+k_papal_state = {
+holder_scope = {
+letter_event = { id = RIRPR.908 days = 60 }
+}
+}
+}
+option = {
+ name = "EVTOPTB_RIRPR_907"
+ai_chance = {
+			factor = 0.3
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = zealous
+			}
+modifier = {
+				factor = 1.2
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+piety = 100
+prestige = -2000
+set_global_flag = que_investvic
+clr_global_flag = test_inves_un
+e_hre = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+religion_authority = { modifier = que_invest_gagne }
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.905 days = 10}
+}
+
+any_vassal = {
+				limit = {
+					
+					
+					
+					not = { trait = excommunicated }
+					religion_group = christian
+					
+				}
+				letter_event = { id = RIRPR.909 } 
+			}
+}
+}
+
+# Les vassaux imperiaux mecontents de l'Empereur soumis
+
+letter_event = {
+        id = RIRPR.909
+	title = EVTITLE_RIRPR_909
+	desc = "EVTDESC_RIRPR_909"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_909"
+  
+	        opinion = {
+				modifier = emp_couche_pape
+				who = FROM
+                                years = 100
+				
+}
+
+
+}
+}
+
+# Le Pape informe de l'excommunication les joueurs catho + l'empereur
+
+letter_event = {
+        id = RIRPR.908
+	title = EVTITLE_RIRPR_908
+	desc = "EVTDESC_RIRPR_908"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+
+option = {
+ name = "EVTOPTA_RIRPR_908"
+any_playable_ruler = {
+limit = {
+religion = catholic
+NOT = { has_landed_title = e_hre }
+}								
+narrative_event = { id = RIRPR.926 }		 
+}
+e_hre = {
+holder_scope = {
+narrative_event = { id = RIRPR.910 } 
+}
+}
+
+
+}
+
+}
+
+# Excommunication, rupture des liens de vassalite, et annonce 
+
+narrative_event = {
+        id = RIRPR.910
+	title = EVTITLE_RIRPR_910
+	desc = "EVTDESC_RIRPR_910"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+
+option = {
+ name = "EVTOPTA_RIRPR_910"
+set_character_flag = qi_emp_exco
+set_global_flag = verif_emp_exco
+add_trait = excommunicated
+ROOT = {
+any_vassal = { narrative_event = { id = RIRPR.911 } 
+}
+}
+
+}
+}
+
+
+# Les Vassaux de rang duc profitent de la rupture des liens de vassalite
+
+narrative_event = {
+        id = RIRPR.911
+	title = EVTITLE_RIRPR_911
+	desc = "EVTDESC_RIRPR_911"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+trigger = {
+OR = { tier = KING 
+tier = DUKE    } }
+
+ name = "EVTOPTA_RIRPR_911"
+  ROOT = {
+	        opinion = {
+				modifier = invest_grd_vassaux
+				who = FROM
+                                years = 50
+				
+}
+}
+
+}
+
+option = {
+ name = "EVTOPTB_RIRPR_911"
+trigger = {
+NOT = { tier = KING }
+NOT = { tier = DUKE }
+}
+
+}
+}
+
+# Si empereur mort, redemande, plus enclin a accepter (car pas couronnement)
+
+narrative_event = {
+        id = RIRPR.912
+	title = EVTITLE_RIRPR_912
+	desc = "EVTDESC_RIRPR_912"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_912"
+ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.1
+				trait = ambitious
+			}
+
+}
+piety = -300
+prestige = 500
+add_trait = excommunicated
+set_character_flag = qi_emp_exco
+any_vassal = { narrative_event = { id = RIRPR.911 } 
+}
+
+}
+
+
+option = {
+ name = "EVTOPTB_RIRPR_912"
+ai_chance = {
+			factor = 0.6
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.2
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+piety = 100
+prestige = -2500
+set_global_flag = que_investvic
+clr_global_flag = test_inves_un
+e_hre = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+religion_authority = { modifier = que_invest_gagne }
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.905 days = 10}
+}
+
+any_vassal = {
+				limit = {
+					
+					
+					
+					not = { trait = excommunicated }
+					religion_group = christian
+					
+				}
+				letter_event = { id = RIRPR.909 } 
+			}
+}
+}
+
+
+# 5 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.913
+	title = EVTITLE_RIRPR_913
+	desc = "EVTDESC_RIRPR_913"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_913"
+ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_913"
+ai_chance = {
+			factor = 0.5
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# Canossa
+
+narrative_event = {
+        id = RIRPR.914
+	title = EVTITLE_RIRPR_914
+	desc = "EVTDESC_RIRPR_914"
+	sound = church_bells
+	picture = GFX_evt_pencanossa
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_914"
+piety = 50
+prestige = -6000
+set_global_flag = que_investvic
+clr_character_flag = qi_emp_exco
+clr_global_flag = verif_emp_exco
+clr_global_flag = test_inves_un
+e_hre = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+remove_trait = excommunicated
+religion_authority = { modifier = que_invest_gagne }
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic
+NOT = { has_landed_title = e_hre } 
+NOT = { has_landed_title = k_papal_state }
+}
+
+
+				narrative_event = { id = RIRPR.915 days = 10}
+}
+ROOT = {
+any_vassal = {
+				limit = {
+					
+					
+					
+					not = { trait = excommunicated }
+					religion_group = christian
+					
+				}
+				narrative_event = { id = RIRPR.915 } 
+			}
+}
+
+
+
+
+}
+}
+
+
+# Annonces aux vassaux et aux autres souverains européens
+
+narrative_event = {
+        id = RIRPR.915
+	title = EVTITLE_RIRPR_915
+	desc = "EVTDESC_RIRPR_915"
+	sound = church_bells
+	picture = GFX_evt_pencanossa
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_915"
+trigger = { ROOT = { de_facto_liege = FROM } }
+
+
+}
+option = {
+ name = "EVTOPTB_RIRPR_915"
+trigger = {
+NOT = { ROOT = { de_facto_liege = FROM } }
+}
+  ROOT = {
+	        opinion = {
+				modifier = mon_catho_iresp
+				who = FROM
+                                years = 50
+				
+}
+}
+
+}
+}
+
+# 10 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.916
+	title = EVTITLE_RIRPR_916
+	desc = "EVTDESC_RIRPR_916"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_916"
+ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_916"
+ai_chance = {
+			factor = 0.5
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 15 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.917
+	title = EVTITLE_RIRPR_917
+	desc = "EVTDESC_RIRPR_917"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_917"
+ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_917"
+ai_chance = {
+			factor = 0.5
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 20 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.918
+	title = EVTITLE_RIRPR_918
+	desc = "EVTDESC_RIRPR_918"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_918"
+ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_918"
+ai_chance = {
+			factor = 0.4
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 25 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.919
+	title = EVTITLE_RIRPR_919
+	desc = "EVTDESC_RIRPR_919"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_919"
+ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_919"
+ai_chance = {
+			factor = 0.4
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 30 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.920
+	title = EVTITLE_RIRPR_920
+	desc = "EVTDESC_RIRPR_920"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_920"
+ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_920"
+ai_chance = {
+			factor = 0.3
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 35 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.921
+	title = EVTITLE_RIRPR_921
+	desc = "EVTDESC_RIRPR_921"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_921"
+ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_921"
+ai_chance = {
+			factor = 0.3
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+# 40 ans après : Canossa, resister, ou concile (a implanter)
+
+narrative_event = {
+        id = RIRPR.922
+	title = EVTITLE_RIRPR_922
+	desc = "EVTDESC_RIRPR_922"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_922"
+ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+modifier = {
+				factor = 1.5
+				trait = crowned_by_pope 
+			}
+			modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+			}
+modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_4 }
+			}
+modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+
+}
+prestige = 500
+piety = -100
+}
+option = {
+ name = "EVTOPTB_RIRPR_922"
+ai_chance = {
+			factor = 0.2
+						modifier = {
+				factor = 1.4
+				e_hre = { has_law = crown_authority_0 }
+			}
+modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_1 }
+			}
+			modifier = {
+				factor = 1.3
+				trait = zealous
+			}
+modifier = {
+				factor = 1.3
+				trait = roi_des_romains
+			}
+modifier = {
+				factor = 1.2
+				trait = content
+			}
+}
+ROOT = {
+narrative_event = { id = RIRPR.914 }
+}
+			}
+}
+
+
+# Victoire de l'Empereur !
+
+narrative_event = {
+        id = RIRPR.923
+	title = EVTITLE_RIRPR_923
+	desc = "EVTDESC_RIRPR_923"
+	sound = church_bells
+	picture = GFX_evt_Victempquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_923"
+prestige = 7000
+set_global_flag = emp_vic_quer
+clr_character_flag = qi_emp_exco
+clr_global_flag = verif_emp_exco
+clr_global_flag = test_inves_un
+remove_trait = excommunicated
+add_trait = imp_sacer
+k_papal_state =
+{
+de_jure_liege = e_hre
+}
+
+                any_independent_ruler = {
+                   limit = { has_landed_title = k_papal_state }
+                set_defacto_liege = ROOT
+}
+religion_authority = { modifier = que_emp_victorieux }
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic
+NOT = { has_landed_title = e_hre } 
+}
+
+
+				narrative_event = { id = RIRPR.924 days = 10}
+}
+ROOT = {
+any_vassal = {
+				limit = {
+					
+					
+					
+					not = { trait = excommunicated }
+					religion_group = christian
+					
+				}
+				narrative_event = { id = RIRPR.924 } 
+			}
+}
+
+
+
+
+}
+}
+
+# Annonce de la victoire
+
+narrative_event = {
+        id = RIRPR.924
+	title = EVTITLE_RIRPR_924
+	desc = "EVTDESC_RIRPR_924"
+	sound = church_bells
+	picture = GFX_evt_Victempquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_924"
+
+
+
+}
+}
+
+# Annonce de la victoire (pape)
+
+narrative_event = {
+        id = RIRPR.925
+	title = EVTITLE_RIRPR_925
+	desc = "EVTDESC_RIRPR_925"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_925"
+if = {
+limit = {
+has_law = investiture_law_1
+}
+primary_title = {
+revoke_law = investiture_law_1
+add_law_w_cooldown = investiture_law_0
+}
+}
+
+
+}
+}
+
+# Annonce d'exco de l'empereur
+
+narrative_event = {
+        id = RIRPR.926
+	title = EVTITLE_RIRPR_926
+	desc = "EVTDESC_RIRPR_926"
+	sound = church_bells
+	picture = GFX_evt_Querinvest
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_926"
+
+
+
+}
+}
+
+# Appel aux armes pontificales
+
+narrative_event = {
+        id = RIRPR.927
+	title = EVTITLE_RIRPR_927
+	desc = "EVTDESC_RIRPR_927"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_927"
+join_attacker_wars = FROM
+if = {
+limit = {
+trait = excommunicated
+}
+remove_trait = excommunicated
+}
+prestige = -200
+}
+option = {
+ name = "EVTOPTB_RIRPR_927"
+add_trait = excommunicated 
+
+
+}
+}
+narrative_event = {
+        id = RIRPR.928
+	title = EVTITLE_RIRPR_928
+	desc = "EVTDESC_RIRPR_928"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_928"
+join_defender_wars = FROM
+if = {
+limit = {
+trait = excommunicated
+}
+remove_trait = excommunicated
+}
+prestige = -200
+
+}
+option = {
+ name = "EVTOPTB_RIRPR_928"
+add_trait = excommunicated 
+
+
+}
+}
+# Le Pape verifie l'hommage
+narrative_event = {
+        id = RIRPR.929
+	title = EVTITLE_RIRPR_929
+	desc = "EVTDESC_RIRPR_929"
+	sound = church_bells
+	picture = GFX_evt_papesouvera
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_929"
+hidden_tooltip = {
+FROM = { letter_event = { id = RIRPR.930 } }
+}
+
+}
+
+}
+# Verification des vassaux
+letter_event = {
+        id = RIRPR.930
+	title = EVTITLE_RIRPR_930
+	desc = "EVTDESC_RIRPR_930"
+	sound = church_bells
+	picture = GFX_evt_papeemportquer
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_930"
+if = {
+limit = {
+NOT = { has_character_flag = rex_vss_1 }
+NOT = { has_character_flag = rex_vss_2 }
+NOT = { has_character_flag = rex_vss_3 }
+NOT = { has_character_flag = rex_vss_4 }
+NOT = { has_character_flag = rex_vss_5 }
+}
+set_character_flag = rex_vss_1
+}
+
+if = {
+limit = {
+has_character_flag = rex_vss_1 
+NOT = { has_character_flag = rex_vss_2 }
+NOT = { has_character_flag = rex_vss_3 }
+NOT = { has_character_flag = rex_vss_4 }
+NOT = { has_character_flag = rex_vss_5 }
+}
+set_character_flag = rex_vss_2
+}
+
+if = {
+limit = {
+has_character_flag = rex_vss_1 
+has_character_flag = rex_vss_2
+NOT = { has_character_flag = rex_vss_3 }
+NOT = { has_character_flag = rex_vss_4 }
+NOT = { has_character_flag = rex_vss_5 }
+}
+set_character_flag = rex_vss_3
+}
+
+if = {
+limit = {
+has_character_flag = rex_vss_1 
+has_character_flag = rex_vss_2
+has_character_flag = rex_vss_3
+NOT = { has_character_flag = rex_vss_4 }
+NOT = { has_character_flag = rex_vss_5 }
+}
+set_character_flag = rex_vss_4
+}
+
+if = {
+limit = {
+has_character_flag = rex_vss_1 
+has_character_flag = rex_vss_2
+has_character_flag = rex_vss_3
+has_character_flag = rex_vss_4
+NOT = { has_character_flag = rex_vss_5 }
+}
+set_character_flag = rex_vss_5
+}
+
+}
+}
+#Unam Sanctam
+narrative_event = {
+        id = RIRPR.931
+	title = EVTITLE_RIRPR_931
+	desc = "EVTDESC_RIRPR_931"
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_931"
+trigger = {
+NOT = { has_law = crown_authority_3 }
+NOT = { has_law = crown_authority_4 }
+}
+prestige = -200
+}
+option = {
+ name = "EVTOPTB_RIRPR_931"
+trigger = {
+OR = {
+has_law = crown_authority_3 
+has_law = crown_authority_4 
+}
+}
+set_global_flag = agnani_att_pap
+piety = -500
+any_independent_ruler = {
+                   limit = { religion = ROOT }
+                narrative_event = { id = RIRPR.932 days = 30 }
+}
+hidden_tooltip = {
+ROOT = {
+narrative_event = { id = RIRPR.932 days = 30 }
+}
+}
+ 
+
+}
+}
+
+narrative_event = {
+        id = RIRPR.932
+	title = EVTITLE_RIRPR_932
+	desc = "EVTDESC_RIRPR_932"
+	sound = church_bells
+	picture = GFX_evt_attenagn
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_932"
+trigger = {
+NOT = { has_landed_title = k_papal_state }
+}
+
+
+}
+
+
+option = {
+ name = "EVTOPTA_RIRPR_932"
+trigger = {
+has_landed_title = k_papal_state
+}
+prestige = -3000
+
+opinion = {
+				modifier = choc_attent_ana
+				who = FROM
+                                years = 100
+				
+}
+
+}
+}
+
+
+#Papetheocratie
+narrative_event = {
+        id = RIRPR.933
+	title = EVTITLE_RIRPR_933
+	desc = "EVTDESC_RIRPR_933"
+	sound = church_bells
+	picture = GFX_evt_papesouvera
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRPR_933"
+trigger = {
+NOT = { trait = Vs_sancti_petri }
+}
+prestige = -1000
+}
+option = {
+ name = "EVTOPTB_RIRPR_933"
+trigger = {
+trait = Vs_sancti_petri
+}
+ROOT = {
+any_vassal = {
+set_defacto_liege = FROM
+}
+}
+ROOT = {
+letter_event = { id = RIRPR.934}
+}
+ 
+
+}
+}
+
+letter_event = {
+        id = RIRPR.934
+	title = EVTITLE_RIRPR_934
+	desc = "EVTDESC_RIRPR_934"
+	sound = church_bells
+	picture = GFX_evt_papesouvera
+       
+       
+       
+is_triggered_only = yes
+
+immediate = {
+ROOT = {
+primary_title = {
+destroy_landed_title = THIS
+}
+}
+}
+
+option = {
+ name = "EVTOPTA_RIRPR_934"
+
+k_papal_state = {
+holder_scope = {
+set_defacto_vassal = ROOT
+}
+}
+
+}
+}

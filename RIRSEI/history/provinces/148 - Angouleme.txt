@@ -16,9 +16,11 @@ b_bassac = temple
 #b_fontdouce = temple
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
 
+# History
+790.1.1 = { culture = occitan }
 # History
 #1125.1.1   = { b_jarnac = castle }
 1200.1.1   = {

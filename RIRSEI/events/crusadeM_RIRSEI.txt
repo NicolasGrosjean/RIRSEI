@@ -1,0 +1,488 @@
+namespace = RIRSEIM
+
+# Event conquerant jerusalem 
+character_event = {
+	id = RIRSEIM.1
+	title = EVTTITLE_RIRSEIM_1
+	desc = EVTDESC_RIRSEIM_1
+	picture = GFX_evt_roijerusalem
+
+	trigger = {
+	has_landed_title = k_jerusalem
+	has_landed_title = c_jerusalem
+	religion = catholic
+	NOT = {
+			has_global_flag = fondation_royjerusalem 
+		  }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+	set_global_flag = fondation_royjerusalem
+	k_jerusalem = {
+	succession = feudal_elective 
+	add_law = crown_authority_2
+	}
+	}
+	
+	option = {
+	name = EVT_A_RIRSEIM_1 # Bien sur
+	prestige = 1000
+	give_nickname = nick_the_great
+	set_global_flag = jerusalem_is_a_real_kingdom
+	narrative_event = { id = RIRSEIM.2 }
+	ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+					OR = {
+					trait = zealous
+					trait = humble
+					}
+				}
+			}
+}
+
+	option = {
+	name = EVT_B_RIRSEIM_1 # Oh que non
+	piety = 300
+	give_nickname = nick_the_holy
+	narrative_event = { id = RIRSEIM.3 }
+	set_global_flag = jerusalem_is_holy_land
+	add_character_modifier = { name = avoue_st_sepu days = -1 } 
+			ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 0
+					OR = {
+					trait = ambitious
+					trait = cynical
+					trait = proud
+					}
+				}
+			}
+}
+
+
+}
+
+narrative_event = {
+	id = RIRSEIM.2
+	title = EVTTITLE_RIRSEIM_2
+	desc = EVTDESC_RIRSEIM_2
+	picture = GFX_evt_polo
+	sound = church_bells
+	
+	is_triggered_only = yes
+
+	option = {
+	name = EVT_A_RIRSEIM_2
+	trigger = {
+	religion_group = christian
+	}
+	}
+
+	option = {
+	name = EVT_B_RIRSEIM_2
+	trigger = {
+	religion_group = muslim
+	}
+	}	
+	
+	option = {
+	name = EVT_D_RIRSEIM_2
+	trigger = {
+	religion_group = jewish_group
+	}
+	}	
+
+	option = {
+	name = EVT_D_RIRSEIM_2
+	trigger = {
+	NOT = {
+	religion_group = jewish_group
+	religion_group = christian
+	religion_group = muslim
+	}
+	}
+	}	
+	
+	
+}
+
+narrative_event = {
+	id = RIRSEIM.3
+	title = EVTTITLE_RIRSEIM_3
+	desc = EVTDESC_RIRSEIM_3
+	picture = GFX_evt_godefroy
+	sound = church_bells
+	
+	is_triggered_only = yes
+
+	option = {
+	name = EVT_A_RIRSEIM_3
+	trigger = {
+	religion_group = christian
+	}
+	}
+
+	option = {
+	name = EVT_B_RIRSEIM_3
+	trigger = {
+	religion_group = muslim
+	}
+	}	
+	
+	option = {
+	name = EVT_D_RIRSEIM_3
+	trigger = {
+	religion_group = jewish_group
+	}
+	}	
+
+	option = {
+	name = EVT_D_RIRSEIM_3
+	trigger = {
+	NOT = {
+	religion_group = jewish_group
+	religion_group = christian
+	religion_group = muslim
+	}
+	}
+	}	
+	
+	
+}
+
+character_event = {
+	id = RIRSEIM.4
+	title = EVTTITLE_RIRSEIM_4
+	desc = EVTDESC_RIRSEIM_4
+	picture = GFX_evt_godefroy
+
+	trigger = {
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = Vs_sancti_petri }
+			has_landed_title = k_jerusalem
+			has_global_flag = fondation_royjerusalem 
+			NOT = {
+			has_global_flag = avoue_excommunuee
+			has_global_flag = jerusalem_papale 
+			}
+			has_character_modifier = avoue_st_sepu
+			piety = 0
+			completely_controls = c_jerusalem
+			religion_group = christian
+            independent = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+		factor = 2
+		trait = proud
+	}
+		modifier = {
+		factor = 0.5
+		trait = humble
+	}
+		modifier = {
+		factor = 0.2
+		trait = zealous
+	}
+	}
+	
+	option = {
+		name = EVT_A_RIRSEIM_4
+		piety = 300
+			  k_papal_state = {
+			  owner = {
+			  letter_event = { id = RIRSEIM.5 days = 14}
+			  }
+			  }
+			ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 0
+					OR = {
+					trait = ambitious
+					trait = cynical
+					trait = proud
+					}
+				}
+			}
+	}
+	
+	option = {
+		name = EVT_B_RIRSEIM_4
+		remove_
+		set_global_flag = avoue_excommunuee
+		set_global_flag = jerusalem_is_a_real_kingdom
+		remove_character_modifier = avoue_st_sepu
+		piety = -300
+		add_trait = excommunicated 
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+					OR = {
+					trait = zealous
+					trait = humble
+					}
+				}
+			}
+	}
+}
+
+letter_event = {
+    id = RIRSEI.5
+	desc = EVTDESC_RIRSEI_5
+	
+is_triggered_only = yes
+
+option = {
+		name = "EVT_A_RIRSEIM_5"
+			  k_jerusalem = {
+			  owner = {
+			  letter_event = { id = RIRSEIM.6 days = 14 }
+			  }
+			  }
+}
+}
+
+letter_event = {
+    id = RIRSEI.6
+	desc = EVTDESC_RIRSEI_6
+	
+is_triggered_only = yes
+
+option = {
+		name = "EVT_A_RIRSEIM_6"
+		add_trait = Vs_sancti_petri
+		set_global_flag = jerusalem_papale 
+		narrative_event = { id = RIRSEIM.7 }
+		}
+}
+
+narrative_event = {
+	id = RIRSEIM.7
+	title = EVTTITLE_RIRSEIM_7
+	desc = EVTDESC_RIRSEIM_7
+	picture = GFX_evt_godefroy
+	sound = church_bells
+	
+	is_triggered_only = yes
+
+	option = {
+	name = EVT_A_RIRSEIM_7
+	trigger = {
+	religion_group = christian
+	}
+	}
+
+	option = {
+	name = EVT_B_RIRSEIM_7
+	trigger = {
+	religion_group = muslim
+	}
+	}	
+	
+	option = {
+	name = EVT_D_RIRSEIM_7
+	trigger = {
+	religion_group = jewish_group
+	}
+	}	
+
+	option = {
+	name = EVT_D_RIRSEIM_7
+	trigger = {
+	NOT = {
+	religion_group = jewish_group
+	religion_group = christian
+	religion_group = muslim
+	}
+	}
+	}	
+	
+	
+}
+
+character_event = {
+	id = RIRSEIM.8
+	title = EVTTITLE_RIRSEIM_8
+	desc = EVTDESC_RIRSEIM_8
+	picture = GFX_evt_godefroy
+
+	trigger = {
+			NOT = { trait = Vs_sancti_petri }
+			has_landed_title = k_jerusalem
+			has_global_flag = fondation_royjerusalem 
+			has_global_flag = jerusalem_papale 
+			NOT = {
+			has_global_flag = jerusalem_is_a_real_kingdom
+			has_global_flag = avoue_excommunuee
+			}
+			religion_group = christian
+            independent = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+		factor = 2
+		trait = proud
+	}
+		modifier = {
+		factor = 0.5
+		trait = humble
+	}
+		modifier = {
+		factor = 0.2
+		trait = zealous
+	}
+	}
+	
+	option = {
+		name = EVT_A_RIRSEIM_8
+		piety = 100
+		add_trait = Vs_sancti_petri
+		add_character_modifier = { name = avoue_st_sepu days = -1 } 
+	}
+	
+	option = {
+		name = EVT_B_RIRSEIM_8
+		set_global_flag = avoue_excommunuee
+		set_global_flag = jerusalem_is_a_real_kingdom
+		narrative_event = { id = RIRSEIM.9 }
+		random_list = {
+			50 = {
+			piety = -100
+			add_trait = excommunicated 
+			}
+			50 = {
+			piety = -30
+			}
+		}
+			ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+					OR = {
+					trait = zealous
+					trait = humble
+					}
+				}
+			}
+	}
+}
+
+narrative_event = {
+	id = RIRSEIM.9
+	title = EVTTITLE_RIRSEIM_9
+	desc = EVTDESC_RIRSEIM_9
+	picture = GFX_evt_polo
+	sound = church_bells
+	
+	is_triggered_only = yes
+
+	option = {
+	name = EVT_A_RIRSEIM_9
+	trigger = {
+	religion_group = christian
+	}
+	}
+
+	option = {
+	name = EVT_B_RIRSEIM_9
+	trigger = {
+	religion_group = muslim
+	}
+	}	
+	
+	option = {
+	name = EVT_D_RIRSEIM_9
+	trigger = {
+	religion_group = jewish_group
+	}
+	}	
+
+	option = {
+	name = EVT_D_RIRSEIM_9
+	trigger = {
+	NOT = {
+	religion_group = jewish_group
+	religion_group = christian
+	religion_group = muslim
+	}
+	}
+	}	
+	
+	
+}
+
+#Si jamais l'avoue meurt sans avoir choisi la suzeraintee de son royaume
+character_event = {
+	id = RIRSEIM.10
+	title = EVTTITLE_RIRSEIM_10
+	desc = EVTDESC_RIRSEIM_10
+	picture = GFX_evt_godefroy
+
+	trigger = {
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { trait = Vs_sancti_petri }
+			has_landed_title = k_jerusalem
+			has_global_flag = fondation_royjerusalem 
+			NOT = {
+			has_global_flag = avoue_excommunuee
+			has_global_flag = jerusalem_papale 
+			has_global_flag = jerusalem_is_a_real_kingdom
+			}
+			religion_group = christian
+            independent = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	name = EVT_A_RIRSEIM_10 # Bien sur
+	prestige = 200
+	set_global_flag = jerusalem_is_a_real_kingdom
+	ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 0
+					OR = {
+					trait = zealous
+					trait = humble
+					}
+				}
+			}
+}
+
+	option = {
+	name = EVT_B_RIRSEIM_10 # Oh que non
+	piety = 200
+	set_global_flag = jerusalem_is_holy_land
+	add_character_modifier = { name = avoue_st_sepu days = -1 } 
+			ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+					OR = {
+					trait = ambitious
+					trait = cynical
+					trait = proud
+					}
+				}
+			}
+}
+}

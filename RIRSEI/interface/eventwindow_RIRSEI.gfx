@@ -1,0 +1,271 @@
+spriteTypes = 
+{
+        spriteType = {
+		name = "GFX_evt_sacre"
+		texturefile = "gfx\\event_pictures\sacre.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_recl"
+		texturefile = "gfx\\event_pictures\recl.tga"
+		allwaystransparent = yes
+	}
+        spriteType = {
+		name = "GFX_evt_charlesv"
+		texturefile = "gfx\\event_pictures\charlesv.tga"
+		allwaystransparent = yes
+	}
+	 spriteType = {
+		name = "GFX_evt_affro"
+		texturefile = "gfx\\event_pictures\affro.tga"
+		allwaystransparent = yes
+	}
+        spriteType = {
+		name = "GFX_evt_bret"
+		texturefile = "gfx\\event_pictures\bret.tga"
+		allwaystransparent = yes
+	}
+        spriteType = {
+		name = "GFX_evt_phare"
+		texturefile = "gfx\\event_pictures\phare.tga"
+		allwaystransparent = yes
+	}
+	 spriteType = {
+		name = "GFX_evt_reno"
+		texturefile = "gfx\\event_pictures\reno.tga"
+		allwaystransparent = yes
+	}
+         spriteType = {
+		name = "GFX_evt_empdeux"
+		texturefile = "gfx\\event_pictures\empdeux.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_polo"
+		texturefile = "gfx\\event_pictures\polo.tga"
+		allwaystransparent = yes
+}
+	spriteType = {
+		name = "GFX_evt_kalmar"
+		texturefile = "gfx\\event_pictures\kalmar.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_tsar"
+		texturefile = "gfx\\event_pictures\tsar.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_tsarbul"
+		texturefile = "gfx\\event_pictures\tsarbul.tga"
+		allwaystransparent = yes
+}
+	spriteType = {
+		name = "GFX_evt_tsarserb"
+		texturefile = "gfx\\event_pictures\tsarserb.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_prisbyz"
+		texturefile = "gfx\\event_pictures\prisbyz.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_espagnes"
+		texturefile = "gfx\\event_pictures\espagnes.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_reliquej"
+		texturefile = "gfx\\event_pictures\reliquej.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_defensor"
+		texturefile = "gfx\\event_pictures\defensor.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_bretw"
+		texturefile = "gfx\\event_pictures\bretw.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_emplatin"
+		texturefile = "gfx\\event_pictures\emplatin.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_Basileianova"
+		texturefile = "gfx\\event_pictures\Basileianova.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_empmort"
+		texturefile = "gfx\\event_pictures\empmort.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_empretour"
+		texturefile = "gfx\\event_pictures\empretour.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_bav"
+		texturefile = "gfx\\event_pictures\bav.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_mutfeo"
+		texturefile = "gfx\\event_pictures\mutfeo.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_phiphi"
+		texturefile = "gfx\\event_pictures\phiphi.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_relaix"
+		texturefile = "gfx\\event_pictures\relaix.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_courhongrie"
+		texturefile = "gfx\\event_pictures\courhongrie.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_roiboh"
+		texturefile = "gfx\\event_pictures\roiboh.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_croaroi"
+		texturefile = "gfx\\event_pictures\croaroi.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_roiserb"
+		texturefile = "gfx\\event_pictures\roiserb.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_byz_auto"
+		texturefile = "gfx\\event_pictures\byz_auto.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_theme_image"
+		texturefile = "gfx\\event_pictures\theme_image.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_theme_aristo"
+		texturefile = "gfx\\event_pictures\theme_aristo.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_compromis_emp"
+		texturefile = "gfx\\event_pictures\compromis_emp.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_eglise_unies"
+		texturefile = "gfx\\event_pictures\eglise_unies.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_eglises_schism"
+		texturefile = "gfx\\event_pictures\eglises_schism.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_g_varegue"
+		texturefile = "gfx\\event_pictures\g_varegue.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_Rumiturc"
+		texturefile = "gfx\\event_pictures\Rumiturc.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_amirdar"
+		texturefile = "gfx\\event_pictures\amirdar.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_caldar"
+		texturefile = "gfx\\event_pictures\caldar.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_Mongpape"
+		texturefile = "gfx\\event_pictures\Mongpape.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_mong_cal"
+		texturefile = "gfx\\event_pictures\mong_cal.tga"
+		allwaystransparent = yes
+	}
+
+spriteType = {
+		name = "GFX_evt_sayy_ali"
+		texturefile = "gfx\\event_pictures\sayy_ali.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_pr_ref_g"
+		texturefile = "gfx\\event_pictures\pr_ref_g.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_Querinvest"
+		texturefile = "gfx\\event_pictures\Querinvest.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_unamsanct"
+		texturefile = "gfx\\event_pictures\unamsanct.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_pencanossa"
+		texturefile = "gfx\\event_pictures\pencanossa.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_papeemportquer"
+		texturefile = "gfx\\event_pictures\papeemportquer.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_Victempquer"
+		texturefile = "gfx\\event_pictures\Victempquer.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_papesouvera"
+		texturefile = "gfx\\event_pictures\papesouvera.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_attenagn"
+		texturefile = "gfx\\event_pictures\attenagn.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_roijerusalem"
+		texturefile = "gfx\\event_pictures\roijerusalem.tga"
+		allwaystransparent = yes
+	}
+       spriteType = {
+		name = "GFX_evt_godefroy"
+		texturefile = "gfx\\event_pictures\godefroy.tga"
+		allwaystransparent = yes
+	}
+}
+
+

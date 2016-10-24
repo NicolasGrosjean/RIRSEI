@@ -16,7 +16,9 @@ b_comborn = castle
 #b_chalus = castle
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
 
+# History
+790.1.1 = { culture = occitan }
 # History

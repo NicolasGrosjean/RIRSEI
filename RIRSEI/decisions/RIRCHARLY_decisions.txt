@@ -1,0 +1,162 @@
+decisions = {
+debut_compromis = {
+                is_high_prio = yes
+		potential = {
+
+NOT = { trait = incapable }
+NOT = { has_global_flag = ser_compromis_huitdouze }
+NOT = { has_global_flag = compromis_serhre }
+has_character_flag = compromis_byzhre
+e_byzantium = {
+has_holder = yes
+}
+e_roman_empire = {
+has_holder = no
+}
+has_landed_title = e_hre
+		}
+		allow = {
+e_byzantium = {
+holder_scope = {
+OR = {
+religion = orthodox
+religion = ROOT
+}
+}
+}
+                    
+                       
+		}
+		effect = {
+set_global_flag = compromis_serhre
+prestige = -200
+any_independent_ruler = {
+limit = { has_landed_title = e_byzantium }
+
+narrative_event = { id = RIRSECHARLY.120 }
+
+}
+
+
+
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+}
+script_con_muta = {
+                is_high_prio = yes
+		potential = {
+OR = {
+has_landed_title = k_orthodox
+has_landed_title = k_papal_state
+}
+NOT = { has_global_flag = contro_mutaasha }
+
+
+
+
+		}
+		allow = {
+year = 801
+          
+                       
+		}
+		effect = {
+set_global_flag = contro_mutaasha
+any_playable_ruler = {
+limit = { religion = sunni
+}
+narrative_event = { id = RIRSECHARLY.123 }
+}	
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+
+form_the_hre_charl = {
+		is_high_prio = yes
+		potential = {
+is_female = no
+                independent = yes
+NOT = { has_global_flag = charlemagne_hre }
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+			
+			e_hre = {
+				has_holder = no
+			}
+			e_roman_empire = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			prestige = 5000
+			realm_size = 300
+
+has_landed_title = k_france
+has_landed_title = k_lotharingia
+has_landed_title = k_italy
+
+
+rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 40 
+}
+}
+e_byzantium = {
+holder_scope = {
+OR = {
+AND = {
+NOT = { religion = orthodox }
+NOT = { religion = ROOT }
+}
+is_female = yes
+NOT = { age = 16 }
+}
+}
+}
+			
+		}
+		effect = {
+add_trait = crowned_by_pope 
+set_global_flag = charlemagne_hre
+set_character_flag = compromis_byzhre
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+                prestige = 5000
+			e_hre = {
+				usurp_title = ROOT
+				
+			}
+
+	any_independent_ruler  = {
+
+narrative_event = { id = RIRSECHARLY.100 }
+}
+ROOT  = {
+
+narrative_event = { id = RIRSECHARLY.100 }
+}
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}

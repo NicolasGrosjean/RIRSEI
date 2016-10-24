@@ -3,14 +3,26 @@
 }
 
 778.1.1={
-	holder = 6392 
+	holder = 144999 
 	law = agnatic_succession
+
+
 }
 781.1.1={
 	holder = 90095
 }
+800.12.23 = {
+holder = 6392
+}
+800.12.25 = {
+liege = e_hre
+}
+801.1.1 = {
+holder = 90095
+}
 817.1.1={
 	holder = 90096 
+liege = 0
 }
 838.1.14={
 	holder = 90104 
@@ -27,4 +39,5 @@
 }
 884.12.12={
 	holder = 0
+        de_jure_liege = 0
 }

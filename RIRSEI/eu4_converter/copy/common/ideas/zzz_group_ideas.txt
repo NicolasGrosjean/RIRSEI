@@ -1,0 +1,25 @@
+dravidian_ideas = {
+	trigger = {
+		culture_group = dravidian
+		religion = hinduism
+		religion = jain
+	}
+}
+
+anatolian_beyliks_ideas = {
+	trigger = {
+		OR = {
+			dynasty = "Candar"
+			dynasty = "Dulkadir"
+			dynasty = "Karaman"
+			dynasty = "Saruhan"
+			dynasty = "Ottoman"
+			dynasty = "Mentese"
+			dynasty = "Eretnid"
+			dynasty = "Inanj"
+			dynasty = "Tekke"
+			dynasty = "Germiyan"
+			dynasty = "Ortokids"
+		}
+	}
+}

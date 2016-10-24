@@ -15,7 +15,7 @@ b_stquentin = city
 #b_guise = castle
 #b_signy = temple
 
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History

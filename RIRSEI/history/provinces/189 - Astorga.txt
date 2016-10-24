@@ -15,7 +15,7 @@ b_astorga = temple
 #b_toreno = castle
 
 # Misc
-culture = suebi
+culture = ibero
 religion = catholic
 
 # History

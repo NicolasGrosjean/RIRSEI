@@ -25,19 +25,6 @@ faction_succ_seniority = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		NOT = { trait = incapable }
 		liege = {
 			is_vice_royalty = no
@@ -103,13 +90,7 @@ faction_succ_seniority = {
 			is_primary_holder_title = yes
 			higher_tier_than = DUKE
 		}
-		NOR = { 
-			has_law = succ_seniority
-			AND = {
-				has_law = succession_voting_power_1
-				has_law = succ_feudal_elective
-			}
-		}
+		NOT = { has_law = succ_seniority }
 		
 		holder_scope = {
 			NOT = {
@@ -137,19 +118,6 @@ faction_succ_seniority = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			
 			NOT = { religion_group = muslim }	
 			NOT = { in_faction = faction_succ_primogeniture }
@@ -710,19 +678,6 @@ faction_succ_primogeniture = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		NOT = { trait = incapable }
 		liege = { 
 			is_vice_royalty = no
@@ -788,13 +743,7 @@ faction_succ_primogeniture = {
 			is_primary_holder_title = yes
 			higher_tier_than = DUKE
 		}
-		NOR = { 
-			has_law = succ_primogeniture
-			AND = {
-				has_law = succession_voting_power_1
-				has_law = succ_feudal_elective
-			}
-		}
+		NOT = { has_law = succ_primogeniture }
 		
 		holder_scope = {
 			NOT = {
@@ -822,19 +771,6 @@ faction_succ_primogeniture = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			
 			NOT = { religion_group = muslim }	
 			NOT = { in_faction = faction_succ_seniority }
@@ -1381,19 +1317,6 @@ faction_succ_gavelkind = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		NOT = { trait = incapable }
 		liege = { 
 			is_vice_royalty = no
@@ -1459,13 +1382,7 @@ faction_succ_gavelkind = {
 			is_primary_holder_title = yes
 			higher_tier_than = DUKE
 		}
-		NOR = { 
-			has_law = succ_gavelkind
-			AND = {
-				has_law = succession_voting_power_1
-				has_law = succ_feudal_elective
-			}
-		}
+		NOT = { has_law = succ_gavelkind }
 		
 		holder_scope = {
 			NOT = {
@@ -1495,19 +1412,6 @@ faction_succ_gavelkind = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			
 			NOT = { religion_group = muslim }	
 			NOT = { in_faction = faction_succ_seniority }
@@ -2064,22 +1968,6 @@ faction_succ_feudal_elective = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			liege = { 
-				primary_title = {
-					has_law = war_voting_power_1
-					has_law = law_voting_power_1
-				}
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-			is_nomadic = yes
-		}
 		NOT = { trait = incapable }
 		liege = { 
 			is_vice_royalty = no
@@ -2141,13 +2029,9 @@ faction_succ_feudal_elective = {
 	allow = {
 		is_law_potential = succ_feudal_elective
 		is_law_allowed = succ_feudal_elective	
-		NOR = { 
-			has_law = succ_feudal_elective
-			AND = {
-				has_law = succession_voting_power_1
-				has_law = succ_feudal_elective
-			}
-		}
+		NOT = { has_law = succ_feudal_elective }
+		
+		has_law = crown_authority_0
 		
 		OR = {
 			is_primary_holder_title = yes
@@ -2181,23 +2065,6 @@ faction_succ_feudal_elective = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					primary_title = {
-						has_law = war_voting_power_1
-						has_law = law_voting_power_1
-					}
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			
 			NOT = { religion_group = muslim }	
 			NOT = { in_faction = faction_succ_seniority }
@@ -2368,6 +2235,10 @@ faction_succ_feudal_elective = {
 			factor = 4.0
 			NOT = { FROM = { opinion = { who = LIEGE value = -75 } } }
 		}
+modifier = {
+			factor = 1.5
+			NOT = { year = 1020 }
+		}
 		
 		modifier = {
 			factor = 4.0
@@ -2445,19 +2316,6 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 4.0
 			FROM = { trait = ambitious }
-		}
-		modifier = {
-			factor = 2
-			calc_true_if = {
-				amount = 6
-				has_law = law_voting_power_1
-				has_law = banish_voting_power_1
-				has_law = execution_voting_power_1
-				has_law = revoke_title_voting_power_1
-				has_law = grant_title_voting_power_1
-				has_law = imprison_voting_power_1
-				has_law = war_voting_power_1
-			}
 		}
 	}
 	
@@ -2754,48 +2612,13 @@ faction_succ_feudal_elective = {
 			factor = 2.0
 			trait = deceitful
 		}
+modifier = {
+			factor = 1.5
+			NOT = { year = 1020 }
+		}
 		modifier = {
 			factor = 4.0
 			trait = ambitious
-		}
-		modifier = {
-			factor = 0.75
-			calc_true_if = {
-				amount = 2
-				has_law = law_voting_power_1
-				has_law = banish_voting_power_1
-				has_law = execution_voting_power_1
-				has_law = revoke_title_voting_power_1
-				has_law = grant_title_voting_power_1
-				has_law = imprison_voting_power_1
-				has_law = war_voting_power_1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			calc_true_if = {
-				amount = 4
-				has_law = law_voting_power_1
-				has_law = banish_voting_power_1
-				has_law = execution_voting_power_1
-				has_law = revoke_title_voting_power_1
-				has_law = grant_title_voting_power_1
-				has_law = imprison_voting_power_1
-				has_law = war_voting_power_1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			calc_true_if = {
-				amount = 6
-				has_law = law_voting_power_1
-				has_law = banish_voting_power_1
-				has_law = execution_voting_power_1
-				has_law = revoke_title_voting_power_1
-				has_law = grant_title_voting_power_1
-				has_law = imprison_voting_power_1
-				has_law = war_voting_power_1
-			}
 		}
 	}
 	
@@ -2832,7 +2655,6 @@ faction_lower_crown_authority = {
 	
 	# Plotter scope
 	potential = {
-		NOT = { has_dlc = "Zeus" }
 		prisoner = no
 		is_ruler = yes
 		independent = no
@@ -2893,7 +2715,6 @@ faction_lower_crown_authority = {
 	# Faction member scope (ROOT = joiner, FROM = target)
 	allow_join = {
 		ROOT = {
-			NOT = { has_dlc = "Zeus"}
 			is_ruler = yes
 			independent = no
 			is_landed = yes
@@ -3001,16 +2822,24 @@ faction_lower_crown_authority = {
 		}
 		
 		modifier = {
-			factor = 0.1
+			factor = 1.5
 			has_law = crown_authority_1
 		}
+modifier = {
+			factor = 2.0
+			has_law = crown_authority_2
+		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			has_law = crown_authority_3
 		}
 		modifier = {
-			factor = 2.25
+			factor = 2.5
 			has_law = crown_authority_4
+		}
+modifier = {
+			factor = 2.0
+			NOT = { year = 1020 }
 		}
 		
 		modifier = {
@@ -3225,28 +3054,32 @@ faction_lower_crown_authority = {
 		}
 		
 		modifier = {
-			factor = 0.1
+			factor = 1.5
 			FROMFROM = {
 				has_law = crown_authority_1
 			}
-			NOT = {	
-				has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_joining_faction
-				}
+		}
+modifier = {
+			factor = 2.0
+			FROMFROM = {
+				has_law = crown_authority_2
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			FROMFROM = {
 				has_law = crown_authority_3
 			}
 		}
 		modifier = {
-			factor = 2.25
+			factor = 2.5
 			FROMFROM = {
 				has_law = crown_authority_4
 			}
+		}
+modifier = {
+			factor = 2.0
+			NOT = { year = 1020 }
 		}
 		
 		modifier = {
@@ -3396,23 +3229,7 @@ faction_lower_tribal_organization = {
 		is_landed = yes
 		is_adult = yes
 		NOT = { trait = incapable }
-		OR = {
-			is_tribal = yes
-			AND = {
-				has_dlc = "Zeus"
-				OR = {
-					is_voter = no
-					is_nomadic = yes
-					liege = { 
-						OR = {
-							is_council_content = no
-							NOT = { primary_title = { has_law = war_voting_power_1 } }
-							#has_council = no
-						}
-					}
-				}
-			}
-		}
+		is_tribal = yes
 		liege = { 
 			is_tribal = yes 
 			NOT = {
@@ -3464,23 +3281,7 @@ faction_lower_tribal_organization = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				is_tribal = yes
-				AND = {
-					has_dlc = "Zeus"
-					OR = {
-						is_voter = no
-						is_nomadic = yes
-						liege = { 
-							OR = {
-								is_council_content = no
-								NOT = { primary_title = { has_law = war_voting_power_1 } }
-								#has_council = no
-							}
-						}
-					}
-				}
-			}
+			is_tribal = yes
 		}
 	}		
 	
@@ -3960,19 +3761,6 @@ faction_independence = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		
 		NOT = { trait = incapable }
 		
@@ -4077,19 +3865,6 @@ faction_independence = {
 			NOT = { trait = incapable }
 			prisoner = no
 			mercenary = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			OR = {
 				is_nomadic = no
 				NOT = {
@@ -4395,6 +4170,13 @@ faction_independence = {
 			primary_title = {
 				is_vice_royalty = yes
 			}
+		}
+modifier = {
+
+		factor = 0.5
+NOT = { year = 1020 }
+religion_group = christian
+
 		}
 	}
 	
@@ -4816,6 +4598,11 @@ faction_independence = {
 			factor = 4.0
 			trait = ambitious
 		}
+modifier = {
+			factor = 0.5
+			NOT = { year = 1020 }
+religion_group = christian
+		}
 	}
 	
 	success = {
@@ -4857,19 +4644,6 @@ faction_claimant = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		NOT = { trait = incapable }
 		liege = {
 			is_vice_royalty = no
@@ -5005,19 +4779,6 @@ faction_claimant = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			
 			# Can't join factions when in blood oath with liege
 			OR = {
@@ -5322,10 +5083,6 @@ faction_claimant = {
 		
 		modifier = {
 			factor = 0.2
-			NAND = {
-				has_dlc = "Zeus"
-				has_law = status_of_women_4
-			}
 			new_character = {
 				is_female = yes
 			}
@@ -5818,10 +5575,6 @@ faction_claimant = {
 		
 		modifier = {
 			factor = 0.2
-			NAND = {
-				has_dlc = "Zeus"
-				has_law = status_of_women_4
-			}
 			FROMFROM = {
 				new_character = {
 					is_female = yes
@@ -6108,19 +5861,6 @@ faction_antiking = {
 		is_landed = yes
 		is_adult = yes
 		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
-		OR = {
 			religion = catholic
 			religion = fraticelli
 		}
@@ -6191,19 +5931,6 @@ faction_antiking = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 		}
 	}	
 	
@@ -6585,19 +6312,6 @@ faction_overthrow = {
 		is_landed = yes
 		is_adult = yes
 		is_nomadic = yes
-		OR = {
-			NOT = { has_dlc = "Zeus" }
-			is_voter = no
-			is_nomadic = yes
-			is_tribal = yes
-			liege = { 
-				OR = {
-					is_council_content = no
-					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
-				}
-			}
-		}
 		NOT = { trait = incapable }
 		liege = {
 			NOT = { has_blood_oath_with = PREV }
@@ -6643,19 +6357,6 @@ faction_overthrow = {
 			is_nomadic = yes
 			NOT = { trait = incapable }
 			prisoner = no
-			OR = {
-				NOT = { has_dlc = "Zeus"}
-				is_voter = no
-				is_nomadic = yes
-				is_tribal = yes
-				liege = { 
-					OR = {
-						is_council_content = no
-						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
-					}
-				}
-			}
 			#NOT = {
 			#	blood_brother = {
 			#		holder_scope = {
@@ -7468,7 +7169,10 @@ faction_increase_council_power = {
 	
 	# Plotter scope
 	potential = {
+AND = {
 		has_dlc = "Zeus"
+NOT = { has_dlc = "Zeus" }
+}
 		prisoner = no
 		is_ruler = yes
 		independent = no

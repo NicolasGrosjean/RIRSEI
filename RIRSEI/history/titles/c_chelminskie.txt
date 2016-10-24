@@ -8,13 +8,15 @@
 822.1.1 = {
 	holder = 194078
 }
+
 867.1.1=
 {
 	holder=167742
 }
 
 1066.1.1={
-	holder=28015
+	holder=82256
+liege="d_mazovia"
 }
 1120.1.1={
 	holder = 144671

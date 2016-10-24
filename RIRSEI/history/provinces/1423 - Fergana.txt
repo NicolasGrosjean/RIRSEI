@@ -17,13 +17,11 @@ b_andijan=city
 #b_namangan
 
 # Misc
-culture = sogdian
+culture = karluk
 religion = manichean
 
 # History
-900.1.1 = {
-	culture = karluk
-}
+
 1100.1.1 = {
 	religion = sunni
 }

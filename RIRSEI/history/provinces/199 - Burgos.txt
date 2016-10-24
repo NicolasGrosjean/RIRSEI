@@ -14,7 +14,7 @@ b_castrobarte = castle
 #b_arandadeduero = temple
 #b_carrion = castle
 
-culture = visigothic
+culture = ibero
 religion = catholic
 terrain = hills
 
@@ -27,12 +27,25 @@ terrain = hills
 	b_palencia = ca_militia_barracks_1
 	b_palencia = ca_wall_1
 	b_palencia = ca_wall_2
+b_palencia = duero_depeup_1
 	b_castrobarte = ca_town_1
 	b_castrobarte = ca_keep_1
 	b_castrobarte = ca_stable_1
 	b_castrobarte = ca_militia_barracks_1
 	b_castrobarte = ca_wall_1
 	b_castrobarte = ca_wall_2
+b_castrobarte = duero_depeup_1
+b_burgos = duero_depeupct_1
+
 }
 
-945.1.1 = { culture = castillan }
+945.1.1 = {
+	culture = castillan
+}
+
+1000.1.1 = {
+b_palencia = duero_depeup_2
+b_castrobarte = duero_depeup_2
+b_burgos = duero_depeupct_2
+
+}

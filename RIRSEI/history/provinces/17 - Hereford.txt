@@ -19,12 +19,12 @@ culture = welsh
 religion = catholic
 
 # History
-#100.1.1 = { name = "Ergyng" }
-#808.1.1 = { name = "Hereford" }
+100.1.1 = { name = "Ergyng" }
+808.1.1 = { name = "Hereford" }
 808.1.1 = { culture = saxon }
-808.1.1 = { b_hereford = castle }
 808.1.1 = { remove_settlement = b_archenfield }
 808.1.1 = { remove_settlement = b_clifford }
+808.1.1 = { b_hereford = castle }
 809.1.1 = { b_st_ethelberts = temple }
 809.1.1 = { b_leominster = city }
 1100.11.11 = { culture = english }

@@ -938,10 +938,7 @@
 		birth="907.1.1"
 	}
 	935.9.28={
-		death={
-			death_reason = death_murder
-			killer = 508
-		}
+		death="935.9.28"
 	}
 }
 
@@ -1426,6 +1423,9 @@
 	1252.1.1={
 		add_spouse = 30810
 	}
+1254.5.21 ={
+add_claim = e_hre
+}
 	1260.7.12={
 		give_nickname = nick_the_magnificent
 	}
@@ -1459,6 +1459,10 @@
 	1285.1.24={
 		add_spouse=7526 #Jutta Habsburg
 	}
+1296.2.8=
+{
+trait = Vs_sancti_petri
+}
 	1303.5.26={
 		add_spouse=125978 #Elzbieta Ryksa
 	}

@@ -1,0 +1,72 @@
+decisions = {
+
+	coronation  = {
+		is_high_prio = yes
+		potential = {
+			is_feudal = yes
+			NOT = {
+				has_character_flag = wants_coronation
+			}
+			not = { trait = excommunicated }
+			independent = yes
+			religion = catholic
+			NOT = { is_female = yes	}
+			NOT = { is_heretic = yes }
+			NOT = { trait = incapable }
+			NOT = { trait = crowned_by_pope }
+			tier = emperor
+			primary_title = {
+				title = e_hre
+			}
+		}
+		allow = {
+			prisoner = no
+			age = 16
+			prestige = 500
+			wealth = 100
+			piety = 150
+                        trait = roi_des_romains
+			rightful_religious_head_scope = {
+				opinion = {
+					who = ROOT
+					value = 0
+				}
+				not = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = coronation_rejected
+					}
+				}
+			}
+							
+		}
+		effect = {
+			set_character_flag = wants_coronation
+			wealth = -100
+if = {
+     limit = { NOT = { has_global_flag = emp_vic_quer } }
+			character_event = { id = RIRSEI.2002000 }
+}
+if = {
+     limit = { has_global_flag = emp_vic_quer }
+			character_event = { id = RIRSEI.2002050 }
+}
+			hidden_tooltip = {
+				#character_event = { id = 2002050 days = 60 } # Coronation by pope
+				#any_realm_character = {
+				#	limit = {
+				#		age = 16
+				#		NOT = { trait = incapable }
+				#		prisoner = no
+				#		NOT = { is_female = yes	}
+				#	}
+				#	letter_event = { id = 2002020 } # Invitation to coronation
+				#}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

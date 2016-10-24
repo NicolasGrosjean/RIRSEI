@@ -17,10 +17,10 @@ b_alet = temple
 
 #Misc
 religion = catholic
-culture = visigothic
+culture = gallo
 
 # History
-867.1.1 = { culture = occitan }
-1150.1.1 = { religion = cathar }
+790.1.1 = { culture = occitan }
 1187.1.1 = { b_lastours = castle }
+1150.1.1 = { religion = cathar }
 1244.3.16 = { religion = catholic}

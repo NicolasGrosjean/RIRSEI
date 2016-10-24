@@ -128,7 +128,6 @@
 	}
 }
 
-
 217502 = {
 	name="Kaloyan" #Kaloyan I
 	dynasty=185
@@ -213,9 +212,6 @@
 	mother=217504
 	1181.1.1={
 		birth="1181.1.1"
-	}
-	1208.1.1 = {
-		add_spouse=31184
 	}
 	1218.1.2={
 		death="1218.1.2"
@@ -1623,7 +1619,12 @@
 	}
 	864.1.1={
 		religion="orthodox"
-	}
+}
+
+893.1.1={
+add_claim = c_byzantion
+}
+	
 	927.5.27={
 		death="927.5.27"
 	}

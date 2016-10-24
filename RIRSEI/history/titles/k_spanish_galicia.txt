@@ -1,3 +1,9 @@
+600.1.1 ={
+
+}
+
+
+
 910.12.21={
 	holder=70021 # Ordoño II de León
 	law = crown_authority_1
@@ -7,53 +13,44 @@
 	}
 }
 924.1.1={
-	holder=70030 # Fruela II de Cantabria
+	holder=70030
 }
 925.7.1={
-	holder=70023 # Alfonso IV de León
+	holder=70023
 }
 931.6.1={
-	holder=70024 # Ramiro II de León
+	holder=70024
 }
 951.1.5={
-	holder=108600 # Ordoño III de León
+	holder=108600
 }
 956.11.13={
-	holder=70026 # Sancho I de León
+	holder=70026
 }
 958.1.1={
-	holder=70029 # Ordoño IV de León
+	holder=70029
 }
 960.1.1={
-	holder=70026 # Sancho I de León
+	holder=70026
 }
 966.1.1={
-	holder=108610 # Ramiro III de León
+	holder=108610
 }
 984.1.1={
-	holder=108590 # Bermudo II de León
+	holder=108590
 }
 999.9.1={
-	holder=108570 # Alfonso V de León
+	holder=108570
 }
 1028.8.7={
-	holder=70075 # Bermudo III de León
+	holder=70075
 }
 1037.9.4={
-	holder=107510 # Fernando I Jimena
+	holder=107510
 }
 1065.12.27={
-	holder=109500 # García II Jimena
+	holder=109500
 }
 1071.2.1={
-	holder=107500 # Sancho II Jimena
-}
-1072.10.7={
-	holder=108500 # Alfonso VI Jimena
-}
-1109.6.30={
-	holder=207500 # Alfonso VII de Borgoña
-}
-1111.9.17={
 	holder=0
 }

@@ -17,8 +17,11 @@ b_chancelade = temple
 #b_perigueux = city
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
+
+# History
+790.1.1 = { culture = occitan }
 
 # History
 1240.1.1   = { b_perigueux = city }

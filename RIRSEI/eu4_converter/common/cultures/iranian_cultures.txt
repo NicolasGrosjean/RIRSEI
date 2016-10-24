@@ -1,0 +1,14 @@
+iranian = {
+	kurdish = {
+		primary = PER
+		dynasty_names = $kurdish$
+	}
+	baloch = {
+		primary = bal
+		dynasty_names = $baloch$
+	}
+	afghan = {
+		primary = AFG
+		dynasty_names = $afghan$
+	}
+}

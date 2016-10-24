@@ -17,7 +17,7 @@ b_nyon = city
 #b_thonon = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History

@@ -1,0 +1,27 @@
+1295.6.27={
+	
+holder=125909
+effect={
+		insert_title_history=k_poland # Will add all history entries in k_asturias earlier than the earliest entry here
+	}
+}
+1296.2.8=
+{
+holder=96002
+}
+1305.6.21=
+{
+holder=96003
+}
+1306.8.4=
+{
+holder=471510
+}
+1333.3.2=
+{
+holder=471500
+}
+
+
+
+

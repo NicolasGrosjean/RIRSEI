@@ -1,5 +1,6 @@
 # v1.10: Changed
 
+
 970.1.1={
 	holder = 100504 # Erik Segersäll
 	law = succ_feudal_elective

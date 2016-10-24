@@ -1,11 +1,13 @@
 769.1.1={
 	holder = 168127 #Thiery
+de_jure_liege=d_barcelona
 }
 769.1.1={
 	liege=d_toulouse
 }
 864.1.1={
 	liege=d_barcelona
+de_jure_liege=d_barcelona
 }
 864.1.1={
 	holder = 163067
@@ -15,6 +17,7 @@
 }
 922.1.1={
 	liege="d_toulouse"
+de_jure_liege=d_toulouse
 }
 922.1.1={
 	holder=138250 #Bérenger I de Melgueil

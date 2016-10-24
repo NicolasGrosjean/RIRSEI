@@ -2,3 +2,6 @@
 {
 	pentarch = b_antiocheia
 }
+700.1.1 = {
+de_jure_liege = e_arabia
+}

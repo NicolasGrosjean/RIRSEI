@@ -349,6 +349,7 @@
 }
 900.1.1={
 	holder = 7841
+set_global_flag = mutare
 }
 903.7.1={
 	holder = 7840
@@ -454,6 +455,7 @@
 }
 1048.8.9={
 	holder = 1338
+set_global_flag = reforme_gregorienne
 }
 1054.4.19={
 	holder = 7894
@@ -494,6 +496,7 @@
 }
 1124.12.13={
 	holder = 2021
+set_global_flag = que_investvic
 }	
 1130.2.13=
 {

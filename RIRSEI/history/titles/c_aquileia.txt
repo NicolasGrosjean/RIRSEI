@@ -1,5 +1,6 @@
 569.1.1={
 	liege=k_italy
+de_jure_liege = "d_verona"
 }
 569.1.1={
 	holder = 190126 #Gisulf I
@@ -60,6 +61,7 @@
 }
 863.1.1={
 	liege = "d_verona"
+de_jure_liege = "d_verona"
 }
 863.1.1={
 	holder = 167804

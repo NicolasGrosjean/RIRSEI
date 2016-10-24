@@ -1,5 +1,6 @@
 670.1.1={
 	holder = 168145
+de_jure_liege=k_aquitaine
 }
 768.1.1={
 	holder=168104
@@ -38,6 +39,7 @@
 }
 884.12.12={
 	liege = "k_france"
+de_jure_liege=k_france
 }
 893.1.1={
 	holder = 7563

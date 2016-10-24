@@ -16,11 +16,11 @@ b_marvejols = city
 #b_tournel = castle
 
 #Misc
-culture = visigothic
+culture = gallo
 religion = catholic
 
 # History
-867.1.1 = { culture = occitan }
+790.1.1 = { culture = occitan }
 1307.1.1   = {
 	capital = b_mende
 }

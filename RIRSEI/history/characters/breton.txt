@@ -336,7 +336,7 @@
 	intrigue=8
 	stewardship=7
 	religion="catholic"
-	culture="breton"
+	culture="GalloB"
 	trait="charismatic_negotiator"
 	father=10042
 	mother=10043
@@ -3246,8 +3246,8 @@
 	culture="breton"
 	dynasty=1029042 #Corneu
 	father=159450
-	689.1.1={
-		birth="689.1.1"
+	695.1.1={
+		birth="695.1.1"
 	}
 	742.1.1={
 		death="742.1.1"

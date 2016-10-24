@@ -1,9 +1,15 @@
-910.12.20={
+600.1.1 = {
+
+}
+
+924.1.1={
 	pentarch = b_roma
-	holder=70020 # García I de Cantabria
+	holder=70030
+	law = succ_feudal_elective
+	law = cognatic_succession
 	law = crown_authority_1
 	law = investiture_law_1
-	de_jure_liege=e_spain
+	
 	effect={
 		insert_title_history=k_asturias # Will add all history entries in k_asturias earlier than the earliest entry here
 	}
@@ -15,72 +21,74 @@
 	holder=70030 # Fruela II de Cantabria
 }
 925.7.1={
-	holder=70023 # Alfonso IV de León
+	holder=70023
 }
 931.6.1={
-	holder=70024 # Ramiro II de León
+	holder=70024
 }
 951.1.5={
-	holder=108600 # Ordoño III de León
+	holder=108600
 }
 956.11.13={
-	holder=70026 # Sancho I de León
+	holder=70026
 }
 958.1.1={
-	holder=70029 # Ordoño IV de León
+	holder=70029
 }
 960.1.1={
-	holder=70026 # Sancho I de León
+	holder=70026
 }
 966.1.1={
-	holder=108610 # Ramiro III de León
+	holder=108610
 }
 984.1.1={
-	holder=108590 # Bermudo II de León
+	holder=108590
 }
 999.9.1={
-	holder=108570 # Alfonso V de León
+	holder=108570
 }
 1028.8.7={
-	holder=70075 # Bermudo III de León
+	holder=70075
 }
 1037.9.4={
-	holder=107510 # Fernando I Jimena
+	holder=107510
 }
 1065.12.27={
-	holder=108500 # Alfonso VI Jimena
+	holder=108500
 }
 1072.1.12={
-	holder=107500 # Sancho II Jimena
+	holder=107500
 }
 1072.10.7={
-	holder=108500 # Alfonso VI Jimena
+	holder=108500
 }
 1109.6.30={
-	holder=207660 # Urraca Alfónsez Jimena
+	holder=207660
 }
 1126.3.8={
-	holder=207500 # Alfonso VII de Borgoña
+	holder=207500
 }
 1157.8.21={
-	holder=208500 # Fernando II de Borgoña
+	holder=208500 #Fernando II de León
 }
 1188.1.22={
-	holder=457650 # Alfonso IX de Borgoña
+	holder=457650 #Alfonso
 }
 1230.9.24={
-	holder=457620 # Fernando III de Borgoña
+	holder=457620 #Fernando III 'el Santo'
 }
 1252.5.30={
-	holder=457540 # Alfonso X de Borgoña
+	holder=457540
+}
+1282.1.1={
+	law = succ_primogeniture
 }
 1284.4.4={
-	holder=457530 # Sancho IV de Borgoña
-	law = succ_primogeniture
+	holder=457530
 }	
 1295.4.25={
-	holder=457520 # Fernando IV de Borgoña
+	holder=457520
 }
 1312.9.7={
-	holder=457500 # Alfonso XI de Borgoña
+	holder=457500
 }

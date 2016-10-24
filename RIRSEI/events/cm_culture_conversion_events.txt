@@ -144,7 +144,7 @@ province_event = {
 
 	trigger = {
 		year = 776
-		culture = old_frankish
+		culture = gallo
 		NOT = { region = custom_frisia }
 		owner = {
 			OR = {
@@ -173,14 +173,14 @@ province_event = {
 	}
 }
 
-# Visigothic province converts to Occitan
+# ibero province converts to Occitan
 province_event = {
 	id = CM.6
 	desc = EVTDESC_CM_6
 	picture = GFX_evt_stone_church
 
 	trigger = {
-		culture = visigothic
+		culture = ibero
 		NOT = { religion_group = muslim }
 		region = world_europe_west_francia
 	}
@@ -201,14 +201,14 @@ province_event = {
 	}
 }
 
-# Visigothic province converts to Castilian
+# ibero province converts to Castilian
 province_event = {
 	id = CM.7
 	desc = EVTDESC_CM_7
 	picture = GFX_evt_stone_church
 
 	trigger = {
-		culture = visigothic
+		culture = ibero
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_castillian
@@ -242,7 +242,7 @@ province_event = {
 	picture = GFX_evt_stone_church
 
 	trigger = {
-		culture = visigothic
+		culture = ibero
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_catalan
@@ -269,14 +269,14 @@ province_event = {
 	}
 }
 
-# Suebi province converts to Portuguese
+# ibero province converts to Portuguese
 province_event = {
 	id = CM.9
 	desc = EVTDESC_CM_9
 	picture = GFX_evt_stone_church
 
 	trigger = {
-		culture = suebi
+		culture = ibero
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_portuguese
@@ -303,14 +303,14 @@ province_event = {
 	}
 }
 
-# Visigothic province converts to Andalusian
+# ibero province converts to Andalusian
 province_event = {
 	id = CM.10
 	desc = EVTDESC_CM_10
 	picture = GFX_evt_monk_muslim
 
 	trigger = {
-		culture = visigothic
+		culture = ibero
 		religion_group = muslim
 		OR = {
 			region = custom_andalusian

@@ -63,6 +63,7 @@
 }
 1198.1.1={
 	holder=72044 # Fernando Rodríguez de Azagra
+liege=k_aragon
 }
 1200.1.1={
 	holder=72039 # Pedro Fernández de Azagra
@@ -75,7 +76,7 @@
 }
 1284.1.1={
 	holder=71744 # Ferran Pere de Barcelona
-	liege=k_aragon
+	
 }
 1327.1.1={
 	holder=71698 # Alfons de Lauria

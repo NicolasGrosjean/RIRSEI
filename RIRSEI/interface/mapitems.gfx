@@ -452,7 +452,42 @@ objectTypes = {
 		scale = 0.5f
 		use_animation = no
 	}
-
+        EMFXActorType = {
+		name = "e_byzantium"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
+        EMFXActorType = {
+		name = "e_latin_empire"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
+        EMFXActorType = {
+		name = "e_roman_empire"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
+EMFXActorType = {
+		name = "e_russia"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
+   EMFXActorType = {
+		name = "e_bulgaria"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
+EMFXActorType = {
+		name = "e_serbia"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+	}
 	### Misc ######################################################
 
 	EMFXActorType = {

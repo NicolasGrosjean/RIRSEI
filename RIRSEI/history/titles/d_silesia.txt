@@ -19,7 +19,7 @@
 912.1.1={
 	holder = 82294
 }
-914.1.1={
+912.1.1={
 	holder = 82297
 }
 942.1.1={
@@ -79,6 +79,11 @@ liege="k_poland"
 1290.6.24=
 {
 	holder=471732
+}
+1295.6.27={
+	
+de_jure_liege = k_polandball
+liege = "k_polandball"
 }
 1296.2.22=
 {

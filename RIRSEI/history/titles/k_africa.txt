@@ -1,14 +1,15 @@
 100.1.1=
 {
 	pentarch = b_alexandria
+de_jure_liege = e_byzantium
 }
 #Muhallabids
 768.1.1={
 	holder = 210014
 }
-#768.1.1={
-#	liege = "e_arabia"
-#}
+768.1.1={
+	liege = "e_arabia"
+}
 771.1.1={
 	holder = 210015
 }
@@ -23,6 +24,7 @@
 }
 787.1.10={
 	holder = 210016
+de_jure_liege = e_arabia
 }
 791.1.1={
 	holder = 210017

@@ -19,7 +19,10 @@ b_brioude = city
 #b_domeyrat = castle
 
 #Misc
+culture = gallo
 religion = catholic
-culture = occitan
+
+# History
+790.1.1 = { culture = occitan }
 
 # History

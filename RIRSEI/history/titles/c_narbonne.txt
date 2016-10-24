@@ -1,11 +1,13 @@
 769.1.1={
 	holder = 190550 #Bego
+de_jure_liege=d_barcelona
 }
 769.1.1={
 	liege=d_toulouse
 }
 826.1.1={
 	holder=163063
+de_jure_liege=d_barcelona
 	liege=d_barcelona
 }
 #835.1.1={
@@ -25,6 +27,7 @@
 	law = succ_primogeniture
 	law = cognatic_succession
 	liege = d_toulouse
+de_jure_liege=d_toulouse
 }
 936.1.1={
 	holder=138218 #Matfred de Narbonne

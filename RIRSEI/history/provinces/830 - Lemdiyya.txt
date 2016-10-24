@@ -18,8 +18,8 @@ b_aindefla = temple
 
 # Misc
 culture = maghreb_arabic
-religion = ibadi
+religion = khadjirite
 
 # History
 
-909.1.1 = { religion = sunni }
+909.1.1 = { religion = khadjirite }

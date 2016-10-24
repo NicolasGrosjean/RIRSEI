@@ -2234,6 +2234,26 @@
 	}
 }
 
+485250 = {
+	name="Abdul-Haq"
+	# AKA: Abdul
+	dynasty=100776
+	martial=4
+	diplomacy=5
+	intrigue=5
+	stewardship=4
+	religion="sunni"
+	culture="levantine_arabic"
+	trait="charitable"
+	trait="tough_soldier"
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+
 485270 = {
 	name="Hussamaddin"
 	dynasty=100779
@@ -7219,7 +7239,7 @@
 	dynasty=7518
 
 	culture="levantine_arabic"
-	religion="shiite"
+	religion="khadjirite"
 
 	837.1.1={
 		birth="837.1.1"

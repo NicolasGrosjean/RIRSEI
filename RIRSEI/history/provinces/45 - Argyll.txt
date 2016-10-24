@@ -14,7 +14,6 @@ b_st_moluag = temple
 #b_inverary = castle
 #b_ardchattan = temple
 #b_kilmun = castle
-#b_argh = castle
 
 # Misc
 culture = irish

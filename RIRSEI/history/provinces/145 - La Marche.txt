@@ -17,6 +17,7 @@ b_aubusson = city
 
 #Misc
 religion = catholic
-culture = occitan
+culture = gallo
 
 # History
+790.1.1 = { culture = occitan }

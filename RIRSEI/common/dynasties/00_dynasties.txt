@@ -44,7 +44,7 @@
 }
 7=
 {
-	name="Ottoman"
+	name="Osmanli"
 	culture="turkish"
 	religion="sunni"
 	coat_of_arms=
@@ -4146,7 +4146,7 @@
 }
 589=
 {
-	name="Fatimid"
+	name="Al-Fatimiyyun"
 	culture="maghreb_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -4227,9 +4227,9 @@
 }
 597=
 {
-	name="Umayyad"
+	name="Al-'Umawiyyun"
 	culture="egyptian_arabic"
-	religion="sunni"
+	religion="pagan"
 	coat_of_arms=
 	{
 		data=
@@ -4334,7 +4334,7 @@
 }
 613=
 {
-	name="Seljuk"
+	name="Selçuklular"
 	culture="turkish"
 	religion="sunni"
 	coat_of_arms=
@@ -4679,7 +4679,7 @@
 }
 651=
 {
-	name="Salian"
+	name="Salien"
 	culture="german"
 	religion="catholic"
 	coat_of_arms=
@@ -4824,7 +4824,7 @@
 }
 669=
 {
-	name="Ludolfinger"
+	name="Ludolphide"
 	culture="german"
 	religion="norse_pagan"
 	coat_of_arms=
@@ -5120,7 +5120,7 @@
 }
 705=
 {
-	name="Rurikid"
+	name="Riourikovitch"
 	culture="russian"
 	religion="norse_pagan"
 	coat_of_arms=
@@ -6506,13 +6506,6 @@
 	name="Sålder"
 	culture="norse"
 	religion="norse_pagan"
-	coat_of_arms=
-	{
-		data=
-		{
-0 0 0 16 5 13 9 				}
-		religion="norse_pagan"
-	}
 	used_for_random=no
 }
 873=
@@ -6542,13 +6535,6 @@
 	culture="swedish"
 	religion="buddhist"
 	used_for_random=no
-	coat_of_arms=
-	{
-		data={
-			0 0 0 7 0 7 1     
-		}
-		religion = buddhist
-	}
 }
 876=
 {
@@ -6605,20 +6591,6 @@
 		religion="catholic"
 	}
 	used_for_random=no
-}
-883={
-	name="Nieminen"
-	culture=finnish
-	religion=finnish_pagan
-	coat_of_arms =
-	{
-		data =
-		{
-			0 2 0 3 14 11 5 
-		}
-		religion = finnish_pagan
-	}
-	used_for_random = no
 }
 1002=
 {
@@ -10409,7 +10381,7 @@
 }
 7274=
 {
-	name="Almoravid"
+	name="Al-Murabitun"
 	culture="maghreb_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -10428,7 +10400,7 @@
 }
 7276=
 {
-	name="Hafsid"
+	name="Al-Hafsioun"
 	culture="maghreb_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -18191,7 +18163,7 @@
 }
 24000=
 {
-	name="Ayyubid"
+	name="Al-Ayyubiyun"
 	culture="kurdish"
 	religion="sunni"
 	coat_of_arms=
@@ -18530,7 +18502,7 @@
 }
 25061=
 {
-	name="Karling"
+	name="Pépinide"
 	culture="old_frankish"
 	religion="catholic"
 	coat_of_arms=
@@ -22836,7 +22808,7 @@
 }
 100634=
 {
-	name="Ummayyads"
+	name="Al-?Umawiyyun"
 	culture="persian"
 }
 100635=
@@ -23562,7 +23534,7 @@
 }
 100721=
 {
-	name="Abbasid"
+	name="Al-Abbasiyun"
 	culture="levantine_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -24856,7 +24828,7 @@
 }
 101015=
 {
-	name="Abbasid"
+	name="Al-'Abbasiyun"
 	culture="maghreb_arabic"
 	religion="sunni"
 }
@@ -28526,7 +28498,7 @@
 }
 101727=
 {
-	name="Abbasid"
+	name="Al-'Abbasiyun"
 	culture="bedouin_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -28564,13 +28536,13 @@
 }
 101731=
 {
-	name="Hilalid"
+	name="Banu Hilal"
 	culture="bedouin_arabic"
 	religion="sunni"
 }
 101732=
 {
-	name="Marinid"
+	name="Al-Mariniyun"
 	culture="maghreb_arabic"
 	religion="sunni"
 	coat_of_arms=
@@ -29387,7 +29359,7 @@
 }
 101875=
 {
-	name="Almohad"
+	name="Al-Muwahhidun"
 	culture="maghreb_arabic"
 	religion="sunni"
 }
@@ -31943,14 +31915,6 @@
 	}
 	used_for_random=no
 }
-1031030=
-{
-	name="Rudén"
-	culture="swedish"
-	religion="norse_pagan"
-	used_for_random=no
-}
-
 1051126=
 {
 	name="of Bebbanburg"
@@ -32031,6 +31995,34 @@
 		data=
 		{
 0 4 0 37 11 2 1 2 0 15 12 0 9 2 0 24 12 0 9 			}
+		religion="catholic"
+	}
+	used_for_random=no
+}
+1051146=
+{
+	name="Hanaya"
+	culture="bedouin_arabic"
+	religion="sunni"
+	used_for_random=no
+}
+1051147=
+{
+	name="Matteski"
+	culture="greek"
+	religion="orthodox"
+	used_for_random=no
+}
+1051148=
+{
+	name="Bruce"
+	culture="scottish"
+	religion="catholic"
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 25 2 0 0 			}
 		religion="catholic"
 	}
 	used_for_random=no
@@ -36408,7 +36400,6 @@
 {
 	name="Moriya"
 	culture="sinhala"
-	religion = buddhist
 }
 1029172=
 {
@@ -36420,13 +36411,11 @@
 {
 	name="Kalinga"
 	culture="sinhala"
-	religion = buddhist
 }
 1029174=
 {
 	name="Siri Sanga Bo"
 	culture="sinhala"
-	religion = buddhist
 }
 12319=
 {

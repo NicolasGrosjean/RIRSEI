@@ -416,7 +416,6 @@
 	}
 }
 
-
 220992 = {
 	name="Vandarin"
 	dynasty=7331
@@ -5607,16 +5606,16 @@
 		death=yes
 	}
 }
-160298 = {  
+160298 = {
 	name="Karen" #unhistorical
 	dynasty=7511
 	religion="zoroastrian"
 	culture="persian"
 	father=160299
-	680.1.1={ #postponed from 660
+	660.1.1={
 		birth=yes
 	}
-	742.1.1={ #postponed from 737
+	737.1.1={
 		death=yes
 	}
 }

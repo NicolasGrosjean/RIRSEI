@@ -6,8 +6,8 @@ title = c_liege
 # Settlements
 max_settlements = 4
 
-b_namur = castle
 b_liege = temple
+b_namur = castle
 b_bastogne = city
 
 #b_huy = castle
@@ -17,12 +17,9 @@ b_bastogne = city
 #b_salm = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History
 790.1.1 = { culture = frankish }
-850.1.1 = {
-	capital = b_liege
-}
 1187.1.1 = { b_stavelot = temple }

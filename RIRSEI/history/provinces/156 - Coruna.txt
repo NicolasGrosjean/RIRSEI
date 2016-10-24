@@ -15,7 +15,7 @@ b_mondonedo = temple
 #b_triacastela = castle
 
 # Misc
-culture = suebi
+culture = ibero
 religion = catholic
 
 # History

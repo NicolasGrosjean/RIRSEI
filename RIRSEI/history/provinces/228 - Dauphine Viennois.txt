@@ -19,9 +19,9 @@ b_grenoble = city
 #b_valreas = city
 
 # Misc
-culture = occitan
+culture = gallo
 religion = catholic
-
+790.1.1 = { culture = occitan }
 # History
 1297.1.1 = { b_stantoine = temple }
 

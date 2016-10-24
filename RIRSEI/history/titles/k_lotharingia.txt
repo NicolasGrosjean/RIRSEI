@@ -1,10 +1,12 @@
 100.1.1={
 	pentarch = b_roma
+
 }
 #Merovingians
 481.1.1 = {
 	holder=168673 #Clovis Ier
-	de_jure_liege = e_france
+	
+effect = { set_coa = k_regfrancorumed }
 }
 511.11.27 = {
 	holder=168674 #Thierry Ier
@@ -80,11 +82,12 @@
 	holder = 144999 #Carloman I
 	law = agnatic_succession
 }
-769.1.1 = {
-	de_jure_liege = e_france
-}
+
 771.12.4={
 	holder = 6392 #Charlemagne
+}
+800.12.25 = {
+de_jure_liege = e_hre
 }
 817.1.1={
 	holder = 30227 #Lothair I
@@ -94,6 +97,7 @@
 	holder = 144998 #Lothair II
 	name = LOTHARINGIA
 	adjective = LOTHARINGIA_ADJ
+effect = { reset_coa = THIS }
 }
 867.1.1 = {
 	de_jure_liege = e_hre

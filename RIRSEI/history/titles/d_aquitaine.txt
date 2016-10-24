@@ -1,5 +1,6 @@
 678.1.1={
 	holder = 190478 #Boggis
+de_jure_liege=k_aquitaine
 }
 678.1.1={
 	liege=k_france
@@ -28,6 +29,11 @@
 768.6.2={
 	liege=k_france
 }
+
+852.1.1 = {
+	liege=k_france
+de_jure_liege=k_aquitaine
+}
 852.1.1 = {
 	holder = 90129 #Ramnulf I
 }
@@ -39,6 +45,7 @@
 #}
 895.1.1 = {
 	holder = 127022 #Guillaume Ier
+de_jure_liege=k_france
 }
 918.7.6 = {
 	holder = 127026 #Guillaume II

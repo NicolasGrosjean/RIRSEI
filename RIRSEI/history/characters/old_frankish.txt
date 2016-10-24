@@ -26,6 +26,7 @@
 	}
 	768.9.24 = {
 		add_claim = k_lotharingia
+trait = roi_oint
 	}
 	772.1.1={
 		add_spouse = 167827
@@ -41,10 +42,9 @@
 144999 = {
 	name=Karloman # Carloman, brother of Charlemagne
 	dynasty=25061
-	dna = bcalbhabgal
-	properties = aj0aca000000
 	religion=catholic
 	culture=old_frankish
+	
 	father=131722
 	mother=190429
 	751.1.1={
@@ -56,6 +56,7 @@
 	}
 	768.9.24 = {
 		add_claim = k_france
+trait = roi_oint
 	}
 	771.12.4={
 		death=yes
@@ -426,22 +427,6 @@
 		death="760.1.1" #Before 764
 	}
 }
-194450 = {
-	name="Robert" #Robert II, count de Hesbaye
-	dynasty=743 #Capet (Robertien)
-	religion=catholic
-	culture=old_frankish
-	trait = lustful
-	trait = strong
-	father=91000
-	mother = 91121
-	742.8.7 = {
-		birth=yes
-	}
-	807.6.6 = {
-		death=yes
-	}
-}
 
 33327 = {
 	name="Cancor"
@@ -622,6 +607,46 @@
 		birth=yes
 	}
 	850.1.1={
+		death=yes
+	}
+}
+
+73786={
+	name="Salomon"
+	dynasty=629
+
+	religion=catholic
+	culture=old_frankish
+
+	815.1.1={
+		birth=yes
+	}
+	870.1.1={
+		death=yes
+	}
+}
+127019={
+	name="Bernard"
+	dynasty=100217
+
+	father=163063
+	mother=168141
+
+	martial=7
+	diplomacy=8
+	intrigue=5
+	stewardship=6
+
+	religion=catholic
+	culture=old_frankish
+
+	841.3.22={
+		birth=yes
+	}
+	864.1.1={
+		add_spouse=127020
+	}
+	886.1.6={
 		death=yes
 	}
 }
@@ -1037,7 +1062,7 @@
 		death=yes #31st of January 826
 	}
 }
-190440 = {  
+190440 = {
 	name="Richarde" #wife of Nithard
 	female=yes
 	dynasty=25065 #De Martel
@@ -1045,7 +1070,7 @@
 	culture="old_frankish"
 	father=168161
 	mother=91390
-	735.1.1={ #up from 28 according to internet, but this makes her too young for birth of son
+	728.1.1={
 		birth=yes
 	}
 	785.1.1={
@@ -1490,7 +1515,7 @@
 	religion="catholic"
 	culture="old_frankish"
 	
-	674.1.1 = { birth=yes } #unknown
+	690.1.1 = { birth=yes } #unknown
 	706.1.1 = { add_spouse = 91387 } #Ermengarde
 	750.1.1 = { death=yes } #unknown
 }
@@ -1502,7 +1527,7 @@
 	culture="old_frankish"
 	trait="zealous"
 	
-	674.1.1 = { birth=yes } #unknown
+	690.1.1 = { birth=yes } #unknown
 	760.1.1 = { death=yes } #unknown
 }
 
@@ -1521,7 +1546,7 @@
 	784.7.16 = { death=yes }
 }
 
-91389 = { 
+91389 = {
 	name="Riculfe" #fantasy brother of Fulrad
 	dynasty=9300 #Riculfids
 	religion="catholic"
@@ -1529,12 +1554,12 @@
 	father=91386 #Riculfe, count of Elsass
 	mother=91387 #Ermengarde
 	
-	690.1.1 = { birth=yes } #unknown, down from 708
+	708.1.1 = { birth=yes } #unknown
 	724.1.1 = { add_spouse = 91392 } #fantasy spouse
-	765.1.1 = { death=yes } #down from 790
+	790.1.1 = { death=yes }
 }
 
-91390 = {  
+91390 = {
 	name="Ermentrude" #Ermentrude, wife of Jérôme, bastard of Charles Martel
 	dynasty=9300 #Riculfids
 	female=yes
@@ -1543,7 +1568,7 @@
 	father=91389 #Riculfe, fantasy brother of Fulrad
 	mother=91392 #this is to give her a visigothic ancestry
 	
-	706.1.1 = { birth=yes } #unknown, changed from 725 beacuse baby
+	725.1.1 = { birth=yes } #unknown
 	785.1.1 = { death=yes }
 }
 
@@ -1625,7 +1650,7 @@
 	}
 }
 
-91397 = { 
+91397 = {
 	name="Angilbert" #Angilberk or Angilbert, the Saint, count of Ponthieu, 7th abbey of Saint-Riquier
 	dynasty=9306 #Bivinids/Nithard-Richard from Middle Rhine
 	religion="catholic"
@@ -1634,7 +1659,7 @@
 	mother=190440 #Richarde, daughter of Jérôme, bastard of Charles Martel
 	trait="humble"
 	
-	751.1.1={# up from 745 because mother was too young
+	745.1.1={
 		birth=yes #he lived and was born around in 750
 	}
 	761.1.1={
@@ -3876,7 +3901,7 @@
 	}
 }
 
-131718 = {  
+131718 = {
 	name="Arnoul"
 	dynasty=25060
 	martial=5
@@ -3889,8 +3914,8 @@
 	688.1.2 = {
 		birth="688.1.2"
 	}
-	740.1.2 = { #postponed from 728
-		death="740.1.2"
+	725.1.2 = {
+		death="725.1.2"
 	}
 }
 
@@ -4004,19 +4029,19 @@
 		death="810.1.1" #pretty random estimation
 	}
 }
-91121 = {  
+91121 = {
 	name="Williswinthe" #Williswinda, d. of Adalhelm, grundherr im Wormsgau
 	# AKA: Williswinthe of Wormsgau
 	female=yes
 	dynasty=9302 #Wormsgau
 	religion="catholic"
 	culture="old_frankish"
-	698.1.1 = {
-		birth="698.1.1" #right year
+	710.1.1 = {
+		birth="710.1.1" #guess
 	}
 	#spouse Robert I of Hesbaye
-	776.7.12 = {
-		death="776.7.12" #actual date
+	770.1.1 = {
+		death="770.1.1" #guess
 	}
 }
 31700 = {
@@ -4162,7 +4187,7 @@
 	}
 }
 
-168128 = { 
+168128 = {
 	name="Aldana"
 	female=yes
 	dynasty=25061
@@ -4173,8 +4198,8 @@
 	735.1.1 = {
 		birth="735.1.1"
 	}
-	766.1.1 = { #postponed from 752, dead from childbirth is my bet this time
-		death=yes
+	752.1.1 = {
+		death="752.1.1"
 	}
 }
 

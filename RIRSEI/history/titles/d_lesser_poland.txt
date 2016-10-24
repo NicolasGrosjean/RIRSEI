@@ -144,6 +144,11 @@ holder=125909
 {
 holder=125977
 }
+1295.6.27={
+	
+de_jure_liege = k_polandball
+liege = "k_polandball"
+}
 1296.2.8=
 {
 holder=96002

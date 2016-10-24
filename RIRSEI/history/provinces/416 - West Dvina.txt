@@ -27,7 +27,7 @@ religion = baltic_pagan
 	b_kreuzburg = castle
 	b_erle = temple
 	b_jersika = city
-	#capital = b_erle
+	capital = b_erle
 
 	b_kreuzburg = ca_keep_1
 	b_kreuzburg = ca_militia_barracks_1
@@ -38,3 +38,4 @@ religion = baltic_pagan
 }
 1236.9.22 = { capital = b_kreuzburg }
 1290.1.1 = { religion = catholic }
+1305.1.1= { trade_post = b_pat_luneburg }

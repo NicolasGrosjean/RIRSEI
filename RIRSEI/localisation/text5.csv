@@ -3,15 +3,16 @@ EVTDESC60010;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals hav
 EVTDESC60011;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Orthodox faith!;Son Excellence [Root.GetTitledName] et tous ses vassaux se sont convertis à l'Orthodoxie !;[Root.GetHerHis]e Lordschaft [Root.GetTitledName] und all [Root.GetHerHis]e Vasallen haben konvertiert und den orthodoxen Glauben angenommen!;;¡El Gran [Root.GetTitledName] y todos sus vasallos se han convertido y abrazado la fe Ortodoxa!;;;;;;;;;x
 EVTDESC60012;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Sunni faith!;Son Excellence [Root.GetTitledName] et tous ses vassaux se sont convertis au Sunnisme !;[Root.GetHerHis]e Lordschaft [Root.GetTitledName] und all [Root.GetHerHis]e Vasallen haben konvertiert und den sunnitischen Glauben angenommen!;;¡El Gran [Root.GetTitledName] y todos sus vasallos se han convertido y abrazado la fe Suní!;;;;;;;;;x
 EVTDESC60013;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Shiite faith!;Son Excellence [Root.GetTitledName] et tous ses vassaux se sont convertis au Chiisme !;[Root.GetHerHis]e Lordschaft [Root.GetTitledName] und all [Root.GetHerHis]e Vasallen haben konvertiert und den schiitischen Glauben angenommen!;;¡El Gran [Root.GetTitledName] y todos sus vasallos se han convertido y abrazado la fe Chií!;;;;;;;;;x
-MONTHLY_PROJECTED_COST;Projected Monthly Cost: §Y$COST$§!;Estimation du coût mensuel : §Y$COST$§!;Geschätzte monatliche Kosten: §Y$COST$§!;;Coste Mensual Presupuestado: §Y$COST$§!;;;;;;;;;x
+MONTHLY_PROJECTED_COST;Projected Montly Cost: §Y$COST$§!;Estimation du coût mensuel : §Y$COST$§!;Geschätzte monatliche Kosten: §Y$COST$§!;;Coste Mensual Presupuestado: §Y$COST$§!;;;;;;;;;x
 YEARLY_PROJECTED_COST;Projected Yearly Cost: §Y$COST$§!;Estimation du coût annuel : §Y$COST$§!;Geschätzte jährliche Kosten: §Y$COST$§!;;Coste Anual Presupuestado: §Y$COST$§!;;;;;;;;;x
 PER_MONTH;§Y$VAL$§! / Month;§Y$VAL$§! / Mois;§Y$VAL$§! / Monat;;§Y$VAL$§! / Mes;;;;;;;;;x
 AIREASON_KINGDOMS_DONT_ACCEPT_VASSALAGE;I am a King!;Je suis un Roi !;Ich bin ein König!;;¡Soy un Rey!;;;;;;;;;x
+INTERACTION_REQUIRES_RECIPIENT_IS_DE_JURE_LIEGE;As a vassal of $LIEGE$, [Recipient.GetBestName] must be my De Jure liege;En tant que vassal de $LIEGE$, [Recipient.GetBestName] doit être mon souverain de jure;Als Vasall von $LIEGE$ ist [Recipient.GetBestName] von Rechts wegen mein Lehnsmann.;;Como vasallo de $LIEGE$, [Recipient.GetBestName] debería ser mi Señor de Iure;;;;;;;;;x
 ACCEPT;Accept;Accepter;Zustimmen;;Aceptar;;;;;;;;;x
 DECLINE;Decline;Refuser;Ablehnen;;Declinar;;;;;;;;;x
 HAS_LESS_RAISED_TROOP_DAYS;Troops Raised less than §Y$DAYS$§! days\n;Troupes levées depuis moins de §Y$DAYS$§! jours\n;Aufgestellte Truppen in den letzten §Y$DAYS$§! Tagen\n;;Tropas reclutadas menos de §Y$DAYS$§! Días\n;;;;;;;;;x
 HAS_MORE_RAISED_TROOP_DAYS;Troops Raised for at least §Y$DAYS$§! days\n;Troupes levées depuis au moins §Y$DAYS$§! jours\n;Aufgestellte Truppen seit mindestens §Y$DAYS$§! Tagen\n;;Tropas reclutadas al menos §Y$DAYS$§! Días\n;;;;;;;;;x
-SET_RAISED_TROOP_OPINION;§Y$ACTIVE$'s§! raised levy opinion days vs §Y$PASSIVE$§! set to §Y$MUCH$§!.\n;Le nombre de jours pendant lesquels §Y$ACTIVE$'s§! augmente l'opinion sur la levée de troupes contre §Y$PASSIVE$§! passe à §Y$MUCH$§!.\n;§Y$ACTIVE$s§! Missfallen bezüglich der Zwangseinberufung durch §Y$PASSIVE$§! währt noch §Y$MUCH$§! Tage.\n;;Días de leva reclutada §Y$ACTIVE$§! contra §Y$PASSIVE$§! Puesta a §Y$MUCH$§!.\n;;;;;;;;;x
+SET_RAISED_TROOP_OPINION;§Y$ACTIVE$'s§! raised levy opinion days vs §Y$PASSIVE$§! set to §Y$MUCH$§!.\n;Le nombre de jours pendant lesquels §Y$ACTIVE$§! augmente l'opinion sur la levée de troupes contre §Y$PASSIVE$§! passe à §Y$MUCH$§!.\n;§Y$ACTIVE$s§! Missfallen bezüglich der Zwangseinberufung durch §Y$PASSIVE$§! währt noch §Y$MUCH$§! Tage.\n;;Días de leva reclutada §Y$ACTIVE$§! contra §Y$PASSIVE$§! Puesta a §Y$MUCH$§!.\n;;;;;;;;;x
 CONTESTED_TITLE;Contested title: $TITLE$;Titre contesté : $TITLE$;Angefochtene Titel: $TITLE$;;Título disputado: $TITLE$;;;;;;;;;x
 THREAT_REASON_HATRED;Low Opinion;Mauvaise opinion;Geringschätzung;;Mala Opinión;;;;;;;;;x
 THREAT_REASON_LOVE;High Opinion;Haute opinion;Hochachtung;;Buena Opinión;;;;;;;;;x
@@ -43,7 +44,7 @@ alert_dejure_claim_instant;§YYou can Press de jure Ducal Claims§!;§YVous pouvez 
 alert_dejure_claim_delayed;The following de jure ducal claims can be pressed: $LIST$;Les revendications ducales de jure suivantes peuvent être appuyées : $LIST$;Folgende Herzogsansprüche können von Rechts wegen geltend gemacht werden: $LIST$;;Las siguientes reivindicaciones por ducado de iure pueden ser reclamadas: $LIST$;;;;;;;;;x
 PRESSABLE_CLAIM;$COUNTY$, for $CLAIMANT$;$COUNTY$, pour $CLAIMANT$;$COUNTY$, für $CLAIMANT$;;$COUNTY$, por $CLAIMANT$;;;;;;;;;x
 OPT_draw_trees;Render trees;Rendu des arbres;Bäume anzeigen;;Dibujar árboles;;;;;;;;;x
-OPT_draw_rivers;Render rivers;Rendu des rivières;Flüsse anzeigen;;Dibujar ríos;;;;;;;;;x
+OPT_draw_rivers;Render rivers;Rendu des fleuves;Flüsse anzeigen;;Dibujar ríos;;;;;;;;;x
 OPT_draw_citysprawl;Render city sprawl;Rendu de l'extension urbaine ;Stadt-Ausbreitung anzeigen;;Dibujar ciudades;;;;;;;;;x
 tut_4c_11;Marriage Effects;Conséquences des mariages;Heirats-Auswirkungen;;Efectos del Matrimonio;;;;;;;;;x
 OPT_legacy_shaders;Legacy graphics mode;Mode graphique hérité;Legacy-Grafikmodus;;Modo de gráficos legado;;;;;;;;;x

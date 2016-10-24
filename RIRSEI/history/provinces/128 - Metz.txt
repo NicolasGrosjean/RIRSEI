@@ -16,7 +16,7 @@ b_briey = city
 #b_audunleroman = castle
 
 # Misc
-culture = old_frankish
+culture = gallo
 religion = catholic
 
 # History
@@ -27,5 +27,3 @@ religion = catholic
 
 1187.1.1= { b_saintjulien = temple }
 
-1999.1.1 = { # Intentional empty entry
-}

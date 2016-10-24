@@ -1,0 +1,9 @@
+893.1.1={
+	holder=712 #Simeon
+}
+927.5.27={
+	holder=714 #Petar I
+}
+969.1.30={
+	holder=0
+}

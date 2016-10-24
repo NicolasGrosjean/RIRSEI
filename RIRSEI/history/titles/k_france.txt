@@ -1,11 +1,14 @@
 100.1.1={
 	pentarch = b_roma
+
+
 }
 #Merovingians
 481.1.1 = {
 	holder=168673 #Clovis Ier
-	name = WEST_FRANCIA
+	name = FRANCORUM
 	adjective = WEST_FRANCIA_ADJ
+
 }
 511.11.27 = {
 	holder=168681 #Clotaire Ier
@@ -29,7 +32,7 @@
 	holder=168703 #Thierry III
 }
 673.12.1 = {
-	holder=168702 #Childéric II
+	holder=168699 #Childéric II
 }
 675.1.1 = {
 	holder=168703 #Thierry III
@@ -58,11 +61,17 @@
 743.2.15 = {
 	holder=168707 #Childéric III
 }
+
+751.11.1 = {
+	holder = 131722 #Pépin le Bref
+
+}
 #Carolingians
 768.9.24={
 	holder = 6392 #Charlemagne
-	name = WEST_FRANCIA
+	name = FRANCORUM
 	adjective = WEST_FRANCIA_ADJ
+effect = { set_coa = k_regfrancorum }
 	law = agnatic_succession
 }
 769.1.1 = {
@@ -73,14 +82,19 @@
 }
 814.1.28={
 	holder = 90095 #Louis Ier le Pieux
+set_global_flag = charlemagne_hre
+
 }
 840.6.20={
 #	liege = "e_france"
+	name = WEST_FRANCIA
+	adjective = WEST_FRANCIA_ADJ
 	holder = 90104 #Charles II le Chauve
-	set_global_flag = charlemagne_hre
+	
 }
 877.10.6={
 	holder = 90123 #Louis II le Bègue
+
 }
 879.4.10={
 	holder = 90154 #Louis III
@@ -96,25 +110,30 @@
 	reset_name = yes
 	reset_adjective = yes
 	set_global_flag = west_francia_renamed
+effect = { reset_coa = THIS }
+        law = succ_feudal_elective
 }
 
 #Carolingian
 893.1.28= {
 	holder = 90111 #Charles III le Simple
+        law = succ_primogeniture
 	name = WEST_FRANCIA
 	adjective = WEST_FRANCIA_ADJ
+effect = { set_coa = k_regfrancorum }
 	clr_global_flag = west_francia_renamed
 }
 
 #Robertian (=Capetians)
 922.6.29={
 	holder = 6442 #Robert Ier
-	law = agnatic_succession
-	law = succ_primogeniture
 	law = investiture_law_1
+        law = succ_feudal_elective
 	reset_name = yes
 	reset_adjective = yes
+        effect = { reset_coa = THIS }
 	set_global_flag = west_francia_renamed
+        
 }
 
 #Bosonids
@@ -125,15 +144,24 @@
 #Carolingian
 936.1.15={
 	holder = 90120 #Louis IV d'Outre-mer
+        law = succ_primogeniture
 	name = WEST_FRANCIA
 	adjective = WEST_FRANCIA_ADJ
+effect = { set_coa = k_regfrancorum }
 	clr_global_flag = west_francia_renamed
+
+
 }
 954.11.12={
 	holder = 90125 #Lothaire
 }
+978.1.1 = {
+set_global_flag = relique_char_fr
+
+}
 986.6.8={
 	holder = 90126 #Louis V le Fainéant
+        law = succ_feudal_elective
 }
 
 
@@ -143,6 +171,10 @@
 	reset_name = yes
 	reset_adjective = yes
 	set_global_flag = west_francia_renamed
+        law = agnatic_succession
+	law = succ_primogeniture
+effect = { reset_coa = THIS }
+	
 }
 996.10.24={
 	holder = 206 #Robert II le Pieux
@@ -158,21 +190,35 @@
 }
 1137.8.1={
 	holder = 205500 #Louis VII le Jeune
+law = centralization_1
+law = crown_authority_1
 }
 1180.9.18={
 	holder=205506 # Philippe II Auguste
+
+law = centralization_2
+law = crown_authority_2 
+set_global_flag = rex_imperator_fr
+      
 }
 1223.7.14={
 	holder = 455402 #Louis VIII le Lion
 }
 1226.11.8={
 	holder = 455404 #Louis IX (saint Louis)
+
 }
 1270.8.25={
 	holder = 455528 # Philippe III le Hardi
 }
 1285.10.5={
 	holder = 455526 # Philippe IV le Bel
+
+law = centralization_3
+law = crown_authority_3 
+}
+1303.09.07={
+set_global_flag = agnani_att_pap
 }
 1314.11.29={
 	holder = 455836 # Louis V le Hutin
@@ -191,4 +237,5 @@
 
 1328.2.1={
 	holder=455500 # Philippe VI
+law = centralization_2
 }

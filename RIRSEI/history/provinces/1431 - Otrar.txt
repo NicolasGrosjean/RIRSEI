@@ -17,7 +17,7 @@ b_otrar = tribal
 #b_turtkul = {}
 
 # Misc
-culture = karluk
+culture = pecheneg
 religion = manichean
 	
 # History

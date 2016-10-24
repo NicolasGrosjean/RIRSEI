@@ -20,8 +20,18 @@
 852.1.1={
 	holder=70382 #Boris
 }
-860.1.1={
+
+860.1.1=
+{
+	liege="d_wallachia"
 	holder=168286
+}
+
+895.1.1 = {
+liege = "e_bulgaria"
+}
+830.1.1 = {
+liege = 0
 }
 1066.1.1=
 {

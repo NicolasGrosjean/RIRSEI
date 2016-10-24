@@ -9,9 +9,7 @@
 708.1.1={
 	holder=0 
 }
-769.1.1 = {
-	de_jure_liege = k_lotharingia
-}
+
 867.1.1 = {
 	de_jure_liege = k_france
 }
