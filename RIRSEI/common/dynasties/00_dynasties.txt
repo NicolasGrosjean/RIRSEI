@@ -5,6 +5,7 @@
 }
 2=
 {
+	used_for_random=no
 	name="Orsini"
 	culture="italian"
 	religion="catholic"
@@ -4229,13 +4230,13 @@
 {
 	name="Al-'Umawiyyun"
 	culture="egyptian_arabic"
-	religion="pagan"
+	religion="sunni"
 	coat_of_arms=
 	{
 		data=
 		{
 0 2 0 1 0 0 0 			}
-		religion="sunni"
+		religion="pagan"
 	}
 }
 598=
@@ -6492,6 +6493,14 @@
 	name="Tisander"
 	culture="german"
 	religion="catholic"
+	coat_of_arms=
+	{
+		data=
+		{
+			0 1 26 9 1 11 7 4 0 7 1 7 7
+		}
+		religion="catholic"
+	}
 	used_for_random=no
 }
 871=
@@ -9985,6 +9994,7 @@
 }
 7215=
 {
+	used_for_random=no
 	name="Orsini"
 	culture="italian"
 	religion="catholic"
@@ -13589,6 +13599,7 @@
 0 8 0 44 0 0 0 			}
 		religion="catholic"
 	}
+	used_for_random=no
 }
 11101=
 {
@@ -22103,19 +22114,6 @@
 	culture="cuman"
 	religion="tengri_pagan"
 }
-100559=
-{
-	name="Vallani"
-	culture="cuman"
-	religion="tengri_pagan"
-	coat_of_arms=
-	{
-		data=
-		{
-0 0 0 8 8 13 0 			}
-		religion="tengri_pagan"
-	}
-}
 100560=
 {
 	name="Margunios"
@@ -22289,85 +22287,43 @@
 {
 	name="Shuvalov"
 	culture="russian"
-	religion="sunni"
+	religion="orthodox"
 }
 100587=
 {
 	name="Danske"
 	culture="swedish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 1 0 45 2 1 12 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100588=
 {
 	name="Fleming"
 	culture="swedish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 0 0 31 3 9 1 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100589=
 {
 	name="Bidz"
 	culture="swedish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 1 0 49 9 3 2 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100590=
 {
 	name="Diekn"
 	culture="swedish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 1 0 47 9 7 10 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100591=
 {
 	name="Karpela"
 	culture="finnish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 1 0 32 2 0 1 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100592=
 {
 	name="Stiernkors"
 	culture="swedish"
-	religion="sunni"
-	coat_of_arms=
-	{
-		data=
-		{
-0 1 0 18 8 12 0 			}
-		religion="sunni"
-	}
+	religion="catholic"
 }
 100593=
 {
@@ -22808,7 +22764,7 @@
 }
 100634=
 {
-	name="Al-?Umawiyyun"
+	name="Al-`Umawiyyun"
 	culture="persian"
 }
 100635=
@@ -31999,34 +31955,6 @@
 	}
 	used_for_random=no
 }
-1051146=
-{
-	name="Hanaya"
-	culture="bedouin_arabic"
-	religion="sunni"
-	used_for_random=no
-}
-1051147=
-{
-	name="Matteski"
-	culture="greek"
-	religion="orthodox"
-	used_for_random=no
-}
-1051148=
-{
-	name="Bruce"
-	culture="scottish"
-	religion="catholic"
-	coat_of_arms=
-	{
-		data=
-		{
-0 2 0 25 2 0 0 			}
-		religion="catholic"
-	}
-	used_for_random=no
-}
 1031100=
 {
 	name="al-Ghazali"
@@ -35660,6 +35588,12 @@
 	culture="pommeranian"
 	religion="slavic_pagan"
 }
+9583=
+{
+	name="Mostichid"
+	culture="bulgarian"
+	religion="orthodox"
+}
 9584=
 {
 	name="Zalanid"
@@ -36416,6 +36350,7 @@
 {
 	name="Siri Sanga Bo"
 	culture="sinhala"
+	religion = buddhist
 }
 12319=
 {
@@ -42829,4 +42764,214 @@
 	name = Zhezdi
 	culture = cuman
 	religion = tengri_pagan
+}
+1053000 = {
+	name = Rav #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053001 = {
+	name = Paas #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053002 = {
+	name = Shkai #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053003 = {
+	name = Mastoratia #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053004 = {
+	name = Chipaz #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053005 = {
+	name = Nishkepaz #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053006 = {
+	name = "Ange Patiai" #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053007=
+{
+	name="Gök" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053008=
+{
+	name="Mavi" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053009=
+{
+	name="Yesil" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053010=
+{
+	name="Güçlü" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053011=
+{
+	name="Rüzgar" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053012=
+{
+	name="Üzengi" #Ficticious
+	culture="turkish"
+	religion="sunni"
+}
+1053013=
+{
+	name="Mastoron Kirdi" #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053014=
+{
+	name="Shkay" #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053015=
+{
+	name="Kardaz-Scrko" #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053016=
+{
+	name="Tushtyan" #Ficticious
+	culture = mordvin
+	religion = finnish_pagan
+}
+1053017=
+{
+	name="Norrevik"
+	culture="swedish"
+	religion="catholic"
+	coat_of_arms= {
+		data=
+		{ 1 1 23 7 3 4 3 0 23 3 3 4 3 7 0 1 0 0 0 7 0 1 0 0 0 }
+		religion="catholic"
+	}
+}
+1053018=
+{
+	name="Olsén"
+	culture="norwegian"
+	religion="catholic"
+	coat_of_arms = {
+		data=
+		{ 0 0 0 6 0 11 5 }
+		religion="hindu"
+	}
+	used_for_random=no
+}
+
+1053019=
+{
+	name="Lankinen" #Ficticious
+	culture = finnish
+	religion = finnish_pagan
+	coat_of_arms = {
+		data = {
+			0 1 0 16 5 12 9
+		}
+		religion="finnish_pagan"
+	}
+}
+
+1053020=
+{
+	name="Bjarnehed" #Ficticious
+	culture = swedish
+	religion = catholic
+	coat_of_arms = {
+		data = {
+			1 4 0 30 14 11 0 4 0 30 14 1 0 4 0 30 2 0 0 4 0 30 2 0 0 }
+		religion="catholic"
+	}
+	used_for_random=no
+}
+
+1040066 = {
+	name="Jadaran"
+	culture = mongol
+}
+1040067 = {
+	name="Baarin"
+	culture = mongol
+}
+1040068 = {
+	name="Bargujin"
+	culture = mongol
+}
+1040069 = {
+	name="Borogchin"
+	culture = mongol
+}
+1040070 = {
+	name="Mongoljin"
+	culture = mongol
+}
+1040071 = {
+	name="Quralas"
+	culture = mongol
+}
+1040072 = {
+	name="Uvas Mergid"
+	culture = mongol
+}
+1040073 = {
+	name="Tatar"
+	culture = mongol
+}
+1040074 = {
+	name="Zübü"
+	culture = mongol
+}
+1040075 = {
+	name="Oirat"
+	culture = mongol
+}
+1040076 = {
+	name="Ikheres"
+	culture = mongol
+}
+1040077 = {
+	name="Eljigin"
+	culture = mongol
+}
+1040078 = {
+	name="Dörbet"
+	culture = mongol
+}
+1040079 = {
+	name="Chonos"
+	culture = mongol
+}
+1040080 = {
+	name="Bairam"
+	culture = mongol
+}
+214019={
+	name="Wintaling" 
+	culture="saxon"
+	religion="catholic"
 }
