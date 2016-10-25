@@ -516,6 +516,5 @@ de_jure_laws = {
 			}
 			set_investiture = any
 		}
-	}
-	
+	}	
 }

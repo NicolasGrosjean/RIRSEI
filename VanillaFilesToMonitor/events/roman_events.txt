@@ -21,10 +21,10 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
-		religion_group = christian
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -63,6 +63,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -70,7 +71,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = aegyptus }
 		completely_controls = d_aswan
 		completely_controls = d_alexandria
@@ -99,6 +99,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -106,7 +107,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = cyrenaica }
 		completely_controls = d_cyrenaica
 	}
@@ -131,6 +131,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -138,7 +139,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = africa }
 		completely_controls = d_tripolitania
 		completely_controls = d_tunis
@@ -165,6 +165,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -172,7 +173,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = illyricum }
 		completely_controls = d_carinthia
 		completely_controls = d_rashka
@@ -203,6 +203,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -210,7 +211,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = italia }
 		completely_controls = d_latium
 		completely_controls = d_venice
@@ -252,6 +252,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -259,7 +260,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = gallia }
 		completely_controls = d_normandy
 		completely_controls = d_berry
@@ -301,6 +301,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -308,7 +309,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = germania }
 		completely_controls = d_mecklemburg
 		completely_controls = d_brunswick
@@ -355,6 +355,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -362,7 +363,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = britannia }
 		completely_controls = d_northumberland
 		completely_controls = d_lancaster
@@ -398,6 +398,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -405,7 +406,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = hispania }
 		completely_controls = d_galicia
 		completely_controls = d_castilla
@@ -447,6 +447,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -454,7 +455,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = mauretania }
 		completely_controls = d_marrakech
 		completely_controls = d_tangiers
@@ -483,6 +483,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -490,7 +491,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = mesopotamia }
 		completely_controls = d_tigris
 		completely_controls = d_mesopotamia
@@ -518,6 +518,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -525,7 +526,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = caledonia }
 		completely_controls = d_albany
 		completely_controls = d_galloway
@@ -554,6 +554,7 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	
 	ai = no
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -561,7 +562,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = hibernia }
 		completely_controls = d_connacht
 		completely_controls = d_ulster
@@ -594,7 +594,12 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		set_character_flag = achievement_legacy_of_rome
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_legacy_of_rome
+		}
 	}
 	
 	option = {
@@ -665,6 +670,8 @@ character_event = {
 	
 	hide_from = yes
 	
+	religion_group = christian
+	
 	is_triggered_only = yes
 	
 	trigger = {
@@ -672,7 +679,6 @@ character_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 	}
 	
 	option = {
@@ -747,10 +753,7 @@ narrative_event = {
 	picture = GFX_evt_rome_restored_byzantine
 	
 	ai = no
-	
-	immediate = {
-		set_character_flag = achievement_spqr
-	}
+	religion_group = christian
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -758,7 +761,6 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
 		NOT = { has_global_flag = roman_borders }
 		
 		completely_controls = d_northumberland
@@ -903,6 +905,15 @@ narrative_event = {
 		completely_controls_region = world_africa_north
 	}
 	
+	immediate = {
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_spqr
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -922,9 +933,11 @@ character_event = {
 	desc = EVTDESCLoR.45
 	picture = GFX_evt_rome_restored_byzantine
 	
+	only_playable = yes
+	has_global_flag = rome_restored
+	has_dlc = "Legacy of Rome"
+	
 	trigger = {
-		has_dlc = "Legacy of Rome"
-		has_global_flag = rome_restored
 		has_landed_title = e_roman_empire
 		NOT = { trait = augustus }
 	}
@@ -945,9 +958,10 @@ character_event = {
 	desc = EVTDESCLoR.46
 	picture = GFX_evt_rome_restored_byzantine
 	
+	has_dlc = "Legacy of Rome"
+	has_global_flag = rome_restored
+		
 	trigger = {
-		has_dlc = "Legacy of Rome"
-		has_global_flag = rome_restored
 		trait = augustus
 		NOT = { has_landed_title = e_roman_empire }
 		is_alive = yes

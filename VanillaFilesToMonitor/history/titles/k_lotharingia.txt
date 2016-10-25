@@ -94,6 +94,7 @@
 	holder = 144998 #Lothair II
 	name = LOTHARINGIA
 	adjective = LOTHARINGIA_ADJ
+	set_global_flag = middle_francia_renamed
 }
 867.1.1 = {
 	de_jure_liege = e_hre

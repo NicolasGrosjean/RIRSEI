@@ -4107,13 +4107,13 @@ laws = {
 				if = {
 					limit = {
 						has_law = tax_levy_law_tribal_6
-						NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_dislikes_new_obligation_law } }
-						NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_likes_new_obligation_law } }
 					}
 					holder_scope = {
 						any_vassal = {
 							limit = {
 								is_tribal = yes
+								NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_dislikes_new_obligation_law } }
+								NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_likes_new_obligation_law } }
 							}
 							opinion = {
 								who = ROOT

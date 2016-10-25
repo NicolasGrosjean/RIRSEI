@@ -337,6 +337,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_valhalla_bound"
+		texturefile = "gfx/traits/valhalla_bound.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_excommunicated"
 		texturefile = "gfx/traits/excommunicated.tga"
 		noOfFrames = 1
@@ -1128,6 +1135,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_ravager"
+		texturefile = "gfx/traits/ravager.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_seaking"
+		texturefile = "gfx/traits/sea_king.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_siege_leader"
 		texturefile = "gfx/traits/siege_leader.tga"
 		noOfFrames = 1
@@ -1583,6 +1604,300 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_dull"
 		texturefile = "gfx/traits/dull.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chest_pain"
+		texturefile = "gfx/traits/chest_pain.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cough"
+		texturefile = "gfx/traits/cough.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_diarrhea"
+		texturefile = "gfx/traits/diarrhea.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_disfigured"
+		texturefile = "gfx/traits/disfigured.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fever"
+		texturefile = "gfx/traits/fever.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_headache"
+		texturefile = "gfx/traits/headache.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_one_eyed"
+		texturefile = "gfx/traits/one-eyed.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_one_handed"
+		texturefile = "gfx/traits/one-handed.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_one_legged"
+		texturefile = "gfx/traits/one-legged.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_rash"
+		texturefile = "gfx/traits/rash.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_vomiting"
+		texturefile = "gfx/traits/vomiting.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mangled"
+		texturefile = "gfx/traits/mangled.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_severely_injured"
+		texturefile = "gfx/traits/recently_maimed.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cramps"
+		texturefile = "gfx/traits/cramps.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_abdominal_pain"
+		texturefile = "gfx/traits/abdominal_pain.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fatigue"
+		texturefile = "gfx/traits/fatigue.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_malaise"
+		texturefile = "gfx/traits/malaise.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_infection"
+		texturefile = "gfx/traits/infection.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_flu"
+		texturefile = "gfx/traits/flu.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dysentery"
+		texturefile = "gfx/traits/dysentery.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_gout"
+		texturefile = "gfx/traits/gout.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_food_poisoning"
+		texturefile = "gfx/traits/food_poisoning.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_rabies"
+		texturefile = "gfx/traits/rabies.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cancer"
+		texturefile = "gfx/traits/cancer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_immortal"
+		texturefile = "gfx/traits/immortal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_dancing_plague"
+		texturefile = "gfx/traits/dancing_plague.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shieldmaiden"
+		texturefile = "gfx/traits/shieldmaiden.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_physician"
+		texturefile = "gfx/traits/court_physician.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_scurvy"
+		texturefile = "gfx/traits/scurvy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sea_queen"
+		texturefile = "gfx/traits/sea_queen.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_eagle_warrior"
+		texturefile = "gfx/traits/eagle_warrior.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sun_warrior"
+		texturefile = "gfx/traits/sun_warrior.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_ukkos_shield"
+		texturefile = "gfx/traits/ukkos_axe.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nyames_shield"
+		texturefile = "gfx/traits/nyames_shield.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_peruns_chosen"
+		texturefile = "gfx/traits/peruns_chosen.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_romuvas_own"
+		texturefile = "gfx/traits/romuvas_own.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_ares_own"
+		texturefile = "gfx/traits/ares_own.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tengri_warrior"
+		texturefile = "gfx/traits/tengri_warrior.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shaddai"
+		texturefile = "gfx/traits/shaddai.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cannibal_trait"
+		texturefile = "gfx/traits/cannibal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_lovers_pox"
+		texturefile = "gfx/traits/lovers_pox.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_gondi_shahansha"
+		texturefile = "gfx/traits/gondi_shahanshah.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

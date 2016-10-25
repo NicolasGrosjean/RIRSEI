@@ -548,7 +548,7 @@ west_germanic = {
 			Bavo Bertold Boudewijn_Baldwin Claes_Nicholas Claeuwaert Daevit_David Damaes Diederick_Thierry Dirk_Thierry Douwe Eduard_Edward Egmund Ekbert
 			Emmo Engelbrecht Filips_Philip Floris Folbert Frans_Francis Frederik_Frederick Gerard_Gerard Gerolt Gerulf
 			Gerrit Gijsbrecht Giselbert_Gilbert Godfried_Godfrey Godschalk Gozewijn Guij_Guy Gwijde_Gwijde Hendrik_Henry Herman_Herman Hubert
-			Hugo_Hugh Ijsbrand Ijsbrecht Jacco_Jacob Jacob_Jacob Jan_John Karel_Charles Koenraad_Konrad
+			Hugo_Hugh IJsbrand IJsbrecht Jacco_Jacob Jacob_Jacob Jan_John Karel_Charles Koenraad_Konrad
 			Kristof_Christopher Lambert_Lambert Lodewijk_Louis Ludewijn Lutbert Luthard Maertijn_Martin Marquart Niclaes_Nicholas
 			Olivier_Oliver Otto_Otto Otwin Onno Pieter_Peter Reinaerd Reinoud_Reinhold Reginar Robrecht_Robert Robert_Robert Rodulf 
 			Roelof Roland Rutger Sebastiaen_Sebastian Sicco Simon_Simon Steven_Stephen Steyn_Sten Theodolf Waelram Walter_Walter
@@ -758,6 +758,8 @@ latin = {
 		graphical_cultures = { southerngfx occitangfx }
 		
 		color = { 0.8 0.7 0.2 }
+		
+		used_for_random = no
 
 		male_names = {
 			Aemilian Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelian Aurelius
@@ -1955,6 +1957,9 @@ arabic = {
 		
 		dynasty_title_names = yes
 		founder_named_dynasties = yes
+		
+		allow_looting = yes
+		seafarer = yes
 
 		modifier = default_culture_modifier
 
@@ -2698,7 +2703,7 @@ east_african = {
 	graphical_cultures = { muslimgfx }
 
 	ethiopian = {
-		graphical_cultures = { africangfx }
+		graphical_cultures = { africangfx westafricangfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.4 0.4 0.3 }
@@ -2720,7 +2725,7 @@ east_african = {
 	}
 	
 	somali = {
-		graphical_cultures = { africangfx }
+		graphical_cultures = { africangfx westafricangfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.2 0.2 0.1 }
@@ -2746,7 +2751,7 @@ east_african = {
 	}
 	
 	nubian = {
-		graphical_cultures = { africangfx }
+		graphical_cultures = { africangfx westafricangfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.35 0.7 0.25 }
@@ -2775,10 +2780,10 @@ east_african = {
 }
 
 west_african = {
-	graphical_cultures = { africangfx  muslimgfx }
+	graphical_cultures = { muslimgfx }
 	
 	manden = {
-		graphical_cultures = { westafricangfx }
+		graphical_cultures = { westafricangfx africangfx }
 		secondary_event_pictures = bedouin_arabic
 		
 		color = { 0.45 0.45 0.2 }
