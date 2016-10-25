@@ -201,6 +201,7 @@ succession_laws = {
 					}
 				}
 			}
+			holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
 		}
 		
 		effect = {
@@ -279,6 +280,7 @@ succession_laws = {
 					}
 				}
 			}
+			holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
 		}
 		
 		effect = {
@@ -332,6 +334,9 @@ succession_laws = {
 			NOT = { tier = baron }
 			holder_scope = { is_feudal = yes }
 		}
+		allow = {
+			holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+		}
 		effect = {
 			succession = feudal_elective
 		}
@@ -382,6 +387,13 @@ succession_laws = {
 				}
 				holder_scope = { is_feudal = yes }
 			}
+		}
+		allow = {
+			OR = {
+				holder_scope = { is_feudal = yes }
+				holder_scope = { is_tribal = yes }
+			}
+			holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
 		}
 		effect = {
 			succession = tanistry
@@ -436,6 +448,14 @@ succession_laws = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
 				temporary = yes
+				AND = {
+					is_nomadic = no
+					OR = {
+						title = e_mongol_empire
+						title = e_golden_horde
+						title = e_il-khanate
+					}
+				}
 			}
 			is_primary_type_title = no
 			OR = {
@@ -444,6 +464,14 @@ succession_laws = {
 					is_feudal = yes
 				}
 				holder_scope = { is_feudal = yes }
+				AND = {
+					is_nomadic = no
+					OR = {
+						title = e_mongol_empire
+						title = e_golden_horde
+						title = e_il-khanate
+					}
+				}
 			}
 		}
 		allow = {
@@ -455,6 +483,7 @@ succession_laws = {
 					NOT = { has_law = crown_authority_0 }
 				}
 			}
+			holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
 		}
 		
 		effect = {
@@ -671,6 +700,11 @@ gender_laws = {
 	cognatic_succession = {
 		potential = {
 			holder_scope = {
+				OR = {
+					NOT = { tier = baron }
+					is_theocracy = yes
+					is_republic = yes
+				}
 				OR = {
 					independent = yes
 					NOT = {
