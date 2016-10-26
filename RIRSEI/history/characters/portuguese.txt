@@ -349,7 +349,7 @@
 	1154.11.11={
 		birth="1154.11.11"
 	}
-	1181.1.1={
+	1174.1.1={
 		add_spouse=210513 #Douce d'Aragon
 	}
 	1212.3.26={
@@ -414,8 +414,8 @@
 	culture="portuguese"
 	father=209500
 	mother=210513
-	1178.10.4={
-		birth="1178.10.4"
+	1175.10.4={
+		birth="1175.10.4"
 	}
 	#Alphonse IX de Castille
 	1250.6.18={
@@ -432,8 +432,8 @@
 	trait="detached_priest"
 	father=209500
 	mother=210513
-	1180.1.1={
-		birth="1180.1.1"
+	1182.1.1={
+		birth="1182.1.1"
 	}
 	1229.3.13={
 		death="1229.3.13"
@@ -447,8 +447,8 @@
 	culture="portuguese"
 	father=209500 #Sanche I le Laboureur
 	mother=210513 #Douce d'Aragon
-	1180.1.1={
-		birth="1180.1.1"
+	1182.1.1={
+		birth="1182.1.1"
 	}
 	1189.3.9={
 		death="1189.3.9"
@@ -850,8 +850,8 @@
 	culture="portuguese"
 	father=459523
 	mother=457622
-	1280.1.1={
-		birth="1280.1.1"
+	1288.1.1={
+		birth="1288.1.1"
 	}
 	#Alfonso de Molina
 	#Fernando Diaz de Haro
@@ -1218,7 +1218,6 @@
 70245 = {
 	name="Mendo"
 	dynasty=75 
-	father=73882
 	religion="catholic"
 	culture="portuguese"
 	1040.1.1={
@@ -1228,7 +1227,7 @@
 		add_spouse=109631
 	}
 	1066.1.1={
-		employer=109628
+		employer=109610
 	}
 	1090.1.1={
 		death="1090.1.1"
@@ -1246,7 +1245,7 @@
 		birth="1030.1.1"
 	}
 	1066.1.1={
-		employer=109628
+		employer=109610
 	}
 	1080.1.1={
 		death="1080.1.1"
@@ -1281,7 +1280,7 @@
 		add_spouse=70247
 	}
 	1066.1.1={
-		employer=109628
+		employer=109610
 	}
 	1080.1.1={
 		death="1080.1.1"
@@ -2454,7 +2453,7 @@
 	1160.1.1={
 		birth="1160.1.1"
 	}
-	1200.1.1={
+	1207.1.1={
 		add_spouse=142029
 	}
 	1220.1.1={
@@ -2491,7 +2490,7 @@
 	culture="portuguese"
 	father=142027
 	mother=142026
-	1175.1.1 = {
+	1191.1.1 = {
 		birth = yes
 	}
 	1246.1.1={
@@ -2538,8 +2537,8 @@
 	culture="portuguese"
 	father=142015
 	mother=142158
-	1180.1.1={
-		birth="1180.1.1"
+	1191.1.1={
+		birth="1191.1.1"
 	}
 	#Fernão Peres Pelegrin
 	1220.1.1={
@@ -2623,8 +2622,8 @@
 	culture="portuguese"
 	father=142028
 	mother=142029
-	1200.1.1={
-		birth="1200.1.1"
+	1208.1.1={
+		birth="1208.1.1"
 	}
 	1250.1.1={
 		death="1250.1.1"
@@ -3574,7 +3573,7 @@
 	culture="portuguese"
 	father=459523
 	mother=457622
-	1281.1.1={
+	1288.1.1={
 		birth="1281.1.1"
 	}
 	1331.1.1={
@@ -3590,8 +3589,8 @@
 	culture="portuguese"
 	father=459523
 	mother=457622
-	1282.1.1={
-		birth="1282.1.1"
+	1288.1.1={
+		birth="1288.1.1"
 	}
 	1332.1.1={
 		death="1332.1.1"
@@ -3640,8 +3639,8 @@
 	culture="portuguese"
 	father=142219
 	mother=142208
-	1270.1.1={
-		birth="1270.1.1"
+	1272.1.1={
+		birth="1272.1.1"
 	}
 	1300.1.1={
 		add_spouse=142086
@@ -4727,10 +4726,10 @@
 	culture="portuguese"
 	father=142223
 	mother=142224
-	1225.1.1={
-		birth="1225.1.1"
+	1231.1.1={
+		birth="1231.1.1"
 	}
-	1245.1.1={
+	1247.1.1={
 		add_spouse=142226
 	}
 	1300.1.1={
@@ -18302,8 +18301,8 @@
 	culture="portuguese"
 	father=143038
 	mother=143039
-	1020.1.1={
-		birth="1020.1.1"
+	1031.1.1={
+		birth="1031.1.1"
 	}
 	1050.1.1={
 		add_spouse=143037
@@ -19383,10 +19382,10 @@
 	culture="portuguese"
 	father=143042
 	mother=143043
-	1000.1.1={
-		birth="1000.1.1"
+	1032.1.1={
+		birth="1032.1.1"
 	}
-	1030.1.1={
+	1048.1.1={
 		add_spouse=143107
 	}
 	1060.1.1={
@@ -19400,7 +19399,7 @@
 	#dynasty= #
 	religion="catholic"
 	culture="portuguese"
-	1000.1.1={
+	1032.1.1={
 		birth="1000.1.1"
 	}
 	1060.1.1={
@@ -19415,10 +19414,10 @@
 	culture="portuguese"
 	father=143106
 	mother=143107
-	1030.1.1={
-		birth="1030.1.1"
+	1049.1.1={
+		birth="1049.1.1"
 	}
-	1060.1.1={
+	1065.1.1={
 		add_spouse=143109
 	}
 	1090.1.1={
@@ -19432,8 +19431,8 @@
 	#dynasty= #
 	religion="catholic"
 	culture="portuguese"
-	1030.1.1={
-		birth="1030.1.1"
+	1048.1.1={
+		birth="1048.1.1"
 	}
 	1090.1.1={
 		death="1090.1.1"
@@ -19447,8 +19446,8 @@
 	culture="portuguese"
 	father=143108
 	mother=143109
-	1060.1.1={
-		birth="1060.1.1"
+	1066.1.1={
+		birth="1066.1.1"
 	}
 	1090.1.1={
 		add_spouse=143111
@@ -19479,8 +19478,8 @@
 	culture="portuguese"
 	father=143110
 	mother=143111
-	1090.1.1={
-		birth="1090.1.1"
+	1090.1.10={
+		birth="1090.1.10"
 	}
 	1120.1.1={
 		add_spouse=143113
@@ -19780,8 +19779,8 @@
 	trait="flamboyant_schemer"
 	father=70111
 	mother=70112
-	985.1.1={
-		birth="985.1.1"
+	991.1.1={
+		birth="991.1.1"
 	}
 	1058.1.1={
 		death="1058.1.1"
@@ -20015,14 +20014,11 @@
 	name="Urraca"
 	female=yes
 	dynasty=8618
-
-	father=108530
-	mother=108531
-
 	religion=catholic
 	culture=portuguese
-	
-	1035.1.1={
+	father=108530
+	mother=108531
+	1042.1.1={
 		birth=yes
 	}
 	1085.1.1={
@@ -20701,7 +20697,7 @@
 	religion=catholic
 	culture=portuguese
 
-	1115.1.1={
+	1120.1.1={
 		birth=yes
 	}
 	1150.1.1={
@@ -23409,14 +23405,11 @@
 	name="Cristina"
 	female=yes
 	dynasty=8618
-
-	father=108530
-	mother=108531
-
 	religion=catholic
 	culture=portuguese
-
-	1029.1.1={
+	father=108530
+	mother=108531
+	1041.1.1={
 		birth=yes
 	}
 	1079.1.1={
@@ -23426,17 +23419,14 @@
 108530={
 	name="Fernando"
 	dynasty=8618
-
-	father=108550
-	mother=108551
-
 	religion=catholic
 	culture=portuguese
-
+	father=108550
+	mother=108551
 	1002.1.1={
 		birth=yes
 	}
-	1028.1.1={
+	1040.1.1={
 		add_spouse=108531
 	}
 	1052.1.1={

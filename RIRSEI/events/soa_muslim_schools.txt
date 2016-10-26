@@ -54,6 +54,13 @@ character_event = {
 	
 	hide_window = yes
 	
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	only_rulers = yes
+	only_men = yes
+	religion_group = muslim
+	
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		NOR = {
@@ -61,7 +68,7 @@ character_event = {
 				war = yes
 			}
 			trait = incapable
-			trait = in_hiding
+			is_inaccessible_trigger = yes
 			prisoner = yes
 		}
 		trait = mutazilite
@@ -188,6 +195,13 @@ character_event = {
 	
 	hide_window = yes
 	
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	only_rulers = yes
+	only_men = yes
+	religion_group = muslim
+	
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		NOR = {
@@ -195,7 +209,7 @@ character_event = {
 				war = yes
 			}
 			trait = incapable
-			trait = in_hiding
+			is_inaccessible_trigger = yes
 			prisoner = yes
 		}
 		trait = ashari
@@ -323,6 +337,13 @@ character_event = {
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
 	
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	only_rulers = yes
+	only_men = yes
+	religion_group = muslim
+	
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		trait = ashari
@@ -369,6 +390,13 @@ character_event = {
 	desc = EVTDESC_SoA_621
 	picture = GFX_evt_kaaba
 	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	only_rulers = yes
+	only_men = yes
+	religion_group = muslim
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"

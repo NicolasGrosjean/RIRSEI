@@ -26,10 +26,34 @@ province_event = {
 		owner = {
 			NOT = {	culture = pictish }
 		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = pictish 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
 		months = 1200
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
 	}
 
 	option = {
@@ -60,6 +84,19 @@ province_event = {
 				culture_group = latin
 			}
 		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
 	}
 
 	option = {
@@ -82,6 +119,23 @@ province_event = {
 			AND = {
 				culture = old_saxon
 				has_global_flag = widukind_spawned
+				NOT = {
+					owner = { 
+						top_liege = { 
+							culture = old_saxon 
+							OR = {
+								tier = emperor
+								num_of_king_titles = 2
+							}
+						} 
+					}
+				}
+			}
+		}
+		NOT = {
+			owner = { 
+				culture = old_saxon 
+				religion_head = { culture = old_saxon }
 			}
 		}
 		owner = {
@@ -95,6 +149,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = dutch
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -118,6 +185,22 @@ province_event = {
 		owner = {
 			culture_group = central_germanic
 		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = old_saxon 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = old_saxon }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -126,6 +209,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = german
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -165,6 +261,19 @@ province_event = {
 				culture_group = latin
 			}
 		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
 	}
 
 	option = {
@@ -183,6 +292,22 @@ province_event = {
 		culture = visigothic
 		NOT = { religion_group = muslim }
 		region = world_europe_west_francia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -191,6 +316,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = occitan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -217,6 +355,22 @@ province_event = {
 		any_province_holding = {
 			NOT = { holding_type = nomad }
 		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -225,6 +379,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = castillan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -251,6 +418,22 @@ province_event = {
 		any_province_holding = {
 			NOT = { holding_type = nomad }
 		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -259,6 +442,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = catalan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -295,6 +491,19 @@ province_event = {
 				culture = portuguese
 			}
 		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
 	}
 
 	option = {
@@ -319,6 +528,22 @@ province_event = {
 		any_province_holding = {
 			NOT = { holding_type = nomad }
 		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -327,6 +552,19 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture_group = arabic
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
 			}
 		}
 	}
@@ -357,6 +595,9 @@ province_event = {
 				AND = {
 					religion_group = pagan_group
 					is_reformed_religion = yes
+					NOT = {
+						religion_head = { culture = THIS }
+					}
 				}
 			}
 		}
@@ -367,6 +608,19 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 1200
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
 	}
 
 	option = {
