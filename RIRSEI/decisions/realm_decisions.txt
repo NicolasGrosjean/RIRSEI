@@ -1,9 +1,13 @@
 decisions = {
 
 	hold_a_epic_tournament  = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
-			NOT = {
+			is_playable = yes
+			NOR = {
+				has_character_modifier = epic_tournament
 				has_character_flag = epic_tournament
 			}
 			OR = {
@@ -13,7 +17,10 @@ decisions = {
 			}
 			independent = yes
 			NOT = { is_nomadic = yes }
-			NOT = { is_female = yes	}
+			OR = {
+				gender_equality_trigger = yes
+				NOT = { is_female = yes	}
+			}
 			OR = {
 				tier = king
 				tier = emperor 
@@ -26,7 +33,7 @@ decisions = {
 			war = no
 			prisoner = no
 			in_command = no
-			NOT = { trait = in_hiding }
+			NOT = { is_inaccessible_trigger = yes }
 			age = 16
 			prestige = 500
 			wealth = 200
@@ -36,7 +43,11 @@ decisions = {
 			}
 		}
 		effect = {
-			set_character_flag = epic_tournament
+			add_character_modifier = {
+				name = epic_tournament
+				years = 100
+				hidden = yes
+			}
 			set_character_flag = do_not_disturb
 			clr_character_flag = tournament_has_ended
 			hidden_tooltip = { character_event = { id = 70999 days = 300 } } # Safety catch flag clearing
@@ -62,7 +73,9 @@ decisions = {
 	}
 	
 	buy_indulgence_for_sins = {
+		only_playable = yes
 		potential = {
+			is_playable = yes
 			religion = catholic
 			age = 16
 			demesne_size = 1
@@ -92,7 +105,9 @@ decisions = {
 	}
 
 	issue_declaration_of_repentance = {
+		only_playable = yes
 		potential = {
+			is_playable = yes
 			religion = catholic
 			age = 16
 			demesne_size = 1
@@ -126,9 +141,11 @@ NOT = { has_landed_title = e_hre }
 	}
 	
 	demand_liege_title = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			ai = no
+			is_playable = yes
 			has_ambition = obj_gain_any_title
 			liege = {
 				NOT = { character = ROOT }
@@ -178,10 +195,12 @@ NOT = { has_landed_title = e_hre }
 	}
 	
 	sadaqah_saddka  = {
+		only_playable = yes
 		potential = {
+			is_playable = yes
 			ai = no
 			religion_group = muslim
-			age = 16
+			is_adult = yes
 			demesne_size = 1
 			NOT = { has_character_flag = voluntary_charity }
 			rightful_religious_head_scope = {	
@@ -219,14 +238,21 @@ NOT = { has_landed_title = e_hre }
 	}
 
 	hold_a_furusiyya  = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
-			NOT = {
+			is_playable = yes
+			independent = yes
+			NOR = {
 				has_character_flag = epic_tournament_furusiyya
+				has_character_modifier = epic_tournament_furusiyya
 			}
 			religion_group = muslim
-			independent = yes
-			NOT = { is_female = yes	}
+			OR = {
+				gender_equality_trigger = yes
+				NOT = { is_female = yes	}
+			}
 			OR = {
 				tier = king
 				tier = emperor 
@@ -239,7 +265,7 @@ NOT = { has_landed_title = e_hre }
 			war = no
 			in_command = no
 			prisoner = no
-			NOT = { trait = in_hiding }
+			NOT = { is_inaccessible_trigger = yes }
 			age = 16
 			prestige = 500
 			wealth = 200
@@ -250,7 +276,11 @@ NOT = { has_landed_title = e_hre }
 		}
 		effect = {
 			set_character_flag = do_not_disturb
-			set_character_flag = epic_tournament_furusiyya
+			add_character_modifier = {
+				name = epic_tournament_furusiyya
+				years = 100
+				hidden = yes
+			}
 			clr_character_flag = tournament_has_ended_furusiyya
 			hidden_tooltip = { character_event = { id = 88999 days = 300 } } # Safety catch flag clearing
 			wealth = -200
@@ -273,10 +303,13 @@ NOT = { has_landed_title = e_hre }
 	}
 	
 	restore_roman_empire = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
@@ -317,21 +350,25 @@ completely_controls = d_latium
 	}
 	
 	mend_great_schism = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_playable = yes
+			is_adult = yes
 			prisoner = no
+			independent = yes
 			NOT = { trait = incapable }
-			OR = {
-				has_landed_title = e_byzantium
-				has_landed_title = e_roman_empire
-			}
 			OR = {
 				religion = orthodox
 				religion = paulician
 				religion = monothelite
 				religion = iconoclast
+			}
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
 			}
 			is_heretic = no
 			NOT = { has_global_flag = schism_mended }
@@ -415,11 +452,14 @@ completely_controls = d_latium
 	}
 	
 	claim_constantinople = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
 			has_dlc = "Legacy of Rome"
-			NOT = { has_landed_title = c_byzantion }
 			has_landed_title = e_byzantium
+			NOT = { has_landed_title = c_byzantion }
 			any_realm_lord = { 
 				ai = yes
 				has_landed_title = c_byzantion 
@@ -444,8 +484,12 @@ completely_controls = d_latium
 	}
 	
 	make_rome_capital = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
+			ai = no
 			has_dlc = "Legacy of Rome"
 			has_landed_title = e_roman_empire
 			capital_scope = {
@@ -488,8 +532,10 @@ completely_controls = d_latium
 	}
 	
 	petition_doge_for_tp = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
+			is_playable = yes
 			is_merchant_republic = no
 			is_patrician = yes
 			liege = { is_merchant_republic = yes }
@@ -535,8 +581,10 @@ completely_controls = d_latium
 	}
 	
 	usurp_tp = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
+			is_playable = yes
 			is_merchant_republic = yes
 			is_patrician = yes
 			NOT = { has_character_flag = usurp_tp_taken }
@@ -609,15 +657,19 @@ completely_controls = d_latium
 	}
 	
 	organize_varangian_guard = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
-			has_landed_title = e_byzantium
+			is_playable = yes
+			independent = yes
 			is_female = no
 			prisoner = no
-			age = 16
-has_global_flag = viking_age_started
-NOT = { has_character_flag = vg_fait }
-
+			is_adult = yes
+			NOT = { trait = incapable }
+			has_landed_title = e_byzantium
+			has_global_flag = viking_age_started
+			NOT = { has_character_flag = vg_fait }
 			NOT = { has_global_flag = varangian_guard_founded }
 		}
 		allow = {
@@ -687,11 +739,14 @@ narrative_event = { id = RIRSEBYZ.111135 }
 	}
 	
 	create_hungary = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_landed_title = k_magyar
-                        religion = orthodox
+			religion = orthodox
+			is_playable = yes
 			culture = hungarian
+			has_landed_title = k_magyar
 			k_hungary = {
 				has_holder = no
 			}
@@ -757,9 +812,12 @@ holder_scope = {
 	}
 	
 	become_saoshyant = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "The Old Gods"
+			is_playable = yes
 			religion_group = zoroastrian_group
 			NOT = { has_global_flag = saoshyant_appears }
 		}
@@ -790,15 +848,18 @@ holder_scope = {
 			piety = 1500
 		}
 		effect = {
-			hidden_tooltip = {
-				narrative_event = { id = TOG.6000 }
-			}
 			set_global_flag = saoshyant_appears
 			give_nickname = nick_the_saoshyant
 			add_trait = saoshyant
 			prestige = 500
 			piety = 500
 			
+			hidden_tooltip = {
+				narrative_event = { id = TOG.6000 }
+				any_child = {
+					character_event = { id = TOG.6001 }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -806,9 +867,11 @@ holder_scope = {
 	}
 	
 	create_leon = {
+		only_playable = yes
 		is_high_prio = yes
 		
 		potential = {
+			is_playable = yes
 			tier = KING
 			has_landed_title = k_asturias
 			k_leon = { has_holder = no }
@@ -870,8 +933,11 @@ holder_scope = {
 	}
 	
 	create_castille = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
 			has_landed_title = d_castilla
 			independent = yes
 			NOT = { tier = KING }
@@ -935,8 +1001,11 @@ holder_scope = {
 	}
 
 	create_portugal = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
 			has_landed_title = d_porto
 			independent = yes
 			NOT = { tier = KING }
@@ -999,8 +1068,11 @@ holder_scope = {
 	}
 
 	create_aragon = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
+			is_playable = yes
 			has_landed_title = d_aragon
 			independent = yes
 			NOT = { tier = KING }
@@ -1051,9 +1123,12 @@ holder_scope = {
 	}
 	
 	restore_priesthood = {
+		only_independent = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "The Old Gods"
+			is_playable = yes
 			religion = zoroastrian
 			NOT = { has_global_flag = zoroastrian_priesthood_founded }
 		}
@@ -1097,9 +1172,12 @@ holder_scope = {
 	}
 	
 	build_third_temple = {
+		only_playable = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			religion_group = jewish_group
 			NOT = { has_global_flag = third_temple_built }
 			NOT = { has_global_flag = building_third_temple }
@@ -1128,9 +1206,12 @@ holder_scope = {
 	}
 	
 	restore_high_priesthood = {
+		only_playable = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			religion = jewish
 			has_landed_title = k_israel
 			has_global_flag = third_temple_built
@@ -1178,9 +1259,12 @@ holder_scope = {
 	}
 	
 	create_israel = {
+		only_playable = yes
 		is_high_prio = yes
+		
 		potential = {
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			religion_group = jewish_group
 			k_israel = {
 				has_holder = no
@@ -1207,8 +1291,11 @@ holder_scope = {
 	}
 	
 	welcome_jews = {
+		only_playable = yes
+		
 		potential = {
-			has_dlc = "Sons of Abraham"
+			#has_dlc = "Sons of Abraham"
+			is_playable = yes
 			NOR = {
 				religion_group = jewish_group 
 				has_character_modifier = expelled_jews_timer
@@ -1253,8 +1340,11 @@ holder_scope = {
 	}
 	
 	expel_jews = {
+		only_independent = yes
+		
 		potential = {
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			OR = {
 				AND = {
 					independent = yes
@@ -1262,7 +1352,6 @@ holder_scope = {
 				}
 				ai = no            # So that it shows on player's list anyway
 			}
-			is_playable = yes
 			OR = {
 				religion_group = christian
 				religion_group = muslim
@@ -1381,8 +1470,11 @@ holder_scope = {
 	}
 	
 	embrace_mutazila = {
+		only_playable = yes
+		
 		potential = {
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			religion = sunni
 			NOT = { 
 				OR = {
@@ -1396,7 +1488,7 @@ trait = Hanafisme
 				}
 			}
 			is_female = no
-			age = 16
+			is_adult = yes
 			prisoner = no
 has_global_flag = contro_mutaasha
 		}
@@ -1443,8 +1535,11 @@ modifier = {
 		}
 	}
 	embrace_ashari = {
+		only_playable = yes
+		
 		potential = {	
 			has_dlc = "Sons of Abraham"
+			is_playable = yes
 			religion = sunni
 			NOT = { 
 				OR = {
@@ -1458,7 +1553,7 @@ trait = Hanafisme
 				}
 			}
 			is_female = no
-			age = 16
+			is_adult = yes
 			prisoner = no
 has_global_flag = contro_mutaasha
 		}
@@ -1510,17 +1605,19 @@ has_global_flag = contro_mutaasha
 	}
 	
 	become_samrat_chakravartin = {
+		only_independent = yes
+		
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Rajas of India"
 			is_playable = yes
 			is_feudal = yes
 			religion_group = indian_group	
-			capital_scope = {
-				region = world_india
-			}
 			primary_title = {
 				higher_tier_than = DUKE
+			}
+			capital_scope = {
+				region = world_india
 			}
 			e_india = {
 				has_holder = no
@@ -1603,7 +1700,10 @@ has_global_flag = contro_mutaasha
 				limit = { has_nickname = no }
 				give_nickname = nick_the_magnificent
 			}
-			set_character_flag = achievement_my_very_own_subcontinent
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_my_very_own_subcontinent
+			}
 			chronicle = {
 				entry = CHRONICLE_UNITED_INDIA
 				picture = GFX_evt_throne_room
@@ -1616,6 +1716,7 @@ has_global_flag = contro_mutaasha
 			factor = 1
 		}
 	}
+
 # Hold Wargames - for nomads
 	hold_nomad_wargames = {
 		potential = {
@@ -1686,6 +1787,7 @@ has_global_flag = contro_mutaasha
 	
 	convert_to_feudalism_indep  = {
 		is_high_prio = yes
+		
 		potential = {
 			is_tribal = yes
 			independent = yes
@@ -1767,7 +1869,51 @@ has_global_flag = contro_mutaasha
 					}
 				}
 			}
-			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convert_to_feudalism_vassal = {
+		only_rulers = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_ruler = yes
+			is_tribal = yes
+			independent = no
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = TT_NOT_UNREFORMED_PAGAN
+				hidden_tooltip = {
+					OR = {
+						NOT = { religion_group = pagan_group }
+						is_reformed_religion = yes
+					}
+				}
+			}
+			liege = {
+				OR = {
+					is_feudal = yes
+					is_republic = yes
+				}
+			}
+			capital_holding = {
+				OR = {
+					AND = {
+						holding_type = tribal
+						has_building = tb_hillfort_4
+					}
+					holding_type = castle
+				}
+			}
+		}
+		
+		effect = {
 			set_character_flag = achievement_not_a_tribe
 			
 			if = {
@@ -1804,47 +1950,6 @@ has_global_flag = contro_mutaasha
 				set_government_type = muslim_government
 			}
 			
-			if = {
-				limit = {
-					higher_tier_than = king
-				}
-				primary_title = {
-					add_law = feudal_administration
-				}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	convert_to_feudalism_vassal = {
-		is_high_prio = yes
-		potential = {
-			is_tribal = yes
-			independent = no
-		}
-		allow = {
-			war = no
-			custom_tooltip = {
-				text = TT_NOT_UNREFORMED_PAGAN
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						is_reformed_religion = yes
-					}
-				}
-			}
-			liege = {
-				OR = {
-					is_feudal = yes
-					is_republic = yes
-				}
-			}
-		}
-		
-		effect = {
 			hidden_tooltip = {
 				any_demesne_title = {
 					limit = {
@@ -1900,42 +2005,6 @@ has_global_flag = contro_mutaasha
 					character_event = { id = 55100 } # Notify Liege
 				}
 			}
-			
-			set_character_flag = achievement_not_a_tribe
-			
-			if = {
-				limit = {
-					NOT = { religion_group = muslim }
-				}
-				
-				if = {
-					limit = {
-						ai = no
-					}
-					chronicle = {
-						entry = CHRONICLE_ADOPTED_FEUDALISM
-						picture = GFX_evt_castle_construction
-					}
-				}
-				set_government_type = feudal_government
-			}
-			
-			if = {
-				limit = {
-					religion_group = muslim
-				}
-				
-				if = {
-					limit = {
-						ai = no
-					}
-					chronicle = {
-						entry = CHRONICLE_ADOPTED_IQTA
-						picture = GFX_evt_castle_construction
-					}
-				}
-				set_government_type = muslim_government
-			}
 		}
 		
 		ai_will_do = {
@@ -1976,7 +2045,4 @@ has_global_flag = contro_mutaasha
 			}
 		}
 	}
-	
-	
-	
 }

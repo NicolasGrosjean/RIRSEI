@@ -16,12 +16,12 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	only_playable = yes
+	war = no
 	
 	trigger = {
 		has_global_flag = reforme_gregorienne
 		religion = catholic
 		controls_religion = yes
-		war = no
 		religion_authority = 0.35
 		NOT = {	has_character_flag = pope_currently_demanding	}
 		any_independent_ruler = {
@@ -94,7 +94,7 @@ character_event = {
 				trait = cynical
 			}
 			modifier = {
-				factor = 5
+				factor = 8
 				trait = zealous
 			}
 		}
@@ -131,6 +131,18 @@ character_event = {
 		name = "EVTOPTB67001"
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.5
+				trait = hedonist
+			}
 		}
 		piety = -25
 		religion_authority = {
@@ -213,13 +225,83 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = "EVTOPTA67003"
+	option = { # Do nothing
+		name = EVTOPTA67003
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				trait = shy
+			}
+			modifier = {
+				factor = 1.5
+				trait = kind
+			}
+			modifier = {
+				factor = 1.5
+				trait = bad_priest_christian
+			}
+			modifier = {
+				factor = 2
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+		}
+		prestige = -50
+		opinion = {
+			modifier = pope_invest_dislike
+			who = FROM
+		}
+	}
+	option = { # Excommunicate the fool!
+		name = EVTOPTA67022
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.2
+				trait = envious
+			}
+			modifier = {
+				factor = 1.5
+				trait = crusader
+			}
+			modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+		}
 		prestige = -5
 		opinion = {
 			modifier = pope_invest_dislike
 			who = FROM
-		}		
+		}
+		tooltip = {
+			FROM = {
+				add_trait = excommunicated
+			}
+		}
+		hidden_tooltip = {
+			FROM = { character_event = { id = 38022 days = 10 } }
+		}
 	}
 }
 
@@ -262,11 +344,11 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	only_rulers = yes
+	war = no
 	
 	trigger = {
 		religion = catholic
 		controls_religion = yes
-		war = no
 		wealth = 20
 		has_character_flag = pope_currently_demanding
 		any_independent_ruler = {
@@ -420,12 +502,12 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	only_rulers = yes
+	war = no	
+	has_character_flag = pope_currently_demanding
 	
 	trigger = {
 		religion = catholic
 		controls_religion = yes
-		war = no
-		has_character_flag = pope_currently_demanding
 		any_independent_ruler = {
 			religion = catholic
 			rightful_religious_head = ROOT
@@ -438,6 +520,7 @@ character_event = {
     			any_realm_lord = {
     				OR = { tier = KING tier = DUKE    }
     				NOT = { has_character_flag = pope_vassal_approached }
+					religion = ROOT
     				relative_power_to_liege = 0.1
     			}
 		}
@@ -476,24 +559,9 @@ character_event = {
 				set_character_flag = pope_vassal_approached 
 				character_event = { id = 67021 days = 14 tooltip = EVTTOOLTIP67021 }
 			}
-			
 		}
 		clr_character_flag = pope_currently_demanding
 	}
-	
-	option = {
-		name = "EVTOPTB67020"
-		ai_chance = {	factor = 0 }
-		random_independent_ruler = {
-			limit = {
-				religion = catholic
-				rightful_religious_head = ROOT
-				has_character_flag = pope_we_refuse_law_changed
-			}
-			clr_character_flag = pope_we_refuse_law_changed
-		}
-		clr_character_flag = pope_currently_demanding
-	}	
 }
 
 

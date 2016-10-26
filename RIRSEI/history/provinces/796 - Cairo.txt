@@ -9,7 +9,7 @@ b_fustat = castle
 b_memphis = temple
 b_heliopolis = temple
 b_helwan = castle
-b_maadi = castle
+b_maadi = city
 
 #b_cairo = castle
 #b_tekkekyahudiyya = castle

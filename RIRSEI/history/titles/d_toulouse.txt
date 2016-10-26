@@ -104,3 +104,6 @@ de_jure_liege=k_france
 1328.2.1={
 	holder=455500 
 }
+1336.12.01={
+	holder=455540
+}

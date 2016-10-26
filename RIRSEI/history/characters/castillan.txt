@@ -962,72 +962,60 @@
 108510 = {
 	name="Diego"
 	dynasty=402
-	martial=4
-	diplomacy=5
-	intrigue=6
-	stewardship=7
 	religion="catholic"
 	culture="castillan"
 	trait="tough_soldier"
 	father=70092
 	mother=70093
 	1027.1.1 = {
-		birth="1027.1.1"
+		birth=yes
 	}
-	1047.1.1 = {
+	1057.1.1 = {
 		add_spouse=108511
 	}
 	1077.1.1 = {
-		death="1077.1.1"
+		death=yes
 	}
 }
 
 108512 = {
 	name="Rodrigo"
 	dynasty=402
-	martial=8
-	diplomacy=5
-	intrigue=5
-	stewardship=7
 	religion="catholic"
 	culture="castillan"
 	trait="tough_soldier"
 	father=108510
 	mother=108511
-	1048.1.1 = {
-		birth="1048.1.1"
+	1058.1.1 = {
+		birth=yes
 	}
-	1068.1.1 = {
+	1074.1.1 = {
 		add_spouse=72706
 	}
 	1085.1.1 = {
-		death="1085.1.1"
+		death=yes
 	}
 }
 
 108514 = {
 	name="Fernando"
 	dynasty=402
-	martial=6
-	diplomacy=6
-	intrigue=5
-	stewardship=6
 	religion="catholic"
 	culture="castillan"
 	trait="amateurish_plotter"
 	father=108510
 	mother=108511
-	1053.1.1 = {
-		birth="1053.1.1"
+	1060.1.1 = {
+		birth=yes
 	}
-	1069.1.1 = {
+	1076.1.1 = {
 		add_spouse=70255
 	}
 	1089.1.1 = {
 		add_spouse=71355
 	}
 	1108.5.1 = {
-		death="1108.5.1"
+		death=yes
 	}
 }
 
@@ -1035,21 +1023,17 @@
 	name="Jimena"
 	female = yes
 	dynasty=402
-	martial=8
-	diplomacy=8
-	intrigue=6
-	stewardship=7
 	religion="catholic"
 	culture="castillan"
 	trait="wroth"
 	trait="thrifty_clerk"
 	father=108510
 	mother=108511
-	1051.1.1 = {
-		birth="1051.1.1"
+	1059.1.1 = {
+		birth=yes
 	}
 	1106.1.1 = {
-		death="1106.1.1"
+		death=yes
 	}
 }
 
@@ -1057,21 +1041,17 @@
 	name="Jimena"
 	female = yes
 	dynasty=436
-	martial=5
-	diplomacy=5
-	intrigue=5
-	stewardship=5
 	religion="catholic"
 	culture="castillan"
 	trait="envious"
 	trait="thrifty_clerk"
 	father=108570
 	mother=106042
-	1010.1.1 = {
-		birth="1010.1.1"
+	1024.1.1 = {
+		birth=yes
 	}
 	1050.1.1 = {
-		death="1050.1.1"
+		death=yes
 	}
 }
 
@@ -1244,10 +1224,6 @@
 108610 = {
 	name="Ramiro" #AKA: Ramiro III 'el Niño'
 	dynasty=436
-	martial=6
-	diplomacy=5
-	intrigue=5
-	stewardship=8
 	religion="catholic"
 	culture="castillan"
 	trait="deceitful"
@@ -1255,8 +1231,8 @@
 	trait="flamboyant_schemer"
 	father=70026
 	mother=70027
-	960.1.1 = {
-		birth="960.1.1"
+	961.1.1 = {
+		birth=yes
 	}
 	966.1.1 = {
 		capital=k_leon
@@ -1265,7 +1241,7 @@
 		add_spouse=70028
 	}
 	984.1.1 = {
-		death="984.1.1"
+		death=yes
 	}
 }
 
@@ -3155,15 +3131,17 @@ add_claim = e_hre
 457556={
 	name="Alfonso"
 	dynasty=77
-
-	father=457542
-	mother=200096
-
 	religion=catholic
 	culture=castillan
-
+	trait="bastard"
+	father=457542
+	mother=200096
 	1289.1.1={
 		birth=yes
+	}
+	1290.1.1={
+		remove_trait="bastard"
+		trait="legit_bastard"
 	}
 	1325.1.2={
 		add_spouse=457557
@@ -5093,10 +5071,6 @@ add_claim = e_hre
 	name="Elvira"
 	female=yes
 	dynasty=402
-	martial=4
-	diplomacy=6
-	intrigue=7
-	stewardship=6
 	religion="catholic"
 	culture="castillan"
 	trait="cynical"
@@ -5104,12 +5078,11 @@ add_claim = e_hre
 	trait="amateurish_plotter"
 	father=108510
 	mother=108511
-	1055.1.1 = {
-		birth="1055.1.1"
+	1061.1.1 = {
+		birth=yes
 	}
-	
 	1111.1.1 = {
-		death="1111.1.1"
+		death=yes
 	}
 }
 
@@ -6021,17 +5994,14 @@ add_claim = e_hre
 	name="Toda"
 	female=yes
 	dynasty=10024
-
 	father=70269
 	mother=54000
-
 	religion=catholic
 	culture=castillan
-	
-	952.1.1={
+	946.1.1={
 		birth=yes
 	}
-	972.1.1 = {
+	1011.1.1 = {
 		death=yes
 	}
 }
@@ -6896,6 +6866,7 @@ add_claim = e_hre
 	dynasty=681
 	religion="catholic"
 	culture="castillan"
+	trait="bastard"
 	father=208500
 	mother=207562
 	1186.1.1 = {
@@ -6920,14 +6891,14 @@ add_claim = e_hre
 	culture="castillan"
 	father=71410
 	mother=71411
-	1204.1.1 = {
-		birth="1204.1.1"
+	1211.1.1 = {
+		birth=yes
 	}
 	1229.1.1 = {
 		add_spouse=71413
 	}
 	1260.1.1 = {
-		death="1260.1.1"
+		death=yes
 	}
 }
 
@@ -7018,11 +6989,11 @@ add_claim = e_hre
 	culture="castillan"
 	father=71410
 	mother=71411
-	1206.1.1 = {
-		birth="1206.1.1"
+	1212.1.1 = {
+		birth=yes
 	}
 	1240.1.1 = {
-		death="1240.1.1"
+		death=yes
 	}
 }
 
@@ -11241,20 +11212,17 @@ add_claim = e_hre
 72544={
 	name="Juan"
 	dynasty=776
-
 	father=72541
 	mother=71433
-
 	religion=catholic
 	culture=castillan
-
 	1244.1.1={
 		birth=yes
 	}
 	1260.1.1={
 		add_spouse=71574
 	}
-	1284.1.1={
+	1275.1.1={
 		remove_spouse=71574
 		add_spouse=72031
 	}
@@ -11287,14 +11255,11 @@ add_claim = e_hre
 72546={
 	name="Juan"
 	dynasty=776
-
 	father=72544
 	mother=72031
-
 	religion=catholic
 	culture=castillan
-
-	1282.1.1={
+	1276.1.1={
 		birth=yes
 	}
 	1294.1.1={
@@ -13029,9 +12994,6 @@ add_claim = e_hre
 	mother=71365
 	1135.1.1 = {
 		birth="1135.1.1"
-	}
-	1160.1.1 = {
-		add_spouse=72681
 	}
 	1202.8.22 = {
 		death="1202.8.22"
@@ -16618,17 +16580,14 @@ add_claim = e_hre
 72991={
 	name="Pedro"
 	dynasty=7025
-
 	father=72377
 	mother=73106
-
 	religion=catholic
 	culture=castillan
-
 	1169.1.1={
 		birth=yes
 	}
-	1207.1.1={
+	1194.1.1={
 		add_spouse=142039	
 	}
 	1223.6.9={
@@ -17766,9 +17725,6 @@ add_claim = e_hre
 
 	religion=catholic
 	culture=castillan
-
-	father=73041
-	mother=73049
 
 	1090.1.1={
 		birth=yes

@@ -1328,6 +1328,7 @@
 	trait="deceitful"
 	trait="cynical"
 	trait="underhanded_rogue"
+	trait = legit_bastard
 	father=480
 	mother=98008
 	1094.1.2 = {
@@ -2226,6 +2227,7 @@
 	culture="hungarian"
 	trait="brave"
 	trait="tough_soldier"
+	trait = legit_bastard
 	father=1621
 	mother=4411
 	1046.1.1 = {
@@ -2248,6 +2250,7 @@
 	culture="hungarian"
 	trait="patient"
 	trait="charismatic_negotiator"
+	trait = legit_bastard
 	father=1621
 	mother=4411
 	1048.1.1 = {
@@ -2708,6 +2711,7 @@
 	trait="patient"
 	trait="cynical"
 	trait="tough_soldier"
+	trait="legit_bastard"
 	father=460
 	mother=483
 	945.1.1 = {
@@ -6309,6 +6313,7 @@ trait = Vs_sancti_petri
 	stewardship=6
 	religion="catholic"
 	culture="hungarian"
+	trait = legit_bastard
 	father=219511
 	mother=212542
 	1167.1.2 = {
@@ -6439,6 +6444,7 @@ trait = Vs_sancti_petri
 	culture="hungarian"
 	father=474
 	mother=1399
+	trait = legit_bastard
 	1072.1.2 = {
 		birth="1072.1.2"
 	}
@@ -9519,58 +9525,30 @@ wealth=1000
 				owner = ROOT
 				#leader = ROOT
 				troops = {
-					light_cavalry = { 936 936 }
-					horse_archers = { 472 472 }
+					light_cavalry = { 2250 2250 }
+					horse_archers = { 750 750 }
 				}
 				attrition = 0.5
 			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 23
-				attributes = {
-					martial = 6
+			spawn_unit = {
+				province = 544 # Korsun
+				owner = ROOT
+				#leader = ROOT
+				troops = {
+					light_cavalry = { 2250 2250 }
+					horse_archers = { 750 750 }
 				}
-				trait = skilled_tactician
+				attrition = 0.5
 			}
-			new_character = {
-				spawn_unit = {
-					province = 544 # Korsun
-					owner = ROOT
-					#leader = THIS
-					troops = {
-						light_cavalry = { 936 936 }
-						horse_archers = { 472 472 }
-					}
-					attrition = 0.5
+			spawn_unit = {
+				province = 544 # Korsun
+				owner = ROOT
+				#leader = ROOT
+				troops = {
+					light_cavalry = { 2250 2250 }
+					horse_archers = { 750 750 }
 				}
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 27
-				attributes = {
-					martial = 6
-				}
-				trait = skilled_tactician
-			}
-			new_character = {
-				spawn_unit = {
-					province = 544 # Korsun
-					owner = ROOT
-					#leader = THIS
-					troops = {
-						light_cavalry = { 936 936 }
-						horse_archers = { 472 472 }
-					}
-					attrition = 0.5
-				}
+				attrition = 0.5
 			}
 		}
 	}

@@ -217,10 +217,10 @@
 	culture="turkish"
 	father = 3079
 	1085.1.1={
-		birth="1085.1.1"
+		birth=yes
 	}
 	1146.9.14={
-		death="1146.9.14"
+		death=yes
 	}
 }
 
@@ -231,10 +231,10 @@
 	culture="turkish"
 	father = 144029
 	1116.1.1={
-		birth="1116.1.1"
+		birth=yes
 	}
 	1149.1.1={
-		death="1149.1.1"
+		death=yes
 	}
 }
 
@@ -253,10 +253,10 @@
 	trait="zealous"
 	trait="just"
 	1118.2.1={
-		birth="1118.2.1"
+		birth=yes
 	}
 	1174.4.15={
-		death="1174.4.15"
+		death=yes
 	}
 }
 
@@ -267,10 +267,10 @@
 	culture="turkish"
 	father = 144029
 	1120.1.1={
-		birth="1120.1.1"
+		birth=yes
 	}
 	1170.9.16={
-		death="1170.9.16"
+		death=yes
 	}
 }
 
@@ -281,10 +281,10 @@
 	culture="turkish"
 	father = 144031
 	1163.1.1={
-		birth="1163.1.1"
+		birth=yes
 	}
 	1181.1.1={
-		death="1181.1.1"
+		death=yes
 	}
 }
 
@@ -295,10 +295,10 @@
 	culture="turkish"
 	father=144025
 	1072.1.1={
-		birth="1072.1.1"
+		birth=yes
 	}
 	1142.1.1={
-		death="1142.1.1"
+		death=yes
 	}
 }
 
@@ -309,10 +309,10 @@
 	culture="turkish"
 	father=144034
 	1092.1.1={
-		birth="1092.1.1"
+		birth=yes
 	}
 	1156.1.1={
-		death="1156.1.1"
+		death=yes
 	}
 }
 
@@ -323,10 +323,10 @@
 	culture="turkish"
 	father=144035
 	1120.1.1={
-		birth="1120.1.1"
+		birth=yes
 	}
 	1169.1.1={
-		death="1169.1.1"
+		death=yes
 	}
 }
 
@@ -337,10 +337,10 @@
 	culture="turkish"
 	father=144036
 	1140.1.1={
-		birth="1140.1.1"
+		birth=yes
 	}
 	1174.1.1={
-		death="1174.1.1"
+		death=yes
 	}
 }
 
@@ -351,10 +351,10 @@
 	culture="turkish"
 	father=144036
 	1141.1.1={
-		birth="1141.1.1"
+		birth=yes
 	}
 	1176.1.1={
-		death="1176.1.1"
+		death=yes
 	}
 }
 
@@ -365,10 +365,10 @@
 	culture="turkish"
 	father=144036
 	1142.1.1={
-		birth="1142.1.1"
+		birth=yes
 	}
 	1183.1.1={
-		death="1183.1.1"
+		death=yes
 	}
 }
 
@@ -379,10 +379,10 @@
 	culture="turkish"
 	father=144037
 	1160.1.1={
-		birth="1160.1.1"
+		birth=yes
 	}
 	1220.1.1={
-		death="1220.1.1"
+		death=yes
 	}
 }
 
@@ -393,10 +393,10 @@
 	culture="turkish"
 	father = 144032
 	1150.1.1={
-		birth="1150.1.1"
+		birth=yes
 	}
 	1180.1.1={
-		death="1180.1.1"
+		death=yes
 	}
 }
 
@@ -895,10 +895,10 @@
 	culture="turkish"
 	father=144107
 	1101.1.1={
-		birth="1101.1.1"
+		birth=yes
 	}
 	1132.1.1={
-		death="1132.1.1"
+		death=yes
 	}
 }
 
@@ -909,10 +909,10 @@
 	culture="turkish"
 	father=144110
 	1081.1.1={
-		birth="1081.1.1"
+		birth=yes
 	}
 	1132.6.1={
-		death="1132.6.1"
+		death=yes
 	}
 }
 
@@ -923,10 +923,10 @@
 	culture="turkish"
 	father=144111
 	1102.1.1={
-		birth="1102.1.1"
+		birth=yes
 	}
 	1141.1.1={
-		death="1141.1.1"
+		death=yes
 	}
 }
 
@@ -937,10 +937,10 @@
 	culture="turkish"
 	father=144111
 	1103.1.1={
-		birth="1103.1.1"
+		birth=yes
 	}
 	1156.1.1={
-		death="1156.1.1"
+		death=yes
 	}
 }
 
@@ -951,10 +951,10 @@
 	culture="turkish"
 	father=144116
 	1121.1.1={
-		birth="1121.1.1"
+		birth=yes
 	}
 	1161.1.1={
-		death="1161.1.1"
+		death=yes
 	}
 }
 
@@ -965,10 +965,10 @@
 	culture="turkish"
 	father=144116
 	1122.1.1={
-		birth="1122.1.1"
+		birth=yes
 	}
 	1178.1.1={
-		death="1178.1.1"
+		death=yes
 	}
 }
 
@@ -979,10 +979,10 @@
 	culture="turkish"
 	father=93049
 	1141.1.1={
-		birth="1141.1.1"
+		birth=yes
 	}
 	1204.1.1={
-		death="1204.1.1"
+		death=yes
 	}
 }
 
@@ -991,6 +991,23 @@
 	dynasty=790
 	religion="sunni"
 	culture="turkish"
+	
+	martial = 12
+	diplomacy = 8
+	stewardship = 9
+	intrigue = 9
+	learning = 6
+	
+	health = 6
+	fertility = 0.8
+	
+	trait = brilliant_strategist
+	trait = diligent
+	trait = ambitious
+	trait = proud
+	trait = quick
+	trait = adventurer
+	
 	942.1.1={
 		birth=yes
 	}
@@ -1010,10 +1027,10 @@
 	father = 144123
 	mother = 170305
 	970.1.1={
-		birth="970.1.1"
+		birth=yes
 	}
 	998.1.1={
-		death="998.1.1"
+		death=yes
 	}
 }
 
@@ -1025,10 +1042,10 @@
 	father = 144123
 	mother = 170305
 	971.1.1={
-		birth="971.1.1"
+		birth=yes
 	}
 	1030.1.1={
-		death="1030.1.1"
+		death=yes
 	}
 }
 
@@ -1039,10 +1056,10 @@
 	culture="turkish"
 	father = 144125
 	990.1.1={
-		birth="990.1.1"
+		birth=yes
 	}
 	1031.1.1={
-		death="1031.1.1"
+		death=yes
 	}
 }
 
@@ -1053,10 +1070,10 @@
 	culture="turkish"
 	father = 144125
 	991.1.1={
-		birth="991.1.1"
+		birth=yes
 	}
 	1041.1.1={
-		death="1041.1.1"
+		death=yes
 	}
 }
 
@@ -2199,7 +2216,7 @@
 
 229003 = {
 	name="Saltuk"
-	dynasty=100586
+	dynasty=1053008
 	martial=7
 	diplomacy=7
 	intrigue=6
@@ -2217,7 +2234,7 @@
 
 229004 = {
 	name="Aydin"
-	dynasty=100587
+	dynasty=1053009
 	martial=4
 	diplomacy=5
 	intrigue=6
@@ -2236,7 +2253,7 @@
 
 229005 = {
 	name="Kejrboga"
-	dynasty=100588
+	dynasty=1053012
 	martial=6
 	diplomacy=8
 	intrigue=4
@@ -2255,7 +2272,7 @@
 
 229006 = {
 	name="Sebek"
-	dynasty=100589
+	dynasty=1053010
 	martial=7
 	diplomacy=5
 	intrigue=4
@@ -2273,7 +2290,7 @@
 
 229008 = {
 	name="Porsuk"
-	dynasty=100591
+	dynasty=1053007
 	martial=7
 	diplomacy=5
 	intrigue=8
@@ -3458,7 +3475,7 @@ trait = sultan_sultan
 
 480080 = {
 	name="Koksegu"
-	dynasty=100588
+	dynasty=1053012
 	martial=6
 	diplomacy=6
 	intrigue=6
@@ -3478,7 +3495,7 @@ trait = sultan_sultan
 
 480090 = {
 	name="Alchi"
-	dynasty=100590
+	dynasty=1053011
 	martial=4
 	diplomacy=6
 	intrigue=7
@@ -3496,7 +3513,7 @@ trait = sultan_sultan
 
 480100 = {
 	name="Jurchedei"
-	dynasty=100591
+	dynasty=1053007
 	martial=6
 	diplomacy=8
 	intrigue=5
@@ -3515,7 +3532,7 @@ trait = sultan_sultan
 
 480110 = {
 	name="Husun"
-	dynasty=100592
+	dynasty=101158
 	martial=5
 	diplomacy=8
 	intrigue=7
@@ -3672,7 +3689,7 @@ trait = sultan_sultan
 
 480260 = {
 	name="Sencer"
-	dynasty=100587
+	dynasty=1053009
 	martial=7
 	diplomacy=5
 	intrigue=8
@@ -3692,7 +3709,7 @@ trait = sultan_sultan
 
 480270 = {
 	name="Ertan"
-	dynasty=100589
+	dynasty=1053010
 	martial=5
 	diplomacy=6
 	intrigue=5
@@ -8043,7 +8060,7 @@ trait = sultan_sultan
 		trait = zealous
 		trait = martial_cleric
 	}
-	1249.8.2={
+	1241.8.2={
 		add_spouse = 170205
 	}
 	1266.2.19={
@@ -8146,8 +8163,8 @@ trait = sultan_sultan
 	culture="turkish"
 	father=170204
 	mother=170216
-	1226.1.1={
-		birth="1226.1.1"
+	1225.1.1={
+		birth="1225.1.1"
 	}
 	1270.1.1={
 		death="1270.1.1"
