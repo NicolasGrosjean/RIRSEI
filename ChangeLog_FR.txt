@@ -2,6 +2,7 @@ XX Octobre 2016 v2.6
 --------------------
 
 MAJEUR:
+- Mise à jour avec la 2.6.2
 
 MINEUR:
 - Corrige certains bugs

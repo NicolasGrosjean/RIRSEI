@@ -2,6 +2,7 @@ XX October 2016 v2.6
 --------------------
 
 MAJOR:
+- Update to 2.6.2
 
 MINOR:
 - Fix some bugs
