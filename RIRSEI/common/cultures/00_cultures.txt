@@ -798,7 +798,7 @@ latin = {
 		modifier = default_culture_modifier
 	}
 gallo = {
-		graphical_culture = { frankishgfx }
+		graphical_cultures = { frankishgfx }
 		
 		color = { 0.8 0.8 0.2 }
 		
@@ -840,7 +840,7 @@ gallo = {
 		mother_name_chance = 0
 	}
 GalloB = {
-		graphical_culture = { frankishgfx }
+		graphical_cultures = { frankishgfx }
 		
 		color = { 0.8 0.8 0.2 }
 		
@@ -884,7 +884,7 @@ GalloB = {
 	}
 
 	castillan = {
-		graphical_culture = { southerngfx }
+		graphical_cultures = { southerngfx }
 		
 		color = { 0.95 0.82 0.09 }
 
@@ -918,7 +918,7 @@ GalloB = {
 
 
 	ibero = {
-		graphical_culture = { southerngfx }
+		graphical_cultures = { southerngfx }
 		
 		color = { 0.95 0.82 0.09 }
 
@@ -1051,10 +1051,10 @@ GalloB = {
 }
 
 iberian = {
-	graphical_culture = { occitangfx }
+	graphical_cultures = { occitangfx }
 
 	basque = {
-		graphical_culture = { occitangfx }
+		graphical_cultures = { occitangfx }
 		
 		color = { 0.55 0.42 0.04 }
 
