@@ -2182,7 +2182,7 @@ has_law = crown_authority_4
 }
 effect = {
          set_global_flag = Basileia_nova
-         character_event = { id = RIRSEI.111213}
+         narrative_event = { id = RIRSEI.111213}
 }                        
 ai_will_do = {
 			factor = 1
@@ -3751,7 +3751,7 @@ holder_scope = {
 		effect = {
 e_byzantium = {
 holder_scope = {
-letter_event = { id = RIRSEI.474849 }
+character_event = { id = RIRSEI.474849 }
 			  
 }
 }
