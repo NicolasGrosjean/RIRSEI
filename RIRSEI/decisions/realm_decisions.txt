@@ -694,7 +694,7 @@ has_holder = yes
 }
 k_rus = {
 holder_scope = {
-narrative_event = { id = RIRSEBYZ.111135 }
+letter_event = { id = RIRSEBYZ.111135 }
 }
 }
 }
@@ -710,7 +710,7 @@ realm_size = 18
 }
 d_kiev = {
 holder_scope = {
-narrative_event = { id = RIRSEBYZ.111135 }
+letter_event = { id = RIRSEBYZ.111135 }
 }
 }
 }
@@ -726,7 +726,7 @@ NOT = { realm_size = 18 }
 }
 d_novgorod = {
 holder_scope = {
-narrative_event = { id = RIRSEBYZ.111135 }
+letter_event = { id = RIRSEBYZ.111135 }
 }
 }
 }
@@ -746,7 +746,6 @@ narrative_event = { id = RIRSEBYZ.111135 }
 			religion = orthodox
 			is_playable = yes
 			culture = hungarian
-			has_landed_title = k_magyar
 			k_hungary = {
 				has_holder = no
 			}
@@ -775,7 +774,7 @@ holder_scope = {
 			}
 e_byzantium = {
 holder_scope = {
-			narrative_event = { id = RIRSEI.505152 }
+			character_event = { id = RIRSEI.505152 }
 }
 }
 			if = {
@@ -923,7 +922,7 @@ holder_scope = {
 							region = world_europe_west_iberia
 						}
 					}
-					character_event = { id = 62921 }
+					narrative_event = { id = 62921 }
 				}
 			}
 		}
@@ -982,7 +981,7 @@ holder_scope = {
 							region = world_europe_west_iberia
 						}
 					}
-					character_event = { id = 62923 }
+					narrative_event = { id = 62923 }
 				}
 			}
 			if = {
@@ -1057,7 +1056,7 @@ holder_scope = {
 							region = world_europe_west_iberia
 						}
 					}
-					character_event = { id = 62925 }
+					narrative_event = { id = 62925 }
 				}
 			}
 			hidden_tooltip = { character_event = { id = 62924 } }
@@ -1112,7 +1111,7 @@ holder_scope = {
 							region = world_europe_west_iberia
 						}
 					}
-					character_event = { id = 62927 }
+					narrative_event = { id = 62927 }
 				}
 			}
 			hidden_tooltip = { character_event = { id = 62926 } }
