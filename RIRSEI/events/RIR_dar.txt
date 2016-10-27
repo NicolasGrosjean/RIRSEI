@@ -680,7 +680,7 @@ piety = -200
 prestige = -600	
 
 		FROM = {
-			letter_event = { id = RIRSEMUS.111132 }
+			narrative_event = { id = RIRSEMUS.111132 }
 		}
 		ai_chance = {
 			factor = 0.6
@@ -766,7 +766,7 @@ modifier = {
 		name = "EVTOPTB_RIRSEMUS_111131"	# Reject
 decadence = 30
 		FROM = {
-			letter_event = { id = RIRSEMUS.111133 }
+			narrative_event = { id = RIRSEMUS.111133 }
 		}
 		ai_chance = {
 			factor = 0.4
@@ -955,7 +955,7 @@ limit = {
 completely_controls = c_baghdad
 religion_group = muslim
 }
-	letter_event = { id = RIRSEMUS.111137 }
+	character_event = { id = RIRSEMUS.111137 }
 		}
 if = {
 limit = {
@@ -1458,10 +1458,10 @@ wealth = -500
 hidden_tooltip = {
 random_list = {
 20 = {
-character_event = { id = RIRSEMUS.111149 }
+narrative_event = { id = RIRSEMUS.111149 }
 }
 80 = {
-character_event = { id = RIRSEMUS.111150 }
+narrative_event = { id = RIRSEMUS.111150 }
 }
 }
 					}
@@ -1476,10 +1476,10 @@ wealth = -1000
 hidden_tooltip = {
 random_list = {
 40 = {
-character_event = { id = RIRSEMUS.111149 }
+narrative_event = { id = RIRSEMUS.111149 }
 }
 60 = {
-character_event = { id = RIRSEMUS.111150 }
+narrative_event = { id = RIRSEMUS.111150 }
 }
 }
 					}
@@ -1497,10 +1497,10 @@ wealth = -2000
 hidden_tooltip = {
 random_list = {
 60 = {
-character_event = { id = RIRSEMUS.111149 }
+narrative_event = { id = RIRSEMUS.111149 }
 }
 40 = {
-character_event = { id = RIRSEMUS.111150 }
+narrative_event = { id = RIRSEMUS.111150 }
 }
 }
 					}
