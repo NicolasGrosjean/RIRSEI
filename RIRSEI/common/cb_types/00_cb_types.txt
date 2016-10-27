@@ -14575,7 +14575,7 @@ add_trait = relique_charles
 			prestige = -200
 remove_trait = relique_charles
 }
-		
+}		
 
 	on_fail = {
 		ROOT = {
