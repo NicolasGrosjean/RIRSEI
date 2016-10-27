@@ -6301,9 +6301,8 @@ imperial_reconquest = {
 			de_jure_liege_or_above = k_papal_state
 			de_jure_liege_or_above = k_venice
 			de_jure_liege_or_above = k_asturias
-de_jure_liege_or_above = k_spain
+			de_jure_liege_or_above = k_spain
 			de_jure_liege_or_above = k_britannia
-de_jure_liege_or_above = k_papal_state
 		}
 	}
 	
@@ -7093,7 +7092,6 @@ pagan_subjugation = {
 					ROOT = { grant_title_no_opinion = { target = PREV type = invasion } }
 					add_pressed_claim = PREV
 				}
-				set_defacto_liege = ROOT
 			}
 		}
 	}
