@@ -1030,7 +1030,7 @@ character_event = {
 		has_global_flag = varangian_guard_founded
 OR = {
 		culture_group = north_germanic
-culture_groupe = east_slavic
+culture_group = east_slavic
 }
 		NOR = { 
 			trait = varangian 
@@ -1041,7 +1041,7 @@ culture_groupe = east_slavic
 			is_alive = yes
 OR = {
 culture_group = north_germanic
-culture_groupe = east_slavic
+culture_group = east_slavic
 }
 			is_ruler = yes
 			is_liege_of = ROOT
