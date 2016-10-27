@@ -1,0 +1,7 @@
+#character
+on_startup = {
+	    events = {
+			id = RIRSEI.515254
+			id = RIRSEI.515255
+		}
+}

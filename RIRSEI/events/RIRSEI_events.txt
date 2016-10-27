@@ -3062,6 +3062,39 @@ ROOT = {
 }
 }
 
+character_event = {
+	id = RIRSEI.515254
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = k_papal_state
+		prestige = 1
+		NOT = { year = 1020 }
+		NOT = { has_global_flag = mutare }
+	}
+	
+	immediate = {
+		set_global_flag = mutare
+		any_player = { narrative_event = { id = RIRSEI.242526 } }
+	}
+}
 
-
+character_event = {
+	id = RIRSEI.515255
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = k_papal_state
+		prestige = 1
+		year = 1020
+		NOT = { has_global_flag = central }
+	}
+	
+	immediate = {
+		set_global_flag = central
+		any_player = { narrative_event = { id = RIRSEI.252627 } }
+	}
+}
 	         		             	                 	           
