@@ -113,7 +113,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		trait = berserker
-		NOT = { trait = maimed }
+		can_be_maimed_trigger = yes
 		NOT = { trait = one_legged }
 		is_alive = yes
 	}

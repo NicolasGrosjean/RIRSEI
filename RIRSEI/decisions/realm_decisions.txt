@@ -1728,7 +1728,7 @@ has_global_flag = contro_mutaasha
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
-			NOT = { trait = in_hiding }
+			is_inaccessible_trigger = no
 			war = no
 			any_demesne_title = {
 				is_occupied = no
