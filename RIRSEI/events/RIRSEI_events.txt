@@ -1938,7 +1938,7 @@ option = {
                 any_independent_ruler = {
                    limit = { religion_group = muslim  }
                   
-                   letter_event = { id = RIRSEI.121314}
+                   narrative_event = { id = RIRSEI.121314}
 }
 }
 } 
@@ -2856,7 +2856,7 @@ character_event = {
 option = {
 		name = "EVTOPTA_RIRSEI_474849"
                 FROM = {
-			narrative_event = { id = RIRSEI.464748 }
+			character_event = { id = RIRSEI.464748 }
 		}
 piety = 100
 prestige = -300
@@ -2914,7 +2914,7 @@ option = {
 piety = -200
 prestige = -100
                 FROM = {
-			letter_event = { id = RIRSEI.484950}
+			character_event = { id = RIRSEI.484950}
 		}
 	
 		ai_chance = {
@@ -3023,7 +3023,7 @@ option = {
 piety = -200
 prestige = -100
                 FROM = {
-			letter_event = { id = RIRSEI.515253}
+			character_event = { id = RIRSEI.515253}
 		}
 	
 		ai_chance = {
