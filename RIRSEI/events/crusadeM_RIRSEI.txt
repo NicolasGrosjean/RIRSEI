@@ -219,7 +219,7 @@ character_event = {
 	
 	option = {
 		name = EVT_B_RIRSEIM_4
-		remove_
+		#remove_
 		set_global_flag = avoue_excommunuee
 		set_global_flag = jerusalem_is_a_real_kingdom
 		remove_character_modifier = avoue_st_sepu
