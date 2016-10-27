@@ -65,7 +65,7 @@ aristos = {
 	}
         martial = 6
 
-intrigue = -5
+intrigue_penalty = -5
 	same_opinion = 10
         opposite_opinion = -50
 command_modifier = {
@@ -82,7 +82,7 @@ dunatos = {
 	opposites =  {
 		aristos
 	}
-	martial = -6
+	martial_penalty = -6
 intrigue = 5
 monthly_character_prestige = 0.25
 	same_opinion = 10
