@@ -36,8 +36,8 @@ allow = {
 		effect = {
 revoke_law = emp_autocrate
 revoke_law = emp_dunatos
-military_techpoints = 50
-culture_techpoints = -100
+owner = { military_techpoints = 50 }
+owner = { culture_techpoints = -100 }
 hidden_tooltip = {
 holder_scope = { 
 any_realm_province = {
@@ -95,8 +95,8 @@ always = no
 		effect = {
 revoke_law = emp_autocrate
 revoke_law = emp_aristos
-culture_techpoints = 50
-military_techpoints = -100
+owner = { culture_techpoints = 50 }
+owner = { military_techpoints = -100 }
 hidden_tooltip = {
 holder_scope = { 
 any_realm_province = {
