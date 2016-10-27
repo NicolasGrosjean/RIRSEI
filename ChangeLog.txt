@@ -4,3 +4,5 @@ XX October 2016 v2.6
 MAJOR:
 
 MINOR:
+- Fix some bugs
+- Improve the modularity: remove unnecessary province files

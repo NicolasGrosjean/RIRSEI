@@ -1,0 +1,8 @@
+XX Octobre 2016 v2.6
+--------------------
+
+MAJEUR:
+
+MINEUR:
+- Corrige certains bugs
+- Améliore la modularité: suppression des fichiers de provinces non nécessaires
