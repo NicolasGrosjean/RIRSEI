@@ -239,8 +239,8 @@ character_event = {
 }
 
 letter_event = {
-    id = RIRSEI.5
-	desc = EVTDESC_RIRSEI_5
+    id = RIRSEIM.5
+	desc = EVTDESC_RIRSEIM_5
 	
 is_triggered_only = yes
 
@@ -255,8 +255,8 @@ option = {
 }
 
 letter_event = {
-    id = RIRSEI.6
-	desc = EVTDESC_RIRSEI_6
+    id = RIRSEIM.6
+	desc = EVTDESC_RIRSEIM_6
 	
 is_triggered_only = yes
 
