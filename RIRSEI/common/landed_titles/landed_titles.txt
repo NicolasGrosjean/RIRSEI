@@ -37522,6 +37522,7 @@ e_deccan = {
 				b_konni = { # Fictional - For Prosperity
 				}
 				b_balijipeta = { # Fictional - For Prosperity
+				}
 			}
 			c_balkonda = {
 				color={ 205 39 45 }
