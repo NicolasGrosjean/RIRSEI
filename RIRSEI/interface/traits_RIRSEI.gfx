@@ -156,7 +156,7 @@ spriteType = {
 		effectFile = "gfx/FX/buttonstate.lua"
 }
 spriteType = {
-		name = "GFX_Vs_sancti_petri"
+		name = "GFX_trait_Vs_sancti_petri"
 		texturefile = "gfx/traits/vat_trat.tga"
 		noOfFrames = 1
 		norefcount = yes
