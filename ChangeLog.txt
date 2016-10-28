@@ -5,5 +5,6 @@ MAJOR:
 - Update to 2.6.2
 
 MINOR:
+- Display the presentation event at day one
 - Fix some bugs
 - Improve the modularity: remove unnecessary province files

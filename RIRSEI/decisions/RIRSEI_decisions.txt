@@ -2774,35 +2774,6 @@ k_bavaria = {
 			factor = 1
 		}
 }
-pape_script_mutation = {
-		is_high_prio = yes
-		potential = {
-			
-			
-			
-			NOT = { has_global_flag = mutare }
-			has_landed_title = k_papal_state
-                        NOT = { year = 1020 }
-			
-
-		}
-		allow = {
-			prestige = 1
-			
-			
-		}
-		effect = {
-any_playable_ruler = {
-				
-				
-				narrative_event = { id = RIRSEI.242526 }		 
-}
-set_global_flag = mutare
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 pape_script_central = {
 		is_high_prio = yes
 		potential = {

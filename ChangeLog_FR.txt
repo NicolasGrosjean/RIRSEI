@@ -5,5 +5,6 @@ MAJEUR:
 - Mise à jour avec la 2.6.2
 
 MINEUR:
+- Affiche l'event de présentation dès le début de la partie
 - Corrige certains bugs
 - Améliore la modularité: suppression des fichiers de provinces non nécessaires
