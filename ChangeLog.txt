@@ -5,6 +5,7 @@ MAJOR:
 - Update to 2.6.2
 
 MINOR:
+- Display only the loading screens of the mod
 - Display the presentation event at day one
 - Fix some bugs
-- Improve the modularity: remove unnecessary province files
+- Improve the modularity: remove unnecessary province files and other files
