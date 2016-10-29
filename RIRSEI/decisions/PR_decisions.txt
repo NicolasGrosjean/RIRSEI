@@ -119,6 +119,26 @@ narrative_event = { id = RIRPR.903}
 
 }
 
+	Emp_va_canossa = {
+		potential = {
+			has_landed_title = e_hre
+			has_character_flag = qi_emp_exco
+			NOT = { has_character_flag = emp_canossa }
+		}
+		allow = {
+			wealth = 10
+		}
+		effect = {
+			wealth = -10
+			custom_tooltip = { text = TOOLTIPempCanossa }
+			set_character_flag = emp_canossa			
+			narrative_event = { id = RIRPR.914 days = 30 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 Pape_relance_exco = {
 		is_high_prio = yes
 		potential = {

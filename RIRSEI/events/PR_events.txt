@@ -394,7 +394,7 @@ ROOT = {
 any_vassal = { narrative_event = { id = RIRPR.911 } 
 }
 }
-
+custom_tooltip = { text = TOOLTIPRIRPR910}
 }
 }
 
