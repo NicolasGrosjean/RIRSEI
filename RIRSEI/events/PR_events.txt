@@ -1451,62 +1451,8 @@ letter_event = {
 is_triggered_only = yes
 
 option = {
- name = "EVTOPTA_RIRPR_930"
-if = {
-limit = {
-NOT = { has_character_flag = rex_vss_1 }
-NOT = { has_character_flag = rex_vss_2 }
-NOT = { has_character_flag = rex_vss_3 }
-NOT = { has_character_flag = rex_vss_4 }
-NOT = { has_character_flag = rex_vss_5 }
-}
-set_character_flag = rex_vss_1
-}
-
-if = {
-limit = {
-has_character_flag = rex_vss_1 
-NOT = { has_character_flag = rex_vss_2 }
-NOT = { has_character_flag = rex_vss_3 }
-NOT = { has_character_flag = rex_vss_4 }
-NOT = { has_character_flag = rex_vss_5 }
-}
-set_character_flag = rex_vss_2
-}
-
-if = {
-limit = {
-has_character_flag = rex_vss_1 
-has_character_flag = rex_vss_2
-NOT = { has_character_flag = rex_vss_3 }
-NOT = { has_character_flag = rex_vss_4 }
-NOT = { has_character_flag = rex_vss_5 }
-}
-set_character_flag = rex_vss_3
-}
-
-if = {
-limit = {
-has_character_flag = rex_vss_1 
-has_character_flag = rex_vss_2
-has_character_flag = rex_vss_3
-NOT = { has_character_flag = rex_vss_4 }
-NOT = { has_character_flag = rex_vss_5 }
-}
-set_character_flag = rex_vss_4
-}
-
-if = {
-limit = {
-has_character_flag = rex_vss_1 
-has_character_flag = rex_vss_2
-has_character_flag = rex_vss_3
-has_character_flag = rex_vss_4
-NOT = { has_character_flag = rex_vss_5 }
-}
-set_character_flag = rex_vss_5
-}
-
+	name = "EVTOPTA_RIRPR_930"
+	change_variable = { which = "rex_vss" value = 1 }
 }
 }
 #Unam Sanctam

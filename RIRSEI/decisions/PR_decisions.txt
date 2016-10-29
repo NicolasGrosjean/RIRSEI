@@ -663,7 +663,7 @@ war = no
 narrative_event = { id = RIRPR.929}
 }
 set_character_flag = verip_pr_rex 
-
+set_variable = { which = "rex_vss" value = 0 }
 	  
 		}
 		ai_will_do = {
@@ -775,15 +775,12 @@ OR = {
 trait = proud
 trait = ambitious
 }
-has_character_flag = rex_vss_1 
-has_character_flag = rex_vss_2
-has_character_flag = rex_vss_3
-has_character_flag = rex_vss_4
-has_character_flag = rex_vss_5 
+had_character_flag = { flag = verip_pr_rex days = 120 } 
 				
 		}
 		effect = {
-		
+if = {
+limit = { check_variable = { which = "rex_vss" value = 5 } }	
 set_global_flag = bulle_un_sct
 		any_independent_ruler = {
 limit = {
@@ -795,8 +792,12 @@ religion = ROOT
 }
 narrative_event = { id = RIRPR.931}
 }
+}
 
-	  
+if = {
+limit = { NOT = {check_variable = { which = "rex_vss" value = 5 } } }
+clr_character_flag = verip_pr_rex
+}	  
 		}
 		ai_will_do = {
 			factor = 1
