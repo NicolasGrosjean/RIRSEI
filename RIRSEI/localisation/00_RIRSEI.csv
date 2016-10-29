@@ -459,7 +459,7 @@ EVTOPTA_RIRSEI_272829;Carolus Magnus no longer protects us !; Charlemagne ne nou
 CB_NAME_RELIQUE_RULER;Seize the insigna of Carolus Magnus;S'emparer des insignes carolingiennes;;;;;;;;x;;;;;;;;;;;;
 WAR_NAME_RELIQUE_RULER;$ORDER$ War for the control of the Carolingians insigna $FIRST_ADJ$-$SECOND_ADJ$;$ORDER$ Guerre de récupération des insignes carolingiennes $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;; ;;;;;;;
 CB_NAME_GUISCARD;Invasion of Romania;Invasion de la Romanie;;;;;;;;x;;;;;;;;;;;;
-WAR_NAME_GUISCARD;$ORDER$ Invasion War $FIRST_ADJ$-$SECOND_ADJ;$ORDER$ Guerre d'invasion $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
+WAR_NAME_GUISCARD;$ORDER$ Invasion War $FIRST_ADJ$-$SECOND_ADJ$;$ORDER$ Guerre d'invasion $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
 conquete_byz_sicile;Invade Romania;Envahir la Romanie;;;;;;;x;;;;;;;;;;;;;
 conquete_byz_sicile_desc;§Y$TARGET$§! has the Eastern Empire but he is a schismatic Christian. Since we're land to Empire of the East, we must reverse the Basileus;§Y$TARGET$§! possède l'Empire d'Orient alors qu'il est un chrétien schismatique. Etant donné que nous sommes terre d'Empire d'Orient, nous devons renverser le Basileus;;;;;;;;;x;;;;;;;;;;;
 pape_hongrie_desc;We have converted to catholicism, and recognized the Holy Father as the spritual guide of the christian world. But we refuse to bow in front of the Roman Emperor ! To avoid vassalisation by the Empire, it is necessary that the Pope grants us a royal crown, the crown of Hungary !;Nous nous sommes convertis au catholicisme, et nous avons reconnu le Saint-Père comme le seigneur spirituel du monde chrétien. Mais nous refusons de plier genou devant l'Empereur des Romains. Pour écarter tout danger d'une vassalisation, il faut absolument que le Pontifex Maximus nous accorde de ses mains une couronne royale, la couronne de la Hongrie !;;;;;;;;;;;x;;;;;;;;;
@@ -1078,7 +1078,7 @@ que_emp_victorieux;;L'Empereur a remporté la Querelle des Investitures : le pouv
 imp_sacer;;Monarcha Mundi;;;;;;;;x;;;;;;;;;;
 imp_sacer_desc;;Ayant gagné la Querelle des Investitures, l'Empereur est considéré comme le lieutenant du Christ sur Terre;;;;;;;;x;;;;;;;;;;
 CB_NAME_EMPQUER;Invasion of Romania;Revendication Impériale;;;;;;;;x;;;;;;;;;;;;
-WAR_NAME_EMPQUER;$ORDER$ Invasion War $FIRST_ADJ$-$SECOND_ADJ;$ORDER$ Guerre de revendication impériale $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
+WAR_NAME_EMPQUER;$ORDER$ Invasion War $FIRST_ADJ$-$SECOND_ADJ$;$ORDER$ Guerre de revendication impériale $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
 emp_mon_mund;Invade Romania;S'emparer de ce royaume catholique indépendant;;;;;;;x;;;;;;;;;;;;;
 emp_mon_mund_desc;§Y$TARGET$§! has the Eastern Empire but he is a schismatic Christian. Since we're land to Empire of the East, we must reverse the Basileus;§Y$TARGET$§! est un souverain catholique indépendant alors que nous sommes Imperator Romanorum, Vicaire du Christ sur Terre. Nous possédons le droit légitime de revendiquer ce royaume, puisque nous sommes le monarcha mundi, au nom du Père, du Fils et du saint Esprit.;;;;;;;;;x;;;;;;;;;;;
 EVTITLE_RIRPR_923;;Victoire de l'Empereur sur la Papauté !;;;;;;;;x;;;;;;;;;;
