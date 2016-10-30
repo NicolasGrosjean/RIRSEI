@@ -5,6 +5,8 @@ MAJEUR:
 - Mise à jour avec la 2.6.2
 
 MINEUR:
+- Enlève le portrait du Pape dans l'event de présentation
+- Ajoute une décision pour se rendre à Canossa dès que l'on est excommunié
 - N'affiche que les images de chargements du mods (et non plus les dernières du jeu de base)
 - Affiche l'event de présentation dès le début de la partie
 - Corrige certains bugs

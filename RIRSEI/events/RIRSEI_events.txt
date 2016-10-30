@@ -2277,6 +2277,8 @@ narrative_event = {
 	title = EVTNAME_RIRSEI_242526
 	desc = EVTDESC_RIRSEI_242526
 	picture = GFX_evt_mutfeo
+	
+	hide_from = yes
 
 	is_triggered_only = yes
 	
@@ -2293,6 +2295,8 @@ narrative_event = {
 	title = EVTNAME_RIRSEI_252627
 	desc = EVTDESC_RIRSEI_252627
 	picture = GFX_evt_phiphi
+	
+	hide_from = yes
 	
 	is_triggered_only = yes
 	
