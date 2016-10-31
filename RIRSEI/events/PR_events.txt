@@ -1586,13 +1586,17 @@ letter_event = {
        
 is_triggered_only = yes
 
-immediate = {
-ROOT = {
-primary_title = {
-destroy_landed_title = THIS
-}
-}
-}
+	immediate = {
+		any_demesne_title  = {
+			limit = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			destroy_landed_title = THIS
+		}
+	}
 
 option = {
  name = "EVTOPTA_RIRPR_934"
