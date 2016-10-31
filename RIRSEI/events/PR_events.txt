@@ -1431,30 +1431,10 @@ is_triggered_only = yes
 
 option = {
  name = "EVTOPTA_RIRPR_929"
-hidden_tooltip = {
-FROM = { letter_event = { id = RIRPR.930 } }
 }
 
 }
 
-}
-# Verification des vassaux
-letter_event = {
-        id = RIRPR.930
-	title = EVTITLE_RIRPR_930
-	desc = "EVTDESC_RIRPR_930"
-	sound = church_bells
-	picture = GFX_evt_papeemportquer
-       
-       
-       
-is_triggered_only = yes
-
-option = {
-	name = "EVTOPTA_RIRPR_930"
-	change_variable = { which = "rex_vss" value = 1 }
-}
-}
 #Unam Sanctam
 narrative_event = {
         id = RIRPR.931

@@ -683,7 +683,6 @@ war = no
 narrative_event = { id = RIRPR.929}
 }
 set_character_flag = verip_pr_rex 
-set_variable = { which = "rex_vss" value = 0 }
 	  
 		}
 		ai_will_do = {
@@ -796,11 +795,16 @@ trait = proud
 trait = ambitious
 }
 had_character_flag = { flag = verip_pr_rex days = 120 } 
+
+any_independent_ruler = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+count = 5
+} 
 				
 		}
 		effect = {
-if = {
-limit = { check_variable = { which = "rex_vss" value = 5 } }	
 set_global_flag = bulle_un_sct
 		any_independent_ruler = {
 limit = {
@@ -811,12 +815,6 @@ tier = EMPEROR
 religion = ROOT
 }
 narrative_event = { id = RIRPR.931}
-}
-}
-
-if = {
-limit = { NOT = {check_variable = { which = "rex_vss" value = 5 } } }
-clr_character_flag = verip_pr_rex
 }	  
 		}
 		ai_will_do = {
