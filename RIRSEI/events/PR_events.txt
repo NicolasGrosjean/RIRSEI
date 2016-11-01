@@ -122,6 +122,7 @@ modifier = {
 piety = 200
 prestige = -2000
 set_global_flag = que_investvic
+FROM = { set_character_flag = que_invest_winner }
 clr_global_flag = test_inves_un
 religion_authority = { modifier = que_invest_gagne }
 e_hre = {
@@ -283,6 +284,7 @@ piety = 100
 prestige = -2000
 set_global_flag = que_investvic
 clr_global_flag = test_inves_un
+FROM = { set_character_flag = que_invest_winner }
 e_hre = {
 revoke_law = investiture_law_1
 add_law_w_cooldown = investiture_law_0
@@ -517,6 +519,7 @@ piety = 100
 prestige = -2500
 set_global_flag = que_investvic
 clr_global_flag = test_inves_un
+FROM = { set_character_flag = que_invest_winner }
 e_hre = {
 revoke_law = investiture_law_1
 add_law_w_cooldown = investiture_law_0
@@ -639,6 +642,7 @@ set_global_flag = que_investvic
 clr_character_flag = qi_emp_exco
 clr_global_flag = verif_emp_exco
 clr_global_flag = test_inves_un
+k_papal_state = { holder_scope = { set_character_flag = que_invest_winner } }
 e_hre = {
 revoke_law = investiture_law_1
 add_law_w_cooldown = investiture_law_0
