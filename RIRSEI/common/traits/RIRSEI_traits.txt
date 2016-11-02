@@ -268,7 +268,6 @@ imp_sacer = {
 Vs_sancti_petri = {
         church_opinion = 40
 	vassal_opinion = -10
-        rel_head_opinion = 10
 	monthly_character_piety = 0.5
         global_tax_modifier = 0.15
 	
