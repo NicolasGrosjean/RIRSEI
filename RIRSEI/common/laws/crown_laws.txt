@@ -589,7 +589,10 @@ NOT = { has_landed_title = e_hre }
 			}
 		}
 allow = {
-			NOT = { has_global_flag = que_investvic }
+			OR = {
+				NOT = { has_global_flag = que_investvic }
+				has_global_flag = emp_vic_quer
+			}
 		}
 		revoke_allowed = {
 			always = no

@@ -603,7 +603,8 @@ NOT = { trait = excommunicated }
 primary_title = { tier = KING }	
 NOT = { trait = Vs_sancti_petri }
 NOT = { has_landed_title = e_hre }
-NOT = { has_global_flag = agnani_att_pap }	
+NOT = { has_global_flag = agnani_att_pap }
+NOT = { has_global_flag = emp_vic_quer }	
 }		
 		allow = {
 NOT = { has_law = crown_authority_3 }

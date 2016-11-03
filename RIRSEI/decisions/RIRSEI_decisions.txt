@@ -891,6 +891,8 @@ has_law = centralization_4
 }
 effect = {
          set_global_flag = ren_imp
+		 set_global_flag = emp_vic_quer # It is like the Emperor won the investiture controversy
+		 # Remove que_investvic?
          character_event = { id = RIRSEI.555555}
 }                        
 ai_will_do = {
