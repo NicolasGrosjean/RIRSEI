@@ -8956,7 +8956,70 @@ k_sweden = {
 			color={ 50 50 160 }
 			color2={ 255 255 255 }
 			capital = 285 # Hälsingland
-
+			
+			finnish=Lappi
+			lappish=Sápmi
+			
+			c_lappland = {
+				color={ 60 60 130 }
+				color2={ 255 255 255 }
+				
+				finnish=Lappi
+				lappish=Sápmi
+				
+				b_lycksele = {
+				}
+				b_asele = {
+				}
+				b_sorsele = {
+				}
+				b_arvidsjaur = {
+				}
+				b_bergvattnet = {
+				}
+				b_arjeplog = {
+				}
+				b_gallivare = {
+					norwegian = "Gellivare"
+					danish = "Gellivare"
+				}
+				b_kiruna = {
+				}
+			}
+			
+			c_vasterbotten = {
+				color={ 25 43 167 }
+				color={ 70 70 156 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Vesterbotten"
+				danish = "Vesterbotten"
+				norse = "Vesterbotn"
+				finnish=Länsipohja
+				lappish=Länsipohja
+				
+				b_umea = {
+					finnish=Uumaja
+					lappish=Ume
+				}
+				b_bygdea = {
+				}
+				b_skelleftea = {
+				}
+				b_lovanger = {
+					norwegian = "Løvånger"
+					danish = "Løvånger"
+				}
+				b_pitea = {
+				}
+				b_lulea = {
+				}
+				b_kalix = {
+				}
+				b_tornea = {
+				}
+			}
+			
 			c_angermanland = {
 				color={ 24 0 255 }
 				color2={ 255 255 255 }
@@ -10206,7 +10269,51 @@ k_sweden = {
 				}
 				b_alstahaug = {
 				}
-			}			
+			}
+			c_finnmark = {
+				color={ 174 161 110 }
+				color2={ 255 255 255 }
+				
+				lappish=Finnmárku
+				
+				b_varghoeya = {
+				}
+				b_vardohus = {
+				}
+				b_ostervagen = {
+				}
+				b_malangen = {
+				}
+				b_hammerfest = {
+				}
+				b_karsloy = {
+				}
+				b_piselvnes = {
+				}
+				b_tromso = {
+				}
+			}
+			c_nordland = {
+				color={ 30 150 189 }
+				color2={ 255 255 255 }
+				
+				b_rost = {
+				}
+				b_kabelvag = {
+				}
+				b_bodo = {
+				}
+				b_narvik = {
+				}
+				b_rodoy = {
+				}
+				b_andenes = {
+				}
+				b_beiarn = {
+				}
+				b_harstad = {
+				}
+			}
 		}
 		d_jamtland = {
 			color={ 45 85 245 }
@@ -10282,7 +10389,88 @@ k_sweden = {
 				}
 			}
 		}
+		
+		d_kola = {
+			color={ 194 171 117 }
+
+		#	tribe = yes
+	
+			culture = lappish
 			
+	
+			c_kola = {
+				color={ 145 35 35 }
+				color2={ 255 255 255 }
+			
+				b_kola = {
+				}
+				b_mafelskoi = {
+				}
+				b_pechenga = {
+				}
+				b_waranger = {
+				}
+				b_tre = {
+				}
+				b_lovozero = {
+				}
+				b_molovskoi = {
+				}
+				b_jekanskoi = {
+				}
+			}
+			c_kandalax = {
+				color={ 135 60 60 }
+				color2={ 255 255 255 }
+				
+				swedish = "Kandalax"
+				norse = "Kandalax"
+				norwegian = "Kandalax"
+				danish = "Kandalax"
+			
+				b_kantalahti = {
+					swedish = "Kandalax"
+					norse = "Kandalax"
+					norwegian = "Kandalax"
+					danish = "Kandalax"
+				}
+				b_umba = {
+				}
+				b_varzuga = {
+				}
+				b_lekastrom = {
+				}
+				b_sarapo = {
+				}
+				b_kolsky = {
+				}
+				b_ponoy = {
+				}
+				b_pyaozero = {
+				}
+			}
+			c_kemi = {
+				color={ 130 65 55 }
+				color2={ 255 255 255 }
+			
+				b_kemi = {
+				}
+				b_neiden = {
+				}
+				b_rovaniemi = {
+				}
+				b_inari = {
+				}
+				b_tornio = {
+				}
+				b_kemijarvi = {
+				}
+				b_utsjoki = {
+				}
+				b_savukoski = {
+				}
+			}
+		}			
 		d_esthonia = {
 			color={ 150 75 75 }
 			color2={ 255 255 255 }
@@ -10755,248 +10943,6 @@ k_sweden = {
 			}
 		}
 	}
-
-	k_sapmi = {
-		color = { 255 125 69 }
-		color2={ 255 255 255 }
-		
-		capital = 279 # Sápmi
-		
-		culture = lappish
-		
-		finnish_pagan_reformed = 350 # Crusade target weight
-		baltic_pagan_reformed = 50
-		slavic_pagan_reformed = 25
-		catholic = 25
-		norse_pagan_reformed = 50 # Crusade target weight
-		
-		norse = Norðrríki
-		swedish = Nordarike
-		norwegian = Nordarike
-		danish = Nordarike
-		finnish=Lappi
-		lappish=Sápmi
-		
-		# Creation/usurpation trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture_group = finno_ugric
-				}
-			}
-		}
-		
-		d_sapmi = {
-			color={ 231 64 32 }
-			color2={ 255 255 255 }
-			
-			capital = 279 # Hälsingland
-			
-			norse = Norrland
-			norwegian = Norrland
-			swedish = Norrland
-			danish = Norrland
-			finnish=Lappi
-			lappish=Sápmi
-		
-			c_lappland = {
-				color={ 60 60 130 }
-				color2={ 255 255 255 }
-				
-				finnish=Lappi
-				lappish=Sápmi
-				
-				b_lycksele = {
-				}
-				b_asele = {
-				}
-				b_sorsele = {
-				}
-				b_arvidsjaur = {
-				}
-				b_bergvattnet = {
-				}
-				b_arjeplog = {
-				}
-				b_gallivare = {
-					norwegian = "Gellivare"
-					danish = "Gellivare"
-				}
-				b_kiruna = {
-				}
-			}
-			c_vasterbotten = {
-				color={ 25 43 167 }
-				color={ 70 70 156 }
-				color2={ 255 255 255 }
-				
-				norwegian = "Vesterbotten"
-				danish = "Vesterbotten"
-				norse = "Vesterbotn"
-				finnish=Länsipohja
-				lappish=Länsipohja
-				
-				b_umea = {
-					finnish=Uumaja
-					lappish=Ume
-				}
-				b_bygdea = {
-				}
-				b_skelleftea = {
-				}
-				b_lovanger = {
-					norwegian = "Løvånger"
-					danish = "Løvånger"
-				}
-				b_pitea = {
-				}
-				b_lulea = {
-				}
-				b_kalix = {
-				}
-				b_tornea = {
-				}
-			}
-		}
-		
-		d_finnmark = {
-			color={ 200 80 30 }
-			color2={ 255 255 255 }
-			
-			capital = 389 # Finnmark
-			
-			lappish=Finnmárku
-			
-			c_finnmark = {
-				color={ 174 161 110 }
-				color2={ 255 255 255 }
-				
-				lappish=Finnmárku
-				
-				b_varghoeya = {
-				}
-				b_vardohus = {
-				}
-				b_ostervagen = {
-				}
-				b_malangen = {
-				}
-				b_hammerfest = {
-				}
-				b_karsloy = {
-				}
-				b_piselvnes = {
-				}
-				b_tromso = {
-				}
-			}
-			c_nordland = {
-				color={ 30 150 189 }
-				color2={ 255 255 255 }
-				
-				b_rost = {
-				}
-				b_kabelvag = {
-				}
-				b_bodo = {
-				}
-				b_narvik = {
-				}
-				b_rodoy = {
-				}
-				b_andenes = {
-				}
-				b_beiarn = {
-				}
-				b_harstad = {
-				}
-			}
-		}
-		
-		d_kola = {
-			color={ 194 171 117 }
-
-		#	tribe = yes
-	
-			culture = lappish
-			
-	
-			c_kola = {
-				color={ 145 35 35 }
-				color2={ 255 255 255 }
-			
-				b_kola = {
-				}
-				b_mafelskoi = {
-				}
-				b_pechenga = {
-				}
-				b_waranger = {
-				}
-				b_tre = {
-				}
-				b_lovozero = {
-				}
-				b_molovskoi = {
-				}
-				b_jekanskoi = {
-				}
-			}
-			c_kandalax = {
-				color={ 135 60 60 }
-				color2={ 255 255 255 }
-				
-				swedish = "Kandalax"
-				norse = "Kandalax"
-				norwegian = "Kandalax"
-				danish = "Kandalax"
-			
-				b_kantalahti = {
-					swedish = "Kandalax"
-					norse = "Kandalax"
-					norwegian = "Kandalax"
-					danish = "Kandalax"
-				}
-				b_umba = {
-				}
-				b_varzuga = {
-				}
-				b_lekastrom = {
-				}
-				b_sarapo = {
-				}
-				b_kolsky = {
-				}
-				b_ponoy = {
-				}
-				b_pyaozero = {
-				}
-			}
-			c_kemi = {
-				color={ 130 65 55 }
-				color2={ 255 255 255 }
-			
-				b_kemi = {
-				}
-				b_neiden = {
-				}
-				b_rovaniemi = {
-				}
-				b_inari = {
-				}
-				b_tornio = {
-				}
-				b_kemijarvi = {
-				}
-				b_utsjoki = {
-				}
-				b_savukoski = {
-				}
-			}
-		}
-	}
-
 
 	k_poland = {
 		color={ 150 23 23 }
