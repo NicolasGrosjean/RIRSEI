@@ -1409,6 +1409,13 @@ narrative_event = {
 	war = no
 	
 	trigger = {
+		NOT = {
+			has_game_rule = {
+				name = supernatural_events
+				value = off
+			}
+		}
+
 		in_command = no
 
 		primary_title = { temporary = no }
