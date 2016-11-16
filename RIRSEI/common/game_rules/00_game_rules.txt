@@ -12,6 +12,127 @@
 #	}
 # }
 
+aztec_invasion = {
+	name = "RULE_AZTEC_INVASION"
+	dlc = "Sunset Invasion"
+	option = {
+		name = historical
+		text = "RULE_AZTEC_13TH"
+		desc = "RULE_AZTEC_INVASION_HISTORICAL_DESC"
+	}
+	option = {
+		name = random
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_AZTEC_INVASION_RANDOM_DESC"
+	}
+	option = {
+		name = delayed_random
+		text = "RULE_OPTION_DELAYED_RANDOM"
+		desc = "RULE_AZTEC_INVASION_DELAYED_RANDOM_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_AZTEC_INVASION_OFF_DESC"
+	}
+}
+
+shattered_retreat = {
+	name = "RULE_SHATTERED_RETREAT"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SHATTERED_RETREAT_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SHATTERED_RETREAT_OFF_DESC"
+	}
+}
+
+diplo_assassination = {
+	name = "RULE_DIPLO_ASSASSINATION"
+	option = {
+		name = off
+		text = "RULE_DIPLO_ASSASSINATION_OFF"
+		desc = "RULE_DIPLO_ASSASSINATION_OFF_DESC"
+	}
+	option = {
+		name = on
+		achievements = no
+		text = "RULE_DIPLO_ASSASSINATION_ON"
+		desc = "RULE_DIPLO_ASSASSINATION_ON_DESC"
+	}
+}
+
+ai_seduction = {
+	name = "RULE_AI_SEDUCTION"
+	dlc = "Way of Life"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_AI_SEDUCTION_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_AI_SEDUCTION_OFF_DESC"
+	}
+}
+
+ai_intrigue = {
+	name = "RULE_AI_INTRIGUE"
+	dlc = "Way of Life"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_AI_INTRIGUE_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_AI_INTRIGUE_OFF_DESC"
+	}
+}
+
+dueling = {
+	name = "RULE_DUELING"
+	dlc = "Way of Life"
+	option = {
+		name = default
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_DUELING_DEFAULT_DESC"
+	}
+	option = {
+		name = restricted
+		text = "RULE_OPTION_RESTRICTED"
+		desc = "RULE_DUELING_RESTRICTED_DESC"
+		achievements = no
+	}
+	option = {
+		name = unrestricted
+		text = "RULE_OPTION_UNRESTRICTED"
+		desc = "RULE_DUELING_UNRESTRICTED_DESC"
+		achievements = no
+	}
+}
+
+punishment_release_prisoner = {
+	name = "RULE_PUNISHMENT_RELEASE_PRISONER"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_PUNISHMENT_RELEASE_PRISONER_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_PUNISHMENT_RELEASE_PRISONER_OFF_DESC"
+		achievements = no
+	}
+}
+
 epidemics = {
 	name = "RULE_EPIDEMICS"
 	dlc = "The Reaper's Due"
@@ -41,31 +162,6 @@ mongol_invasion = {
 	}
 }
 
-aztec_invasion = {
-	name = "RULE_AZTEC_INVASION"
-	dlc = "Sunset Invasion"
-	option = {
-		name = historical
-		text = "RULE_AZTEC_13TH"
-		desc = "RULE_AZTEC_INVASION_HISTORICAL_DESC"
-	}
-	option = {
-		name = random
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_AZTEC_INVASION_RANDOM_DESC"
-	}
-	option = {
-		name = delayed_random
-		text = "RULE_OPTION_DELAYED_RANDOM"
-		desc = "RULE_AZTEC_INVASION_DELAYED_RANDOM_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_AZTEC_INVASION_OFF_DESC"
-	}
-}
-
 turkic_invasions = {
 	name = "RULE_TURKIC_INVASIONS"
 	option = {
@@ -82,20 +178,6 @@ non_epidemic_diseases = {
 		name = default
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_NON_EPIDEMIC_DISEASES_DEFAULT_DESC"
-	}
-}
-
-shattered_retreat = {
-	name = "RULE_SHATTERED_RETREAT"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_SHATTERED_RETREAT_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_SHATTERED_RETREAT_OFF_DESC"
 	}
 }
 
@@ -306,88 +388,6 @@ regencies = {
 		name = on
 		text = "RULE_OPTION_ON"
 		desc = "RULE_REGENCIES_ON_DESC"
-	}
-}
-
-diplo_assassination = {
-	name = "RULE_DIPLO_ASSASSINATION"
-	option = {
-		name = off
-		text = "RULE_DIPLO_ASSASSINATION_OFF"
-		desc = "RULE_DIPLO_ASSASSINATION_OFF_DESC"
-	}
-	option = {
-		name = on
-		achievements = no
-		text = "RULE_DIPLO_ASSASSINATION_ON"
-		desc = "RULE_DIPLO_ASSASSINATION_ON_DESC"
-	}
-}
-
-ai_seduction = {
-	name = "RULE_AI_SEDUCTION"
-	dlc = "Way of Life"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_AI_SEDUCTION_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_AI_SEDUCTION_OFF_DESC"
-	}
-}
-
-ai_intrigue = {
-	name = "RULE_AI_INTRIGUE"
-	dlc = "Way of Life"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_AI_INTRIGUE_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_AI_INTRIGUE_OFF_DESC"
-	}
-}
-
-dueling = {
-	name = "RULE_DUELING"
-	dlc = "Way of Life"
-	option = {
-		name = default
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_DUELING_DEFAULT_DESC"
-	}
-	option = {
-		name = restricted
-		text = "RULE_OPTION_RESTRICTED"
-		desc = "RULE_DUELING_RESTRICTED_DESC"
-		achievements = no
-	}
-	option = {
-		name = unrestricted
-		text = "RULE_OPTION_UNRESTRICTED"
-		desc = "RULE_DUELING_UNRESTRICTED_DESC"
-		achievements = no
-	}
-}
-
-punishment_release_prisoner = {
-	name = "RULE_PUNISHMENT_RELEASE_PRISONER"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_PUNISHMENT_RELEASE_PRISONER_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_PUNISHMENT_RELEASE_PRISONER_OFF_DESC"
-		achievements = no
 	}
 }
 
