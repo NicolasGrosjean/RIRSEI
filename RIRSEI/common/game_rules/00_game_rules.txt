@@ -12,6 +12,9 @@
 #	}
 # }
 
+# NOTA : In RIRSEI, we use 'achievements = no' to separe the modifiable from unmodifiable rules
+
+# Modifiable rules
 aztec_invasion = {
 	name = "RULE_AZTEC_INVASION"
 	dlc = "Sunset Invasion"
@@ -60,7 +63,6 @@ diplo_assassination = {
 	}
 	option = {
 		name = on
-		achievements = no
 		text = "RULE_DIPLO_ASSASSINATION_ON"
 		desc = "RULE_DIPLO_ASSASSINATION_ON_DESC"
 	}
@@ -108,13 +110,11 @@ dueling = {
 		name = restricted
 		text = "RULE_OPTION_RESTRICTED"
 		desc = "RULE_DUELING_RESTRICTED_DESC"
-		achievements = no
 	}
 	option = {
 		name = unrestricted
 		text = "RULE_OPTION_UNRESTRICTED"
 		desc = "RULE_DUELING_UNRESTRICTED_DESC"
-		achievements = no
 	}
 }
 
@@ -129,15 +129,16 @@ punishment_release_prisoner = {
 		name = off
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_PUNISHMENT_RELEASE_PRISONER_OFF_DESC"
-		achievements = no
 	}
 }
 
+# Unmodifiable rules
 epidemics = {
 	name = "RULE_EPIDEMICS"
 	dlc = "The Reaper's Due"
 	option = {
 		name = historical
+		achievements = no
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_EPIDEMICS_HISTORICAL_DESC"
 	}
@@ -148,6 +149,7 @@ minor_epidemics = {
 	dlc = "The Reaper's Due"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_EPIDEMICS_DEFAULT_DESC"
 	}
@@ -157,6 +159,7 @@ mongol_invasion = {
 	name = "RULE_MONGOL_INVASION"
 	option = {
 		name = historical
+		achievements = no
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_MONGOL_INVASION_HISTORICAL_DESC"
 	}
@@ -166,6 +169,7 @@ turkic_invasions = {
 	name = "RULE_TURKIC_INVASIONS"
 	option = {
 		name = historical
+		achievements = no
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_TURKIC_INVASIONS_HISTORICAL_DESC"
 	}
@@ -176,6 +180,7 @@ non_epidemic_diseases = {
 	dlc = "The Reaper's Due"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_NON_EPIDEMIC_DISEASES_DEFAULT_DESC"
 	}
@@ -185,6 +190,7 @@ defensive_pacts = {
 	name = "RULE_DEFENSIVE_PACTS"
 	option = {
 		name = off
+		achievements = no
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_DEFENSIVE_PACTS_OFF_DESC"
 	}
@@ -194,6 +200,7 @@ gender = {
 	name = "RULE_GENDER"
 	option = {
 		name = historical
+		achievements = no
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_GENDER_HISTORICAL_DESC"
 	}
@@ -203,6 +210,7 @@ supernatural_events = {
 	name = "RULE_SUPERNATURAL"
 	option = {
 		name = off
+		achievements = no
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_SUPERNATURAL_OFF_DESC"
 	}
@@ -212,6 +220,7 @@ dejure_drift = {
 	name = "RULE_DEJURE"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_DEJURE_DEFAULT_DESC"
 	}
@@ -221,6 +230,7 @@ dejure_drift_duration = {
 	name = "RULE_DEJURE_DURATION"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_DEJURE_DURATION_DEFAULT_DESC"
 	}
@@ -230,6 +240,7 @@ de_jure_requirement = {
 	name = "RULE_DE_JURE_REQUIREMENT"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_DE_JURE_REQUIREMENT_DEFAULT_DESC"
 	}
@@ -240,6 +251,7 @@ nomad_stability = {
 	dlc = "Horse Lords"
 	option = {
 		name = unstable
+		achievements = no
 		text = "RULE_OPTION_NOMAD_STABILITY_UNSTABLE"
 		desc = "RULE_OPTION_NOMAD_STABILITY_UNSTABLE_DESC"
 	}
@@ -249,6 +261,7 @@ culture_conversion = {
 	name = "RULE_CULTURE_CONVERSION"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_CULTURE_CONVERSION_DEFAULT_DESC"
 	}
@@ -258,6 +271,7 @@ religious_conversion = {
 	name = "RULE_RELIGIOUS_CONVERSION"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_RELIGIOUS_CONVERSION_DEFAULT_DESC"
 	}
@@ -267,6 +281,7 @@ raiding = {
 	name = "RULE_RAIDING"
 	option = {
 		name = historical
+		achievements = no
 		text = "RULE_OPTION_HISTORICAL"
 		desc = "RULE_RAIDING_HISTORICAL_DESC"
 	}
@@ -276,6 +291,7 @@ adventurers = {
 	name = "RULE_ADVENTURERS"
 	option = {
 		name = normal
+		achievements = no
 		text = "RULE_OPTION_NORMAL"
 		desc = "RULE_ADVENTURERS_NORMAL_DESC"
 	}
@@ -285,6 +301,7 @@ interfaith_marriages = {
 	name = "RULE_INTERFAITH_MARRIAGES"
 	option = {
 		name = restricted
+		achievements = no
 		text = "RULE_OPTION_RESTRICTED"
 		desc = "RULE_IFM_RESTRICTED_DESC"
 	}
@@ -294,6 +311,7 @@ matrilineal_marriages = {
 	name = "RULE_MATRILINEAL_MARRIAGES"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_MATRILINEAL_ON_DESC"
 	}
@@ -304,6 +322,7 @@ dynamic_realms = {
 	dlc = "Charlemagne"
 	option = {
 		name = off
+		achievements = no
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_DYNAMIC_REALMS_OFF_DESC"
 	}
@@ -314,6 +333,7 @@ charlemagne_story = {
 	dlc = "Charlemagne"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_CHARLEMAGNE_STORY_ON_DESC"
 	}
@@ -323,6 +343,7 @@ vassal_republics = {
 	name = "RULE_VASSAL_REPUBLICS"
 	option = {
 		name = restricted
+		achievements = no
 		text = "RULE_OPTION_RESTRICTED"
 		desc = "RULE_VASSAL_REPUBLICS_RESTRICTED_DESC"
 	}
@@ -332,6 +353,7 @@ vassal_theocracies = {
 	name = "RULE_VASSAL_THEOCRACIES"
 	option = {
 		name = restricted
+		achievements = no
 		text = "RULE_OPTION_RESTRICTED"
 		desc = "RULE_VASSAL_THEOCRACIES_RESTRICTED_DESC"
 	}
@@ -341,6 +363,7 @@ invitation = {
 	name = "RULE_INVITATION"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_INVITATION_DEFAULT_DESC"
 	}
@@ -350,6 +373,7 @@ diplo_range = {
 	name = "RULE_DIPLO_RANGE"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_DIPLO_RANGE_ON_DESC"
 	}
@@ -359,6 +383,7 @@ provincial_revolts = {
 	name = "RULE_PROVINCE_REVOLTS"
 	option = {
 		name = normal
+		achievements = no
 		text = "RULE_OPTION_NORMAL"
 		desc = "RULE_PROVINCE_REVOLTS_NORMAL_DESC"
 	}
@@ -368,6 +393,7 @@ defensive_attrition = {
 	name = "RULE_DEF_ATTRITION"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_DEF_ATTRITION_ON_DESC"
 	}
@@ -377,6 +403,7 @@ pagan_reformation = {
 	name = "RULE_PAGAN_REFORMATION"
 	option = {
 		name = allowed
+		achievements = no
 		text = "RULE_PAGAN_REFORMATION_ALLOWED"
 		desc = "RULE_PAGAN_REFORMATION_ALLOWED_DESC"
 	}
@@ -386,6 +413,7 @@ regencies = {
 	name = "RULE_REGENCIES"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_REGENCIES_ON_DESC"
 	}
@@ -395,6 +423,7 @@ dynasty_title_names = {
 	name = "RULE_DYNASTY_TITLE_NAMES"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_DYNASTY_TITLE_NAMES_ON_DESC"
 	}
@@ -404,6 +433,7 @@ cultural_title_names = {
 	name = "RULE_CULTURAL_TITLE_NAMES"
 	option = {
 		name = on
+		achievements = no
 		text = "RULE_OPTION_ON"
 		desc = "RULE_CULTURAL_TITLE_NAMES_ON_DESC"
 	}
@@ -437,6 +467,7 @@ demesne_size = {
 	name = "RULE_DEMESNE_SIZE"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_DEMESNE_SIZE_DEFAULT_DESC"
 	}
@@ -446,6 +477,7 @@ vassal_limit = {
 	name = "RULE_VASSAL_LIMIT"
 	option = {
 		name = default
+		achievements = no
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_VASSAL_LIMIT_DEFAULT_DESC"
 	}
@@ -455,6 +487,7 @@ grant_independence = {
 	name = "RULE_GRANT_INDEPENDENCE"
 	option = {
 		name = restricted
+		achievements = no
 		text = "RULE_OPTION_RESTRICTED"
 		desc = "RULE_GRANT_INDEPENDENCE_RESTRICTED_DESC"
 	}
