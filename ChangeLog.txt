@@ -1,10 +1,12 @@
-XX October 2016 v2.6
+XX November 2016 v2.6
 --------------------
 
 MAJOR:
 - Update to 2.6.2
 
 MINOR:
+- Christian can no longer declare war to make tributary another Christian
+- Disable some rules to keep historicity
 - Remove the Pope portrait in the presentation event
 - Add a decision to go to Canossa when the Emperor is excommunicated
 - Display only the loading screens of the mod

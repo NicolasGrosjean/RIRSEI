@@ -1,10 +1,12 @@
-XX Octobre 2016 v2.6
+XX Novembre 2016 v2.6
 --------------------
 
 MAJEUR:
 - Mise à jour avec la 2.6.2
 
 MINEUR:
+- Empêche les chrétiens de déclarer des guerres pour rendre tributaire un autre chrétien
+- Bloque certaines règles pour garder l'historicité
 - Enlève le portrait du Pape dans l'event de présentation
 - Ajoute une décision pour se rendre à Canossa dès que l'on est excommunié
 - N'affiche que les images de chargements du mods (et non plus les dernières du jeu de base)

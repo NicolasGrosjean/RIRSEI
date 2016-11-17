@@ -11125,6 +11125,10 @@ tributary_cb = {
 				holy_order = yes
 				religion = FROM
 			}
+			NAND = {
+				religion_group = christian
+				religion_group = FROM
+			}
 		}
 		FROM = {
 			NAND = {
