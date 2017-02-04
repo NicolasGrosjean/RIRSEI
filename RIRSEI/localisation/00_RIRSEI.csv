@@ -1758,7 +1758,9 @@ IMPOCCP;Imperium Romanorum Pars Occidentalis;Imperium Romanorum Pars Occidentali
 IMPORIP;Imperium Romanorum Pars Orientalis;Imperium Romanorum Pars Orientalis;;;;;;x;;;;;;;;;;
 SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut être changé !§!;;;;;;;;;;;;x
-;;;;;;;;;;;;x;;;;;;;;;;
+EVTTITLE_RIRSECHARLY_139;;Changement d'héraldique;;;;;;x;;;;;;;;;;
+EVTDESC_RIRSECHARLY_139;;L'établissement d'une dynastie non-saxonne sur le trône d'Angleterre entraîne un grand changement au niveau des symboles utilisés par la monarchie. Les souverains préfèrent mettre en avant le léopard du duché de Normandie, tant pour établir une distance entre eux et leurs sujets que pour bâtir une nouvelle symbolique qui ne rappelle pas leurs prédécesseurs.;;;;;;x;;;;;;;;;;
+EVTOPTA_RIRSECHARLY_139;;Dieu et mon droit !;;;;;;x;;;;;;;;;;
 ;;;;;;;;;;;;x;;;;;;;;;;
 ;;;;;;;;;;;;x;;;;;;;;;;
 ;;;;;;;;;;;;x;;;;;;;;;;
