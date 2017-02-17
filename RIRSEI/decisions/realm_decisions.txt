@@ -671,6 +671,14 @@ completely_controls = d_latium
 			has_global_flag = viking_age_started
 			NOT = { has_character_flag = vg_fait }
 			NOT = { has_global_flag = varangian_guard_founded }
+			OR = {
+			k_rus = { has_holder = yes }
+			d_kiev = { 
+				has_holder = yes
+				holder_scope = { realm_size = 18 }
+			}
+			d_novgorod = { has_holder = yes }
+			}
 		}
 		allow = {
 			prestige = 300
