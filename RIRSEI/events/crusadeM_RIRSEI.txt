@@ -51,7 +51,10 @@ character_event = {
 	give_nickname = nick_the_holy
 	narrative_event = { id = RIRSEIM.3 }
 	set_global_flag = jerusalem_is_holy_land
-	add_character_modifier = { name = avoue_st_sepu days = -1 } 
+	add_character_modifier = { 
+	name = avoue_st_sepu 
+	duration = -1 
+	} 
 			ai_chance = {
 			factor = 0.7
 			modifier = {
@@ -351,7 +354,10 @@ character_event = {
 		name = EVT_A_RIRSEIM_8
 		piety = 100
 		add_trait = Vs_sancti_petri
-		add_character_modifier = { name = avoue_st_sepu days = -1 } 
+		add_character_modifier = { 
+		name = avoue_st_sepu 
+		duration = -1 
+		} 
 	}
 	
 	option = {
