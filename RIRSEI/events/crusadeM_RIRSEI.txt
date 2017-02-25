@@ -478,7 +478,7 @@ character_event = {
 	name = EVT_B_RIRSEIM_10 # Oh que non
 	piety = 200
 	set_global_flag = jerusalem_is_holy_land
-	add_character_modifier = { name = avoue_st_sepu days = -1 } 
+	add_character_modifier = { name = avoue_st_sepu duration = -1 } 
 			ai_chance = {
 			factor = 0.3
 			modifier = {
