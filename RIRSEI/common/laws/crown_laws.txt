@@ -320,6 +320,7 @@ NOT = { trait = Vs_sancti_petri }
 OR = {
 year = 1020
 has_landed_title = e_byzantium
+religion_group = muslim
 } 
 OR = {
 NOT = { has_landed_title = e_hre } 
