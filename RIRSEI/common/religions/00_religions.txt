@@ -432,7 +432,6 @@ muslim = {
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 	zikri = {
@@ -453,7 +452,6 @@ muslim = {
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 	yazidi = {
@@ -521,10 +519,8 @@ crusade_name = JIHAD
 		matrilineal_marriages = no
 landed_kin_prestige_bonus = yes
 attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 	shiite = {
@@ -579,7 +575,6 @@ attacking_same_religion_piety_loss = yes
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 	hurufi = {
@@ -632,7 +627,6 @@ high_god_name = GOD_ALLAH
 		matrilineal_marriages = no
 landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 ibadi = {
@@ -654,7 +648,6 @@ ibadi = {
 		matrilineal_marriages = no
 landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
 		uses_jizya_tax = yes
 	}
 }
