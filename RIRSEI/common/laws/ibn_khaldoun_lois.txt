@@ -1,0 +1,275 @@
+laws = {
+##############################
+	# MUSLIM FEUDAL LAWS
+	##############################
+	
+	# IQTA VASSAL LEVY SIZE LAWS
+	##############################
+	
+	assab_0 = {
+		group = assabiya_kh
+		feudal_opinion = -50
+		
+		potential = {
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim
+independent = yes }
+		}
+
+allow = {
+		always = no
+}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = assab_0
+			revoke_law = assab_1
+			revoke_law = assab_2
+                        revoke_law = assab_3
+			}
+		}
+		
+                retinuesize = -2000
+	}
+	
+	assab_1 = {
+		group = assabiya_kh
+		feudal_opinion = -20
+		
+		potential = {
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim
+independent = yes }
+		}
+allow = {
+		always = no
+}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = assab_0
+			revoke_law = assab_1
+			revoke_law = assab_2
+                        revoke_law = assab_3
+			}
+		}
+		
+	}
+	
+	assab_2 = {
+		group = assabiya_kh
+		feudal_opinion = 0
+		default = yes
+		
+		potential = {
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim
+independent = yes }
+		}
+allow = {
+		always = no
+}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = assab_0
+			revoke_law = assab_1
+			revoke_law = assab_2
+                        revoke_law = assab_3
+			}
+		}
+		
+		
+	}
+	
+	assab_3 = {
+		group = assabiya_kh
+		feudal_opinion = 30
+		
+		potential = {
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim
+independent = yes }
+		}
+allow = {
+		always = no
+}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = assab_0
+			revoke_law = assab_1
+			revoke_law = assab_2
+                        revoke_law = assab_3
+		}
+
+}
+	
+	
+	# FEUDAL VASSAL TAX SIZE LAWS
+	##############################
+	
+	iqta_ta_0 = {
+		group = iqta_ta
+		feudal_opinion = 20
+		
+		potential = {
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = iqta_tax_0
+				revoke_law = iqta_tax_1
+				revoke_law = iqta_tax_2
+				revoke_law = iqta_tax_3
+			}
+		}
+		castle_vassal_tax_modifier = 0.1
+                city_vassal_tax_modifier = 0.1
+                temple_vassal_tax_modifier = 0.1
+	}
+
+	iqta_ta_1 = {
+		group = iqta_ta
+		default = yes
+		feudal_opinion = -20
+feudal_opinion = -20
+city_opinion = -20
+temple_opinion = -20
+		
+		potential = {
+OR = {
+holder_scope = { has_law = assab_1 }
+holder_scope = { has_law = assab_0 }
+}
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = iqta_tax_0
+				revoke_law = iqta_tax_1
+				revoke_law = iqta_tax_2
+				revoke_law = iqta_tax_3
+			}
+		}
+		
+		castle_vassal_tax_modifier = 0.3
+                city_vassal_tax_modifier = 0.3
+                temple_vassal_tax_modifier = 0.3
+	}
+	
+	iqta_ta_2 = {
+		group = iqta_ta
+		feudal_opinion = -40
+city_opinion = -40
+temple_opinion = -40
+		potential = {
+
+
+
+holder_scope = { has_law = assab_0 }
+
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { religion_group = muslim }
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = iqta_tax_0
+				revoke_law = iqta_tax_1
+				revoke_law = iqta_tax_2
+				revoke_law = iqta_tax_3
+			}
+		}
+		castle_vassal_tax_modifier = 0.5
+city_vassal_tax_modifier = 0.5
+                temple_vassal_tax_modifier = 0.5
+	}
+	
+	
+}
