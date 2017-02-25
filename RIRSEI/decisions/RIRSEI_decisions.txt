@@ -2776,6 +2776,8 @@ k_bavaria = {
 			factor = 1
 		}
 }
+
+#Script de l'Etat
 pape_script_central = {
 		is_high_prio = yes
 		potential = {
@@ -2795,7 +2797,7 @@ pape_script_central = {
 		}
 		effect = {
 any_playable_ruler = {
-				
+limit = { NOT = { religion_group = muslim } }				
 				
 				narrative_event = { id = RIRSEI.252627 }		 
 }
