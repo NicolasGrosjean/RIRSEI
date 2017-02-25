@@ -29,11 +29,7 @@ religion = orthodox
 	b_palermo = ct_marketplace_1
 	b_palermo = ct_marketplace_2
 	b_palermo = ct_wall_q_1
-	b_palermo = ct_barracks_1
-	b_palermo = ct_training_grounds_1
 	b_monreale = ca_keep_1
-	b_monreale = ca_stable_1
-	b_monreale = ca_militia_barracks_1
 	b_monreale = ca_wall_1
 }
 1066.1.1 = {

@@ -32,15 +32,9 @@ religion = slavic_pagan
 	b_novgorod = city
 	b_borovichi = ca_keep_1
 	b_borovichi = ca_wall_1
-	b_borovichi = ca_barracks_1
-	b_borovichi = ca_militia_barracks_1
-	b_borovichi = ca_stable_1
 	b_novgorod = ct_marketplace_1
 	b_novgorod = ct_wall_1
 	b_novgorod = ct_wall_q_1
-	b_novgorod = ct_training_grounds_1
-	b_novgorod = ct_barracks_1
-	b_novgorod = ct_guard_2
 
 	capital = b_novgorod
 }
