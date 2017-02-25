@@ -1,0 +1,355 @@
+namespace = RIRSEKH 
+#Event de depart de determination d'asabiyya
+narrative_event = {   
+	id = RIRSEKH.10
+desc = "EVTDESC_RIRSEKH_10"
+	picture = "GFX_evt_cyclekh"
+
+
+
+	
+is_triggered_only = yes
+
+	option = {
+name = "EVTOPTA_RIRSEKH_10"  
+trigger = {
+is_nomadic = no
+is_tribal = no
+			
+		}
+set_dynasty_flag = asabi_2
+}
+	option = {
+name = "EVTOPTB_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = yes
+is_tribal=yes
+}			
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_3
+}
+set_dynasty_flag = asabi_3
+
+
+
+}
+}
+#Event de depart, si nouvelle dynastie sedentaire
+narrative_event = {   
+	id = RIRSEKH.12
+desc = "EVTDESC_RIRSEKH_12"
+	picture = "GFX_evt_cyclekh"
+
+
+
+trigger = {
+religion_group = muslim
+independent = yes
+has_global_flag = depart_assab
+NOT = { has_dynasty_flag = asabi_0 }
+NOT = { has_dynasty_flag = asabi_1 }
+NOT = { has_dynasty_flag = asabi_2 }
+NOT = { has_dynasty_flag = asabi_3 }
+}	
+mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_12"  
+trigger = {
+is_nomadic = no
+is_tribal = no
+			
+		}
+set_dynasty_flag = asabi_1
+}
+	option = {
+name = "EVTOPTB_RIRSEKH_12"  
+trigger = {
+OR = {
+is_nomadic = yes
+is_tribal=yes
+}	
+			
+		}
+set_dynasty_flag = asabi_3
+}	
+}
+
+#Premier cycle
+narrative_event = {    
+	id = RIRSEKH.20
+desc = "EVTDESC_RIRSEKH_20"
+	picture = "GFX_evt_cyclekh"
+
+	trigger = {
+	
+religion_group = muslim
+had_dynasty_flag = { flag = asabi_2 days = 18250 }
+OR = {
+is_nomadic = no
+is_tribal= no
+}	
+independent = yes
+
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_20"
+clr_dynasty_flag = asabi_2
+set_dynasty_flag = asabi_1  
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+}
+primary_title = {
+revoke_law = vice_royalty_0
+add_law_w_cooldown = vice_royalty_2
+}
+}
+}
+
+
+#Deuxième cycle
+narrative_event = {    
+	id = RIRSEKH.22
+desc = "EVTDESC_RIRSEKH_22"
+	picture = "GFX_evt_cyclekh"
+
+	trigger = {
+	
+religion_group = muslim
+had_dynasty_flag = { flag = asabi_1 days = 18250 }
+OR = {
+is_nomadic = no
+is_tribal= no
+}
+independent = yes
+
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_22"
+clr_dynasty_flag = asabi_1
+set_dynasty_flag = asabi_0
+  
+primary_title = {
+revoke_law = assab_1
+add_law_w_cooldown = assab_0
+}
+}
+}
+
+#Sedentarisation et baisse d'asabiyya
+narrative_event = {    
+	id = RIRSEKH.23
+desc = "EVTDESC_RIRSEKH_23"
+	picture = "GFX_evt_cyclekh"
+
+is_triggered_only = yes
+
+	option = {
+name = "EVTOPTA_RIRSEKH_23"
+clr_dynasty_flag = asabi_3
+set_dynasty_flag = asabi_2  
+primary_title = {
+revoke_law = assab_3
+add_law_w_cooldown = assab_2
+}
+capital_scope = {
+spawn_unit = {
+					province = PREV
+					owner = ROOT
+					match_character = ROOT
+					match_mult = 0.75
+					earmark = force_noma
+					attrition = 1.0
+				}
+}
+}
+}
+
+#Sortie du cycle si aucun dynaste independent
+narrative_event = {    
+	id = RIRSEKH.30
+desc = "EVTDESC_RIRSEKH_30"
+	picture = "GFX_evt_cyclekh"
+
+	trigger = {
+	
+religion_group = muslim
+OR = {
+is_nomadic = no
+is_tribal= no
+}
+OR = {
+has_dynasty_flag = asabi_1
+has_dynasty_flag = asabi_2
+has_dynasty_flag = asabi_0
+}
+NOT = {
+any_dynasty_member = { 
+limit = {
+religion_group = muslim
+}
+independent = yes
+}
+}
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_30"
+clr_dynasty_flag = asabi_1
+clr_dynasty_flag = asabi_2
+clr_dynasty_flag = asabi_0
+  
+
+}
+}
+
+#Si abasibyya faible, possible de changer (batiments)
+narrative_event = {   
+	id = RIRSEKH.40
+desc = "EVTDESC_RIRSEKH_40"
+	picture = "GFX_evt_cyclekh"
+
+
+
+trigger = {
+religion_group = muslim
+independent = yes
+has_global_flag = depart_assab
+has_dynasty_flag = asabi_0
+NOT = { has_character_flag = changer_asab } 
+}	
+mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_40"  
+
+set_character_flag = changer_asab
+}
+		
+}
+
+#Le batiment detruit le précédent + changement de loi + auto-destruction
+
+narrative_event = {   
+	id = RIRSEKH.42
+desc = "EVTDESC_RIRSEKH_42"
+	picture = "GFX_evt_cyclekh"
+
+
+
+trigger = {
+religion_group = muslim
+independent = yes
+has_global_flag = depart_assab
+has_dynasty_flag = asabi_0
+has_character_flag = changer_asab
+capital_scope = {
+has_building = ca_changassab_0
+}
+
+}	
+mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEKH_42"  
+capital_scope = {
+remove_building = ca_changassab_0
+remove_building = ca_mamelouks_turcs_1
+remove_building = ca_mamelouks_turcs_2
+remove_building = ca_mamelouks_turcs_3
+remove_building = ca_mamelouks_slavons_1
+remove_building = ca_mamelouks_slavons_2
+remove_building = ca_mamelouks_slavons_3
+remove_building = ca_mamelouks_circas_1
+remove_building = ca_mamelouks_circas_2
+remove_building = ca_mamelouks_circas_3
+remove_building = ca_mamelouks_armenien_1
+remove_building = ca_mamelouks_armenien_2
+remove_building = ca_mamelouks_armenien_3
+remove_building = ca_mamelouks_soudanais_1
+remove_building = ca_mamelouks_soudanais_2
+remove_building = ca_mamelouks_soudanais_3
+remove_building = ca_mamelouks_francs_1
+remove_building = ca_mamelouks_francs_2
+remove_building = ca_mamelouks_francs_3
+}
+clr_dynasty_flag = asabi_0
+set_dynasty_flag = asabi_1  
+primary_title = {
+revoke_law = assab_0
+add_law_w_cooldown = assab_1
+
+}
+any_realm_character = {
+limit = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+narrative_event = { id = RIRSEKH.45 }
+}
+
+}
+	
+	
+}
+
+#Disparition des petites gardes mameloukes
+narrative_event = {   
+	id = RIRSEKH.45
+desc = "EVTDESC_RIRSEKH_45"
+	picture = "GFX_evt_cyclekh"
+
+
+
+	
+is_triggered_only = yes
+
+	option = {
+name = "EVTOPTA_RIRSEKH_45"  
+remove_building = ca_petitmamk_0
+opinion = {
+				modifier = asab_restau
+				who = FROM
+                                years = 60
+				
+}
+}
+	
+}

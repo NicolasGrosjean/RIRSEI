@@ -214,6 +214,12 @@ has_law = centralization_4
 set_allow_free_revokation = yes
 revoke_law = pronoia_byz
 add_law = vice_royalty_2
+
+holder_scope = {
+any_realm_character = {
+narrative_event = { id = RIRNOVEXERC.11 }
+}
+}
 		 
 e_byzantium = {
 holder_scope = {
@@ -247,8 +253,10 @@ religion_group = christian
 }
 }
 allow = {
+OR = {
 	has_law = centralization_1
 has_law = centralization_0
+}
 }
 		
 		revoke_allowed = {
@@ -261,9 +269,18 @@ has_law = centralization_0
 			factor = 0
 		}
 		effect = {
+
 hidden_tooltip = {
 activate_title = { title = d_archontopouloi status = no }
 }
+
+holder_scope = {
+any_realm_character = {
+narrative_event = { id = RIRNOVEXERC.10 }
+}
+}
+
+
 set_allow_free_revokation = no
 set_global_flag = pronoia_dispo
 revoke_law = theme_byz
