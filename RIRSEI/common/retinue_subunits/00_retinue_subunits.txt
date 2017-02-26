@@ -1,0 +1,629 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Special troops
+
+
+RETTYPE_LANCES_RIR = 
+{
+	first_type = 4
+	first_amount = 40
+second_type = 5
+second_amount = 60
+	
+	potential = {
+	
+
+any_demesne_province = {
+has_building = ca_culture_Francais_sysfed_3
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	        knights_defensive = 0.3
+		knights_morale = 0.3
+archers_offensive = 0.3
+archers_defensive = 0.3
+archers_morale = 0.3
+	}
+}
+
+RETTYPE_CUL_FRA_RIR = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+	NOT = { has_global_flag = central }
+                 is_independent = yes
+		is_nomadic = no
+		OR = {
+		culture = old_frankish
+		culture = frankish
+		}
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	        knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+RETTYPE_CUL_FRAN_RIR = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		OR = {
+		culture = frankish
+		culture= old_frankish
+		}
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.6
+	    knights_defensive = 0.5
+		knights_morale = 0.6
+	}
+}
+
+RETTYPE_CUL_FRANSCT_RIR = 
+{
+	first_type = 5
+	first_amount = 100
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		year = 1400
+		is_independent = yes
+		OR = {
+		culture = frankish
+		culture= old_frankish
+		}
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		archers_offensive = 0.5
+        archers_defensive = 0.4
+        archers_morale = 0.5
+	}
+}
+
+RETTYPE_CUL_CHESANGL_RIR = 
+{
+	first_type = 5
+	first_amount = 100
+	second_type = 4
+	second_amount = 25
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central		
+		is_independent = yes
+		culture = english
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		archers_offensive = 0.5
+        archers_defensive = 0.5
+        archers_morale = 0.4
+		knights_defensive = 0.5
+		knights_morale = 0.3
+		knights_offensive = 0.4
+	}
+}
+
+RETTYPE_CUL_SAX_RIR = 
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {               
+		is_nomadic = no
+		culture = saxon
+		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.5
+		heavy_infantry_defensive = 0.6
+		heavy_infantry_morale = 0.6
+	}
+}
+
+RETTYPE_CUL_ASTU_RIR = 
+{
+	first_type = 4
+	first_amount = 25
+	
+	potential = {               
+		is_nomadic = no
+		culture = visigothic
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+	        knights_defensive = 0.4
+		knights_morale = 0.4
+	}
+}
+
+RETTYPE_CUL_BYZ_RIR = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture_group = byzantine
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+		knights_defensive = 0.3
+		knights_morale = 0.3
+	}
+}
+
+RETTYPE_CUL_NORTHM_RIR = 
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {
+		is_nomadic = no
+NOT = { religion_group = muslim }
+NOT = { religion_group = christian }
+		
+			culture_group = north_germanic			
+		
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+                heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+	}
+}
+
+RETTYPE_CUL_SLV_RIR = 
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {
+		is_nomadic = no
+OR = {
+		culture_group = east_slavic
+culture_group = south_slavic
+}
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.5
+		heavy_infantry_defensive = 0.6
+		heavy_infantry_morale = 0.6
+	}
+}
+RETTYPE_HUSCARLS_CELT_RIR = 
+{
+	first_type = 1
+	first_amount = 25
+	
+	potential = {
+		is_nomadic = no
+year = 850
+OR = {
+culture = scottish
+culture = pictish
+culture = irish		
+}
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+                heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+	}
+}
+RETTYPE_GALLOW_RIR = 
+{
+	first_type = 1
+	first_amount = 50
+	
+	potential = {
+		is_nomadic = no
+year = 1150
+culture = irish
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+		heavy_infantry_defensive = 0.6
+		heavy_infantry_morale = 0.5
+	}
+}
+
+RETTYPE_MAM_TURC = 
+{
+	first_type = 4
+	first_amount = 50
+        second_type = 1
+	second_amount = 200
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_turcs_1
+has_building = ca_mamelouks_turcs_2
+has_building = ca_mamelouks_turcs_3
+has_building = ca_petitmamk_0  
+}
+	}
+}
+	
+	modifier = {
+		
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+                knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+RETTYPE_MAM_SLV = 
+{
+	first_type = 4
+	first_amount = 25
+        second_type = 1
+	second_amount = 300
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_slavons_1
+has_building = ca_mamelouks_slavons_2
+has_building = ca_mamelouks_slavons_3
+has_building = ca_petitmamk_0  
+}
+	}
+	}
+	
+	modifier = {
+		
+		heavy_infantry_defensive = 0.6
+		heavy_infantry_morale = 0.6
+                knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+RETTYPE_MAM_CIRC = 
+{
+	first_type = 4
+	first_amount = 75
+        second_type = 1
+	second_amount = 250
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_circas_1
+has_building = ca_mamelouks_circas_2
+has_building = ca_mamelouks_circas_3
+has_building = ca_petitmamk_0  
+}
+	}
+	}
+	
+	modifier = {
+		
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+                knights_defensive = 0.6
+		knights_morale = 0.6
+	}
+}
+
+RETTYPE_MAM_ARM = 
+{
+	first_type = 4
+	first_amount = 75
+        second_type = 1
+	second_amount = 250
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_armenien_1
+has_building = ca_mamelouks_armenien_2
+has_building = ca_mamelouks_armenien_3
+has_building = ca_petitmamk_0  
+}
+	}
+	}
+	
+	modifier = {
+		
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.4
+                knights_defensive = 0.6
+		knights_morale = 0.6
+	}
+}
+
+RETTYPE_MAM_SOUD = 
+{
+	first_type = 4
+	first_amount = 25
+        second_type = 5
+	second_amount = 300
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_soudanais_1
+has_building = ca_mamelouks_soudanais_2
+has_building = ca_mamelouks_soudanais_3
+has_building = ca_petitmamk_0  
+}
+	}
+	}
+	
+	modifier = {
+		
+		archers_defensive = 0.6
+	        archers_morale = 0.6
+                knights_defensive = 0.4
+		knights_morale = 0.4
+	}
+}
+
+RETTYPE_MAM_FRC = 
+{
+	first_type = 4
+	first_amount = 100
+        second_type = 1
+	second_amount = 100
+	
+	potential = {
+                 
+		is_nomadic = no		
+religion_group = muslim
+any_demesne_province = {
+OR = {
+has_building = ca_mamelouks_francs_1
+has_building = ca_mamelouks_francs_2
+has_building = ca_mamelouks_francs_3
+has_building = ca_petitmamk_0  
+}
+	}
+	}
+	
+	modifier = {
+		
+		heavy_infantry_defensive = 0.4
+		heavy_infantry_morale = 0.4
+                knights_defensive = 0.6
+		knights_morale = 0.6
+	}
+}
+
+HORDE_RETTYPE_CAV1 = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	hire_cost = 10
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.27
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV2 = 
+{
+	first_type = 3
+	first_amount = 225
+	second_type = 6
+	second_amount = 25
+
+	special_troops = horse_archers
+	
+	hire_cost = 25
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.5263
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV3 =
+{
+	first_type = 3
+	first_amount = 200
+	second_type = 6
+	second_amount = 50
+
+	special_troops = horse_archers
+	
+	hire_cost = 25
+	
+	maintenance_multiplier = 0.125
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV4 =
+{
+	first_type = 3
+	first_amount = 150
+	second_type = 6
+	second_amount = 100
+
+	special_troops = horse_archers
+	
+	hire_cost = 50
+	
+	maintenance_multiplier = 0.238
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV5 =
+{
+	first_type = 3
+	first_amount = 200
+	second_type = 4
+	second_amount = 50
+	
+	hire_cost = 50
+	
+	maintenance_multiplier = 0.227
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV6 =
+{
+	first_type = 3
+	first_amount = 100
+	second_type = 4
+	second_amount = 150
+	
+	hire_cost = 75
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_CAV7 =
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = horse_archers
+	
+	hire_cost = 75
+	
+	maintenance_multiplier = 0.3
+	
+	potential = {
+		is_nomadic = yes
+	}
+}
+
+HORDE_RETTYPE_INDIAN = 
+{
+	first_type = 3
+	first_amount = 200
+	second_type = 6
+	second_amount = 50
+	
+	special_troops = war_elephants
+
+	hire_cost = 100
+	
+	maintenance_multiplier = 0.625
+	
+	potential = {
+		is_nomadic = yes
+		capital_scope = {
+			region = world_india
+		}
+	}
+}
+
+HORDE_RETTYPE_DESERT = {
+	first_type = 3
+	first_amount = 100
+	second_type = 6
+	second_amount = 150
+	
+	special_troops = camel_cavalry
+	
+	hire_cost = 50
+	
+	maintenance_multiplier = 0.416
+	
+	potential = {
+		is_nomadic = yes
+		capital_scope = {
+			terrain = desert
+		}
+	}
+}
+
+HORDE_RETTYPE_EUROPE = {
+	first_type = 4
+	first_amount = 250
+	
+	hire_cost = 100
+	
+	maintenance_multiplier = 0.37
+	
+	potential = {
+		is_nomadic = yes
+		capital_scope = {
+			OR = {
+				region = world_europe_west
+				region = world_europe_south
+			}
+		}
+	}
+}
