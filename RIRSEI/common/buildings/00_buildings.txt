@@ -139,10 +139,12 @@ city = {
 	ct_rep_arsenal_1 = {
 		potential = {
 			FROM = { 
-				capital_holding = {
-					title = FROMFROM
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
 				}
-				is_merchant_republic = yes
 			}
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -160,10 +162,12 @@ city = {
 	ct_rep_arsenal_2 = {
 		potential = {
 			FROM = { 
-				capital_holding = {
-					title = FROMFROM
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
 				}
-				is_merchant_republic = yes
 			}
 		}
 		upgrades_from = ct_rep_arsenal_1
@@ -182,10 +186,12 @@ city = {
 	ct_rep_arsenal_3 = {
 		potential = {
 			FROM = { 
-				capital_holding = {
-					title = FROMFROM
+				AND = {
+					capital_holding = {
+						title = FROMFROM
+					}
+					is_merchant_republic = yes
 				}
-				is_merchant_republic = yes
 			}
 		}
 		upgrades_from = ct_rep_arsenal_2
@@ -202,209 +208,7 @@ city = {
 		extra_tech_building_start = 0.2
 	}
 	
-	ct_training_grounds_1 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
-		gold_cost = 150
-		build_time = 547
-		levy_size = 0.05
-		garrison_size = 0.05
-		ai_creation_factor = 98
-
-		extra_tech_building_start = 0.6
-	}
-	ct_training_grounds_2 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
-		prerequisites = { ct_wall_1 }
-		upgrades_from = ct_training_grounds_1
-		gold_cost = 200
-		build_time = 730
-		levy_size = 0.075
-		garrison_size = 0.1
-		ai_creation_factor = 97
-
-		extra_tech_building_start = 1.2
-	} 
-	ct_training_grounds_3 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
-		upgrades_from = ct_training_grounds_2
-		gold_cost = 300
-		build_time = 1095
-		levy_size = 0.1
-		garrison_size = 0.15
-		ai_creation_factor = 96
-
-		extra_tech_building_start = 0.2
-	} 
-	ct_training_grounds_4 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 }
-		upgrades_from = ct_training_grounds_3
-		gold_cost = 400
-		build_time = 1460
-		levy_size = 0.125
-		garrison_size = 0.2
-		ai_creation_factor = 95
-
-		extra_tech_building_start = 0.2
-	} 
-	ct_training_grounds_5 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 6 }
-		upgrades_from = ct_training_grounds_4
-		gold_cost = 500
-		build_time = 2190
-		levy_size = 0.15
-		garrison_size = 0.25
-		ai_creation_factor = 94
-
-		extra_tech_building_start = 0.2
-	}
-	ct_training_grounds_6 = {
-		desc = ct_training_grounds_1_desc
-		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 8 }
-		upgrades_from = ct_training_grounds_5
-		gold_cost = 500
-		build_time = 2190
-		levy_size = 0.15
-		garrison_size = 0.25
-		ai_creation_factor = 93
-
-		extra_tech_building_start = 0.2
-	}
 	
-	ct_barracks_1 = {
-		desc = ct_barracks_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		gold_cost = 100
-		build_time = 365
-		light_infantry = 60
-		archers = 30
-		ai_creation_factor = 95
-		
-		extra_tech_building_start = 0.5
-	}
-	ct_barracks_2 = {
-		desc = ct_barracks_2_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		prerequisites = { ct_wall_1 }
-		upgrades_from = ct_barracks_1
-		gold_cost = 120
-		build_time = 547
-		light_infantry = 40
-		archers = 70
-		ai_creation_factor = 94
-
-		extra_tech_building_start = 1.0
-	}
-	ct_barracks_3 = {
-		desc = ct_barracks_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 1 }
-		prerequisites = { ct_wall_2 }
-		upgrades_from = ct_barracks_2
-		gold_cost = 200
-		build_time = 730
-		light_infantry = 80
-		archers = 50
-		ai_creation_factor = 93
-
-		extra_tech_building_start = 1.0
-	}
-	ct_barracks_4 = {
-		desc = ct_barracks_2_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 3 }
-		upgrades_from = ct_barracks_3
-		gold_cost = 300
-		build_time = 1095
-		light_infantry = 60
-		archers = 90
-		ai_creation_factor = 92
-
-		extra_tech_building_start = 0.2
-	}
-	ct_barracks_5 = {
-		desc = ct_barracks_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 5 }
-		upgrades_from = ct_barracks_4
-		gold_cost = 400
-		build_time = 2190
-		light_infantry = 100
-		archers = 70
-		ai_creation_factor = 91
-
-		extra_tech_building_start = 0.2
-	}
-	ct_barracks_6 = {
-		desc = ct_barracks_2_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 7 }
-		upgrades_from = ct_barracks_5
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 80
-		archers = 110
-		ai_creation_factor = 90
-
-		extra_tech_building_start = 0.2
-	}
-	
-	ct_guard_1 = {
-		desc = ct_guard_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		gold_cost = 100
-		build_time = 365
-		pikemen = 45
-		ai_creation_factor = 96
-		
-		extra_tech_building_start = 1.0
-	}
-	ct_guard_2 = {
-		desc = ct_guard_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 2 }
-		prerequisites = { ct_wall_1 }
-		upgrades_from = ct_guard_1
-		gold_cost = 120
-		build_time = 547
-		pikemen = 55
-		ai_creation_factor = 95
-
-		extra_tech_building_start = 0.2
-	}
-	ct_guard_3 = {
-		desc = ct_guard_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 4 }
-		prerequisites = { ct_wall_2 }
-		upgrades_from = ct_guard_2
-		gold_cost = 200
-		build_time = 730
-		pikemen = 65
-		ai_creation_factor = 94
-		
-		extra_tech_building_start = 0.2
-	}
-	ct_guard_4 = {
-		desc = ct_guard_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 6 }
-		upgrades_from = ct_guard_3
-		gold_cost = 300
-		build_time = 1095
-		pikemen = 75
-		ai_creation_factor = 93
-		
-		extra_tech_building_start = 0.2
-	}
-	ct_guard_5 = {
-		desc = ct_guard_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 8 }
-		upgrades_from = ct_guard_4
-		gold_cost = 400
-		build_time = 2190
-		pikemen = 85
-		ai_creation_factor = 92
-
-		extra_tech_building_start = 0.2
-	}
 	
 	ct_marketplace_1 = {
 		desc = ct_marketplace_1_desc
@@ -634,6 +438,366 @@ city = {
 
 		extra_tech_building_start = 0.2
 	}
+
+
+ct_Bannum_Ciuitatis = {
+	add_number_to_name = no 
+		desc = ct_Bannum_Ciuitatis_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+independent = no
+
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 20
+		prestige_cost = 0
+		build_time = 730
+		knights = 20
+		tax_income = 2
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_Temps_Des_Chartes = {
+	add_number_to_name = no 
+		desc = ct_Temps_Des_Chartes_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_Bannum_Ciuitatis
+		gold_cost = 0
+		prestige_cost = 0
+		build_time = 1095
+		tax_income = -6
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = -1
+	}	
+	
+	ct_Charte_Sergents = {
+	add_number_to_name = no 
+		desc = ct_Charte_Sergents_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+}
+			}
+		}
+
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Piquier ct_Charte_Archers ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse}
+		gold_cost = 0
+		prestige_cost = 150
+		build_time = 30
+		heavy_infantry = 300 
+		tax_income = 3
+		
+		ai_creation_factor = 90
+		
+		extra_tech_building_start = 1.1
+	}
+	
+	ct_Charte_Archers = {
+		add_number_to_name = no 
+		desc = ct_Charte_Archers_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+}
+			}
+		}
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Piquier ct_Charte_Sergents ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse}
+		gold_cost = 0
+		prestige_cost = 200
+		build_time = 30
+		archers = 600 
+		tax_income = 3
+		
+		ai_creation_factor = 85
+		
+		extra_tech_building_start = 1.2
+	}
+
+	
+	ct_Charte_Piquier = {
+		desc = ct_Charte_Piquier_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+}
+			}
+		}
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Sergents ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse ct_Charte_Archers}
+		gold_cost = 20
+		prestige_cost = 150
+		build_time = 30
+		pikemen = 400 
+		tax_income = 3
+		
+		ai_creation_factor = 84
+		
+		extra_tech_building_start = 1.2
+	}
+
+		
+	
+	ct_Charte_Arbaletriers_Italiens = {
+		add_number_to_name = no 
+		desc = ct_Charte_Arbaletriers_Italiens_desc
+		potential = {
+		OR = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		}
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30
+		archers = 700
+		archers_defensive = 0.2
+		archers_offensive = 0.25
+		heavy_infantry = 100
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}	
+	
+	ct_Charte_Piquiers_FlamandsBrabant = {
+		add_number_to_name = no 
+		desc = ct_Charte_Piquiers_FlamandsBrabant_desc
+		potential = {
+		OR = {
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		}
+			FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30
+		pikemen = 500
+		pikemen_defensive = 0.1
+		pikemen_offensive = 0.1
+		pikemen_morale = 0.1
+		light_infantry = 100
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}
+
+	ct_Charte_Piquiers_Suisse = {
+		add_number_to_name = no 
+		desc = ct_Charte_Piquiers_Suisse_desc
+		potential = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		FROM = {
+			
+religion_group = christian
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30
+		pikemen = 500
+		pikemen_defensive = 0.1
+		pikemen_morale = 0.2
+		heavy_infantry = 75
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}
 }
 
 
@@ -846,147 +1010,7 @@ temple = {
 		extra_tech_building_start = 0.2
 	}
 	
-	tp_barracks_1 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		gold_cost = 100
-		build_time = 365
-		light_infantry = 60
-		archers = 30
-		ai_creation_factor = 94
-
-		extra_tech_building_start = 0.5
-	}
-	tp_barracks_2 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		prerequisites = { tp_wall_1 }
-		upgrades_from = tp_barracks_1
-		gold_cost = 120
-		build_time = 547
-		light_infantry = 65
-		archers = 45
-		ai_creation_factor = 93
-
-		extra_tech_building_start = 1.0
-	}
-	tp_barracks_3 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
-		prerequisites = { tp_wall_2 }
-		upgrades_from = tp_barracks_2
-		gold_cost = 200
-		build_time = 730
-		light_infantry = 70
-		archers = 60
-		ai_creation_factor = 92
-
-		extra_tech_building_start = 0.5
-	}
-	tp_barracks_4 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
-		upgrades_from = tp_barracks_3
-		gold_cost = 300
-		build_time = 1095
-		light_infantry = 75
-		archers = 75
-		ai_creation_factor = 91
-
-		extra_tech_building_start = 0.2
-	}
-	tp_barracks_5 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
-		upgrades_from = tp_barracks_4
-		gold_cost = 400
-		build_time = 2190
-		light_infantry = 85
-		archers = 85
-		ai_creation_factor = 90
-
-		extra_tech_building_start = 0.2
-	}
-	tp_barracks_6 = {
-		desc = tp_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 7 }
-		upgrades_from = tp_barracks_5
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 95
-		archers = 95
-		ai_creation_factor = 89
-
-		extra_tech_building_start = 0.2
-	}
 	
-	tp_elite_barracks_1 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		gold_cost = 100
-		build_time = 365
-		heavy_infantry = 45
-		ai_creation_factor = 95
-
-		extra_tech_building_start = 0.5
-	}
-	tp_elite_barracks_2 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		prerequisites = { tp_wall_1 }
-		upgrades_from = tp_elite_barracks_1
-		gold_cost = 120
-		build_time = 730
-		heavy_infantry = 55
-		ai_creation_factor = 94
-
-		extra_tech_building_start = 1.0
-	}
-	tp_elite_barracks_3 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
-		prerequisites = { tp_wall_2 }
-		upgrades_from = tp_elite_barracks_2
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 65
-		ai_creation_factor = 93
-
-		extra_tech_building_start = 0.2
-	}
-	tp_elite_barracks_4 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
-		upgrades_from = tp_elite_barracks_3
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 75
-		ai_creation_factor = 92
-
-		extra_tech_building_start = 0.2
-	}
-	tp_elite_barracks_5 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 6 }
-		upgrades_from = tp_elite_barracks_4
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 85
-		ai_creation_factor = 91
-
-		extra_tech_building_start = 0.2
-	}
-	tp_elite_barracks_6 = {
-		desc = tp_elite_barracks_1_desc
-		trigger = { TECH_TEMPLE_CONSTRUCTION = 8 }
-		upgrades_from = tp_elite_barracks_5
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 95
-		ai_creation_factor = 90
-
-		extra_tech_building_start = 0.2
-	}
 	
 	tp_town_1 = {
 		desc = tp_town_1_desc
