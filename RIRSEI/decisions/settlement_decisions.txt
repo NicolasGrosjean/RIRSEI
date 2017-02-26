@@ -19,7 +19,6 @@ settlement_decisions = {
 		
 		from_potential = {
 			is_feudal = yes
-			higher_tier_than = BARON
 		}
 		
 		potential = {
@@ -98,7 +97,6 @@ settlement_decisions = {
 		
 		from_potential = {
 			is_republic = yes
-			higher_tier_than = BARON
 		}
 		
 		potential = {
@@ -168,90 +166,6 @@ settlement_decisions = {
 		}
 	}
 	
-	convert_tribal_to_temple = {
-		filter = owned
-		ai_target_filter = owned
-		is_high_prio = yes
-		
-		from_potential = {
-			is_theocracy = yes
-			higher_tier_than = BARON
-			OR = {
-				NOT = { religion_group = pagan_group }
-				is_reformed_religion = yes
-			}
-		}
-		
-		potential = {
-			holding_type = tribal
-			holder_scope = {
-				character = FROM
-			}
-		}
-		allow = {
-			location = {
-				religion = FROM
-			}
-		}
-		effect = {
-			convert_to = temple
-			refill_holding_levy = yes
-			
-			hidden_tooltip = {
-				if = {
-					limit = {
-						is_capital = yes
-						dejure_liege_title = {
-							location = {
-								num_of_empty_holdings = 2
-							}
-							NOT = {
-								any_direct_de_jure_vassal_title = {
-									holding_type = castle
-								}
-							}
-						}
-					}
-					location = {
-						build_holding = {
-							type = castle
-						}
-					}
-				}
-				
-				if = {
-					limit = {
-						is_capital = yes
-						dejure_liege_title = {
-							location = {
-								num_of_empty_holdings = 2
-							}
-							NOT = {
-								any_direct_de_jure_vassal_title = {
-									holding_type = city
-								}
-							}
-						}
-					}
-					location = {
-						build_holding = {
-							type = city
-						}
-					}
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1 # On average ca 1 year before taken
-			modifier = {
-				factor = 0.1 # Modified down to ca 10 year average.
-			}
-		}
-	}
-	
 	make_primary = {
 		filter = owned
 		ai_target_filter = owned
@@ -275,11 +189,7 @@ settlement_decisions = {
 						is_nomadic = no
 					}
 					capital_scope = {
-						ROOT = {
-							location = {
-								NOT = { province = PREVPREV }
-							}
-						}
+						NOT = { province = PREVPREV }
 					}
 				}
 			}
@@ -385,18 +295,19 @@ settlement_decisions = {
 			OR = {
 				FROM = {
 					independent = yes
-				}
-				custom_tooltip = { 
-					text = TT_NOT_SAME_REALM
-					hidden_tooltip = {
-						FROM = {
-							top_liege = {
-								PREVPREV = {
-									holder_scope = {
-										top_liege = {
-											NOT = { character = PREVPREVPREV }
-										}
-									} 
+					
+					custom_tooltip = { 
+						text = TT_NOT_SAME_REALM
+						hidden_tooltip = {
+							FROM = {
+								top_liege = {
+									PREVPREV = {
+										holder_scope = {
+											top_liege = {
+												NOT = { character = PREVPREVPREV }
+											}
+										} 
+									}
 								}
 							}
 						}
@@ -407,54 +318,61 @@ settlement_decisions = {
 		effect = {
 			if = {
 				limit = { NOT = { holding_type = tribal } }
-				location = {
-					owner = {
-						if = {
-							limit = {
-								character = FROM
-							}
-							FROM = {
-								wealth = 50
-							}
-						}
-						if = {
-							limit = {
-								NOT = {
+				FROM = {
+					if = {
+						limit = {
+							location = {
+								owner = {
 									character = FROM
 								}
 							}
-							FROM = {
-								wealth = 10
+						}
+						wealth = 50
+					}
+					if = {
+						limit = {
+							NOT = {
+								location = {
+									owner = {
+										character = FROM
+									}
+								}
 							}
 						}
+						wealth = 10
 					}
-				}
-				FROM = {
 					random_list = {
-						10 = { military_techpoints = 5 }
-						10 = { economy_techpoints = 5 }
-						10 = { culture_techpoints = 5 }
+						10 = { military_techpoints = 10 }
+						10 = { economy_techpoints = 10 }
+						10 = { culture_techpoints = 10 }
 					}
 				}
 			}
 			if = {
 				limit = { holding_type = tribal }
-				location = {
-					owner = {
-						if = {
-							limit = {
+				FROM = {
+					if = {
+						limit = {
+							owner = {
 								character = FROM
 							}
-							FROM = { wealth = 25 }
 						}
-						if = {
-							limit = {
-								NOT = {
+						wealth = 25
+					}
+					if = {
+						limit = {
+							NOT = {
+								owner = {
 									character = FROM
 								}
 							}
-							FROM = { wealth = 5 }
 						}
+						wealth = 5
+					}
+					random_list = {
+						10 = { military_techpoints = 2 }
+						10 = { economy_techpoints = 2 }
+						10 = { culture_techpoints = 2 }
 					}
 				}
 			}
@@ -2071,8 +1989,8 @@ settlement_decisions = {
 								landless = no
 								temporary = no
 								custom_created = yes
-								culture = FROM
-								holder = FROM
+								culture = ROOT
+								holder = ROOT
 								base_title = THIS
 							}
 						}
