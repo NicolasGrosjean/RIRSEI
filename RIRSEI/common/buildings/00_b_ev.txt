@@ -1,33 +1,11 @@
- # Triggers are in Province scope. The From Scope contains the settlement holder (character)
- # start trigger is in title scope.
- 
- #<tag> = {
- #	desc = description used in the tooltip of the building
- #	trigger = used for tech requirement of the building, set to 0 if no requirement so it can be build automatically on new games
- #	gold_cost = cost to build the building
- #	build_time = time to build, in days
- #	
- #	ai_creation_factor = weight that the AI uses to determine what building to build
- #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
- #}
- 
- # Castle
-castle = {
-	# All cultural buildings follow the same pattern:
-	# tech required is 0, 1, 2, 4 for the levels of the buildings
-	# cost is 200 + 100 per level
-	# 60 maintenance of troops + 20 per level
-	# + 0.15 bonus in either offensive, defensive or morale sometimes split over different units or stats same on all levels
-	
-	# Culture building names MUST start with ca_culture
-
+temple = {
 # Nouveau systeme-> Franc->syst.feodal
 
-	ca_culture_Francais_syst_1 = {
+	tp_culture_Francais_syst_1 = {
 		desc = Francais_syst_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian 
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                           
@@ -59,14 +37,14 @@ tax_income = 1
 		
 		
 	}
-	ca_culture_Francais_syst_2 = {
+	tp_culture_Francais_syst_2 = {
 		desc = Francais_syst_2_desc
 		potential = {
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
-is_feudal = yes
+
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -79,7 +57,7 @@ culture = dutch
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Francais_syst_1
+		upgrades_from = tp_culture_Francais_syst_1
 
 		gold_cost = 50
 		build_time = 50
@@ -92,26 +70,27 @@ tax_income = -1
 		
 		
 	}
-	ca_culture_Francais_syst_3 = {
+	tp_culture_Francais_syst_3 = {
 		desc = Francais_syst_3_desc
 		potential = {
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
-is_feudal = yes
+
 				OR = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
                                         culture = old_frankish
 culture = german
+culture = dutch
 				}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Francais_syst_2
+		upgrades_from = tp_culture_Francais_syst_2
 
 gold_cost = 50
 		build_time = 50
@@ -131,11 +110,11 @@ heavy_infantry_morale = -0.10
 
 #systeme feodal et postfeodal apres la reforme : SD, HR, et CO
 
-ca_culture_Francais_sysfed_1 = {
-		desc = ca_culture_Francais_sysfed_1_desc
+tp_culture_Francais_sysfed_1 = {
+		desc = tp_culture_Francais_sysfed_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -169,13 +148,13 @@ knights_defensive = 0.10
 		
 	}
 
-ca_culture_Francais_sysfed_2 = {
+tp_culture_Francais_sysfed_2 = {
 		desc = ca_culture_Francais_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -215,7 +194,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Francais_sysfed_1
+upgrades_from = tp_culture_Francais_sysfed_1
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -228,13 +207,13 @@ tax_income = 2
 		
 	}
 
-ca_culture_Francais_sysfed_3 = {
+tp_culture_Francais_sysfed_3 = {
 		desc = ca_culture_Francais_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -275,7 +254,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Francais_sysfed_2
+upgrades_from = tp_culture_Francais_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -70
@@ -301,7 +280,7 @@ retinuesize = 2000
 
 # Nouveau systeme, espagnes
 
-	ca_culture_Espagnes_syst_1 = {
+	tp_culture_Espagnes_syst_1 = {
 		desc = Espagnes_syst_1_desc
 		potential = {
 			FROM = {
@@ -334,7 +313,7 @@ light_infantry_morale = 0.20
 		
 		
 	}
-	ca_culture_Espagnes_syst_2 = {
+	tp_culture_Espagnes_syst_2 = {
 		desc = Espagnes_syst_2_desc
 		potential = {
 			FROM = {
@@ -353,7 +332,7 @@ culture = basque
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Espagnes_syst_1
+		upgrades_from = tp_culture_Espagnes_syst_1
 		gold_cost = 50
 		build_time = 50
 		knights = 5
@@ -365,7 +344,7 @@ light_infantry = -10
 		
 		
 	}
-	ca_culture_Espagnes_syst_3 = {
+	tp_culture_Espagnes_syst_3 = {
 		desc = Espagnes_syst_3_desc
 		potential = {
 			FROM = {
@@ -385,7 +364,7 @@ culture = basque
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Espagnes_syst_2
+		upgrades_from = tp_culture_Espagnes_syst_2
 gold_cost = 50
 		build_time = 50
 knights = 20
@@ -408,11 +387,11 @@ knights_defensive = -0.10
 
 # Espagnes : systeme feodal et postfeodal apres la reforme : SD, Hidalguia, guarda reales
 
-ca_culture_Espagnes_sysfed_1 = {
+tp_culture_Espagnes_sysfed_1 = {
 		desc = ca_culture_Espagnes_sysfed_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -446,13 +425,13 @@ light_cavalry_morale = 0.20
 		
 		
 	}
-ca_culture_Espagnes_sysfed_2 = {
+tp_culture_Espagnes_sysfed_2 = {
 		desc = ca_culture_Espagnes_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -492,7 +471,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Espagnes_sysfed_1
+upgrades_from = tp_culture_Espagnes_sysfed_1
 		gold_cost = 300
 		build_time = 720
 
@@ -506,13 +485,13 @@ tax_income = -2
 		
 	}
 
-ca_culture_Espagnes_sysfed_3 = {
+tp_culture_Espagnes_sysfed_3 = {
 		desc = ca_culture_Espagnes_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -553,7 +532,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Espagnes_sysfed_2
+upgrades_from = tp_culture_Espagnes_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -30
@@ -573,7 +552,7 @@ retinuesize = 2000
 
 # Anglais : S.D, Commissions d'Array et C-O
 
-ca_culture_Ang_syst_1 = {
+tp_culture_Ang_syst_1 = {
 		desc = Ang_syst_1_desc
 		potential = {
 			FROM = {
@@ -601,7 +580,7 @@ fort_level = 1.0
 		
 		
 	}
-	ca_culture_Ang_syst_2 = {
+	tp_culture_Ang_syst_2 = {
 		desc = Ang_syst_2_desc
 		potential = {
 			FROM = {
@@ -615,7 +594,7 @@ NOT = { has_global_flag = central }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Ang_syst_1
+		upgrades_from = tp_culture_Ang_syst_1
 		gold_cost = 50
 		build_time = 50
 heavy_infantry = 15
@@ -626,7 +605,7 @@ fort_level = - 0.5
 		
 		
 	}
-	ca_culture_Ang_syst_3 = {
+	tp_culture_Ang_syst_3 = {
 		desc = Ang_syst_3_desc
 		potential = {
 			FROM = {
@@ -641,7 +620,7 @@ NOT = { has_global_flag = central }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Ang_syst_2
+		upgrades_from = tp_culture_Ang_syst_2
 gold_cost = 50
 		build_time = 50
 knights = 25
@@ -656,11 +635,11 @@ heavy_infantry_morale = -0.05
 		extra_tech_building_start = 0.8
 	}
 
-ca_culture_Ang_sysfed_1 = {
+tp_culture_Ang_sysfed_1 = {
 		desc = ca_culture_Ang_sysfed_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -688,13 +667,13 @@ knights_defensive = 0.20
 		
 		
 	}
-ca_culture_Ang_sysfed_2 = {
+tp_culture_Ang_sysfed_2 = {
 		desc = ca_culture_Ang_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -729,7 +708,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Ang_sysfed_1
+upgrades_from = tp_culture_Ang_sysfed_1
 		gold_cost = 300
 		build_time = 720
 		
@@ -747,13 +726,13 @@ tax_income = -3
 		
 	}
 
-ca_culture_Ang_sysfed_3 = {
+tp_culture_Ang_sysfed_3 = {
 		desc = ca_culture_Ang_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -789,7 +768,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Ang_sysfed_2
+upgrades_from = tp_culture_Ang_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -35
@@ -814,7 +793,7 @@ retinuesize = 2000
 
 # Nouveau systeme, anglo-saxons
 
-	ca_culture_Saxon_syst_1 = {
+	tp_culture_Saxon_syst_1 = {
 		desc = Ang_syst_1_desc
 		potential = {
 			FROM = {
@@ -842,7 +821,7 @@ fort_level = 1.0
 		
 		
 	}
-	ca_culture_Saxon_syst_2 = {
+	tp_culture_Saxon_syst_2 = {
 		desc = Ang_syst_2_desc
 		potential = {
 			FROM = {
@@ -855,7 +834,7 @@ religion_group = christian
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Saxon_syst_1
+		upgrades_from = tp_culture_Saxon_syst_1
 		gold_cost = 50
 		build_time = 50
 heavy_infantry = 15
@@ -867,7 +846,7 @@ fort_level = - 0.5
 		
 	}
 	
-	ca_culture_Saxon_syst_3 = {
+	tp_culture_Saxon_syst_3 = {
 		desc = Ang_syst_3_desc
 		potential = {
 			FROM = {
@@ -882,7 +861,7 @@ religion_group = christian
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Saxon_syst_2
+		upgrades_from = tp_culture_Saxon_syst_2
 gold_cost = 50
 		build_time = 50
 knights = 25
@@ -898,13 +877,13 @@ heavy_infantry_morale = -0.05
 	}
 
 
-ca_culture_Saxon_sysfed_2 = {
+tp_culture_Saxon_sysfed_2 = {
 		desc = ca_culture_Ang_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -939,7 +918,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Saxon_syst_3
+upgrades_from = tp_culture_Saxon_syst_3
 		gold_cost = 300
 		build_time = 720
 		
@@ -957,13 +936,13 @@ tax_income = -3
 		
 	}
 
-ca_culture_Saxon_sysfed_3 = {
+tp_culture_Saxon_sysfed_3 = {
 		desc = ca_culture_Ang_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -999,7 +978,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Saxon_sysfed_2
+upgrades_from = tp_culture_Saxon_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -35
@@ -1018,531 +997,11 @@ retinuesize = 2000
 		
 		
 	}
-
-
-# romaioi : Themata, Tagmata, Pronoia
-
-	ca_culture_THEME_syst_1 = {
-		desc = THEME_syst_1_desc
-		potential = {
-e_byzantium = {
-has_law = theme_byz
-		}
-NOT = { FROMFROM = { title = b_constantinople } }
-
-
-			FROM = {
-
-				
-					culture = greek
-					
-                                       
-				
-			}
-
-}
-		trigger = { 
-TECH_CASTLE_CONSTRUCTION = 0
-
- }
-                add_number_to_name = no 
-		gold_cost = 30
-		build_time = 730
-
-heavy_infantry = 50
-archers = 25
-light_infantry = 25
-light_cavalry = 5
-pikemen = 25
-knights = 5
-horse_archers = 5	
-heavy_infantry_defensive = 0.15
-pikemen_defensive = 0.15
-heavy_infantry_morale = 0.15
-pikemen_morale = 0.15
-fort_level = 1.0
-
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_THEME_syst_2 = {
-		desc = THEME_syst_2_desc
-		potential = {
-
-NOT = { FROMFROM = { title = b_constantinople } }
-			FROM = {
-
-				
-					culture = greek
-					
-                                       
-				
-			}
-		}
-		trigger = { 
-TECH_CASTLE_CONSTRUCTION = 4
-e_byzantium = {
-has_law = theme_byz
-has_law = crown_authority_3
-		}
- }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_THEME_syst_1
-		gold_cost = 50
-		build_time = 50
-heavy_infantry = 10
-archers = 5
-light_infantry = 5
-pikemen = 5	
-heavy_infantry_morale = 0.05
-pikemen_morale = 0.05
-fort_level = 0.5
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_THEME_syst_3 = {
-		desc = THEME_syst_3_desc
-		potential = {
-
-NOT = { FROMFROM = { title = b_constantinople } }
-			FROM = {
-
-				
-					culture = greek
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 7
-e_byzantium = {
-has_law = theme_byz
-has_law = emp_autocrate
-has_global_flag = pe_pro_byz 
-		}
-  }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_THEME_syst_2
-gold_cost = 50
-build_time = 50
-heavy_infantry = 40
-archers = -10
-light_infantry = 5
-pikemen = 20
-knights = -5
-horse_archers = -5	
-heavy_infantry_offensive = 0.10
-pikemen_offensive = 0.10
-heavy_infantry_morale = 0.05
-pikemen_morale = 0.05
-
-		ai_creation_factor = 101
-		
-		
-	}
-ca_culture_PRONOIA_syst_1 = {
-		desc = PRONOIA_syst_1_desc
-		potential = {
-e_byzantium = {
-has_law = pronoia_byz
-		}
-NOT = { FROMFROM = { title = b_constantinople } }
-
-
-			FROM = {
-
-				
-					culture = greek
-					
-                                       
-				
-			}
-
-}
-		trigger = { 
-TECH_CASTLE_CONSTRUCTION = 0
- }
-                add_number_to_name = no 
-		gold_cost = 30
-		build_time = 730
-
-heavy_infantry = 15
-archers = 20
-light_infantry = 20
-knights = 30
-horse_archers = 30		
-horse_archers_morale = 0.10
-knights_defensive = 0.20
-
-
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_PRONOIA_syst_2 = {
-		desc = PRONOIA_syst_2_desc
-		potential = {
-
-NOT = { FROMFROM = { title = b_constantinople } }
-			FROM = {
-
-				
-					culture = greek
-					
-                                       
-				
-			}
-		}
-		trigger = { 
-TECH_CASTLE_CONSTRUCTION = 5
-e_byzantium = {
-has_law = pronoia_byz
-
-		} }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_PRONOIA_syst_1
-		gold_cost = 50
-		build_time = 50
-
-heavy_infantry = -5
-archers = -5
-light_infantry = 10
-knights = 20
-horse_archers = 20		
-horse_archers_morale = 0.10
-knights_defensive = 0.05
-knights_morale = 0.15
-		ai_creation_factor = 101
-		
-		
-	}
-
-	ca_culture_Tagmata_syst_1 = {
-		desc = Tagmata_syst_1_desc
-		potential = {
-			
-
-			FROMFROM = { title = b_constantinople }
-
-		
-		}
-		trigger = { TECH_RECRUITMENT = 0
-FROM = {
-has_landed_title = e_byzantium }
-		
-		 }
-		gold_cost = 30
-		build_time = 730
-add_number_to_name = no 
-retinuesize = 3000
-
-
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_Tagmata_syst_2 = {
-		desc = Tagmata_syst_2_desc
-		potential = {
-			
-
-			FROMFROM = { title = b_constantinople }
-
-		
-		}
-		trigger = { TECH_RECRUITMENT = 4
-FROM = {
-has_landed_title = e_byzantium } }
-		upgrades_from = ca_culture_Tagmata_syst_1
-		gold_cost = 50
-		build_time = 50
-add_number_to_name = no 
-retinuesize = 4000
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_Tagmata_syst_3 = {
-		desc = Tagmata_syst_3_desc
-		potential = {
-FROM = {
-has_landed_title = e_byzantium }			
-
-			FROMFROM = { title = b_constantinople }
-		
-		}
-		trigger = { TECH_RECRUITMENT = 7
-FROM = {
-has_landed_title = e_byzantium }
-e_byzantium = {
-OR = {
-has_law = emp_aristos
-has_law = emp_autocrate
-}
-
-
-		}
- }
-		upgrades_from = ca_culture_Tagmata_syst_2
-gold_cost = 50
-build_time = 50
-add_number_to_name = no 
-retinuesize = 5000
-
-		ai_creation_factor = 101
-		
-		
-	}
-
-
-# Lombards, gansindi et comitatus
-
-	ca_culture_Lomb_syst_1 = {
-		desc = Lomb_syst_1_desc
-		potential = {
-		is_feudal = yes
-religion_group = christian
-NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }  
-			FROM = {
-
-					culture = lombard
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		gold_cost = 30
-		build_time = 730
-
-heavy_infantry = 45
-archers = 5
-light_infantry = 40
-light_cavalry = 5		
-heavy_infantry_offensive = 0.10
-heavy_infantry_defensive = -0.10
-heavy_infantry_morale = 0.10
-
-
-		ai_creation_factor = 101
-
-		
-		
-	}
-	ca_culture_Lomb_syst_2 = {
-		desc = Lomb_syst_2_desc
-		potential = {
-		is_feudal = yes
-religion_group = christian
-NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }  
-			FROM = {
-
-					culture = lombard
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_Lomb_syst_1
-		gold_cost = 50
-		build_time = 50
-heavy_infantry = 20
-light_cavalry = 5
-light_infantry = -30		
-heavy_infantry_offensive = 0.05
-heavy_infantry_defensive = 0.10
-heavy_infantry_morale = 0.05
-tax_income = -2
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_Lomb_syst_3 = {
-		desc = Lomb_syst_3_desc
-		potential = {
-		is_feudal = yes
-religion_group = christian
-NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }  
-			FROM = {
-
-					culture = lombard
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_Lomb_syst_2
-gold_cost = 50
-		build_time = 50
-heavy_infantry = 25
-light_infantry = 30
-light_infantry_defensive = -0.1
-light_infantry_offensive = 0.1
-fort_level = 1.0
-retinuesize = 100
-tax_income = -1
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	
-	#Lombards : Comitatus, puis comme les autres italiens
-	
-	ca_culture_Lomb_sysfed_1 = {
-		desc = Lomb_syst_3_desc
-		potential = {
-			FROM = {
-is_feudal = yes
-religion_group = christian
-OR = { 
-has_global_flag = mutare 
-has_global_flag = central  
-}                          
-				culture = lombard
-
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-                add_number_to_name = no 
-		gold_cost = 10
-		build_time = 250
-heavy_infantry = 90
-archers = 5
-light_cavalry = 10
-light_infantry = 40
-heavy_infantry_offensive = 0.15
-heavy_infantry_morale = 0.15
-light_infantry_defensive = -0.1
-light_infantry_offensive = 0.1
-fort_level = 1.0
-retinuesize = 100
-tax_income = -1
-		ai_creation_factor = 101
-		
-		
-	}
-
-ca_culture_Lomb_sysfed_2 = {
-		desc = ca_culture_Italie_sysfed_2_desc
-		potential = {
-			FROM = {
-
-
-is_feudal = yes
-religion_group = christian
-OR = { 
-has_global_flag = mutare 
-has_global_flag = central  
-}                          
-				culture = lombard
-
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 6
-OR = {
-FROM = {
-top_liege = {
-primary_title = {
-OR = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}
-}
-FROM = {
-primary_title = {
-OR = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}
-		} }
-                add_number_to_name = no
-upgrades_from = ca_culture_Lomb_sysfed_1
-		gold_cost = 300
-		build_time = 720
-knights = 15
-light_cavalry = -30		
-tax_income = 4
-		ai_creation_factor = 101
-		
-		
-	}
-
-ca_culture_Lomb_sysfed_3 = {
-		desc = ca_culture_Italie_sysfed_3_desc
-		potential = {
-			FROM = {
-
-
-is_feudal = yes
-religion_group = christian
-OR = { 
-has_global_flag = mutare 
-has_global_flag = central  
-}                          
-			culture = lombard
-
-			}
-		}
-
-		trigger = { TECH_CASTLE_CONSTRUCTION = 8
-OR = {
-FROM = {
-NOT = { tier = duke }
-NOT = { tier = king }
-NOT = { tier = count }
-liege = {
-primary_title = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}
-FROM = {
-primary_title = {
-OR = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}		} }
-                add_number_to_name = no
-upgrades_from = ca_culture_Lomb_sysfed_2
-		gold_cost = 400
-		build_time = 720
-knights = -45
-archers = -10
-light_cavalry = -30
-light_infantry = -20
-knights_offensive = -0.10
-knights_morale = -0.10
-knights_defensive = -0.10		
-tax_income = -6
-retinuesize = 1500
-		ai_creation_factor = 101
-		
-		
-	}
-	
-	# Italiens : S.D / Condotta / Provisionati
-	
-	ca_culture_Italie_sysfed_1 = {
+	tp_culture_Italie_sysfed_1 = {
 		desc = ca_culture_Italie_sysfed_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1569,13 +1028,13 @@ knights_defensive = 0.10
 		
 	}
 
-ca_culture_Italie_sysfed_2 = {
+tp_culture_Italie_sysfed_2 = {
 		desc = ca_culture_Italie_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1607,7 +1066,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Italie_sysfed_1
+upgrades_from = tp_culture_Italie_sysfed_1
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -1618,13 +1077,13 @@ tax_income = 4
 		
 	}
 
-ca_culture_Italie_sysfed_3 = {
+tp_culture_Italie_sysfed_3 = {
 		desc = ca_culture_Italie_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1657,7 +1116,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Italie_sysfed_2
+upgrades_from = tp_culture_Italie_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -45
@@ -1673,76 +1132,11 @@ retinuesize = 1500
 		
 		
 	}
-
-#Arméniens, Nakharars et latinisation
-
-	ca_culture_Arme_syst_1 = {
-		desc = Arme_syst_1_desc
-		potential = {
-			FROM = {
-
-					OR = {
-culture = armenian
-culture = georgian }
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		gold_cost = 30
-		build_time = 730
-
-knights = 20
-horse_archers = 20		
-horse_archers_morale = 0.10
-horse_archers_offensive = 0.10
-knights_morale = 0.10
-light_infantry = 40
-light_infantry_offensive = 0.20
-light_infantry_defensive = 0.20
-heavy_infantry = 10
-
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_Arme_syst_2 = {
-		desc = Arme_syst_2_desc
-		potential = {
-			FROM = {
-OR = {
-culture = armenian
-culture = georgian }
-					
-                                       
-				
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
-                add_number_to_name = no 
-		upgrades_from = ca_culture_Arme_syst_1
-		gold_cost = 50
-		build_time = 50
-knights = 15
-horse_archers = 15
-heavy_infantry = 10
-light_cavalry = 5
-light_infantry = -15		
-knights_morale = 0.10
-knights_offensive = 0.10
-		ai_creation_factor = 101
-		
-		
-	}
-
-# Ecosse, oenach fed-> SS
-
-	ca_culture_Ecosse_syst_1 = {
+	tp_culture_Ecosse_syst_1 = {
 		desc = Ecosse_syst_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                            
@@ -1772,11 +1166,11 @@ retinuesize = 200
 		
 		
 	}
-	ca_culture_Ecosse_syst_2 = {
+	tp_culture_Ecosse_syst_2 = {
 		desc = Ecosse_syst_2_desc
 potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                            
@@ -1790,7 +1184,7 @@ NOT = { has_global_flag = central }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
-		upgrades_from = ca_culture_Ecosse_syst_1
+		upgrades_from = tp_culture_Ecosse_syst_1
 
 		gold_cost = 100
 		build_time = 50
@@ -1814,11 +1208,11 @@ retinuesize = -200
 	
 	# Ecosse : S.S ->Manrent-> C.O lowlands
 
-ca_culture_Ecosse_sysfed_1 = {
+tp_culture_Ecosse_sysfed_1 = {
 		desc = Ecosse_syst_2_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1855,13 +1249,13 @@ pikemen_offensive = -0.1
 		
 		
 	}
-ca_culture_Ecosse_sysfed_2 = {
+tp_culture_Ecosse_sysfed_2 = {
 		desc = ca_culture_Ecosse_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1897,7 +1291,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Ecosse_sysfed_1
+upgrades_from = tp_culture_Ecosse_sysfed_1
 		gold_cost = 300
 		build_time = 720
 		
@@ -1920,13 +1314,13 @@ tax_income = -3
 		
 	}
 
-ca_culture_Ecosse_sysfed_3 = {
+tp_culture_Ecosse_sysfed_3 = {
 		desc = ca_culture_Ecosse_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -1963,7 +1357,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Ecosse_sysfed_2
+upgrades_from = tp_culture_Ecosse_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -40
@@ -1986,142 +1380,11 @@ retinuesize = 2000
 		
 		
 	}
-
-# Irlande-> Oenach fed-> galloglass->C-O
-
-	ca_culture_Eire_syst_1 = {
-		desc = Eire_syst_1_desc
-		potential = {
-			FROM = {
-is_feudal = yes
-religion_group = christian                            
-				
-					culture = irish
-					
-                     
-				
-
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-                add_number_to_name = no 
-		gold_cost = 30
-		build_time = 400
-
-heavy_infantry = 10
-archers = 30
-light_cavalry = 40
-light_infantry = 60	
-pikemen = 10
-light_infantry_morale = 0.2
-light_cavalry_morale = 0.2
-light_cavalry_offensive = 0.1
-light_cavalry_defensive = 0.2
-retinuesize = 200
-
-		ai_creation_factor = 101
-		
-		
-	}
-	
-	ca_culture_Eire_syst_2 = {
-		desc = Eire_syst_2_desc
-		potential = {
-			FROM = {
-
-
-is_feudal = yes
-religion_group = christian
-OR = { 
-has_global_flag = mutare 
-has_global_flag = central  
-}                          
-				
-			culture = irish
-			
-
-				
-
-			}
-		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 5}
-		
-                add_number_to_name = no
-upgrades_from = ca_culture_Eire_syst_1
-		gold_cost = 300
-		build_time = 720
-		heavy_infantry = -10
-		light_cavalry = 20
-		light_cavalry_offensive = 0.1
-		pikemen = 10
-		retinuesize = 200
-
-		ai_creation_factor = 101
-		
-		
-	}
-	ca_culture_Eire_syst_3 = {
-		desc = Eire_syst_3_desc
-		potential = {
-			FROM = {
-
-
-is_feudal = yes
-religion_group = christian
-OR = { 
-has_global_flag = mutare 
-has_global_flag = central  
-}                          
-				culture = irish
-
-			}
-		}
-
-		trigger = { TECH_CASTLE_CONSTRUCTION = 8
-OR = {
-FROM = {
-NOT = { tier = duke }
-NOT = { tier = king }
-NOT = { tier = count }
-liege = {
-primary_title = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}
-FROM = {
-primary_title = {
-OR = {
-has_law = centralization_3
-has_law = centralization_4
-}
-}
-}		} }
-                add_number_to_name = no
-upgrades_from = ca_culture_Eire_syst_2
-		gold_cost = 400
-		build_time = 720
-
-archers = -30
-light_cavalry = -60
-heavy_infantry = -10
-light_infantry = -60
-pikemen = -20
-tax_income = -3
-retinuesize = 1600
-		ai_creation_factor = 101
-		
-		
-	}
-	
-	#Teutons : S.D => Gladii => Clamor Patriae
-
-ca_culture_Germ_sysfed_1 = {
+	tp_culture_Germ_sysfed_1 = {
 		desc = ca_culture_Germ_sysfed_1_desc
 		potential = {
 			FROM = {
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -2146,13 +1409,13 @@ knights_defensive = 0.10
 		
 	}
 
-ca_culture_Germ_sysfed_2 = {
+tp_culture_Germ_sysfed_2 = {
 		desc = ca_culture_Germ_sysfed_2_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -2184,7 +1447,7 @@ has_law = centralization_4
 }
 		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Germ_sysfed_1
+upgrades_from = tp_culture_Germ_sysfed_1
 		gold_cost = 300
 		build_time = 720
 knights = -40
@@ -2198,13 +1461,13 @@ tax_income = 3
 		
 	}
 
-ca_culture_Germ_sysfed_3 = {
+tp_culture_Germ_sysfed_3 = {
 		desc = ca_culture_Germ_sysfed_3_desc
 		potential = {
 			FROM = {
 
 
-is_feudal = yes
+
 religion_group = christian
 OR = { 
 has_global_flag = mutare 
@@ -2237,7 +1500,7 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = ca_culture_Germ_sysfed_2
+upgrades_from = tp_culture_Germ_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -30
@@ -2256,7 +1519,4 @@ retinuesize = 1500
 		
 		
 	}
-
-
-
 }

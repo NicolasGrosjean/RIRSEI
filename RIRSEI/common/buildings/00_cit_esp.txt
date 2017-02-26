@@ -1,0 +1,82 @@
+city = {
+ct_defensores_civ = {
+	add_number_to_name = no 
+		desc = ct_defensores_civ_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+OR = {
+culture = catalan
+culture = castillan
+                          culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 50
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 150
+light_infantry_defensive = 0.2
+light_infantry_offensive = -0.1
+fort_level = 1.5
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_locupletes = {
+	add_number_to_name = no 
+		desc = ct_locupletes_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+OR = {
+culture = catalan
+culture = castillan
+                          culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+		}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_defensores_civ
+		gold_cost = 100
+		prestige_cost = 0
+		build_time = 700
+		light_infantry = -50
+light_infantry_defensive = -0.2
+light_infantry_offensive = 0.1
+knights = 20
+light_cavalry = 40
+light_cavalry_offensive = 0.2
+light_cavalry_morale = 0.2
+fort_level = -1.5
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.2
+	}	
+
+
+
+}

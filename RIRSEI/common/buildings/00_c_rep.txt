@@ -1,0 +1,148 @@
+city = {
+ct_mil_commun = {
+	add_number_to_name = no 
+		desc = ct_mil_commun_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 				
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 50
+		prestige_cost = 0
+		build_time = 400
+		light_infantry = 300
+light_infantry_morale = -0.4
+light_infantry_offensive = -0.4
+light_infantry_defensive = -0.4
+heavy_infantry = 20
+heavy_infantry_offensive = -0.1
+heavy_infantry_morale = -0.1
+archers = 50
+
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_Lex_belli = {
+	add_number_to_name = no 
+		desc = ct_Lex_Belli_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 				
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_mil_commun
+		gold_cost = 250
+		prestige_cost = 0
+		build_time = 750
+		light_infantry = -300
+heavy_infantry = 60
+heavy_infantry_offensive = 0.1
+heavy_infantry_morale = 0.1
+archers = 20
+pikemen = 150
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.2
+	}
+
+
+ct_censitaire = {
+	add_number_to_name = no 
+		desc = ct_censitaire_desc
+		potential = {
+		FROM = {
+			
+religion_group = christian
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+}  				
+			}
+		}
+trigger = { TECH_CITY_CONSTRUCTION = 6 }
+		prerequisites = { ct_Lex_belli }
+		not_if_x_exists = { ct_soldes }
+		gold_cost = 200
+		prestige_cost = 0
+		build_time = 700
+		knights = 40
+knights_morale = 0.1
+knights_offensive = 0.1
+knights_defensive = 0.1
+light_cavalry = 40
+
+		
+		
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 1.1
+	}
+	
+	ct_soldes = {
+
+add_number_to_name = no 
+		desc = ct_censitaire_desc
+		potential = {
+		FROM = {
+			
+religion_group = christian
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+}  				
+			}
+		}
+trigger = { TECH_CITY_CONSTRUCTION = 6 }
+		prerequisites = { ct_Lex_belli }
+		not_if_x_exists = { ct_censitaire }
+		gold_cost = 300
+		prestige_cost = 0
+		build_time = 700
+		
+heavy_infantry = 100
+heavy_infantry_morale = 0.1
+heavy_infantry_offensive = 0.1
+heavy_infantry_defensive = 0.1
+archers = 50
+pikemen = 150
+pikemen_morale = 0.1
+pikemen_defensive = 0.1
+pikemen_offensive = 0.1
+
+		
+		
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 1.1
+	}
+		
+}

@@ -1,0 +1,25 @@
+city = {
+	ct_avoir = {
+	add_number_to_name = no 
+		desc = ct_avoir_desc
+		potential = {
+			FROM = {
+			
+                        religion_group = muslim
+				
+			}
+		}
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
+		
+		gold_cost = 50
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 300
+light_infantry_morale = -0.4
+light_infantry_defensive = -0.4
+tax_income = 2		
+		ai_creation_factor = 101
+		
+		
+	}
+}

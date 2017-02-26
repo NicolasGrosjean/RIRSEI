@@ -1,0 +1,888 @@
+castle = {
+
+ca_mamelouks_turcs_1 = {
+desc = mamelouks_turcs_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+extra_tech_building_start = 100		
+		
+	}
+
+
+ca_mamelouks_turcs_2 = {
+		desc = mamelouks_turcs_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_turcs_1
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+extra_tech_building_start = 100			
+		
+	}
+
+
+ca_mamelouks_turcs_3 = {
+		desc = mamelouks_turcs_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_turcs_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_mamelouks_slavons_1 = {
+desc = mamelouks_slavons_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+
+not_if_x_exists = { ca_mamelouks_turcs_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
+		
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_slavons_2 = {
+		desc = mamelouks_slavons_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_slavons_1
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_slavons_3 = {
+		desc = mamelouks_slavons_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_slavons_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_mamelouks_circas_1 = {
+desc = mamelouks_circas_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+
+not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_turcs_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
+		
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_circas_2 = {
+		desc = mamelouks_circas_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_circas_1
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_circas_3 = {
+		desc = mamelouks_circas_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_circas_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_mamelouks_armenien_1 = {
+desc = mamelouks_armenien_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+
+not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_turcs_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
+		
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_armenien_2 = {
+		desc = mamelouks_armenien_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_armenien_1 
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_armenien_3 = {
+		desc = mamelouks_armenien_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_armenien_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_mamelouks_soudanais_1 = {
+desc = mamelouks_soudanais_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+
+not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_turcs_1 ca_mamelouks_francs_1 }
+		
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_soudanais_2 = {
+		desc = mamelouks_soudanais_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_soudanais_1
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_soudanais_3 = {
+		desc = mamelouks_soudanais_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_soudanais_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_mamelouks_francs_1 = {
+desc = mamelouks_francs_1_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+}
+		
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+
+not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_turcs_1 }
+		
+                add_number_to_name = no 
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 4000
+fort_level = 1.0
+tax_income = -1
+
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_francs_2 = {
+		desc = mamelouks_francs_2_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+
+
+ }
+              
+  add_number_to_name = no                
+		upgrades_from = ca_mamelouks_francs_1
+		gold_cost = 400
+		build_time = 730
+
+retinuesize = 6000
+fort_level = 0.5
+tax_income = -3
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+
+ca_mamelouks_francs_3 = {
+		desc = mamelouks_francs_3_desc
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+		}
+}
+}
+
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+primary_title = {
+has_law = assab_0
+
+		}
+}
+
+
+ }
+                add_number_to_name = no            
+		upgrades_from = ca_mamelouks_francs_2
+		gold_cost = 600
+		build_time = 730
+
+retinuesize = 8000
+fort_level = 1.0
+tax_income = -6
+		ai_creation_factor = 101
+		extra_tech_building_start = 100	
+		
+	}
+
+ca_petitmamk_0 = {
+		desc = petitmamk_0_desc
+		potential = {
+
+
+FROM = {
+independent = no
+religion_group = muslim
+is_nomadic = no
+tier = DUKE
+top_liege = {
+primary_title = {
+has_law = assab_0
+}
+		}
+
+}
+
+
+}
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 2
+
+ }
+                add_number_to_name = no            
+		
+		gold_cost = 200
+		build_time = 730
+
+retinuesize = 1000
+tax_income = -3
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_changassab_0 = {
+		desc = changassab_0_desc
+		potential = {
+is_capital = yes
+
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+has_character_flag = changer_asab
+
+
+}
+		trigger = { 
+TECH_CASTLE_CONSTRUCTION = 0
+
+ }
+                add_number_to_name = no            
+		
+		gold_cost = 10
+		build_time = 600
+
+retinuesize = 1500
+tax_income = -4
+		ai_creation_factor = 101
+		
+		
+	}
+
+}
