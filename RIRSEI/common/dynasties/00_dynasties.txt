@@ -31859,7 +31859,7 @@
 }
 1031029=
 {
-	name="af Färingsö"
+	name="Blomberg"
 	culture="swedish"
 	religion="catholic"
 	coat_of_arms=
@@ -33377,6 +33377,13 @@
 	name="Írakonungr"
 	culture="norwegian"
 	religion="catholic"
+}
+1044404=
+{
+	name="Skjæran"
+	culture="norwegian"
+	religion="cathar"
+	used_for_random=no
 }
 1040006=
 {
@@ -41307,6 +41314,54 @@
 	culture="kannada"
 	religion="hindu"
 }
+1044403=
+{
+	name="Lohmander"
+	culture="rajput"
+	religion="hindu"
+	used_for_random=no
+}
+1044404=
+{
+	name="Khanzada"
+	culture="rajput"
+	religion="sunni"
+}
+1044405=
+{
+	name="Boccaccio"
+	culture="italian"
+	religion="catholic"
+}
+1044406=
+{
+	name="Petrarca"
+	culture="italian"
+	religion="catholic"
+}
+1044407=
+{
+	name="Fibonacci"
+	culture="italian"
+	religion="catholic"
+}
+1044407=
+{
+	name="degli Alighieri"
+	culture="italian"
+	religion="catholic"
+}
+1044408=
+{
+	name="Khorasani" #Fictitious
+	culture="levantine_arabic"
+	religion="sunni"
+}
+1044409={
+	name="Athanagildid"
+	culture="visigothic"
+	religion="catholic"
+}
 1042185=
 {
 	name="Karlukid"
@@ -42905,6 +42960,32 @@
 	coat_of_arms = {
 		data = {
 			1 4 0 30 14 11 0 4 0 30 14 1 0 4 0 30 2 0 0 4 0 30 2 0 0 }
+		religion="catholic"
+	}
+	used_for_random=no
+}
+
+1053021=
+{
+	name="Bialecki" #Ficticious
+	culture = polish
+	religion = catholic
+	coat_of_arms = {
+		data = {
+			0 2 22 5 0 2 2 4 0 26 0 0 0 4 0 26 0 0 0 4 0 26 0 0 0 }
+		religion="catholic"
+	}
+	used_for_random=no
+}
+
+1053022=
+{
+	name="Kuiper" #Ficticious
+	culture = dutch
+	religion = catholic
+	coat_of_arms = {
+		data = {
+			0 4 0 8 7 12 1 0 0 34 3 1 1 0 0 34 3 1 1 0 0 34 3 1 1 }
 		religion="catholic"
 	}
 	used_for_random=no
