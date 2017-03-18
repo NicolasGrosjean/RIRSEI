@@ -10479,7 +10479,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="italian"
-	trait="slow"
+	#trait="slow"
 	trait="imbecile"
 	trait="naive_appeaser"
 	1200.1.1 = {
@@ -42920,7 +42920,7 @@
 
 214090 = {
 	name="Leonardo"
-	dynasty=214020 # Fibonacci
+	dynasty=1044407 # Fibonacci
 	religion="catholic"
 	culture="italian"
 	trait=genius
@@ -42944,7 +42944,7 @@
 
 214091 = {
 	name="Durante" # Dante
-	dynasty=214021 # degli Alighieri
+	dynasty=1044407 # degli Alighieri
 	religion="catholic"
 	culture="italian"
 	trait=genius
@@ -42969,7 +42969,7 @@
 
 214092 = {
 	name="Franceso" # Petrarch
-	dynasty=214022
+	dynasty=1044406
 	religion="catholic"
 	culture="italian"
 	trait=genius
@@ -42991,7 +42991,7 @@
 
 214093 = {
 	name="Giovanni"
-	dynasty=214023 # Boccaccio
+	dynasty=1044405 # Boccaccio
 	religion="catholic"
 	culture="italian"
 	trait=genius

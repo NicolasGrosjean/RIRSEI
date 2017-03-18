@@ -7375,7 +7375,7 @@
 	culture="german"
 	trait="lustful"
 	trait="just"
-	trait="arbitrary"
+	#trait="arbitrary"
 	trait="misguided_warrior"
 	father=212363
 	1156.1.2 = {
@@ -7443,7 +7443,7 @@
 	religion="catholic"
 	culture="german"
 	trait="zealous"
-	trait="cynical"
+	#trait="cynical"
 	trait="martial_cleric"
 	father=30717
 	1146.1.1 = {
@@ -26986,7 +26986,7 @@
 	religion="catholic"
 	culture="german"
 	trait="wroth"
-	trait="patient"
+	#trait="patient"
 	trait="thrifty_clerk"
 	father=462930
 	mother=462931
@@ -27186,7 +27186,7 @@
 	religion="catholic"
 	culture="german"
 	trait="deceitful"
-	trait="honest"
+	#trait="honest"
 	trait="underhanded_rogue"
 	1300.1.1 = {
 		birth="1300.1.1"
@@ -45692,7 +45692,7 @@
 	religion="catholic"
 	culture="german"
 	trait="wroth"
-	trait="patient"
+	#trait="patient"
 	trait="harelip"
 	trait="amateurish_plotter"
 	father=11037
