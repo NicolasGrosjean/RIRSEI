@@ -41,19 +41,6 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 1200
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -82,19 +69,6 @@ province_event = {
 			factor = 0.3
 			owner = {
 				culture_group = latin
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
 			}
 		}
 	}
@@ -151,19 +125,6 @@ province_event = {
 				culture = dutch
 			}
 		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -211,19 +172,6 @@ province_event = {
 				culture = german
 			}
 		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -259,19 +207,6 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture_group = latin
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
 			}
 		}
 	}
@@ -316,19 +251,6 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = occitan
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
 			}
 		}
 	}
@@ -381,19 +303,6 @@ province_event = {
 				culture = castillan
 			}
 		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -444,19 +353,6 @@ province_event = {
 				culture = catalan
 			}
 		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -489,19 +385,6 @@ province_event = {
 			factor = 0.5
 			owner = {
 				culture = portuguese
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
 			}
 		}
 	}
@@ -554,19 +437,6 @@ province_event = {
 				culture_group = arabic
 			}
 		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
@@ -608,19 +478,6 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 1200
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
 	}
 
 	option = {
