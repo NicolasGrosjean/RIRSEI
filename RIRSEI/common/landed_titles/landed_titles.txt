@@ -8848,7 +8848,6 @@ k_sweden = {
 			color2={ 255 255 255 }
 			capital = 297 # Västergötland
 			
-			swedish = "Västergötland"
 			norwegian = "Vestergøtland"
 			danish = "Vestergøtland"
 			norse = "Vestergautland"
@@ -8870,7 +8869,6 @@ k_sweden = {
 				color={ 60 55 255 }
 				color2={ 255 255 255 }
 				
-				swedish = "Västergötland"
 				norwegian = "Vestergøtland"
 				danish = "Vestergøtland"
 				norse = "Vestergautland"
@@ -11941,8 +11939,6 @@ k_sweden = {
 		title = "granduche"
 		culture = lithuanian
 		
-		prussian = "Prussia"
-		
 		catholic = 50 # Crusade target weight
 		slavic_pagan_reformed = 100 # Crusade target weight
 		baltic_pagan_reformed = 500
@@ -12944,7 +12940,6 @@ always = no # Only created through special event
 		finnish_pagan_reformed = 300 # Crusade target weight
 		baltic_pagan_reformed = 100 # Crusade target weight
 		
-		mordvin = Mordvinia
 		norse = Garðariki
 		
 		culture = russian
@@ -17029,143 +17024,6 @@ e_byzantium = {
 religion = orthodox
 	}
 	
-	k_trebizond = {
-		color={ 100 151 33 }
-		capital = 678 # Trapezous
-		culture = greek
-		
-		orthodox = 1000 # Crusade target weight
-		
-		d_trebizond = {
-			color={ 125 160 30 }
-			color2={ 255 255 255 }
-			
-			capital = 678 # Trepezous
-			
-			dignity = 7
-			
-			c_theodosiopolis = {
-				color={ 140 50 100 }
-				color2={ 255 255 255 }
-				
-				b_theodosiopolis = {
-				}
-				b_argyropolis = {
-				}
-				b_citharizum = {
-				}
-				b_satala = {
-				}
-				b_thera = {
-				}
-				b_oukhiti = {
-				}
-				b_askale = {
-				}
-				b_tortum = {
-				}
-			}
-			c_trapezous = {
-				color={ 149 70 110 }
-				color2={ 255 255 255 }
-				
-				b_trapezous = {
-				}
-				b_koralla = {
-				}
-				b_rizaion = {
-				}
-				b_paiperta = {
-				}
-				b_rizini = {
-				}
-				b_alucra = {
-				}
-				b_kelkit = {
-				}
-				b_dereli = {
-				}
-			}
-			c_chaldea = {
-				color={ 159 50 90 }
-				color2={ 255 255 255 }
-				
-				b_kerasous = {
-				}
-				b_cotyora = {
-				}
-				b_camachus = {
-				}
-				b_ibora = {
-				}
-				b_podandos = {
-				}
-				b_tilgarimo = {
-				}
-				b_sebastea = {
-					armenian = "Sebasta"
-					greek = "Sebasteia"
-					turkish = "Sivas"
-				}
-				b_heracleopolis = {
-				}
-			}
-		}
-		
-		d_armeniacon = {
-			color={ 125 190 75 }
-			color2={ 255 255 20 }
-			
-			capital = 738 # Amisos
-			
-			c_amisos = {
-				color={ 255 2 169 }
-				color2={ 255 255 20 }
-				
-				turkish = "Amasya"
-				
-				b_amisos = {
-				}
-				b_amasia = {
-					turkish = "Amasya"
-				}
-				b_thermodon = {
-				}
-				b_eupatoria = {
-				}
-				b_zela = {
-				}
-				b_dazimon = {
-				}
-				b_neokaisarea = {
-				}
-				b_phadisane = {
-				}
-			}
-			c_sinope = {
-				color={ 255 4 171 }
-				color2={ 255 255 20 }
-				
-				b_sinope = {
-				}
-				b_pompeiopolis = {
-				}
-				b_germanicopolis = {
-				}
-				b_aboniteichos = {
-				}
-				b_amastris = {
-				}
-				b_comana = {
-				}
-				b_talaura = {
-				}
-				b_themiscyra = {
-				}
-			}
-		}
-	}
-	
 	k_byzantium = {
 		color={ 165 11 111 }
 		color2={ 255 255 23 }
@@ -17319,6 +17177,87 @@ hungarian = "Regnum Romaniae"
 				b_percote = {
 				}
 				b_arisbe = {
+				}
+			}
+		}
+		d_samos = {
+			color={ 115 55 100 }
+			color2={ 255 255 20 }
+			
+			capital = 486 # Samos
+			
+			c_ephesos = {
+				color={ 237 42 171 }
+				color2={ 255 255 20 }
+				
+				turkish = "Ayasoluk"
+				
+				b_ephesos = {
+					turkish = "Ayasoluk"
+				}
+				b_lebedos = {
+					holy_site = orthodox
+				}
+				b_miletos = {
+				}
+				b_magnesia = {
+				}
+				b_tralles = {
+				}
+				b_iassos = {
+				}
+				b_palation = {
+				}
+				b_petron = {
+				}
+			}
+			c_smyrna = {
+				color={ 240 45 174 }
+				color2={ 255 255 20 }
+				
+				turkish = "Izmir"
+				
+				b_smyrna = {
+					turkish = "Izmir"
+				}
+				b_pergamon = {
+				}
+				b_phokaia = {
+				}
+				b_adramyttion = {
+				}
+				b_chio = {
+				}
+				b_klazomeanai = {
+				}
+				b_kydonia = {
+				}
+				b_erythrai = {
+				}
+			}
+			c_chios = {
+				color={ 243 48 177 }
+				color2={ 255 255 20 }
+				
+				turkish = "Sisam"
+				
+				b_samos = {
+					turkish = "Sisam"
+				}
+				b_chios = {
+					turkish = "Sakiz"
+				}
+				b_tigani = {
+				}
+				b_marathokampos = {
+				}
+				b_ikaria = {
+				}
+				b_fourni = {
+				}
+				b_chrysostomos = {
+				}
+				b_pagondas = {
 				}
 			}
 		}
@@ -18116,127 +18055,8 @@ hungarian = "Regnum Romaniae"
 				}
 			}
 		}
-	}
-	
-	k_anatolia = {
-		color={ 177 60 100 }
-		color2={ 255 255 23 }
 		
-		capital = 759 # Ikonion
-		
-		culture = greek
-				greek = "Despotaton tès Anatolias"
-swedish = "Regnum Anatoliae"
-norwegian = "Regnum Anatoliae"
-danish = "Regnum Anatoliae"
-german = "Regnum Anatoliae"
-english = "Regnum Anatoliae"
-Saxon = "Regnum Anatoliae"
-dutch = "Regnum Anatoliae"
-frankish = "Regnum Anatoliae"
-norman = "Regnum Anatoliae"
-occitan = "Regnum Anatoliae"
-Gallo = "Regnum Anatoliae"
-basque = "Regnum Anatoliae"
-castillan = "Regnum Anatoliae"
-catalan = "Regnum Anatoliae"
-portuguese = "Regnum Anatoliae"
-irish = "Regnum Anatoliae"
-scottish = "Regnum Anatoliae"
-welsh = "Regnum Anatoliae"
-breton = "Regnum Anatoliae"
-bohemian = "Regnum Anatoliae"
-polish = "Regnum Anatoliae"
-hungarian = "Regnum Anatoliae"
-turkish = "Rum Sultanligi"
-		orthodox = 300 # Crusade target weight
-		catholic = 75 # Crusade target weight
-		muslim = 100 # Crusade target weight
-		
-		d_samos = {
-			color={ 115 55 100 }
-			color2={ 255 255 20 }
-			
-			capital = 486 # Samos
-			
-			c_ephesos = {
-				color={ 237 42 171 }
-				color2={ 255 255 20 }
-				
-				turkish = "Ayasoluk"
-
-				holy_site = orthodox
-				
-				b_ephesos = {
-					turkish = "Ayasoluk"
-				}
-				b_lebedos = {
-				}
-				b_miletos = {
-				}
-				b_magnesia = {
-				}
-				b_tralles = {
-				}
-				b_iassos = {
-				}
-				b_palation = {
-				}
-				b_petron = {
-				}
-			}
-			c_smyrna = {
-				color={ 240 45 174 }
-				color2={ 255 255 20 }
-				
-				turkish = "Izmir"
-				
-				b_smyrna = {
-					turkish = "Izmir"
-				}
-				b_pergamon = {
-				}
-				b_phokaia = {
-				}
-				b_adramyttion = {
-				}
-				b_chio = {
-				}
-				b_klazomeanai = {
-				}
-				b_kydonia = {
-				}
-				b_erythrai = {
-				}
-			}
-			c_chios = {
-				color={ 243 48 177 }
-				color2={ 255 255 20 }
-				
-				turkish = "Sisam"
-				
-				b_samos = {
-					turkish = "Sisam"
-				}
-				b_chios = {
-					turkish = "Sakiz"
-				}
-				b_tigani = {
-				}
-				b_marathokampos = {
-				}
-				b_ikaria = {
-				}
-				b_fourni = {
-				}
-				b_chrysostomos = {
-				}
-				b_pagondas = {
-				}
-			}
-		}
-		
-		d_cibyrrhaeot = {
+		d_cibyrrhaeot = { 
 			color={ 108 29 80 }
 			color2={ 255 255 20 }
 			
@@ -18314,6 +18134,42 @@ turkish = "Rum Sultanligi"
 				}
 			}
 		}
+	}
+	
+	k_anatolia = {
+		color={ 177 60 100 }
+		color2={ 255 255 23 }
+		
+		capital = 759 # Ikonion
+		
+		culture = greek
+				greek = "Despotaton tès Anatolias"
+swedish = "Regnum Anatoliae"
+norwegian = "Regnum Anatoliae"
+danish = "Regnum Anatoliae"
+german = "Regnum Anatoliae"
+english = "Regnum Anatoliae"
+Saxon = "Regnum Anatoliae"
+dutch = "Regnum Anatoliae"
+frankish = "Regnum Anatoliae"
+norman = "Regnum Anatoliae"
+occitan = "Regnum Anatoliae"
+Gallo = "Regnum Anatoliae"
+basque = "Regnum Anatoliae"
+castillan = "Regnum Anatoliae"
+catalan = "Regnum Anatoliae"
+portuguese = "Regnum Anatoliae"
+irish = "Regnum Anatoliae"
+scottish = "Regnum Anatoliae"
+welsh = "Regnum Anatoliae"
+breton = "Regnum Anatoliae"
+bohemian = "Regnum Anatoliae"
+polish = "Regnum Anatoliae"
+hungarian = "Regnum Anatoliae"
+turkish = "Rum Sultanligi"
+		orthodox = 300 # Crusade target weight
+		catholic = 75 # Crusade target weight
+		muslim = 100 # Crusade target weight
 		
 		d_anatolia = {
 			color={ 174 23 122 }
@@ -18508,6 +18364,58 @@ turkish = "Rum Sultanligi"
 				}
 			}
 		}
+		d_armeniacon = {
+			color={ 255 0 167 }
+			color2={ 255 255 20 }
+			
+			capital = 738 # Amisos
+			
+			c_amisos = {
+				color={ 255 2 169 }
+				color2={ 255 255 20 }
+				
+				turkish = "Amasya"
+				
+				b_amisos = {
+				}
+				b_amasia = {
+					turkish = "Amasya"
+				}
+				b_thermodon = {
+				}
+				b_eupatoria = {
+				}
+				b_zela = {
+				}
+				b_dazimon = {
+				}
+				b_neokaisarea = {
+				}
+				b_phadisane = {
+				}
+			}
+			c_sinope = {
+				color={ 255 4 171 }
+				color2={ 255 255 20 }
+				
+				b_sinope = {
+				}
+				b_pompeiopolis = {
+				}
+				b_germanicopolis = {
+				}
+				b_aboniteichos = {
+				}
+				b_amastris = {
+				}
+				b_comana = {
+				}
+				b_talaura = {
+				}
+				b_themiscyra = {
+				}
+			}
+		}
 		d_paphlagonia = {
 			color={ 234 157 207 }
 			color2={ 255 255 20 }
@@ -18583,6 +18491,82 @@ turkish = "Rum Sultanligi"
 				b_nakoleia = {
 				}
 				b_haymana = {
+				}
+			}
+		}
+		
+		d_trebizond = {
+			color={ 135 50 100 }
+			color2={ 255 255 255 }
+			
+			capital = 678 # Trepezous
+			
+			dignity = 7
+			
+			c_theodosiopolis = {
+				color={ 140 50 100 }
+				color2={ 255 255 255 }
+				
+				b_theodosiopolis = {
+				}
+				b_argyropolis = {
+				}
+				b_citharizum = {
+				}
+				b_satala = {
+				}
+				b_thera = {
+				}
+				b_oukhiti = {
+				}
+				b_askale = {
+				}
+				b_tortum = {
+				}
+			}
+			c_trapezous = {
+				color={ 149 70 110 }
+				color2={ 255 255 255 }
+				
+				b_trapezous = {
+				}
+				b_koralla = {
+				}
+				b_rizaion = {
+				}
+				b_paiperta = {
+				}
+				b_rizini = {
+				}
+				b_alucra = {
+				}
+				b_kelkit = {
+				}
+				b_dereli = {
+				}
+			}
+			c_chaldea = {
+				color={ 159 50 90 }
+				color2={ 255 255 255 }
+				
+				b_kerasous = {
+				}
+				b_cotyora = {
+				}
+				b_camachus = {
+				}
+				b_ibora = {
+				}
+				b_podandos = {
+				}
+				b_tilgarimo = {
+				}
+				b_sebastea = {
+					armenian = "Sebasta"
+					greek = "Sebasteia"
+					turkish = "Sivas"
+				}
+				b_heracleopolis = {
 				}
 			}
 		}
@@ -20604,6 +20588,47 @@ georgian = "Regatos tès Georgias"
 			}
 		}
 	}
+	
+	k_venice = {
+		color = { 54 167 156 }
+		capital = 356 # Venice
+		culture = italian
+		title = "dxvenise"
+		dignity = 200 # Never want the Republic of Venice to change primary title
+		
+		allow = {
+			is_republic = yes
+		}
+		
+		d_venice = {
+			color = { 34 137 126 }
+			capital = 356 # Venice
+			
+			dignity = 10
+			
+			c_venezia = {
+				color = { 40 143 132 }
+				color2 = { 255 255 255 }
+				
+				b_venezia = {
+				}
+				b_rialto = {
+				}
+				b_pallestrina = {
+				}
+				b_lido = {
+				}
+				b_jesolo = {
+				}
+				b_murano = {
+				}
+				b_torcello = {
+				}
+				b_fusina = {
+				}
+			}
+		}
+	}
 }
 
 e_italy = {
@@ -20613,22 +20638,6 @@ e_italy = {
 	capital = 333 # Rome
 	
 	culture = italian
-	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture=italian
-			}
-		}
-		has_landed_title=k_italy
-		has_landed_title=k_sicily
-		any_demesne_title = {
-			tier = king
-			NOT = { title = k_italy }
-			NOT = { title = k_sicily }
-		}
-	}
 	
 	k_italy = {
 		color={ 244 227 160 }
@@ -21523,44 +21532,19 @@ e_italy = {
 		}	
 	}
 	
-	k_venice = {
-		color = { 54 167 156 }
-		capital = 356 # Venice
-		culture = italian
-		title = "dxvenise"
-		dignity = 200 # Never want the Republic of Venice to change primary title
-		
-		allow = {
-			is_republic = yes
-		}
-		
-		d_venice = {
-			color = { 34 137 126 }
-			capital = 356 # Venice
-			
-			dignity = 10
-			
-			c_venezia = {
-				color = { 40 143 132 }
-				color2 = { 255 255 255 }
-				
-				b_venezia = {
-				}
-				b_rialto = {
-				}
-				b_pallestrina = {
-				}
-				b_lido = {
-				}
-				b_jesolo = {
-				}
-				b_murano = {
-				}
-				b_torcello = {
-				}
-				b_fusina = {
-				}
+	allow = {
+		hidden_tooltip = {
+			OR = {
+				ai = no
+				culture=italian
 			}
+		}
+		has_landed_title=k_italy
+		has_landed_title=k_sicily
+		any_demesne_title = {
+			tier = king
+			NOT = { title = k_italy }
+			NOT = { title = k_sicily }
 		}
 	}
 }
@@ -22284,14 +22268,35 @@ e_tartaria = {
 		
 		# Creation/Usurp Trigger
 		allow = {
+			OR = {
+				culture = khazar
+				religion_group = jewish_group
+			}
+		}
+	}
+
+	k_cuman = {
+		color = { 231 192 88 }
+		color2={ 255 255 255 }
+		
+		culture = cuman
+		
+		capital = 594 #	Sarkel
+		
+		tengri_pagan_reformed = 500
+		zoroastrian_group = 50 # Crusade target weight
+		
+		# Creation/Usurp Trigger
+		allow = {
 			hidden_tooltip = {
 				OR = {
 					ai = no
-					culture = khazar
-					religion_group = jewish_group
+					culture = cuman
 				}
 			}
 		}
+		
+		slavic_pagan_reformed = 50 # Crusade target weight
 		
 		d_itil = {
 			color={ 151 118 30 }
@@ -22430,7 +22435,6 @@ e_tartaria = {
 				}
 			}
 		}
-		
 		d_sarkel = {
 			color={ 236 200 105 }
 			color2={ 255 255 255 }
@@ -22543,238 +22547,6 @@ e_tartaria = {
 				}
 			}
 		}
-		
-		d_cherson = {
-			color={ 188 91 154 }
-			color2={ 255 255 20 }
-			
-			capital = 560 # Cherson
-			
-			c_theodosia = {
-				color={ 190 93 156 }
-				color2={ 255 255 20 }
-				
-				b_theodosia = {
-				}
-				b_soldaia = {
-				}
-				b_kimmerikon = {
-				}
-				b_caffa = {
-				}
-				b_caulita = {
-				}
-				b_olyva = {
-				}
-				b_lusta = {
-				}
-				b_funan = {
-				}
-			}
-			c_korchev = {
-				color={ 192 95 158 }
-				color2={ 255 255 20 }
-				
-				b_bosphoros = {
-				}
-				b_panticapea = {
-				}
-				b_cherco = {
-				}
-				b_nymphaion = {
-				}
-				b_chystopillia = {
-				}
-				b_vosporo = {
-				}
-				b_baherove = {
-				}
-				b_zavitne = {
-				}
-			}
-			c_cherson = {
-				color={ 194 97 160 }
-				color2={ 255 255 20 }
-				
-				b_kherson = {
-				}
-				b_doros = {
-				}
-				b_neapol = {
-				}
-				b_kerkinitis = {
-				}
-				b_cembalo = {
-				}
-				b_charax = {
-				}
-				b_sevastoupolis = {
-				}
-				b_kalamita = {
-				}
-			}
-			c_tmutarakan = {
-				color={ 196 99 162 }
-				color2={ 255 255 20 }
-				
-				b_tmutarakan = {
-				}
-				b_mapa = {
-				}
-				b_taman = {
-				} 
-				b_tumnev = {
-				}
-				b_jevlisia = {
-				}
-				b_sujukqale = {
-				}
-				b_bata = {
-				}
-				b_tsemes = {
-				}
-			}
-		}
-		
-		d_crimea = { 
-			color={ 226 186 80 }
-			color2={ 255 255 255 }
-			
-			capital = 559 # Crimea
-		
-			c_lower_don = {
-				color={ 230 190 84 }
-				color2={ 255 255 255 }
-			
-				b_taganrog = {
-				}
-				b_matveevkurgan = {
-				}
-				b_skorokhod = {
-				}
-				b_latonovo = {
-				}
-				b_vesely = {
-				}
-				b_marfinka = {
-				}
-				b_ryasnoye = {
-				}
-				b_novoazovsk = {
-				}
-			}
-			c_oleshye = {
-				color={ 238 198 92 }
-				color2={ 255 255 255 }
-			
-				b_ochakiv = {
-				}
-				b_bohopol = {
-				}
-				b_odessa = {
-				}
-				b_kocibey = {
-				}
-				b_balta = {
-				}
-				b_sokoly = {
-				}
-				b_akkerman = {
-				}
-				b_nikolayev = {
-				}
-			}
-			c_lukomorie = {
-				color={ 242 202 96 }
-				color2={ 255 255 255 }
-			
-				b_zaporzhye = {
-				}
-				b_kushunum = {
-				}
-				b_huliaipole = {
-				}
-				b_kalmius = {
-				}
-				b_kalchik = {
-				}
-				b_onkhiv = {
-				}
-				b_polohy = {
-				}
-				b_chernihivka = {
-				}
-			}
-			c_lower_dniepr = {
-				color={ 246 206 100 }
-				color2={ 255 255 255 }
-			
-				b_dnieprkherson = {
-				}
-				b_kairy = {
-				}
-				b_kyzylyar = {
-				}
-				b_shagingirei = {
-				}
-				b_kuturogly = {
-				}
-				b_tokmak = {
-				}
-				b_pryazovske = {
-				}
-				b_bilozerka = {
-				}
-			}
-			c_crimea = {
-				color={ 250 210 104 }
-				color2={ 255 255 255 }
-			
-				b_bakhchisaray = {
-				}
-				b_aqmescit = {
-									
-				}
-				b_dzhankoy = {
-				}
-				b_saq = {
-				}
-				b_perekop = {
-				}
-				b_qarasuvbazar = {
-				}
-				b_kezlev = {
-				}
-				b_qurman = {
-				}
-			}
-		}
-	}
-
-	k_cuman = {
-		color = { 231 192 88 }
-		color2={ 255 255 255 }
-		
-		culture = cuman
-		
-		capital = 895 #	Yaik
-		
-		tengri_pagan_reformed = 500
-		zoroastrian_group = 50 # Crusade target weight
-		
-		# Creation/Usurp Trigger
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = cuman
-				}
-			}
-		}
-		
-		slavic_pagan_reformed = 50 # Crusade target weight
-		
-		
 		
 		d_yaik = {
 			color={ 198 150 11 }
@@ -23407,23 +23179,226 @@ e_tartaria = {
 		capital = 560 # Cherson
 		
 		allow = {
-			560 = { # Cherson
-				owner = {
-					character = ROOT
+			hidden_tooltip = {
+				OR = {
+					ai = no
+					AND = {
+						religion_group = christian
+						OR = { 
+							culture_group = byzantine
+							culture_group = latin
+						}
+					}
 				}
 			}
-			hidden_tooltip = {
-				ai = no
-				#OR = {
-				#	ai = no
-				#	AND = {
-				#		religion_group = christian
-				#		OR = {
-				#			culture_group = byzantine
-				#			culture_group = latin
-				#		}
-				#	}
-				#}
+		}
+		
+		tengri_pagan_reformed = 200
+		slavic_pagan_reformed = 50 # Crusade target weight
+
+		d_cherson = {
+			color={ 188 91 154 }
+			color2={ 255 255 20 }
+			
+			capital = 560 # Cherson
+			
+			c_theodosia = {
+				color={ 190 93 156 }
+				color2={ 255 255 20 }
+				
+				b_theodosia = {
+				}
+				b_soldaia = {
+				}
+				b_kimmerikon = {
+				}
+				b_caffa = {
+				}
+				b_caulita = {
+				}
+				b_olyva = {
+				}
+				b_lusta = {
+				}
+				b_funan = {
+				}
+			}
+			c_korchev = {
+				color={ 192 95 158 }
+				color2={ 255 255 20 }
+				
+				b_bosphoros = {
+				}
+				b_panticapea = {
+				}
+				b_cherco = {
+				}
+				b_nymphaion = {
+				}
+				b_chystopillia = {
+				}
+				b_vosporo = {
+				}
+				b_baherove = {
+				}
+				b_zavitne = {
+				}
+			}
+			c_cherson = {
+				color={ 194 97 160 }
+				color2={ 255 255 20 }
+				
+				b_kherson = {
+				}
+				b_doros = {
+				}
+				b_neapol = {
+				}
+				b_kerkinitis = {
+				}
+				b_cembalo = {
+				}
+				b_charax = {
+				}
+				b_sevastoupolis = {
+				}
+				b_kalamita = {
+				}
+			}
+			c_tmutarakan = {
+				color={ 196 99 162 }
+				color2={ 255 255 20 }
+				
+				b_tmutarakan = {
+				}
+				b_mapa = {
+				}
+				b_taman = {
+				} 
+				b_tumnev = {
+				}
+				b_jevlisia = {
+				}
+				b_sujukqale = {
+				}
+				b_bata = {
+				}
+				b_tsemes = {
+				}
+			}
+		}
+		
+		d_crimea = { 
+			color={ 226 186 80 }
+			color2={ 255 255 255 }
+			
+			capital = 559 # Crimea
+		
+			c_lower_don = {
+				color={ 230 190 84 }
+				color2={ 255 255 255 }
+			
+				b_taganrog = {
+				}
+				b_matveevkurgan = {
+				}
+				b_skorokhod = {
+				}
+				b_latonovo = {
+				}
+				b_vesely = {
+				}
+				b_marfinka = {
+				}
+				b_ryasnoye = {
+				}
+				b_novoazovsk = {
+				}
+			}
+			c_oleshye = {
+				color={ 238 198 92 }
+				color2={ 255 255 255 }
+			
+				b_ochakiv = {
+				}
+				b_bohopol = {
+				}
+				b_odessa = {
+				}
+				b_kocibey = {
+				}
+				b_balta = {
+				}
+				b_sokoly = {
+				}
+				b_akkerman = {
+				}
+				b_nikolayev = {
+				}
+			}
+			c_lukomorie = {
+				color={ 242 202 96 }
+				color2={ 255 255 255 }
+			
+				b_zaporzhye = {
+				}
+				b_kushunum = {
+				}
+				b_huliaipole = {
+				}
+				b_kalmius = {
+				}
+				b_kalchik = {
+				}
+				b_onkhiv = {
+				}
+				b_polohy = {
+				}
+				b_chernihivka = {
+				}
+			}
+			c_lower_dniepr = {
+				color={ 246 206 100 }
+				color2={ 255 255 255 }
+			
+				b_dnieprkherson = {
+				}
+				b_kairy = {
+				}
+				b_kyzylyar = {
+				}
+				b_shagingirei = {
+				}
+				b_kuturogly = {
+				}
+				b_tokmak = {
+				}
+				b_pryazovske = {
+				}
+				b_bilozerka = {
+				}
+			}
+			c_crimea = {
+				color={ 250 210 104 }
+				color2={ 255 255 255 }
+			
+				b_bakhchisaray = {
+				}
+				b_aqmescit = {
+									
+				}
+				b_dzhankoy = {
+				}
+				b_saq = {
+				}
+				b_perekop = {
+				}
+				b_qarasuvbazar = {
+				}
+				b_kezlev = {
+				}
+				b_qurman = {
+				}
 			}
 		}
 	}
@@ -23977,8 +23952,6 @@ e_persia = {
 				b_jajarm = {
 					holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
 					holy_site = yazidi
-					holy_site = zun_pagan
-					holy_site = zun_pagan_reformed
 				}
 				b_sabzevar = {
 				}
@@ -28027,33 +28000,7 @@ hungarian = "Regnum Hierosolymitanum"
 				christian = 250 # Crusade target weight
 				muslim = 250 # Crusade target weight
 		
-				b_mirabel = { # Base name changed to "Majdal Yaba"
-					german = "Mirabel"
-					lombard = "Mirabel"
-					old_frankish = "Mirabel"
-					suebi = "Mirabel"
-					english = "Mirabel"
-					saxon = "Mirabel"
-					old_saxon = "Mirabel"
-					frisian = "Mirabel"
-					dutch = "Mirabel"
-					frankish = "Mirabel"
-					norman = "Mirabel"
-					italian = "Mirabel"
-					occitan = "Mirabel"
-					basque = "Mirabel"
-					castillan = "Mirabel"
-					catalan = "Mirabel"
-					portuguese = "Mirabel"
-					visigothic = "Mirabel"
-					irish = "Mirabel"
-					scottish = "Mirabel"
-					pictish = "Mirabel"
-					welsh = "Mirabel"
-					breton = "Mirabel"
-					greek = "Antipatris"
-					armenian = "Antipatris"
-					georgian = "Antipatris"
+				b_mirabel = {
 				}
 				b_jerusalem = {
 					pentarchy = yes
@@ -31540,6 +31487,23 @@ k_candar = {
 	culture = turkish
 }
 
+k_khazaria = {
+	color={ 250 184 31 }
+	color2={ 255 255 255 }
+	
+	capital = 620 #	Itil
+	
+	culture = khazar
+	
+	# Creation/Usurp Trigger
+	allow = {
+		OR = {
+			culture = khazar
+			religion_group = jewish_group
+		}
+	}
+}
+
 k_eretnid = {
 	color = { 253 182 182 }
 }
@@ -31642,6 +31606,15 @@ e_seljuk_turks = { # Seljuk Turks
 }
 k_tekke = {
 	color={ 244 153 189 }
+}
+k_trebizond = {
+	color={ 100 151 33 }
+	capital = 678 # Trapezous
+	culture = greek
+	
+	allow = {
+		always = no
+	}
 }
 k_trinacria = {
 	color={ 249 232 247 }
