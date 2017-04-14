@@ -8848,6 +8848,7 @@ k_sweden = {
 			color2={ 255 255 255 }
 			capital = 297 # Västergötland
 			
+			swedish = "Västergötland"
 			norwegian = "Vestergøtland"
 			danish = "Vestergøtland"
 			norse = "Vestergautland"
@@ -8869,6 +8870,7 @@ k_sweden = {
 				color={ 60 55 255 }
 				color2={ 255 255 255 }
 				
+				swedish = "Västergötland"
 				norwegian = "Vestergøtland"
 				danish = "Vestergøtland"
 				norse = "Vestergautland"
@@ -11939,6 +11941,8 @@ k_sweden = {
 		title = "granduche"
 		culture = lithuanian
 		
+		prussian = "Prussia"
+		
 		catholic = 50 # Crusade target weight
 		slavic_pagan_reformed = 100 # Crusade target weight
 		baltic_pagan_reformed = 500
@@ -12940,6 +12944,7 @@ always = no # Only created through special event
 		finnish_pagan_reformed = 300 # Crusade target weight
 		baltic_pagan_reformed = 100 # Crusade target weight
 		
+		mordvin = Mordvinia
 		norse = Garðariki
 		
 		culture = russian
@@ -17001,7 +17006,7 @@ e_roman_empire = {
 }
 
 e_byzantium = {
-	color={ 163 10 145 }
+	color={ 143 12 125 }
 	color2={ 255 255 20 }
 	
 	capital = 496 # Byzantion
@@ -23180,16 +23185,16 @@ e_tartaria = {
 		
 		allow = {
 			hidden_tooltip = {
-				OR = {
-					ai = no
-					AND = {
-						religion_group = christian
-						OR = { 
-							culture_group = byzantine
-							culture_group = latin
-						}
-					}
-				}
+				#OR = {
+				#	ai = no
+				#	AND = {
+				#		religion_group = christian
+				#		OR = { 
+				#			culture_group = byzantine
+				#			culture_group = latin
+				#		}
+				#	}
+				#}
 			}
 		}
 		
@@ -23952,6 +23957,8 @@ e_persia = {
 				b_jajarm = {
 					holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
 					holy_site = yazidi
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_sabzevar = {
 				}
@@ -28000,7 +28007,33 @@ hungarian = "Regnum Hierosolymitanum"
 				christian = 250 # Crusade target weight
 				muslim = 250 # Crusade target weight
 		
-				b_mirabel = {
+				b_mirabel = { # Base name changed to "Majdal Yaba"
+					german = "Mirabel"
+					lombard = "Mirabel"
+					old_frankish = "Mirabel"
+					suebi = "Mirabel"
+					english = "Mirabel"
+					saxon = "Mirabel"
+					old_saxon = "Mirabel"
+					frisian = "Mirabel"
+					dutch = "Mirabel"
+					frankish = "Mirabel"
+					norman = "Mirabel"
+					italian = "Mirabel"
+					occitan = "Mirabel"
+					basque = "Mirabel"
+					castillan = "Mirabel"
+					catalan = "Mirabel"
+					portuguese = "Mirabel"
+					visigothic = "Mirabel"
+					irish = "Mirabel"
+					scottish = "Mirabel"
+					pictish = "Mirabel"
+					welsh = "Mirabel"
+					breton = "Mirabel"
+					greek = "Antipatris"
+					armenian = "Antipatris"
+					georgian = "Antipatris"
 				}
 				b_jerusalem = {
 					pentarchy = yes
