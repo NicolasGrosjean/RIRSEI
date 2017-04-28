@@ -17006,7 +17006,7 @@ e_roman_empire = {
 }
 
 e_byzantium = {
-	color={ 143 12 125 }
+	color={ 163 10 145 }
 	color2={ 255 255 20 }
 	
 	capital = 496 # Byzantion
@@ -23185,16 +23185,16 @@ e_tartaria = {
 		
 		allow = {
 			hidden_tooltip = {
-				#OR = {
-				#	ai = no
-				#	AND = {
-				#		religion_group = christian
-				#		OR = { 
-				#			culture_group = byzantine
-				#			culture_group = latin
-				#		}
-				#	}
-				#}
+				OR = {
+					ai = no
+					AND = {
+						religion_group = christian
+						OR = { 
+							culture_group = byzantine
+							culture_group = latin
+						}
+					}
+				}
 			}
 		}
 		
