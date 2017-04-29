@@ -2551,6 +2551,13 @@ disinherited = {
 
 #Catholic
 secretly_catholic = {
+
+	potential = {
+		NOT = {
+			religion = catholic
+		}
+	}
+	
 	opposites = {
 		secretly_cathar
 		secretly_fraticelli
@@ -2621,6 +2628,13 @@ secretly_catholic = {
 }
 
 secretly_cathar = {
+
+	potential = {
+		NOT = {
+			religion = cathar
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_fraticelli
@@ -2679,6 +2693,13 @@ secretly_cathar = {
 }
 
 secretly_fraticelli = {
+
+	potential = {
+		NOT = {
+			religion = fraticelli
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2737,6 +2758,13 @@ secretly_fraticelli = {
 }
 
 secretly_waldensian = {
+
+	potential = {
+		NOT = {
+			religion = waldensian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2795,6 +2823,13 @@ secretly_waldensian = {
 }
 
 secretly_lollard = {
+
+	potential = {
+		NOT = {
+			religion = lollard
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2854,6 +2889,13 @@ secretly_lollard = {
 
 #Orthodox
 secretly_orthodox = {
+
+	potential = {
+		NOT = {
+			religion = orthodox
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2924,6 +2966,13 @@ secretly_orthodox = {
 }
 
 secretly_bogomilist = {
+
+	potential = {
+		NOT = {
+			religion = bogomilist
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2982,6 +3031,13 @@ secretly_bogomilist = {
 }
 
 secretly_monothelite = {
+
+	potential = {
+		NOT = {
+			religion = monothelite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3040,6 +3096,13 @@ secretly_monothelite = {
 }
 
 secretly_iconoclast = {
+
+	potential = {
+		NOT = {
+			religion = iconoclast
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3098,6 +3161,13 @@ secretly_iconoclast = {
 }
 
 secretly_paulician = {
+
+	potential = {
+		NOT = {
+			religion = paulician
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3157,6 +3227,13 @@ secretly_paulician = {
 
 #Miaphysite
 secretly_miaphysite = {
+
+	potential = {
+		NOT = {
+			religion = miaphysite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3215,6 +3292,13 @@ secretly_miaphysite = {
 }
 
 secretly_monophysite = {
+
+	potential = {
+		NOT = {
+			religion = monophysite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3274,6 +3358,13 @@ secretly_monophysite = {
 
 #Nestorian
 secretly_nestorian = {
+
+	potential = {
+		NOT = {
+			religion = nestorian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3332,6 +3423,13 @@ secretly_nestorian = {
 }
 
 secretly_messalian = {
+
+	potential = {
+		NOT = {
+			religion = messalian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3391,11 +3489,15 @@ secretly_messalian = {
 
 #Sunni
 secretly_sunni = {
+	
 	potential = {
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = sunni
 		}
 	}
 	opposites = {
@@ -3474,6 +3576,9 @@ secretly_zikri = {
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = zikri
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -3538,6 +3643,9 @@ secretly_yazidi = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = yazidi
 		}
 	}
 	opposites = {
@@ -3604,6 +3712,9 @@ secretly_shiite = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = shiite
 		}
 	}
 	opposites = {
@@ -3682,6 +3793,9 @@ secretly_druze = {
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = druze
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -3746,6 +3860,9 @@ secretly_hurufi = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = hurufi
 		}
 	}
 	opposites = {
@@ -3813,6 +3930,9 @@ secretly_ibadi = {
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = ibadi
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -3877,6 +3997,9 @@ secretly_kharijite = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = kharijite
 		}
 	}
 	opposites = {
@@ -3943,6 +4066,9 @@ secretly_jewish = {
 			ai = yes
 			has_dlc = "Sons of Abraham"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = jewish
 		}
 	}
 	opposites = {
@@ -4020,6 +4146,9 @@ secretly_samaritan = {
 			has_dlc = "Sons of Abraham"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = samaritan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4084,6 +4213,9 @@ secretly_karaite = {
 			ai = yes
 			has_dlc = "Sons of Abraham"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = karaite
 		}
 	}
 	opposites = {
@@ -4150,6 +4282,9 @@ secretly_zoroastrian = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = zoroastrian
 		}
 	}
 	opposites = {
@@ -4228,6 +4363,9 @@ secretly_mazdaki = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = mazdaki
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4292,6 +4430,9 @@ secretly_manichean = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = manichean
 		}
 	}
 	opposites = {
@@ -4358,6 +4499,9 @@ secretly_hinduism = {
 			ai = yes
 			has_dlc = "Rajas of India"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = hinduism
 		}
 	}
 	opposites = {
@@ -4437,6 +4581,9 @@ secretly_buddhism = {
 			has_dlc = "Rajas of India"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = buddhism
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4514,6 +4661,9 @@ secretly_jain = {
 			ai = yes
 			has_dlc = "Rajas of India"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = jain
 		}
 	}
 	opposites = {
@@ -4593,6 +4743,9 @@ secretly_norse_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = norse_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4657,6 +4810,9 @@ secretly_norse_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = norse_pagan_reformed
 		}
 	}
 	opposites = {
@@ -4735,6 +4891,9 @@ secretly_baltic_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = baltic_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4799,6 +4958,9 @@ secretly_baltic_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = baltic_pagan_reformed
 		}
 	}
 	opposites = {
@@ -4877,6 +5039,9 @@ secretly_finnish_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = finnish_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -4941,6 +5106,9 @@ secretly_finnish_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = finnish_pagan_reformed
 		}
 	}
 	opposites = {
@@ -5018,6 +5186,8 @@ secretly_slavic_pagan = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}NOT = {
+			religion = slavic_pagan
 		}
 	}
 	opposites = {
@@ -5083,6 +5253,9 @@ secretly_slavic_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = slavic_pagan_reformed
 		}
 	}
 	opposites = {
@@ -5161,6 +5334,9 @@ secretly_tengri_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = tengri_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5225,6 +5401,9 @@ secretly_tengri_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = tengri_pagan_reformed
 		}
 	}
 	opposites = {
@@ -5303,6 +5482,9 @@ secretly_aztec = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = aztec
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5367,6 +5549,9 @@ secretly_aztec_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = aztec_reformed
 		}
 	}
 	opposites = {
@@ -5433,6 +5618,9 @@ secretly_west_african_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = west_african_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5497,6 +5685,9 @@ secretly_west_african_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = west_african_pagan_reformed
 		}
 	}
 	opposites = {
@@ -5575,6 +5766,9 @@ secretly_zun_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = zun_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5639,6 +5833,9 @@ secretly_zun_pagan_reformed = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = zun_pagan_reformed
 		}
 	}
 	opposites = {
@@ -5717,6 +5914,9 @@ secretly_hellenic_pagan = {
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
 		}
+		NOT = {
+			religion = hellenic_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5781,6 +5981,9 @@ secretly_pagan = {
 			ai = yes
 			has_dlc = "The Old Gods"
 			is_nomadic = yes
+		}
+		NOT = {
+			religion = pagan
 		}
 	}
 	opposites = {
