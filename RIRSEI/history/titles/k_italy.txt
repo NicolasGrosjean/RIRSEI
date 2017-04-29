@@ -3,6 +3,21 @@
 	pentarch = b_roma
 de_jure_liege = e_byzantium
 }
+475.1.1={
+	holder=168775 # Theoderic
+}
+526.8.30={
+	holder=168786 # Athalaric
+}
+534.10.2={
+	holder=168778 # Theodahad
+}
+536.12.1={
+	holder=214107 # Vitiges
+}
+540.1.1={
+	holder = 0 # non-dynast Ostrogoths
+}
 565.1.1={
 	holder = 190124 #Alboin
 	name = LOMBARD_KINGDOM
