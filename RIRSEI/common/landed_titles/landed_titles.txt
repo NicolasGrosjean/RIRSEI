@@ -9988,6 +9988,8 @@ k_sweden = {
 			c_agder = {
 				color={ 40 85 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Agdir"
 			
 				b_iveland = {
 				} 
@@ -10010,6 +10012,8 @@ k_sweden = {
 				color={ 10 110 255 }
 				color2={ 255 255 255 }
 				
+				norse = "Rygjafylki"
+				
 				b_eikundarsund = {
 				}
 				b_stavanger = {
@@ -10030,6 +10034,8 @@ k_sweden = {
 			c_telemark = {
 				color={ 45 160 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Þelamark"
 				
 				b_skien = {
 				}
@@ -10117,6 +10123,8 @@ k_sweden = {
 				color={ 120 158 235 }
 				color2={ 255 255 255 }
 				
+				norse = Raumariki
+				
 				b_akershus = {
 				}
 				b_oslo = {
@@ -10137,6 +10145,8 @@ k_sweden = {
 			c_oppland = {
 				color={ 94 120 215 }
 				color2={ 255 255 255 }
+				
+				norse = Gudbrandsdal
 				
 				b_lillehammer = {
 				}
