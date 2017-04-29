@@ -132,7 +132,6 @@ de_jure_laws = {
 			set_the_kings_peace = no
 			set_the_kings_full_peace = no
 		}
-		feudal_opinion = 5
 	}
 	vassal_wars_law_1 = {
 		group = vassal_wars_law

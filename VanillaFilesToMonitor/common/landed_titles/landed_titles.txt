@@ -10501,6 +10501,8 @@ e_scandinavia = {
 			c_agder = {
 				color={ 40 85 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Agdir"
 			
 				b_iveland = {
 				} 
@@ -10523,6 +10525,8 @@ e_scandinavia = {
 				color={ 10 110 255 }
 				color2={ 255 255 255 }
 				
+				norse = "Rygjafylki"
+				
 				b_eikundarsund = {
 				}
 				b_stavanger = {
@@ -10543,6 +10547,8 @@ e_scandinavia = {
 			c_telemark = {
 				color={ 45 160 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Þelamark"
 				
 				b_skien = {
 				}
@@ -10630,6 +10636,8 @@ e_scandinavia = {
 				color={ 120 158 235 }
 				color2={ 255 255 255 }
 				
+				norse = Raumariki
+				
 				b_akershus = {
 				}
 				b_oslo = {
@@ -10677,6 +10685,8 @@ e_scandinavia = {
 			c_oppland = {
 				color={ 94 120 215 }
 				color2={ 255 255 255 }
+				
+				norse = Gudbrandsdal
 				
 				b_lillehammer = {
 				}
@@ -24520,7 +24530,7 @@ e_arabia = {
 		color={ 124 199 50 }
 		color2={ 255 255 255 }
 		
-		capital = 718 # Medina
+		capital = 719 # Mecca
 		
 		culture = bedouin_arabic
 		
@@ -24644,6 +24654,7 @@ e_arabia = {
 			color2={ 255 255 255 }
 			
 			capital = 719 # Mecca
+#			capital = 718 # Medina
 			
 			muslim = 500 # Crusade target weight
 		

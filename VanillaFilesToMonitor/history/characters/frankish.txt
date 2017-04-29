@@ -45654,13 +45654,13 @@
 	dynasty=9574
 	religion="catholic"
 	culture="frankish"
-	father=434
-	mother=255
-	1050.1.1 = {
-		birth="1050.1.1"
+	father=432
+	mother=431
+	1029.1.1 = {
+		birth=yes
 	}
-	1100.11.13 = {
-		death="1100.11.13"
+	1100.10.13 = {
+		death=yes
 	}
 }
 
