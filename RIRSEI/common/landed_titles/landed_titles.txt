@@ -26575,7 +26575,7 @@ text = amir_calife
 		color={ 124 199 50 }
 		color2={ 255 255 255 }
 		
-		capital = 718 # Medina
+		capital = 719 # Mecca
 		
 		culture = bedouin_arabic
 		
@@ -26699,6 +26699,7 @@ text = amir_calife
 			color2={ 255 255 255 }
 			
 			capital = 719 # Mecca
+#			capital = 718 # Medina
 			
 			muslim = 500 # Crusade target weight
 		
