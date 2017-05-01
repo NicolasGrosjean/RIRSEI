@@ -1,4 +1,4 @@
-#Rex in regno suo est imperator
+# Rex in regno suo est imperator
 
 > Historical enhancement mod for CK2
 
