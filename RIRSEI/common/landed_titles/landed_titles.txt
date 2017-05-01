@@ -26575,7 +26575,7 @@ text = amir_calife
 		color={ 124 199 50 }
 		color2={ 255 255 255 }
 		
-		capital = 719 # Mecca
+		capital = 718 # Medina
 		
 		culture = bedouin_arabic
 		
