@@ -216,7 +216,7 @@ demander_imp_fr_desc;The Empire fell very low these days. The King of the Romans
 k_normannia_adj;Normanni;Normanni;Polnischer;;Polaca;;;;;;;;;x;;;;;;;;
 royaume_normannia;Wear the crown of all the Normans;Porter la couronne de tous les Normands;;;;;;;;;;x;;;;;;;;;;
 royaume_normannia_desc; If we can capture all the lands or titles of the Normans, men of the north, we can wear the crown of Normanorum Rex, King of the Normans!; Si nous réussissons à nous emparer de toutes les terres ou de tous les titres des normanni, des hommes du nord, nous pouvons porter la couronne de Rex Normanorum, Roi des Normands !;;;;;;;;;;x;;;;;;;;;;
-;;;;;;;;;;;;x;;;;;;;;;;
+#;;;;;;;;;;;;x;;;;;;;;;;
 EVTNAME_RIRSEI_737373;Rex Normanorum !;Rex Normanorum !;;;;;;;;;;x;;;;;;;;;;
 EVTDESC_RIRSEI_737373;One way or another, we managed to gather all the crowns which direct the forces of the Normans, men from the north. So we decided to make all of these crowns into one, because we are the undisputed overlords of all Normannia!; D'une façon ou d'une autre, nous avons réussi à réunir sur notre tête toutes les couronnes qui dirigent les vives forces des Normanni, les hommes du nord. Nous avons donc décidé d'abandonner ces couronnes pour les unir en une seule, car nous sommes les suzerains indiscutables de toute la Normannia !;;;;;;;;;;x;;;;;;;;;;
 EVTOPTA_RIRSEI_737373;Glory to us, and glory to the Normans!;Gloire à nous, et gloire aux Normanni !;;;;;;;;;;x;;;;;;;;;;
@@ -1781,4 +1781,4 @@ IMPOCCP;Imperium Romanorum Pars Occidentalis;Imperium Romanorum Pars Occidentali
 IMPORIP;Imperium Romanorum Pars Orientalis;Imperium Romanorum Pars Orientalis;;;;;;x;;;;;;;;;;
 SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut être changé !§!;;;;;;;;;;;;x
-;;;;;;;;;;;;x;;;;;;;;;;
+#;;;;;;;;;;;;x;;;;;;;;;;
