@@ -256,6 +256,11 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\attenagn.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_commune"
+		texturefile = "gfx\\event_pictures\commune.tga"
+		allwaystransparent = yes
+	}
 spriteType = {
 		name = "GFX_evt_roijerusalem"
 		texturefile = "gfx\\event_pictures\roijerusalem.tga"
