@@ -2,6 +2,116 @@
 # Also remember to tell the landed title to use this mercenary type instead.
 # Several titles can refer to the same type as well now.
 
- archontopouloi_composition = { levy_size = 6
- knights = 300	heavy_infantry = 50	horse_archers = 100}
-
+ archontopouloi_composition = { knights = 2000 }
+ petit_arba_genois = { archers = 80 heavy_infantry = 20 }
+ normal_arba_genois = { archers = 400 heavy_infantry = 100 }
+ grand_arba_genois = { archers = 800 heavy_infantry = 200 }
+ compa_arba_genois = { archers = 1600 heavy_infantry = 400 }
+ petit_viking = { heavy_infantry = 80  light_infantry = 20 }
+ normal_viking = { heavy_infantry = 400  light_infantry = 100 }
+ grand_viking = { heavy_infantry = 800  light_infantry = 200 }
+ petit_gael = { light_infantry = 70 light_cavalry = 30 }
+ normal_gael = { light_infantry = 350 light_cavalry = 150 }
+ grand_gael = { light_infantry = 700 light_cavalry = 300 }
+ petit_gallois = { archers = 100 }
+ normal_gallois = { archers = 500 }
+ grand_gallois = { archers = 1000 }
+ petit_galloglass = { heavy_infantry = 100 }
+ normal_galloglass = { heavy_infantry = 500 }
+ grand_galloglass = { heavy_infantry = 1000 }
+ petit_almoga = { light_infantry = 100 }
+ normal_almoga = { light_infantry = 500 }
+ grand_almoga = { light_infantry = 1000 }
+ compa_almoga = { knights = 500 light_cavalry = 1000 light_infantry = 4000 }
+ petit_basque = { light_infantry = 70 heavy_infantry = 30 }
+ normal_basque = { light_infantry = 350  heavy_infantry = 150 }
+ grand_basque = { light_infantry = 700 heavy_infantry = 300 }
+ petit_fr_ib = { knights = 60 heavy_infantry = 40 }
+ normal_fr_ib = { knights = 300 heavy_infantry = 200 }
+ grand_fr_ib = { knights = 600 heavy_infantry = 400 }
+ petit_raubritter = { knights = 100 }
+ normal_raubritter = { knights = 500 }
+ grand_raubritter = { knights = 1000 }
+ petit_saxon = { heavy_infantry = 80 archers = 20 }
+ normal_saxon = { heavy_infantry = 400 archers = 100 }
+ grand_saxon = { heavy_infantry = 800 archers = 200 }
+ compa_saxon = { heavy_infantry = 1300 archers = 300 knights = 200 }
+ petit_nomade = { light_cavalry = 50 horse_archers = 50 }
+ normal_nomade = { light_cavalry = 250 horse_archers = 250 }
+ grand_nomade = { light_cavalry = 500 horse_archers = 500 }
+ petit_gascon = { light_infantry = 30 heavy_infantry = 70 }
+ normal_gascon = { light_infantry = 150  heavy_infantry = 350 }
+ grand_gascon = { light_infantry = 300 heavy_infantry = 700 }
+ petit_brabant = { pikemen = 90 heavy_infantry = 10 }
+ normal_brabant = { pikemen = 450 heavy_infantry = 50 }
+ grand_brabant = { pikemen = 900 heavy_infantry = 100 }
+ route_bretonne = { knights = 100 heavy_infantry = 400 }
+ route_navarre = { archers = 100 light_infantry = 100 heavy_infantry = 300 }
+ route_aragon = { light_infantry = 250 heavy_infantry = 250 }
+ coteraux = { light_infantry = 200 archers = 400 heavy_infantry = 600 }
+ petite_compadav_breton = { knights = 100 heavy_infantry = 100 }
+ compadav_breton = { knights = 1000 heavy_infantry = 1000 }
+ petite_compadav_auvergne = { knights = 50 archers = 60 heavy_infantry = 60 }
+ compadav_auvergne = { knights = 500 archers = 600 heavy_infantry = 600 }
+ petit_compadav_gascon = { knights = 80 heavy_infantry = 80 archers = 40 }
+ compadav_gascon = { knights = 800 heavy_infantry = 800 archers = 400 }
+ #condotte etrangers
+ cond_cerruglio = { knights = 800 }
+ cond_gr_compa = { knights = 3500 heavy_infantry = 3500 archers = 2000 }
+ cond_compa_blanche = { knights = 1500 heavy_infantry = 2000 archers = 2500 }
+ cond_compa_etoile = { knights = 3500 heavy_infantry = 4500 archers = 600 }
+ cond_san_georges = { knights = 2500 heavy_infantry = 1000 }
+ #condotte italiens
+ cond_compa_noire = { knights = 1000 }
+ cond_compa_rose = { knights = 1000 pikemen = 500 heavy_infantry = 500 }
+ petite_condotta = { knights = 100 }
+ normale_condotta = { knights = 400 pikemen = 100 }
+ grande_condotta = { knights = 800 pikemen = 200 }
+ # Compagnie de Navarre : Italie-France-Espagnes
+ compadav_navarre = { knights = 500 archers = 500 }
+ #Suisses 1300-1420
+ petit_suisse = { heavy_infantry = 100 }
+ normal_suisse = { heavy_infantry = 500 }
+ grand_suisse = { heavy_infantry = 1000 }
+ #Suisses apres 1420
+ petit_suisse_pique = { heavy_infantry = 40 pikemen = 60 }
+ normal_suisse_pique = { heavy_infantry = 200 pikemen = 300 }
+ grand_suisse_pique = { heavy_infantry = 400 pikemen = 600 }
+ #Polonais chevaliers/arbaletriers
+ petit_polonais_montes = { knights = 50 archers = 50 }
+ normal_polonais_montes = { knights = 250 archers = 250 }
+ grand_polonais_montes = { knights = 500 archers = 500 }
+ #Polonais piquiers/arbaletriers
+ petit_polonais_pied = { pikemen = 50 archers = 50 }
+ normal_polonais_pied = { pikemen = 250 archers = 250 }
+ grand_polonais_pied = { pikemen = 500 archers = 500 }
+ #Hongrois tardif
+ petit_hongrois = { knights = 50 light_cavalry = 50 }
+ normal_hongrois = { knights = 250 light_cavalry = 250 }
+ grand_hongrois = { knights = 500 light_cavalry = 500 }
+ #tcheques
+ petit_boheme = { knights = 25 heavy_infantry = 40 archers = 35 }
+ normal_boheme = { knights = 125 heavy_infantry = 200 archers = 175 }
+ grand_boheme = { knights = 250 heavy_infantry = 400 archers = 350 }
+ #Chernye Klobuki
+ chernye_klobo = { light_cavalry = 800 horse_archers = 1200 knights = 300 }
+ #Mercenaires slaves
+ petit_slaveb = { light_infantry = 50 archers = 40 light_cavalry = 10 }
+ normal_slaveb = { light_infantry = 250 archers = 200 light_cavalry = 50 }
+ grand_slaveb = { light_infantry = 500 archers = 400 light_cavalry = 100 }
+ #cavalerie legere slaves
+ petit_stradiote = { light_cavalry = 100 }
+ normal_stradiote = { light_cavalry = 500 }
+ grand_stradiote = { light_cavalry = 1000 }
+ #Byzantins 
+ comp_pharnagoi = { light_cavalry = 2000 horse_archers = 2000 }
+ comp_normand = { knights = 3000 }
+ comp_petcheg = { light_cavalry = 3000 horse_archers = 3000 }
+ comp_alain = { light_cavalry = 2500 horse_archers = 2500 }
+ petit_cretois = { light_cavalry = 50 archers = 50 }
+ normal_cretois = { light_cavalry = 250 archers = 250 }
+ grand_cretois = { light_cavalry = 500 archers = 500 }
+ petit_georgien = { knights = 50 horse_archers = 50 }
+ normal_georgien = { knights = 250 horse_archers = 250 }
+ grand_georgien = { knights = 500 horse_archers = 500 }
+ 

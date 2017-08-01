@@ -1,0 +1,7963 @@
+d_p_arba_genes = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 233 # Gènes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_arba_genois
+}
+
+d_n_arba_genes = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 233 # Gènes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_arba_genois
+}
+
+d_g_arba_genes = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 233 # Gènes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_arba_genois
+}
+
+d_c_arba_genes = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 233 # Gènes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1150
+		NOT = { year = 1400 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = compa_arba_genois
+}
+
+d_p_arba_pise = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 327 # Pise
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_arba_genois
+}
+
+d_n_arba_pise = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 327 # Pise
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_arba_genois
+}
+
+d_g_arba_pise = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 327 # Pise
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+		year = 1020
+		NOT = { year = 1420 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_south
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_arba_genois
+}
+
+d_p_vik_dane = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 266 # Sjaelland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_viking
+}
+
+d_n_vik_dane = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 266 # Sjaelland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_viking
+}
+
+d_g_vik_dane = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 266 # Sjaelland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_viking
+}
+
+d_p_vik_norv = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 274 # Bergenshus
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_viking
+}
+
+d_n_vik_norv = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 274 # Bergenshus
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_viking
+}
+
+d_g_vik_norv = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 274 # Bergenshus
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_west
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_viking
+}
+
+d_p_vik_sued = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 290 # Uppland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_east
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_viking
+}
+
+d_n_vik_sued = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 290 # Uppland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_east
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_viking
+}
+
+d_g_vik_sued = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 290 # Uppland
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		
+		year = 820
+		NOT = { year = 1040 }
+		any_demesne_title = {
+		OR = {
+		region = world_europe_east
+		region = world_europe_north
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = norse_pagan
+	culture = norse
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_viking
+}
+
+
+# Mercenaires des îles britanniques
+
+d_p_gael = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 9 # Connacht
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+				
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = irish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_gael
+}
+
+d_n_gael = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 9 # Connacht
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+				
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = irish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_gael
+}
+
+d_g_gael = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 9 # Connacht
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+				
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = irish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_gael
+}
+
+d_p_arcgall = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 64 # Gwynedd
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1250
+        NOT = { year = 1410 }		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = welsh
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_gallois
+}
+
+
+d_n_arcgall = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 64 # Gwynedd
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1250
+        NOT = { year = 1410 }		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = welsh
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_gallois
+}
+
+d_g_arcgall = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 64 # Gwynedd
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1250
+        NOT = { year = 1410 }		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = welsh
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_gallois
+}
+
+d_p_gallowun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 35 # Inse Gall
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1150
+OR = {
+culture = scottish
+culture = irish
+culture = welsh
+culture = breton
+}		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = scottish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_galloglass
+}
+
+d_p_gallowdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 45 # Argyll
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1150
+OR = {
+culture = scottish
+culture = irish
+culture = welsh
+culture = breton
+}		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = scottish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_galloglass
+}
+
+d_n_gallowun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 35 # Inse Gall
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1150
+OR = {
+culture = scottish
+culture = irish
+culture = welsh
+culture = breton
+}		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = scottish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_galloglass
+}
+
+d_n_gallowdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 45 # Argyll
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1150
+OR = {
+culture = scottish
+culture = irish
+culture = welsh
+culture = breton
+}		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = scottish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_galloglass
+}
+
+d_g_gallowun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 35 # Inse Gall
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1150
+OR = {
+culture = scottish
+culture = irish
+culture = welsh
+culture = breton
+}		
+		any_demesne_title = {		
+		region = world_europe_west_brittania
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = scottish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_galloglass
+}
+
+d_p_almog = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		any_demesne_title = {		
+		region = world_europe_west_iberia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_almoga
+}
+
+d_n_almog = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		any_demesne_title = {		
+		region = world_europe_west_iberia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_almoga
+}
+
+d_g_almog = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		any_demesne_title = {		
+		region = world_europe_west_iberia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_almoga
+}
+d_p_almogdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		OR = {		
+		region = world_europe_west_iberia
+		region = world_europe_south
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_almoga
+}
+
+d_n_almogdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		OR = {		
+		region = world_europe_west_iberia
+		region = world_europe_south
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_almoga
+}
+
+d_g_almogdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1100
+        NOT = { year = 1400 }
+        religion_group = christian		
+		OR = {		
+		region = world_europe_west_iberia
+		region = world_europe_south
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_almoga
+}
+
+d_c_almog = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 206 # Urgell
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1250
+        NOT = { year = 1400 }
+        religion_group = christian		
+		any_demesne_title = {
+OR = {		
+		region = world_europe_west_iberia
+		region = world_europe_south
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  compa_almoga
+}
+
+d_p_basque = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 152 # Navarra
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = basque
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_basque
+}
+
+d_n_basque = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 152 # Navarra
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = basque
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_basque
+}
+
+d_g_basque = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 152 # Navarra
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = basque
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_basque
+}
+
+d_p_fr_ibe = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 214 # Toulouse
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_fr_ib
+}
+
+d_n_fr_ibe = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 214 # Toulouse
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_fr_ib
+}
+
+d_g_fr_ibe = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 214 # Toulouse
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_iberia
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_fr_ib
+}
+
+d_p_raubri = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 119 #Cologne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1240
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_germania
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+
+d_n_raubri = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 119 #Cologne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1240
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_germania
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_g_raubri = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 119 #Cologne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1240
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_germania
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+
+d_n_ligallun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 119 #Cologne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1300
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_germania
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_n_ligalldeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 121 #Nassau
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1300
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_west_germania
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_p_saxonun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_saxon
+}
+
+d_n_saxonun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_saxon
+}
+
+d_g_saxonun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_saxon
+}
+
+d_p_saxondeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_north
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_saxon
+}
+
+d_n_saxondeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_north
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_saxon
+}
+
+d_g_saxondeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1080
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_north
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_saxon
+}
+
+d_p_hongrois = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 880
+	NOT = { year = 1050 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_hongrois = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 880
+	NOT = { year = 1050 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_hongrois = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 880
+	NOT = { year = 1050 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+#hongrois tardifs
+
+d_p_hongroistard = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_hongrois
+}
+
+d_n_hongroistard = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_hongrois
+}
+
+d_g_hongroistard = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 444 # Esztergom
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = hungarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_hongrois
+}
+
+# Coumans et petchnegues et mongols
+
+d_p_coumans = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_coumans = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_coumans = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_p_coumansdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_coumansdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_coumansdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 545 # Torki
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1190
+	NOT = { year = 1340 }
+
+       	
+		any_demesne_title = {
+	OR = {
+
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_p_petcheg = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_petcheg = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_petcheg = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_p_petchegdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_petchegdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_petchegdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_p_mongoccun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_p_mongoccdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_mongoccun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_n_mongoccdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_mongoccun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_z_mongoccdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 543 # Oleshye
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1250
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_europe_east 
+	region = world_europe_south_east	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_p_gascon = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 209 # Armagnac
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1000
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_iberia
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_gascon
+}
+
+d_n_gascon = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 209 # Armagnac
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1000
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_iberia
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_gascon
+}
+
+d_g_gascon = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 209 # Armagnac
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1000
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_iberia
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_gascon
+}
+
+d_p_brabanc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 117 #Brabant
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1100
+		NOT = { year = 1330 }
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = dutch
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_brabant
+}
+
+d_n_brabanc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 117 #Brabant
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1100
+		NOT = { year = 1330 }
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = dutch
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_brabant
+}
+
+d_g_brabanc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 117 #Brabant
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+       	year = 1100
+		NOT = { year = 1330 }
+		any_demesne_title = {
+	OR = {
+	region = world_europe_west_germania
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = dutch
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_brabant
+}
+
+d_p_pbreton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		NOT = { year = 1020 }		
+		any_demesne_title = {		
+		region = world_europe_west_francia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = breton
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_gael
+}
+
+d_n_pbreton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		NOT = { year = 1020 }		
+		any_demesne_title = {		
+		region = world_europe_west_francia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = breton
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_gael
+}
+
+d_g_pbreton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		NOT = { year = 1020 }		
+		any_demesne_title = {		
+		region = world_europe_west_francia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = breton
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_gael
+}
+
+d_r_breton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1100
+		NOT = { year = 1230 }
+religion_group = christian		
+		any_demesne_title = {		
+		region = world_europe_west_francia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = GalloB
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = route_bretonne
+}
+
+d_r_navarr = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 152 # Navarra
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1100
+		NOT = { year = 1230 }
+religion_group = christian		
+		any_demesne_title = {
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_west_iberia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = basque
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = route_navarre
+}
+
+d_r_arag = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 206 # Urgell
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1100
+		NOT = { year = 1230 }
+religion_group = christian		
+		any_demesne_title = {
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_west_iberia
+		region = world_europe_south_italy
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = route_aragon
+}
+
+d_c_coteraux = {
+
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 221 # Provence
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1100
+		NOT = { year = 1230 }
+religion_group = christian		
+		any_demesne_title = {
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_west_germania		
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  coteraux
+}
+
+d_p_c_breton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {		
+		region = world_europe_west_francia
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = GalloB
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petite_compadav_breton
+}
+
+d_n_c_breton = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 105 # Vannes
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_south_italy
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = GalloB
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = compadav_breton
+}
+
+d_p_c_auvergne = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 217 # Auvergne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {	
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_south_italy
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petite_compadav_auvergne
+}
+
+d_n_c_auvergne = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 217 # Auvergne
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {	
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_south_italy
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = compadav_auvergne
+}
+
+d_p_c_gascon = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 209 # Armagnac
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {	
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_south_iberia
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_compadav_gascon
+}
+
+d_n_c_gascon = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 209 # Armagnac
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 1310		
+religion_group = christian		
+		any_demesne_title = {	
+OR = {		
+		region = world_europe_west_francia
+		region = world_europe_south_iberia
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = compadav_gascon
+}
+
+d_p_sarrasin = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 817 # Tunis
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 900
+NOT = { year = 1310 }		
+religion_group = christian		
+		any_demesne_title = {	
+		
+		
+		region = world_europe_south_italy
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_gallois
+}
+
+d_n_sarrasin = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 817 # Tunis
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 900
+NOT = { year = 1310 }		
+religion_group = christian		
+		any_demesne_title = {	
+		
+		
+		region = world_europe_south_italy
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_gallois
+}
+
+d_g_sarrasin = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 817 # Tunis
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 900
+NOT = { year = 1310 }		
+religion_group = christian		
+		any_demesne_title = {	
+		
+		
+		region = world_europe_south_italy
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_gallois
+}
+
+d_p_fr_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 221 # Provence
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_fr_ib
+}
+
+d_n_fr_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital	= 221 # Provence
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_fr_ib
+}
+
+d_g_fr_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+		capital	= 221 # Provence
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+
+				}	}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_fr_ib
+}
+
+d_p_all_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+
+d_n_all_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_g_all_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1300 }
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+
+#Condotte
+
+d_cond_cerru = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 327 # Pisa
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	NOT = { year = 1410 }
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_cerruglio
+}
+
+d_cond_grcomp = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 361 # Niederbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	NOT = { year = 1410 }
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_gr_compa
+}
+
+d_cond_compblanche = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 72 # Essex
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	NOT = { year = 1410 }
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = english
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_compa_blanche
+}
+
+d_cond_competoile = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 353 # Ferrara
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	NOT = { year = 1410 }
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = english
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_compa_etoile
+}
+
+d_cond_stgeorges = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 235 # Lombardia
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	NOT = { year = 1410 }
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_san_georges
+}
+
+d_cond_noire = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 327 # Pisa
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_compa_noire
+}
+
+d_cond_rose = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CONDOTTIERO"
+	foa = "CONDOTTIERO_FOA"
+
+	capital = 355 # Padua
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	any_demesne_province = {
+	OR = {
+has_building = ca_culture_Italie_sysfed_2
+has_building = ct_condottea
+}
+}
+	
+	religion_group = christian
+
+       	
+	
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = cond_compa_rose
+}
+
+d_p_cond_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 235 # Lombardia
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1300
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petite_condotta
+}
+
+d_n_cond_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 235 # Lombardia
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1300
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normale_condotta
+}
+
+d_g_cond_ita = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 235 # Lombardia
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1300
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_italy
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = italian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grande_condotta
+}
+
+d_compa_navarre = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 152 # Navarra
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1300   	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_iberia
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = basque
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  compadav_navarre
+}
+
+d_p_suissun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1300
+    NOT = { year = 1420 }   	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_suisse
+}
+
+d_n_suissun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1300
+    NOT = { year = 1420 }   	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_suisse
+}
+
+d_g_suissun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1300
+    NOT = { year = 1420 }   	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_suisse
+}
+
+d_p_suissdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1421  	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_suisse_pique
+}
+
+d_n_suissdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1421  	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_suisse_pique
+}
+
+d_g_suissdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 239 # Geneve
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {	
+    year = 1421  	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_west_germania
+	region = world_europe_south_italy
+	region = world_europe_west_francia
+		}
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_suisse_pique
+}
+
+#chevaliers allemands en scandinavie
+
+d_p_all_scan = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1280
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_north
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+
+d_n_all_scan = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1280
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_north
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_g_all_scan = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 255 #Thuringen
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1280
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_north
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+
+# Mercenaires de lances polonaises
+
+d_p_pol_chev = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1285
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_polonais_montes
+}
+
+d_n_pol_chev = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1285
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_polonais_montes
+}
+
+d_g_pol_chev = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1285
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_polonais_montes
+}
+
+# Mercenaires piquiers/arbas polonais
+
+d_p_pol_pedites = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1400
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_polonais_pied
+}
+
+d_n_pol_pedites = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1400
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_polonais_pied
+}
+
+d_g_pol_pedites = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 527 # Krakowskie
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1400
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = polish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_polonais_pied
+}
+
+# Mercenaires tcheques
+
+d_p_boh_merc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 440 # Olomouc
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1020
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = bohemian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_boheme
+}
+
+d_n_boh_merc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 440 # Olomouc
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1020
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = bohemian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_boheme
+}
+
+d_g_boh_merc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 440 # Olomouc
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1020
+	
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+		OR = {
+	
+	region = world_europe_east
+	region = world_europe_west_germania
+	}	
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = bohemian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_boheme
+}
+
+# Chernye Klobuki : chapeaux noirs nomades
+
+d_p_chernye = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 555 # Pereyaslavl
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1420 }
+    culture_group = east_slavic
+       	
+		any_demesne_title = {
+
+	region = world_europe_east 
+
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_chernye = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 555 # Pereyaslavl
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1420 }
+    culture_group = east_slavic
+       	
+		any_demesne_title = {
+
+	region = world_europe_east 
+
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_chernye = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 555 # Pereyaslavl
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1420 }
+    culture_group = east_slavic
+       	
+		any_demesne_title = {
+
+	region = world_europe_east 
+
+	}
+	}
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_s_chernye = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 555 # Pereyaslavl
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1100
+	NOT = { year = 1420 }
+    culture_group = east_slavic
+       	
+		any_demesne_title = {
+
+	region = world_europe_east
+    
+
+	}
+	}
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  chernye_klobo
+}
+
+# Inf russes (balkans)
+
+d_p_russinf = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	NOT = { culture = russian }			
+		any_demesne_title = {		
+		region = world_europe_south_east
+		
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_galloglass
+}
+
+d_n_russinf = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	NOT = { culture = russian }				
+		any_demesne_title = {		
+		region = world_europe_south_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_galloglass
+}
+
+d_g_russinf = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		NOT = { culture = russian }			
+		any_demesne_title = {		
+		region = world_europe_south_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian	
+	
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_galloglass
+}
+
+# Russes est
+d_p_russinfest = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 950	
+		any_demesne_title = {		
+		region = world_europe_east
+		
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_galloglass
+}
+
+d_n_russinfest = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 950				
+		any_demesne_title = {		
+		region = world_europe_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_galloglass
+}
+
+d_g_russinfest = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 547 # Kiev
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	    year = 950		
+		any_demesne_title = {		
+		region = world_europe_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian	
+	
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_galloglass
+}
+
+# Druzhinas vagabondes
+
+d_n_druz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 414 # Novgorod
+	
+	mercenary = yes
+	
+	allow = {
+	culture = russian
+	    year = 950		
+		any_demesne_title = {		
+		region = world_europe_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian	
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_g_druz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 414 # Novgorod
+	
+	mercenary = yes
+	
+	allow = {
+	culture = russian
+	    year = 950		
+		any_demesne_title = {		
+		region = world_europe_east
+
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = russian	
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+
+#Chevaliers allemands
+
+d_p_all_balk = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1030
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+
+d_n_all_balk = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1030
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+
+d_g_all_balk = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 360 #Oberbayern
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1030
+	
+	religion_group = christian
+NOT = { 	
+					culture = german
+				
+
+					}
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+
+#Slaves des balkans (valaques)
+
+d_p_slave_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 502 # Rashka
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = serbian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_slaveb
+}
+
+d_n_slave_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 502 # Rashka
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = serbian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_slaveb
+}
+
+d_g_slave_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 502 # Rashka
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = serbian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_slaveb
+}
+
+#Cav legere bosniaque (tard)
+
+d_p_strad_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 463 # Usora
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1350
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = bogomilist
+	culture = croatian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_stradiote
+}
+
+d_n_strad_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 463 # Usora
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1350
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = bogomilist
+	culture = croatian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_stradiote
+}
+
+d_g_strad_b = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 463 # Usora
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1350
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = bogomilist
+	culture = croatian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_stradiote
+}
+
+#cav lege epirote (tard)
+
+d_p_strad_e = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 473 # Arta
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1300
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = greek
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_stradiote
+}
+
+d_n_strad_e = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 473 # Arta
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1300
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = greek
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_stradiote
+}
+
+d_g_strad_e = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 473 # Arta
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1300
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = greek
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_stradiote
+}
+#Alains
+
+d_p_alanoi = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 603 # Alania
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1340}
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = alan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_nomade
+}
+
+d_n_alanoi = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 603 # Alania
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1340}
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = alan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_nomade
+}
+
+d_g_alanoi = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 603 # Alania
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1340}
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = alan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_nomade
+}
+
+#Mercenaires byzantins
+
+#Khazars
+d_b_pharnagoi = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 850
+	NOT = { year = 1020 }
+		
+    has_landed_title = e_byzantium 	
+
+
+
+       	
+		
+	}
+	
+	# Parent Religion 
+	religion = jewish
+	culture = khazar
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = comp_pharnagoi
+}
+#Normands
+
+d_byz_franc = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    
+
+    year = 1020
+	NOT = { year = 1150 }
+	has_landed_title = e_byzantium 
+		
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = frankish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = comp_normand
+}
+
+#Coumans 
+
+d_b_coumans = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1190
+	NOT = { year = 1340 }
+	has_landed_title = e_byzantium 
+
+       	
+		
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = cuman
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+#Petchenegues 
+
+d_b_petcheg = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 800
+	NOT = { year = 1140 }
+
+       	
+		has_landed_title = e_byzantium 
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = pecheneg
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = comp_petcheg
+}
+
+#Alains 
+d_b_alanoi = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 496 # Constantinople
+	
+	# Hire Trigger
+	allow = {
+	year = 1050
+	NOT = { year = 1340}
+
+       	
+		has_landed_title = e_byzantium 
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = alan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = comp_alain
+}
+
+#Cretois
+
+d_p_cretois = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 480 # Chandax
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = greek
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_cretois
+}
+
+d_n_cretois = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 480 # Chandax
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = greek
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_cretois
+}
+
+d_g_cretois = {
+	color = { 245 210 90 }
+	color2 = { 255 255 255 }
+
+	capital = 480 # Chandax
+	
+	# Hire Trigger
+	allow = {
+	year = 1200
+	religion_group = christian
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	culture = greek
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_cretois
+}
+
+#Latinikoi
+d_p_latinikoi = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = frankish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+d_p_latinikoideux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+d_n_latinikoi = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = frankish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_raubritter
+}
+d_n_latinikoideux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = occitan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_raubritter
+}
+d_g_latinikoi = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = frankish
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+d_g_latinikoideux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 496 # Constantinople
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1090
+	
+	religion_group = christian
+NOT = { 	OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = german
+
+				}	}
+       	
+		any_demesne_title = {
+	OR = {
+	region = world_europe_south_east
+	region = world_asia_minor
+	}
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = german
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_raubritter
+}
+#Bulgares (tard)
+d_p_bulgare = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 499 # Tyrnovo
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1150
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = bulgarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_stradiote
+}
+
+d_n_bulgare = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 499 # Tyrnovo
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1150
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = bulgarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_stradiote
+}
+
+d_g_bulgare = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 499 # Tyrnovo
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+    year = 1150
+	
+
+
+       	
+		any_demesne_title = {
+	
+	region = world_europe_south_east
+		
+		
+		}
+	}
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = bulgarian
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_stradiote
+}
+
+#georgiens
+
+d_p_georgiens = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1000
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 679 # Kartli
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = georgian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_georgien
+}
+
+d_n_georgiens = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1000
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 679 # Kartli
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = georgian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_georgien
+}
+
+d_g_georgiens = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1000
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 679 # Kartli
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = georgian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_georgien
+}
+
+#Mercenaires regions anatoliennes
+#Turkopoles
+d_pb_turcopole = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1120
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_nomade
+}
+
+d_nb_turcopole = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1120
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_nomade
+}
+d_gb_turcopole = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1120
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_nomade
+}
+
+d_bb_turcopole = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1120
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		religion_group = christian
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = orthodox
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = chernye_klobo
+}
+#Seldjouks
+
+d_p_turc = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	NOT = { year = 1300 }
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_nomade
+}
+
+d_n_turc = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	NOT = { year = 1300 }
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_nomade
+}
+d_g_turc = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	NOT = { year = 1300 }
+	any_demesne_title = {
+	
+	region = world_asia_minor
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 761 # Tarsos
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_nomade
+}
+
