@@ -17,7 +17,8 @@ city = {
 		light_infantry = 300
 light_infantry_morale = -0.4
 light_infantry_defensive = -0.4
-tax_income = 2		
+light_infantry_offensive = -0.4
+tax_income = 4		
 		ai_creation_factor = 101
 		
 		

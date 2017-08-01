@@ -22,7 +22,7 @@ culture = basque
 		}
 }
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
-		gold_cost = 50
+		gold_cost = 10
 		prestige_cost = 0
 		build_time = 730
 		light_infantry = 150
@@ -71,6 +71,87 @@ light_cavalry = 40
 light_cavalry_offensive = 0.2
 light_cavalry_morale = 0.2
 fort_level = -1.5
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.2
+	}
+
+ct_hermandades = {
+	add_number_to_name = no 
+		desc = ct_hermandades_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+OR = {
+culture = catalan
+culture = castillan
+                          culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+		}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		upgrades_from = ct_locupletes
+		gold_cost = 200
+		prestige_cost = 0
+		build_time = 700
+		light_infantry = 100
+light_infantry_defensive = 0.1
+light_infantry_offensive = 0.1
+light_infantry_morale = 0.1
+archers = 100
+archers_offensive = 0.20
+heavy_infantry = 30
+tax_income = -1
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.2
+	}
+
+ct_santaherm = {
+	add_number_to_name = no 
+		desc = ct_santaherm_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+OR = {
+culture = catalan
+culture = castillan
+                          culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+}
+		}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 8 }
+		upgrades_from = ct_hermandades
+		gold_cost = 300
+		prestige_cost = 0
+		build_time = 700
+light_infantry = 40
+light_cavalry = 20
+light_cavalry_defensive = 0.2
+archers = 50
+pikemen = 30
+heavy_infantry = 30
+tax_income = -2
 		
 		ai_creation_factor = 100
 		

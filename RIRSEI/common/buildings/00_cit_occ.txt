@@ -1,0 +1,612 @@
+# Cités d'occident, sauf : espagnols
+city = {
+
+ct_Bannum_Ciuitatis = {
+	add_number_to_name = no 
+		desc = ct_Bannum_Ciuitatis_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+culture = saxon
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture_group = east_slavic
+}
+}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 20
+		prestige_cost = 0
+		build_time = 730
+		knights = 20
+		tax_income = 2
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_Temps_Des_Chartes = {
+	add_number_to_name = no 
+		desc = ct_Temps_Des_Chartes_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+culture = saxon                             
+culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture_group = east_slavic
+}
+}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_Bannum_Ciuitatis
+		gold_cost = 0
+		prestige_cost = 0
+		build_time = 1095
+		tax_income = -8
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = -1
+	}	
+	
+	ct_Charte_Sergents = {
+	add_number_to_name = no 
+		desc = ct_Charte_Sergents_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture_group = east_slavic
+}
+}
+			}
+		}
+
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Piquier ct_Charte_Archers ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse}
+		gold_cost = 0
+		prestige_cost = 150
+		build_time = 30
+		heavy_infantry = 300 
+		tax_income = 3
+		
+		ai_creation_factor = 90
+		
+		extra_tech_building_start = 1.1
+	}
+	
+	ct_Charte_Archers = {
+		add_number_to_name = no 
+		desc = ct_Charte_Archers_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+			
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture_group = east_slavic
+}
+}
+			}
+		}
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Piquier ct_Charte_Sergents ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse}
+		gold_cost = 0
+		prestige_cost = 200
+		build_time = 30
+		archers = 600 
+		tax_income = 3
+		
+		ai_creation_factor = 85
+		
+		extra_tech_building_start = 1.2
+	}
+
+	
+	ct_Charte_Piquier = {
+		desc = ct_Charte_Piquier_desc
+		potential = {
+		NOT = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		AND = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		}
+		}
+			FROM = {
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+			
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+NOT = {
+OR = {
+culture = catalan
+culture = castillan
+                             culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture_group = east_slavic
+}
+}
+			}
+		}
+		prerequisites = { ct_Temps_Des_Chartes }
+		not_if_x_exists = { ct_Charte_Sergents ct_Charte_Arbaletriers_Italiens ct_Charte_Piquiers_FlamandsBrabant ct_Charte_Piquiers_Suisse ct_Charte_Archers}
+		gold_cost = 20
+		prestige_cost = 150
+		build_time = 30
+		pikemen = 400 
+		tax_income = 3
+		
+		ai_creation_factor = 84
+		
+		extra_tech_building_start = 1.2
+	}
+
+		
+	
+	ct_Charte_Arbaletriers_Italiens = {
+		add_number_to_name = no 
+		desc = ct_Charte_Arbaletriers_Italiens_desc
+		potential = {
+		OR = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		}
+			FROM = {
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+			
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30
+		archers = 700
+		archers_defensive = 0.2
+		archers_offensive = 0.25
+		heavy_infantry = 100
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}	
+	
+	ct_Charte_Piquiers_FlamandsBrabant = {
+		add_number_to_name = no 
+		desc = ct_Charte_Piquiers_FlamandsBrabant_desc
+		potential = {
+		OR = {
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		}
+			FROM = {
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+			
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30
+		pikemen = 500
+		pikemen_defensive = 0.1
+		pikemen_offensive = 0.1
+		pikemen_morale = 0.1
+		light_infantry = 100
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}
+
+	ct_Charte_Piquiers_Suisse = {
+		add_number_to_name = no 
+		desc = ct_Charte_Piquiers_Suisse_desc
+		potential = {
+		OR {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		culture = german
+		FROM = {
+		NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+			
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				OR = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+					culture_group = west_germanic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = celtic
+					culture_group = baltic
+					culture_group = west_slavic
+					culture = lappish
+					culture = ugricbaltic
+					culture = croatian
+					culture = hungarian
+					culture = romanian
+
+				}
+			}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		prerequisites = { ct_Temps_Des_Chartes }
+		gold_cost = 0
+		prestige_cost = 100
+		build_time = 30		
+		heavy_infantry = 400
+		heavy_infantry_offensive = 0.15
+		heavy_infantry_morale = 0.2
+		heavy_infantry_defensive = 0.2
+		tax_income = 3
+		
+		ai_creation_factor = 100
+		extra_tech_building_start = 1.0
+	}
+	
+	ct_trinodacit = {
+	add_number_to_name = no 
+		desc = Ang_syst_1_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+culture = saxon
+
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 10
+		build_time = 730
+		
+heavy_infantry = 20
+archers = 5
+light_infantry = 80		
+fort_level = 0.5
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_Burhs = {
+	add_number_to_name = no 
+		desc = ct_Burhs_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+OR = {
+is_feudal = yes
+independent = no
+}
+
+culture = saxon
+		}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_trinodacit
+		gold_cost = 100
+		prestige_cost = 0
+		build_time = 700
+		light_infantry = -50
+		heavy_infantry = 15
+		tax_income = 3
+
+fort_level = 1.0
+		
+		ai_creation_factor = 100
+		
+		
+	}
+}

@@ -1,0 +1,66 @@
+city = {
+ct_scan_paien = {
+	add_number_to_name = no 
+		desc = ct_scan_paien_desc
+		potential = {
+		
+			FROM = {
+		
+NOT = { religion_group = christian }
+NOT = { religion_group = muslim }
+
+
+culture_group = north_germanic
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 50
+		heavy_infantry = 30
+		archers = 120
+		levy_size = -1.5
+
+fort_level = 1.0
+tax_income = -2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	ct_grad_paien = {
+	add_number_to_name = no 
+		desc = ct_grad_paien_desc
+		potential = {
+		
+			FROM = {
+		
+NOT = { religion_group = christian }
+NOT = { religion_group = muslim }
+
+OR = {
+culture_group = east_slavic 
+culture_group = west_slavic
+culture_group = south_slavic
+}
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 80		
+		archers = 140
+		levy_size = -1.5
+
+fort_level = 1.0
+tax_income = -2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	}

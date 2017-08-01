@@ -35,17 +35,19 @@ NOT = { has_global_flag = central }
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish
-                                        culture = breton
+                                        culture = old_frankish                                        
 culture = german
+culture = old_saxon
 culture = dutch
+culture = italian
+culture = GalloB
 				}
 
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
-		gold_cost = 30
+		gold_cost = 10
 		build_time = 730
 knights = 15
 heavy_infantry = 40
@@ -73,7 +75,10 @@ is_feudal = yes
                                         culture = norman
                                         culture = old_frankish
 culture = german
+culture = old_saxon
 culture = dutch
+culture = italian
+culture = GalloB
 				}
 			}
 		}
@@ -106,6 +111,9 @@ is_feudal = yes
                                         culture = norman
                                         culture = old_frankish
 culture = german
+culture = old_saxon
+culture = italian
+culture = GalloB
 				}
 			}
 		}
@@ -128,6 +136,7 @@ heavy_infantry_morale = -0.10
 		
 		
 	}
+	
 
 #systeme feodal et postfeodal apres la reforme : SD, HR, et CO
 
@@ -148,6 +157,7 @@ has_global_flag = central
                                         culture = old_frankish
                                         culture = breton
 										culture = dutch
+										culture = GalloB
 
 				}
 
@@ -188,6 +198,7 @@ has_global_flag = central
                                         culture = old_frankish
                                         culture = breton
 										culture = dutch
+										culture = GalloB
 
 				}
 
@@ -233,7 +244,6 @@ ca_culture_Francais_sysfed_3 = {
 		potential = {
 			FROM = {
 
-
 is_feudal = yes
 religion_group = christian
 OR = { 
@@ -247,6 +257,7 @@ has_global_flag = central
                                         culture = old_frankish
                                         culture = breton
 										culture = dutch
+										culture = GalloB
 
 				}
 
@@ -261,17 +272,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -279,25 +287,94 @@ upgrades_from = ca_culture_Francais_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -70
-archers = 15
+archers = 30
 light_cavalry = -40
 archers_morale = 0.10
 archers_defensive = 0.10
 light_infantry = -50
-heavy_infantry = 25
+heavy_infantry = 40
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
 knights_offensive = -0.20
 knights_morale = -0.20
 knights_defensive = -0.10		
-tax_income = -5
-retinuesize = 2000
+tax_income = -6
+retinuesize = 3000
+		ai_creation_factor = 101
+		
+		
+	}	
+	
+	
+#Bretons : Oenach Fiann + S.D "à la française"
+
+ca_culture_Bretons_syst_1 = {
+		desc = Bretons_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }                            
+				culture = breton
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 400
+
+heavy_infantry = 20
+archers = 20
+light_cavalry = 40
+light_cavalry_offensive = 0.20
+light_cavalry_morale = 0.10
+light_infantry = 50		
+pikemen = 20
+
+
+
 		ai_creation_factor = 101
 		
 		
 	}
 	
+	ca_culture_Bretons_syst_2 = {
+		desc = ca_culture_Francais_sysfed_1_desc
+potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }                            
+culture = breton
 
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Bretons_syst_1
+
+		gold_cost = 100
+		build_time = 50
+knights = 25
+heavy_infantry = -20
+light_infantry = -20
+light_cavalry = -35
+light_cavalry_offensive = -0.20
+light_cavalry_morale = -0.10
+pikemen = -20
+knights = 55
+knights_morale = 0.20
+knights_defensive = 0.10
+knights_offensive = 0.20
+
+
+		ai_creation_factor = 101
+		
+		
+	}
 
 # Nouveau systeme, espagnes
 
@@ -498,7 +575,7 @@ upgrades_from = ca_culture_Espagnes_sysfed_1
 
 archers = 10
 light_cavalry = 30
-light_infantry = 30
+light_infantry = 40
 heavy_infantry = 15		
 tax_income = -2
 		ai_creation_factor = 101
@@ -539,17 +616,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -557,13 +631,19 @@ upgrades_from = ca_culture_Espagnes_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -30
-light_cavalry = -80
+light_cavalry = -30
+archers = 30
+archers_offensive = 0.3
+archers_morale = 0.15
+heavy_infantry = 15
+light_infantry = 20
+light_infantry_morale = 0.15
+light_infantry_offensive = 0.10
 knights_offensive = -0.10
 knights_morale = -0.10
-light_cavalry_offensive = -0.20
-light_cavalry_morale = -0.20		
-tax_income = -3
-retinuesize = 2000
+light_cavalry_defensive = 0.20		
+tax_income = -4
+retinuesize = 3000
 		ai_creation_factor = 101
 		
 		
@@ -734,13 +814,13 @@ upgrades_from = ca_culture_Ang_sysfed_1
 		build_time = 720
 		
 knights = -10
-archers = 60
+archers = 90
 archers_offensive = 0.30
 archers_morale = 0.10
 archers_defensive = 0.20
 light_infantry = -50
 light_cavalry = 20
-heavy_infantry = 10		
+heavy_infantry = 20	
 tax_income = -3
 		ai_creation_factor = 101
 		
@@ -775,17 +855,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -793,12 +870,9 @@ upgrades_from = ca_culture_Ang_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -35
-archers = -90
 light_cavalry = -25
-heavy_infantry = -10
-archers_offensive = -0.30
-archers_morale = -0.10
-archers_defensive = -0.20
+heavy_infantry = 20
+archers_morale = 0.10
 knights_offensive = -0.15
 knights_morale = -0.10
 knights_defensive = -0.20	
@@ -828,6 +902,7 @@ religion_group = christian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		add_number_to_name = no 
 		gold_cost = 30
 		build_time = 730
 
@@ -985,17 +1060,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -1003,12 +1075,9 @@ upgrades_from = ca_culture_Saxon_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -35
-archers = -90
 light_cavalry = -25
-heavy_infantry = -10
-archers_offensive = -0.30
-archers_morale = -0.10
-archers_defensive = -0.20
+heavy_infantry = 20
+archers_morale = 0.10
 knights_offensive = -0.15
 knights_morale = -0.10
 knights_defensive = -0.20	
@@ -1218,6 +1287,41 @@ knights_morale = 0.15
 		
 		
 	}
+	
+	ca_culture_byz_noumeroi = {
+	add_number_to_name = no 
+		desc = ca_culture_byz_noumeroi_desc
+		potential = {
+		FROMFROM = { title = b_constantinople }
+			FROM = {
+			
+religion_group = christian
+has_landed_title = e_byzantium 
+		
+		 }
+		}
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 500
+		archers = 600
+		levy_size = -3
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = 0.15
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = 0.15
+
+tax_income = 4
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
 
 	ca_culture_Tagmata_syst_1 = {
 		desc = Tagmata_syst_1_desc
@@ -1236,7 +1340,7 @@ has_landed_title = e_byzantium }
 		gold_cost = 30
 		build_time = 730
 add_number_to_name = no 
-retinuesize = 3000
+retinuesize = 4000
 
 
 		ai_creation_factor = 101
@@ -1259,7 +1363,7 @@ has_landed_title = e_byzantium } }
 		gold_cost = 50
 		build_time = 50
 add_number_to_name = no 
-retinuesize = 4000
+retinuesize = 5000
 		ai_creation_factor = 101
 		
 		
@@ -1289,7 +1393,7 @@ has_law = emp_autocrate
 gold_cost = 50
 build_time = 50
 add_number_to_name = no 
-retinuesize = 5000
+retinuesize = 6000
 
 		ai_creation_factor = 101
 		
@@ -1318,7 +1422,7 @@ NOT = { has_global_flag = central }
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 45
+heavy_infantry = 50
 archers = 5
 light_infantry = 40
 light_cavalry = 5		
@@ -1352,7 +1456,7 @@ NOT = { has_global_flag = central }
 		upgrades_from = ca_culture_Lomb_syst_1
 		gold_cost = 50
 		build_time = 50
-heavy_infantry = 20
+heavy_infantry = 30
 light_cavalry = 5
 light_infantry = -30		
 heavy_infantry_offensive = 0.05
@@ -1505,17 +1609,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -1643,17 +1744,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -1735,6 +1833,127 @@ knights_offensive = 0.10
 		
 		
 	}
+	
+	# Pays de Galles : Teulu -> Bwa Hir a Gwaywffon - > C.O anglaises
+	
+	ca_culture_Galles_syst_1 = {
+		desc = Galles_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian                            
+				culture = welsh
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 30
+		build_time = 400
+		
+heavy_infantry = 20
+archers = 20
+archers_offensive = 0.3
+light_cavalry = 30
+light_cavalry_morale = 0.3
+light_cavalry_defensive = 0.3
+light_infantry = 100
+light_infantry_morale = 0.3
+light_infantry_defensive = 0.3	
+retinuesize = 200
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Galles_syst_2 = {
+		desc = Galles_syst_2_desc
+potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                            
+				culture = welsh
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Galles_syst_1
+
+		gold_cost = 150
+		build_time = 400
+		heavy_infantry = -10
+		archers = 80
+		light_infantry = -40
+	    pikemen = 70
+		pikemen_morale = 0.3
+		pikemen_defensive = 0.3
+		retinuesize = 100
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_Galles_syst_3 = {
+		desc = ca_culture_Ang_sysfed_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				
+					culture = welsh
+
+				
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_Galles_syst_2
+		gold_cost = 400
+		build_time = 720
+pikemen = -50
+light_infantry = -40
+light_cavalry = -20
+archers = 30
+archers_morale = 0.2
+archers_defensive = 0.2
+heavy_infantry = 30	
+tax_income = -6
+retinuesize = 1700
+		ai_creation_factor = 101
+		
+		
+	}
 
 # Ecosse, oenach fed-> SS
 
@@ -1748,7 +1967,7 @@ NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                            
 				OR = {
 					culture = scottish
-					culture = pictish
+					culture = pictish			
                      
 				}
 
@@ -1949,17 +2168,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -1967,19 +2183,14 @@ upgrades_from = ca_culture_Ecosse_sysfed_2
 		gold_cost = 400
 		build_time = 720
 knights = -40
-archers = -40
+archers = 10
 light_cavalry = -25
 light_infantry = -30
-pikemen = -80
-archers_offensive = -0.10
-archers_morale = -0.10
-archers_defensive = -0.20
+pikemen = -20
 knights_offensive = -0.10
 knights_morale = -0.10
 knights_defensive = -0.20
-pikemen_defensive = -0.2
-pikemen_offensive = -0.1	
-pikemen_morale = -0.2	
+pikemen_offensive = 0.1		
 tax_income = -2
 retinuesize = 2000
 		ai_creation_factor = 101
@@ -2085,17 +2296,14 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
@@ -2126,9 +2334,11 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
+} 
+OR = {                         
 			culture = german
-
+			culture = old_saxon
+}
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -2136,8 +2346,8 @@ has_global_flag = central
 		gold_cost = 10
 		build_time = 250
 knights = 70
-archers = 20
-light_infantry = 30		
+archers = 10
+light_infantry = 15	
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
@@ -2158,7 +2368,10 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-		culture = german
+		OR = {                         
+			culture = german
+			culture = old_saxon
+}
 
 			}
 		}
@@ -2187,9 +2400,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Germ_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = -40
+knights = -30
 heavy_infantry = 50
 light_cavalry = 10
+archers = 20
 knights_morale = 0.10
 knights_offensive = 0.05	
 tax_income = 3
@@ -2210,7 +2424,10 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = german
+				OR = {                         
+			culture = german
+			culture = old_saxon
+}
 
 			}
 		}
@@ -2223,29 +2440,26 @@ NOT = { tier = king }
 NOT = { tier = count }
 liege = {
 primary_title = {
-has_law = centralization_3
 has_law = centralization_4
 }
 }
 }
 FROM = {
 primary_title = {
-OR = {
-has_law = centralization_3
 has_law = centralization_4
-}
+
 }
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Germ_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -30
+knights = -40
 archers = 40
 light_cavalry = -10
 archers_morale = 0.10
 archers_defensive = 0.10
-light_infantry = -30
+light_infantry = -15
 pikemen = 25
 knights_offensive = -0.15
 knights_morale = -0.20
@@ -2257,6 +2471,1927 @@ retinuesize = 1500
 		
 	}
 
+# Scandinaves : leidangr/Servitum Debitum 5/Compagnie d'ordonnance
+
+ca_culture_Scandi_syst_1 = {
+		desc = Scandi_syst_1_desc
+		potential = {
+			FROM = {
+                    is_feudal = yes
+					OR = {
+					AND = {
+					culture_group = finno_ugric
+					religion = catholic
+					}
+					culture_group = north_germanic
+					}
+					NOT = { religion_group = muslim } 
 
 
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 15
+light_infantry = 5
+heavy_infantry = 80
+heavy_infantry_offensive = 0.10	
+heavy_infantry_morale = 0.15
+retinuesize = 75
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+ca_culture_Scandi_syst_2 = {
+		desc = Scandi_syst_2_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}        
+OR = {                  
+		culture_group = north_germanic
+		culture_group = finno_ugric
+
+			}
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_2
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_2
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_Scandi_syst_1
+		gold_cost = 200
+		build_time = 720
+knights = 25
+heavy_infantry = -40
+light_infantry = 15
+archers = 20
+archers_offensive = 0.20
+knights_morale = 0.10
+knights_offensive = 0.10
+knights_defensive = 0.10
+heavy_infantry_offensive = -0.10	
+heavy_infantry_morale = -0.15	
+tax_income = 1
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_Scandi_syst_3 = {
+		desc = Scandi_syst_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+			OR = {                  
+		culture_group = north_germanic
+		culture_group = finno_ugric
+
+			}
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_Scandi_syst_2
+		gold_cost = 400
+		build_time = 720
+knights = -25
+archers = 80
+archers_morale = 0.10
+archers_defensive = 0.10
+light_infantry = -20
+pikemen = 50
+pikemen_defensive = 0.10
+pikemen_morale = 0.10
+heavy_infantry = 60
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10
+knights_offensive = -0.10
+knights_morale = -0.10
+knights_defensive = -0.10		
+tax_income = -7
+retinuesize = 1425
+		ai_creation_factor = 101
+		
+		
+	}
+
+# gâ saxon païen : un niveau
+
+ca_culture_saxpai_syst_1 = {
+		desc = saxpaien_syst_1_desc
+		potential = {
+			FROM = {
+			is_feudal = yes
+NOT = { religion_group = christian }
+NOT = { religion_group = muslim }
+					culture = old_saxon
+
+					
+                                       
+				
+			}
+		}
+		
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 80
+archers = 40
+light_infantry = 40		
+heavy_infantry_defensive = 0.10
+heavy_infantry_morale = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+#saami/suomi païen : un niveau
+
+ca_culture_saamitri_syst_1 = {
+		desc = saamitrib_syst_1_desc
+		potential = {
+			FROM = {
+			is_feudal = yes
+NOT = { religion_group = christian }
+NOT = { religion_group = muslim }
+					culture_group = finno_ugric
+
+					
+                                       
+				
+			}
+		}
+		
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 180
+archers_defensive = 0.15
+archers_morale = 0.20
+light_infantry = 110
+light_infantry_defensive = 0.15
+light_infantry_morale = 0.20
+fort_level = 1.0
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#Polack chretiens Druzhina->SD->reforme de casimir-> C.O
+
+ca_culture_polak_syst_1 = {
+		desc = polak_syst_1_desc
+		potential = {
+			FROM = {
+                    is_feudal = yes					
+					culture = polish
+					NOT = { religion_group = muslim } 
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 40
+archers_offensive = -0.20
+archers_defensive = 0.20
+light_infantry = 70
+light_infantry_offensive = -0.20
+light_infantry_defensive = 0.20
+heavy_infantry = 20
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_polak_syst_2 = {
+		desc = polak_syst_2_desc
+		potential = {
+			FROM = {
+
+culture = polish
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+
+		} 
+                add_number_to_name = no
+upgrades_from = ca_culture_polak_syst_1
+		gold_cost = 40
+		build_time = 720
+knights = 45
+light_cavalry = 10
+heavy_infantry = -20
+light_infantry = -40
+light_infantry_offensive = 0.20
+light_infantry_defensive = -0.20
+archers = -20
+archers_offensive = 0.20
+archers_defensive = -0.20
+knights_morale = 0.15
+knights_offensive = 0.15
+knights_defensive = 0.10
+retinuesize = -125
+tax_income = -1
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_polak_syst_3 = {
+		desc = polak_syst_3_desc
+		potential = {
+			FROM = {
+
+culture = polish
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_polak_syst_2
+		gold_cost = 200
+		build_time = 720
+knights = 15
+light_cavalry = 10
+light_infantry = 30
+archers = 25
+archers_offensive = 0.20
+tax_income = -2
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_polak_syst_4 = {
+		desc = polak_syst_4_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+			culture = polish
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_polak_syst_3
+		gold_cost = 400
+		build_time = 720
+knights = -60
+archers = 70
+archers_morale = 0.10
+archers_defensive = 0.15
+light_infantry = -60
+light_cavalry = -20
+pikemen = 60
+pikemen_defensive = 0.15
+pikmen_offensive = -0.10
+pikemen_morale = 0.10
+heavy_infantry = 30
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10
+knights_offensive = -0.15
+knights_morale = -0.15
+knights_defensive = -0.10		
+tax_income = -5
+retinuesize = 1800
+		ai_creation_factor = 101
+		
+		
+	}
+#Pomeraniens chretiens Druzhina->SD->reforme de casimir-> C.O
+
+ca_culture_pomeranie_syst_1 = {
+		desc = pomeranie_syst_1_desc
+		potential = {
+			FROM = {
+                    is_feudal = yes					
+					culture = pommeranian
+					NOT = { religion_group = muslim } 
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 100
+archers_offensive = 0.10
+light_infantry = 30
+light_infantry_offensive = -0.20
+light_infantry_defensive = 0.20
+heavy_infantry = 10
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_pomeranie_syst_2 = {
+		desc = pomeranie_syst_2_desc
+		potential = {
+			FROM = {
+
+culture = pommeranian
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+
+		} 
+                add_number_to_name = no
+upgrades_from = ca_culture_pomeranie_syst_1
+		gold_cost = 40
+		build_time = 720
+knights = 45
+light_cavalry = 10
+heavy_infantry = -10
+light_infantry = -20
+light_infantry_offensive = 0.20
+light_infantry_defensive = -0.20
+archers = -40
+archers_offensive = 0.20
+archers_defensive = -0.20
+knights_morale = 0.15
+knights_offensive = 0.15
+knights_defensive = 0.10
+retinuesize = -125
+tax_income = -1
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_pomeranie_syst_3 = {
+		desc = pomeranie_syst_3_desc
+		potential = {
+			FROM = {
+
+culture = pommeranian
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_pomeranie_syst_2
+		gold_cost = 200
+		build_time = 720
+knights = 15
+light_cavalry = 10
+light_infantry = 30
+archers = 25
+archers_offensive = 0.20
+tax_income = -2
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_pomeranie_syst_4 = {
+		desc = pomeranie_syst_4_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+			culture = pommeranian
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_pomeranie_syst_3
+		gold_cost = 400
+		build_time = 720
+knights = -60
+archers = 70
+archers_morale = 0.10
+archers_defensive = 0.15
+light_infantry = -60
+light_cavalry = -20
+pikemen = 60
+pikemen_defensive = 0.15
+pikmen_offensive = -0.10
+pikemen_morale = 0.10
+heavy_infantry = 30
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10
+knights_offensive = -0.15
+knights_morale = -0.15
+knights_defensive = -0.10		
+tax_income = -5
+retinuesize = 1800
+		ai_creation_factor = 101
+		
+		
+	}	
+	
+
+
+#tcheques ante feodal
+
+ca_culture_boheme_syst_1 = {
+		desc = boheme_syst_1_desc
+		potential = {
+	
+       		
+			FROM = {
+                    is_feudal = yes
+								
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }  					
+					culture = bohemian
+					NOT = { religion_group = muslim } 
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 30
+archers_offensive = -0.30
+archers_defensive = 0.20
+light_infantry = 80
+light_infantry_offensive = -0.10
+light_infantry_defensive = 0.20
+knights = 10
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_boheme_syst_2 = {
+		desc = boheme_syst_2_desc
+		potential = {
+			FROM = {
+
+culture = bohemian
+is_feudal = yes
+religion_group = christian
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }  
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3
+
+		} 
+                add_number_to_name = no
+upgrades_from = ca_culture_boheme_syst_1
+		gold_cost = 40
+		build_time = 720
+knights = 40
+light_cavalry = 10
+light_infantry = -60
+light_infantry_offensive = 0.10
+light_infantry_defensive = -0.20
+archers = -20
+archers_offensive = 0.30
+archers_defensive = -0.20
+knights_morale = 0.15
+knights_offensive = 0.15
+knights_defensive = 0.10
+retinuesize = -125
+fort_level = -0.5
+		ai_creation_factor = 101
+		
+		
+	}
+
+#tcheques : S.D->Maiestas carolini->a la hussite	
+	
+	ca_culture_boheme_systfed_1 = {
+		desc = boheme_syst_2_desc
+		potential = {
+	
+       		
+			FROM = {
+                    is_feudal = yes
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}  					
+					culture = bohemian
+					religion_group = christian
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 10
+light_infantry = 20
+light_cavalry = 10
+knights = 50
+knights_morale = 0.15
+knights_offensive = 0.15
+knights_defensive = 0.10
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_boheme_systfed_2 = {
+		desc = boheme_syst_3_desc
+		potential = {
+			FROM = {
+
+culture = bohemian
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_boheme_systfed_1
+		gold_cost = 200
+		build_time = 720
+knights = 20
+knights_defensive = -0.10
+light_cavalry = 10
+archers = 20
+tax_income = 2
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_boheme_systfed_3 = {
+		desc = boheme_syst_4_desc
+		potential = {
+			FROM = {
+
+culture = bohemian
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_boheme_systfed_2
+		gold_cost = 200
+		build_time = 720
+knights = -45
+archers = 120
+archers_defensive = 0.40
+archers_offensive = 0.40
+archers_morale = 0.20
+pikemen = 40
+pikemen_morale = 0.20
+heavy_infantry = 40
+heavy_infantry_defensive = 0.40
+heavy_infantry_morale = 0.20
+light_infantry = 60
+light_infantry_defensive = 0.40
+light_infantry_morale = 0.20
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#lituaniens "feodal" : Bajoras-> Kurias-> Imitatio poloniae
+	
+	ca_culture_lithca_syst_1 = {
+		desc = lith_syst_2_desc
+		potential = {
+			FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+is_feudal = yes
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0
+ }
+                add_number_to_name = no 
+				
+		gold_cost = 20
+		build_time = 50
+heavy_infantry = 10
+archers = 80
+light_infantry = 70
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.20
+light_cavalry = 30
+light_cavalry_morale = 0.10
+light_cavalry_offensive = 0.15
+fort_level = 0.5	
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_lithca_syst_2 = {
+		desc = lith_syst_3_desc
+		potential = {
+			FROM = {
+			
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+is_feudal = yes
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 5 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_lithca_syst_1
+gold_cost = 50
+		build_time = 50
+archers = -15
+light_infantry = -30	
+light_cavalry = 30
+knights = 15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_lithca_syst_3 = {
+		desc = lithca_syst_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_lithca_syst_2
+		gold_cost = 400
+		build_time = 720
+knights = -15
+archers = 30
+archers_morale = 0.10
+archers_defensive = 0.15
+light_infantry = -40
+pikemen = 30
+pikemen_defensive = 0.15
+pikmen_offensive = -0.10
+pikemen_morale = 0.10
+heavy_infantry = 30
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10	
+tax_income = -4
+retinuesize = 1500
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	# Prussiens : trois niveaux kariawotys->Vintigo->Imitatio poloniae
+	
+	ca_culture_prussca_syst_1 = {
+		desc = lith_syst_3_desc
+		potential = {
+			FROM = {
+
+culture = prussian
+
+is_feudal = yes
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0
+ }
+                add_number_to_name = no 
+				
+		gold_cost = 20
+		build_time = 50
+heavy_infantry = 15
+archers = 30
+light_infantry = 40
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.20
+light_cavalry = 40
+fort_level = 0.5
+retinuesize = 110	
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_prussca_syst_2 = {
+		desc = prussca_syst_1_desc
+		potential = {
+			FROM = {
+			
+culture = prussian
+
+is_feudal = yes
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 6 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_prussca_syst_1
+gold_cost = 50
+		build_time = 50
+archers = 30
+light_infantry = -10	
+light_cavalry = 30
+knights = 15
+retinuesize = -110
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_prussca_syst_3 = {
+		desc = lithca_syst_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}     
+                     
+culture = prussian
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_prussca_syst_2
+		gold_cost = 400
+		build_time = 720
+knights = -15
+archers = 30
+archers_morale = 0.10
+archers_defensive = 0.15
+light_infantry = -30
+pikemen = 30
+pikemen_defensive = 0.15
+pikmen_offensive = -0.10
+pikemen_morale = 0.10
+heavy_infantry = 30
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10	
+tax_income = -4
+retinuesize = 1500
+		ai_creation_factor = 101
+		
+		
+	}
+	# Estonien : Nihil imitatio scaniae
+	
+	#Russes Druzhina -> Malaia Druzhina -> Zemstvo
+
+ca_culture_russ_syst_1 = {
+		desc = russ_syst_1_desc
+		potential = {
+			FROM = {
+                    is_feudal = yes					
+					culture_group = east_slavic 
+					NOT = { religion_group = muslim } 
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 80
+light_infantry = 50
+light_cavalry = 15
+heavy_infantry = 10
+retinuesize = 125
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_russ_syst_2 = {
+		desc = russ_syst_2_desc
+		potential = {
+			FROM = {
+
+culture_group = east_slavic
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5
+		OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}
+
+		} 
+                add_number_to_name = no
+upgrades_from = ca_culture_russ_syst_1
+		gold_cost = 40
+		build_time = 720
+knights = 30
+horse_archers = 30
+light_infantry = -40
+archers = -20
+retinuesize = -30
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_russ_syst_3 = {
+		desc = russ_syst_3_desc
+		potential = {
+			FROM = {
+
+culture_group = east_slavic
+is_feudal = yes
+religion_group = christian
+     
+
+		}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+		OR = {
+FROM = {
+top_liege = {
+primary_title = {
+
+
+has_law = centralization_4
+
+}
+}
+}
+FROM = {
+primary_title = {
+
+
+has_law = centralization_4
+
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_russ_syst_2
+		gold_cost = 200
+		build_time = 720
+knights = 30
+horse_archers = -25
+heavy_infantry = 40
+archers = 50
+archers_offensive = 0.20
+archers_defensive = 0.20
+retinuesize = -95
+		ai_creation_factor = 101
+		
+		
+	}
+
+	#Hongrie semi-nomade->bandiera->militia portalis
+	
+ca_culture_Hongrois_sysfed_1 = {
+		desc = ca_culture_Hongrois_sysfed_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+
+                    
+culture_group = magyar				
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+
+archers = 20
+archers_defensive = 0.20
+archers_offensive = -0.20
+light_cavalry = 60
+light_cavalry_offensive = 0.15
+light_cavalry_morale = 0.10
+horse_archers = 50
+light_infantry = 50
+light_infantry_defensive = 0.20
+light_infantry_offensive = -0.20			
+fort_level = 1.0
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Hongrois_sysfed_2 = {
+		desc = ca_culture_Hongrois_sysfed_2_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				culture_group = magyar				
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_Hongrois_sysfed_1
+		gold_cost = 300
+		build_time = 720
+knights = 50
+knights_offensive = 0.10
+knights_defensive = 0.10
+knights_morale = 0.20
+light_infantry_defensive = -0.20
+light_infantry_offensive = 0.20
+light_infantry = -15
+light_cavalry = -30
+horse_archers = -30
+archers_defensive = 0.30
+archers = 30
+		
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_Hongrois_sysfed_3 = {
+		desc = ca_culture_Hongrois_sysfed_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				culture_group = magyar		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_Hongrois_sysfed_2
+		gold_cost = 400
+		build_time = 720
+knights = -50
+archers = 120
+archers_offensive = 0.20
+light_cavalry = 60
+light_cavalry_offensive = 0.15
+light_infantry = -15
+heavy_infantry = 20
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10
+knights_offensive = -0.10
+knights_morale = -0.20
+knights_defensive = -0.10		
+tax_income = -6
+retinuesize = 2000
+		ai_creation_factor = 101
+		
+		
+	}
+	# Croate antefeodal
+	ca_culture_croate_syst_1 = {
+		desc = croate_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }                           
+culture = croatian		
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+knights = 10
+heavy_infantry = 10
+archers = 50
+light_infantry = 50		
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#Croate feodal
+
+ca_culture_croate_sysfed_1 = {
+		desc = ca_culture_croate_sysfed_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				culture = croatian
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+knights = 40
+archers = 60
+light_cavalry = 30
+light_infantry = 20
+heavy_infantry = 20		
+knights_offensive = 0.10
+knights_morale = 0.10
+knights_defensive = 0.10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_croate_sysfed_2 = {
+		desc = ca_culture_croate_sysfed_2_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				culture = croatian
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_croate_sysfed_1
+		gold_cost = 300
+		build_time = 720
+knights = 15
+archers = -10
+archers_offensive = 0.20
+light_cavalry = 80
+light_cavalry_offensive = 0.25
+light_cavalry_morale = 0.20
+light_infantry = -10		
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_croate_sysfed_3 = {
+		desc = ca_culture_croate_sysfed_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				culture = croatian		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_croate_sysfed_2
+		gold_cost = 400
+		build_time = 720
+
+archers = 120
+archers_offensive = 0.20
+light_cavalry = 80
+light_infantry = -15
+heavy_infantry = 30
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10	
+tax_income = -5
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+
+
+# Serbie ->1100
+
+	ca_culture_serb_syst_1 = {
+		desc = serb_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+OR = {
+NOT = { year = 1100 }
+NOT = { religion_group = christian }
+}                        
+culture = serbian		
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+heavy_infantry = 5
+archers = 35
+archers_offensive = 0.15
+archers_morale = -0.15
+light_cavalry = 30
+light_cavalry_offensive = 0.25
+light_cavalry_morale = 0.20
+light_infantry = 70		
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_serb_sysprono_1 = {
+		desc = ca_culture_serb_sysprono_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+year = 1100                      
+				culture = serbian
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+		
+heavy_infantry = 20
+archers = 40
+light_infantry = 10
+light_cavalry = 40
+light_cavalry_offensive = 0.25
+light_cavalry_morale = 0.20
+knights = 30
+horse_archers = 30		
+horse_archers_morale = 0.10
+knights_defensive = 0.20
+extra_tech_building_start = -1
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_serb_sysprono_2 = {
+		desc = ca_culture_serb_sysprono_2_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+                     
+				culture = serbian
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+		
+                add_number_to_name = no 
+		upgrades_from = ca_culture_serb_sysprono_1
+		gold_cost = 50
+		build_time = 50
+
+heavy_infantry = -10
+archers = 10
+light_infantry = -5
+horse_archers = -10
+archers_offensive = 0.20
+knights = 30		
+horse_archers_morale = -0.10
+knights_offensive = 0.15
+tax_income = 3
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_serb_sysprono_3 = {
+		desc = ca_culture_serb_sysprono_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+                         
+				culture = serbian		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_serb_sysprono_2
+		gold_cost = 400
+		build_time = 720
+
+archers = 60
+light_cavalry = 120
+light_cavalry_offensive = 0.10
+heavy_infantry = 60
+tax_income = -6
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+#bulgares paiens
+
+
+	ca_culture_bulg_syst_1 = {
+		desc = bulg_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+NOT = { religion_group = christian }
+ 
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+horse_archers = 50
+light_cavalry = 40
+knights = 10
+retinuesize = 50
+tax_income = -2
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+#Bulgares chrétiens ANTEPRONOIA	
+
+ca_culture_bulg_syst_2 = {
+		desc = bulg_syst_2_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+ 
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+NOT = { year = 1100 }	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+horse_archers = 10
+light_cavalry = 20
+knights = 50
+light_infantry = 40
+light_infantry_defensive = 0.10
+light_infantry_offensive = -0.10
+archers = 40
+retinuesize = 50
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+	#Bulgares chrétiens PRONOIA	
+
+ca_culture_bulg_syst_3 = {
+		desc = bulg_syst_3_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+ 
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+year = 1100	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+heavy_infantry = 20
+archers = 50
+archers_offensive = 0.20
+light_infantry = 10
+knights = 50
+horse_archers = 10
+light_cavalry = 45		
+horse_archers_morale = 0.10
+knights_defensive = 0.20
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	# Valaques semi-tribaux
+
+
+	ca_culture_vlach_syst_1 = {
+		desc = vlach_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+ 
+culture = romanian	
+NOT = { year = 1030 }
+	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+
+archers = 50
+archers_defensive = 0.20
+archers_morale = 0.20
+archers_offensive = -0.10
+light_cavalry = 30
+light_infantry = 120
+light_infantry_morale = 0.20
+light_infantry_defensive = 0.20
+light_infantry_offensive = -0.10
+extra_tech_building_start = -1
+
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	#Valaques après 1100 (hospodars)
+	
+	ca_culture_vlach_syst_2 = {
+		desc = vlach_syst_2_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+ 
+culture = romanian	
+religion_group = christian
+year = 1050	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 300
+
+knights = 30		
+archers = 50
+light_cavalry = 60
+light_infantry = 70
+light_infantry_morale = 0.20
+light_infantry_defensive = 0.20
+light_infantry_offensive = -0.10
+horse_archers = 10
+extra_tech_building_start = -1
+
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_vlach_syst_3 = {
+		desc = vlach_syst_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+                         
+				culture = romanian		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+       upgrades_from = ca_culture_vlach_syst_2
+		gold_cost = 400
+		build_time = 720
+
+archers = 150
+archers_morale = 0.20
+heavy_infantry = 100
+heavy_infantry_morale = 0.20
+light_infantry = 100
+light_infantry_morale = 0.20
+light_cavalry = 80
+light_cavalry_morale = 0.20
+horse_archers = 80
+horse_archers_morale = 0.20
+horse_archers_defensive = 0.20
+knights = 45
+tax_income = -7
+
+		ai_creation_factor = 101
+		
+		
+	}
 }

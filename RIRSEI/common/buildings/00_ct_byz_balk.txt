@@ -1,0 +1,156 @@
+city = {
+ct_byz_base = {
+	add_number_to_name = no 
+		desc = ct_byz_base_desc
+		potential = {
+		NOT = {
+FROMFROM = {
+region = world_europe_south_italy
+}
+}	
+			FROM = {
+		
+religion_group = christian
+
+
+culture = greek
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 100
+		archers = 150
+		levy_size = -0.7
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 1.0
+tax_income = 3
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+	ct_byz_tzakones = {
+	add_number_to_name = no 
+		desc = ct_byz_tzakones_desc
+		potential = {
+		NOT = {
+FROMFROM = {
+region = world_europe_south_italy
+}
+}
+			FROM = {
+			
+religion_group = christian
+
+
+culture = greek
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 6 }
+upgrades_from = ct_byz_base		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		heavy_infantry = 75
+		levy_size = 0.3
+        tax_income = -2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+ct_byz_ita = {
+	add_number_to_name = no 
+		desc = ct_byz_ita_desc
+		potential = {
+		
+FROMFROM = {
+region = world_europe_south_italy
+}
+	
+			FROM = {
+		
+religion_group = christian
+OR = {
+top_liege = {
+has_landed_title = e_byzantium
+}
+culture = greek
+}
+
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		
+heavy_infantry = 60
+light_infantry = 50
+light_infantry_offensive = -0.10
+archers = 50
+archers_offensive = -0.10
+light_cavalry = 30
+tax_income = -2		
+
+
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}	
+	
+
+ct_slvorient_base = {
+	add_number_to_name = no 
+		desc = ct_slvorient_base_desc
+		potential = {
+	
+			FROM = {
+		
+religion_group = christian
+
+OR = {
+culture = romanian
+culture = serbian
+culture = bulgarian
+		}
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 80
+		heavy_infantry = 20
+		archers = 150
+		levy_size = -0.9
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 1.5
+tax_income = 4
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}	
+	
+	
+	}

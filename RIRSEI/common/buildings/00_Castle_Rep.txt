@@ -1,0 +1,32 @@
+# Castle
+castle = {
+ca_comitatusrep = {
+		desc = ca_comitatusrep_desc
+		potential = {
+			FROM = {
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+}  		
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+
+light_cavalry = 30
+light_infantry = 250
+light_infantry_morale = -0.6
+light_infantry_offensive = -0.6
+light_infantry_defensive = -0.6	
+tax_income = 5
+		ai_creation_factor = 101
+		
+		
+	}
+}

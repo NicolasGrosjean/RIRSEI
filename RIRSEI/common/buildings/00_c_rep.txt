@@ -12,21 +12,29 @@ independent = yes
 top_liege = {
 is_republic = yes
 }
+tier = count
+tier = duke
+tier = king
 } 				
 			}
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
-		gold_cost = 50
-		prestige_cost = 0
+		gold_cost = 10		
 		build_time = 400
 		light_infantry = 300
-light_infantry_morale = -0.4
-light_infantry_offensive = -0.4
-light_infantry_defensive = -0.4
-heavy_infantry = 20
+light_infantry_morale = -0.5
+light_infantry_offensive = -0.5
+light_infantry_defensive = -0.5
+heavy_infantry = 30
 heavy_infantry_offensive = -0.1
-heavy_infantry_morale = -0.1
+heavy_infantry_morale = -0.2
+light_cavalry = 30
+knights = 10
+knights_offensive = -0.1
+light_cavalry_offensive = -0.1
+light_cavalry_morale = -0.2
 archers = 50
+archers_morale = -0.2
 
 		
 		
@@ -48,20 +56,28 @@ independent = yes
 top_liege = {
 is_republic = yes
 }
-} 				
+tier = count
+tier = duke
+tier = king
+}				
 			}
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		upgrades_from = ct_mil_commun
-		gold_cost = 250
-		prestige_cost = 0
+		gold_cost = 250		
 		build_time = 750
-		light_infantry = -300
-heavy_infantry = 60
-heavy_infantry_offensive = 0.1
-heavy_infantry_morale = 0.1
-archers = 20
-pikemen = 150
+		light_infantry = -150
+heavy_infantry = 100
+heavy_infantry_offensive = -0.1
+heavy_infantry_defensive = 0.2
+archers = 50
+archers_offensive = 0.25
+pikemen = 75
+pikemen_morale = -0.2
+pikemen_defensive = 0.1
+knights = 20
+knights_morale = -0.2
+tax_income = -6
 		
 		ai_creation_factor = 100
 		
@@ -69,12 +85,13 @@ pikemen = 150
 	}
 
 
-ct_censitaire = {
+ct_condottea = {
 	add_number_to_name = no 
-		desc = ct_censitaire_desc
+		desc = ct_condottea_desc
 		potential = {
 		FROM = {
-			
+		
+culture = italian			
 religion_group = christian
 is_republic = yes
 OR = {
@@ -82,20 +99,21 @@ independent = yes
 top_liege = {
 is_republic = yes
 }
+tier = count
+tier = duke
+tier = king
 }  				
 			}
 		}
 trigger = { TECH_CITY_CONSTRUCTION = 6 }
-		prerequisites = { ct_Lex_belli }
-		not_if_x_exists = { ct_soldes }
+		upgrades_from = ct_Lex_belli
+		not_if_x_exists = { ct_mercenariat }
 		gold_cost = 200
-		prestige_cost = 0
 		build_time = 700
-		knights = 40
-knights_morale = 0.1
-knights_offensive = 0.1
-knights_defensive = 0.1
-light_cavalry = 40
+		
+knights = -30
+light_cavalry = -30
+tax_income = 6
 
 		
 		
@@ -104,13 +122,14 @@ light_cavalry = 40
 		extra_tech_building_start = 1.1
 	}
 	
-	ct_soldes = {
+	ct_mercenariat = {
 
 add_number_to_name = no 
-		desc = ct_censitaire_desc
+		desc = ct_mercenariat_desc
 		potential = {
 		FROM = {
-			
+
+NOT = { culture = italian }		
 religion_group = christian
 is_republic = yes
 OR = {
@@ -118,25 +137,112 @@ independent = yes
 top_liege = {
 is_republic = yes
 }
+tier = count
+tier = duke
+tier = king
 }  				
 			}
 		}
 trigger = { TECH_CITY_CONSTRUCTION = 6 }
 		prerequisites = { ct_Lex_belli }
-		not_if_x_exists = { ct_censitaire }
+		not_if_x_exists = { ct_condottea }
 		gold_cost = 300
-		prestige_cost = 0
 		build_time = 700
 		
-heavy_infantry = 100
-heavy_infantry_morale = 0.1
+knights = -30
+light_cavalry = -30
+tax_income = 4
+
+		
+		
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 1.1
+	}
+	
+	ct_provisionati = {
+		desc = ct_provisionati_desc
+		potential = {
+			FROM = {
+
+
+religion_group = christian
+culture = italian
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+tier = count
+tier = duke
+tier = king
+}
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ct_condottea
+		gold_cost = 400
+		build_time = 720
+light_infantry = -125
+heavy_infantry = -40
 heavy_infantry_offensive = 0.1
-heavy_infantry_defensive = 0.1
-archers = 50
-pikemen = 150
+heavy_infantry_morale = 0.1
+archers = 150
+archers_offensive = 0.25
+archers_morale = 0.2
+pikemen = 60
 pikemen_morale = 0.1
-pikemen_defensive = 0.1
-pikemen_offensive = 0.1
+tax_income = -6
+retinuesize = 1500
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ct_carrocioita = {
+
+add_number_to_name = no 
+		desc = ct_carrocioita_desc
+		potential = {
+		FROM = {
+
+culture = italian 	
+religion_group = christian
+is_republic = yes
+independent = yes
+
+}  				
+			}
+		
+trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		prerequisites = { ct_Lex_belli }		
+		gold_cost = 200		
+		build_time = 700
+		
+light_infantry_morale = 0.1
+light_infantry_offensive = 0.1
+light_infantry_defensive = 0.1
+heavy_infantry_morale = 0.1
+light_cavalry_morale = 0.1
 
 		
 		

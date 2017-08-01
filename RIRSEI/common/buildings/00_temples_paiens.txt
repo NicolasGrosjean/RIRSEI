@@ -1,0 +1,543 @@
+temple = {
+# Northmenn, leidangr précoce, Hird tardif
+
+	tp_culture_Northm_syst_1 = {
+		desc = Northm_syst_1_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+
+					culture_group = north_germanic
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		add_number_to_name = no 
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 40
+archers = 20
+light_infantry = 30		
+heavy_infantry_offensive = 0.20
+heavy_infantry_morale = 0.10
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	tp_culture_Northm_syst_2 = {
+		desc = Northm_syst_2_desc
+		potential = {
+			FROM = {
+liege = {
+			is_tribal = yes
+			}
+culture_group = north_germanic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2 }
+                add_number_to_name = no 
+		upgrades_from = tp_culture_Northm_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 20
+light_infantry = -10		
+heavy_infantry_offensive = 0.10
+heavy_infantry_morale = 0.10
+retinuesize = 50
+fort_level = -0.5
+		ai_creation_factor = 101
+		
+		
+	}
+	tp_culture_Northm_syst_3 = {
+		desc = Northm_syst_3_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+culture_group = north_germanic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3 }
+                add_number_to_name = no 
+		upgrades_from = tp_culture_Northm_syst_2
+gold_cost = 50
+		build_time = 50
+archers = -5
+light_infantry = -15
+heavy_infantry = 20		
+heavy_infantry_morale = 0.05
+retinuesize = 25
+fort_level = 0.5
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#scandinaves feodal paiens
+	tp_culture_Scandifedpa_syst_1 = {
+		desc = Scandi_syst_1_desc
+		potential = {
+			FROM = {
+                    liege = {
+			is_feudal = yes
+			}
+					
+					culture_group = north_germanic
+					
+					NOT = { religion_group = muslim }
+                    NOT = { religion_group = catholic }					
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 15
+light_infantry = 5
+heavy_infantry = 80
+heavy_infantry_offensive = 0.10	
+heavy_infantry_morale = 0.15
+retinuesize = 75
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	# Saxons paiens
+	
+	tp_culture_saxpaien_syst_1 = {
+		desc = saxpaien_syst_1_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+
+					culture = old_saxon
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 40
+archers = 30
+light_infantry = 30		
+heavy_infantry_defensive = 0.10
+heavy_infantry_morale = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#finlandais et saami
+	
+	tp_culture_saamitrib_syst_1 = {
+		desc = saamitrib_syst_1_desc
+		potential = {
+			FROM = {
+liege = {
+			is_tribal = yes
+			}
+					culture_group = finno_ugric
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 120
+archers_defensive = 0.40
+archers_morale = 0.25
+light_infantry = 80	
+light_infantry_defensive = 0.40
+light_infantry_morale = 0.25
+fort_level = 1.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+
+# Slaves du sud, est, ouest
+
+	tp_culture_Sclav_syst_1 = {
+		desc = Sclav_syst_1_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 10
+archers = 40
+light_infantry = 60
+light_infantry_offensive = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	tp_culture_Sclav_syst_2 = {
+		desc = Sclav_syst_2_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = tp_culture_Sclav_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 10
+light_infantry = -10
+archers = -15		
+heavy_infantry_morale = 0.10
+light_infantry_offensive = 0.10
+retinuesize = 75
+
+		ai_creation_factor = 101
+		
+		
+	}
+	tp_culture_Sclav_syst_3 = {
+		desc = Sclav_syst_3_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_tribal = yes
+			}
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3 }
+                add_number_to_name = no 
+		upgrades_from = tp_culture_Sclav_syst_2
+gold_cost = 50
+		build_time = 50
+archers = 5
+light_infantry = -15
+heavy_infantry = 20		
+heavy_infantry_morale = 0.05
+retinuesize = 25
+fort_level = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	#bulgares paiens
+	
+	tp_culture_bulg_syst_1 = {
+		desc = bulg_syst_1_desc
+		potential = {
+			FROM = {
+liege = {
+			is_feudal = yes
+			}
+NOT = { religion_group = christian }
+ 
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}	
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+horse_archers = 50
+light_cavalry = 40
+knights = 10
+retinuesize = 50
+tax_income = -2
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+#serbespaiens
+	
+	tp_culture_serb_syst_1 = {
+		desc = serb_syst_1_desc
+		potential = {
+			FROM = {
+			liege = {
+			is_feudal = yes
+			}
+
+
+NOT = { religion_group = christian }
+                        
+culture = serbian		
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+heavy_infantry = 5
+archers = 35
+archers_offensive = 0.15
+archers_morale = -0.15
+light_cavalry = 30
+light_cavalry_offensive = 0.25
+light_cavalry_morale = 0.20
+light_infantry = 70		
+extra_tech_building_start = -1
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+	#tcheques
+	tp_culture_boheme_syst_1 = {
+		desc = boheme_syst_1_desc
+		potential = {
+		
+	       		
+			FROM = {
+			liege = {
+			is_feudal = yes
+			}
+                    
+								
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central }  					
+					culture = bohemian
+					NOT = { religion_group = christian }
+					NOT = { religion_group = muslim } 
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 30
+archers_offensive = -0.30
+archers_defensive = 0.20
+light_infantry = 80
+light_infantry_offensive = -0.10
+light_infantry_defensive = 0.20
+knights = 10
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	#polack
+	
+	tp_culture_polak_syst_1 = {
+		desc = polak_syst_1_desc
+		potential = {
+		
+			FROM = {
+			liege = {
+			is_feudal = yes
+			}
+                    				
+					culture = polish
+					NOT = { religion_group = muslim } 
+                    NOT = { religion_group = christian }
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 40
+archers_offensive = -0.20
+archers_defensive = 0.20
+light_infantry = 70
+light_infantry_offensive = -0.20
+light_infantry_defensive = 0.20
+heavy_infantry = 20
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	#pomeranie
+	
+	tp_culture_pomeranie_syst_1 = {
+		desc = pomeranie_syst_1_desc
+		potential = {
+			FROM = {
+                    liege = {
+			is_feudal = yes
+			}				
+					culture = pommeranian
+					NOT = { religion_group = muslim } 
+                    NOT = { religion_group = christian }
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 100
+archers_offensive = 0.10
+light_infantry = 30
+light_infantry_offensive = -0.20
+light_infantry_defensive = 0.20
+heavy_infantry = 10
+retinuesize = 125
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#Russes
+	tp_culture_russ_syst_1 = {
+		desc = russ_syst_1_desc
+		potential = {
+			FROM = {
+                    liege = {
+			is_feudal = yes
+			}					
+					culture_group = east_slavic 
+					NOT = { religion_group = muslim }
+                    NOT = { religion_group = christian }					
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		add_number_to_name = no
+		gold_cost = 30
+		build_time = 730
+
+archers = 80
+light_infantry = 50
+light_cavalry = 15
+heavy_infantry = 10
+retinuesize = 125
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+}

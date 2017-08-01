@@ -1,0 +1,75 @@
+city = {
+ct_veche = {
+	add_number_to_name = no 
+		desc = veche_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+
+
+culture_group = east_slavic
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 200
+light_infantry_morale = -0.3
+light_infantry_offensive = -0.3
+heavy_infantry = 50
+heavy_infantry_morale = -0.20
+archers = 50
+fort_level = 1.0
+tax_income = -2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
+	ct_sotnia = {
+	add_number_to_name = no 
+		desc = sotnia_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+
+
+culture_group = east_slavic
+is_republic = yes
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+		}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		upgrades_from = ct_veche
+		gold_cost = 200
+		prestige_cost = 0
+		build_time = 700
+		
+		light_infantry = -100
+knights = 30
+knights_morale = -0.20
+light_cavalry = 10
+heavy_infantry = 50
+archers = 150
+archers_offensive = 0.20
+archers_defensive = 0.20
+retinuesize = 150
+tax_income = -3
+
+		
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 1.2
+	
+}
+}
