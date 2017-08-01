@@ -532,7 +532,7 @@ tier = KING
 heavy_infantry = 5
 archers = 30
 light_infantry = 60
-light_infatry_defensive = 0.10
+light_infantry_defensive = 0.10
 fort_level = 0.5	
 
 
