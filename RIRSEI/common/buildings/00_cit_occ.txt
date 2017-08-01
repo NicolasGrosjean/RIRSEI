@@ -219,7 +219,7 @@ culture_group = east_slavic
 		duchy = { title = d_brabant }
 		duchy = { title = d_flanders }
 		AND = {
-		OR {
+		OR = {
 		duchy = { title = d_savoie }
 		duchy = { title = d_upper_burgundy }
 		}
@@ -298,7 +298,7 @@ culture_group = east_slavic
 		duchy = { title = d_brabant }
 		duchy = { title = d_flanders }
 		AND = {
-		OR {
+		OR = {
 		duchy = { title = d_savoie }
 		duchy = { title = d_upper_burgundy }
 		}
@@ -491,7 +491,7 @@ tier = king
 		add_number_to_name = no 
 		desc = ct_Charte_Piquiers_Suisse_desc
 		potential = {
-		OR {
+		OR = {
 		duchy = { title = d_savoie }
 		duchy = { title = d_upper_burgundy }
 		}
