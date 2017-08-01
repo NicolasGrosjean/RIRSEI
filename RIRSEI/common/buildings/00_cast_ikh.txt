@@ -869,6 +869,7 @@ has_character_flag = changer_asab
 
 
 }
+}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
 
@@ -884,5 +885,4 @@ tax_income = -4
 		
 		
 	}
-}
 }
