@@ -120,7 +120,6 @@ revoke_law = vice_royalty_0
 add_law_w_cooldown = vice_royalty_2
 }
 }
-}
 
 
 #Deuxième cycle
