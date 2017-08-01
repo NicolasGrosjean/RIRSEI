@@ -152,7 +152,7 @@ castle = {
 	#Keeps, gives levy and garrison size
 	ca_keep_1 = {
 		desc = ca_keep_1_desc
-		trigger = { TECH_RECRUITMENT_CONSTRUCTION = 0 }
+		trigger = { TECH_RECRUITMENT = 0 }
 		gold_cost = 150
 		build_time = 547 #1.5y
 		levy_size = 0.05
@@ -163,7 +163,7 @@ castle = {
 	}
 	ca_keep_2 = {
 		desc = ca_keep_1_desc
-		trigger = { TECH_RECRUITMENT_CONSTRUCTION = 0 }
+		trigger = { TECH_RECRUITMENT = 0 }
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_keep_1
 		gold_cost = 200
