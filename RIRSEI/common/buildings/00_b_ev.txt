@@ -599,7 +599,7 @@ NOT = { has_global_flag = central }
 heavy_infantry = 15
 light_cavalry = 5
 light_infantry = -20		
-fort_level = - 0.5
+fort_level = -0.5
 		ai_creation_factor = 101
 		
 		
