@@ -81,6 +81,9 @@ has_building = ca_culture_Francais_syst_3
 has_building = ca_culture_Espagnes_syst_3
 has_building = ca_culture_Ang_syst_3
 has_building = ca_culture_Lomb_syst_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ca_culture_Ecosse_syst_2
+has_building = tp_culture_Scandi_syst_1
 }
 }
 
@@ -121,4 +124,415 @@ narrative_event = {
 	}
 
 	
+}
+
+# Annonce des chartes
+
+narrative_event = {   
+	id = RIRNOVEXERC.24
+	title = EVTNAME_RIRNOVEXERC_24
+desc = "EVTDESC_RIRNOVEXERC_24"
+	picture = "GFX_evt_commune"
+
+
+
+trigger = {
+religion = catholic
+NOT = { has_global_flag = tempschartes }
+
+
+
+
+capital_holding = {
+
+has_building = ct_Temps_Des_Chartes
+
+}
+
+}	
+mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRNOVEXERC_24"  
+set_global_flag = tempschartes
+any_playable_ruler = {
+limit = { religion = catholic }
+				
+				
+				narrative_event = { id = RIRNOVEXERC.25 }		 
+}
+}
+	
+	
+}
+
+
+narrative_event = {
+	id = RIRNOVEXERC.25
+	title = EVTNAME_RIRNOVEXERC_25
+	desc = EVTDESC_RIRNOVEXERC_25
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        hide_from = yes
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_25
+		
+	}
+}
+	
+#Events de Chartes
+
+letter_event = {
+	id = RIRNOVEXERC.27
+	title = EVTNAME_RIRNOVEXERC_27
+	desc = EVTDESC_RIRNOVEXERC_27
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+       
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_27 #Refus
+		prestige = 50
+		FROM = {
+		letter_event = { id = RIRSEI.28 }
+		
+	}
+	FROM = {
+			opinion = {
+				modifier = refus_charte_ville
+				who = ROOT
+				
+			}
+		}
+	ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.5
+				NOT = { year = 1100 }
+			}
+			modifier = {
+				factor = 0.5
+				year = 1100
+			}
+			modifier = {
+				factor = 0.25
+				year = 1200
+			}
+			modifier = {
+				factor = 1.4
+				ROOT = { trait = proud }
+			}
+			}
+	}
+	option = {
+		name = EVTOPTB_RIRNOVEXERC_27 #Sergents
+		prestige = -150
+		FROM = {
+		capital_holding  = { add_building = ct_Charte_Sergents }
+		letter_event = { id = RIRSEI.29 }
+		
+	}
+	ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+		}
+		option = {
+		name = EVTOPTC_RIRNOVEXERC_27 #Piquiers
+		prestige = -150
+		
+		FROM = {
+		letter_event = { id = RIRSEI.30 }
+		capital_holding = { add_building = ct_Charte_Piquier }
+	}
+	ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+		}
+		option = {
+		name = EVTOPTD_RIRNOVEXERC_27 #Sagitarii
+		prestige = -200
+		FROM = {
+		letter_event = { id = RIRSEI.31 }
+		capital_holding = { add_building = ct_Charte_Archers }
+	}
+	
+		
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+	
+	}
+	option = {
+		name = EVTOPTE_RIRNOVEXERC_27 #Arbaita
+		prestige = -200
+		trigger = {
+		OR = {
+		FROMFROM = { title = b_genoa }
+		FROMFROM = { title = b_pisa  }
+		FROMFROM = { title = b_bastia }
+		}
+		}
+		FROM = {
+		letter_event = { id = RIRSEI.32 }
+		capital_holding = { add_building = ct_Charte_Arbaletriers_Italiens }
+	}
+	
+		
+		ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+	
+	}
+	option = {
+		name = EVTOPTF_RIRNOVEXERC_27 #Piquiersflamands
+		prestige = -150
+		trigger = {
+		FROMFROM = {
+		OR = {
+		duchy = { title = d_brabant }
+		duchy = { title = d_flanders }
+		}
+		}
+		}
+		FROM = {
+		letter_event = { id = RIRSEI.33 }
+		capital_holding = { add_building = ct_Charte_Piquiers_FlamandsBrabant }
+	}
+	
+		
+		ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+	
+	}
+	option = {
+		name = EVTOPTG_RIRNOVEXERC_27 #Hallebardiers suisses
+		prestige = -150
+		trigger = {
+		FROMFROM = {
+		OR = {
+		duchy = { title = d_savoie }
+		duchy = { title = d_upper_burgundy }
+		}
+		}
+		}
+		FROM = {
+		letter_event = { id = RIRSEI.34 }
+		capital_holding = { add_building = ct_Charte_Piquiers_Suisse }
+	}
+	
+		
+		ai_chance = {
+			factor = 0.8
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+	
+	}
+	}
+	
+	#refus
+	letter_event = {
+	id = RIRNOVEXERC.28
+	title = EVTNAME_RIRNOVEXERC_28
+	desc = EVTDESC_RIRNOVEXERC_28
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_28
+		
+	}
+}
+
+#Sergents
+	letter_event = {
+	id = RIRNOVEXERC.29
+	title = EVTNAME_RIRNOVEXERC_29
+	desc = EVTDESC_RIRNOVEXERC_29
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_29
+		
+		
+	}
+}
+
+#Piquiers
+	letter_event = {
+	id = RIRNOVEXERC.30
+	title = EVTNAME_RIRNOVEXERC_30
+	desc = EVTDESC_RIRNOVEXERC_30
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_30
+		
+		
+		
+		
+	}
+}
+
+#Archers/Arba
+	letter_event = {
+	id = RIRNOVEXERC.31
+	title = EVTNAME_RIRNOVEXERC_31
+	desc = EVTDESC_RIRNOVEXERC_31
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_31
+		
+		
+	}
+}
+	
+#arbaita
+	letter_event = {
+	id = RIRNOVEXERC.32
+	title = EVTNAME_RIRNOVEXERC_32
+	desc = EVTDESC_RIRNOVEXERC_32
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_32
+		
+		
+	}
+}
+
+#Piquiersflm
+	letter_event = {
+	id = RIRNOVEXERC.33
+	title = EVTNAME_RIRNOVEXERC_33
+	desc = EVTDESC_RIRNOVEXERC_33
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_33
+		
+		
+		
+		
+	}
+}
+
+#hallesuisses
+	letter_event = {
+	id = RIRNOVEXERC.34
+	title = EVTNAME_RIRNOVEXERC_34
+	desc = EVTDESC_RIRNOVEXERC_34
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_34
+		
+		
+	}
 }
