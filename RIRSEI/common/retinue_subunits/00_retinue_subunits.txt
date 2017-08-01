@@ -8,6 +8,10 @@
 # 6 - Special troops
 
 
+#Compagnies d'Ordonnance
+
+#France
+
 RETTYPE_LANCES_RIR = 
 {
 	first_type = 4
@@ -17,9 +21,42 @@ second_amount = 60
 	
 	potential = {
 	
-
+is_independent = yes
 any_demesne_province = {
 has_building = ca_culture_Francais_sysfed_3
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+archers_offensive = 0.3
+archers_defensive = 0.3
+archers_morale = 0.3
+	}
+}
+
+# Angleterre & Irlande & Ecosse
+
+RETTYPE_LANCESANG_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+second_type = 5
+second_amount = 80
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Saxon_sysfed_3
+has_building = ca_culture_Ang_sysfed_3
+has_building = ca_culture_Eire_syst_3
+has_building = ca_culture_Ecosse_sysfed_3
+}
 }
                
 	}
@@ -34,6 +71,178 @@ archers_morale = 0.3
 	}
 }
 
+#Lances Brisées d'Italie
+
+RETTYPE_LANCESITA_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+second_type = 3
+second_amount = 20
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Lomb_sysfed_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ct_provisionati
+}
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+light_cavalry_offensive = 0.3
+light_cavalry_defensive = 0.3
+light_cavalry_morale = 0.3
+	}
+}
+
+#Glaives Allemands & Scandinaves
+
+RETTYPE_LANCESGERM_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+second_type = 5
+second_amount = 20
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Germ_sysfed_3
+has_building = ca_culture_Scandi_syst_3
+}
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+archers_offensive = 0.3
+archers_defensive = 0.3
+archers_morale = 0.3
+	}
+}
+
+#Lanzas espagnoles
+
+RETTYPE_LANCESESP_RIR = 
+{
+	first_type = 4
+	first_amount = 40
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+has_building = ca_culture_Espagnes_sysfed_3
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+	}
+}
+
+#Lances polonaises
+
+RETTYPE_LANCESPOLO_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+second_type = 5
+second_amount = 40
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+
+has_building = ca_culture_polak_syst_4
+
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+archers_offensive = 0.25
+archers_defensive = 0.3
+archers_morale = 0.35
+	}
+}
+
+#Hongrie (Armée Noire)
+
+RETTYPE_ARMEENOIRE_RIR = 
+{
+	first_type = 4
+	first_amount = 40
+second_type = 5
+second_amount = 20
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+has_building = ca_culture_Hongrois_sysfed_3
+}
+               
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	    knights_defensive = 0.3
+		knights_morale = 0.3
+archers_offensive = 0.5
+archers_defensive = 0.1
+
+	}
+}
+
+RETTYPE_ARMEENOIREINF_RIR = 
+{
+	first_type = 1
+	first_amount = 50
+second_type = 2
+second_amount = 50
+	
+	potential = {
+	
+is_independent = yes
+any_demesne_province = {
+has_building = ca_culture_Hongrois_sysfed_3
+}
+               
+	}
+	
+	modifier = {
+		pikemen_offensive = 0.3
+	    pikemen_defensive = 0.3
+		pikemen_morale = 0.3
+heavy_infantry_offensive = 0.3
+heavy_infantry_defensive = 0.3
+heavy_infantry_morale = 0.3
+	}
+}
+
+#Scholae Palatinae carolingiennes
+
 RETTYPE_CUL_FRA_RIR = 
 {
 	first_type = 4
@@ -46,6 +255,7 @@ RETTYPE_CUL_FRA_RIR =
 		OR = {
 		culture = old_frankish
 		culture = frankish
+		culture = german
 		}
 NOT = { religion_group = muslim }
 	}
@@ -56,6 +266,8 @@ NOT = { religion_group = muslim }
 		knights_morale = 0.5
 	}
 }
+
+#Chevaliers de l'Ostel français
 
 RETTYPE_CUL_FRAN_RIR = 
 {
@@ -79,6 +291,8 @@ NOT = { religion_group = muslim }
 		knights_morale = 0.6
 	}
 }
+
+#Garde écossaise
 
 RETTYPE_CUL_FRANSCT_RIR = 
 {
@@ -104,6 +318,8 @@ NOT = { religion_group = muslim }
         archers_morale = 0.5
 	}
 }
+
+#Archers du Chestershire
 
 RETTYPE_CUL_CHESANGL_RIR = 
 {
@@ -131,6 +347,34 @@ NOT = { religion_group = muslim }
 	}
 }
 
+# Chevaliers français des écossais
+
+RETTYPE_CUL_SCTFR_RIR = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		is_independent = yes
+		OR = {
+		culture = scottish
+        culture = pictish
+		}
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.6
+	    knights_defensive = 0.5
+		knights_morale = 0.6
+	}
+}
+
+# Comitatus Regis des Anglo-Saxons
+
 RETTYPE_CUL_SAX_RIR = 
 {
 	first_type = 1
@@ -139,7 +383,7 @@ RETTYPE_CUL_SAX_RIR =
 	potential = {               
 		is_nomadic = no
 		culture = saxon
-		
+		is_independent = yes
 NOT = { religion_group = muslim }
 	}
 	
@@ -150,6 +394,156 @@ NOT = { religion_group = muslim }
 	}
 }
 
+#Sodales lombards
+
+RETTYPE_CUL_LOMB_RIR = 
+{
+	first_type = 1
+	first_amount = 50
+	
+	potential = {               
+		is_nomadic = no
+		culture = lombard
+		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_defensive = 0.6
+		heavy_infantry_morale = 0.5
+	}
+}
+
+#Milites Palatini des Allemands
+
+RETTYPE_CUL_ALL_RIR = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		culture = german
+		is_independent = yes
+		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.6
+	    knights_defensive = 0.6
+		knights_morale = 0.5
+	}
+}
+
+#Familiares des Italiens
+
+RETTYPE_CUL_ITA_RIR = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		culture = italian
+		NOT = { is_republic = yes }
+		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+	    knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+# Fanti des républiques
+
+RETTYPE_CUL_FANTI_RIR = 
+{
+	first_type = 1
+	first_amount = 50
+	
+	potential = {               
+		is_nomadic = no
+		is_republic = yes
+		OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+}  	
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_defensive = 0.4
+		heavy_infantry_morale = 0.4
+	}
+}
+
+# Arsenalotti de Venise
+
+RETTYPE_CUL_ARSEN_RIR = 
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {               
+		is_nomadic = no
+		is_republic = yes
+		has_landed_title = k_venice
+		any_demesne_province = {
+has_building = ct_rep_arsenal_2
+}
+		OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+}  	
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.5
+		heavy_infantry_defensive = 0.4
+		heavy_infantry_morale = 0.5
+	}
+}
+
+#Chevaliers du Pape
+
+RETTYPE_CUL_PAPE_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+            
+		is_nomadic = no
+		has_landed_title = k_papal_state
+		is_independent = yes
+		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	    knights_defensive = 0.5
+		knights_morale = 0.7
+	}
+}
+
+#Milites Maiori asturans
+
 RETTYPE_CUL_ASTU_RIR = 
 {
 	first_type = 4
@@ -159,6 +553,7 @@ RETTYPE_CUL_ASTU_RIR =
 		is_nomadic = no
 		culture = visigothic
 NOT = { religion_group = muslim }
+is_independent = yes
 	}
 	
 	modifier = {
@@ -167,6 +562,107 @@ NOT = { religion_group = muslim }
 		knights_morale = 0.4
 	}
 }
+
+# Mesnie des rois ibériques
+
+RETTYPE_CUL_MESNA_RIR = 
+{
+	first_type = 4
+	first_amount = 25
+	
+	potential = {               
+		is_nomadic = no
+		OR = {
+		culture = catalan
+		culture = castillan                                        
+        culture = portuguese
+        culture = ibero
+        culture = basque
+}
+NOT = { religion_group = muslim }
+is_independent = yes
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	    knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+#Teulu gallois : légers puis lourds
+
+RETTYPE_CUL_TEULUG_RIR = 
+{
+	first_type = 3
+	first_amount = 40
+	
+	potential = {               
+		is_nomadic = no
+culture = welsh
+NOT = { religion_group = muslim }
+
+any_demesne_province = {
+has_building = ca_culture_Galles_syst_1
+}
+
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.4
+	    light_cavalry_defensive = 0.4
+		light_cavalry_morale = 0.4
+	}
+}
+
+RETTYPE_CUL_TEULUGD_RIR = 
+{
+	first_type = 4
+	first_amount = 25
+	
+	potential = {               
+		is_nomadic = no
+culture = welsh
+NOT = { religion_group = muslim }
+
+any_demesne_province = {
+has_building = ca_culture_Galles_syst_2
+}
+
+
+
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+	    knights_defensive = 0.4
+		knights_morale = 0.4
+	}
+}
+
+#Hospites hongrois
+
+RETTYPE_CUL_HONGR_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		culture_group = magyar
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	    knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+#Cataphractes byzantins
 
 RETTYPE_CUL_BYZ_RIR = 
 {
@@ -191,15 +687,92 @@ NOT = { religion_group = muslim }
 	}
 }
 
+#Cataphractes serbes
+
+RETTYPE_CUL_SERB_RIR = 
+{
+	first_type = 4
+	first_amount = 50
+	
+	second_type = 6
+	second_amount = 50
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture = serbian
+		year = 1100
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+		knights_defensive = 0.3
+		knights_morale = 0.3
+	}
+}
+
+# Chevaliers allemands serbes
+
+RETTYPE_CUL_SERBMILES_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+            
+		is_nomadic = no
+		has_global_flag = central
+		culture = serbian
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	    knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+#Chonsaroi
+
+RETTYPE_CUL_SERBCHONSA_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+            
+		is_nomadic = no
+		NOT = { year = 1100 }
+		culture = serbian
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.4
+	    light_cavalry_defensive = 0.5
+		light_cavalry_morale = 0.5
+	}
+}
+
+#Huscarls nordiques
+
 RETTYPE_CUL_NORTHM_RIR = 
 {
 	first_type = 1
-	first_amount = 100
+	first_amount = 20
 	
 	potential = {
 		is_nomadic = no
 NOT = { religion_group = muslim }
-NOT = { religion_group = christian }
+NOT = { FROM = {
+				 any_demesne_province = {
+has_building = ca_culture_Scandi_syst_2
+}
+} }
+
 		
 			culture_group = north_germanic			
 		
@@ -211,6 +784,88 @@ NOT = { religion_group = christian }
 		heavy_infantry_morale = 0.5
 	}
 }
+
+#Chevaliers de la Lid nordiques
+
+RETTYPE_CUL_CHEVLID_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+	culture_group = north_germanic	
+                 
+				 FROM = {
+				 any_demesne_province = {
+has_building = ca_culture_Scandi_syst_2
+}
+}
+
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+	        knights_defensive = 0.4
+		knights_morale = 0.4
+	}
+}
+
+#Gardes valaques
+
+RETTYPE_CUL_DOMNES_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+	culture = romanian	
+                 
+				 
+
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+	        knights_defensive = 0.5
+		knights_morale = 0.4
+	}
+}
+
+#Huscarls nordiques (Varjazi)
+
+RETTYPE_CUL_NORTHMRSS_RIR = 
+{
+	first_type = 1
+	first_amount = 20
+	
+	potential = {
+		is_nomadic = no
+NOT = { religion_group = muslim }
+year = 810
+NOT = { year = 1100 }
+NOT = { FROM = {
+				 any_demesne_province = {
+has_building = ca_culture_russ_syst_2
+has_building = ca_culture_russ_syst_3
+
+}
+} }
+
+		
+			culture_group = east_slavic		
+		
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+                heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+	}
+}
+
+#Druzina à pied slave
 
 RETTYPE_CUL_SLV_RIR = 
 {
@@ -231,6 +886,130 @@ culture_group = south_slavic
 		heavy_infantry_morale = 0.6
 	}
 }
+
+#Druzina à cheval polonaise & tcheques
+
+RETTYPE_CUL_POLUN_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+culture = polish
+culture = bohemian
+}
+NOT = { religion_group = muslim }
+FROM = {
+				 any_demesne_province = {
+				 OR = {
+has_building = ca_culture_polak_syst_1
+has_building = ca_culture_boheme_syst_1
+}
+}
+}
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+	        knights_defensive = 0.3
+		knights_morale = 0.3
+	}
+}
+
+RETTYPE_CUL_POLDEUX_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+		is_nomadic = no
+culture = polish
+NOT = { religion_group = muslim }
+FROM = {
+				 any_demesne_province = {
+				 OR = {
+has_building = ca_culture_polak_syst_2
+has_building = ca_culture_polak_syst_3
+}
+}
+}
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	        knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+RETTYPE_CUL_BOHEME_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	potential = {
+		is_nomadic = no
+culture = bohemian
+NOT = { religion_group = muslim }
+FROM = {
+				 any_demesne_province = {
+				 OR = {
+has_building = ca_culture_boheme_systfed_1
+has_building = ca_culture_boheme_systfed_2
+has_building = ca_culture_boheme_systfed_3
+}
+}
+}
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	        knights_defensive = 0.5
+		knights_morale = 0.5
+	}
+}
+
+#Druzhina cheval/archers russes
+
+RETTYPE_CUL_POLDEUX_RIR = 
+{
+	first_type = 4
+	first_amount = 50
+	
+	second_type = 6
+	second_amount = 50
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+culture_group = east_slavic
+NOT = { religion_group = muslim }
+FROM = {
+				 any_demesne_province = {
+				 OR = {
+has_building = ca_culture_russ_syst_2
+has_building = ca_culture_russ_syst_3
+has_building = ct_sotnia
+}
+}
+}
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+	        knights_defensive = 0.5
+		knights_morale = 0.5
+		horse_archers_offensive = 0.5
+		horse_archers_defensive = 0.5
+		horse_archers_morale = 0.3
+	}
+}
+
+# Huscarls celtes
+
 RETTYPE_HUSCARLS_CELT_RIR = 
 {
 	first_type = 1
@@ -239,6 +1018,7 @@ RETTYPE_HUSCARLS_CELT_RIR =
 	potential = {
 		is_nomadic = no
 year = 850
+NOT = { year = 1150 }
 OR = {
 culture = scottish
 culture = pictish
@@ -252,6 +1032,9 @@ culture = irish
 		heavy_infantry_morale = 0.5
 	}
 }
+
+#Gallowglass irlandais
+
 RETTYPE_GALLOW_RIR = 
 {
 	first_type = 1
