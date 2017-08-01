@@ -1760,7 +1760,8 @@ has_law = centralization_4
 }
 }		} }
                 add_number_to_name = no
-upgrades_from = tp_culture_Galles_sysfed_2
+upgrades_from = tp_culture_Galles_syst_2
+
 		gold_cost = 400
 		build_time = 720
 pikemen = -50
@@ -1811,7 +1812,7 @@ heavy_infantry_morale = 0.10
 		
 		
 	}
-	ca_culture_Lomb_syst_2 = {
+	tp_culture_Lomb_syst_2 = {
 		desc = Lomb_syst_2_desc
 		potential = {
 		
