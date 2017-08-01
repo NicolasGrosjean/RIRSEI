@@ -34,5 +34,69 @@ religion_group = muslim }
 		ai_will_do = {
 			factor = 1
 		}
+		}
+		
+Demande_charte = {
+		is_high_prio = yes
+		potential = {
+		FROM = {
+		is_republic = yes
+NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+}			
+            capital_holding = {
+
+has_building = ct_Temps_Des_Chartes
+NOT = { has_building = ct_Charte_Piquier }
+NOT = { has_building = ct_Charte_Sergents }
+NOT = { has_building = ct_Charte_Archers }
+NOT = { has_building = ct_Charte_Arbaletriers_Italiens }
+NOT = { has_building = ct_Charte_Piquiers_FlamandsBrabant }
+NOT = { has_building = ct_Charte_Piquiers_Suisse }
 
 }
+           
+		}
+		allow = {
+		
+NOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = refus_charte_ville
+					}
+					}
+
+
+				
+		}
+		effect = {
+		
+
+ liege = {
+                   
+
+
+				letter_event = { id = RIRNOVEXERC.27}
+}
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		}
+		}
