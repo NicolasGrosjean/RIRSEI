@@ -3215,6 +3215,9 @@ choc_attent_ana = {
 opinion = -75
 }
 
+refus_charte_ville = { opinion = -80
+               years = 10  }
+
 #Torture & humiliation
 opinion_tortured_me = {
 	opinion = -100
