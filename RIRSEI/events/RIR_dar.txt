@@ -1037,12 +1037,12 @@ NOT = { has_landed_title = c_baghdad }
 name = "EVTOPTA_RIRSEMUS_111138"   
 
 
-c_baghdad = {
-usurp_title_plus_barony_if_unlanded_and_vassals = { d_sunni = {
-holder_scope
-}
-}
-}
+#c_baghdad = {
+#usurp_title_plus_barony_if_unlanded_and_vassals = { d_sunni = {
+#holder_scope
+#}
+#}
+#}
 
 		
 
