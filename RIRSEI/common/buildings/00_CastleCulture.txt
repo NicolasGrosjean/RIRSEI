@@ -1406,7 +1406,6 @@ retinuesize = 6000
 	ca_culture_Lomb_syst_1 = {
 		desc = Lomb_syst_1_desc
 		potential = {
-		is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
@@ -1439,7 +1438,6 @@ heavy_infantry_morale = 0.10
 	ca_culture_Lomb_syst_2 = {
 		desc = Lomb_syst_2_desc
 		potential = {
-		is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
@@ -1470,7 +1468,6 @@ tax_income = -2
 	ca_culture_Lomb_syst_3 = {
 		desc = Lomb_syst_3_desc
 		potential = {
-		is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
