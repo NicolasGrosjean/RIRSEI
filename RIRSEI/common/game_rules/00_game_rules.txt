@@ -5,6 +5,7 @@
 # rule_token = {
 #	name = "TEXT_KEY_FOR_NAME"
 #	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
 #	option = {										# please note that the first option is always the default option
 #		name = option_token
 #		text = "TEXT_KEY_FOR_OPTION_NAME"
@@ -18,6 +19,7 @@
 aztec_invasion = {
 	name = "RULE_AZTEC_INVASION"
 	dlc = "Sunset Invasion"
+	group = "RULE_GROUP_RAILROADING"
 	option = {
 		name = historical
 		text = "RULE_AZTEC_13TH"
@@ -40,8 +42,25 @@ aztec_invasion = {
 	}
 }
 
+devil_worshipers = {
+	name = "RULE_DEVIL_WORSHIPERS"
+	dlc = "Monks And Mystics"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = default
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_DEVIL_WORSHIPERS_DEFAULT_DESC"
+	}
+	option = {
+		name = none
+		text = "RULE_OPTION_NONE"
+		desc = "RULE_DEVIL_WORSHIPERS_NONE_DESC"
+	}
+}
+
 shattered_retreat = {
 	name = "RULE_SHATTERED_RETREAT"
+	group = "RULE_GROUP_WARFARE"
 	option = {
 		name = on
 		text = "RULE_OPTION_ON"
@@ -56,6 +75,7 @@ shattered_retreat = {
 
 diplo_assassination = {
 	name = "RULE_DIPLO_ASSASSINATION"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = off
 		text = "RULE_DIPLO_ASSASSINATION_OFF"
@@ -71,6 +91,7 @@ diplo_assassination = {
 ai_seduction = {
 	name = "RULE_AI_SEDUCTION"
 	dlc = "Way of Life"
+	group = "RULE_GROUP_WOL"
 	option = {
 		name = on
 		text = "RULE_OPTION_ON"
@@ -86,6 +107,7 @@ ai_seduction = {
 ai_intrigue = {
 	name = "RULE_AI_INTRIGUE"
 	dlc = "Way of Life"
+	group = "RULE_GROUP_WOL"
 	option = {
 		name = on
 		text = "RULE_OPTION_ON"
@@ -101,6 +123,8 @@ ai_intrigue = {
 dueling = {
 	name = "RULE_DUELING"
 	dlc = "Way of Life"
+	group = "RULE_GROUP_DIPLOMACY"
+	group = "RULE_GROUP_WOL"
 	option = {
 		name = default
 		text = "RULE_OPTION_DEFAULT"
@@ -120,6 +144,7 @@ dueling = {
 
 punishment_release_prisoner = {
 	name = "RULE_PUNISHMENT_RELEASE_PRISONER"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = on
 		text = "RULE_OPTION_ON"
@@ -136,6 +161,7 @@ punishment_release_prisoner = {
 epidemics = {
 	name = "RULE_EPIDEMICS"
 	dlc = "The Reaper's Due"
+	group = "RULE_GROUP_RIP"
 	option = {
 		name = historical
 		achievements = no
@@ -147,6 +173,7 @@ epidemics = {
 minor_epidemics = {
 	name = "RULE_MINOR_EPIDEMICS"
 	dlc = "The Reaper's Due"
+	group = "RULE_GROUP_RIP"
 	option = {
 		name = default
 		achievements = no
@@ -157,6 +184,7 @@ minor_epidemics = {
 
 mongol_invasion = {
 	name = "RULE_MONGOL_INVASION"
+	group = "RULE_GROUP_RAILROADING"
 	option = {
 		name = historical
 		achievements = no
@@ -165,8 +193,20 @@ mongol_invasion = {
 	}
 }
 
+secret_cults = {
+	name = "RULE_SECRET_CULTS"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = none
+		achievements = no
+		text = "RULE_OPTION_NONE"
+		desc = "RULE_SECRET_CULTS_NONE_DESC"
+	}
+}
+
 turkic_invasions = {
 	name = "RULE_TURKIC_INVASIONS"
+	group = "RULE_GROUP_RAILROADING"
 	option = {
 		name = historical
 		achievements = no
@@ -178,6 +218,7 @@ turkic_invasions = {
 non_epidemic_diseases = {
 	name = "RULE_NON_EPIDEMIC_DISEASES"
 	dlc = "The Reaper's Due"
+	group = "RULE_GROUP_RIP"
 	option = {
 		name = default
 		achievements = no
@@ -188,6 +229,7 @@ non_epidemic_diseases = {
 
 defensive_pacts = {
 	name = "RULE_DEFENSIVE_PACTS"
+	group = "RULE_GROUP_WARFARE"
 	option = {
 		name = off
 		achievements = no
@@ -198,6 +240,7 @@ defensive_pacts = {
 
 gender = {
 	name = "RULE_GENDER"
+	group = "RULE_GROUP_VARIOUS"
 	option = {
 		name = historical
 		achievements = no
@@ -208,6 +251,7 @@ gender = {
 
 supernatural_events = {
 	name = "RULE_SUPERNATURAL"
+	group = "RULE_GROUP_VARIOUS"
 	option = {
 		name = off
 		achievements = no
@@ -218,6 +262,7 @@ supernatural_events = {
 
 dejure_drift = {
 	name = "RULE_DEJURE"
+	group = "RULE_GROUP_DEJURE_DRIFT"
 	option = {
 		name = default
 		achievements = no
@@ -228,6 +273,7 @@ dejure_drift = {
 
 dejure_drift_duration = {
 	name = "RULE_DEJURE_DURATION"
+	group = "RULE_GROUP_DEJURE_DRIFT"
 	option = {
 		name = default
 		achievements = no
@@ -238,6 +284,7 @@ dejure_drift_duration = {
 
 de_jure_requirement = {
 	name = "RULE_DE_JURE_REQUIREMENT"
+	group = "RULE_GROUP_DEJURE_DRIFT"
 	option = {
 		name = default
 		achievements = no
@@ -248,6 +295,7 @@ de_jure_requirement = {
 
 nomad_stability = {
 	name = "RULE_NOMAD_STABILITY"
+	group = "RULE_GROUP_DEJURE_DRIFT"
 	dlc = "Horse Lords"
 	option = {
 		name = unstable
@@ -259,6 +307,7 @@ nomad_stability = {
 
 culture_conversion = {
 	name = "RULE_CULTURE_CONVERSION"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = default
 		achievements = no
@@ -269,6 +318,8 @@ culture_conversion = {
 
 religious_conversion = {
 	name = "RULE_RELIGIOUS_CONVERSION"
+	group = "RULE_GROUP_RELIGION"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = default
 		achievements = no
@@ -279,6 +330,7 @@ religious_conversion = {
 
 raiding = {
 	name = "RULE_RAIDING"
+	group = "RULE_GROUP_WARFARE"
 	option = {
 		name = historical
 		achievements = no
@@ -289,6 +341,7 @@ raiding = {
 
 adventurers = {
 	name = "RULE_ADVENTURERS"
+	group = "RULE_GROUP_WARFARE"
 	option = {
 		name = normal
 		achievements = no
@@ -299,6 +352,8 @@ adventurers = {
 
 interfaith_marriages = {
 	name = "RULE_INTERFAITH_MARRIAGES"
+	group = "RULE_GROUP_RELIGION"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = restricted
 		achievements = no
@@ -309,6 +364,7 @@ interfaith_marriages = {
 
 matrilineal_marriages = {
 	name = "RULE_MATRILINEAL_MARRIAGES"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = on
 		achievements = no
@@ -320,6 +376,7 @@ matrilineal_marriages = {
 dynamic_realms = {
 	name = "RULE_DYNAMIC_REALMS"
 	dlc = "Charlemagne"
+	group = "RULE_GROUP_VARIOUS"
 	option = {
 		name = off
 		achievements = no
@@ -331,6 +388,7 @@ dynamic_realms = {
 charlemagne_story = {
 	name = "RULE_CHARLEMAGNE_STORY"
 	dlc = "Charlemagne"
+	group = "RULE_GROUP_RAILROADING"
 	option = {
 		name = on
 		achievements = no
@@ -341,6 +399,7 @@ charlemagne_story = {
 
 vassal_republics = {
 	name = "RULE_VASSAL_REPUBLICS"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = restricted
 		achievements = no
@@ -351,6 +410,7 @@ vassal_republics = {
 
 vassal_theocracies = {
 	name = "RULE_VASSAL_THEOCRACIES"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = restricted
 		achievements = no
@@ -361,6 +421,7 @@ vassal_theocracies = {
 
 invitation = {
 	name = "RULE_INVITATION"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = default
 		achievements = no
@@ -371,6 +432,7 @@ invitation = {
 
 diplo_range = {
 	name = "RULE_DIPLO_RANGE"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = on
 		achievements = no
@@ -381,6 +443,7 @@ diplo_range = {
 
 provincial_revolts = {
 	name = "RULE_PROVINCE_REVOLTS"
+	group = "RULE_GROUP_WARFARE"
 	option = {
 		name = normal
 		achievements = no
@@ -389,8 +452,22 @@ provincial_revolts = {
 	}
 }
 
+provincial_revolt_strength = {
+	name = "RULE_PROVINCIAL_REVOLT_STRENGTH"
+	group = "RULE_GROUP_WARFARE"
+	dlc = "The Old Gods"
+	option = {
+		name = default
+		achievements = no
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_PROVINCIAL_REVOLT_STRENGTH_DEFAULT_DESC"
+	}
+}
+
 defensive_attrition = {
 	name = "RULE_DEF_ATTRITION"
+	group = "RULE_GROUP_WARFARE"
+	group = "RULE_GROUP_RELIGION"
 	option = {
 		name = on
 		achievements = no
@@ -401,6 +478,7 @@ defensive_attrition = {
 
 pagan_reformation = {
 	name = "RULE_PAGAN_REFORMATION"
+	group = "RULE_GROUP_RELIGION"
 	option = {
 		name = allowed
 		achievements = no
@@ -411,6 +489,7 @@ pagan_reformation = {
 
 regencies = {
 	name = "RULE_REGENCIES"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = on
 		achievements = no
@@ -421,6 +500,7 @@ regencies = {
 
 dynasty_title_names = {
 	name = "RULE_DYNASTY_TITLE_NAMES"
+	group = "RULE_GROUP_VARIOUS"
 	option = {
 		name = on
 		achievements = no
@@ -431,6 +511,7 @@ dynasty_title_names = {
 
 cultural_title_names = {
 	name = "RULE_CULTURAL_TITLE_NAMES"
+	group = "RULE_GROUP_VARIOUS"
 	option = {
 		name = on
 		achievements = no
@@ -465,6 +546,7 @@ cultural_title_names = {
 
 demesne_size = {
 	name = "RULE_DEMESNE_SIZE"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = default
 		achievements = no
@@ -475,6 +557,7 @@ demesne_size = {
 
 vassal_limit = {
 	name = "RULE_VASSAL_LIMIT"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = default
 		achievements = no
@@ -485,6 +568,7 @@ vassal_limit = {
 
 grant_independence = {
 	name = "RULE_GRANT_INDEPENDENCE"
+	group = "RULE_GROUP_DIPLOMACY"
 	option = {
 		name = restricted
 		achievements = no

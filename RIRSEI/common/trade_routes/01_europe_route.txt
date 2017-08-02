@@ -2,6 +2,7 @@ europe_road = {
 	wealth = 40			# Total base wealth of silk route
 
 	modifier = {			# How the trade route modifies the provinces it passes
+		icon = 4
 		castle_tax_modifier = 0.10
 		city_tax_modifier = 0.10
 		temple_tax_modifier = 0.10

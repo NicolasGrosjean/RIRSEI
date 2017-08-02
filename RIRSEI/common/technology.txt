@@ -120,15 +120,14 @@ TECH_GROUP_ECONOMY = {
 			CASTLE_TAX_MODIFIER = 0.5
 		}
 		1 = {
-			
-			add_building = <CULTURE>2
+			add_building = "<CULTURE>2"
 			add_building = tb_hillfort_3
 			add_building = tb_hillfort_4
 		}
 		2 = {
 			
 			add_building = ca_town_3
-			add_building = <CULTURE>3
+			add_building = "<CULTURE>3"
 		}
 		3 = {
 			
@@ -136,7 +135,7 @@ TECH_GROUP_ECONOMY = {
 		4 = {
 			
 			add_building = ca_town_4
-			add_building = <CULTURE>4
+			add_building = "<CULTURE>4"
 		}
 		5 = {
 			

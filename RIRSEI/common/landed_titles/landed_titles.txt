@@ -7793,6 +7793,7 @@ k_sweden = {
 			color2={ 255 255 255 }
 			capital = 297 # Västergötland
 			
+			swedish = "Västergötland"
 			norwegian = "Vestergøtland"
 			danish = "Vestergøtland"
 			norse = "Vestergautland"
@@ -7814,6 +7815,7 @@ k_sweden = {
 				color={ 60 55 255 }
 				color2={ 255 255 255 }
 				
+				swedish = "Västergötland"
 				norwegian = "Vestergøtland"
 				danish = "Vestergøtland"
 				norse = "Vestergautland"
@@ -8931,6 +8933,8 @@ k_sweden = {
 			c_agder = {
 				color={ 40 85 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Agdir"
 			
 				b_iveland = {
 				} 
@@ -8953,6 +8957,8 @@ k_sweden = {
 				color={ 10 110 255 }
 				color2={ 255 255 255 }
 				
+				norse = "Rygjafylki"
+				
 				b_eikundarsund = {
 				}
 				b_stavanger = {
@@ -8973,6 +8979,8 @@ k_sweden = {
 			c_telemark = {
 				color={ 45 160 255 }
 				color2={ 255 255 255 }
+				
+				norse = "Þelamark"
 				
 				b_skien = {
 				}
@@ -9060,6 +9068,8 @@ k_sweden = {
 				color={ 120 158 235 }
 				color2={ 255 255 255 }
 				
+				norse = Raumariki
+				
 				b_akershus = {
 				}
 				b_oslo = {
@@ -9080,6 +9090,8 @@ k_sweden = {
 			c_oppland = {
 				color={ 94 120 215 }
 				color2={ 255 255 255 }
+				
+				norse = Gudbrandsdal
 				
 				b_lillehammer = {
 				}
@@ -10884,6 +10896,8 @@ k_sweden = {
 		title = "granduche"
 		culture = lithuanian
 		
+		prussian = "Prussia"
+		
 		catholic = 50 # Crusade target weight
 		slavic_pagan_reformed = 100 # Crusade target weight
 		baltic_pagan_reformed = 500
@@ -11885,6 +11899,7 @@ always = no # Only created through special event
 		finnish_pagan_reformed = 300 # Crusade target weight
 		baltic_pagan_reformed = 100 # Crusade target weight
 		
+		mordvin = Mordvinia
 		norse = Garðariki
 		
 		culture = russian
@@ -22897,6 +22912,8 @@ e_persia = {
 				b_jajarm = {
 					holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
 					holy_site = yazidi
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_sabzevar = {
 				}
@@ -25627,6 +25644,7 @@ text = amir_calife
 			color2={ 255 255 255 }
 			
 			capital = 719 # Mecca
+#			capital = 718 # Medina
 			
 			muslim = 500 # Crusade target weight
 		
@@ -26945,7 +26963,33 @@ hungarian = "Regnum Hierosolymitanum"
 				christian = 250 # Crusade target weight
 				muslim = 250 # Crusade target weight
 		
-				b_mirabel = {
+				b_mirabel = { # Base name changed to "Majdal Yaba"
+					german = "Mirabel"
+					lombard = "Mirabel"
+					old_frankish = "Mirabel"
+					suebi = "Mirabel"
+					english = "Mirabel"
+					saxon = "Mirabel"
+					old_saxon = "Mirabel"
+					frisian = "Mirabel"
+					dutch = "Mirabel"
+					frankish = "Mirabel"
+					norman = "Mirabel"
+					italian = "Mirabel"
+					occitan = "Mirabel"
+					basque = "Mirabel"
+					castillan = "Mirabel"
+					catalan = "Mirabel"
+					portuguese = "Mirabel"
+					visigothic = "Mirabel"
+					irish = "Mirabel"
+					scottish = "Mirabel"
+					pictish = "Mirabel"
+					welsh = "Mirabel"
+					breton = "Mirabel"
+					greek = "Antipatris"
+					armenian = "Antipatris"
+					georgian = "Antipatris"
 				}
 				b_jerusalem = {
 					pentarchy = yes

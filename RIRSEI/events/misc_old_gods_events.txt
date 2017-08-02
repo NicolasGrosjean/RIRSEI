@@ -787,6 +787,7 @@ narrative_event = {
 		k_magyar = {
 			destroy_landed_title = THIS
 		}
+		activate_title = { title = k_magyar status = no }
 		
 		if = {
 			limit = {
@@ -830,7 +831,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -853,7 +854,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -876,7 +877,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -899,7 +900,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -922,7 +923,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -945,7 +946,7 @@ narrative_event = {
 						kingdom = {
 							OR = {
 								title = k_taurica
-								title = k_ruthenia
+								title = k_rus
 								title = k_cuman
 								title = k_alania
 							}
@@ -970,7 +971,7 @@ narrative_event = {
 							kingdom = {
 								OR = {
 									title = k_taurica
-									title = k_ruthenia
+									title = k_rus
 									title = k_cuman
 									title = k_alania
 								}

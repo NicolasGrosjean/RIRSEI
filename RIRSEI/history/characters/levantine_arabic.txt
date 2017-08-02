@@ -6870,7 +6870,7 @@
 	trait="scholarly_theologian"
 	trait="chaste"
 	trait="proud"
-	trait="lustful"
+	#trait="lustful"
 	888.1.1={
 		birth="888.1.1"
 	}
@@ -7655,7 +7655,7 @@
 }
 188665 = {
 	name="Radhi" # fictitious count of Tigris
-	dynasty=1042140
+	dynasty=1044408
 	religion="sunni"
 	culture="levantine_arabic"
 	728.1.1={
