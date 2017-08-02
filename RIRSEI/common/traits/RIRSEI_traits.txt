@@ -34,9 +34,9 @@ vassal_opinion = -10
 monthly_character_prestige = 0.5
 }
 stupor_mundi = {
-temple_all_opinion = 15
+church_opinion = 15
 vassal_opinion = 15
-rel_head_opinion = -20
+#rel_head_opinion = -20 # NOT ALLOWED IN OPINION. USE CHARACTER MODIFIER INSTEAD
 monthly_character_prestige = 1.0
 }
 relique_jacques = {
