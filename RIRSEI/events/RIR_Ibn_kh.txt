@@ -114,10 +114,10 @@ primary_title = {
 revoke_law = assab_2
 add_law_w_cooldown = assab_1
 }
-}
 primary_title = {
 revoke_law = vice_royalty_0
 add_law_w_cooldown = vice_royalty_2
+}
 }
 }
 
