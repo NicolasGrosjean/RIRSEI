@@ -3068,38 +3068,72 @@ ROOT = {
 
 # Display the RIRSEI presentation event at day one
 character_event = {
-	id = RIRSEI.515254
-	hide_window = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = { year = 1020 }
-		# Be sure that it is display only once
-		has_landed_title = k_papal_state 		
-		NOT = { has_global_flag = mutare }
-	}
-	
-	immediate = {
-		set_global_flag = mutare
-		any_player = { narrative_event = { id = RIRSEI.242526 } }
-	}
+    id = RIRSEI.515254
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { year = 1020 }
+        # Be sure that it is display only once
+        has_landed_title = k_papal_state         
+        NOT = { has_global_flag = Drp_depart }
+        NOT = { has_global_flag = mutare }
+        NOT = { has_global_flag = central }
+    }
+
+    immediate = {
+        set_global_flag = Drp_depart
+        any_player = {
+			limit = {
+				NOT = { religion_group = muslim }
+			}
+			narrative_event = { id = RIRNOVEXERC.22 }
+		}
+    }
 }
 
 # Display the RIRSEI presentation event at day one
 character_event = {
-	id = RIRSEI.515255
-	hide_window = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		year = 1020
-		# Be sure that it is display only once
-		has_landed_title = k_papal_state
-		NOT = { has_global_flag = central }
-	}
-	
-	immediate = {
-		set_global_flag = central
-		any_player = { narrative_event = { id = RIRSEI.252627 } }
-	}
+    id = RIRSEI.515255
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        year = 1020
+        # Be sure that it is display only once
+        has_landed_title = k_papal_state
+        NOT = { has_global_flag = central }
+    }
+
+    immediate = {
+        set_global_flag = central
+        any_player = {
+			limit = {
+				NOT = { religion_group = muslim }
+			}
+			narrative_event = { id = RIRSEI.252627 }
+		}
+    }
+}
+
+#Presentation de l'event pour les musulmans (cycle d'assabiyya)
+
+character_event = {
+    id = RIRSEI.515256
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        # Be sure that it is display only once
+        has_landed_title = k_papal_state
+        NOT = { has_global_flag = depart_assab }
+    }
+
+    immediate = {
+        set_global_flag = depart_assab
+        any_independent_ruler = {
+			limit = { religion_group = muslim }
+			narrative_event = { id = RIRSEKH.10 }
+		}
+    }
 }

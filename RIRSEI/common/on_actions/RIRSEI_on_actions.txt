@@ -2,6 +2,7 @@
 on_startup = {
 	events = {
 		RIRSEI.515254
-		RIRSEI.515255
+        RIRSEI.515255
+        RIRSEI.515256
 	}
 }

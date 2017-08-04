@@ -1,41 +1,4 @@
 decisions = {
-Kh_au_debut = {
-		is_high_prio = yes
-		potential = {
-
-			
-			NOT = { trait = incapable }
-			has_landed_title = k_papal_state
-
-			
-                       
-
-                        
-		}
-		allow = {
-NOT = { has_global_flag = depart_assab }
-
-
-				
-		}
-		effect = {
-		set_global_flag = depart_assab
-
- any_independent_ruler = {
-                   limit = { 
-religion_group = muslim }
-
-
-				narrative_event = { id = RIRSEKH.10}
-}
-
-	  
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		}
-		
 Demande_charte = {
 		is_high_prio = yes
 		potential = {
