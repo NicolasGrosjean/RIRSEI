@@ -476,10 +476,10 @@ pagan_reformation = {
 	name = "RULE_PAGAN_REFORMATION"
 	group = "RULE_GROUP_RELIGION"
 	option = {
-		name = allowed
+		name = disallowed
 		achievements = no
-		text = "RULE_PAGAN_REFORMATION_ALLOWED"
-		desc = "RULE_PAGAN_REFORMATION_ALLOWED_DESC"
+		text = "RULE_PAGAN_REFORMATION_DISALLOWED"
+		desc = "RULE_PAGAN_REFORMATION_DISALLOWED_DESC"
 	}
 }
 
