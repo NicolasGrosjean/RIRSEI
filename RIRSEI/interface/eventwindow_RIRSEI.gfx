@@ -271,6 +271,11 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\godefroy.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+        name = "GFX_evt_cyclekh"
+        texturefile = "gfx\\event_pictures\cyclekh.tga"
+        allwaystransparent = yes
+    }
 }
 
 

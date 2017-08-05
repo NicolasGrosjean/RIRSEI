@@ -1,5 +1,226 @@
 castle = {
 
+#Palais
+ca_ville_palatiale = {
+desc = ville_palatiale_desc
+
+potential = {
+is_capital = yes
+FROM = {
+independent = yes
+religion_group = muslim
+is_nomadic = no
+is_tribal = no
+}
+
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_2
+has_law = assab_1
+has_law = assab_0
+}
+        }
+}
+
+}
+
+
+        trigger = {
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+                add_number_to_name = no
+        gold_cost = 300
+        build_time = 730
+
+heavy_infantry = 200
+archers = 300
+fort_level = 2.0
+tax_income = -5
+retinuesize = 2000
+levy_size = -3
+
+liege_prestige = 2
+
+        ai_creation_factor = 101
+
+
+    }
+
+#Ruralité
+ca_muz_rural = {
+desc = muz_rural_desc
+
+potential = {
+OR = {
+FROM = { independent = no }
+AND = {
+NOT = { is_capital = yes }
+FROM = { independent = yes }
+}
+}
+
+FROM = {
+religion_group = muslim
+is_nomadic = no
+is_tribal = no
+}
+
+
+}
+
+
+        trigger = {
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+                add_number_to_name = no
+        gold_cost = 10
+        build_time = 100
+
+
+fort_level = -3
+tax_income = 4
+
+
+
+
+
+        ai_creation_factor = 101
+
+
+    }
+
+#Ribats
+
+#Iqtâ(un)
+ca_iqta_un = {
+desc = iqta_un_desc
+
+potential = {
+OR = {
+FROM = { independent = no }
+AND = {
+NOT = { is_capital = yes }
+FROM = { independent = yes }
+}
+}
+
+FROM = {
+religion_group = muslim
+is_nomadic = no
+is_tribal = no
+OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+OR = {
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+        }
+}
+top_liege = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+        }
+}
+}
+}
+
+
+        trigger = {
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+                add_number_to_name = no
+        gold_cost = 10
+        build_time = 100
+
+
+
+tax_income = -2
+retinuesize = 250
+
+
+
+
+        ai_creation_factor = 101
+extra_tech_building_start = 100        
+
+    }
+
+
+
+#iqtâ(deux)
+
+ca_iqta_deux = {
+desc = iqta_deux_desc
+
+potential = {
+
+FROM = { independent = no }
+
+
+FROM = {
+religion_group = muslim
+is_nomadic = no
+is_tribal = no
+OR = {
+tier = duke
+tier = king
+}
+}
+
+OR = {
+FROM = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+        }
+}
+top_liege = {
+primary_title = {
+OR = {
+has_law = assab_1
+has_law = assab_0
+}
+        }
+}
+}
+}
+
+
+        trigger = {
+TECH_CASTLE_CONSTRUCTION = 3
+ }
+                add_number_to_name = no
+                upgrades_from = ca_iqta_un                
+        gold_cost = 250
+        build_time = 360
+
+
+
+tax_income = -2
+retinuesize = 750
+
+
+
+
+        ai_creation_factor = 101
+extra_tech_building_start = 100        
+
+    }
+	
 ca_mamelouks_turcs_1 = {
 desc = mamelouks_turcs_1_desc
 
