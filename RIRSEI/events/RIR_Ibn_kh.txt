@@ -9,6 +9,7 @@ desc = "EVTDESC_RIRSEKH_10"
 
 	
 is_triggered_only = yes
+hide_from = yes
 
 	option = {
 name = "EVTOPTA_RIRSEKH_10"  

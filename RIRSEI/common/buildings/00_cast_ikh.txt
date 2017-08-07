@@ -92,6 +92,55 @@ tax_income = 4
 
 #Ribats
 
+ca_muz_ribat = {
+desc = muz_ribat_desc
+
+potential = {
+OR = {
+FROM = { independent = no }
+AND = {
+NOT = { is_capital = yes }
+FROM = { independent = yes }
+}
+}
+
+FROM = {
+religion_group = muslim
+is_nomadic = no
+is_tribal = no
+}
+owner= { top_liege = { ROOT = { any_neighbor_province = { owner = { top_liege = { NOT = { religion = PREVPREVPREVPREV } } } } } } }
+
+}
+
+
+        trigger = {
+TECH_CASTLE_CONSTRUCTION = 0
+ }
+                add_number_to_name = no
+        gold_cost = 200
+        build_time = 400
+
+
+fort_level = 3
+tax_income = -4
+heavy_infantry = 40
+heavy_infantry_morale = 0.10
+archers = 60
+archers_morale = 0.10
+light_infantry = 100
+light_cavalry = 30
+light_cavalry_morale = 0.10
+
+
+
+
+
+        ai_creation_factor = 101
+
+
+    }
+
 #Iqtâ(un)
 ca_iqta_un = {
 desc = iqta_un_desc
