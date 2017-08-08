@@ -11,9 +11,7 @@ independent = yes
 religion_group = muslim
 is_nomadic = no
 is_tribal = no
-}
 
-FROM = {
 primary_title = {
 OR = {
 has_law = assab_2
@@ -21,6 +19,10 @@ has_law = assab_1
 has_law = assab_0
 }
         }
+OR = {
+tier = duke
+tier = king
+tier = EMPEROR }
 }
 
 }

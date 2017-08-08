@@ -637,7 +637,11 @@ has_global_flag = contro_mutaasha
 				factor = 1.2
 				trait = zealous
 			}
-			
+modifier = {
+                factor = 1.4
+                capital_holding = {
+                has_building =  ca_muz_ribat }
+            }			
 modifier = {
 				factor = 1.4
 				trait = mystic

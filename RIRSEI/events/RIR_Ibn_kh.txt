@@ -157,6 +157,11 @@ primary_title = {
 revoke_law = assab_1
 add_law_w_cooldown = assab_0
 }
+
+any_realm_province  = {
+add_province_modifier = { name = muz_asab_faible
+duration = 2555 }
+}
 }
 }
 
@@ -207,11 +212,11 @@ has_dynasty_flag = asabi_1
 has_dynasty_flag = asabi_2
 has_dynasty_flag = asabi_0
 }
-NOT = {
-any_dynasty_member = { 
+any_dynasty_member = {
 limit = {
 religion_group = muslim
 }
+NOT = {
 independent = yes
 }
 }
