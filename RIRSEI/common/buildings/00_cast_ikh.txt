@@ -315,6 +315,7 @@ extra_tech_building_start = 100
 
 ca_mamelouks_turcs_2 = {
 		desc = mamelouks_turcs_2_desc
+prerequisites = { ca_ville_palatiale }		
 potential = {
 is_capital = yes
 FROM = {
@@ -365,6 +366,7 @@ extra_tech_building_start = 100
 
 ca_mamelouks_turcs_3 = {
 		desc = mamelouks_turcs_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -452,6 +454,7 @@ tax_income = -1
 
 ca_mamelouks_slavons_2 = {
 		desc = mamelouks_slavons_2_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -502,6 +505,7 @@ tax_income = -3
 
 ca_mamelouks_slavons_3 = {
 		desc = mamelouks_slavons_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -589,6 +593,7 @@ tax_income = -1
 
 ca_mamelouks_circas_2 = {
 		desc = mamelouks_circas_2_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -639,6 +644,7 @@ tax_income = -3
 
 ca_mamelouks_circas_3 = {
 		desc = mamelouks_circas_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -726,6 +732,7 @@ tax_income = -1
 
 ca_mamelouks_armenien_2 = {
 		desc = mamelouks_armenien_2_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -776,6 +783,7 @@ tax_income = -3
 
 ca_mamelouks_armenien_3 = {
 		desc = mamelouks_armenien_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -863,6 +871,7 @@ tax_income = -1
 
 ca_mamelouks_soudanais_2 = {
 		desc = mamelouks_soudanais_2_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -913,6 +922,7 @@ tax_income = -3
 
 ca_mamelouks_soudanais_3 = {
 		desc = mamelouks_soudanais_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -1000,6 +1010,7 @@ tax_income = -1
 
 ca_mamelouks_francs_2 = {
 		desc = mamelouks_francs_2_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -1050,6 +1061,7 @@ tax_income = -3
 
 ca_mamelouks_francs_3 = {
 		desc = mamelouks_francs_3_desc
+prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
