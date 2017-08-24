@@ -292,3 +292,34 @@ custom_historical_plague_free_zone = {
 		c_valais c_grisons c_alto_aragon c_urgell c_bearn c_faereyar c_lepiel c_orsha c_minsk c_peremyshl c_armagnac c_foix c_chur
 	}
 }
+
+##########
+# RIRSEI #
+##########
+custom_maghreb = {
+    duchies = {
+        d_marrakech d_fes d_tangiers d_tlemcen d_alger d_kabylia d_tunis
+    }
+    }
+
+    custom_tripolitaine = {
+    duchies = {
+        d_tripolitania d_cyrenaica
+    }
+}
+
+custom_egypte = {
+    duchies = {
+        d_alexandria d_damietta d_cairo d_aswan
+    }
+    }
+    custom_arabie = {
+    duchies = {
+        d_arabia_petrae d_medina d_sanaa d_oman d_nefoud d_amman
+    }
+    }
+    custom_iraq = {
+    duchies = {
+        d_kermanshah d_tigris d_basra d_baghdad d_mosul d_jazira
+    }
+}
