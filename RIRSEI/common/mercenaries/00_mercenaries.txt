@@ -2,17 +2,20 @@
 # Also remember to tell the landed title to use this mercenary type instead.
 # Several titles can refer to the same type as well now.
 
-knights_templar_composition = {	
-	knights = 1500	
+knights_templar_composition = {
+    knights = 1200
+    levy_size = 1    
 }
 
 teutonic_order_composition = {
-    knights = 1500
+    knights = 1200
+    levy_size = 1
 }
 
 knights_hospitaler_composition = {
-	knights = 1200
+    knights = 1000    
     galleys = 50
+    levy_size = 1
 }
 
 hashshashin_composition = {
@@ -118,11 +121,13 @@ huitzilopochtli_composition = {
 }
 
 knights_santiago_composition = {
-	knights = 800
+    knights = 600
+    levy_size = 1
 }
 
 knights_calatrava_composition = {
-	knights = 1000
+    knights = 800
+    levy_size = 1
 }
 
 followers_arjuna_composition = {
