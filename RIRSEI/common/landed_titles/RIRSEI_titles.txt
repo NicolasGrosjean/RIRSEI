@@ -7961,3 +7961,3707 @@ allow = {
 	mercenary_type = grand_nomade
 }
 
+#Moujdahiddin, Volontaires de la foi, et Ghazi
+
+#Maghreb et Espagnes
+
+d_n_mag_moujun = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+
+religion = sunni
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}       	
+		
+	}
+	capital = 843 # Marrakech
+	
+	# Parent Religion 
+	religion = sunni
+	culture = andalusian_arabic
+	
+	
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+d_n_mag_moujdeux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = sunni	
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 728 # Damascus
+	
+	# Parent Religion 
+	religion = sunni
+	culture = levantine_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+#moudjahiddin chiites
+
+d_n_magshiite_moujun = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+
+religion = shiite
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}       	
+		
+	}
+	capital = 646 #	Esfahan
+	
+	# Parent Religion 
+	religion = shiite
+	culture = persian
+	
+	
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+d_n_magshiite_moujdeux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = shiite	
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 728 # Damascus
+	
+	# Parent Religion 
+	religion = shiite
+	culture = levantine_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+# Moujdahiddin alhomades
+
+d_n_magalmo_moujun = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+
+religion = Almohade
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}       	
+		
+	}
+	capital = 843 # Marrakech
+	
+	# Parent Religion 
+	religion = Almohade
+	culture = andalusian_arabic
+	
+	
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+d_n_magalmo_moujdeux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = Almohade	
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 728 # Damascus
+	
+	# Parent Religion 
+	religion = Almohade
+	culture = levantine_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_moujd 
+}
+
+#Moudjahhidin khadjirites
+
+d_n_magkhad_moujun = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+
+religion = khadjirite
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}       	
+		
+	}
+	capital = 843 # Marrakech
+	
+	# Parent Religion 
+	religion = khadjirite
+	culture = maghreb_arabic
+	
+	
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = ghazi_turcs
+}
+
+d_n_magkhad_moujdeux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = khadjirite	
+any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 728 # Damascus
+	
+	# Parent Religion 
+	religion = khadjirite
+	culture = bedouin_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = ghazi_turcs
+}
+
+#Volontaires de la foi
+
+
+d_g_mutatawwiun = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = sunni
+year = 1120	
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 843 # Marrakech
+	
+	# Parent Religion 
+	religion = sunni
+	culture = andalusian_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_volonfoi 
+}
+
+#Ghazis
+
+d_g_ghazis = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+religion = sunni
+year = 1120	
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 670 # Azerbaijan
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = ghazi_turcs
+}
+
+#Berbères en pagaille
+
+d_p_berberes_k = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	NOT = { year = 1050 }
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = khadjirite
+	culture = maghreb_arabic
+	
+
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_berberes_k = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	NOT = { year = 1050 }
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = khadjirite
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_berberes_k = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	NOT = { year = 1050 }
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = khadjirite
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+d_p_berberes_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_berberes_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_berberes_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	year = 1050
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+d_p_berberes_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = shiite
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_berberes_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = shiite
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_berberes_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+
+       	
+		
+	}
+	capital = 825 # Beni Yanni
+	
+	# Parent Religion 
+	religion = shiite
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+#Chevaliers aragonais (Ifranji)
+
+d_p_chevarag = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1300
+        
+       religion_group = muslim	
+		any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  petit_fr_ib
+}
+d_n_chevarag = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1300
+        
+       religion_group = muslim	
+		any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb
+		
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  normal_fr_ib
+}
+d_g_chevarag = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 207 # Haut-Aragon
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		year = 1300
+        
+       religion_group = muslim	
+		any_demesne_title = {
+OR = {	
+	region = world_europe_west_iberia
+	region = custom_maghreb	
+		
+		}
+		}
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = catalan
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type =  grand_fr_ib
+}
+
+d_p_touareg = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_tripolitaine
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 811 # Tripolitania
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_touareg = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_tripolitaine
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 811 # Tripolitania
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_touareg = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_tripolitaine
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 811 # Tripolitania
+	
+	# Parent Religion 
+	religion = sunni
+	culture = maghreb_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+d_p_badawi = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_egypte
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 794 # Aswan
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_badawi = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_egypte
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 794 # Aswan
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_badawi = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	
+	region = custom_egypte
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 794 # Aswan
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+#tribus qaysites
+
+d_p_qaysite_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_qaysite_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_qaysite_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+d_p_qaysite_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_qaysite_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_qaysite_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+	
+	any_demesne_title = {
+	OR = {
+	region = world_middle_east_arabia
+	region = world_middle_east_jerusalem
+	region = custom_egypte
+		}
+		
+		}
+
+       	
+		
+	}
+	capital = 722 # Petra
+	
+	# Parent Religion 
+	religion = sunni
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+# tribus yemenites
+
+d_p_yamani_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_yamani_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_yamani_un = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+d_p_yamani_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_yamani_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_yamani_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = custom_arabie
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 860 # Sanaa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+#Kurdes
+
+d_p_kurde = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+    OR = {
+	region = custom_iraq
+	region = world_middle_east_jerusalem
+	region = world_persia
+	}
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 697 # Mosul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = kurdish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_boheme 
+}
+
+d_n_kurde = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+    OR = {
+	region = custom_iraq
+	region = world_middle_east_jerusalem
+	region = world_persia
+	}
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 697 # Mosul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = kurdish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_boheme 
+}
+
+d_g_kurde = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+    OR = {
+	region = custom_iraq
+	region = world_middle_east_jerusalem
+	region = world_persia
+	}
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 697 # Mosul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = kurdish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_boheme 
+}
+
+#Tribu Al-Hassa
+d_p_al_hasa = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = world_middle_east_arabia
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 652 # Al Hasa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_berbere 
+}
+
+d_n_al_hasa = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = world_middle_east_arabia
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 652 # Al Hasa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_berbere 
+}
+
+d_g_al_hasa = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+
+	region = world_middle_east_arabia
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 652 # Al Hasa
+	
+	# Parent Religion 
+	religion = shiite
+	culture = bedouin_arabic
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_berbere 
+}
+
+#Armeniens
+
+d_p_armenie = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+OR = {
+	region = world_asia_minor
+	region = world_middle_east_jerusalem
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 681 #	Ani
+	
+	# Parent Religion 
+	religion = miaphysite
+	culture = armenian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_boheme 
+}
+
+d_n_armenie = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+OR = {
+	region = world_asia_minor
+	region = world_middle_east_jerusalem
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 681 #	Ani
+	
+	# Parent Religion 
+	religion = miaphysite
+	culture = armenian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_boheme 
+}
+
+d_g_armenie = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+
+	
+	any_demesne_title = {
+OR = {
+	region = world_asia_minor
+	region = world_middle_east_jerusalem
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 681 #	Ani
+	
+	# Parent Religion 
+	religion = miaphysite
+	culture = armenian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_boheme 
+}
+
+d_g_armenie_deux = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+	
+allow = {
+
+	
+	any_demesne_title = {
+OR = {
+	region = world_asia_minor
+	region = world_middle_east_jerusalem
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 681 #	Ani
+	
+	# Parent Religion 
+	religion = miaphysite
+	culture = armenian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_boheme 
+}
+
+#Daylamites zoroastriens & chiites
+
+d_p_daylamites = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 1000 }
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = zoroastrian
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_daylamite 
+}
+
+d_n_daylamites = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 1000 }
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = zoroastrian
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_daylamite 
+}
+
+d_g_daylamites = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 1000 }
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = zoroastrian
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_daylamite 
+}
+
+d_p_daylamites_s = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+year = 850
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = shiite
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_daylamite 
+}
+
+d_n_daylamites_s = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+year = 850
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = shiite
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_daylamite 
+}
+
+d_g_daylamites_s = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+year = 850
+	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+	}
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 662 # Mazandaran
+	
+	# Parent Religion 
+	religion = shiite
+	culture = persian
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_daylamite 
+}
+
+#Afghans (Patchounes)
+
+d_p_afghans = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 950 }
+	
+	any_demesne_title = {
+
+	region = world_persia
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 1185 # Kabul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = afghan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = petit_slaveb
+}
+
+d_n_afghans = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 950 }
+	
+	any_demesne_title = {
+
+	region = world_persia
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 1185 # Kabul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = afghan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = normal_slaveb
+}
+
+d_g_afghans = {
+	color = { 130 173 70 }
+	color2 = { 255 255 255 }
+allow = {
+NOT = { year = 950 }
+	
+	any_demesne_title = {
+
+	region = world_persia
+	
+	
+	
+		
+		
+		}
+
+       	
+		
+	}
+	capital = 1185 # Kabul
+	
+	# Parent Religion 
+	religion = sunni
+	culture = afghan
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	
+	mercenary_type = grand_slaveb
+}
+
+#Milles milliards de turcs (avant les mongols)
+
+d_p_turc_un = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = petit_nomade
+}
+
+d_n_turc_un = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = normal_nomade
+}
+
+d_g_turc_un = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = grand_nomade
+}
+
+d_p_turc_deux = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = petit_nomade
+}
+
+d_n_turc_deux = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = normal_nomade
+}
+
+d_g_turc_deux = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = grand_nomade
+}
+
+d_p_turc_trois = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = petit_georgien
+}
+
+d_n_turc_trois = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = normal_georgien
+}
+
+d_g_turc_trois = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = grand_georgien
+}
+
+d_compa_turc = {
+	color = { 135 170 60 }
+	color2 = { 255 255 255 }
+allow = {
+year = 900
+NOT = { year = 1220 }
+	
+OR = {	
+	any_demesne_title = {
+OR = {
+	region = world_persia
+	region = custom_iraq
+
+}	
+	}
+	AND = {
+	year = 1050
+	any_demesne_title = {
+
+	region = world_middle_east_jerusalem
+
+	
+	}
+	}	
+		
+		}
+
+       	
+		
+	}
+	capital = 621 # Kangly
+	
+	# Parent Religion 
+	religion = sunni
+	culture = turkish
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes		
+	
+	mercenary_type = comp_pharnagoi
+}
+
+d_p_mongorientun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1230
+	NOT = { year = 1340 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_p_mongorientdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1225
+	NOT = { year = 1360 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = nestorian
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_mongorientun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1230
+	NOT = { year = 1340 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_n_mongorientdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1225
+	NOT = { year = 1360 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_mongorientun = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1230
+	NOT = { year = 1340 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_g_mongorientdeux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1225
+	NOT = { year = 1360 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = nestorian
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_compa_mongorient_un = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1235
+	NOT = { year = 1360 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = comp_pharnagoi
+}
+
+d_compa_mongorient_deux = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1235
+	NOT = { year = 1360 }
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = tengri_pagan
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = comp_pharnagoi
+}
+
+d_p_mongorientun_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1341
+	
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_p_mongorientdeux_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1361
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = petit_nomade
+}
+
+d_n_mongorientun_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1341
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_n_mongorientdeux_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1361
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = normal_nomade
+}
+
+d_g_mongorientun_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1341
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
+
+d_g_mongorientdeux_muz = {
+	color={ 150 150 100 }
+	color2={ 255 255 255 }
+	
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	capital = 621 # Kangly
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+	year = 1361
+	
+
+       	
+		any_demesne_title = {
+	OR = {	
+	region = world_persia
+	region = custom_iraq
+    region = world_asia_minor	
+		
+		}
+	}
+	}
+	
+	# Parent Religion 
+	religion = sunni
+	culture = mongol
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+		
+
+	mercenary_type = grand_nomade
+}
