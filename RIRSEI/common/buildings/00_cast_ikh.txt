@@ -272,6 +272,14 @@ extra_tech_building_start = 100
 
     }
 	
+#Gardes mamelouks
+
+
+
+
+
+
+
 ca_mamelouks_turcs_1 = {
 desc = mamelouks_turcs_1_desc
 
@@ -281,6 +289,18 @@ FROM = {
 independent = yes
 religion_group = muslim
 is_nomadic = no
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe
+region = world_persia
+}
+}
 }
 
 FROM = {
@@ -315,7 +335,6 @@ extra_tech_building_start = 100
 
 ca_mamelouks_turcs_2 = {
 		desc = mamelouks_turcs_2_desc
-prerequisites = { ca_ville_palatiale }		
 potential = {
 is_capital = yes
 FROM = {
@@ -331,6 +350,18 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe
+region = world_persia
+}
+}
 }
 }
 
@@ -352,6 +383,7 @@ has_law = assab_0
               
   add_number_to_name = no                
 		upgrades_from = ca_mamelouks_turcs_1
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 400
 		build_time = 730
 
@@ -366,7 +398,6 @@ extra_tech_building_start = 100
 
 ca_mamelouks_turcs_3 = {
 		desc = mamelouks_turcs_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -383,6 +414,18 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe
+region = world_persia
+}
+}
+}
 }
 
 		trigger = { 
@@ -398,6 +441,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_turcs_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -429,6 +473,16 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = custom_maghreb
+region = world_asia_minor 
+region = world_europe
+region = world_steppe_west
+}
+}
+}
 
 }
 		
@@ -454,7 +508,6 @@ tax_income = -1
 
 ca_mamelouks_slavons_2 = {
 		desc = mamelouks_slavons_2_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -470,6 +523,16 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = custom_maghreb
+region = world_asia_minor 
+region = world_europe
+region = world_steppe_west
+}
+}
 }
 }
 
@@ -491,6 +554,7 @@ has_law = assab_0
               
   add_number_to_name = no                
 		upgrades_from = ca_mamelouks_slavons_1
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 400
 		build_time = 730
 
@@ -505,7 +569,6 @@ tax_income = -3
 
 ca_mamelouks_slavons_3 = {
 		desc = mamelouks_slavons_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -522,6 +585,16 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = custom_maghreb
+region = world_asia_minor 
+region = world_europe
+region = world_steppe_west
+}
+}
+}
 }
 
 		trigger = { 
@@ -537,6 +610,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_slavons_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -568,7 +642,18 @@ has_law = assab_0
 }
 		}
 }
-
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe_west
+region = world_persia
+}
+}
+}
 }
 		
 		trigger = { 
@@ -593,7 +678,6 @@ tax_income = -1
 
 ca_mamelouks_circas_2 = {
 		desc = mamelouks_circas_2_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -609,6 +693,18 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe_west
+region = world_persia
+}
+}
 }
 }
 
@@ -630,6 +726,7 @@ has_law = assab_0
               
   add_number_to_name = no                
 		upgrades_from = ca_mamelouks_circas_1
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 400
 		build_time = 730
 
@@ -644,7 +741,6 @@ tax_income = -3
 
 ca_mamelouks_circas_3 = {
 		desc = mamelouks_circas_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -661,6 +757,18 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_steppe_west
+region = world_persia
+}
+}
+}
 }
 
 		trigger = { 
@@ -676,6 +784,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_circas_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -707,7 +816,17 @@ has_law = assab_0
 }
 		}
 }
-
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_persia
+}
+}
+}
 }
 		
 		trigger = { 
@@ -732,7 +851,6 @@ tax_income = -1
 
 ca_mamelouks_armenien_2 = {
 		desc = mamelouks_armenien_2_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -748,6 +866,17 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_persia
+}
+}
 }
 }
 
@@ -768,7 +897,8 @@ has_law = assab_0
  }
               
   add_number_to_name = no                
-		upgrades_from = ca_mamelouks_armenien_1 
+		upgrades_from = ca_mamelouks_armenien_1
+        prerequisites = { ca_ville_palatiale }		
 		gold_cost = 400
 		build_time = 730
 
@@ -783,7 +913,6 @@ tax_income = -3
 
 ca_mamelouks_armenien_3 = {
 		desc = mamelouks_armenien_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -800,6 +929,17 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_asia_minor 
+region = world_europe_south_east
+region = custom_egypte
+region = world_persia
+}
+}
+}
 }
 
 		trigger = { 
@@ -815,6 +955,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_armenien_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -846,7 +987,15 @@ has_law = assab_0
 }
 		}
 }
-
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_africa
+region = world_europe_west_iberia
+}
+}
+}
 }
 		
 		trigger = { 
@@ -871,7 +1020,6 @@ tax_income = -1
 
 ca_mamelouks_soudanais_2 = {
 		desc = mamelouks_soudanais_2_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -887,6 +1035,15 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_africa
+region = world_europe_west_iberia
+}
+}
 }
 }
 
@@ -908,6 +1065,7 @@ has_law = assab_0
               
   add_number_to_name = no                
 		upgrades_from = ca_mamelouks_soudanais_1
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 400
 		build_time = 730
 
@@ -922,7 +1080,6 @@ tax_income = -3
 
 ca_mamelouks_soudanais_3 = {
 		desc = mamelouks_soudanais_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -939,6 +1096,15 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_middle_east
+region = world_africa
+region = world_europe_west_iberia
+}
+}
+}
 }
 
 		trigger = { 
@@ -954,6 +1120,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_soudanais_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -985,6 +1152,16 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_europe
+region = custom_maghreb
+region = custom_egypte
+region = custom_tripolitaine
+}
+}
+}
 
 }
 		
@@ -1010,7 +1187,6 @@ tax_income = -1
 
 ca_mamelouks_francs_2 = {
 		desc = mamelouks_francs_2_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -1026,6 +1202,16 @@ has_law = assab_1
 has_law = assab_0
 }
 		}
+}
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_europe
+region = custom_maghreb
+region = custom_egypte
+region = custom_tripolitaine
+}
+}
 }
 }
 
@@ -1047,6 +1233,7 @@ has_law = assab_0
               
   add_number_to_name = no                
 		upgrades_from = ca_mamelouks_francs_1
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 400
 		build_time = 730
 
@@ -1061,7 +1248,6 @@ tax_income = -3
 
 ca_mamelouks_francs_3 = {
 		desc = mamelouks_francs_3_desc
-prerequisites = { ca_ville_palatiale }
 potential = {
 is_capital = yes
 FROM = {
@@ -1078,6 +1264,16 @@ has_law = assab_0
 }
 		}
 }
+FROM = {
+any_demesne_title = {
+OR = {
+region = world_europe
+region = custom_maghreb
+region = custom_egypte
+region = custom_tripolitaine
+}
+}
+}
 }
 
 		trigger = { 
@@ -1093,6 +1289,7 @@ has_law = assab_0
  }
                 add_number_to_name = no            
 		upgrades_from = ca_mamelouks_francs_2
+		prerequisites = { ca_ville_palatiale }
 		gold_cost = 600
 		build_time = 730
 
@@ -1133,7 +1330,7 @@ TECH_CASTLE_CONSTRUCTION = 2
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 1000
+retinuesize = 2000
 tax_income = -3
 		ai_creation_factor = 101
 		
@@ -1153,7 +1350,6 @@ has_character_flag = changer_asab
 
 
 }
-}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
 
@@ -1169,4 +1365,5 @@ tax_income = -4
 		
 		
 	}
+
 }
