@@ -432,7 +432,7 @@ muslim = {
 			IBLIS SHAYTAN
 		}
 		
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
@@ -487,7 +487,7 @@ muslim = {
 		parent = sunni
 		priests_can_marry = yes
 		can_excommunicate = yes
-		can_call_crusade = yes
+		can_call_crusade = no
 		max_wives = 4
 		matrilineal_marriages = no
 		
@@ -520,7 +520,7 @@ crusade_name = JIHAD
 		}
 		parent = sunni
 
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
@@ -553,7 +553,7 @@ attacking_same_religion_piety_loss = yes
 		}
 		
 
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 	
 		psc_marriage = no
@@ -627,7 +627,7 @@ high_god_name = GOD_ALLAH
 		}
 		
 		
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 		
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
@@ -648,7 +648,7 @@ ibadi = {
 		color = { 0.3 0.6 0.3 }
 		parent = khadjirite
 		
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 		
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
