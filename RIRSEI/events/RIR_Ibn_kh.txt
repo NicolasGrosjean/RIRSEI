@@ -358,3 +358,113 @@ opinion = {
 }
 	
 }
+
+#event pour le dev des mudjahiddin et ghazi
+
+narrative_event = {
+	id = RIRSEKH.47
+	title = EVTTITLE_RIRSEKH_47
+	desc = EVTDESC_RIRSEKH_47
+	major = yes
+	
+	picture = GFX_evt_volontairesfoi
+	
+	only_playable = yes
+	hide_from = yes
+	religion_group = muslim
+	has_global_flag = christian_crusades_unlocked
+	
+	trigger = {
+    has_global_flag = christian_crusades_unlocked
+	NOT = { has_global_flag = djihad_sulami }
+	year = 1100
+	NOT = {
+		e_arabia = {
+has_holder = no	}
+}	
+
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		activate_title = { title = d_g_ghazis status = yes }
+		activate_title = { title = d_g_mutatawwiun status = yes }
+		set_global_flag = djihad_sulami
+		create_character = {
+			random_traits = no
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 31
+			trait = brilliant_strategist
+			trait = zealous
+			trait = humble
+			trait = ambitious
+			trait = strategist
+			trait = holy_warrior
+		}
+		new_character = {
+			
+			d_g_ghazis = {
+				grant_title = PREV
+			}
+			set_government_type = feudal_government
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = sunni
+				culture = turkish
+				female = no
+				age = 16
+			}
+			
+		}
+		create_character = {
+			random_traits = no
+			dynasty = random
+			religion = sunni
+			culture = andalusian_arabic
+			female = no
+			age = 31
+			trait = brilliant_strategist
+			trait = zealous
+			trait = humble
+			trait = ambitious
+			trait = strategist
+			trait = holy_warrior
+		}
+		new_character = {
+			
+			d_g_mutatawwiun = {
+				grant_title = PREV
+			}
+			set_government_type = feudal_government
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = sunni
+				culture = andalusian_arabic
+				female = no
+				age = 16
+			}
+			
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RIRSEKH_47
+		trigger = {
+			religion = sunni
+		}
+	}
+	option = {
+		name = EVTOPTB_RIRSEKH_47
+		trigger = {
+			NOT = { religion = sunni }
+		}
+	}
+}
