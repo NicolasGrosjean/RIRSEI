@@ -276,6 +276,11 @@ spriteType = {
         texturefile = "gfx\\event_pictures\cyclekh.tga"
         allwaystransparent = yes
     }
+	spriteType = {
+		name = "GFX_evt_volontairesfoi"
+		texturefile = "gfx\\event_pictures\volontairesfoi.tga"
+		allwaystransparent = yes
+	}
 }
 
 
