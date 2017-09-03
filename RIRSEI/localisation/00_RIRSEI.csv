@@ -993,6 +993,10 @@ EVTOPTA_RIRSEKH_42;Indeed, but at least I am still on the throne !;Oui, mais je 
 EVTNAME_RIRSEKH_45;End of troubles !;Fin des troubles !;;;;;;;;x;;;;;;;;;;;;
 EVTDESC_RIRSEKH_45;The Dawla in charge changed the Asabiyya of its Mamluks , and by that, managed to greatly reinforced its power . We cannot pay for dissident Mamluks anymore !;La Dawla en place a changé l'asabiyya de ses mamelouks et par cela, vient de renforcer singulièrement son autorité. Nous ne pouvons plus entretenir nos mamelouks dissidents !;;;;;;;;x;;;;;;;;;;;;
 EVTOPTA_RIRSEKH_45;Be patient, be patient ...;Patience, patrience !;;;;;;;;x;;;;;;;;;;;;
+EVTTITLE_RIRSEKH_47;;Mutations du Djihad;;;;;;x;;;;;;;;
+EVTDESC_RIRSEKH_47;;Depuis le temps du Prophète, le djihad incombait en premier lieu au Khalîfa, à la tête de la oumma. C'est un devoir qui incombe de défendre le Dar al-Islam contre les non-musulmans, mais aussi d'agrandir celui-ci. Mais de nos jours, le Khalîfa n'est plus aussi puissant qu'autrefois, et depuis quelques temps, il ne se montre même plus à la tête des armées.\nCette "démission" du Khalîfa pèse d'autant plus lourdement que les Ifranji, les Francs, ont développé un concept de "guerre juste" contre nous, mettant de côté leurs différents pour nous attaquer. Des Oulémas ont dénoncé ce fait, et ils proclament que le devoir de Djihad incombe désormais aux autres souverains musulmans, mais aussi à chaque croyant.\nRépondant à cet appel, les Volontaires de la Foi du Maghreb et les Ghazis turcs constituent de nouveaux réservoirs de guerriers dans les guerres contre les infidèles.;;;;;;x;;;;;;;;
+EVTOPTA_RIRSEKH_47;;Bien !;;;;;;x;;;;;;;;
+EVTOPTB_RIRSEKH_47;;Aie !;;;;;;x;;;;;;;;
 #;;;;;;;;;;;;;;x
 #ROAD & FAIR;;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
