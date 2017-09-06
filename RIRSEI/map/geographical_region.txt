@@ -299,10 +299,10 @@ custom_historical_plague_free_zone = {
 custom_maghreb = {
     duchies = {
         d_marrakech d_fes d_tangiers d_tlemcen d_alger d_kabylia d_tunis
-    }
-    }
+	}
+}
 
-    custom_tripolitaine = {
+custom_tripolitaine = {
     duchies = {
         d_tripolitania d_cyrenaica
     }
@@ -312,14 +312,40 @@ custom_egypte = {
     duchies = {
         d_alexandria d_damietta d_cairo d_aswan
     }
-    }
-    custom_arabie = {
+}
+
+custom_arabie = {
     duchies = {
         d_arabia_petrae d_medina d_sanaa d_oman d_nefoud d_amman
     }
-    }
-    custom_iraq = {
+}
+
+custom_iraq = {
     duchies = {
         d_kermanshah d_tigris d_basra d_baghdad d_mosul d_jazira
     }
+}
+
+custom_coeur_bedouin = {
+	duchies = {
+		d_arabia_petrae	d_nefoud   
+	}
+	counties = {
+		c_tharasset c_ifni c_atlas_mnt c_mzab c_ouled_nail c_biskra c_hanyan c_oualata c_araouane c_taghaza c_aoudaghost c_ouadane c_idjil c_gabes c_djerba c_leptis_magna c_syrte c_senoussi c_quattara c_gizeh c_buhairya c_sinai c_al_jawf c_hijaz c_asir c_bayda c_sanaa c_kathiri c_dhu_zabi c_hajar c_duqm c_dhofar c_mahra c_damman c_al_hasa
+	}
+}
+	
+custom_marges_mouvantes = {
+	duchies = {
+		  d_mali d_songhay d_khiva d_samarkand d_merv d_dihistan d_kashgar d_khotan d_karashar d_cheremisa d_maris d_crimea d_azov d_novgorod-seversk d_pereyaslavl d_pecs d_pest d_temes
+	}
+	counties = {
+		c_sijilmasa c_figuig d_timbuktu c_ghana c_constantine c_anti-atlas c_derbent c_semender c_turnu c_severin c_galaz c_peresechen c_olvia c_belgorod
+	}
+}
+	
+custom_coeur_nomade = {
+	duchies = {
+		 d_zhetysu d_kirghiz d_kumul d_altay d_otuken d_khangai d_ikh_bogd d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_bulgar d_mordvins d_alania d_turkestan d_syr_darya
+	}
 }
