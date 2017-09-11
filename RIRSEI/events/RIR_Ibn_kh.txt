@@ -174,6 +174,11 @@ desc = "EVTDESC_RIRSEKH_23"
 is_triggered_only = yes
 
 	option = {
+trigger = {
+ROOT = {
+tier = EMPEROR 
+}
+}
 name = "EVTOPTA_RIRSEKH_23"
 clr_dynasty_flag = asabi_3
 set_dynasty_flag = asabi_2  
@@ -182,14 +187,124 @@ revoke_law = assab_3
 add_law_w_cooldown = assab_2
 }
 capital_scope = {
+ROOT = {
 spawn_unit = {
 					province = PREV
 					owner = ROOT
-					match_character = ROOT
-					match_mult = 0.75
-					earmark = force_noma
-					attrition = 1.0
-				}
+					home = ROOT
+					troops = {
+    archers = { 500 500 }
+    knights = { 1000 1000 }
+    heavy_infantry = { 500 500 }
+    light_cavalry = { 1200 1200 }
+	horse_archers = { 2000 2000 }
+  }
+  attrition = 1.0
+  maintenance_multiplier = 0.25
+}
+}
+}
+}
+option = {
+trigger = {
+ROOT = {
+tier = king
+NOT = { tier = EMPEROR }
+}
+}
+name = "EVTOPTB_RIRSEKH_23"
+clr_dynasty_flag = asabi_3
+set_dynasty_flag = asabi_2  
+primary_title = {
+revoke_law = assab_3
+add_law_w_cooldown = assab_2
+}
+capital_scope = {
+ROOT = {
+spawn_unit = {
+					province = PREV
+					owner = ROOT
+					home = ROOT
+					troops = {
+       archers = { 300 300 }
+    knights = { 600 600 }
+    heavy_infantry = { 300 300 }
+    light_cavalry = { 900 900 }
+	horse_archers = { 1500 1500 }
+  }
+  attrition = 1.0
+  maintenance_multiplier = 0.25
+}
+}
+}
+}
+option = {
+trigger = {
+ROOT = {
+tier = duke
+NOT = { tier = EMPEROR }
+NOT = { tier = king }
+}
+}
+name = "EVTOPTC_RIRSEKH_23"
+clr_dynasty_flag = asabi_3
+set_dynasty_flag = asabi_2  
+primary_title = {
+revoke_law = assab_3
+add_law_w_cooldown = assab_2
+}
+capital_scope = {
+ROOT = {
+spawn_unit = {
+					province = PREV
+					owner = ROOT
+					home = ROOT
+					troops = {
+       archers = { 150 150 }
+    knights = { 300 300 }
+    heavy_infantry = { 150 150 }
+    light_cavalry = { 450 450 }
+	horse_archers = { 750 750 }
+  }
+  attrition = 1.0
+  maintenance_multiplier = 0.25
+}
+}
+}
+}
+option = {
+trigger = {
+ROOT = {
+tier = count
+NOT = { tier = EMPEROR }
+NOT = { tier = king }
+NOT = { tier = duke }
+}
+}
+name = "EVTOPTD_RIRSEKH_23"
+clr_dynasty_flag = asabi_3
+set_dynasty_flag = asabi_2  
+primary_title = {
+revoke_law = assab_3
+add_law_w_cooldown = assab_2
+}
+capital_scope = {
+ROOT = {
+spawn_unit = {
+					province = PREV
+					owner = ROOT
+					home = ROOT
+					troops = {
+       archers = { 50 50 }
+    knights = { 100 100 }
+    heavy_infantry = { 25 25 }
+    light_cavalry = { 200 200 }
+	horse_archers = { 200 200 }
+  }
+  attrition = 1.0
+  maintenance_multiplier = 0.25
+}
+}
 }
 }
 }
