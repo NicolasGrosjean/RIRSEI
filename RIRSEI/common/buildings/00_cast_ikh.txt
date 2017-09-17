@@ -326,7 +326,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -390,7 +390,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
@@ -499,7 +499,7 @@ not_if_x_exists = { ca_mamelouks_turcs_1 ca_mamelouks_circas_1 ca_mamelouks_arme
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -561,7 +561,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
@@ -669,7 +669,7 @@ not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_turcs_1 ca_mamelouks_arm
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -733,7 +733,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
@@ -842,7 +842,7 @@ not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_tu
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -905,7 +905,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
@@ -1011,7 +1011,7 @@ not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_ar
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -1072,7 +1072,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
@@ -1178,7 +1178,7 @@ not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_ar
 		gold_cost = 200
 		build_time = 730
 
-retinuesize = 4000
+retinuesize = 1500
 fort_level = 1.0
 tax_income = -1
 
@@ -1240,7 +1240,7 @@ has_law = assab_0
 		gold_cost = 400
 		build_time = 730
 
-retinuesize = 6000
+retinuesize = 7500
 fort_level = 0.5
 tax_income = -3
 		ai_creation_factor = 101
