@@ -11,40 +11,43 @@ independent = yes
 religion_group = muslim
 is_nomadic = no
 is_tribal = no
+}
+FROM = {
+OR = {
+tier = duke
+tier = king
+tier = EMPEROR } }
 
+FROM = {
 primary_title = {
 OR = {
 has_law = assab_2
 has_law = assab_1
 has_law = assab_0
 }
-        }
-OR = {
-tier = duke
-tier = king
-tier = EMPEROR }
+		}
 }
 
 }
 
-
-        trigger = {
+		
+		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
  }
-                add_number_to_name = no
-        gold_cost = 300
-        build_time = 730
+                add_number_to_name = no 
+		gold_cost = 300
+		build_time = 730
 
 heavy_infantry = 200
 archers = 300
 fort_level = 2.0
 tax_income = -5
-retinuesize = 2000
+retinuesize = 1000
 levy_size = -3
 
 liege_prestige = 2
 
-        ai_creation_factor = 101
+		 ai_creation_factor = 101
 
 
     }
