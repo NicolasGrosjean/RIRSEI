@@ -16,7 +16,68 @@ name = "EVTOPTA_RIRSEKH_10"
 trigger = {
 is_nomadic = no
 is_tribal = no
-			
+NOT = {
+OR = {
+AND = {
+NOT = { year = 800 }
+has_landed_title = k_andalusia	
+} 
+AND = {
+NOT = { year = 1000 }
+year = 850
+has_landed_title = k_andalusia	}
+AND = {
+NOT = { year = 920 }
+has_landed_title = k_mauretania }
+AND = {
+year = 1050
+NOT = { year = 1100 }
+has_landed_title = k_mauretania }
+AND = {
+year = 840
+NOT = { year = 905 }
+has_landed_title = k_africa	}
+AND = { 
+year = 1050
+NOT = { year = 1148 }
+has_landed_title = k_africa	}
+AND = {
+year = 840
+NOT = { year = 980 }
+has_landed_title = k_egypt }
+AND = {
+year = 1030
+NOT = { year = 1074 }
+has_landed_title = k_egypt }
+AND = {
+NOT = { year = 800 }
+has_landed_title = k_armenia }
+AND = {
+year = 850
+NOT = { year = 890 }
+has_landed_title = k_baluchistan }	
+AND = {
+year = 850
+NOT = { year = 890 }
+has_landed_title = k_khiva }
+AND = {
+year = 1050
+NOT = { year = 1100 }
+has_landed_title = k_khiva }
+AND = {
+year = 760
+NOT = { year = 830 }
+has_landed_title = e_arabia }
+AND = {
+year = 840
+NOT = { year = 950 }
+has_landed_title = e_arabia }
+AND = {
+year = 1065
+NOT = { year = 1110 }
+has_landed_title = e_persia }			
+}
+}				
 		}
 set_dynasty_flag = asabi_2
 }
@@ -25,10 +86,10 @@ name = "EVTOPTB_RIRSEKH_10"
 trigger = {
 OR = {
 is_nomadic = yes
-is_tribal=yes
-}			
-		}
-
+is_tribal = yes
+}
+		
+        }
 primary_title = {
 revoke_law = assab_2
 add_law_w_cooldown = assab_3
@@ -37,6 +98,292 @@ set_dynasty_flag = asabi_3
 
 
 
+}
+
+option = {
+name = "EVTOPTC_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+NOT = { year = 800 }
+has_landed_title = k_andalusia		
+		}
+
+set_dynasty_flag = asabi_2
+ROOT = {
+narrative_event = { id = RIRSEKH.48 }
+}
+}
+option = {
+name = "EVTOPTD_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+NOT = { year = 1000 }
+year = 850
+has_landed_title = k_andalusia		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+
+option = {
+name = "EVTOPTE_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+NOT = { year =	920 }
+has_landed_title = k_mauretania		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+
+option = {
+name = "EVTOPTF_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 1050
+NOT = { year = 1100 }
+has_landed_title = k_mauretania		
+		}
+
+set_dynasty_flag = asabi_2
+ROOT = {
+narrative_event = { id = RIRSEKH.49 }
+}
+}
+
+option = {
+name = "EVTOPTG_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 840
+NOT = { year = 905 }
+has_landed_title = k_africa		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+option = {
+name = "EVTOPTH_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 1050
+NOT = { year = 1148 }
+has_landed_title = k_africa		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_0
+}
+set_dynasty_flag = asabi_0
+
+}
+option = {
+name = "EVTOPTI_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 840
+NOT = { year = 980 }
+has_landed_title = k_egypt		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+option = {
+name = "EVTOPTJ_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 1030
+NOT = { year = 1074 }
+has_landed_title = k_egypt		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_0
+}
+set_dynasty_flag = asabi_0
+
+}
+option = {
+name = "EVTOPTK_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+NOT = { year = 800 }
+has_landed_title = k_armenia		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+
+option = {
+name = "EVTOPTL_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 850
+NOT = { year = 890 }
+
+has_landed_title = k_baluchistan		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+
+option = {
+name = "EVTOPTM_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 850
+NOT = { year = 890 }
+
+has_landed_title = k_khiva		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+option = {
+name = "EVTOPTN_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 1050
+NOT = { year = 1100 }
+
+has_landed_title = k_khiva		
+		}
+
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+option = {
+name = "EVTOPTO_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 760
+NOT = { year = 830 }
+
+has_landed_title = e_arabia		
+		}
+		
+set_dynasty_flag = asabi_2
+ROOT = {
+narrative_event = { id = RIRSEKH.50 }
+}
+}
+option = {
+name = "EVTOPTP_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 840
+NOT = { year = 950 }
+
+has_landed_title = e_arabia		
+		}
+		
+primary_title = {
+revoke_law = assab_2
+add_law_w_cooldown = assab_1
+}
+set_dynasty_flag = asabi_1
+
+}
+option = {
+name = "EVTOPTQ_RIRSEKH_10"  
+trigger = {
+OR = {
+is_nomadic = no
+is_tribal = no
+}
+year = 1065
+NOT = { year = 1110 }
+
+has_landed_title = e_persia		
+		}
+		
+set_dynasty_flag = asabi_2
+ROOT = {
+narrative_event = { id = RIRSEKH.51 }
+}
 }
 }
 #Event de depart, si nouvelle dynastie sedentaire
