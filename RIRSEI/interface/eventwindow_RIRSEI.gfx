@@ -281,6 +281,11 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\volontairesfoi.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_troupesorientales"
+		texturefile = "gfx\\event_pictures\troupesturcs.tga"
+		allwaystransparent = yes
+	}
 }
 
 
