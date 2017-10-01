@@ -676,7 +676,7 @@ RETTYPE_CUL_BYZ_RIR =
 	
 	potential = {
 		is_nomadic = no
-		culture_group = byzantine
+		culture = greek
 NOT = { religion_group = muslim }
 	}
 	
@@ -1408,5 +1408,56 @@ HORDE_RETTYPE_EUROPE = {
 				region = world_europe_south
 			}
 		}
+	}
+}
+# Khevsureti georgiens
+
+RETTYPE_CUL_GEORGUN_RIR = 
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {               
+		is_nomadic = no
+		culture = georgian		
+NOT = { religion_group = muslim }
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.5
+	}
+}
+
+#monaspa
+
+RETTYPE_CUL_GEORGDEUX_RIR = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture = georgian
+		independent = yes
+NOT = { religion_group = muslim }
+any_demesne_province = {
+OR = {
+has_building = ca_culture_georgiens_2
+has_building = ca_culture_georgiens_3
+}
+}
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+		knights_defensive = 0.3
+		knights_morale = 0.3
 	}
 }
