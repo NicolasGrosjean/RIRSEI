@@ -8,7 +8,6 @@ OR = {
 culture = armenian
 culture = greek
 culture = alan
-culture = georgian
 culture = bolghar
 culture = levantine_arabic
 culture = egyptian_arabic
@@ -34,6 +33,66 @@ heavy_infantry = 100
 archers = 50
 fort_level = 1.0
 land_morale = 0.10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	tp_georgiens_syst_1 = {
+		desc = tpgeorgiens_syst_1_desc
+		potential = {
+			FROM = {
+			religion_group = christian
+culture = georgian
+
+
+			}
+		}
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 30
+		build_time = 730
+
+tax_income = 2
+light_infantry = 100
+light_infantry_defensive = 0.25
+light_infantry_morale = 0.25
+light_infantry_offensive = -0.10
+archers = 60
+archers_defensive = 0.20
+archers_offensive = -0.10
+fort_level = 1.5
+
+		ai_creation_factor = 101
+		
+		
+	}
+	tp_georgiens_syst_2 = {
+		desc = tpgeorgiens_syst_2_desc
+		potential = {
+			FROM = {
+			religion_group = christian
+culture = georgian
+has_global_flag = christian_crusades_unlocked
+
+			}
+		}
+		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
+                add_number_to_name = no
+        upgrades_from = tp_georgiens_syst_1				
+		gold_cost = 30
+		build_time = 730
+
+tax_income = -3
+knights = 30
+knights_morale = 0.20
+heavy_infantry = 70
+horse_archers_defensive = 0.30
+archers = 40
+light_infantry = -40
+
+
+
 		ai_creation_factor = 101
 		
 		

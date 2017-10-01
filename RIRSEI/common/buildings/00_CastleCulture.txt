@@ -4391,4 +4391,141 @@ tax_income = -7
 		
 		
 	}
+	
+	ca_culture_georgiens_1 = {
+		desc = ca_culture_georgiens_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian                    
+culture = georgian
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+		
+heavy_infantry = 40
+heavy_infantry_morale = 0.15
+heavy_infantry_defensive = 0.15
+heavy_infantry_offensive = -0.10
+archers = 50
+archers_defensive = 0.20
+archers_offensive = -0.10
+light_infantry = 100
+light_infantry_defensive = 0.25
+light_infantry_morale = 0.20
+light_infantry_offensive = -0.10
+knights = 20
+extra_tech_building_start = -1
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_georgiens_2 = {
+		desc = ca_culture_georgiens_2_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian                       
+		
+			culture = georgian
+
+				
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_georgiens_1
+		gold_cost = 300
+		build_time = 720
+		
+knights = 25
+horse_archers = 40
+horse_archers_defensive = 0.30
+light_infantry = -30
+archers = -20
+heavy_infantry = 10
+heavy_infantry_offensive = 0.10
+fort_level = 1.0
+retinue_size = 200	
+tax_income = -2
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_georgiens_3 = {
+		desc = ca_culture_georgiens_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian                       
+		
+			culture = georgian
+
+				
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+has_law = centralization_4
+
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_georgiens_2
+		gold_cost = 300
+		build_time = 720
+		
+knights = 30
+horse_archers = 50
+light_infantry = 110
+light_infantry_offensive = 0.10
+archers = 50
+heavy_infantry = 30
+tax_income = -3
+		ai_creation_factor = 101
+		
+		
+	}
 }

@@ -150,6 +150,89 @@ tax_income = 4
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = -1
+	}
+	ct_georg = {
+	add_number_to_name = no 
+		desc = ct_georg_desc
+		potential = {
+	
+			FROM = {
+		
+religion_group = christian
+
+culture = georgian
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 80
+		heavy_infantry = 20
+		archers = 150
+		levy_size = -0.9
+light_infantry_defensive = -0.1
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.1
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 2.0
+tax_income = 2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+ct_georg_metsikh = {
+	add_number_to_name = no 
+		desc = ct_georg_metsikh_desc
+		potential = {
+			FROM = {
+			
+religion_group = christian
+
+
+culture = georgian
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 4
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+upgrades_from = ct_georg	
+		gold_cost = 200
+		prestige_cost = 0
+		build_time = 730
+		heavy_infantry = 90
+		archers = 20
+		archers_defensive = 0.20
+		heavy_infantry_defensive = 0.10
+		levy_size = 0.4
+        tax_income = -4
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
 	}	
 	
 	
