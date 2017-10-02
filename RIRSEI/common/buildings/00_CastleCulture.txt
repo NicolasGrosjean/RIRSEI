@@ -4474,7 +4474,7 @@ archers = -20
 heavy_infantry = 10
 heavy_infantry_offensive = 0.10
 fort_level = 1.0
-retinue_size = 200	
+retinuesize = 200	
 tax_income = -2
 		ai_creation_factor = 101
 		
