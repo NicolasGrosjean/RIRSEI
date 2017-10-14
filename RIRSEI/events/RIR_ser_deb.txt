@@ -201,7 +201,7 @@ letter_event = {
 		name = EVTOPTA_RIRNOVEXERC_27 #Refus
 		prestige = 50
 		FROM = {
-		letter_event = { id = RIRSEI.28 }
+		letter_event = { id = RIRNOVEXERC.28 }
 		
 	}
 	FROM = {
@@ -236,7 +236,7 @@ letter_event = {
 		prestige = -150
 		FROM = {
 		capital_holding  = { add_building = ct_Charte_Sergents }
-		letter_event = { id = RIRSEI.29 }
+		letter_event = { id = RIRNOVEXERC.29 }
 		
 	}
 	ai_chance = {
@@ -260,7 +260,7 @@ letter_event = {
 		prestige = -150
 		
 		FROM = {
-		letter_event = { id = RIRSEI.30 }
+		letter_event = { id = RIRNOVEXERC.30 }
 		capital_holding = { add_building = ct_Charte_Piquier }
 	}
 	ai_chance = {
@@ -283,7 +283,7 @@ letter_event = {
 		name = EVTOPTD_RIRNOVEXERC_27 #Sagitarii
 		prestige = -200
 		FROM = {
-		letter_event = { id = RIRSEI.31 }
+		letter_event = { id = RIRNOVEXERC.31 }
 		capital_holding = { add_building = ct_Charte_Archers }
 	}
 	
@@ -316,7 +316,7 @@ letter_event = {
 		}
 		}
 		FROM = {
-		letter_event = { id = RIRSEI.32 }
+		letter_event = { id = RIRNOVEXERC.32 }
 		capital_holding = { add_building = ct_Charte_Arbaletriers_Italiens }
 	}
 	
@@ -350,7 +350,7 @@ letter_event = {
 		}
 		}
 		FROM = {
-		letter_event = { id = RIRSEI.33 }
+		letter_event = { id = RIRNOVEXERC.33 }
 		capital_holding = { add_building = ct_Charte_Piquiers_FlamandsBrabant }
 	}
 	
@@ -384,7 +384,7 @@ letter_event = {
 		}
 		}
 		FROM = {
-		letter_event = { id = RIRSEI.34 }
+		letter_event = { id = RIRNOVEXERC.34 }
 		capital_holding = { add_building = ct_Charte_Piquiers_Suisse }
 	}
 	
@@ -532,6 +532,113 @@ letter_event = {
 	
 	option = {
 		name = EVTOPTA_RIRNOVEXERC_34
+		
+		
+	}
+}
+
+#Events de Charte (armenie)
+
+letter_event = {
+	id = RIRNOVEXERC.35
+	title = EVTNAME_RIRNOVEXERC_35
+	desc = EVTDESC_RIRNOVEXERC_35
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+       
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_35 #Refus
+		prestige = 50
+		FROM = {
+		letter_event = { id = RIRNOVEXERC.36 }
+		
+	}
+	FROM = {
+			opinion = {
+				modifier = refus_charte_ville
+				who = ROOT
+				
+			}
+		}
+	ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.5
+				NOT = { year = 1100 }
+			}
+			modifier = {
+				factor = 0.5
+				year = 1100
+			}
+			modifier = {
+				factor = 0.25
+				year = 1200
+			}
+			modifier = {
+				factor = 1.4
+				ROOT = { trait = proud }
+			}
+			}
+	}
+	option = {
+		name = EVTOPTB_RIRNOVEXERC_35 
+		prestige = -150
+		FROM = {
+		capital_holding  = { add_building = ct_Charte_Sergents }
+		letter_event = { id = RIRNOVEXERC.37 }
+		
+	}
+	ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 2.0
+				year = 1100 
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = quick }
+			}
+			modifier = {
+				factor = 1.3
+				ROOT = { trait = genius }
+			}
+			}
+		}
+		}
+			#refus
+			
+	letter_event = {
+	id = RIRNOVEXERC.36
+	title = EVTNAME_RIRNOVEXERC_36
+	desc = EVTDESC_RIRNOVEXERC_36
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_36
+		
+	}
+}
+
+
+	letter_event = {
+	id = RIRNOVEXERC.37
+	title = EVTNAME_RIRNOVEXERC_37
+	desc = EVTDESC_RIRNOVEXERC_37
+	picture = GFX_evt_commune
+
+	is_triggered_only = yes
+
+        
+	
+	option = {
+		name = EVTOPTA_RIRNOVEXERC_37
 		
 		
 	}
