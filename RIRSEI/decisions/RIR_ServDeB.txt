@@ -62,4 +62,70 @@ NOT = {
 
 
 		}
+		
+Demande_charte_armelol = {
+		is_high_prio = yes
+		potential = {
+		FROM = {
+		is_republic = yes
+NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+has_global_flag = tempschartes
+NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+}			
+            capital_holding = {
+
+has_building = ct_armenien_1
+NOT = { has_building = ct_armenien_2 }
+NOT = { has_building = ct_Charte_Piquier }
+NOT = { has_building = ct_Charte_Sergents }
+NOT = { has_building = ct_Charte_Archers }
+NOT = { has_building = ct_Charte_Arbaletriers_Italiens }
+NOT = { has_building = ct_Charte_Piquiers_FlamandsBrabant }
+NOT = { has_building = ct_Charte_Piquiers_Suisse }
+
+}
+           
+		}
+		allow = {
+		
+NOT = {
+					has_opinion_modifier = {
+						who = liege
+						modifier = refus_charte_ville
+					}
+					}
+
+
+				
+		}
+		effect = {
+		
+
+ liege = {
+                   
+
+
+				letter_event = { id = RIRNOVEXERC.35}
+}
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		}
 		}
