@@ -1768,7 +1768,6 @@ retinuesize = 1500
 		
 		
 	}
-
 #Arméniens, Nakharars et latinisation
 
 	ca_culture_Arme_syst_1 = {
@@ -1776,9 +1775,9 @@ retinuesize = 1500
 		potential = {
 			FROM = {
 
-					OR = {
+					
 culture = armenian
-culture = georgian }
+
 					
                                        
 				
@@ -1792,11 +1791,14 @@ knights = 20
 horse_archers = 20		
 horse_archers_morale = 0.10
 horse_archers_offensive = 0.10
+horse_archers_defensive = 0.30
 knights_morale = 0.10
-light_infantry = 40
+light_infantry = 75
+archers = 60
 light_infantry_offensive = 0.20
 light_infantry_defensive = 0.20
-heavy_infantry = 10
+heavy_infantry = 25
+retinuesize = 100
 
 		ai_creation_factor = 101
 		
@@ -1806,9 +1808,9 @@ heavy_infantry = 10
 		desc = Arme_syst_2_desc
 		potential = {
 			FROM = {
-OR = {
+
 culture = armenian
-culture = georgian }
+
 					
                                        
 				
@@ -1819,13 +1821,69 @@ culture = georgian }
 		upgrades_from = ca_culture_Arme_syst_1
 		gold_cost = 50
 		build_time = 50
-knights = 15
-horse_archers = 15
+knights = 30
+horse_archers = -15
+horse_archers_morale = -0.10
+horse_archers_offensive = -0.10
+horse_archers_defensive = -0.30
 heavy_infantry = 10
-light_cavalry = 5
-light_infantry = -15		
-knights_morale = 0.10
-knights_offensive = 0.10
+light_cavalry = 40
+light_cavalry_offensive = 0.15
+light_infantry = -40
+archers = -30		
+knights_morale = 0.20
+knights_offensive = 0.20
+kinghts_defensive = -0.10
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_Arme_syst_3 = {
+		desc = Arme_syst_3_desc
+		potential = {
+			FROM = {
+
+culture = armenian
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Arme_syst_2
+		gold_cost = 50
+		build_time = 50
+knights = 30
+heavy_infantry = 80
+light_cavalry = 30
+light_infantry = -20
+archers = -15	
+retinuesize = 200
+
 		ai_creation_factor = 101
 		
 		

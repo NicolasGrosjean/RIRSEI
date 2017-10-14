@@ -235,5 +235,82 @@ upgrades_from = ct_georg
 		extra_tech_building_start = -1
 	}	
 	
+	ct_armenien_1 = {
+	add_number_to_name = no 
+		desc = ct_armenien_1_desc
+		potential = {
+	
+			FROM = {
+		
+religion_group = christian
+
+culture = armenian
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 80
+		heavy_infantry = 20
+		archers = 150
+		levy_size = -0.9
+light_infantry_defensive = -0.1
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.1
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 2.0
+tax_income = 2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+ct_armenien_2 = {
+	add_number_to_name = no 
+		desc = ct_armenien_2_desc
+		potential = {		
+			FROM = {
+			
+			NOT = {
+OR = {
+independent = yes
+top_liege = {
+is_republic = yes
+}
+} 
+}
+religion_group = christian
+				NOT = { OR = {
+tier = count
+tier = duke
+tier = king
+}
+}
+
+				culture = armenian
+
+			}
+		}
+
+		upgrades_from =  { ct_armenien_1 }
+        trigger = { TECH_CITY_CONSTRUCTION = 4 }		
+		gold_cost = 0
+		prestige_cost = 200
+		build_time = 30
+		heavy_infantry = 200
+        archers = 200
+        archers_offensive = 0.25		
+		tax_income = -8
+		
+		ai_creation_factor = 90
+		
+		extra_tech_building_start = 1.1
+	}
+	
 	
 	}
