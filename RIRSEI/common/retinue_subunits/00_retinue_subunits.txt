@@ -1461,3 +1461,31 @@ has_building = ca_culture_georgiens_3
 		knights_morale = 0.3
 	}
 }
+
+# Azatagound armenien
+
+RETTYPE_CUL_ARMELOL_RIR = 
+
+{
+	first_type = 4
+	first_amount = 50
+	
+	second_type = 6
+	second_amount = 50
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture = armenian
+		
+NOT = { religion_group = muslim }
+
+	}
+	
+	modifier = {
+		knights_offensive = 0.3
+		knights_defensive = 0.2
+		knights_morale = 0.4
+	}
+}
