@@ -1775,7 +1775,7 @@ retinuesize = 1500
 		potential = {
 			FROM = {
 
-					
+religion_group = christian					
 culture = armenian
 
 					
@@ -1808,7 +1808,7 @@ retinuesize = 100
 		desc = Arme_syst_2_desc
 		potential = {
 			FROM = {
-
+religion_group = christian
 culture = armenian
 
 					
@@ -1844,7 +1844,7 @@ kinghts_defensive = -0.10
 		desc = Arme_syst_3_desc
 		potential = {
 			FROM = {
-
+religion_group = christian
 culture = armenian
 
 					
