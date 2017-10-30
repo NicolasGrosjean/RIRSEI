@@ -1,0 +1,37 @@
+city = {
+ct_sahr = {
+	add_number_to_name = no 
+		desc = ct_sahr_desc
+		potential = {
+
+			FROM = {
+		
+religion_group = zoroastrian_group
+
+
+
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 100
+		archers = 150
+		levy_size = -0.9
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 2.0
+tax_income = 4
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+}

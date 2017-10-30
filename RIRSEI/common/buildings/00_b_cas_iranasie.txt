@@ -1,0 +1,150 @@
+castle = {
+
+#Zoroastriens = Iraniens
+
+#Paygan o Azadan
+
+ca_culture_zoroastrien_syst_1 = {
+		desc = zoroastrien_syst_1_desc
+		potential = {
+			FROM = {
+
+					
+religion_group = zoroastrian_group
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 30
+		build_time = 730
+
+knights = 15
+knights_morale = 0.10
+horse_archers = 30		
+horse_archers_morale = 0.10
+horse_archers_defensive = 0.20
+knights_morale = 0.10
+light_infantry = 150
+light_infantry_morale = -0.40
+light_infantry_offensive = -0.35
+light_infantry_defensive = -0.20
+archers = 40
+
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#Spah
+	ca_culture_zoroastrien_syst_2 = {
+		desc = zoroastrien_syst_2_desc
+		potential = {
+			FROM = {
+
+religion_group = zoroastrian_group
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_2
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_2
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+                add_number_to_name = no 
+		upgrades_from = ca_culture_zoroastrien_syst_1
+		gold_cost = 50
+		build_time = 50
+knights = 40
+knights_defensive = 0.15
+knights_offensive = 0.15
+horse_archers = 30
+horse_archers_defensive = 0.10
+horse_archers_offensive = 0.20
+archers = 30
+archers_defensive = 0.15
+archers_morale = 0.15
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#reformes comme chosroes
+	
+	ca_culture_zoroastrien_syst_3 = {
+		desc = zoroastrien_syst_3_desc
+		potential = {
+			FROM = {
+
+religion_group = zoroastrian_group
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+
+has_law = centralization_4
+
+}
+}
+}
+FROM = {
+primary_title = {
+
+has_law = centralization_4
+
+}
+}
+		}		}
+                add_number_to_name = no 
+		upgrades_from = ca_culture_zoroastrien_syst_2
+		gold_cost = 50
+		build_time = 50
+light_infantry = -40
+light_infantry_defensive = 0.20
+light_infantry_morale = 0.40
+light_infantry_offensive = 0.35	
+archers = 30
+knights = 20
+horse_archers = 20
+retinuesize = 300
+tax_income = -4
+
+		ai_creation_factor = 101
+		
+		
+	}
+ }
+ 

@@ -1489,3 +1489,31 @@ NOT = { religion_group = muslim }
 		knights_morale = 0.4
 	}
 }
+
+#Cataphractes irano-zoroastrien
+
+RETTYPE_CUL_IRACATA_RIR = 
+{
+	first_type = 4
+	first_amount = 20
+	
+	second_type = 6
+	second_amount = 20
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+religion_group = zoroastrian_group
+	}
+	
+	modifier = {
+		knights_offensive = 0.5
+		knights_defensive = 0.5
+		knights_morale = 0.5
+		
+		horse_archers_defensive = 0.5
+		horse_archers_morale = 0.5
+		horse_archers_offensive = 0.5
+	}
+}
