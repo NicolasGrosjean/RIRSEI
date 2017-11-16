@@ -1246,6 +1246,11 @@ HORDE_RETTYPE_CAV1 =
 	potential = {
 		is_nomadic = yes
 	}
+	modifier = {
+		
+		light_cavalry_offensive = 0.20
+        light_cavalry_morale = 0.30
+        light_cavalry_defensive = -0.15		}
 }
 
 HORDE_RETTYPE_CAV2 = 
@@ -1265,7 +1270,16 @@ HORDE_RETTYPE_CAV2 =
 	potential = {
 		is_nomadic = yes
 	}
+	modifier = {
+		
+		horse_archers_offensive = 0.20
+        horse_archers_morale = 0.30
+        horse_archers_defensive = -0.15
+        light_cavalry_offensive = 0.20
+        light_cavalry_morale = 0.30
+        light_cavalry_defensive = -0.15			}
 }
+
 
 HORDE_RETTYPE_CAV3 =
 {
@@ -1283,6 +1297,14 @@ HORDE_RETTYPE_CAV3 =
 	potential = {
 		is_nomadic = yes
 	}
+		modifier = {
+		
+		horse_archers_offensive = 0.20
+        horse_archers_morale = 0.30
+        horse_archers_defensive = -0.15
+        light_cavalry_offensive = 0.20
+        light_cavalry_morale = 0.30
+        light_cavalry_defensive = -0.15			}
 }
 
 HORDE_RETTYPE_CAV4 =
@@ -1301,38 +1323,14 @@ HORDE_RETTYPE_CAV4 =
 	potential = {
 		is_nomadic = yes
 	}
-}
-
-HORDE_RETTYPE_CAV5 =
-{
-	first_type = 3
-	first_amount = 200
-	second_type = 4
-	second_amount = 50
-	
-	hire_cost = 50
-	
-	maintenance_multiplier = 0.227
-	
-	potential = {
-		is_nomadic = yes
-	}
-}
-
-HORDE_RETTYPE_CAV6 =
-{
-	first_type = 3
-	first_amount = 100
-	second_type = 4
-	second_amount = 150
-	
-	hire_cost = 75
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-	}
+		modifier = {
+		
+		horse_archers_offensive = 0.20
+        horse_archers_morale = 0.30
+        horse_archers_defensive = -0.15
+        light_cavalry_offensive = 0.20
+        light_cavalry_morale = 0.30
+        light_cavalry_defensive = -0.15			}
 }
 
 HORDE_RETTYPE_CAV7 =
@@ -1349,67 +1347,14 @@ HORDE_RETTYPE_CAV7 =
 	potential = {
 		is_nomadic = yes
 	}
+		modifier = {
+		
+		horse_archers_offensive = 0.20
+        horse_archers_morale = 0.30
+        horse_archers_defensive = -0.15
+        			}
 }
 
-HORDE_RETTYPE_INDIAN = 
-{
-	first_type = 3
-	first_amount = 200
-	second_type = 6
-	second_amount = 50
-	
-	special_troops = war_elephants
-
-	hire_cost = 100
-	
-	maintenance_multiplier = 0.625
-	
-	potential = {
-		is_nomadic = yes
-		capital_scope = {
-			region = world_india
-		}
-	}
-}
-
-HORDE_RETTYPE_DESERT = {
-	first_type = 3
-	first_amount = 100
-	second_type = 6
-	second_amount = 150
-	
-	special_troops = camel_cavalry
-	
-	hire_cost = 50
-	
-	maintenance_multiplier = 0.416
-	
-	potential = {
-		is_nomadic = yes
-		capital_scope = {
-			terrain = desert
-		}
-	}
-}
-
-HORDE_RETTYPE_EUROPE = {
-	first_type = 4
-	first_amount = 250
-	
-	hire_cost = 100
-	
-	maintenance_multiplier = 0.37
-	
-	potential = {
-		is_nomadic = yes
-		capital_scope = {
-			OR = {
-				region = world_europe_west
-				region = world_europe_south
-			}
-		}
-	}
-}
 # Khevsureti georgiens
 
 RETTYPE_CUL_GEORGUN_RIR = 
