@@ -494,12 +494,11 @@ tribal = {
 
 nomad = {
 	tax_income = 0
-	fort_level = 1
-	levy_size = -3
-	light_infantry = 160
-	heavy_infantry = 40
-	levy_reinforce_rate = 0
-	land_organisation = 0
+	fort_level = 0.5
+	light_infantry = 75
+	archers = 175
+	levy_reinforce_rate = 1.10
+	land_organisation = 0.2
 }
 
 fort = {
