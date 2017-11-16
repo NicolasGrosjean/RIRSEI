@@ -14,9 +14,10 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights_defensive = 0.03
-		light_cavalry_defensive = 0.03
-		horse_archers_defensive = 0.03
+		liege_prestige = 0.25
+		horse_archers = 20
+		archers = -10
+		light_infantry = -5
 	}
 
 	no_horse_breeder_2 = {
@@ -28,9 +29,10 @@ nomad = {
 		ai_creation_factor = 90
 		extra_tech_building_start = 2
 
-		knights_defensive = 0.03
-		light_cavalry_defensive = 0.03
-		horse_archers_defensive = 0.03
+		liege_prestige = 0.25
+		horse_archers = 20
+		archers = -10
+		light_infantry = -5
 	}
 
 	no_horse_breeder_3 = {
@@ -42,9 +44,10 @@ nomad = {
 		ai_creation_factor = 85
 		extra_tech_building_start = 3
 
-		knights_defensive = 0.04
-		light_cavalry_defensive = 0.04
-		horse_archers_defensive = 0.04
+		liege_prestige = 0.25
+		horse_archers = 20
+		archers = -10
+		light_infantry = -5
 	}
 
 	no_horse_breeder_4 = {
@@ -56,65 +59,152 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		knights_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		horse_archers_defensive = 0.05
+		liege_prestige = 0.25
+		horse_archers = 30
+		archers = -10
+		light_infantry = -5
 	}
 	
 	no_horse_breeder_5 = {
 		desc = no_horse_breeder_desc
 		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 2 } }
 		upgrades_from = no_horse_breeder_4
-		gold_cost = 160
+		gold_cost = 180
 		build_time = 365
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		knights_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		horse_archers_defensive = 0.05
+		liege_prestige = 0.25
+		horse_archers = 30
+		archers = -10
+		light_infantry = -5
 	}
 	
 	no_horse_breeder_6 = {
 		desc = no_horse_breeder_desc
 		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 2 } }
 		upgrades_from = no_horse_breeder_5
-		gold_cost = 160
+		gold_cost = 200
 		build_time = 365
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		knights_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		horse_archers_defensive = 0.05
+		liege_prestige = 0.25
+		horse_archers = 30
+		archers = -10
+		light_infantry = -5
 	}
 	
 	no_horse_breeder_7 = {
 		desc = no_horse_breeder_desc
 		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 3 } }
 		upgrades_from = no_horse_breeder_6
-		gold_cost = 160
+		gold_cost = 225
 		build_time = 365
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		knights_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		horse_archers_defensive = 0.05
+	    liege_prestige = 0.25
+		horse_archers = 40
 	}
 	
 	no_horse_breeder_8 = {
 		desc = no_horse_breeder_desc
 		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 3 } }
 		upgrades_from = no_horse_breeder_7
-		gold_cost = 160
+		gold_cost = 250
 		build_time = 365
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		knights_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		horse_archers_defensive = 0.05
+		liege_prestige = 0.25
+	}
+	###################RIRSEI CATAPHRACTES#################
+	
+	Nomade_Catatanks_1 = {
+		desc = Nomade_Catatanks1_desc
+		trigger = {		
+		
+		FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
+		prerequisites = { no_horse_breeder_2 }
+
+		gold_cost = 175
+		build_time = 365
+		ai_creation_factor = 97
+		extra_tech_building_start = 1
+
+		knights = 100
+		knights_defensive = 0.30
+		knights_morale = 0.10
+		knights_offensive = 0.10
+	}
+	
+	Nomade_Catatanks_2 = {
+		desc = Nomade_Catatanks2_desc
+		trigger = {		
+		
+		FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
+		upgrades_from = Nomade_Catatanks_1
+		prerequisites = { no_horse_breeder_3 }
+
+		gold_cost = 250
+		build_time = 365
+		ai_creation_factor = 97
+		extra_tech_building_start = 1
+
+		knights = 150
+		
+	}
+	
+		Nomade_Catatanks_3 = {
+		desc = Nomade_Catatanks3_desc
+		trigger = {		
+		
+		FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
+		upgrades_from = Nomade_Catatanks_2
+		prerequisites = { no_horse_breeder_4 }
+
+		gold_cost = 350
+		build_time = 365
+		ai_creation_factor = 97
+		extra_tech_building_start = 1
+
+		knights = 200
+		
+	}
+	
+	Nomade_Catatanks_4 = {
+		desc = Nomade_Catatanks4_desc
+		trigger = {		
+		
+		FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
+		upgrades_from = Nomade_Catatanks_3
+		prerequisites = { no_horse_breeder_5 }
+
+		gold_cost = 500
+		build_time = 365
+		ai_creation_factor = 97
+		extra_tech_building_start = 1
+
+		knights = 350
+		
+	}
+	
+	Nomade_Catatanks_5 = {
+		desc = Nomade_Catatanks5_desc
+		trigger = {		
+		
+		FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
+		upgrades_from = Nomade_Catatanks_4
+		prerequisites = { no_horse_breeder_6 }
+
+		gold_cost = 900
+		build_time = 365
+		ai_creation_factor = 97
+		extra_tech_building_start = 1
+
+		knights = 500
+		
 	}
 
 	################### RIDING CONTESTS ###################
@@ -128,7 +218,6 @@ nomad = {
 		extra_tech_building_start = 1
 
 		light_cavalry_offensive = 0.04
-		knights_offensive = 0.04
 		global_movement_speed = 0.02
 	}
 
@@ -143,7 +232,6 @@ nomad = {
 		extra_tech_building_start = 2
 
 		light_cavalry_offensive = 0.04
-		knights_offensive = 0.04
 		global_movement_speed = 0.02
 	}
 
@@ -158,7 +246,6 @@ nomad = {
 		extra_tech_building_start = 3
 
 		light_cavalry_offensive = 0.04
-		knights_offensive = 0.04
 		global_movement_speed = 0.03
 	}
 
@@ -173,7 +260,6 @@ nomad = {
 		extra_tech_building_start = 4
 
 		light_cavalry_offensive = 0.05
-		knights_offensive = 0.05
 		global_movement_speed = 0.03
 	}
 	
@@ -188,7 +274,6 @@ nomad = {
 		extra_tech_building_start = 4
 
 		light_cavalry_offensive = 0.05
-		knights_offensive = 0.05
 		global_movement_speed = 0.04
 	}
 	
@@ -203,7 +288,6 @@ nomad = {
 		extra_tech_building_start = 4
 
 		light_cavalry_offensive = 0.05
-		knights_offensive = 0.05
 		global_movement_speed = 0.05
 	}
 	
@@ -218,7 +302,6 @@ nomad = {
 		extra_tech_building_start = 4
 
 		light_cavalry_offensive = 0.06
-		knights_offensive = 0.06
 		global_movement_speed = 0.05
 	}
 	
@@ -233,7 +316,6 @@ nomad = {
 		extra_tech_building_start = 4
 
 		light_cavalry_offensive = 0.06
-		knights_offensive = 0.06
 		global_movement_speed = 0.06
 	}
 	
@@ -248,7 +330,7 @@ nomad = {
 		extra_tech_building_start = 1
 		
 		land_morale = 0.02
-		population_growth = 0.02
+		population_growth = 0.01
 	}
 	
 	no_airag_producer_2 = {
@@ -263,7 +345,7 @@ nomad = {
 		upgrades_from = no_airag_producer_1
 		
 		land_morale = 0.02
-		population_growth = 0.02
+		population_growth = 0.01
 	}
 	
 	no_airag_producer_3 = {
@@ -278,7 +360,7 @@ nomad = {
 		upgrades_from = no_airag_producer_2
 		
 		land_morale = 0.03
-		population_growth = 0.03
+		population_growth = 0.02
 	}
 	
 	no_airag_producer_4 = {
@@ -293,7 +375,7 @@ nomad = {
 		upgrades_from = no_airag_producer_3
 		
 		land_morale = 0.04
-		population_growth = 0.03
+		population_growth = 0.02
 	}
 	
 	no_airag_producer_5 = {
@@ -308,7 +390,7 @@ nomad = {
 		upgrades_from = no_airag_producer_4
 		
 		land_morale = 0.04
-		population_growth = 0.05
+		population_growth = 0.02
 	}
 	
 	no_airag_producer_6 = {
@@ -323,7 +405,7 @@ nomad = {
 		upgrades_from = no_airag_producer_5
 		
 		land_morale = 0.05
-		population_growth = 0.05
+		population_growth = 0.03
 	}
 	
 	no_airag_producer_7 = {
@@ -338,7 +420,7 @@ nomad = {
 		upgrades_from = no_airag_producer_6
 		
 		land_morale = 0.05
-		population_growth = 0.1
+		population_growth = 0.04
 	}
 	
 	no_airag_producer_8 = {
@@ -353,7 +435,7 @@ nomad = {
 		upgrades_from = no_airag_producer_7
 		
 		land_morale = 0.1
-		population_growth = 0.1
+		population_growth = 0.04
 	}
 	
 	################### CATTLE PENS ###################
@@ -477,7 +559,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		max_population = 2000
+		max_population = 1500
 		global_supply_limit = 0.02
 		moved_capital_months_mult = -0.05
 	}
@@ -492,7 +574,7 @@ nomad = {
 		ai_creation_factor = 90
 		extra_tech_building_start = 2
 
-		max_population = 2000
+		max_population = 1500
 		global_supply_limit = 0.02
 		moved_capital_months_mult = -0.05
 	}
@@ -507,7 +589,7 @@ nomad = {
 		ai_creation_factor = 85
 		extra_tech_building_start = 3
 
-		max_population = 2250
+		max_population = 2000
 		global_supply_limit = 0.02
 		moved_capital_months_mult = -0.06
 	}
@@ -522,7 +604,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		max_population = 2500
+		max_population = 2250
 		global_supply_limit = 0.03
 		moved_capital_months_mult = -0.06
 	}
@@ -537,7 +619,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		max_population = 3000
+		max_population = 2500
 		global_supply_limit = 0.03
 		moved_capital_months_mult = -0.06
 	}
@@ -552,7 +634,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		max_population = 3500
+		max_population = 3000
 		global_supply_limit = 0.03
 		moved_capital_months_mult = -0.07
 	}
@@ -567,7 +649,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		max_population = 4000
+		max_population = 3500
 		global_supply_limit = 0.04
 		moved_capital_months_mult = -0.07
 	}
@@ -582,7 +664,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		max_population = 5000
+		max_population = 3500
 		global_supply_limit = 0.06
 		moved_capital_months_mult = -0.08
 	}
@@ -597,8 +679,8 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.04
+		global_supply_limit = 0.03
+		horde_maintenence_cost = -0.03
 		global_movement_speed = 0.025
 	}
 	
@@ -613,8 +695,8 @@ nomad = {
 		
 		upgrades_from = no_meat_preserver_1
 		
-		global_supply_limit = 0.05
-		horde_maintenence_cost = -0.03
+		global_supply_limit = 0.03
+		horde_maintenence_cost = -0.02
 		global_movement_speed = 0.025
 	}
 	
@@ -629,7 +711,7 @@ nomad = {
 		
 		upgrades_from = no_meat_preserver_2
 		
-		global_supply_limit = 0.05
+		global_supply_limit = 0.03
 		horde_maintenence_cost = -0.03
 		global_movement_speed = 0.025
 	}
@@ -645,7 +727,7 @@ nomad = {
 		
 		upgrades_from = no_meat_preserver_3
 		
-		global_supply_limit = 0.05
+		global_supply_limit = 0.04
 		horde_maintenence_cost = -0.02
 		global_movement_speed = 0.025
 	}
@@ -661,7 +743,7 @@ nomad = {
 		
 		upgrades_from = no_meat_preserver_4
 		
-		global_supply_limit = 0.05
+		global_supply_limit = 0.04
 		horde_maintenence_cost = -0.02
 		global_movement_speed = 0.025
 	}
@@ -718,96 +800,96 @@ nomad = {
 	no_sheep_1 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
-		gold_cost = 50
+		gold_cost = 30
 		build_time = 1095
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.01
 	}
 
 	no_sheep_2 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 0 } }
 		upgrades_from = no_sheep_1
-		gold_cost = 80
+		gold_cost = 60
 		build_time = 1185
 		ai_creation_factor = 90
 		extra_tech_building_start = 2
 
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.01
 	}
 
 	no_sheep_3 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 1 } }
 		upgrades_from = no_sheep_2
-		gold_cost = 120
+		gold_cost = 80
 		build_time = 1275
 		ai_creation_factor = 85
 		extra_tech_building_start = 3
 
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.02
 	}
 
 	no_sheep_4 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 1 } }
 		upgrades_from = no_sheep_3
-		gold_cost = 180
+		gold_cost = 120
 		build_time = 1365
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.02
 	}
 	
 	no_sheep_5 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 2 } }
 		upgrades_from = no_sheep_4
-		gold_cost = 240
+		gold_cost = 150
 		build_time = 1485
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.02
 	}
 	
 	no_sheep_6 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 2 } }
 		upgrades_from = no_sheep_5
-		gold_cost = 320
+		gold_cost = 250
 		build_time = 1605
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		nomad_tax_modifier = 0.05
+		nomad_tax_modifier = 0.03
 	}
 	
 	no_sheep_7 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 3 } }
 		upgrades_from = no_sheep_6
-		gold_cost = 400
+		gold_cost = 250
 		build_time = 1725
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		nomad_tax_modifier = 0.05
+		nomad_tax_modifier = 0.03
 	}
 	
 	no_sheep_8 = {
 		desc = no_sheep_desc
 		trigger = { FROM = { TECH_CITY_CONSTRUCTION = 3 } }
 		upgrades_from = no_sheep_7
-		gold_cost = 500
+		gold_cost = 400
 		build_time = 1825
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		nomad_tax_modifier = 0.05
+		nomad_tax_modifier = 0.04
 	}
 	
 	################### FELT CRAFTER ###################
@@ -821,7 +903,7 @@ nomad = {
 		extra_tech_building_start = 1
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.005
 	}
 	
 	no_felt_crafter_2 = {
@@ -836,7 +918,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_1
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 		
 		convert_to_tribal = tb_market_town_1
 	}
@@ -853,7 +935,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_2
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 	}
 	
 	no_felt_crafter_4 = {
@@ -868,7 +950,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_3
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 		
 		convert_to_tribal = tb_market_town_2
 	}
@@ -885,7 +967,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_4
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 	}
 	
 	no_felt_crafter_6 = {
@@ -900,7 +982,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_5
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 		
 		convert_to_tribal = tb_market_town_3
 	}
@@ -917,7 +999,7 @@ nomad = {
 		upgrades_from = no_felt_crafter_6
 		
 		global_winter_supply = 0.4
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 	}
 	
 	no_felt_crafter_8 = {
@@ -1153,7 +1235,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		population_growth = 0.03
+		population_growth = 0.01
 		liege_piety = 0.3
 	}
 
@@ -1166,7 +1248,7 @@ nomad = {
 		ai_creation_factor = 90
 		extra_tech_building_start = 2
 
-		population_growth = 0.03
+		population_growth = 0.01
 		liege_piety = 0.3
 	}
 
@@ -1179,7 +1261,7 @@ nomad = {
 		ai_creation_factor = 85
 		extra_tech_building_start = 3
 
-		population_growth = 0.03
+		population_growth = 0.01
 		liege_piety = 0.4
 	}
 
@@ -1192,7 +1274,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		population_growth = 0.03
+		population_growth = 0.02
 		liege_piety = 0.4
 	}
 	
@@ -1205,7 +1287,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		population_growth = 0.03
+		population_growth = 0.02
 		liege_piety = 0.4
 	}
 	
@@ -1218,7 +1300,7 @@ nomad = {
 		ai_creation_factor = 80
 		extra_tech_building_start = 4
 
-		population_growth = 0.03
+		population_growth = 0.02
 		liege_piety = 0.4
 	}
 	
@@ -1353,8 +1435,8 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 		max_tradeposts = 1
 	}
 	
@@ -1368,8 +1450,8 @@ nomad = {
 		
 		upgrades_from = no_yam_1
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 	}
 	
 	no_yam_3 = {
@@ -1382,8 +1464,8 @@ nomad = {
 		
 		upgrades_from = no_yam_2
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 		max_tradeposts = 1
 	}
 	
@@ -1397,8 +1479,8 @@ nomad = {
 		
 		upgrades_from = no_yam_3
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 	}
 	
 	no_yam_5 = {
@@ -1411,8 +1493,8 @@ nomad = {
 		
 		upgrades_from = no_yam_4
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 		max_tradeposts = 1
 	}
 	
@@ -1426,8 +1508,8 @@ nomad = {
 		
 		upgrades_from = no_yam_5
 		
-		economy_techpoints = 0.04
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 	}
 	
 	no_yam_7 = {
@@ -1440,8 +1522,8 @@ nomad = {
 		
 		upgrades_from = no_yam_6
 		
-		economy_techpoints = 0.05
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 		max_tradeposts = 1
 	}
 	
@@ -1455,8 +1537,8 @@ nomad = {
 		
 		upgrades_from = no_yam_7
 		
-		economy_techpoints = 0.05
-		tech_growth_modifier = 0.05
+		economy_techpoints = 0.02
+		tech_growth_modifier = 0.03
 	}
 	
 	################### BAGHATUR COUNCIL ###################
@@ -1473,7 +1555,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 10
 		
-		military_techpoints = 0.03
+		military_techpoints = 0.02
 		land_morale = 0.02
 	}
 	
@@ -1492,7 +1574,7 @@ nomad = {
 		
 		upgrades_from = no_baghatur_council_1
 		
-		military_techpoints = 0.03
+		military_techpoints = 0.02
 		land_morale = 0.02
 		commander_limit = 1
 	}
@@ -1512,7 +1594,7 @@ nomad = {
 		
 		upgrades_from = no_baghatur_council_2
 		
-		military_techpoints = 0.03
+		military_techpoints = 0.02
 		land_morale = 0.02
 	}
 	
@@ -1551,7 +1633,7 @@ nomad = {
 		
 		upgrades_from = no_baghatur_council_4
 		
-		military_techpoints = 0.04
+		military_techpoints = 0.03
 		land_morale = 0.02
 	}
 	
@@ -1570,7 +1652,7 @@ nomad = {
 		
 		upgrades_from = no_baghatur_council_5
 		
-		military_techpoints = 0.04
+		military_techpoints = 0.03
 		land_morale = 0.02
 		commander_limit = 1
 	}
@@ -1629,7 +1711,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 	}
 	
 	no_harbor_2 = {
@@ -1648,7 +1730,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_1
 		
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 		
 		convert_to_tribal = tb_shipyard_1
 	}
@@ -1669,7 +1751,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_2
 		
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 	}
 	
 	no_harbor_4 = {
@@ -1688,7 +1770,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_3
 		
-		nomad_tax_modifier = 0.02
+		nomad_tax_modifier = 0.01
 		
 		convert_to_tribal = tb_shipyard_2
 	}
@@ -1709,7 +1791,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_4
 		
-		nomad_tax_modifier = 0.03
+		nomad_tax_modifier = 0.02
 	}
 	
 	no_harbor_6 = {
@@ -1728,7 +1810,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_5
 		
-		nomad_tax_modifier = 0.03
+		nomad_tax_modifier = 0.02
 		
 		convert_to_tribal = tb_shipyard_3
 	}
@@ -1749,7 +1831,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_6
 		
-		nomad_tax_modifier = 0.03
+		nomad_tax_modifier = 0.02
 	}
 	
 	no_harbor_8 = {
@@ -1768,7 +1850,7 @@ nomad = {
 		
 		upgrades_from = no_harbor_7
 		
-		nomad_tax_modifier = 0.04
+		nomad_tax_modifier = 0.03
 		
 		convert_to_tribal = tb_shipyard_4
 	}
@@ -1800,7 +1882,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		population_growth = 0.01
+		population_growth = 0.005
 	}
 	
 	no_fishing_village_2 = {
@@ -1831,7 +1913,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_1
 		
-		population_growth = 0.01
+		population_growth = 0.005
 	}
 	
 	no_fishing_village_3 = {
@@ -1862,7 +1944,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_2
 		
-		population_growth = 0.01
+		population_growth = 0.005
 	}
 	
 	no_fishing_village_4 = {
@@ -1893,7 +1975,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_3
 		
-		population_growth = 0.02
+		population_growth = 0.01
 	}
 	
 	no_fishing_village_5 = {
@@ -1923,7 +2005,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_4
 		
-		population_growth = 0.02
+		population_growth = 0.01
 	}
 	
 	no_fishing_village_6 = {
@@ -1953,7 +2035,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_5
 		
-		population_growth = 0.02
+		population_growth = 0.01
 	}
 	
 	no_fishing_village_7 = {
@@ -1983,7 +2065,7 @@ nomad = {
 		
 		upgrades_from = no_fishing_village_6
 		
-		population_growth = 0.03
+		population_growth = 0.02
 	}
 	
 	no_fishing_village_8 = {
@@ -2016,283 +2098,11 @@ nomad = {
 		population_growth = 0.03
 	}
 	
-	################### COMPOSITE BOW CRAFTER ###################
-	no_composite_bow_crafter_1 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 1 } }
-		gold_cost = 70
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
+	################### COMPOSITE BOW CRAFTER (viré) ###################
 	
-	no_composite_bow_crafter_2 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 2 } }
-		gold_cost = 90
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_1
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
 	
-	no_composite_bow_crafter_3 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 3 } }
-		gold_cost = 120
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_2
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	no_composite_bow_crafter_4 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 4 } }
-		gold_cost = 150
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_3
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	no_composite_bow_crafter_5 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 4 } }
-		gold_cost = 180
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_4
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	no_composite_bow_crafter_6 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 5 } }
-		gold_cost = 220
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_5
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	no_composite_bow_crafter_7 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 6 } }
-		gold_cost = 260
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_6
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	no_composite_bow_crafter_8 = {
-		desc = no_composite_bow_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 7 } }
-		gold_cost = 300
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_composite_bow_crafter_7
-		
-		archers_offensive = 0.1
-		horse_archers_offensive = 0.1
-	}
-	
-	################### LAMELLAR ARMOR CRAFTER ###################
-	no_lamellar_armor_crafter_1 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 0 } }
-		gold_cost = 80
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		light_infantry_defensive = 0.05
-		heavy_infantry_defensive = 0.05
-		pikemen_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		knights_defensive = 0.05
-		archers_defensive = 0.05
-		horse_archers_defensive = 0.05
-		camel_cavalry_defensive = 0.05
-		war_elephants_defensive = 0.05
-	}
-	
-	no_lamellar_armor_crafter_2 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 1 } }
-		gold_cost = 110
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_1
-		
-		light_infantry_defensive = 0.05
-		heavy_infantry_defensive = 0.05
-		pikemen_defensive = 0.05
-		light_cavalry_defensive = 0.05
-		knights_defensive = 0.05
-		archers_defensive = 0.05
-		horse_archers_defensive = 0.05
-		camel_cavalry_defensive = 0.05
-		war_elephants_defensive = 0.05
-	}
-	
-	no_lamellar_armor_crafter_3 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 1 } }
-		gold_cost = 140
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_2
-		
-		light_infantry_defensive = 0.06
-		heavy_infantry_defensive = 0.06
-		pikemen_defensive = 0.06
-		light_cavalry_defensive = 0.06
-		knights_defensive = 0.06
-		archers_defensive = 0.06
-		horse_archers_defensive = 0.06
-		camel_cavalry_defensive = 0.06
-		war_elephants_defensive = 0.06
-	}
-	
-	no_lamellar_armor_crafter_4 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 2 } }
-		gold_cost = 170
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_3
-		
-		light_infantry_defensive = 0.07
-		heavy_infantry_defensive = 0.07
-		pikemen_defensive = 0.07
-		light_cavalry_defensive = 0.07
-		knights_defensive = 0.07
-		archers_defensive = 0.07
-		horse_archers_defensive = 0.07
-		camel_cavalry_defensive = 0.07
-		war_elephants_defensive = 0.07
-	}
-	
-	no_lamellar_armor_crafter_5 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 3 } }
-		gold_cost = 200
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_4
-		
-		light_infantry_defensive = 0.08
-		heavy_infantry_defensive = 0.08
-		pikemen_defensive = 0.08
-		light_cavalry_defensive = 0.08
-		knights_defensive = 0.08
-		archers_defensive = 0.08
-		horse_archers_defensive = 0.08
-		camel_cavalry_defensive = 0.08
-		war_elephants_defensive = 0.08
-	}
-	
-	no_lamellar_armor_crafter_6 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 4 } }
-		gold_cost = 250
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_5
-		
-		light_infantry_defensive = 0.09
-		heavy_infantry_defensive = 0.09
-		pikemen_defensive = 0.09
-		light_cavalry_defensive = 0.09
-		knights_defensive = 0.09
-		archers_defensive = 0.09
-		horse_archers_defensive = 0.09
-		camel_cavalry_defensive = 0.09
-		war_elephants_defensive = 0.09
-	}
-	
-	no_lamellar_armor_crafter_7 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 5 } }
-		gold_cost = 320
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_6
-		
-		light_infantry_defensive = 0.1
-		heavy_infantry_defensive = 0.1
-		pikemen_defensive = 0.1
-		light_cavalry_defensive = 0.1
-		knights_defensive = 0.1
-		archers_defensive = 0.1
-		horse_archers_defensive = 0.1
-		camel_cavalry_defensive = 0.1
-		war_elephants_defensive = 0.1
-	}
-	
-	no_lamellar_armor_crafter_8 = {
-		desc = no_lamellar_armor_crafter_desc
-		trigger = { FROM = { TECH_CASTLE_CONSTRUCTION = 6 } }
-		gold_cost = 400
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_lamellar_armor_crafter_7
-		
-		light_infantry_defensive = 0.1
-		heavy_infantry_defensive = 0.1
-		pikemen_defensive = 0.1
-		light_cavalry_defensive = 0.1
-		knights_defensive = 0.1
-		archers_defensive = 0.1
-		horse_archers_defensive = 0.1
-		camel_cavalry_defensive = 0.1
-		war_elephants_defensive = 0.1
-	}
+	################### LAMELLAR ARMOR CRAFTER (viré) ###################
+
 	
 	################### MINORITY SHRINE ###################
 	no_minority_shrine_1 = {
@@ -2303,7 +2113,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		culture_techpoints = 0.04
+		culture_techpoints = 0.02
 	}
 	
 	no_minority_shrine_2 = {
@@ -2316,7 +2126,7 @@ nomad = {
 		
 		upgrades_from = no_minority_shrine_1
 		
-		culture_techpoints = 0.04
+		culture_techpoints = 0.03
 	}
 	
 	no_minority_shrine_3 = {
@@ -2515,9 +2325,9 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 		
-		global_trade_route_wealth = 2
+		global_trade_route_wealth = 1
 		global_trade_route_value = 0.5
-		global_tradevalue = 5
+		global_tradevalue = 4
 	}
 	
 	no_minter_2 = {
@@ -2536,9 +2346,9 @@ nomad = {
 		
 		upgrades_from = no_minter_1
 		
-		global_trade_route_wealth = 3
+		global_trade_route_wealth = 2
 		global_trade_route_value = 0.5
-		global_tradevalue = 6
+		global_tradevalue = 5
 	}
 	
 	no_minter_3 = {
@@ -2667,414 +2477,12 @@ nomad = {
 		global_tradevalue = 30
 	}
 	
-	################### CAMP FORTIFICATIONS ###################
-	no_camp_fortifications_1 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 } }
-		gold_cost = 40
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		fort_level = 0.3
-		garrison_size = 0.6
-	}
+	################### CAMP FORTIFICATIONS (viré dans rirsei) ###################
+
 	
-	no_camp_fortifications_2 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 } }
-		gold_cost = 60
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camp_fortifications_1
-		
-		fort_level = 0.3
-		garrison_size = 0.6
-		
-		convert_to_tribal = tb_hillfort_1
-	}
+	################### CAMEL_BREEDER (viré aussi) ###################
 	
-	no_camp_fortifications_3 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 } }
-		gold_cost = 90
-		build_time = 475
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camp_fortifications_2
-		
-		fort_level = 0.4
-		garrison_size = 0.8
-	}
 	
-	no_camp_fortifications_4 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 1 } }
-		gold_cost = 120
-		build_time = 475
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
-		
-		upgrades_from = no_camp_fortifications_3
-		
-		fort_level = 0.5
-		garrison_size = 0.8
-		
-		convert_to_tribal = tb_hillfort_2
-	}
+	################### ELEPHANT CAMP (idem sequitur) ###################
 	
-	no_camp_fortifications_5 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 } }
-		gold_cost = 150
-		build_time = 730
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
-		
-		upgrades_from = no_camp_fortifications_4
-		
-		fort_level = 0.5
-		garrison_size = 1.3
-	}
-	
-	no_camp_fortifications_6 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 3 } }
-		gold_cost = 200
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
-		
-		upgrades_from = no_camp_fortifications_5
-		
-		fort_level = 0.5
-		garrison_size = 1.3
-		
-		convert_to_tribal = tb_hillfort_3
-	}
-	
-	no_camp_fortifications_7 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 4 } }
-		gold_cost = 300
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
-		
-		upgrades_from = no_camp_fortifications_6
-		
-		fort_level = 0.8
-		garrison_size = 1.8
-	}
-	
-	no_camp_fortifications_8 = {
-		desc = no_camp_fortifications_desc
-		trigger = { FROM = { TECH_FORTIFICATIONS_CONSTRUCTION = 5 } }
-		gold_cost = 400
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 2
-		
-		upgrades_from = no_camp_fortifications_7
-		
-		fort_level = 1.2
-		garrison_size = 1.8
-		
-		convert_to_tribal = tb_hillfort_4
-	}
-	
-	################### CAMEL_BREEDER ###################
-	no_camel_breeder_1 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			location = { terrain = desert }
-			FROM = { TECH_CASTLE_CONSTRUCTION = 0 }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 60
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_2 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			location = { terrain = desert }
-			FROM = { TECH_CASTLE_CONSTRUCTION = 1 }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 90
-		build_time = 485
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_1
-		
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_3 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 1 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 120
-		build_time = 605
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_2
-		
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_4 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 2 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 150
-		build_time = 730
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_3
-		
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_5 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 3 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 190
-		build_time = 803
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_4
-		
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_6 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 4 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 230
-		build_time = 876
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_5
-		
-		camel_cavalry_offensive = 0.1
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_7 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 5 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 280
-		build_time = 949
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_6
-		
-		camel_cavalry_offensive = 0.1
-		camel_cavalry_defensive = 0.1
-	}
-	
-	no_camel_breeder_8 = {
-		desc = no_camel_breeder_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 6 }
-			location = { terrain = desert }
-		}
-		is_active_trigger = {
-			location = { terrain = desert }
-		}
-		gold_cost = 350
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_camel_breeder_7
-		
-		camel_cavalry_offensive = 0.1
-		camel_cavalry_defensive = 0.1
-	}
-	
-	################### ELEPHANT CAMP ###################
-	no_elephant_camp_1 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 0 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 60
-		build_time = 365
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		war_elephants_defensive = 0.1
-	}
-	
-	no_elephant_camp_2 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 1 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 90
-		build_time = 485
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_1
-		
-		war_elephants_defensive = 0.1
-	}
-	
-	no_elephant_camp_3 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 1 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 120
-		build_time = 605
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_2
-		
-		war_elephants_defensive = 0.1
-	}
-	
-	no_elephant_camp_4 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 2 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 150
-		build_time = 730
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_3
-		
-		war_elephants_defensive = 0.1
-	}
-	
-	no_elephant_camp_5 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 3 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 190
-		build_time = 803
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_4
-		
-		war_elephants_defensive = 0.1
-	}
-	
-	no_elephant_camp_6 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 4 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 230
-		build_time = 876
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_5
-		
-		war_elephants_defensive = 0.1
-		war_elephants_offensive = 0.1
-	}
-	
-	no_elephant_camp_7 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 5 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 280
-		build_time = 949
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_6
-		
-		war_elephants_defensive = 0.1
-		war_elephants_offensive = 0.1
-	}
-	
-	no_elephant_camp_8 = {
-		desc = no_elephant_camp_desc
-		trigger = { 
-			FROM = { TECH_CASTLE_CONSTRUCTION = 6 }
-			location = { terrain = jungle }
-		}
-		is_active_trigger = { location = { terrain = jungle } }
-		gold_cost = 350
-		build_time = 1095
-		ai_creation_factor = 97
-		extra_tech_building_start = 1
-		
-		upgrades_from = no_elephant_camp_7
-		
-		war_elephants_defensive = 0.1
-		war_elephants_offensive = 0.1
-	}
 }
