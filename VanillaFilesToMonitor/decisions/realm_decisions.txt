@@ -476,6 +476,7 @@ decisions = {
 		is_high_prio = yes
 		
 		potential = {
+			is_nomadic = no
 			is_playable = yes
 			has_dlc = "Legacy of Rome"
 			has_landed_title = e_byzantium
@@ -823,6 +824,7 @@ decisions = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
 			religion_group = zoroastrian_group
+			NOT ={ religion = manichean }
 			NOT = { has_global_flag = saoshyant_appears }
 		}
 		allow = {
@@ -945,7 +947,7 @@ decisions = {
 			is_playable = yes
 			has_landed_title = d_castilla
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_castille = {
 				has_holder = no
 			}
@@ -1013,7 +1015,7 @@ decisions = {
 			is_playable = yes
 			has_landed_title = d_porto
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_portugal = {
 				has_holder = no
 			}
@@ -1080,7 +1082,7 @@ decisions = {
 			is_playable = yes
 			has_landed_title = d_aragon
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_aragon = {
 				has_holder = no
 			}
@@ -1364,6 +1366,7 @@ decisions = {
 			}	
 			NOR = {
 				religion_group = jewish_group
+				religion = manichean
 				has_character_modifier = expelled_jewish
 				is_nomadic = yes
 				secret_religion = jewish
@@ -1485,7 +1488,7 @@ decisions = {
 			has_dlc = "Rajas of India"
 			is_playable = yes
 			is_feudal = yes
-			religion_group = indian_group	
+			has_dharmic_religion_trigger = yes
 			primary_title = {
 				higher_tier_than = DUKE
 			}
@@ -2172,8 +2175,8 @@ decisions = {
 								any_title_under = {
 									limit = {
 										tier = KING
-										empire = {
-											has_holder = no
+										NOT = {
+											empire = { has_holder = yes }
 										}
 									}
 									de_jure_liege = PREVPREV
@@ -2183,8 +2186,8 @@ decisions = {
 										tier = DUKE
 										location = {
 											kingdom = {
-												empire = {
-													has_holder = no
+												NOT = {
+													empire = { has_holder = yes }
 												}
 												
 												NOT = { de_jure_liege_or_above = PREVPREVPREVPREV }
@@ -2309,6 +2312,7 @@ decisions = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						is_reformed_religion = yes
+						religion = bon
 					}
 				}
 			}
@@ -2333,6 +2337,14 @@ decisions = {
 			if = {
 				limit = {
 					NOT = { religion_group = muslim }
+					NAND = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
 				}
 				
 				if = {
@@ -2362,6 +2374,28 @@ decisions = {
 					}
 				}
 				set_government_type = muslim_government
+			}
+			
+			if = {
+				limit = {
+					culture_group = tibetan_group
+					OR = {
+						religion = bon
+						religion = buddhist
+					}
+					higher_tier_than = BARON
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = theocratic_feudal_government
 			}
 			
 			if = {
@@ -2448,6 +2482,7 @@ decisions = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						is_reformed_religion = yes
+						religion = bon
 					}
 				}
 			}
@@ -2463,19 +2498,36 @@ decisions = {
 								OR = {
 									NOT = { religion_group = pagan_group }
 									is_reformed_religion = yes
+									religion = bon
 								}
 							}
 						}
 					}
 				}
 			}
-			capital_holding = {
-				OR = {
-					AND = {
-						holding_type = tribal
-						has_building = tb_hillfort_4
+			OR = {
+				capital_holding = {
+					OR = {
+						AND = {
+							holding_type = tribal
+							has_building = tb_hillfort_4
+						}
+						holding_type = castle
 					}
-					holding_type = castle
+				}
+				AND = {
+					NOT = { tier = BARON }
+					capital_scope = {
+						any_province_holding = {
+							holding_type = castle
+							holder_scope = {
+								OR = {
+									character = ROOT
+									is_liege_or_above = ROOT
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -2486,6 +2538,14 @@ decisions = {
 			if = {
 				limit = {
 					NOT = { religion_group = muslim }
+					NAND = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
 				}
 				
 				if = {
@@ -2517,11 +2577,80 @@ decisions = {
 				set_government_type = muslim_government
 			}
 			
+			if = {
+				limit = {
+					culture_group = tibetan_group
+					OR = {
+						religion = bon
+						religion = buddhist
+					}
+					higher_tier_than = BARON
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = theocratic_feudal_government
+			}
+			
 			hidden_tooltip = {
+				if = {
+					limit = {
+						capital_holding = {
+							holding_type = tribal
+							ROOT = { NOT = { tier = BARON } }
+						}
+						capital_scope = {
+							any_province_holding = {
+								holding_type = castle
+								holder_scope = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
+									}
+								}
+							}
+						}
+					}
+					
+					capital_scope = {
+						random_province_holding = {
+							limit = {
+								holding_type = castle
+								holder_scope = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
+									}
+								}
+							}
+							if = {
+								limit = {
+									NOT = { holder = ROOT }
+								}
+								usurp_title = ROOT
+							}
+							make_capital_holding = yes
+							ROOT = { set_character_flag = feudalize_handled_capital }
+						}
+					}
+				}
+				
 				any_demesne_title = {
 					limit = {
 						tier = baron
 						holding_type = tribal
+						location = {
+							capital_holding = {
+								NOT = { holding_type = castle }
+							}
+						}
 					}
 					convert_to = CASTLE
 					refill_holding_levy = yes
@@ -2633,6 +2762,7 @@ decisions = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						is_reformed_religion = yes
+						religion = bon
 					}
 				}
 			}

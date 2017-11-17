@@ -188,7 +188,7 @@ character_event = {
 					attrition = 1.0
 				}
 				spawn_fleet = {
-					province = closest
+					province = closest_to_capital
 					owner = ROOT
 					match_character = ROOT
 					match_mult = 0.1
@@ -315,7 +315,7 @@ character_event = {
 		}
 		
 		spawn_fleet = {
-			province = closest
+			province = closest_to_capital
 			owner = ROOT
 			match_character = ROOT
 			match_mult = 0.15
@@ -420,7 +420,7 @@ character_event = {
 					attrition = 1.0
 				}
 				spawn_fleet = {
-					province = closest
+					province = closest_to_capital
 					owner = ROOT
 					match_character = ROOT
 					match_mult = 0.075
@@ -850,7 +850,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -873,7 +873,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -896,7 +896,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -919,7 +919,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -942,7 +942,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -965,7 +965,7 @@ narrative_event = {
 					OR = {
 						title = k_taurica
 						title = k_ruthenia
-						title = k_cuman
+						title = k_khazaria
 						title = k_alania
 					}
 				}
@@ -990,7 +990,7 @@ narrative_event = {
 						OR = {
 							title = k_taurica
 							title = k_ruthenia
-							title = k_cuman
+							title = k_khazaria
 							title = k_alania
 						}
 					}
@@ -1005,6 +1005,19 @@ narrative_event = {
 						character = ROOT
 					}
 				}
+			}
+			if = {
+				limit = { 
+					duchy = {
+						holder_scope = {
+							OR = {
+								ai = yes
+								character = ROOT
+							}
+						}
+					}
+				}
+				duchy = { destroy_landed_title = THIS }
 			}
 			county = {
 				create_character = {
@@ -1339,16 +1352,21 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTC62951 # Blinding & Castration
-		trigger = {
-			NOT = { lifestyle_traits = 1 }
-			NOT = { has_dlc = "Way of Life" }
-		}
 		ai_chance = {
 			factor = 0
 		}
 		
 		prestige = 500
-		add_trait = impaler
+		
+		if = {
+			limit = {
+				OR = {
+					NOT = { lifestyle_traits = 1 }
+					NOT = { has_dlc = "Way of Life" }
+				}
+			}
+			add_trait = impaler
+		}
 		
 		tooltip = {
 			FROM = {

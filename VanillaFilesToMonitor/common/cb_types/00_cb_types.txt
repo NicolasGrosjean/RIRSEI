@@ -18,6 +18,14 @@
 # can_use_gui: If otherwise valid, the CB is listed in the Diplo View, but you can't declare war unless 'can_use_gui' is also valid (also shows a trigger tooltip.)
 #
 
+# max_defender_occupation_score/max_attacker_occupation_score - Defines how much war score it is possible for the defender/attacker to gain by occupying provinces. Defaults to 100. Make sure the CB has ticking warscore if using this or you could end up with never-ending wars
+# max_defender_battle_score/max_attacker_battle_score - Defines how much score it is possible for the defender/attacker to gain by fighting battles. Defaults to the defines MAX_WARSCORE_FROM_BATTLE_DEFENDERS/MAX_WARSCORE_FROM_BATTLE_ATTACKERS
+# hostages_block_cb	- Defaults to "yes". If set to "no", the defender having close relatives of yours imprisoned does not prevent you from declaring war
+# attacker_unoccupied_warscore = yes - If attacker completely unoccupied, attacker will get ticking warscore. Only works if no title is targetted
+# defender_unoccupied_warscore = yes - If defender completely unoccupied, defender will get ticking warscore. Only works if no title is targetted
+# capturing_attacker_is_complete_victory - Whether capturing the attacker as a prisoner is considered automatic victory for the defender. Defaults to yes. If set to no, capture instead gives CAPTURED_HEIR_WAR_SCORE warscore
+# capturing_defender_is_complete_victory - Whether capturing the defender as a prisoner is considered automatic victory for the attacker. Defaults to yes. If set to no, capture instead gives CAPTURED_HEIR_WAR_SCORE warscore
+
 # 0
 claim = {
 	name = CB_NAME_CLAIM
@@ -28,7 +36,6 @@ claim = {
 	can_ask_to_join_war = no
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	press_claim = yes
 
@@ -91,6 +98,16 @@ claim = {
 		ROOT = { has_claim = PREV }
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 	
 		hidden_tooltip = {
@@ -119,8 +136,7 @@ claim = {
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -141,8 +157,7 @@ claim = {
 				clr_character_flag = claimant_adventurer
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -165,13 +180,40 @@ claim = {
 			}
 			ROOT = { imprison = FROM }
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 150
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 150 }
+		}
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						has_landed_title = e_china_west_governor
+					}
+					log = "China War Logging: China lost a claim war against [From.GetBestName]"
+				}
+				if = { #Makes China have a chance of leaving Expanionist policy...
+					limit = {
+						has_landed_title = e_china_west_governor
+						offmap_china = {
+							has_policy = china_expansionist
+						}
+					}
+					random = {
+						chance = 50
+						offmap_china = {
+							set_policy = china_open
+							log = "-------------------------------------"
+							log = "China Policy Logging:"
+							log = "Chinas new Policy is now OPEN"
+							log = "-------------------------------------"
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -244,7 +286,6 @@ other_claim = {
 	press_claim = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.5
 
@@ -307,6 +348,22 @@ other_claim = {
 				}
 			}
 		}
+		
+		OR = {
+			multiplayer = no
+			FROMFROM = { ai = yes }
+			has_game_rule = {
+				name = multiplayer_third_party_claims
+				value = on
+			}
+			AND = {
+				has_game_rule = {
+					name = multiplayer_third_party_claims
+					value = limited
+				}
+				lower_tier_than = KING
+			}
+		}
 	}
 
 	is_valid_title = {
@@ -321,6 +378,16 @@ other_claim = {
 		ROOT = { has_claim = PREV }
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		hidden_tooltip = {
 			ROOT = {
@@ -331,8 +398,7 @@ other_claim = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -542,8 +608,7 @@ other_claim = {
 			}
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -562,8 +627,7 @@ other_claim = {
 			prestige = -150
 			imprison = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 150
 		}
 		any_defender = {
@@ -609,7 +673,6 @@ claim_on_liege = {
 	major_revolt = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.85
 
@@ -686,9 +749,18 @@ claim_on_liege = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -794,8 +866,7 @@ claim_on_liege = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -818,8 +889,7 @@ claim_on_liege = {
 			prestige = -150
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -881,7 +951,6 @@ claim_on_liege_plot = {
 	can_ask_to_join_war = no
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.85
 
@@ -931,9 +1000,18 @@ claim_on_liege_plot = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -1002,8 +1080,7 @@ claim_on_liege_plot = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -1025,8 +1102,7 @@ claim_on_liege_plot = {
 			prestige = -200
 			imprison = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -1086,7 +1162,6 @@ claim_on_vassal_plot = {
 	can_attack_vassals = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.85
 
@@ -1110,6 +1185,16 @@ claim_on_vassal_plot = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			prestige = 50
@@ -1126,8 +1211,7 @@ claim_on_vassal_plot = {
 			prestige = -100
 			cancel_plot = plot_gain_vassal_title
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -1148,8 +1232,7 @@ claim_on_vassal_plot = {
 			prestige = -200
 			cancel_plot = plot_gain_vassal_title
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -1208,7 +1291,6 @@ other_claim_on_liege = {
 	major_revolt = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.5
 
@@ -1298,14 +1380,22 @@ other_claim_on_liege = {
 		}
 	}
 
-	on_success = {
-		any_attacker = {
-			limit = { 
-				OR = {
-					character = ROOT 
-					character = PREV
-				}
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
+		}
+	}
+
+	on_success = {
+		ROOT = {
+			participation_scaled_prestige = 100
+			hidden_tooltip = {  disband_event_forces = faction_revolters }
+		}
+		PREV = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {  disband_event_forces = faction_revolters }
 		}
@@ -1498,8 +1588,7 @@ other_claim_on_liege = {
 		#	}
 		#}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -1532,8 +1621,7 @@ other_claim_on_liege = {
 		#	}
 		#}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -1580,7 +1668,6 @@ claim_all = {
 	is_claim_all = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -1617,6 +1704,13 @@ claim_all = {
 				press_claim = ROOT
 			}
 		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	on_success = {
@@ -1640,6 +1734,23 @@ claim_all = {
 					hidden_tooltip = { conquest_culture = ROOT }
 				}
 			}
+			if = { #China with no land calculates what to do with nomad provinces
+				limit = { 
+					is_offmap_governor = yes
+					offmap_power = { is_offmap_tag = offmap_china }
+					offmap_china = { has_offmap_tmp_flag = WP_is_not_on_map }
+					NOT = { wealth = 2500 } #unless already rich from tributes
+				}
+				set_variable = { which = "WP_nomad_provinces" value = 0 }
+				any_realm_province = {
+					limit = { 
+						has_province_modifier = nomad_agitation
+						NOT = { has_settlement_construction = yes }
+					}
+					province_event = { id = JD.60100 } #increase counter for each nomad province
+				}
+				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
+			}
 		}
 		hidden_tooltip = {
 			ROOT = {
@@ -1656,8 +1767,7 @@ claim_all = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -1670,8 +1780,7 @@ claim_all = {
 		ROOT = {
 			prestige = -150
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 75
 		}
 		any_defender = {
@@ -1699,12 +1808,30 @@ claim_all = {
 				}
 				remove_claim = ROOT
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
-			participation_scaled_prestige = 200
+			hidden_effect = {
+				if = { #Makes China have a chance of leaving Expanionist policy...
+					limit = {
+						has_landed_title = e_china_west_governor
+						offmap_china = {
+							has_policy = china_expansionist
+						}
+					}
+					random = {
+						chance = 50
+						offmap_china = {
+							set_policy = china_open
+							log = "-------------------------------------"
+							log = "China Policy Logging:"
+							log = "Chinas new Policy is now OPEN"
+							log = "-------------------------------------"
+						}
+					}
+					log = "China War Logging: China lost a claim all war against [From.GetBestName]"
+				}
+			}
 		}
 		FROM = {
+			participation_scaled_prestige = 200
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -1721,6 +1848,7 @@ claim_all = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 200 }
 		}
+
 	}
 
 	attacker_ai_victory_worth = {
@@ -1790,6 +1918,16 @@ change_seniority_succession_law = {
 			is_primary_holder_title = yes
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
 		FROM = {
@@ -1825,8 +1963,7 @@ change_seniority_succession_law = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -1849,8 +1986,7 @@ change_seniority_succession_law = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -1876,8 +2012,7 @@ change_seniority_succession_law = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -1969,6 +2104,15 @@ change_primogeniture_succession_law = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
 		FROM = {
@@ -2005,8 +2149,7 @@ change_primogeniture_succession_law = {
 			}
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -2029,8 +2172,7 @@ change_primogeniture_succession_law = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -2057,8 +2199,7 @@ change_primogeniture_succession_law = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -2202,8 +2343,7 @@ change_feudal_elective_succession_law = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -2226,8 +2366,7 @@ change_feudal_elective_succession_law = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -2253,8 +2392,7 @@ change_feudal_elective_succession_law = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -2305,7 +2443,6 @@ invasion = {
 	can_ask_to_join_war = no
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -2335,12 +2472,21 @@ invasion = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			prestige = 200
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 200
 		}
 		any_attacker = {
@@ -2349,9 +2495,14 @@ invasion = {
 		}
 		
 		hidden_tooltip = {
+			FROM = {
+				any_vassal = {
+					set_character_flag = preserve_vassal_structure_@ROOT
+				}
+			}
 			ROOT = {
 				occupy_minors_of_occupied_settlements = FROM
-				gain_all_occupied_titles = FROM			
+				gain_all_occupied_titles = FROM
 				
 				if = {
 					limit = {
@@ -2403,6 +2554,24 @@ invasion = {
 					}
 					FROM = { imprison = ROOT }
 				}
+				if = {
+					limit = {
+						any_independent_ruler = {
+							has_character_flag = preserve_vassal_structure_@ROOT
+						}
+					}
+					any_independent_ruler = {
+						limit = {
+							has_character_flag = preserve_vassal_structure_@ROOT
+						}
+						set_defacto_liege = ROOT
+					}
+				}
+				ROOT = {
+					any_vassal = {
+						clr_character_flag = preserve_vassal_structure_@ROOT
+					}
+				}
 			}
 		}
 		
@@ -2428,6 +2597,103 @@ invasion = {
 							who = ROOT
 						}
 					}
+					if = {
+						limit = { # Help AI William by usurping extra land
+							ai = yes
+						}
+						d_bedford = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+						d_canterbury = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+						d_cornwall = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+						d_somerset = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+						d_gloucester = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+						d_norfolk = {
+							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							any_de_jure_vassal_title = {
+								limit = {
+									holder_scope = {
+										culture = saxon
+										ai = yes # But not from players
+										same_realm = ROOT
+									}
+								}
+								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+							}
+						}
+					}
+					if = {
+						limit = {
+							c_middlesex = {
+								holder_scope = {
+									character = ROOT
+								}
+							}
+						}
+						c_middlesex = {
+							capital_holding = {
+								ROOT = { capital = PREV }
+							}
+						}
+					}
 				}
 			}
 		}
@@ -2440,8 +2706,7 @@ invasion = {
 		FROM = {
 			prestige = 100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -2460,12 +2725,7 @@ invasion = {
 		}
 		FROM = {
 			prestige = 200
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -2530,7 +2790,6 @@ tribal_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use_gui = {
 		ROOT = {
@@ -2540,10 +2799,27 @@ tribal_invasion = {
 	
 	on_add = {
 		ROOT = { prestige = -500 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use_title = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			is_nomadic = no
 			OR = {
 				AND = {
@@ -2604,11 +2880,29 @@ tribal_invasion = {
 		ROOT = {
 			NOT = { same_realm = FROM }
 		}
+		
+		OR = { # This ensures that the AI doesn't declare this type of war against someone who only holds a few counties within the targeted title...
+			ROOT = {
+				ai = no
+			}
+			ROOT = {
+				OR = {
+					has_landed_title = e_mongol_empire
+					has_landed_title = e_mexikha
+				}
+			}
+			FROM = {
+				num_of_realm_counties = {
+					value = 3
+					title = PREV
+				}
+			}
+		}
 	}
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -2617,9 +2911,6 @@ tribal_invasion = {
 	on_success = {
 		ROOT = {
 			prestige = 200
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 200
 		}
 		any_attacker = {
@@ -2706,9 +2997,6 @@ tribal_invasion = {
 					}
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -2756,9 +3044,6 @@ tribal_invasion = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -2853,6 +3138,17 @@ tribal_invasion = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -2864,10 +3160,10 @@ crusade = {
 	is_permanent = yes
 	is_holy_war = yes
 	battle_warscore_mult = 0.5
+	max_defender_occupation_score = 85
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use_gui = {
 		ROOT = {
@@ -2964,8 +3260,18 @@ crusade = {
 
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -3007,6 +3313,10 @@ crusade = {
 			
 			# Claimants must be of ROOT's religion, and are ranked by strength of claim and actual contribution to the war
 			best_crusade_claimant = {
+				if = {
+					limit = { is_ruler = no }
+					set_character_flag = set_feudal_gov
+				}
 				gain_settlements_under_title = {
 					title = PREV
 					enemy = FROM
@@ -3041,6 +3351,11 @@ crusade = {
 					}
 					usurp_title = { target = PREV type = holy_war }
 				}
+				if = {
+					limit = { has_character_flag = set_feudal_gov }
+					set_government_type = feudal_government
+				}
+				clr_character_flag = set_feudal_gov
 			}
 		}
 		
@@ -3131,17 +3446,6 @@ crusade = {
 		}
 		
 		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_prestige = 500
-			participation_scaled_piety = 1000
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -100
-			}
-		}
-		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
 				participation_scaled_prestige = 500
@@ -3163,6 +3467,14 @@ crusade = {
 		}
 		
 		ROOT = {
+			participation_scaled_prestige = 500
+			participation_scaled_piety = 1000
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -100
+			}
 			religion_authority = {
 				modifier = won_crusade
 				years = 20
@@ -3184,17 +3496,6 @@ crusade = {
 		}
 		
 		any_defender = {
-			limit = { character = FROM }
-			participation_scaled_piety = 200
-			participation_scaled_prestige = 100
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -50
-			}
-		}
-		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 200
@@ -3209,6 +3510,14 @@ crusade = {
 		}
 		
 		FROM = {
+			participation_scaled_piety = 200
+			participation_scaled_prestige = 100
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -50
+			}
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -3263,9 +3572,6 @@ crusade = {
 				modifier = won_crusade
 				years = 20
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_piety = 300
 			participation_scaled_prestige = 150
 			if = {
@@ -3274,8 +3580,6 @@ crusade = {
 				}
 				participation_scaled_decadence = -100
 			}
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -3357,7 +3661,7 @@ crusade = {
 	}
 }
 
-# Holy War CB
+# Regular Holy War CB
 religious = {
 	name = CB_NAME_RELIGIOUS
 	war_name = WAR_NAME_RELIGIOUS
@@ -3368,17 +3672,43 @@ religious = {
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
+	
+	can_use_gui = {
+		ROOT = {
+			OR = {
+				NOT = { religion = buddhist }
+				piety = 250
+			}
+		}
+	}
+	
+	on_add = {
+		ROOT = {
+			if = {
+				limit = {
+					religion = buddhist
+				}
+				piety = -250
+			}
+		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 
 	can_use = {
 		ROOT = {
 			is_nomadic = no
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
-			NOT = { religion = buddhist }
+			NOT = { religion = taoist }
 			OR = {
 				NOT = { religion = hindu }
-				FROM = { NOT = { religion_group = indian_group } }
+				FROM = { NOT = { has_dharmic_religion_trigger = yes } }
 				AND = {
 					religion_group = FROM
 					FROM = {
@@ -3394,6 +3724,10 @@ religious = {
 				NOT = { religion_group = FROM }
 				is_heresy_of = FROM
 				is_parent_religion = FROM
+				AND = {
+					has_dharmic_religion_trigger = yes
+					FROM = { religion = taoist }
+				}
 				AND = {
 					religion_group = muslim
 					NOT = { religion = FROM }
@@ -3524,12 +3858,15 @@ religious = {
 		ROOT = {
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
-			NOT = { religion = buddhist }
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
 				is_heresy_of = FROM
 				is_parent_religion = FROM
+				AND = {
+					has_dharmic_religion_trigger = yes
+					FROM = { religion = taoist }
+				}
 				AND = {
 					religion_group = FROM
 					FROM = {
@@ -3570,17 +3907,6 @@ religious = {
 	
 	on_success = {
 		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_piety = 100
-			participation_scaled_prestige = 50
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
-		}
-		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 100
@@ -3591,13 +3917,37 @@ religious = {
 					}
 					participation_scaled_decadence = -10
 				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
+					}
+				}
 			}
 		}
 		
 		ROOT = { 
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 50
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -10
+			}
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
 			}
 		}
 		FROM = {
@@ -3618,16 +3968,60 @@ religious = {
 	}
 
 	on_success_title = {
-		custom_tooltip = {
-			text = religious_cb_succ_tip
-			hidden_tooltip = {
+		if = { # Standard Holy War behaviour for Non-Muslims and Muslims fighting other Muslims
+			limit = {
+				OR = {
+					ROOT = {
+						NOT = {
+							religion_group = muslim
+						}
+					}
+					AND = {
+						ROOT = {
+							religion_group = muslim
+						}
+						FROM = {
+							religion_group = muslim
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = religious_cb_succ_tip
+				hidden_tooltip = {
+					ROOT = {
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							same_religion = yes # Only vassalize rulers of my religion
+							is_religious = yes
+							type = holy_war
+						}
+					}
+				}
+			}
+		}
+		if = { # Muslims fighting Non-Muslims preserve vassals
+			limit = {
 				ROOT = {
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-						same_religion = yes # Only vassalize rulers of my religion
-						is_religious = yes
-						type = holy_war
+					religion_group = muslim
+				}
+				FROM = {
+					NOT = {
+						religion_group = muslim
+					}
+				}
+			}
+			custom_tooltip = {
+				text = religious_cb_succ_muslim_tip
+				hidden_tooltip = {
+					ROOT = {
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							is_religious = yes
+							type = holy_war
+						}
 					}
 				}
 			}
@@ -3650,8 +4044,7 @@ religious = {
 			piety = -75
 			prestige = -150
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
 			if = {
@@ -3671,6 +4064,14 @@ religious = {
 						uses_decadence = yes
 					}
 					participation_scaled_decadence = -10
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
+					}
 				}
 			}
 		}
@@ -3700,7 +4101,15 @@ religious = {
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
-			}		
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 		}
 	}
 
@@ -3794,9 +4203,10 @@ excommunicated_ruler = {
 	
 	is_permanent = yes
 	can_ask_to_join_war = no
+	
+	defender_unoccupied_warscore = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		FROM = {
@@ -3818,6 +4228,16 @@ excommunicated_ruler = {
 	is_valid = {
 		FROM = {
 			excommunicated_for = ROOT
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -4045,6 +4465,16 @@ bid_for_independence = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		if = {
 			limit = {
@@ -4096,8 +4526,7 @@ bid_for_independence = {
 			}
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -4141,9 +4570,6 @@ bid_for_independence = {
 	on_fail = {
 		ROOT = {
 			prestige = -50
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = -50
 		}
 		any_attacker = {
@@ -4156,9 +4582,6 @@ bid_for_independence = {
 		ROOT = {
 			prestige = -100
 			prisoner = FROM
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = -100
 		}
 		any_attacker = {
@@ -4272,6 +4695,16 @@ depose_liege = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		FROM = {
 			prestige = -500
@@ -4307,8 +4740,7 @@ depose_liege = {
 
 			abdicate_to_most_liked_by = ROOT
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 250
 		}
 		any_attacker = {
@@ -4328,8 +4760,7 @@ depose_liege = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -4399,6 +4830,16 @@ overthrow_ruler = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			primary_title = {
@@ -4463,8 +4904,7 @@ overthrow_ruler = {
 			}
 			abdicate = yes
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 250
 		}
 		any_attacker = {
@@ -4490,8 +4930,7 @@ overthrow_ruler = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -4577,6 +5016,16 @@ overthrow_ruler_no_calls = {
 		}
 		FROM = {
 			higher_tier_than = ROOT
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -4716,6 +5165,13 @@ change_gavelkind_succession_law = {
 			is_primary_holder_title = yes
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = { detract_grace_super_huge_effect = yes }
+		}
+	}
 	
 	on_success = {
 		FROM = {
@@ -4753,8 +5209,7 @@ change_gavelkind_succession_law = {
 			}
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -4777,8 +5232,7 @@ change_gavelkind_succession_law = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -4804,8 +5258,7 @@ change_gavelkind_succession_law = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -4900,6 +5353,16 @@ lower_crown_authority_law = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			opinion = {
@@ -4907,9 +5370,6 @@ lower_crown_authority_law = {
 				who = FROM
 				months = 12
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -4949,9 +5409,9 @@ lower_crown_authority_law = {
 			prestige = -100
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
+			hidden_tooltip = { disband_event_forces = faction_loyalists }
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
@@ -4968,7 +5428,6 @@ lower_crown_authority_law = {
 				}
 			}
 		}
-		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -4977,9 +5436,9 @@ lower_crown_authority_law = {
 			prisoner = FROM
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
+			hidden_tooltip = { disband_event_forces = faction_loyalists }
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
@@ -4998,7 +5457,6 @@ lower_crown_authority_law = {
 				}
 			}
 		}
-		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -5074,6 +5532,16 @@ lower_tribal_organization_law = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			opinion = {
@@ -5081,9 +5549,6 @@ lower_tribal_organization_law = {
 				who = FROM
 				months = 12
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -5123,9 +5588,9 @@ lower_tribal_organization_law = {
 			prestige = -100
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
+			hidden_tooltip = { disband_event_forces = faction_loyalists }
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
@@ -5142,7 +5607,6 @@ lower_tribal_organization_law = {
 				}
 			}
 		}
-		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -5151,9 +5615,9 @@ lower_tribal_organization_law = {
 			prisoner = FROM
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
+			hidden_tooltip = { disband_event_forces = faction_loyalists }
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
@@ -5172,7 +5636,6 @@ lower_tribal_organization_law = {
 				}
 			}
 		}
-		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -5192,7 +5655,6 @@ lower_tribal_organization_law = {
 	}
 }
 
-
 coastal_republic = {
 	name = CB_NAME_COASTAL_REPUBLIC
 	war_name = WAR_NAME_COASTAL_REPUBLIC
@@ -5205,7 +5667,6 @@ coastal_republic = {
 	allow_distant = yes # AI parameter
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -5268,6 +5729,16 @@ coastal_republic = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		if = {
 			limit = {
@@ -5297,8 +5768,7 @@ coastal_republic = {
 			}
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -5311,8 +5781,7 @@ coastal_republic = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -5329,8 +5798,7 @@ coastal_republic = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -5368,7 +5836,6 @@ coastal_county_republic = {
 	allow_distant = yes # AI parameter
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -5466,6 +5933,16 @@ coastal_county_republic = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		if = {
 			limit = {
@@ -5501,8 +5978,7 @@ coastal_county_republic = {
 			}
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -5515,8 +5991,7 @@ coastal_county_republic = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -5533,8 +6008,7 @@ coastal_county_republic = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -5594,8 +6068,24 @@ weaken_vassal_plot = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
+		ROOT = {
+			participation_scaled_prestige = 100
+		}
 		any_attacker = {
+			limit = {
+				NOT = { character = ROOT }
+			}
 			participation_scaled_prestige = 100
 		}
 		FROM = {
@@ -5657,8 +6147,7 @@ weaken_vassal_plot = {
 			prestige = -100
 			cancel_plot = plot_weaken_fellow_vassal
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -5680,8 +6169,7 @@ weaken_vassal_plot = {
 			imprison = FROM
 			cancel_plot = plot_weaken_fellow_vassal
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -5729,6 +6217,16 @@ decadence_invasion = {
 	can_use = {
 		ROOT = {
 			has_character_flag = decadence_invader
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -5783,9 +6281,6 @@ decadence_invasion = {
 			occupy_minors_of_occupied_settlements = FROM
 			gain_all_occupied_titles = { who = FROM type = revolt }
 			give_nickname = nick_the_conqueror
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 200
 			participation_scaled_piety = 100
 		}
@@ -5858,9 +6353,6 @@ decadence_invasion = {
 		}
 		FROM = {
 			prestige = 100
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -5934,7 +6426,6 @@ muslim_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use_gui = {
 		ROOT = {
@@ -5944,10 +6435,27 @@ muslim_invasion = {
 	
 	on_add = {
 		ROOT = { piety = -1000 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			religion_group = muslim
 			
 			# These use 'tribal_invasion' instead:
@@ -6016,7 +6524,7 @@ muslim_invasion = {
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -6025,12 +6533,15 @@ muslim_invasion = {
 	on_success = {
 		ROOT = {
 			prestige = 200
-		}
-		
-		any_attacker = {
-			limit = { character = ROOT }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 			participation_scaled_prestige = 200
-			
 			if = {
 				limit = {
 					uses_decadence = yes
@@ -6039,6 +6550,7 @@ muslim_invasion = {
 				participation_scaled_decadence = -20
 			}
 		}
+		
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
@@ -6049,6 +6561,14 @@ muslim_invasion = {
 						FROM = { NOT = { uses_decadence = yes } }
 					}
 					participation_scaled_decadence = -20
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
+					}
 				}
 			}
 		}
@@ -6118,9 +6638,6 @@ muslim_invasion = {
 					10 = { give_nickname = nick_the_avenger }
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -6149,6 +6666,14 @@ muslim_invasion = {
 		}
 		FROM = {
 			prestige = 200
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -6174,14 +6699,19 @@ muslim_invasion = {
 					10 = { give_nickname = nick_the_avenger }
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 200 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 		}
 	}
 
@@ -6258,6 +6788,16 @@ cb_faction_independence = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		if = {
 			limit = {
@@ -6294,8 +6834,7 @@ cb_faction_independence = {
 			}		
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -6355,9 +6894,6 @@ cb_faction_independence = {
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = -50
 		}
 		any_attacker = {
@@ -6387,10 +6923,6 @@ cb_faction_independence = {
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
 			}
-		}
-		
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = -100
 		}
 		
@@ -6455,7 +6987,6 @@ imperial_reconquest = {
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -6514,10 +7045,19 @@ imperial_reconquest = {
 			NOT = { same_realm = FROM }
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -6563,8 +7103,7 @@ imperial_reconquest = {
 			}
 			ROOT = { prestige = -200 }
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_piety = 100
 			participation_scaled_prestige = 200
 			if = {
@@ -6617,7 +7156,6 @@ embargo_cb = {
 	can_ask_to_join_war = no
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -6670,6 +7208,16 @@ embargo_cb = {
 						is_merchant_republic = yes
 					}
 				}
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -6816,11 +7364,11 @@ seize_trade_post = {
 #	check_all_titles = yes
 	check_all_trade_posts = yes
 	can_ask_to_join_war = no
-	ticking_war_score_multiplier = 5.0
+	att_ticking_war_score_multiplier = 5.0
+	def_ticking_war_score_multiplier = 5.0
 	allow_distant = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -6891,12 +7439,21 @@ seize_trade_post = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		
 		seize_trade_post = ROOT
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 50
 		}
 		any_attacker = {
@@ -6909,8 +7466,7 @@ seize_trade_post = {
 		ROOT = {
 			prestige = -50
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 25
 		}
 		any_defender = {
@@ -6927,8 +7483,7 @@ seize_trade_post = {
 				value = 2.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -6969,7 +7524,7 @@ seize_trade_post = {
 viking_invasion = {
 	name = CB_NAME_VIKING_INVASION
 	war_name = WAR_NAME_VIKING_INVASION
-	sprite = 8
+	sprite = 20
 	truce_days = 365
 	hostile_against_others = no # Vikings share in the spoils...
 	is_permanent = yes
@@ -6979,7 +7534,6 @@ viking_invasion = {
 	apply_short_occ_mod = no # Do not apply the 'recently_conquered' modifier to Holdings
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	can_use = {
 		ROOT = {
@@ -6995,8 +7549,18 @@ viking_invasion = {
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -7026,12 +7590,9 @@ viking_invasion = {
 					}
 				}
 			}
-		}
-		
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 300
 		}
+		
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 300 }
@@ -7089,9 +7650,6 @@ viking_invasion = {
 	on_fail = {
 		FROM = {
 			prestige = 200
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -7127,8 +7685,6 @@ viking_invasion = {
 		}
 		FROM = {
 			prestige = 300
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -7140,9 +7696,6 @@ viking_invasion = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 250
 		}
 		any_defender = {
@@ -7177,7 +7730,6 @@ pagan_subjugation = {
 	is_permanent = yes
 	can_ask_to_join_war = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use = {
 		ROOT = {
@@ -7226,6 +7778,7 @@ pagan_subjugation = {
 			in_revolt = no
 			religion_group = pagan_group
 			is_nomadic = no
+			NOT = { is_offmap_governor = yes }
 			OR = {
 				is_reformed_religion = no
 				is_reformed_religion = ROOT
@@ -7250,14 +7803,18 @@ pagan_subjugation = {
 				hidden = yes
 			}
 		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	on_success = {
 		ROOT = {
 			piety = 100
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -7313,9 +7870,6 @@ pagan_subjugation = {
 	on_fail = {
 		FROM = {
 			piety = 50
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -7343,8 +7897,6 @@ pagan_subjugation = {
 		}
 		FROM = {
 			piety = 100
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -7356,9 +7908,6 @@ pagan_subjugation = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -7424,6 +7973,16 @@ peasant_revolt = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -7513,6 +8072,7 @@ heretic_revolt = {
 	attacker_can_call_allies = no
 	defender_can_call_allies = no
 	can_ask_to_join_war = no
+	check_de_jure_tier = DUKE
 	
 	can_use = {
 		ROOT = { has_character_flag = heretic_revolter }
@@ -7521,6 +8081,16 @@ heretic_revolt = {
 	is_valid = {
 		FROM = {
 			NOT = { religion = ROOT }
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -7539,6 +8109,36 @@ heretic_revolt = {
 			religion_authority = {
 				modifier = lost_heretic_revolt
 			}		
+		}
+	}
+	
+	on_success_title = {
+		ROOT = {
+			vassalize_or_take_under_title = {
+				title = PREV
+				enemy = FROM
+				same_religion = yes # Only vassalize rulers of my religion
+				is_religious = yes
+				type = holy_war
+			}
+		}
+		if = {
+			limit = {
+				controls_religion = no
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+					}
+				}
+			}
+			usurp_title = { target = ROOT type = holy_war }
+		}
+		if = {
+			limit = {
+				has_holder = no
+			}
+			usurp_title = { target = ROOT type = holy_war }
 		}
 	}
 
@@ -7629,6 +8229,7 @@ religious_revolt = {
 	attacker_can_call_allies = no
 	defender_can_call_allies = no
 	can_ask_to_join_war = no
+	check_de_jure_tier = DUKE
 	
 	can_use = {
 		ROOT = { has_character_flag = religious_revolter }
@@ -7637,6 +8238,16 @@ religious_revolt = {
 	is_valid = {
 		FROM = {
 			NOT = { religion = ROOT }
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
  
@@ -7655,6 +8266,36 @@ religious_revolt = {
 			religion_authority = {
 				modifier = lost_religious_revolt
 			}		
+		}
+	}
+	
+	on_success_title = {
+		ROOT = {
+			vassalize_or_take_under_title = {
+				title = PREV
+				enemy = FROM
+				same_religion = yes # Only vassalize rulers of my religion
+				is_religious = yes
+				type = holy_war
+			}
+		}
+		if = {
+			limit = {
+				controls_religion = no
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+					}
+				}
+			}
+			usurp_title = { target = ROOT type = holy_war }
+		}
+		if = {
+			limit = {
+				has_holder = no
+			}
+			usurp_title = { target = ROOT type = holy_war }
 		}
 	}
 
@@ -7764,6 +8405,16 @@ liberation_revolt = {
 
 	is_valid_title = {
 		has_holder = no
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 	
 	on_success = {
@@ -7895,6 +8546,16 @@ duchy_adventure = {
 	is_valid = {
 		always = yes
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
 		ROOT = { 
@@ -7955,6 +8616,281 @@ duchy_adventure = {
 					narrative_event = {
 						id = 60406
 						days = 1
+					}
+				}
+				
+				# Special case: Sultanate of Rum creator succeeds in his first conquest
+				if = {
+					limit = {
+						has_character_flag = rum_creator
+					}
+					character_event = {
+						id = 60610
+						days = 600
+						random = 300
+					}
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		FROM = {
+			prestige = 100
+			hidden_tooltip = {
+				opinion = {
+					modifier = opinion_rebel_traitor 
+					who = ROOT
+					months = 1200
+				}
+			}
+		}
+		ROOT = {
+			clear_wealth = yes
+			imprison = FROM 
+			hidden_tooltip = {
+				disband_event_forces = yes
+				clr_character_flag = duchy_adventurer
+			}
+		}
+	
+		ROOT = { prestige = -100 }
+	}
+
+	on_reverse_demand = {
+		ROOT = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 4.0
+			}
+		}
+		
+		FROM = {
+			prestige = 200
+		}
+		
+		ROOT = {
+			clear_wealth = yes
+			imprison = FROM
+			prestige = -200
+			hidden_tooltip = {
+				disband_event_forces = yes
+				clr_character_flag = duchy_adventurer
+			}
+		}
+	}
+	
+	on_attacker_leader_death = {
+		ROOT = {
+			hidden_tooltip = {
+				disband_event_forces = yes
+				clr_character_flag = duchy_adventurer
+			}
+		}
+		end_war = invalid
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+}
+
+kingdom_adventure = { # Used mainly for Muslims adventuring into India
+	name = CB_NAME_DUCHY_ADVENTURE
+	war_name = WAR_DUCHY_ADVENTURE
+	sprite = 9
+	truce_days = 3650
+	hostile_against_others = yes
+	check_de_jure_tier = KING # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character
+
+	can_use = {
+		ROOT = {
+			OR = {
+				has_character_flag = duchy_adventurer
+				has_character_flag = rum_creator
+			}
+		}
+	}
+
+	is_valid = {
+		always = yes
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
+	on_success = {
+		ROOT = { 
+			prestige = 500
+			piety = 250
+			hidden_tooltip = {
+				clr_character_flag = duchy_adventurer
+				clr_character_flag = do_not_disturb
+				if = {
+					limit = {
+						has_nickname = no
+					}
+					FROM = {
+						save_event_target_as = nickname_target
+					}
+					ROOT = { 
+						save_event_target_as = nickname_receiver
+					}
+					random_list = {
+						5 = { give_nickname = nick_the_victorious }
+						5 = { give_nickname = nick_the_conqueror }
+						5 = { give_nickname = nick_the_dragon }
+						10 = { give_nickname = nick_the_rel_group }
+						10 = { give_nickname = nick_the_tiger }
+						10 = { give_nickname = nick_the_world_burner }
+						10 = { 
+							give_nickname = nick_the_scourge_of_god
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { religion = ROOT }
+							}
+						}
+					}
+				}
+			}
+		}
+		FROM = {
+			prestige = -500
+			piety = -250			
+		}
+	}
+
+	on_success_title = {
+		custom_tooltip = {
+			text = other_invasion_succ_tip
+			hidden_tooltip = {				
+				FROM = { # The adventurer takes ANY demesne title, including the targeted Kingdom, within the area of the targeted kingdom
+					any_demesne_title = {
+						limit = {
+							OR = {
+								title = PREVPREV
+								de_jure_liege_or_above = PREVPREV
+							}
+							NOT = { ROOT = { has_character_flag = rum_creator } }
+						}
+						usurp_title = { target = ROOT type = host }
+					}
+				}
+				
+				if = { # Claim the targeted Kingdom if it isn't held by anyone
+					limit = {
+						has_holder = no
+					}
+					usurp_title = { target = ROOT type = host }
+				}
+				
+				if = { # Create a Kingdom if the adventurer does not have one by this point
+					limit = {
+						ROOT = {
+							NOR = {
+								any_demesne_title = {
+									tier = KING
+								}
+								has_character_flag = rum_creator
+							}
+						}
+					}
+					ROOT = {
+						create_title = {
+							tier = KING
+							landless = no
+							temporary = no
+							custom_created = yes
+							culture = ROOT
+							holder = ROOT
+							name = "INDIAN_MUSLIM_KINGDOM"
+							base_title = PREV
+							copy_title_laws = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { has_character_flag = rum_creator }
+					}
+					k_rum = {
+						grant_title = ROOT
+					}
+				}
+				
+				ROOT = { # Preserve Vassals under the targeted kingdom
+					vassalize_or_take_under_title = { # Take all vassals held by the target under the title
+						title = PREV
+						enemy = FROM
+						type = host
+					}
+					set_defacto_liege = ROOT # Always go Independent
+				}
+			}
+		}
+		
+		ROOT = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_character_flag = rum_creator
+					}
+					capital_scope = {
+						culture = ROOT
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_character_flag = rum_creator }
+					}
+					capital_scope = {
+						reverse_culture = ROOT
+					}
+					any_child = {
+						limit = {
+							is_ruler = no
+							ai = yes
+							#liege = { character = ROOT }
+						}
+						culture = ROOT
+					}
+					any_courtier = {
+						limit = {
+							is_ruler = no
+							ai = yes
+						}
+						culture = ROOT
+					}
+				}
+				
+				# Special case: Sultanate of Rum might start yet another war
+				if = {
+					limit = {
+						has_character_flag = rum_creator
+					}
+					character_event = {
+						id = 60610
+						days = 600
+						random = 300
 					}
 				}
 			}
@@ -8043,7 +8979,6 @@ pagan_holy_war = {
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -8053,6 +8988,13 @@ pagan_holy_war = {
 	
 	on_add = {
 		ROOT = { piety = -100 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
@@ -8156,24 +9098,36 @@ pagan_holy_war = {
 	
 	on_success = {
 		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_piety = 100
-			participation_scaled_prestige = 50
-		}
-		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 100
 				participation_scaled_prestige = 50
 			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 		}
 		
-		ROOT = { 
+		ROOT = {
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 50
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
 			}
-			
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -8229,8 +9183,7 @@ pagan_holy_war = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
 		}
@@ -8239,6 +9192,14 @@ pagan_holy_war = {
 			hidden_tooltip = { 
 				participation_scaled_piety = 200
 				participation_scaled_prestige = 100
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
 			}
 		}
 		ROOT = { 
@@ -8251,7 +9212,15 @@ pagan_holy_war = {
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
-			}		
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}			
 		}
 	}
 
@@ -8310,7 +9279,6 @@ caliphal_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -8320,10 +9288,27 @@ caliphal_subjugation = {
 	
 	on_add = {
 		ROOT = { piety = -200 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			religion_group = muslim
 			OR = {
 				has_landed_title = d_sunni
@@ -8343,12 +9328,13 @@ caliphal_subjugation = {
 		}
 		FROM = {
 			religion = ROOT
+			NOT = { is_offmap_governor = yes }
 		}
 	}
 	
 	can_use_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -8356,7 +9342,7 @@ caliphal_subjugation = {
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -8376,9 +9362,6 @@ caliphal_subjugation = {
 		ROOT = {
 			prestige = 100
 			decadence = -5
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -8407,9 +9390,6 @@ caliphal_subjugation = {
 	on_fail = {
 		FROM = {
 			prestige = 50
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -8431,8 +9411,6 @@ caliphal_subjugation = {
 		}
 		FROM = {
 			prestige = 100
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -8444,9 +9422,6 @@ caliphal_subjugation = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -8480,7 +9455,7 @@ caliphal_subjugation = {
 	}
 }
 
-muslim_county_conquest = { 
+muslim_county_conquest = {
 	name = CB_NAME_COUNTY_CONQUEST
 	war_name = WAR_NAME_COUNTY_CONQUEST
 	sprite = 16
@@ -8491,7 +9466,6 @@ muslim_county_conquest = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -8501,6 +9475,13 @@ muslim_county_conquest = {
 	
 	on_add = {
 		ROOT = { piety = -50 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 	
 	can_use = {
@@ -8605,8 +9586,7 @@ muslim_county_conquest = {
 				usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -8619,8 +9599,7 @@ muslim_county_conquest = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -8637,8 +9616,7 @@ muslim_county_conquest = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -8669,6 +9647,17 @@ muslim_county_conquest = {
 		modifier = {
 			factor = 0.9 # Prefer using CB's without on_add costs
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -8676,7 +9665,7 @@ muslim_county_conquest = {
 pagan_county_conquest = {
 	name = CB_NAME_COUNTY_CONQUEST
 	war_name = WAR_NAME_COUNTY_CONQUEST
-	sprite = 16
+	sprite = 22
 	truce_days = 1825
 	hostile_against_others = yes
 	is_permanent = yes
@@ -8686,7 +9675,6 @@ pagan_county_conquest = {
 	
 	allow_distant = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use = {
 		ROOT = {
@@ -8744,7 +9732,7 @@ pagan_county_conquest = {
 					ROOT = { religion = norse_pagan }
 					ROOT = { religion = norse_pagan_reformed }
 				}
-				FROM = { NOT = { religion_group = pagan_group } }
+#				FROM = { NOT = { religion_group = pagan_group } }
 				location = {
 					port = yes
 				}
@@ -8789,6 +9777,16 @@ pagan_county_conquest = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 		
@@ -8811,8 +9809,7 @@ pagan_county_conquest = {
 			usurp_title = ROOT
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -8852,8 +9849,7 @@ pagan_county_conquest = {
 			}
 		}
 	
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -8882,8 +9878,7 @@ pagan_county_conquest = {
 			}
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -8953,7 +9948,19 @@ pagan_county_conquest = {
 				}
 			}
 			has_global_flag = viking_age_started
+			FROM = { NOT = { religion_group = pagan_group } }
 			location = { port = yes }
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
 		}
 	}
 }
@@ -8971,7 +9978,6 @@ dejure_county_claim = {
 	can_ask_to_join_war = no
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.5
 	
@@ -9158,6 +10164,16 @@ dejure_county_claim = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		if = {
 			limit = {
@@ -9204,8 +10220,7 @@ dejure_county_claim = {
 				usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -9218,8 +10233,7 @@ dejure_county_claim = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -9236,8 +10250,7 @@ dejure_county_claim = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -9279,6 +10292,17 @@ dejure_county_claim = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -9293,7 +10317,6 @@ dejure_barony_claim = {
 	check_de_jure_tier = COUNT
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.5
 	
@@ -9458,6 +10481,16 @@ dejure_barony_claim = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		holder_scope = {
 			save_event_target_as = target_taker
@@ -9481,8 +10514,7 @@ dejure_barony_claim = {
 			usurp_title_plus_barony_if_unlanded = { target = event_target:target_taker type = claim }
 		}
 	
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 50
 		}
 		any_attacker = {
@@ -9495,8 +10527,7 @@ dejure_barony_claim = {
 		ROOT = {
 			prestige = -50
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 25
 		}
 		any_defender = {
@@ -9513,8 +10544,7 @@ dejure_barony_claim = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -9598,7 +10628,6 @@ other_dejure_county_claim = {
 	can_ask_to_join_war = no
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.3
 	
@@ -9785,15 +10814,22 @@ other_dejure_county_claim = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			opinion = {
 				modifier = pressed_my_claim 
 				who = PREV
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -9853,8 +10889,7 @@ other_dejure_county_claim = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -9872,8 +10907,7 @@ other_dejure_county_claim = {
 		ROOT = {
 			prestige = -200
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -9926,6 +10960,16 @@ shia_caliphate_rising = {
 		}
 		d_shiite = {
 			has_holder = no
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
@@ -10076,9 +11120,6 @@ shia_caliphate_rising = {
 		}
 		FROM = {
 			piety = 250
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_piety = 250
 		}
 		any_defender = {
@@ -10119,14 +11160,15 @@ shia_caliphate_rising = {
 depose_antipope = {
 	name = CB_NAME_DEPOSE_ANTIPOPE
 	war_name = WAR_NAME_DEPOSE_ANTIPOPE
-	sprite = 11
+	sprite = 29
 	truce_days = 3650
 	is_permanent = yes
 	can_ask_to_join_war = yes
 	
+	defender_unoccupied_warscore = yes
+	
 	attacker_rel_head_is_ally = yes # The attacker can call his (main) Pope into the war
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use = {
 		ROOT = {
@@ -10174,13 +11216,18 @@ depose_antipope = {
 			}
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_piety = 500
-			participation_scaled_prestige = 250
-		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
@@ -10190,6 +11237,8 @@ depose_antipope = {
 		}
 		
 		ROOT = {
+			participation_scaled_piety = 500
+			participation_scaled_prestige = 250
 			religion_authority = {
 				modifier = deposed_antipope
 				years = 50
@@ -10321,13 +11370,18 @@ cb_install_antiking = {
 			}
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_piety = 500
-			participation_scaled_prestige = 250
-		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
@@ -10337,6 +11391,8 @@ cb_install_antiking = {
 		}
 		
 		ROOT = {
+			participation_scaled_piety = 500
+			participation_scaled_prestige = 250
 			religion_authority = {
 				modifier = deposed_antipope
 				years = 50
@@ -10445,8 +11501,8 @@ cb_install_antiking = {
 	}
 }
 
-buddhist_holy_war = { 
-	name = CB_NAME_RELIGIOUS
+buddhist_holy_war = {
+	name = CB_NAME_RELIGIOUS_MINOR
 	war_name = WAR_NAME_RELIGIOUS
 	sprite = 9
 	truce_days = 1825
@@ -10456,7 +11512,6 @@ buddhist_holy_war = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use = {
 		ROOT = {
@@ -10464,6 +11519,7 @@ buddhist_holy_war = {
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
+				FROM = { religion = taoist }
 				AND = {
 					religion_group = FROM
 					FROM = {
@@ -10478,6 +11534,7 @@ buddhist_holy_war = {
 				religion_group = ROOT
 				OR = {
 					NOT = { religion = FROM }
+					FROM = { religion = taoist }
 					AND = {
 						religion_group = FROM
 						FROM = {
@@ -10553,6 +11610,7 @@ buddhist_holy_war = {
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
+				FROM = { religion = taoist }
 				AND = {
 					religion_group = FROM
 					FROM = {
@@ -10566,6 +11624,7 @@ buddhist_holy_war = {
 			top_liege = {
 				OR = {
 					NOT = { religion = FROM }
+					FROM = { religion = taoist }
 					AND = {
 						religion_group = FROM
 						FROM = {
@@ -10580,6 +11639,40 @@ buddhist_holy_war = {
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+	
+	on_success = {
+		any_attacker = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
+		}
+		
+		ROOT = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
 				}
 			}
 		}
@@ -10629,8 +11722,7 @@ buddhist_holy_war = {
 				usurp_title_plus_barony_if_unlanded = { target = ROOT type = holy_war }
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -10643,8 +11735,7 @@ buddhist_holy_war = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -10661,13 +11752,28 @@ buddhist_holy_war = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
 		}
 	}
 	
@@ -10699,7 +11805,6 @@ indian_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -10709,11 +11814,18 @@ indian_subjugation = {
 	
 	on_add = {
 		ROOT = { piety = -500 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 	
 	can_use = {
 		ROOT = {
-			religion_group = indian_group
+			has_dharmic_religion_trigger = yes
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			has_horde_culture = no # Should use tribal invasion instead
@@ -10721,7 +11833,8 @@ indian_subjugation = {
 			mercenary = no
 		}
 		FROM = {
-			religion_group = indian_group
+			NOT = { is_offmap_governor = yes }
+			has_dharmic_religion_trigger = yes
 			culture_group = ROOT
 			NOT = {
 				any_war = {
@@ -10748,15 +11861,27 @@ indian_subjugation = {
 		}
 
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
+		
+		#OR = { # This ensures that the AI doesn't declare this type of war against someone who only holds a few counties within the targeted title...
+		#	ROOT = {
+		#		ai = no
+		#	}
+		#	FROM = {
+		#		num_of_realm_counties = {
+		#			value = 5
+		#			title = PREV
+		#		}
+		#	}
+		#}
 	}
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -10785,8 +11910,7 @@ indian_subjugation = {
 	}
 
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 200
 		}
 		any_attacker = {
@@ -10858,8 +11982,7 @@ indian_subjugation = {
 	}
 
 	on_fail = {
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -10874,6 +11997,7 @@ indian_subjugation = {
 	on_invalidation = {
 		ROOT = {
 			remove_character_modifier = launched_subjugation
+			piety = 500
 		}
 	}
 
@@ -10885,8 +12009,7 @@ indian_subjugation = {
 				value = 2.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -10917,6 +12040,17 @@ indian_subjugation = {
 		modifier = {
 			factor = 0.9 # Prefer using CB's without on_add costs
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -10934,6 +12068,16 @@ manifest_destiny_invasion = {
 	
 	can_use = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			OR = {
 				AND = {
 					dynasty = 613 # Seljuks
@@ -11003,6 +12147,16 @@ manifest_destiny_invasion = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			prestige = 200
@@ -11020,10 +12174,6 @@ manifest_destiny_invasion = {
 					}
 				}
 			}
-		}
-		
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 200
 			
 			if = {
@@ -11084,9 +12234,6 @@ manifest_destiny_invasion = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -11109,8 +12256,6 @@ manifest_destiny_invasion = {
 		}
 		FROM = {
 			prestige = 200
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -11122,9 +12267,6 @@ manifest_destiny_invasion = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -11162,7 +12304,6 @@ cb_decadence_usurption = {
 	truce_days = 3650
 	is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use = {
 		ROOT = { 
@@ -11205,10 +12346,19 @@ cb_decadence_usurption = {
 			}
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_piety = 500
 			participation_scaled_prestige = 250
 		}
@@ -11281,7 +12431,8 @@ rivalry_cb = {
 	is_permanent = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
+	
+	defender_unoccupied_warscore = yes
 	
 	can_use = {
 		ROOT = {
@@ -11302,12 +12453,18 @@ rivalry_cb = {
 			is_rival = FROM
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_prestige = 250
-		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
@@ -11316,6 +12473,7 @@ rivalry_cb = {
 		}
 		
 		ROOT = {
+			participation_scaled_prestige = 250
 			if = {
 				limit = {
 					ai = no
@@ -11355,8 +12513,7 @@ rivalry_cb = {
 	}
 
 	on_reverse_demand = {
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 250
 		}
 		any_defender = {
@@ -11415,22 +12572,27 @@ rivalry_cb = {
 tributary_cb = {
 	name = CB_NAME_TRIBUTARY
 	war_name = WAR_NAME_TRIBUTARY
-	sprite = 1
+	sprite = 36
 	truce_days = 365
 	is_permanent = yes
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	display_on_map = no
-	coalition_threat = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
+	
+	defender_unoccupied_warscore = yes
 	
 	can_use = {
 		has_dlc = "Horse Lords"
 
 		ROOT = {
 			mercenary = no
-			is_tributary = no
+			OR = {
+				is_tributary = no
+				is_tributary = {
+					type = offmap
+				}
+			}
 			NOT = { is_vassal_or_below = FROM }
 			NOT = { is_liege_or_above = FROM }
 			NOT = {
@@ -11442,8 +12604,13 @@ tributary_cb = {
 				holy_order = yes
 				religion = FROM
 			}
+			independent = yes
 		}
 		FROM = {
+			higher_tier_than = BARON
+			NOT = {
+				is_offmap_governor = yes
+			}
 			NAND = {
 				holy_order = yes
 				religion = ROOT
@@ -11499,10 +12666,15 @@ tributary_cb = {
 		
 		# The defender is not in any tributary war
 		FROM = {
-			NOT =
-			{
+			NOR = {
 				any_war = {
 					using_cb = tributary_cb
+				}
+				any_war = {
+					using_cb = tributary_permanent_cb
+				}
+				any_war = {
+					using_cb = tributary_nomad_cb
 				}
 			}
 		}
@@ -11514,6 +12686,23 @@ tributary_cb = {
 				rightful_religious_head_scope = {
 					character = FROM 
 				}
+			}
+		}
+	}
+
+	on_add = {
+		# Chance to surrender early
+		ROOT = { save_event_target_as = tribute_war_suzerain }
+		FROM = {
+			save_event_target_as = tribute_war_target
+			set_character_flag = surrender_tributary_cb
+			character_event = { id = JD.2500 days = 5 tooltip = surrender_tributary_tt }
+		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -11797,19 +12986,34 @@ tributary_cb = {
 free_tributary_cb = {
 	name = CB_NAME_FREE_TRIBUTARY
 	war_name = WAR_NAME_FREE_TRIBUTARY
-	sprite = 1
+	sprite = 25
 	truce_days = 365
 	is_permanent = yes
 	hostile_against_others = yes
 	can_ask_to_join_war = no
+	is_independence = yes
 
 	can_use = {
-		has_dlc = "Horse Lords"
-		
 		ROOT = {
 			OR = {
 				AND = {
 					is_tributary = yes
+					OR = {
+						AND = {
+							has_dlc = "Horse Lords"
+							OR = {
+								is_tributary = { type = nomadic }
+								is_tributary = { type = default }
+							}
+						}
+						AND = {
+							has_dlc = "Jade Dragon"
+							OR = {
+								is_tributary = { type = permanent }
+								is_tributary = { type = offmap }
+							}
+						}
+					}
 					suzerain = {
 						OR = {
 							character = FROM
@@ -11821,6 +13025,22 @@ free_tributary_cb = {
 				}
 				any_vassal = {
 					is_tributary = yes
+					OR = {
+						AND = {
+							has_dlc = "Horse Lords"
+							OR = {
+								is_tributary = { type = nomadic }
+								is_tributary = { type = default }
+							}
+						}
+						AND = {
+							has_dlc = "Jade Dragon"
+							OR = {
+								is_tributary = { type = permanent }
+								is_tributary = { type = offmap }
+							}
+						}
+					}
 					suzerain = {
 						OR = {
 							character = FROM
@@ -11830,6 +13050,19 @@ free_tributary_cb = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	can_use_gui = {
+		ROOT = { #Cannot use CB if can take decision to stop paying tribute
+			conditional_tooltip = {
+				trigger = { is_decision_potential = tributary_independence_china }
+				NOT = { is_decision_allowed = tributary_independence_china }
+			}
+			conditional_tooltip = {
+				trigger = { is_decision_potential = tributary_independence_normal }
+				NOT = { is_decision_allowed = tributary_independence_normal }
 			}
 		}
 	}
@@ -11859,6 +13092,16 @@ free_tributary_cb = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -12146,6 +13389,16 @@ cb_install_khan = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		FROM = {
 			any_demesne_title = {
@@ -12157,8 +13410,7 @@ cb_install_khan = {
 				killer = ROOT
 			}
 		}
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 250
 		}
 		any_attacker = {
@@ -12178,8 +13430,7 @@ cb_install_khan = {
 			prestige = -200
 			prisoner = FROM
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -12232,7 +13483,6 @@ nomad_dispute = {
 	allow_distant = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no	
 	
 	can_use = {
 		has_dlc = "Horse Lords"
@@ -12270,11 +13520,20 @@ nomad_dispute = {
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success_title = {
 		usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -12291,8 +13550,7 @@ nomad_dispute = {
 		ROOT = {
 			prestige = -100
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -12309,8 +13567,7 @@ nomad_dispute = {
 				value = 4.0
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -12355,7 +13612,6 @@ cb_liberate_nomad_duchy = {
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 0.75
 	
@@ -12394,6 +13650,36 @@ cb_liberate_nomad_duchy = {
 				}
 			}
 		}
+		
+		any_de_jure_vassal_title = { # Can only liberate Duchies that are either outside of the Steppe region, or contains a Castle/City/Tribe
+			tier = COUNT
+			OR = {
+				holder_scope = {
+					character = FROM
+				}
+				holder_scope = {
+					any_liege = {
+						character = FROM
+					}
+				}
+			}
+			OR = {
+				location = {
+					NOT = {
+						region = world_steppe
+					}
+				}
+				location = {
+					any_province_holding = {
+						OR = {
+							holding_type = city
+							holding_type = castle
+							holding_type = tribal
+						}
+					}
+				}
+			}
+		}
 	}
 
 	is_valid = {
@@ -12407,10 +13693,19 @@ cb_liberate_nomad_duchy = {
 			mercenary = no
 		}
 	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
 	
 	on_success = {
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
 			participation_scaled_prestige = 200
 			if = {
 				limit = {
@@ -12465,8 +13760,7 @@ cb_liberate_nomad_duchy = {
 			}
 			prestige = -200
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 300
 			if = {
 				limit = {
@@ -12560,6 +13854,16 @@ cb_minor_clan_revolt = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -12671,7 +13975,6 @@ nomad_subjugation = {
 	is_permanent = yes
 	can_ask_to_join_war = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 	#higher_tier_than between ROOT and FROM would be better but its tooltip doesn't say anything about comparing character tiers
@@ -12716,6 +14019,16 @@ nomad_subjugation = {
 	
 	can_use = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			is_nomadic = yes
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
@@ -12732,6 +14045,7 @@ nomad_subjugation = {
 		FROM = {
 			in_revolt = no
 			is_nomadic = no # Nomads cannot be subjugated
+			NOT = { is_offmap_governor = yes }
 			NOT = {
 				any_war = {
 					defender = { character = PREVPREV }
@@ -12739,6 +14053,18 @@ nomad_subjugation = {
 						using_cb = nomad_subjugation
 						using_cb = pagan_subjugation
 					}
+				}
+			}
+		}
+		
+		OR = {
+			ROOT = {
+				ai = no
+			}
+			FROM = {
+				any_realm_title = {
+					tier = COUNT
+					count = 5
 				}
 			}
 		}
@@ -12761,6 +14087,13 @@ nomad_subjugation = {
 					years = 100
 					hidden = yes
 				}
+			}
+		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -12810,9 +14143,6 @@ nomad_subjugation = {
 		}
 		ROOT = {
 			piety = 100
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -12894,9 +14224,6 @@ nomad_subjugation = {
 	on_fail = {
 		FROM = {
 			piety = 50
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -12934,8 +14261,6 @@ nomad_subjugation = {
 		}
 		FROM = {
 			piety = 100
-		}
-		FROM = {
 			if = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
@@ -12947,9 +14272,6 @@ nomad_subjugation = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -12976,8 +14298,19 @@ nomad_subjugation = {
 	
 	ai_will_do = { 
 		factor = 10
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
-} 
+}
 
 # 62:
 nomad_invasion = {
@@ -12992,7 +14325,6 @@ nomad_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -13004,21 +14336,53 @@ nomad_invasion = {
 	
 	on_add = {
 		ROOT = { prestige = -100 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
 		ROOT = {
 			is_nomadic = yes
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 		}
 		
 		ROOT = {
 			NOT = { same_realm = FROM }
 		}
+		
+		OR = { # This ensures that the AI doesn't declare this type of war against someone who only holds a few counties within the targeted title...
+			ROOT = {
+				ai = no
+			}
+			ROOT = {
+				has_landed_title = e_mongol_empire
+			}
+			FROM = {
+				num_of_realm_counties = {
+					value = 5
+					title = PREV
+				}
+			}
+		}
 	}
 	
 	is_valid_title = {
 		FROM = {
-			any_realm_title = {
+			any_realm_province = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
@@ -13132,9 +14496,6 @@ nomad_invasion = {
 					}
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -13182,9 +14543,6 @@ nomad_invasion = {
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -13279,6 +14637,17 @@ nomad_invasion = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -13293,7 +14662,6 @@ nomad_expansion = {
 	check_de_jure_tier = DUKE # this scans all de jure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	can_use_gui = {
 		ROOT = {
@@ -13314,6 +14682,13 @@ nomad_expansion = {
 	
 	on_add = {
 		ROOT = { prestige = -300 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	can_use = {
@@ -13421,9 +14796,6 @@ nomad_expansion = {
 					100 = { }
 				}
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			if = {
 				limit = {
 					uses_decadence = yes
@@ -13475,8 +14847,7 @@ nomad_expansion = {
 			}
 			prestige = -200
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 300
 			if = {
 				limit = {
@@ -13578,6 +14949,17 @@ nomad_expansion = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
 	}
 }
 
@@ -13635,6 +15017,16 @@ increase_council_power_war = { # Started from faction
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			opinion = {
@@ -13642,9 +15034,6 @@ increase_council_power_war = { # Started from faction
 				who = FROM
 				months = 12
 			}
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 			hidden_tooltip = {
 				disband_event_forces = faction_revolters
@@ -13670,8 +15059,7 @@ increase_council_power_war = { # Started from faction
 			prestige = -100
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -13698,8 +15086,7 @@ increase_council_power_war = { # Started from faction
 			prisoner = FROM
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -13749,9 +15136,9 @@ nomad_humiliate_cb = {
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	display_on_map = no
-	coalition_threat = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
+	
+	defender_unoccupied_warscore = yes
 	
 	can_use = {
 		has_dlc = "Horse Lords"
@@ -13818,6 +15205,16 @@ nomad_humiliate_cb = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -14070,6 +15467,16 @@ powerful_vassal_takeover_war = { # Started from faction
 		}
 	}
 
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
 	on_success = {
 		any_attacker = {
 			participation_scaled_prestige = 100
@@ -14166,8 +15573,7 @@ powerful_vassal_takeover_war = { # Started from faction
 			prestige = -100
 		}
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
@@ -14200,8 +15606,7 @@ powerful_vassal_takeover_war = { # Started from faction
 		}
 
 		
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_prestige = 100
 		}
 		any_defender = {

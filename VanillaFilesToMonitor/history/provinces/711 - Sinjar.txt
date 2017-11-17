@@ -16,8 +16,10 @@ b_hatra = temple
 #b_nabiyunus = castle
 
 #Misc
-culture = levantine_arabic
+culture = assyrian
 religion = nestorian
 
 # History
 867.1.1 = { religion = sunni }
+867.1.1 = { culture = kurdish }
+1235.1.1 = { religion = yazidi } # Sometime between 1230 - 1245 area was converted according to Yezidi tradition

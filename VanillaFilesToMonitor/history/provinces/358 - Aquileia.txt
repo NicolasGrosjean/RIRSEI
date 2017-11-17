@@ -23,5 +23,5 @@ religion = catholic
 867.1.1 = {
 	capital = b_aquileia
 }
-1083.1.1 = { culture = italian }
+1066.1.1 = { culture = italian }
 1091.1.1 = { trade_post = b_contarini }

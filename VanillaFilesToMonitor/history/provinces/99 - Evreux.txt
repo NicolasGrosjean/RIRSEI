@@ -21,11 +21,11 @@ religion = catholic
 # History
 790.1.1 = { culture = frankish }
 911.1.1 = { # Viking takeover
-	remove_settlement = b_alencon
-	remove_settlement = b_lisieux
+	#remove_settlement = b_alencon
+	#remove_settlement = b_lisieux
 	b_argentan = castle
-	b_alencon = city
-	b_lisieux = temple
+	#b_alencon = city
+	#b_lisieux = temple
 
 	b_evreux = ca_keep_1
 	b_evreux = ca_training_grounds_1
@@ -53,6 +53,8 @@ religion = catholic
 }
 
 1066.1.1 = {
+	b_alencon = ct_wall_1
+	b_alencon = ct_wall_2
 	b_alencon = ct_port_2
 	b_alencon = ct_port_3
 }
