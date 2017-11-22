@@ -1204,7 +1204,6 @@
 	}
 }
 
-
 20325 = {
    name="Marianu" #I
    dynasty=1040103 #de Lacon Zori
@@ -5406,10 +5405,8 @@
 	name="Obizzo" # Obizzo Spinola di Lucoli, doge of Genoa
 	# AKA: Obizizzino
 	dynasty=50 # Spinola
-
 	religion="catholic"
 	culture="italian"
-
 	father = 91353 # Corrado Spinola
 	mother = 167545 # Argentina Fieschi, d. of Opizzone Fieeschi and Simona.
 	
@@ -18304,7 +18301,6 @@
 		death="1368.1.1"
 	}
 }
-
 71631 = {
    name="Barusone" #II
    dynasty=794
@@ -18449,7 +18445,6 @@
      death=yes
    }
 }
-
 71717={
 	name="Violante"
 	female=yes
@@ -29496,12 +29491,9 @@ trait = proud
 91362 = {
 	name="Bonifazio" # Bonifazio Spinola
 	dynasty=50 # Spinola
-
 	religion="catholic"
 	culture="italian"
-	
 	father = 91358 # Niccolò Spinola
-	
 	1230.1.1 = {
 		birth="1230.1.1"
 	}
@@ -29513,13 +29505,10 @@ trait = proud
 91363 = {
 	name="Cristiano" # Cristiano Spinola
 	dynasty=50 # Spinola
-
 	religion="catholic"
 	culture="italian"
-	
 	father = 91361 # Enrico Spinola
 	mother = 91364 # Simonetta
-	
 	1280.1.1 = {
 		birth="1280.1.1"
 	}
@@ -32004,8 +31993,6 @@ trait = proud
 	}
 }
 
-
-
 167535 = {
 	name="Filippa"
 	female=yes
@@ -32052,7 +32039,6 @@ trait = proud
 	}
 }
 
-
 167538 = {
 	name="Robaldo"
 	dynasty=13028
@@ -32067,8 +32053,6 @@ trait = proud
 		death="1128.1.1"
 	}
 }
-
-
 
 167539 = {
 	name="Tedisio"
@@ -32085,8 +32069,6 @@ trait = proud
 	}
 }
 
-
-
 167540 = {
 	name="Ugo"
 	dynasty=13028
@@ -32101,9 +32083,6 @@ trait = proud
 		death="1205.1.1"
 	}
 }
-
-
-
 
 167541 = {
 	name="Opizzone"
@@ -32120,8 +32099,6 @@ trait = proud
 	}
 }
 
-
-
 167542 = {
 	name="Tedisio"
 	dynasty=13028
@@ -32137,8 +32114,6 @@ trait = proud
 	}
 }
 
-
-
 167543 = {
 	name="Gerardo"
 	dynasty=13028
@@ -32153,9 +32128,6 @@ trait = proud
 		death="1158.10.4"
 	}
 }
-
-
-
 
 167544 = {
 	name="Enrico"
@@ -32173,9 +32145,6 @@ trait = proud
 	}
 }
 
-
-
-
 167545 = {
 	name="Argentina"
 	dynasty=13028
@@ -32191,9 +32160,6 @@ trait = proud
 	}
 }
 
-
-
-
 167546 = {
 	name="Ugolino"
 	dynasty=13028
@@ -32207,7 +32173,6 @@ trait = proud
 		death="1281.1.1"
 	}
 }
-
 
 167547 = {
 	name="Tedisio"
@@ -32239,9 +32204,6 @@ trait = proud
 	}
 }
 
-
-
-
 167549 = {
 	name="Vittoria"
 	dynasty=13028
@@ -32256,8 +32218,6 @@ trait = proud
 		death="1292.1.1"
 	}
 }
-
-
 
 167550 = {
 	name="Tedisio" 
@@ -32275,8 +32235,6 @@ trait = proud
 	}
 }
 
-
-
 167551 = {
 	name="Leonardo" 
 	dynasty=8733 #Zaccaria
@@ -32292,9 +32250,6 @@ trait = proud
 		death=yes
 	}
 }
-
-
-
 
 167552 = {
 	name="Odoardo" 
@@ -32312,10 +32267,6 @@ trait = proud
 	}
 }
 
-
-
-
-
 167553 = {
 	name="Manfredo" 
 	dynasty=8733 #Zaccaria
@@ -32332,8 +32283,6 @@ trait = proud
 	}
 }
 
-
-
 167554 = {
 	name="Alberto"
 	dynasty=13028
@@ -32348,9 +32297,6 @@ trait = proud
 		death="1270.1.1"
 	}
 }
-
-
-
 
 167555 = {
 	name="Federigo"
@@ -32367,8 +32313,6 @@ trait = proud
 	}
 }
 
-
-
 167556 = {
 	name="Eliana"
 	dynasty=13028
@@ -32383,8 +32327,6 @@ trait = proud
 		death="1325.1.1"
 	}
 }
-
-
 
 167557 = {
 	name="Percivallio"
@@ -32401,8 +32343,6 @@ trait = proud
 	}
 }
 
-
-
 167558 = {
 	name="Agnese"
 	dynasty=13028
@@ -32417,9 +32357,6 @@ trait = proud
 		death="1283.1.1"
 	}
 }
-
-
-
 
 167559 = {
 	name="Carlo"
@@ -32437,9 +32374,6 @@ trait = proud
 	}
 }
 
-
-
-
 167560 = {
 	name="Carlo"
 	dynasty=13028
@@ -32455,8 +32389,6 @@ trait = proud
 	}
 }
 
-
-
 167561 = {
 	name="Federigo"
 	dynasty=13028
@@ -32471,8 +32403,6 @@ trait = proud
 		death="1315.1.1"
 	}
 }
-
-
 
 167562 = {
 	name="Teodoro"
@@ -32490,9 +32420,6 @@ trait = proud
 	}
 }
 
-
-
-
 167563 = {
 	name="Ugo"
 	#placeholder
@@ -32508,9 +32435,6 @@ trait = proud
 		death="1354.1.1"
 	}
 }
-
-
-
 
 167564 = {
 	name="Ottobuono"
@@ -32528,9 +32452,6 @@ trait = proud
 	}
 }
 
-
-
-
 167565 = {
 	name="Tedisio"
 	#placeholder
@@ -32546,8 +32467,6 @@ trait = proud
 		death="1360.1.1"
 	}
 }
-
-
 
 167566 = {
 	name="Ugo"
@@ -32565,8 +32484,6 @@ trait = proud
 	}
 }
 
-
-
 167567 = {
 	name="Gerardo"
 	#placeholder
@@ -32582,8 +32499,6 @@ trait = proud
 		death="1110.1.1"
 	}
 }
-
-
 
 167568 = {
 	name="Oppizone"
@@ -32601,7 +32516,6 @@ trait = proud
 	}
 }
 
-
 167569 = {
 	name="Oberto"
 	#placeholder
@@ -32617,8 +32531,6 @@ trait = proud
 		death="1150.1.1"
 	}
 }
-
-
 
 167570 = {
 	name="Carlo"
@@ -32693,8 +32605,6 @@ trait = proud
 	}
 }
 
-
-
 167575 = {
 	name="Benedetto"
 	dynasty=514
@@ -32708,9 +32618,6 @@ trait = proud
 		death="1207.1.1"
 	}
 }
-
-
-
 
 167576 = {
 	name="Marino"
@@ -32726,9 +32633,6 @@ trait = proud
 	}
 }
 
-
-
-
 167577 = {
 	name="Francesco"
 	dynasty=514
@@ -32743,7 +32647,6 @@ trait = proud
 	}
 }
 
-
 167578 = {
 	name="Leonardo"
 	dynasty=514
@@ -32757,8 +32660,6 @@ trait = proud
 		death="1305.1.1"
 	}
 }
-
-
 
 167579 = {
 	name="Vitale"
@@ -32775,8 +32676,6 @@ trait = proud
 	}
 }
 
-
-
 167580 = {
 	name="Michele"
 	#placeholder
@@ -32791,8 +32690,6 @@ trait = proud
 		death="1120.1.1"
 	}
 }
-
-
 
 167581 = {
 	name="Ordelaffo"
@@ -32809,8 +32706,6 @@ trait = proud
 	}
 }
 
-
-
 167582 = {
 	name="Domenico"
 	#placeholder
@@ -32826,9 +32721,6 @@ trait = proud
 	}
 }
 
-
-
-
 167583 = {
 	name="Ordelaffo"
 	#placeholder
@@ -32842,9 +32734,6 @@ trait = proud
 		death="1065.1.1"
 	}
 }
-
-
-
 
 167584 = {
 	name="Pietro"
@@ -32861,7 +32750,6 @@ trait = proud
 	}
 }
 
-
 167585 = {
 	name="Ordelaffo"
 	dynasty=514
@@ -32876,8 +32764,6 @@ trait = proud
 	}
 }
 
-
-
 167586 = {
 	name="Jacopo"
 	dynasty=514
@@ -32891,8 +32777,6 @@ trait = proud
 		death="1240.1.1"
 	}
 }
-
-
 
 167587 = {
 	name="Bianca"
@@ -32909,8 +32793,6 @@ trait = proud
 	}
 }
 
-
-
 167588 = {
 	name="Marino"
 	dynasty=514
@@ -32925,8 +32807,6 @@ trait = proud
 	}
 }
 
-
-
 167589 = {
 	name="Vitale"
 	dynasty=514
@@ -32940,9 +32820,6 @@ trait = proud
 		death="1355.1.1"
 	}
 }
-
-
-
 
 167590 = {
 	name="Ipolitta"
@@ -32959,10 +32836,6 @@ trait = proud
 	}
 }
 
-
-
-
-
 167591 = {
 	name="Domenico"
 	dynasty=514
@@ -32977,9 +32850,6 @@ trait = proud
 	}
 }
 
-
-
-
 167592 = {
 	name="Pietro"
 	dynasty=514
@@ -32993,9 +32863,6 @@ trait = proud
 		death="1340.1.1"
 	}
 }
-
-
-
 
 167593 = {
 	name="Bonifacio"
@@ -33040,8 +32907,6 @@ trait = proud
 	}
 }
 
-
-
 167596 = {
 	name="Andrea"
 	#placeholder
@@ -33056,8 +32921,6 @@ trait = proud
 		death="1080.1.1"
 	}
 }
-
-
 
 167597 = {
 	name="Carlo"
@@ -33074,7 +32937,6 @@ trait = proud
 	}
 }
 
-
 167598 = {
 	name="Domenico"
 	#placeholder
@@ -33089,7 +32951,6 @@ trait = proud
 		death="1115.1.1"
 	}
 }
-
 
 167599 = {
 	name="Ambrogio"
@@ -33106,9 +32967,6 @@ trait = proud
 	}
 }
 
-
-
-
 167600 = {
 	name="Giacomo"
 	#placeholder
@@ -33123,9 +32981,6 @@ trait = proud
 		death="1155.1.1"
 	}
 }
-
-
-
 
 167601 = {
 	name="Iacopo"
@@ -33142,8 +32997,6 @@ trait = proud
 	}
 }
 
-
-
 167602 = {
 	name="Domenico"
 	dynasty=516
@@ -33157,9 +33010,6 @@ trait = proud
 		death="1215.1.1"
 	}
 }
-
-
-
 
 167603 = {
 	name="Domenico"
@@ -33176,9 +33026,6 @@ trait = proud
 	}
 }
 
-
-
-
 167604 = {
 	name="Gaspare"
 	#placeholder
@@ -33193,9 +33040,6 @@ trait = proud
 		death="1310.1.1"
 	}
 }
-
-
-
 
 167605 = {
 	name="Andrea"
@@ -33212,8 +33056,6 @@ trait = proud
 	}
 }
 
-
-
 167606 = {
 	name="Nicola"
 	dynasty=516
@@ -33228,9 +33070,6 @@ trait = proud
 	}
 }
 
-
-
-
 167607 = {
 	name="Andrea"
 	dynasty=516
@@ -33244,8 +33083,6 @@ trait = proud
 		death="1382.6.5"
 	}
 }
-
-
 
 167608 = {
 	name="Abbondanzio"
@@ -33262,8 +33099,6 @@ trait = proud
 	}
 }
 
-
-
 167609 = {
 	name="Galeotto"
 	#placeholder
@@ -33278,7 +33113,6 @@ trait = proud
 		death="1115.1.1"
 	}
 }
-
 
 167610 = {
 	name="Ricciarda"
@@ -33296,9 +33130,6 @@ trait = proud
 	}
 }
 
-
-
-
 167611 = {
 	name="Gaspare"
 	#placeholder
@@ -33313,8 +33144,6 @@ trait = proud
 		death="1110.1.1"
 	}
 }
-
-
 
 167612 = {
 	name="Giacomo"
@@ -33331,9 +33160,6 @@ trait = proud
 	}
 }
 
-
-
-
 167613 = {
 	name="Abbondanzio"
 	#placeholder
@@ -33348,9 +33174,6 @@ trait = proud
 		death="1170.1.1"
 	}
 }
-
-
-
 
 167614 = {
 	name="Galeotto"
@@ -33367,10 +33190,6 @@ trait = proud
 	}
 }
 
-
-
-
-
 167615 = {
 	name="Giacomo"
 	#placeholder
@@ -33385,8 +33204,6 @@ trait = proud
 		death="1205.1.1"
 	}
 }
-
-
 
 167616 = {
 	name="Fausta"
@@ -33404,8 +33221,6 @@ trait = proud
 	}
 }
 
-
-
 167617 = {
 	name="Amalia"
 	female=yes
@@ -33422,8 +33237,6 @@ trait = proud
 	}
 }
 
-
-
 167618 = {
 	name="Simone"
 	#placeholder
@@ -33438,9 +33251,6 @@ trait = proud
 		death="1190.1.1"
 	}
 }
-
-
-
 
 167619 = {
 	name="Pietro"
@@ -33457,8 +33267,6 @@ trait = proud
 	}
 }
 
-
-
 167620 = {
 	name="Giberto"
 	#placeholder
@@ -33474,10 +33282,6 @@ trait = proud
 	}
 }
 
-
-
-
-
 167621 = {
 	name="Oberto"
 	#placeholder
@@ -33492,10 +33296,6 @@ trait = proud
 		death="1280.1.1"
 	}
 }
-
-
-
-
 
 167622 = {
 	name="Maddalena"
@@ -33513,8 +33313,6 @@ trait = proud
 	}
 }
 
-
-
 167623 = {
 	name="Abbondanzio"
 	#placeholder
@@ -33530,8 +33328,6 @@ trait = proud
 	}
 }
 
-
-
 167624 = {
 	name="Domenico"
 	dynasty=516
@@ -33545,11 +33341,6 @@ trait = proud
 		death="1315.1.1"
 	}
 }
-
-
-
-
-
 
 167625 = {
 	name="Iacopo"
@@ -33566,9 +33357,6 @@ trait = proud
 	}
 }
 
-
-
-
 167626 = {
 	name="Domenico"
 	#placeholder
@@ -33583,9 +33371,6 @@ trait = proud
 		death="1357.1.1"
 	}
 }
-
-
-
 
 167627 = {
 	name="Giuseppa"
@@ -33603,8 +33388,6 @@ trait = proud
 	}
 }
 
-
-
 167628 = {
 	name="Gaspare"
 	#placeholder
@@ -33619,9 +33402,6 @@ trait = proud
 		death="1362.1.1"
 	}
 }
-
-
-
 
 167629 = {
 	name="Oberto"
@@ -37558,13 +37338,13 @@ trait = proud
 	father = 91412 # Genualdo
 	
 	1090.1.1={
-		birth="1090.1.1" # unknown
+		birth=yes # unknown
 	}
 	1130.1.1 = {
 		add_spouse = 73706 # Anna Grimaldi
 	}
 	1177.1.1={
-		death="1077.1.1" # after 1163
+		death=yes # after 1163
 	}
 }
 
@@ -37948,7 +37728,6 @@ trait = proud
 	}
 }
 
-
 91435 = {
    name="Mariano" # Mariano Doria
    dynasty=13041 # Doria
@@ -38041,10 +37820,8 @@ trait = proud
 91440 = {
 	name="Niccolò" # Niccolo Doria
 	dynasty=13041 # Doria
-
 	religion="catholic"
 	culture="italian"
-
 	father=91435  # Mariano Doria
 
 	1260.1.1 = {
@@ -40638,9 +40415,6 @@ trait = proud
      death=yes
    }
 }
-
-
-
 
 167897 = {
 	name="Bonifacio"

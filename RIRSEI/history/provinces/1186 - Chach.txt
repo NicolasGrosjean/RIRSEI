@@ -18,7 +18,7 @@ b_chach = tribal
 
 # Misc
 culture = persian
-religion = manichean
+religion = khurmazta
 
 # History
 800.1.1 = { 

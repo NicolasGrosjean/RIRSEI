@@ -23,6 +23,10 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		culture_group = north_germanic
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+		}
 		is_alive = yes
 		NOT = { trait = berserker }
 		OR = {
@@ -3205,6 +3209,7 @@ character_event = {
 			has_dlc = "The Old Gods"
 			has_dlc = "Mystics"
 		}
+		FROM = { always = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -3238,6 +3243,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		NOT = { has_artifact = loot_axe }
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3270,6 +3276,7 @@ character_event = {
 			has_artifact = strange_chest 
 			has_character_flag = found_chest
 		}
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3295,6 +3302,7 @@ character_event = {
 		has_dlc = "The Old Gods"
 		has_artifact = strange_chest
 		has_character_flag = found_chest
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3333,6 +3341,7 @@ character_event = {
 				has_character_flag = found_chest
 			}
 		}
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3459,6 +3468,7 @@ character_event = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
 		}
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3498,6 +3508,7 @@ character_event = {
 			religion = norse_pagan_reformed
 		}
 		check_variable = { which = viking_raids value = 50 }
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3534,6 +3545,7 @@ character_event = {
 			religion = norse_pagan_reformed
 		}
 		check_variable = { which = viking_raids value = 100 }
+		FROM = { always = yes }
 	}
 	
 	option = {
@@ -3575,6 +3587,7 @@ character_event = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
 		}
+		FROM = { always = yes }
 	}
 	
 	option = {

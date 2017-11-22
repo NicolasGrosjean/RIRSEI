@@ -1474,6 +1474,7 @@ faction_succ_gavelkind = {
 			}
 		}
 		
+		# Not for the current heir
 		modifier = {
 			factor = 0
 			current_heir = {
@@ -1577,6 +1578,27 @@ faction_succ_gavelkind = {
 					trait = ambitious
 					trait = envious
 				}					
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			FROM = {
+				liege = {
+					has_council = yes
+					primary_title = {
+						NOT = {
+							has_law = law_voting_power_1
+							has_law = banish_voting_power_1
+							has_law = execution_voting_power_1
+							has_law = revoke_title_voting_power_1
+							has_law = grant_title_voting_power_1
+							has_law = imprison_voting_power_1
+							has_law = war_voting_power_1
+						}
+					}
+				}
+				is_voter = yes
 			}
 		}
 		
@@ -1735,6 +1757,7 @@ faction_succ_gavelkind = {
 		
 		modifier = {
 			factor = 0
+			
 			OR = {
 				AND = {
 					NOT = { in_faction = faction_succ_gavelkind }
@@ -1842,6 +1865,25 @@ faction_succ_gavelkind = {
 					modifier = opinion_coerced_into_joining_faction
 				}
 			}			
+		}
+		
+		modifier = {
+			factor = 4
+			liege = {
+				has_council = yes
+				primary_title = {
+					NOT = {
+						has_law = law_voting_power_1
+						has_law = banish_voting_power_1
+						has_law = execution_voting_power_1
+						has_law = revoke_title_voting_power_1
+						has_law = grant_title_voting_power_1
+						has_law = imprison_voting_power_1
+						has_law = war_voting_power_1
+					}
+				}
+			}
+			is_voter = yes
 		}
 		
 		modifier = {
@@ -2009,7 +2051,17 @@ faction_succ_feudal_elective = {
 		is_adult = yes
 		primary_title = { holy_order = no }
 		NOT = { trait = incapable }
-		liege = { 
+		liege = {
+			NOT = { government = chinese_imperial_government }
+			primary_title = {
+				has_law = law_voting_power_1
+				has_law = banish_voting_power_1
+				has_law = execution_voting_power_1
+				has_law = revoke_title_voting_power_1
+				has_law = grant_title_voting_power_1
+				has_law = imprison_voting_power_1
+				has_law = war_voting_power_1
+			}			
 			is_vice_royalty = no
 			is_feudal = yes 
 			OR = {
@@ -2022,7 +2074,7 @@ faction_succ_feudal_elective = {
 				any_demesne_title = {
 					temporary = yes
 				}
-			}			
+			}
 		}
 		NOT = { religion_group = muslim }
 		primary_title = { higher_tier_than = BARON }
@@ -3870,6 +3922,20 @@ faction_independence = {
 		is_landed = yes
 		is_adult = yes
 		primary_title = { holy_order = no }
+		OR = {
+			NOT = { has_dlc = "Zeus" }
+			is_voter = no
+			is_nomadic = yes
+			is_tribal = yes
+			liege = { 
+				OR = {
+					is_council_content = no
+					NOT = { primary_title = { has_law = war_voting_power_1 } }
+					has_landed_title = e_china_west_governor
+					#has_council = no
+				}
+			}
+		}
 		
 		NOT = { trait = incapable }
 		
@@ -3974,6 +4040,20 @@ faction_independence = {
 			NOT = { trait = incapable }
 			prisoner = no
 			mercenary = no
+			OR = {
+				NOT = { has_dlc = "Zeus"}
+				is_voter = no
+				is_nomadic = yes
+				is_tribal = yes
+				liege = { 
+					OR = {
+						is_council_content = no
+						NOT = { primary_title = { has_law = war_voting_power_1 } }
+						has_landed_title = e_china_west_governor
+						#has_council = no
+					}
+				}
+			}
 			OR = {
 				is_nomadic = no
 				NOT = {
@@ -4302,6 +4382,18 @@ religion_group = christian
 			OR = {
 				has_opinion_modifier = { who = LIEGE modifier = opinion_evil_tyrant }
 				has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
+			}
+		}
+		modifier = { # More likely to want to go independent from the WP if China is unstable
+			factor = 10.0
+			liege = {
+				government = confucian_bureaucracy
+			}
+			offmap_china = {
+				NOR = {
+					has_status = china_stable
+					has_status = china_golden_age
+				}
 			}
 		}
 	}
@@ -4739,6 +4831,18 @@ religion_group = christian
 				has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
 			}
 		}
+		modifier = { # More likely to want to go independent from the WP if China is unstable
+			factor = 10.0
+			liege = {
+				government = confucian_bureaucracy
+			}
+			offmap_china = {
+				NOR = {
+					has_status = china_stable
+					has_status = china_golden_age
+				}
+			}
+		}
 	}
 	
 	success = {
@@ -4781,7 +4885,6 @@ faction_claimant = {
 		is_landed = yes
 		is_adult = yes
 		primary_title = { holy_order = no }
-
 		NOT = { trait = incapable }
 		liege = {
 			is_vice_royalty = no
@@ -4938,7 +5041,7 @@ faction_claimant = {
 				}
 			}
 		}
-	}	
+	}
 	
 	# AI creation weight
 	chance = {
@@ -4947,7 +5050,7 @@ faction_claimant = {
 		modifier = {
 			factor = 0.2
 			FROM = { pacifist = yes }
-		}		
+		}	
 		
 		modifier = {
 			factor = 0
@@ -4990,7 +5093,7 @@ faction_claimant = {
 			}
 		}
 		
-		modifier = {
+		modifier = { # Title does NOT have Elective and the current heir is me
 			factor = 0
 			NOT = { has_law = succ_feudal_elective }
 			current_heir = {
@@ -5005,7 +5108,7 @@ faction_claimant = {
 			}
 		}
 		
-		modifier = {
+		modifier = { # Do not push non-dynasty claimants if liege is my dynasty
 			factor = 0
 			holder_scope = {
 				dynasty = FROM
@@ -5466,7 +5569,7 @@ faction_claimant = {
 			}
 		}
 		
-		modifier = {
+		modifier = { # I do not join factions if I am the heir, unless the claimant is myself
 			factor = 0
 			FROMFROM = { # I do not join factions if I am the heir, unless the claimant is myself
 				current_heir = {
@@ -5999,6 +6102,70 @@ faction_claimant = {
 		modifier = {
 			factor = 4.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 5
+			FROMFROM = {
+				new_character = {
+					same_society_as = ROOT
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { opinion = { who = LIEGE value = 0 } }
+		}
+		modifier = {
+			factor = 0.2
+			OR = {
+				trait = slow
+				trait = dull
+			}
+			NOT = {	
+				has_opinion_modifier = {
+					who = FROM
+					modifier = opinion_coerced_into_joining_faction
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			trait = proud
+		}
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 1.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2.0
+			trait = envious
+		}
+		modifier = {
+			factor = 2.0
+			trait = greedy
+		}
+		modifier = {
+			factor = 2.0
+			trait = impaler
+		}
+		modifier = {
+			factor = 2.0
+			trait = deceitful
+		}
+		modifier = {
+			factor = 4.0
+			NOT = { opinion = { who = LIEGE value = -75 } }
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_opinion_modifier = { who = LIEGE modifier = opinion_evil_tyrant }
+				has_opinion_modifier = { who = LIEGE modifier = opinion_tyrant }
+			}
 		}
 		modifier = {
 			factor = 5
@@ -7423,13 +7590,11 @@ NOT = { has_dlc = "Zeus" }
 		primary_title = { holy_order = no }
 		OR = {
 			is_voter = no
-			is_nomadic = yes
 			is_tribal = yes
 			liege = { 
 				OR = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
 				}
 			}
 		}
@@ -7518,13 +7683,11 @@ NOT = { has_dlc = "Zeus" }
 			NOT = { has_character_modifier = faction_council_power_ultimatum_timer }
 			OR = {
 				is_voter = no
-				is_nomadic = yes
 				is_tribal = yes
 				liege = { 
 					OR = {
 						is_council_content = no
 						NOT = { primary_title = { has_law = war_voting_power_1 } }
-						#has_council = no
 					}
 				}
 			}
@@ -7618,8 +7781,18 @@ NOT = { has_dlc = "Zeus" }
 		modifier = {
 			factor = 1.5
 			FROM = { is_voter = yes }
+			calc_true_if = {
+				amount = 6
+				NOT = { has_law = law_voting_power_1 }
+				NOT = { has_law = banish_voting_power_1 }
+				NOT = { has_law = execution_voting_power_1 }
+				NOT = { has_law = revoke_title_voting_power_1 }
+				NOT = { has_law = grant_title_voting_power_1 }
+				NOT = { has_law = imprison_voting_power_1 }
+				NOT = { has_law = war_voting_power_1 }
+			}
 		}
-
+		
 		modifier = {
 			factor = 1.5
 			FROM = {
@@ -7632,7 +7805,7 @@ NOT = { has_dlc = "Zeus" }
 			factor = 10
 			FROM = {
 				is_voter = yes
-				NOT = { has_position = loyalist }
+				has_position = malcontent
 			}
 		}
 		
@@ -7808,15 +7981,20 @@ NOT = { has_dlc = "Zeus" }
 			}
 			is_voter = no
 		}
-
+		
 		modifier = {
-			factor = 0
-			opinion = { who = LIEGE value = 80 }
-			is_voter = yes
-			NOT = {	
-				has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_joining_faction
+			factor = 0.8
+			is_voter = no
+			FROMFROM = {
+				calc_true_if = {
+					amount = 2
+					has_law = law_voting_power_1
+					has_law = banish_voting_power_1
+					has_law = execution_voting_power_1
+					has_law = revoke_title_voting_power_1
+					has_law = grant_title_voting_power_1
+					has_law = imprison_voting_power_1
+					has_law = war_voting_power_1
 				}
 			}
 		}
@@ -7838,24 +8016,77 @@ NOT = { has_dlc = "Zeus" }
 		}
 		
 		modifier = {
-			factor = 4
+			factor = 0.3
+			is_voter = no
+			FROMFROM = {
+				calc_true_if = {
+					amount = 6
+					has_law = law_voting_power_1
+					has_law = banish_voting_power_1
+					has_law = execution_voting_power_1
+					has_law = revoke_title_voting_power_1
+					has_law = grant_title_voting_power_1
+					has_law = imprison_voting_power_1
+					has_law = war_voting_power_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
 			is_voter = yes
+			FROMFROM = {
+				calc_true_if = {
+					amount = 6
+					NOT = { has_law = law_voting_power_1 }
+					NOT = { has_law = banish_voting_power_1 }
+					NOT = { has_law = execution_voting_power_1 }
+					NOT = { has_law = revoke_title_voting_power_1 }
+					NOT = { has_law = grant_title_voting_power_1 }
+					NOT = { has_law = imprison_voting_power_1 }
+					NOT = { has_law = war_voting_power_1 }
+				}
+			}
 		}
-
+		
 		modifier = {
-			factor = 5
-			FROM = {
-				is_voter = yes
-				has_position = malcontent
+			factor = 1.5
+			is_voter = yes
+			FROMFROM = {
+				calc_true_if = {
+					amount = 4
+					NOT = { has_law = law_voting_power_1 }
+					NOT = { has_law = banish_voting_power_1 }
+					NOT = { has_law = execution_voting_power_1 }
+					NOT = { has_law = revoke_title_voting_power_1 }
+					NOT = { has_law = grant_title_voting_power_1 }
+					NOT = { has_law = imprison_voting_power_1 }
+					NOT = { has_law = war_voting_power_1 }
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			is_voter = yes
+			FROMFROM = {
+				calc_true_if = {
+					amount = 2
+					NOT = { has_law = law_voting_power_1 }
+					NOT = { has_law = banish_voting_power_1 }
+					NOT = { has_law = execution_voting_power_1 }
+					NOT = { has_law = revoke_title_voting_power_1 }
+					NOT = { has_law = grant_title_voting_power_1 }
+					NOT = { has_law = imprison_voting_power_1 }
+					NOT = { has_law = war_voting_power_1 }
+				}
 			}
 		}
 
 		modifier = {
-			factor = 5
-			FROM = {
-				is_voter = yes
-				NOT = { has_position = loyalist }
-			}
+			factor = 10
+			is_voter = yes
+			has_position = malcontent
 		}
 		
 		modifier = {
@@ -8042,13 +8273,13 @@ faction_powerful_vassal_takeover = {
 				OR = {
 					is_council_content = no
 					NOT = { primary_title = { has_law = war_voting_power_1 } }
-					#has_council = no
 				}
 			}
 		}
 		NOT = { trait = incapable }
 		liege = {
 			is_feudal = yes
+			NOT = { government = chinese_imperial_government }
 			NOT = { controls_religion = yes }
 			NOT = {
 				any_demesne_title = {
@@ -8325,7 +8556,7 @@ faction_powerful_vassal_takeover = {
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
 	membership = {
-		factor = 1		
+		factor = 1
 
 		modifier = {
 			factor = 0
@@ -8333,7 +8564,7 @@ faction_powerful_vassal_takeover = {
 				leads_faction = faction_claimant
 				in_faction = faction_claimant 
 			}
-		}	
+		}
 		
 		modifier = {
 			factor = 0
@@ -8440,7 +8671,6 @@ faction_powerful_vassal_takeover = {
 				}
 			}
 		}
-		
 		
 		modifier = {
 			factor = 1000

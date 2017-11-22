@@ -64,7 +64,7 @@ TECH_GROUP_MILITARY = {
 			add_building = ct_shipyard_4
 			add_building = tp_shipyard_4
 			add_building = ca_shipyard_4
-			add_building = no_harbor_5			
+			add_building = no_harbor_5
 			add_building = tb_shipyard_4
 		}
 		5 = {

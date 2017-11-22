@@ -6,19 +6,18 @@ title = c_fergana
 # Settlements
 max_settlements = 6
 
-b_khavakend = castle
-b_uzkand = city
+b_uzkand = castle
+b_andijan = city
 b_osh = temple
-b_andijan=city
+b_marginan = city
 
-#b_fergana = city
-#b_margilan 
-#b_rishton
-#b_namangan
+#b_aval = castle
+#b_nadaq = castle
+#b_rishton = city
 
 # Misc
 culture = karluk
-religion = manichean
+religion = khurmazta
 
 # History
 
