@@ -1,0 +1,491 @@
+
+castle = {
+
+
+
+
+#Bâtiments pour les chrétiens d'occident (magrébins et africains de l'ouest)
+
+	ca_culture_chcat_syst_1 = {
+		desc = chcat_syst_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian 
+NOT = { has_global_flag = mutare }
+NOT = { has_global_flag = central } 
+                         
+				OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				}
+				
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 730
+heavy_infantry = 45
+archers = 20
+light_cavalry = 5
+light_infantry = 10		
+heavy_infantry_offensive = 0.07
+heavy_infantry_morale = 0.08
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_chcat_sysfed_1 = {
+		desc = ca_culture_chcat_sysfed_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				}
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+knights = 30
+archers = 30
+light_cavalry = 15
+light_infantry = 25		
+knights_offensive = 0.10
+knights_morale = 0.10
+knights_defensive = 0.05
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_chcat_sysfed_2 = {
+		desc = ca_culture_chcat_sysfed_2_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				}
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_chcat_sysfed_1
+		gold_cost = 300
+		build_time = 720
+knights = 15
+archers = 10
+light_cavalry = 20
+light_infantry = 25		
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+ca_culture_chcat_sysfed_3 = {
+		desc = ca_culture_chcat_sysfed_3_desc
+		potential = {
+			FROM = {
+
+is_feudal = yes
+religion_group = christian
+OR = { 
+has_global_flag = mutare 
+has_global_flag = central  
+}                          
+				OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				}
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_chcat_sysfed_2
+		gold_cost = 400
+		build_time = 720
+knights = -45
+archers = 25
+light_cavalry = -35
+archers_morale = 0.10
+archers_defensive = 0.10
+light_infantry = -50
+heavy_infantry = 20
+heavy_infantry_morale = 0.10
+heavy_infantry_defensive = 0.10
+pikemen = 20
+pikemen_morale = 0.10
+pikemen_defensive = 0.10
+knights_offensive = -0.10
+knights_morale = -0.10
+knights_defensive = -0.05		
+tax_income = -8
+retinuesize = 2500
+		ai_creation_factor = 101
+		
+		
+	}
+
+
+# Bâtiments pour les chrétiens orientaux (ethiopiens & autres convertis)
+
+
+	
+	ca_culture_chrorth_sysprono_1 = {
+		desc = ca_culture_chrorth_sysprono_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+          OR = {           
+				culture = alan
+				culture_group = altaic
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				culture_group = iranian
+				culture_group = east_african
+				
+				}
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+		
+heavy_infantry = 10
+archers = 30
+light_infantry = 10
+light_cavalry = 10
+knights = 25
+horse_archers = 25		
+horse_archers_morale = 0.10
+knights_defensive = 0.20
+extra_tech_building_start = -1
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_chrorth_sysprono_2 = {
+		desc = ca_culture_chrorth_sysprono_2_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+religion_group = christian
+                     
+				  OR = {           
+				culture = alan
+				culture_group = altaic
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				culture_group = iranian
+				culture_group = east_african
+				
+				}
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+		
+                add_number_to_name = no 
+		upgrades_from = ca_culture_chrorth_sysprono_1
+		gold_cost = 50
+		build_time = 50
+
+heavy_infantry = 20
+archers = 20
+horse_archers = 10
+knights = 30		
+tax_income = 3
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_chrorth_sysprono_3 = {
+		desc = ca_culture_chrorth_sysprono_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+religion_group = christian
+                         
+				  OR = {           
+				culture = alan
+				culture_group = altaic
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				culture_group = iranian
+				culture_group = east_african
+				
+				}		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_chrorth_sysprono_2
+		gold_cost = 400
+		build_time = 720
+
+archers = -20
+light_cavalry = -10
+light_infantry = -10
+knights = 10
+heavy_infantry = 10
+retinuesize = 200
+tax_income = 3
+
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	# Placeholder des restes
+	
+	ca_culture_reste_1 = {
+		desc = ca_culture_reste_1_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+NOT = { religion_group = christian
+religion_group = muslim
+religion = norse_pagan
+religion = baltic_pagan
+religion = finnish_pagan
+religion = slavic_pagan 
+culture_group = magyar
+}        
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+                add_number_to_name = no 
+		gold_cost = 10
+		build_time = 250
+		
+heavy_infantry = 30
+archers = 30
+light_infantry = 40
+light_cavalry = 10
+knights = 5
+
+extra_tech_building_start = -1
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_reste_2 = {
+		desc = ca_culture_reste_2_desc
+		potential = {
+			FROM = {
+is_feudal = yes
+NOT = { religion_group = christian
+religion_group = muslim
+religion = norse_pagan
+religion = baltic_pagan
+religion = finnish_pagan
+religion = slavic_pagan
+culture_group = magyar 
+} 
+
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+OR = {
+FROM = {
+top_liege = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+}
+FROM = {
+primary_title = {
+OR = {
+has_law = centralization_3
+has_law = centralization_4
+}
+}
+}
+		}		}
+		
+                add_number_to_name = no 
+		upgrades_from = ca_culture_reste_1
+		gold_cost = 50
+		build_time = 50
+
+heavy_infantry = 30
+archers = 25
+knights = 10		
+tax_income = 2
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_reste_3 = {
+		desc = ca_culture_reste_3_desc
+		potential = {
+			FROM = {
+
+
+is_feudal = yes
+NOT = { religion_group = christian
+religion_group = muslim
+religion = norse_pagan
+religion = baltic_pagan
+religion = finnish_pagan
+religion = slavic_pagan
+culture_group = magyar 
+} 		
+
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+OR = {
+FROM = {
+NOT = { tier = duke }
+NOT = { tier = king }
+NOT = { tier = count }
+liege = {
+primary_title = {
+has_law = centralization_4
+}
+}
+}
+FROM = {
+primary_title = {
+has_law = centralization_4
+
+}
+}		} }
+                add_number_to_name = no
+upgrades_from = ca_culture_reste_2
+		gold_cost = 400
+		build_time = 720
+
+archers = 60
+light_cavalry = 40
+light_infantry = -20
+knights = 20
+heavy_infantry = 30
+tax_income = 2
+
+		ai_creation_factor = 101
+		
+		
+	}
+}	
