@@ -338,7 +338,6 @@ retinuesize = 2500
 			FROM = {
 			religion_group = christian
  OR = {           
-				culture = alan
 				culture_group = altaic
 				culture = bedouin_arabic
 				culture = levantine_arabic
