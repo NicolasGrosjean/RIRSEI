@@ -1884,6 +1884,51 @@ Nomade_Catatanks_4;;Développement des Cataphractaires;;;;;;;;;;;x
 Nomade_Catatanks4_desc;;Il est connu que les sociétés nomades de la steppe euro-asiatique se basent sur les chevaux. Mais il s'agit souvent de petits chevaux et des poneys des steppes. Ils sont robustes et endurants tant au froid qu'à la chaleur. Mais leur petite taille les rend inutile en combat rapproché, et il est presque délirant de charger une formation d'infanterie lourde avec des poneys. /nLes nobles nomades s'enrichissent particulièrement lorsqu'ils sont au contact des sociétés sédentaires, par le commerce ou le pillage. Ce n'est qu'à ce moment qu'ils peuvent se permettre d'acheter des grands chevaux niséens, avec leur cataphracte. Les nobles eux-mêmes peuvent s'acheter de lourdes armures, souvent auprès des sociétés sédentaires. Les grands chevaux coûtent très chers, ils sont fragiles et demandent beaucoup d'attention. Si les cataphractaires nomades sont redoutables, car ils allient la détermination morale des nomades et la qualité de l'équipement sédentaire, ils nécessitent un lourd investissement, ce qui explique leur rareté. ;;;;;;;;;;;x
 Nomade_Catatanks_5;;Développement des Cataphractaires;;;;;;;;;;;x
 Nomade_Catatanks5_desc;;Il est connu que les sociétés nomades de la steppe euro-asiatique se basent sur les chevaux. Mais il s'agit souvent de petits chevaux et des poneys des steppes. Ils sont robustes et endurants tant au froid qu'à la chaleur. Mais leur petite taille les rend inutile en combat rapproché, et il est presque délirant de charger une formation d'infanterie lourde avec des poneys. /nLes nobles nomades s'enrichissent particulièrement lorsqu'ils sont au contact des sociétés sédentaires, par le commerce ou le pillage. Ce n'est qu'à ce moment qu'ils peuvent se permettre d'acheter des grands chevaux niséens, avec leur cataphracte. Les nobles eux-mêmes peuvent s'acheter de lourdes armures, souvent auprès des sociétés sédentaires. Les grands chevaux coûtent très chers, ils sont fragiles et demandent beaucoup d'attention. Si les cataphractaires nomades sont redoutables, car ils allient la détermination morale des nomades et la qualité de l'équipement sédentaire, ils nécessitent un lourd investissement, ce qui explique leur rareté. ;;;;;;;;;;;x
+#;;;;;;;;;;;;;;;;;;x
+#Bâtiments simulacres;;;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;;;;;x
+ca_culture_restetrib_syst_1;;Guerriers tribaux;;;;;x;;;;;;;;
+restetrib_syst_1_desc;; Ce bâtiment représente grossièrement les actions de razzias et d'harassement des clans ou tribus.;;;;;x;;;;;;;;
+ca_culture_restetrib_syst_2;;Proto-organisation tribale;;;;;x;;;;;;;;
+restetrib_syst_2_desc;; Ce bâtiment représente grossièrement les organisations collectives entre tribus ou clans pour des actions de razzias et d'harassement.;;;;;;;x;;;;;;;;
+ca_culture_chcat_syst_1;;Milites;;;;;x;;;;;;;;
+chcat_syst_1_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par les monarchies chrétiennes occidentales, notamment autour du fantassin lourd.;;;;;x;;;;;;;;
+ca_culture_chcat_sysfed_1;;Servitium Debitum;;;;;x;;;;;;;;
+ca_culture_chcat_sysfed_1_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal.;;;;;x;;;;;;;;
+ca_culture_chcat_sysfed_2;;Exercitus regis;;;;;x;;;;;;;;
+ca_culture_chcat_sysfed_2_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal, avec une importance accrue du pouvoir monarchique.x;;;;;;;;
+ca_culture_chcat_sysfed_3;;Militia patriae;;;;;x;;;;;;;;
+ca_culture_chcat_sysfed_3_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal, avec une importance accrue du pouvoir monarchique.;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_1;;Stratiotai;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_1_desc;;Ce bâtiment représente grossièrement les structures militaires des chrétiens orientaux;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_2;;Pronoia;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_2_desc;;Ce bâtiment représente grossièrement les structures militaires des chrétiens orientaux, inspirées par les Pronoia des rhomaioi;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_3;;Pronoia kai tagmata;;;;;x;;;;;;;;
+ca_culture_chrorth_sysprono_3_desc;;Ce bâtiment représente grossièrement les structures militaires des chrétiens orientaux, inspirées par les rhomaioi;;;;;x;;;;;;;;
+ca_culture_reste_1;;Simulacrum constitutionis exerciti;;;;;x;;;;;;;;
+ca_culture_reste_1_desc;;Ce bâtiment représente grossièrement des structures militaires générales;;;;;x;;;;;;;;
+ca_culture_reste_2;;Simulacrum constitutionis exerciti;;;;;x;;;;;;;;
+ca_culture_reste_2_desc;;Ce bâtiment représente grossièrement des structures militaires générales;;;;;x;;;;;;;;
+ca_culture_reste_3;;Simulacrum constitutionis exerciti;;;;;x;;;;;;;;
+ca_culture_reste_3_desc;;Ce bâtiment représente grossièrement des structures militaires générales;;;;;x;;;;;;;;
+ct_corth_base;;Polis;;;;;x;;;;;;;;
+ct_corth_base_desc;;Ce bâtiment représente grossièrement les structures urbaines des chrétiens orientaux;;;;;x;;;;;;;;
+ct_catho_base;;Ciuitas;;;;;x;;;;;;;;
+ct_catho_base_desc;;Ce bâtiment représente grossièrement les structures urbaines inspirées des chrétiens occidentaux;;;;;x;;;;;;;;
+ct_catho_deux;;Militia ciuitatis;;;;;x;;;;;;;;
+ct_catho_deux_desc;;Ce bâtiment représente grossièrement les structures urbaines inspirées des systèmes municipaux occidentaux;;;;;x;;;;;;;;
+ct_reste_base;;Simulacrum ciuitatis;;;;;x;;;;;;;;
+ct_reste_base_desc;;Ce bâtiment représente grossièrement des structures urbaines générales;;;;;x;;;;;;;;
+tp_culture_chcat_syst_1;;Servitium Debitum;;;;;x;;;;;;;;
+chcat_syst_1_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal.;;;;;x;;;;;;;;
+tp_culture_chcat_syst_2;;Exercitus regis;;;;;;x;;;;;;;;
+chcat_syst_2_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal.;;;;;x;;;;;;;;
+tp_culture_chcat_syst_3;;Militia patriae;;;;;;x;;;;;;;;
+chcat_syst_3_desc;;Ce bâtiment représente grossièrement les structures militaires inspirées par l'Occident féodal, avec une importance accrue du pouvoir monarchique.;;;;;x;;;;;;;;
+tp_orthoplaceh_syst_1;;Ekklesia;;;;;x;;;;;;;;
+orthoplaceh_syst_1_desc;;L'Ekklesia (L'Eglise) est la communauté des chrétiens, dirigée par des prêtres (clergé séculier), dont les champions sont les moines (clergé régulier). Les institutions ecclésiastiques possèdent souvent de grands domaines. Mais contrairement à l'Occident, les clercs orientaux ne se comportent pas comme des seigneurs temporels: ils ne mènent pas des armées, et ne coulent pas le sang, respectant scrupuleusement les Evangiles. Toutefois, en cas d'invasion, les monastères et les églises sont utilisés comme lieux fortifiés, et le clergé sait mieux que quiconque comment motiver les âmes. Etant donné qu'ils n'arment pas de cavaliers ou de soldats, les institutions ecclésiastiques orientales sont plus riches que celle de l'Occident.;;;;;x;;;;;;;;
+tp_reste_syst_1;;Simulacrum aedis;;;;;x;;;;;;;;
+reste_syst_1_desc;;Ce bâtiment représente grossièrement des structures militaires générales;;;;;x;;;;;;;;
 #;;;;;;;;;;;;;;x
 #Titles;;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x

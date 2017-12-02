@@ -742,6 +742,99 @@ light_cavalry_offensive = 0.10
 		
 		
 	}
+# Autres tribaux
+
+	ca_culture_restetrib_syst_1 = {
+		desc = restetrib_syst_1_desc
+		potential = {
+			FROM = {
+			
+NOT = {			
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+religion_group = muslim
+culture = irish
+culture = scottish
+culture = pictish
+culture = welsh
+culture = ugricbaltic
+culture = prussian
+culture = lithuanian
+culture = lettigallish
+culture = old_saxon
+culture_group = north_germanic
+culture_group = finno_ugric
+}
+}
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 60
+light_infantry = 80
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_restetrib_syst_2 = {
+		desc = restetrib_syst_2_desc
+		potential = {
+			FROM = {
+
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_restetrib_syst_1
+		gold_cost = 150
+		build_time = 50
+
+light_infantry = 30
+archers = 30		
+heavy_infantry = 10
+light_cavalry = 20
+
+		ai_creation_factor = 101
+		
+		
+	}
+
 
 
 }
