@@ -392,6 +392,7 @@ NOT = { has_global_flag = central }
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 				}
 			}
 		}
@@ -425,6 +426,7 @@ NOT = { has_global_flag = central }
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 				}
 			}
 		}
@@ -457,6 +459,7 @@ NOT = { has_global_flag = central }
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 				}
 			}
 		}
@@ -502,6 +505,7 @@ has_global_flag = central
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 
 				}
 
@@ -542,6 +546,7 @@ has_global_flag = central
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 
 				}
 
@@ -602,6 +607,7 @@ has_global_flag = central
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 
 				}
 

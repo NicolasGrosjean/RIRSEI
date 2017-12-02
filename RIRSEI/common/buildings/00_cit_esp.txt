@@ -18,6 +18,7 @@ culture = castillan
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 }
 		}
 }
@@ -55,6 +56,7 @@ culture = castillan
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 }
 		}
 		}
@@ -96,6 +98,7 @@ culture = castillan
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 }
 		}
 		}
@@ -137,6 +140,7 @@ culture = castillan
                                         culture = portuguese
                                         culture = ibero
 culture = basque
+culture = andalusian_arabic
 }
 		}
 		}
