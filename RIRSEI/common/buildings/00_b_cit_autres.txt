@@ -33,5 +33,164 @@ tax_income = 4
 		
 		extra_tech_building_start = -1
 	}
+
+	ct_corth_base = {
+	add_number_to_name = no 
+		desc = ct_corth_base_desc
+		potential = {
+	
+			FROM = {
+		
+religion_group = christian
+
+        OR = {           
+				culture = alan
+				culture_group = altaic
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				culture_group = iranian
+				culture_group = east_african
+				
+				}
+		}
+}
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 100
+		archers = 150
+		levy_size = -0.7
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = -0.2
+fort_level = 1.0
+tax_income = 3
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+	#cités chrétiennes occidents (placeholders)
+	
+	ct_catho_base = {
+	add_number_to_name = no 
+		desc = ct_catho_base_desc
+		potential = {
+	
+		
+		
+			FROM = {
+religion_group = christian
+OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				} 
+
+			}
+		}
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		knights = 40
+		levy_size = -0.5
+tax_income = 2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+	ct_catho_deux = {
+	add_number_to_name = no 
+		desc = ct_catho_deux_desc
+		potential = {
+	
+		
+		
+			FROM = {
+religion_group = christian
+OR = {
+					culture = maghreb_arabic
+					culture_group = west_african
+				} 
+
+			}
+		}
+
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }		
+		gold_cost = 200
+		prestige_cost = 0
+		build_time = 730
+		archers = 100
+		archers_offensive = 0.15
+		pikemen = 60
+		heavy_infantry = 50
+		light_infantry = 40
+		knights = -25
+		levy_size = 0.5
+		upgrades_from = ct_catho_base
+        tax_income = -6
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+	
+	#Le reste
+	
+	ct_reste_base = {
+	add_number_to_name = no 
+		desc = ct_reste_base_desc
+		potential = {
+	
+		
+		
+			FROM = {
+NOT = { 
+religion_group = christian
+religion_group = muslim
+religion = norse_pagan
+religion = baltic_pagan
+religion = finnish_pagan
+religion = slavic_pagan
+culture_group = magyar 
+} 
+
+			}
+		}
+
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		gold_cost = 10
+		prestige_cost = 0
+		build_time = 730
+		light_infantry = 60
+		archers = 100
+		heavy_infantry = 30
+		levy_size = -0.5
+light_infantry_defensive = -0.2
+light_infantry_offensive = -0.2
+light_infantry_morale = -0.2
+archers_defensive = -0.2
+archers_offensive = -0.2
+archers_morale = -0.2
+tax_income = 2
+		
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = -1
+	}
+
 	
 }
