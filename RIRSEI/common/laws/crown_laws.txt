@@ -217,6 +217,7 @@ trait = crowned_by_pope
 						OR = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
+							religion = bon
 						}
 					}
 				}
@@ -333,6 +334,7 @@ trait = crowned_by_pope
 						OR = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
+							religion = bon
 						}
 					}
 				}
@@ -451,6 +453,7 @@ has_landed_title = d_ibadi
 						OR = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
+							religion = bon
 						}
 					}
 				}
@@ -623,6 +626,5 @@ allow = {
 			}
 			set_investiture = any
 		}
-	}
-	
+	}	
 }

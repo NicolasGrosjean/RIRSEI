@@ -28403,7 +28403,7 @@ add_claim = e_hre
 	1065.1.1 = {
 		birth="1065.1.1"
 	}
-	1065.1.1 = {
+	1066.1.1 = {
 		employer=20257
 	}
 	1096.1.1 = {
@@ -38802,7 +38802,7 @@ add_claim = e_hre
 	religion="catholic"
 	culture="german"
 	father=31760
-	#mother Helene Askanien TODO
+	#mother Helene Askanien
 	1297.1.1={
 		birth="1297.1.1"
 	}
@@ -54627,4 +54627,3 @@ add_claim = e_hre
 		death=yes
 	}
 }
-

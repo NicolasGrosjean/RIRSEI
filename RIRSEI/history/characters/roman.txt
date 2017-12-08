@@ -1266,7 +1266,7 @@ death="511.1.1"
 	trait="diligent"
 	trait="skilled_tactician"
 	trait=homosexual
-	
+
 	76.1.24={
 		birth="76.1.24"
 	}

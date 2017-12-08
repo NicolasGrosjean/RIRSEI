@@ -23,11 +23,11 @@ religion = catholic
 # History
 790.1.1 = { culture = frankish }
 911.1.1 = { # Viking takeover
-	remove_settlement = b_caen
-	remove_settlement = b_bayeux
+	#remove_settlement = b_caen
+	#remove_settlement = b_bayeux
 	b_avranches = castle
-	b_caen = city
-	b_bayeux = temple
+	#b_caen = city
+	#b_bayeux = temple
 
 	b_mortain = ca_keep_1
 	b_mortain = ca_wall_1
@@ -41,6 +41,8 @@ religion = catholic
 }
 
 1066.1.1 = {
+	b_caen = ct_wall_1
+	b_caen = ct_wall_2
 	b_caen = ct_port_2
 	b_caen = ct_port_3
 }

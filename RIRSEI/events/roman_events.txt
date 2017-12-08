@@ -36,7 +36,7 @@ narrative_event = {
 		completely_controls = d_antioch
 		completely_controls = d_aleppo
 		completely_controls = d_tripoli
-		completely_controls = d_syria
+		completely_controls = d_palmyra
 		completely_controls = d_damascus
 		completely_controls = d_galilee
 		completely_controls = d_jerusalem
@@ -804,7 +804,7 @@ narrative_event = {
 		completely_controls = d_antioch
 		completely_controls = d_aleppo
 		completely_controls = d_tripoli
-		completely_controls = d_syria
+		completely_controls = d_palmyra
 		completely_controls = d_damascus
 		completely_controls = d_galilee
 		completely_controls = d_jerusalem
@@ -901,6 +901,15 @@ narrative_event = {
 		completely_controls = d_vidin
 		completely_controls = d_turnovo
 		completely_controls = d_karvuna
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_spqr
+		}
 	}
 	
 	immediate = {

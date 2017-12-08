@@ -483,6 +483,7 @@ completely_controls = d_latium
 		is_high_prio = yes
 		
 		potential = {
+			is_nomadic = no
 			is_playable = yes
 			has_dlc = "Legacy of Rome"
 			has_landed_title = e_byzantium
@@ -781,6 +782,7 @@ letter_event = { id = RIRSEBYZ.111135 }
 			religion = orthodox
 			is_playable = yes
 			culture = hungarian
+			has_landed_title = k_magyar
 			k_hungary = {
 				has_holder = no
 			}
@@ -853,6 +855,7 @@ holder_scope = {
 			has_dlc = "The Old Gods"
 			is_playable = yes
 			religion_group = zoroastrian_group
+			NOT ={ religion = manichean }
 			NOT = { has_global_flag = saoshyant_appears }
 		}
 		allow = {
@@ -975,7 +978,7 @@ holder_scope = {
 			is_playable = yes
 			has_landed_title = d_castilla
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_castille = {
 				has_holder = no
 			}
@@ -1043,7 +1046,7 @@ holder_scope = {
 			is_playable = yes
 			has_landed_title = d_porto
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_portugal = {
 				has_holder = no
 			}
@@ -1110,7 +1113,7 @@ holder_scope = {
 			is_playable = yes
 			has_landed_title = d_aragon
 			independent = yes
-			NOT = { tier = KING }
+			NOT = { higher_tier_than = DUKE }
 			k_aragon = {
 				has_holder = no
 			}
@@ -1394,6 +1397,7 @@ holder_scope = {
 			}	
 			NOR = {
 				religion_group = jewish_group
+				religion = manichean
 				has_character_modifier = expelled_jewish
 				is_nomadic = yes
 				secret_religion = jewish
@@ -1515,7 +1519,7 @@ holder_scope = {
 			has_dlc = "Rajas of India"
 			is_playable = yes
 			is_feudal = yes
-			religion_group = indian_group	
+			has_dharmic_religion_trigger = yes
 			primary_title = {
 				higher_tier_than = DUKE
 			}
@@ -1622,7 +1626,10 @@ holder_scope = {
 
 # Hold Wargames - for nomads
 	hold_nomad_wargames = {
+		only_playable = yes
+		
 		potential = {
+			is_playable = yes
 			is_nomadic = yes
 			NOT = { has_character_modifier = holding_nomad_wargames }
 			NOT = { has_character_modifier = held_nomad_wargames }
@@ -1631,9 +1638,10 @@ holder_scope = {
 			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
-			is_inaccessible_trigger = no
+			NOT = { is_inaccessible_trigger = yes }
 			war = no
 			any_demesne_title = {
+				NOT = { higher_tier_than = count }
 				is_occupied = no
 			}
 			wealth = 20
@@ -1689,9 +1697,11 @@ holder_scope = {
 	}
 	
 	convert_to_feudalism_indep  = {
+		only_independent = yes
 		is_high_prio = yes
 		
 		potential = {
+			is_playable = yes
 			is_tribal = yes
 			independent = yes
 		}
@@ -1703,6 +1713,7 @@ holder_scope = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						is_reformed_religion = yes
+						religion = bon
 					}
 				}
 			}
@@ -1721,6 +1732,84 @@ holder_scope = {
 		}
 		
 		effect = {
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_not_a_tribe
+			}
+			
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+					NAND = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = feudal_government
+			}
+			
+			if = {
+				limit = {
+					religion_group = muslim
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_IQTA
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = muslim_government
+			}
+			
+			if = {
+				limit = {
+					culture_group = tibetan_group
+					OR = {
+						religion = bon
+						religion = buddhist
+					}
+					higher_tier_than = BARON
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = theocratic_feudal_government
+			}
+			
+			if = {
+				limit = {
+					higher_tier_than = king
+				}
+				primary_title = {
+					add_law = feudal_administration
+				}
+			}
+			
 			hidden_tooltip = {
 				any_demesne_title = {
 					limit = {
@@ -1779,7 +1868,7 @@ holder_scope = {
 		}
 	}
 	
-	convert_to_feudalism_vassal = {
+convert_to_feudalism_vassal = {
 		only_rulers = yes
 		is_high_prio = yes
 		
@@ -1796,6 +1885,7 @@ holder_scope = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						is_reformed_religion = yes
+						religion = bon
 					}
 				}
 			}
@@ -1805,13 +1895,29 @@ holder_scope = {
 					is_republic = yes
 				}
 			}
-			capital_holding = {
-				OR = {
-					AND = {
-						holding_type = tribal
-						has_building = tb_hillfort_4
+			OR = {
+				capital_holding = {
+					OR = {
+						AND = {
+							holding_type = tribal
+							has_building = tb_hillfort_4
+						}
+						holding_type = castle
 					}
-					holding_type = castle
+				}
+				AND = {
+					NOT = { tier = BARON }
+					capital_scope = {
+						any_province_holding = {
+							holding_type = castle
+							holder_scope = {
+								OR = {
+									character = ROOT
+									is_liege_or_above = ROOT
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1822,6 +1928,14 @@ holder_scope = {
 			if = {
 				limit = {
 					NOT = { religion_group = muslim }
+					NAND = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
 				}
 				
 				if = {
@@ -1853,11 +1967,80 @@ holder_scope = {
 				set_government_type = muslim_government
 			}
 			
+			if = {
+				limit = {
+					culture_group = tibetan_group
+					OR = {
+						religion = bon
+						religion = buddhist
+					}
+					higher_tier_than = BARON
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = theocratic_feudal_government
+			}
+			
 			hidden_tooltip = {
+				if = {
+					limit = {
+						capital_holding = {
+							holding_type = tribal
+							ROOT = { NOT = { tier = BARON } }
+						}
+						capital_scope = {
+							any_province_holding = {
+								holding_type = castle
+								holder_scope = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
+									}
+								}
+							}
+						}
+					}
+					
+					capital_scope = {
+						random_province_holding = {
+							limit = {
+								holding_type = castle
+								holder_scope = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
+									}
+								}
+							}
+							if = {
+								limit = {
+									NOT = { holder = ROOT }
+								}
+								usurp_title = ROOT
+							}
+							make_capital_holding = yes
+							ROOT = { set_character_flag = feudalize_handled_capital }
+						}
+					}
+				}
+				
 				any_demesne_title = {
 					limit = {
 						tier = baron
 						holding_type = tribal
+						location = {
+							capital_holding = {
+								NOT = { holding_type = castle }
+							}
+						}
 					}
 					convert_to = CASTLE
 					refill_holding_levy = yes
@@ -2086,3 +2269,4 @@ has_global_flag = contro_mutaasha
 		}
 	}
 }
+
