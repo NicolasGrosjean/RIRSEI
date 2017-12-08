@@ -288,13 +288,13 @@ settlement_decisions = {
 						is_merchant_republic = no
 						is_nomadic = no
 					}
-					capital_scope = {
-						ROOT = {
-							location = {
-								NOT = { province = PREVPREV }
-							}
-						}
-					}
+#					capital_scope = {
+#						ROOT = {
+#							location = {
+#								NOT = { province = PREVPREV }
+#							}
+#						}
+#					}
 				}
 			}
 		}
@@ -654,7 +654,11 @@ settlement_decisions = {
 					}
 					OR = {
 						has_dlc = "Rajas of India"
-						NOT = { religion_group = indian_group }
+						NOT = { has_dharmic_religion_trigger = yes }
+					}
+					OR = {
+						has_dlc = "Jade Dragon"
+						NOT = { religion = taoist }
 					}
 				}
 			}
@@ -731,7 +735,7 @@ settlement_decisions = {
 					FROM = {
 						population_and_manpower = 5000
 						any_realm_province = {
-							NOT = { culture = FROM }
+							NOT = { culture = ROOT_FROM }
 							num_of_settlements = 1
 							ROOT = {
 								location = {
@@ -744,554 +748,290 @@ settlement_decisions = {
 				custom_tooltip = { text = nomad_settle_conversion_tooltip }
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 5000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+				FROM = {
+					if = {
+						limit = { population_and_manpower = 5000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 10000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 10000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 15000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 15000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 20000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 20000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 25000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 25000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 30000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 30000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 35000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 35000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 40000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 40000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 45000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 45000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 50000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 50000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 55000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 55000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 60000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 60000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 65000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 65000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 70000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 70000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 75000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 75000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 80000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 80000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 85000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 85000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 90000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 90000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 95000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 95000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
 				}
@@ -1330,7 +1070,7 @@ settlement_decisions = {
 							limit = {
 								tier = KING
 							}
-							usurp_title = FROM
+							usurp_title = ROOT_FROM
 						}
 					}
 				}
@@ -1430,8 +1170,8 @@ settlement_decisions = {
 						landless = no
 						temporary = no
 						custom_created = yes
-						culture = FROM
-						holder = FROM
+						culture = ROOT_FROM
+						holder = ROOT_FROM
 						name = "TRIBAL_CUSTOM"
 						base_title = event_target:primary_title
 						copy_title_laws = yes
@@ -1467,7 +1207,7 @@ settlement_decisions = {
 									holding_type = tribal
 								}
 							}
-							FROM = {
+							ROOT_FROM = {
 								spawn_unit = {
 									province = PREVPREVPREV
 									owner = THIS
@@ -1572,7 +1312,11 @@ settlement_decisions = {
 					}
 					OR = {
 						has_dlc = "Rajas of India"
-						NOT = { religion_group = indian_group }
+						NOT = { has_dharmic_religion_trigger = yes }
+					}
+					OR = {
+						has_dlc = "Jade Dragon"
+						NOT = { religion = taoist }
 					}
 				}
 			}
@@ -1641,7 +1385,7 @@ settlement_decisions = {
 					FROM = {
 						population_and_manpower = 5000
 						any_realm_province = {
-							NOT = { culture = FROM }
+							NOT = { culture = ROOT_FROM }
 							num_of_settlements = 1
 							ROOT = {
 								location = {
@@ -1654,554 +1398,290 @@ settlement_decisions = {
 				custom_tooltip = { text = nomad_settle_conversion_tooltip }
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 5000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+				FROM = {
+					if = {
+						limit = { population_and_manpower = 5000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 10000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 10000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 15000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 15000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 20000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 20000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 25000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 25000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 30000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 30000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 35000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 35000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 40000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 40000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 45000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 45000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 50000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 50000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 55000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 55000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 60000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 60000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 65000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 65000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 70000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 70000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 75000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 75000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 80000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 80000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 85000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 85000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 90000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 90000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 95000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 95000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
 				}
@@ -2234,7 +1714,7 @@ settlement_decisions = {
 							limit = {
 								tier = KING
 							}
-							usurp_title = FROM
+							usurp_title = ROOT_FROM
 						}
 					}
 				}
@@ -2298,7 +1778,7 @@ settlement_decisions = {
 										}
 									}
 								}
-								FROM = {
+								ROOT_FROM = {
 									spawn_unit = {
 										province = PREVPREVPREV
 										owner = THIS
@@ -2330,7 +1810,7 @@ settlement_decisions = {
 				capital = PREV
 				
 				primary_title = {
-					FROM = {
+					ROOT_FROM = {
 						custom_tooltip = { 
 							text = TT_KHAN_INDEPENDENCE
 						}
@@ -2345,6 +1825,14 @@ settlement_decisions = {
 				if = {
 					limit = {
 						NOT = { religion_group = muslim }
+						NAND = {
+							culture_group = tibetan_group
+							OR = {
+								religion = bon
+								religion = buddhist
+							}
+							higher_tier_than = BARON
+						}
 					}
 					
 					if = {
@@ -2358,6 +1846,7 @@ settlement_decisions = {
 					}
 					set_government_type = feudal_government
 				}
+				
 				if = {
 					limit = {
 						religion_group = muslim
@@ -2373,6 +1862,28 @@ settlement_decisions = {
 						}
 					}
 					set_government_type = muslim_government
+				}
+			
+				if = {
+					limit = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
+					
+					if = {
+						limit = {
+							ai = no
+						}
+						chronicle = {
+							entry = CHRONICLE_ADOPTED_FEUDALISM
+							picture = GFX_evt_castle_construction
+						}
+					}
+					set_government_type = theocratic_feudal_government
 				}
 				
 				if = {
@@ -2395,7 +1906,7 @@ settlement_decisions = {
 				
 				any_playable_ruler = {
 					limit = {
-						NOT = { character = FROM }
+						NOT = { character = ROOT_FROM }
 						ai = no
 					}
 					narrative_event = { id = HL.1 }
@@ -2512,7 +2023,11 @@ settlement_decisions = {
 					}
 					OR = {
 						has_dlc = "Rajas of India"
-						NOT = { religion_group = indian_group }
+						NOT = { has_dharmic_religion_trigger = yes }
+					}
+					OR = {
+						has_dlc = "Jade Dragon"
+						NOT = { religion = taoist }
 					}
 				}
 			}
@@ -2583,7 +2098,7 @@ settlement_decisions = {
 					FROM = {
 						population_and_manpower = 5000
 						any_realm_province = {
-							NOT = { culture = FROM }
+							NOT = { culture = ROOT_FROM }
 							num_of_settlements = 1
 							ROOT = {
 								location = {
@@ -2596,554 +2111,290 @@ settlement_decisions = {
 				custom_tooltip = { text = nomad_settle_conversion_tooltip }
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 5000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+				FROM = {
+					if = {
+						limit = { population_and_manpower = 5000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 10000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 10000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 15000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 15000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 20000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 20000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 25000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 25000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 30000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 30000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 35000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 35000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 40000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 40000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 45000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 45000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 50000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 50000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 55000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 55000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 60000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 60000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 65000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 65000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 70000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 70000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 75000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 75000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 80000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 80000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 85000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 85000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 90000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 90000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							population_and_manpower = 95000
-							any_realm_province = {
-								NOT = { culture = FROM }
-								num_of_settlements = 1
-								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
-								}
-							}
-						}
-					}
-					FROM = {
+					if = {
+						limit = { population_and_manpower = 95000 }
 						random_realm_province = {
 							limit = {
-								NOT = { culture = FROM }
+								NOT = { culture = ROOT_FROM }
 								num_of_settlements = 1
 								any_neighbor_province = {
-									culture = FROM
-									religion = FROM
+									culture = ROOT_FROM
+									religion = ROOT_FROM
 								}
 							}
-							culture = FROM
-							religion = FROM
+							culture = ROOT_FROM
+							religion = ROOT_FROM
 						}
 					}
 				}
@@ -3188,7 +2439,7 @@ settlement_decisions = {
 										}
 									}
 								}
-								FROM = {
+								ROOT_FROM = {
 									spawn_unit = {
 										province = PREVPREVPREV
 										owner = THIS
@@ -3247,8 +2498,8 @@ settlement_decisions = {
 								landless = no
 								temporary = no
 								custom_created = yes
-								culture = FROM
-								holder = FROM
+								culture = ROOT_FROM
+								holder = ROOT_FROM
 								base_title = THIS
 							}
 						}
@@ -3376,7 +2627,7 @@ settlement_decisions = {
 				
 				any_playable_ruler = {
 					limit = {
-						NOT = { character = FROM }
+						NOT = { character = ROOT_FROM }
 						ai = no
 					}
 					narrative_event = { id = HL.1 }
