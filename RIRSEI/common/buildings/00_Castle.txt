@@ -224,10 +224,6 @@ castle = {
 		extra_tech_building_start = 0.2
 	}
 	
-	
-	
-	
-	
 	#Castle town, gives income
 	ca_town_1 = {
 		desc = ca_town_1_desc

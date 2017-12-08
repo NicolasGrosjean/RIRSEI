@@ -3317,6 +3317,7 @@ narrative_event = {
 			wealth = 500
 			d_holy_sepulchre = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -3977,6 +3978,7 @@ narrative_event = {
 			wealth = 500
 			d_saint_anthony = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -4600,6 +4602,7 @@ narrative_event = {
 			wealth = 500
 			d_immortals = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -5214,6 +5217,7 @@ narrative_event = {
 			wealth = 500
 			d_zealots = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -9524,6 +9528,7 @@ narrative_event = {
 			wealth = 500
 			d_knights_santiago = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -10189,6 +10194,7 @@ narrative_event = {
 			wealth = 500
 			d_knights_calatrava = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {
@@ -10857,6 +10863,7 @@ narrative_event = {
 			wealth = 500
 			d_saint_addai = {
 				grant_title = PREV
+				religion = PREV
 			}
 			set_government_type = feudal_government
 			create_character = {

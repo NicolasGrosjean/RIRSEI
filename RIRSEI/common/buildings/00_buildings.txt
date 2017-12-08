@@ -139,12 +139,10 @@ city = {
 	ct_rep_arsenal_1 = {
 		potential = {
 			FROM = { 
-				AND = {
-					capital_holding = {
-						title = FROMFROM
-					}
-					is_merchant_republic = yes
+				capital_holding = {
+					title = FROMFROM
 				}
+				is_merchant_republic = yes
 			}
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
@@ -162,12 +160,10 @@ city = {
 	ct_rep_arsenal_2 = {
 		potential = {
 			FROM = { 
-				AND = {
-					capital_holding = {
-						title = FROMFROM
-					}
-					is_merchant_republic = yes
+				capital_holding = {
+					title = FROMFROM
 				}
+				is_merchant_republic = yes
 			}
 		}
 		upgrades_from = ct_rep_arsenal_1
@@ -186,12 +182,10 @@ city = {
 	ct_rep_arsenal_3 = {
 		potential = {
 			FROM = { 
-				AND = {
-					capital_holding = {
-						title = FROMFROM
-					}
-					is_merchant_republic = yes
+				capital_holding = {
+					title = FROMFROM
 				}
+				is_merchant_republic = yes
 			}
 		}
 		upgrades_from = ct_rep_arsenal_2
@@ -207,8 +201,6 @@ city = {
 
 		extra_tech_building_start = 0.2
 	}
-	
-	
 	
 	ct_marketplace_1 = {
 		desc = ct_marketplace_1_desc
@@ -408,7 +400,7 @@ city = {
 		
 		ai_creation_factor = 90
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.2
 	}
 	ct_university_2 = {
 		desc = ct_university_1_desc
@@ -422,7 +414,7 @@ city = {
 		
 		ai_creation_factor = 89
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.2
 	}
 	ct_university_3 = {
 		desc = ct_university_1_desc
@@ -436,11 +428,9 @@ city = {
 		
 		ai_creation_factor = 88
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.2
 	}
-
 }
-
 
 
 # Temple
@@ -651,8 +641,6 @@ temple = {
 
 		extra_tech_building_start = 0.2
 	}
-	
-	
 	
 	tp_town_1 = {
 		desc = tp_town_1_desc
@@ -871,9 +859,7 @@ family_palace = {
 		
 		extra_tech_building_start = 5.0
 	}
-	
-	
-	
+
 	# Map Room
 	fp_shipyard_1 = {
 		desc = fp_shipyard_1_desc
