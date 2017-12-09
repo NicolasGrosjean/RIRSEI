@@ -8197,10 +8197,12 @@ e_italy = {
 		}
 		has_landed_title=k_italy
 		has_landed_title=k_sicily
+		has_landed_title=k_sardinia
 		any_demesne_title = {
 			tier = king
 			NOT = { title = k_italy }
 			NOT = { title = k_sicily }
+			NOT = { title = k_sardinia }
 		}
 	}
 	
@@ -27399,8 +27401,6 @@ e_arabia = {
 				}
 				b_treiz = {
 				}
-				b_krakdeschevaliers = {
-				}
 				b_masyaf = {
 				}
 			}
@@ -27508,6 +27508,8 @@ e_arabia = {
 				b_riyaq = {
 				}
 				b_chlifa = {
+				}
+				b_krakdeschevaliers = {
 				}
 			}
 		}
@@ -39356,7 +39358,7 @@ e_tibet = {
 	capital = 1498 # Lhasa
 	
 	#bodpa = "Bodchenpo"
-	han = "Tufan"
+	han = "Tubo"
 
 	k_yarlung = {
 		color={ 209 52 80 }
@@ -39366,7 +39368,7 @@ e_tibet = {
 
 		culture = bodpa
 		
-		han = "Tufan"
+		han = "Tubo"
 
 		d_lhasa = { # A.k.a "Ü-Tsang"
 			color={ 225 75 0 }
