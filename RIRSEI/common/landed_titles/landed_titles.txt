@@ -27888,8 +27888,6 @@ croatian = "Principatus Antiochenus"
 				}
 				b_treiz = {
 				}
-				b_krakdeschevaliers = {
-				}
 				b_masyaf = {
 				}
 			}
@@ -27997,6 +27995,8 @@ croatian = "Principatus Antiochenus"
 				b_riyaq = {
 				}
 				b_chlifa = {
+				}
+				b_krakdeschevaliers = {
 				}
 			}
 		}
@@ -37274,7 +37274,7 @@ e_tibet = {
 	capital = 1498 # Lhasa
 	
 	#bodpa = "Bodchenpo"
-	han = "Tufan"
+	han = "Tubo"
 
 	k_yarlung = {
 		color={ 209 52 80 }
@@ -37284,7 +37284,7 @@ e_tibet = {
 
 		culture = bodpa
 		
-		han = "Tufan"
+		han = "Tubo"
 
 		d_lhasa = { # A.k.a "Ü-Tsang"
 			color={ 225 75 0 }
