@@ -1,5 +1,17 @@
 europe_road = {
 	wealth = 40			# Total base wealth of silk route
+	trade_post_display_trigger = {
+		OR = {
+			province_id = 227
+			province_id = 130
+			province_id = 114
+			province_id = 235
+			province_id = 123
+			province_id = 78
+			province_id = 76
+            province_id = 93			
+		}
+	}
 
 	modifier = {			# How the trade route modifies the provinces it passes
 		icon = 4
@@ -7,6 +19,7 @@ europe_road = {
 		city_tax_modifier = 0.10
 		temple_tax_modifier = 0.10
 		trade_route_value = 1
+		tech_growth_modifier = 0.15
 		icon = 4
 	}
 

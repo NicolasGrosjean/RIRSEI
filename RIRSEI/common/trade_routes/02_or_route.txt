@@ -1,5 +1,11 @@
 or_road = {
 	wealth = 20			# Total base wealth of silk route
+	
+	trade_post_display_trigger = {
+		
+			province_id = 918
+		
+	}
 
 	modifier = {			# How the trade route modifies the provinces it passes
 		icon = 4
@@ -15,7 +21,7 @@ or_road = {
 		
 	}
 
-	# Genes-Flandres
+	# Tombouctou-Maroc
 	path = {
 911 917 916 918 843 842
 	}
