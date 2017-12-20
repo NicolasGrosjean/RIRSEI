@@ -16633,7 +16633,7 @@ ai_will_do = {
 	}
 }
 
-dejure_duchy_claim = {
+dejure_duchy_rirsei_claim = {
 name = CB_NAME_DEJURECLAIM
 war_name = WAR_NAME_DEJURECLAIM
 sprite = 16

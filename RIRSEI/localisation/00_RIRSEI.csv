@@ -2556,3 +2556,4 @@ IMPORIP;Imperium Romanorum Pars Orientalis;Imperium Romanorum Pars Orientalis;;;
 SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut pas être changé !§!;;;;;;;;;;;;x
 #;;;;;;;;;;;;x;;;;;;;;;; 
+dejure_duchy_rirsei_claim;;Vous pouvez réclamer ce duché, car il appartient de jure à votre royaume;;;;;x;;;;;;;;
