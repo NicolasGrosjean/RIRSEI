@@ -183,8 +183,8 @@ letter_event = {
 					NOT = { is_female = yes	}
 				}
 				letter_event = { id = RIRSEI.2002020 } # Invitation to coronation
-			}
-		character_event = { id = RIRSEI.2002050 days = 60 } # Coronation by pope
+			}			
+		character_event = { id = RIRSEI.250 days = 60 } # Coronation by pope		
 		}
 	}
 }
@@ -400,7 +400,7 @@ letter_event = {
 
 # Emperor crowned by pope
 character_event = {
-	id = RIRSEI.2002050
+	id = RIRSEI.250
 	title = "EVTNAME_RIRSEI_2002050"
 	desc = "EVTDESC_RIRSEI_2002050"
 	picture = "GFX_evt_empdeux"
@@ -427,7 +427,7 @@ remove_trait = roi_oint
 				limit = {
 					has_character_flag = attend_coronation
 				}
-				character_event = { id = RIRSEI.2002055 }
+				character_event = { id = RIRSEI.251 }
 				opinion = {
 					modifier = opinion_attended_ceremony # should maybe be a new opinion called "Crowned by Pope"
 					who = ROOT
@@ -438,17 +438,17 @@ remove_trait = roi_oint
 				limit = {
 					not = { has_character_flag = attend_coronation }
 				}
-				letter_event = { id = RIRSEI.2002060 }
+				letter_event = { id = RIRSEI.252 }
 			}
 			clr_character_flag = wants_coronation
-			narrative_event = { id = RIRSEI.2002065 }
+			narrative_event = { id = RIRSEI.253 }
 		}
 	}
 }
 
 # Emperor crowned by pope - attended realm lord inform ceremony
 character_event = {
-	id = RIRSEI.2002055
+	id = RIRSEI.251
 	desc = "EVTDESC_RIRSEI_2002055"
 	picture = "GFX_evt_empdeux"
 	
@@ -463,7 +463,7 @@ character_event = {
 
 # Emperor crowned by pope - non-attended realm lord inform
 letter_event = {
-	id = RIRSEI.2002060
+	id = RIRSEI.252
 	desc = "EVTDESC_RIRSEI_2002060"
 	
 	is_triggered_only = yes
@@ -473,7 +473,7 @@ letter_event = {
 	}
 }
 narrative_event = {
-	id = RIRSEI.2002065
+	id = RIRSEI.253
 	title = "EVTNAME_RIRSEI_2002065"
 	desc = "EVTDESC_RIRSEI_2002065"
 	picture = "GFX_evt_empdeux"
