@@ -840,12 +840,13 @@ narrative_event = {
     has_global_flag = christian_crusades_unlocked
 	NOT = { has_global_flag = djihad_sulami }
 	year = 1100
-	NOT = {
-		e_arabia = {
+	
+e_arabia = {
 has_holder = no	}
+
 }	
 
-	}
+	
 	
 	mean_time_to_happen = {
 		months = 60
