@@ -1719,7 +1719,10 @@ holder_scope = {
 				hidden_tooltip = {
 					OR = {
 						NOT = { religion_group = pagan_group }
-						is_reformed_religion = yes
+						religion_group = christian
+						religion_group = muslim
+						religion_group = zoroastrian_group
+						religion_group = indian_group
 						religion = bon
 					}
 				}
@@ -1891,7 +1894,10 @@ convert_to_feudalism_vassal = {
 				hidden_tooltip = {
 					OR = {
 						NOT = { religion_group = pagan_group }
-						is_reformed_religion = yes
+						religion_group = christian
+						religion_group = muslim
+						religion_group = zoroastrian_group
+						religion_group = indian_group
 						religion = bon
 					}
 				}

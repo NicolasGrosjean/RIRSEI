@@ -753,6 +753,7 @@ CB_NAME_COMPROSER;Claim of Southern Italy;Revendication de l'Italie du Sud;;;;;;
 WAR_NAME_COMPROSER;$ORDER$ War of Imperial claim $FIRST_ADJ$-$SECOND_ADJ$;$ORDER$ Guerre de revendication impériale $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
 CV_compo_ser;Invade Romania;Revendiquer l'Italie du Sud;;;;;;;x;;;;;;;;;;;;;
 CV_compo_ser_desc;§Y$TARGET$§! hold territories which belongs to the Western Roman Empire !;§Y$TARGET$§! détient des terres italiennes qui appartiennent à l'Empire romain d'Occident.;;;;;;;;;x;;;;;;;;;;;
+TT_NOT_UNREFORMED_PAGAN;;fidèle d'une religion sédentaire;;;;;;;x;;;;;;;;
 #;;;;;;;;;;;;;;x
 #MUSLIM;;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
