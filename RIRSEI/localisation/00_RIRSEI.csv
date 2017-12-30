@@ -2558,3 +2558,43 @@ SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut pas être changé !§!;;;;;;;;;;;;x
 #;;;;;;;;;;;;x;;;;;;;;;; 
 dejure_duchy_rirsei_claim;;Vous pouvez réclamer ce duché, car il appartient de jure à votre royaume;;;;;x;;;;;;;;
+#;;;;;;;;;;;;x;;;;;;;;;; 
+#;CHINA;;;;;;;;;;;x;;;;;;;;;; 
+#;;;;;;;;;;;;x;;;;;;;;;; 
+WESTERN_GOVERNOR_MALE;Xiyu Changshi;Xiyu Changshi;Generalprotektor;;Protector general;;;;;;;;;x
+WESTERN_GOVERNOR_FEMALE;Xiyu Changshi;Xiyu Changshi;Generalprotektorin;;Protectora general;;;;;;;;;x
+WESTERN_GOVERNOR_TITLE_FOA;Your Illustriousness;Votre Illustre Grandeur;Eure Erhabenheit;;Su Ilustrísima;;;;;;;;;x
+e_china_west_governor;Xiyu Duhu Fu;Xiyu Duhu Fu;Westliches Protektorat;;Protectorado occidental;;;;;;;;;x
+e_china;Zhongguo;Zhongguo;Kaiserreich von China;;Imperio de China;;;;;;;;;x
+title_china_emperor;Huangdi;Huangdi;Kaiser;;Emperador;;;;;;;;;x
+tang_china;Tangchao;Tangchao;Tang;;Tang;;;;;;;;;x
+jin_china;Jin;Jinchao;Jin;;Jin;;;;;;;;;x
+wei_china;Wei;Weichao;Wei;;Wei;;;;;;;;;x
+qi_china;Qi;Qichao;Qi;;Qi;;;;;;;;;x
+zhou_china;Zhou;Zhouchao;Zhou;;Zhou;;;;;;;;;x
+han_china;Han;Hanchao;Han;;Han;;;;;;;;;x
+qin_china;Qin;Daqin;Qin;;Qin;;;;;;;;;x
+yan_china;Yan;Yanchao;Yan;;Yan;;;;;;;;;x
+zhao_china;Zhao;Zhaochao;Zhao;;Zhao;;;;;;;;;x
+liao_china;Liao;Liaochao;Liao;;Liao;;;;;;;;;x
+yuan_china;Yuan;Dayuan;Yuan;;Yuan;;;;;;;;;x
+xia_china;Xia;Xiachao;Xia;;Xia;;;;;;;;;x
+qing_china;Qing;Daqing;Qing;;Qing;;;;;;;;;x
+dai_china;Dai;Daichao;Dai;;Dai;;;;;;;;;x
+cheng_china;Cheng;Chengchao;Cheng;;Cheng;;;;;;;;;x
+liang_china;Liang;Liangchao;Liang;;Liang;;;;;;;;;x
+song_china;Song;Songchao;Song;;Song;;;;;;;;;x
+ming_china;Ming;Daming;Ming;;Ming;;;;;;;;;x
+shu_china;Shu;Shuchao;Shu;;Shu;;;;;;;;;x
+wu_china;Wu;Wuchao;Wu;;Wu;;;;;;;;;x
+chu_china;Chu;Chuchao;Chu;;Chu;;;;;;;;;x
+yue_china;Yue;Yuechao;Yue;;Yue;;;;;;;;;x
+yin_china;Yin;Yinchao;Yin;;Yin;;;;;;;;;x
+shun_china;Shun;Shunchao;Shun;;Shun;;;;;;;;;x
+china_china;China;Royaume du milieu;China;;China;;;;;;;;;x
+china_china_full;Zhongguo;Zhongguo;Chinesisches Kaiserreich;;Imperio chino;;;;;;;;;x
+EMPEROR_LIKES_LABEL;The Emperor Likes;L'Huangdi aime;Der Kaiser mag;;Al Emperador le gustan;;;;;;;;;x
+EMPEROR_DISLIKES_LABEL;The Emperor Dislikes;L'Huangdi déteste;Der Kaiser mag keine;;Al Emperador le disgustan;;;;;;;;;x
+OFFMAP_LIKES_TOOLTIP;The Emperor Likes $CURRENT|Y$;L'Huangdi aime $CURRENT|Y$;Der Kaiser mag $CURRENT|Y$;;Al Emperador le gustan $CURRENT|Y$;;;;;;;;;x
+OFFMAP_DISLIKES_TOOLTIP;The Emperor Dislikes $CURRENT|Y$;L'Huangdi déteste $CURRENT|Y$;Der Kaiser mag keine $CURRENT|Y$;;Al Emperador le disgustan $CURRENT|Y$;;;;;;;;;x
+title_china_emperor_female;Huanghou;Huanghou;Kaiserin;;Emperatriz;;;;;;;;;x
