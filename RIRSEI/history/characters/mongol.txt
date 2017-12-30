@@ -319,11 +319,11 @@
          #leader = 34852
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -332,11 +332,11 @@
          #leader = 125502
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -345,11 +345,11 @@
          #leader = 93062
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -358,11 +358,11 @@
          #leader = 34850
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -371,11 +371,11 @@
          #leader = 172005
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -384,11 +384,11 @@
          #leader = 125520
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -397,11 +397,11 @@
          #leader = 125501
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -410,11 +410,11 @@
          #leader = 34851
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -423,11 +423,11 @@
          #leader = 172002
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -436,11 +436,11 @@
          #leader = 172000
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -449,11 +449,11 @@
          #leader = 93100
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
        spawn_unit = {
@@ -462,11 +462,11 @@
          #leader = 93103
          troops =
          {
-           horse_archers = { 2200 2300 }
-           light_cavalry = { 1366 1366 }
-           light_infantry = { 455 455 }
-           heavy_infantry = { 177 177 }
-           knights = { 40 40 }
+           horse_archers = { 1100 1100 }
+           light_cavalry = { 1100 1100 }
+           light_infantry = { 600 600 }
+           heavy_infantry = { 100 100 }
+           knights = { 100 100 }
          }
        }
      }

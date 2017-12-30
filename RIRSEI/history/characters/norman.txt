@@ -1071,12 +1071,12 @@
 				owner = ROOT
 				#leader = ROOT
 				troops = {
-					light_infantry = { 767 767 }
-					heavy_infantry = { 766 766 }
-					pikemen = { 152 152 }
-					light_cavalry = { 285 285 }
-					knights = { 114 114 }
-					archers = { 439 439 }
+					light_infantry = { 250 250 }
+					heavy_infantry = { 500 500 }
+					pikemen = { 150 150 }
+					light_cavalry = { 100 100 }
+					knights = { 250 250 }
+					archers = { 350 350 }
 				}
 				attrition = 1.0
 			}
@@ -1085,12 +1085,12 @@
 				owner = ROOT
 				#leader = 148 # Odo of Bayeux
 				troops = {
-					light_infantry = { 767 767 }
-					heavy_infantry = { 766 766 }
-					pikemen = { 152 152 }
-					light_cavalry = { 285 285 }
-					knights = { 114 114 }
-					archers = { 439 439 }
+					light_infantry = { 250 250 }
+					heavy_infantry = { 500 500 }
+					pikemen = { 150 150 }
+					light_cavalry = { 100 100 }
+					knights = { 250 250 }
+					archers = { 350 350 }
 				}
 				attrition = 1.0
 			}
@@ -1099,12 +1099,12 @@
 				owner = ROOT
 				#leader = 6818 # William of Eu
 				troops = {
-					light_infantry = { 767 767 }
-					heavy_infantry = { 766 766 }
-					pikemen = { 152 152 }
-					light_cavalry = { 285 285 }
-					knights = { 114 114 }
-					archers = { 439 439 }
+					light_infantry = { 250 250 }
+					heavy_infantry = { 500 500 }
+					pikemen = { 150 150 }
+					light_cavalry = { 100 100 }
+					knights = { 250 250 }
+					archers = { 350 350 }
 				}
 				attrition = 1.0
 			}
@@ -1113,12 +1113,12 @@
 				owner = ROOT
 				#leader = 150 # Robert of Mortain
 				troops = {
-					light_infantry = { 767 767 }
-					heavy_infantry = { 766 766 }
-					pikemen = { 152 152 }
-					light_cavalry = { 285 285 }
-					knights = { 114 114 }
-					archers = { 439 439 }
+					light_infantry = { 250 250 }
+					heavy_infantry = { 500 500 }
+					pikemen = { 150 150 }
+					light_cavalry = { 100 100 }
+					knights = { 250 250 }
+					archers = { 350 350 }
 				}
 				attrition = 1.0
 				merge = yes # Merge all armies in this province
@@ -1139,7 +1139,7 @@
 		raise_levies = {
 			dismiss=yes
 			location=97 # Rouen
-			force_mult=1.0
+			
 		}
 		effect = {
 			clr_global_flag = williams_invasion_of_england
