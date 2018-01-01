@@ -3737,6 +3737,7 @@ secretly_shiite = {
 		}
 		NOT = {
 			religion = shiite
+		}
 	}
 	opposites = {
 		secretly_catholic
@@ -5937,6 +5938,7 @@ secretly_hellenic_pagan = {
 		}
 		NOT = {
 			religion = hellenic_pagan
+		}
 	}
 	opposites = {
 		secretly_catholic
