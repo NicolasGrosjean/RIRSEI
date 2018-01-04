@@ -21,7 +21,7 @@ second_amount = 60
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 has_building = ca_culture_Francais_sysfed_3
 }
@@ -49,7 +49,7 @@ second_amount = 80
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 OR = {
 has_building = ca_culture_Saxon_sysfed_3
@@ -82,7 +82,7 @@ second_amount = 20
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 OR = {
 has_building = ca_culture_Lomb_sysfed_3
@@ -114,7 +114,7 @@ second_amount = 20
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 OR = {
 has_building = ca_culture_Germ_sysfed_3
@@ -143,7 +143,7 @@ RETTYPE_LANCESESP_RIR =
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 has_building = ca_culture_Espagnes_sysfed_3
 }
@@ -168,7 +168,7 @@ second_amount = 40
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 
 has_building = ca_culture_polak_syst_4
@@ -198,7 +198,7 @@ second_amount = 20
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 has_building = ca_culture_Hongrois_sysfed_3
 }
@@ -224,7 +224,7 @@ second_amount = 50
 	
 	potential = {
 	
-is_independent = yes
+independent = yes
 any_demesne_province = {
 has_building = ca_culture_Hongrois_sysfed_3
 }
@@ -250,7 +250,7 @@ RETTYPE_CUL_FRA_RIR =
 	
 	potential = {
 	NOT = { has_global_flag = central }
-                 is_independent = yes
+                 independent = yes
 		is_nomadic = no
 		OR = {
 		culture = old_frankish
@@ -283,6 +283,9 @@ RETTYPE_CUL_FRAN_RIR =
 		culture= old_frankish
 		}
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+has_building = ca_culture_Francais_sysfed_3
+} }
 	}
 	
 	modifier = {
@@ -304,12 +307,15 @@ RETTYPE_CUL_FRANSCT_RIR =
 		is_nomadic = no
 		has_global_flag = central
 		year = 1400
-		is_independent = yes
+		independent = yes
 		OR = {
 		culture = frankish
 		culture= old_frankish
 		}
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+has_building = ca_culture_Francais_sysfed_3
+} }
 	}
 	
 	modifier = {
@@ -332,9 +338,18 @@ RETTYPE_CUL_CHESANGL_RIR =
             
 		is_nomadic = no
 		has_global_flag = central		
-		is_independent = yes
+		independent = yes
 		culture = english
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+OR = {
+has_building = ca_culture_Saxon_sysfed_3
+has_building = ca_culture_Ang_sysfed_3
+has_building = ca_culture_Eire_syst_3
+has_building = ca_culture_Ecosse_sysfed_3
+}
+}
+}
 	}
 	
 	modifier = {
@@ -358,12 +373,21 @@ RETTYPE_CUL_SCTFR_RIR =
             
 		is_nomadic = no
 		has_global_flag = central
-		is_independent = yes
+		independent = yes
 		OR = {
 		culture = scottish
         culture = pictish
 		}
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+OR = {
+has_building = ca_culture_Saxon_sysfed_3
+has_building = ca_culture_Ang_sysfed_3
+has_building = ca_culture_Eire_syst_3
+has_building = ca_culture_Ecosse_sysfed_3
+}
+}
+}
 	}
 	
 	modifier = {
@@ -383,8 +407,17 @@ RETTYPE_CUL_SAX_RIR =
 	potential = {               
 		is_nomadic = no
 		culture = saxon
-		is_independent = yes
+		independent = yes
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+OR = {
+has_building = ca_culture_Saxon_sysfed_3
+has_building = ca_culture_Ang_sysfed_3
+has_building = ca_culture_Eire_syst_3
+has_building = ca_culture_Ecosse_sysfed_3
+}
+}
+}
 	}
 	
 	modifier = {
@@ -406,6 +439,15 @@ RETTYPE_CUL_LOMB_RIR =
 		culture = lombard
 		
 NOT = { religion_group = muslim }
+NOT = {
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Lomb_sysfed_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ct_provisionati
+}
+}
+}
 	}
 	
 	modifier = {
@@ -427,9 +469,16 @@ RETTYPE_CUL_ALL_RIR =
 		is_nomadic = no
 		has_global_flag = central
 		culture = german
-		is_independent = yes
+		independent = yes
 		
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+OR = {
+has_building = ca_culture_Germ_sysfed_3
+has_building = ca_culture_Scandi_syst_3
+}
+}
+}
 	}
 	
 	modifier = {
@@ -454,6 +503,15 @@ RETTYPE_CUL_ITA_RIR =
 		NOT = { is_republic = yes }
 		
 NOT = { religion_group = muslim }
+NOT = {
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Lomb_sysfed_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ct_provisionati
+}
+}
+}
 	}
 	
 	modifier = {
@@ -480,6 +538,15 @@ is_republic = yes
 }
 }  	
 NOT = { religion_group = muslim }
+NOT = {
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Lomb_sysfed_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ct_provisionati
+}
+}
+}
 	}
 	
 	modifier = {
@@ -510,6 +577,15 @@ is_republic = yes
 }
 }  	
 NOT = { religion_group = muslim }
+NOT = {
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Lomb_sysfed_3
+has_building = ca_culture_Italie_sysfed_3
+has_building = ct_provisionati
+}
+}
+}
 	}
 	
 	modifier = {
@@ -530,15 +606,15 @@ RETTYPE_CUL_PAPE_RIR =
             
 		is_nomadic = no
 		has_landed_title = k_papal_state
-		is_independent = yes
+		independent = yes
 		
 NOT = { religion_group = muslim }
 	}
 	
 	modifier = {
-		knights_offensive = 0.5
-	    knights_defensive = 0.5
-		knights_morale = 0.7
+		knights_offensive = 0.8
+	    knights_defensive = 0.8
+		knights_morale = 0.8
 	}
 }
 
@@ -553,7 +629,12 @@ RETTYPE_CUL_ASTU_RIR =
 		is_nomadic = no
 		culture = visigothic
 NOT = { religion_group = muslim }
-is_independent = yes
+independent = yes
+NOT = {
+any_demesne_province = {
+has_building = ca_culture_Espagnes_sysfed_3
+}
+}
 	}
 	
 	modifier = {
@@ -580,7 +661,12 @@ RETTYPE_CUL_MESNA_RIR =
         culture = basque
 }
 NOT = { religion_group = muslim }
-is_independent = yes
+independent = yes
+NOT = {
+any_demesne_province = {
+has_building = ca_culture_Espagnes_sysfed_3
+}
+}
 	}
 	
 	modifier = {
@@ -629,6 +715,16 @@ any_demesne_province = {
 has_building = ca_culture_Galles_syst_2
 }
 
+NOT = { any_demesne_province = {
+OR = {
+has_building = ca_culture_Saxon_sysfed_3
+has_building = ca_culture_Ang_sysfed_3
+has_building = ca_culture_Eire_syst_3
+has_building = ca_culture_Ecosse_sysfed_3
+}
+}
+}
+
 
 
 	}
@@ -653,6 +749,10 @@ RETTYPE_CUL_HONGR_RIR =
 		has_global_flag = central
 		culture_group = magyar
 NOT = { religion_group = muslim }
+NOT = { any_demesne_province = {
+has_building = ca_culture_Hongrois_sysfed_3
+}
+}
 	}
 	
 	modifier = {
@@ -802,6 +902,14 @@ has_building = ca_culture_Scandi_syst_2
 }
 
 NOT = { religion_group = muslim }
+NOT = {
+any_demesne_province = {
+OR = {
+has_building = ca_culture_Germ_sysfed_3
+has_building = ca_culture_Scandi_syst_3
+}
+}
+}
 	}
 	
 	modifier = {
@@ -878,6 +986,11 @@ OR = {
 		culture_group = east_slavic
 culture_group = south_slavic
 }
+NOT = {
+any_demesne_province = {
+has_building = ca_culture_polak_syst_4
+}
+}
 	}
 	
 	modifier = {
@@ -933,6 +1046,11 @@ FROM = {
 has_building = ca_culture_polak_syst_2
 has_building = ca_culture_polak_syst_3
 }
+}
+}
+NOT = {
+any_demesne_province = {
+has_building = ca_culture_polak_syst_4
 }
 }
 	}
