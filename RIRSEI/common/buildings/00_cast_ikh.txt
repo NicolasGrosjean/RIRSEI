@@ -323,7 +323,7 @@ not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_ar
 TECH_CASTLE_CONSTRUCTION = 0
  }
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
@@ -496,7 +496,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 not_if_x_exists = { ca_mamelouks_turcs_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
 		
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
@@ -666,7 +666,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_turcs_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
 		
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
@@ -839,7 +839,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_turcs_1 ca_mamelouks_soudanais_1 ca_mamelouks_francs_1 }
 		
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
@@ -1008,7 +1008,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_turcs_1 ca_mamelouks_francs_1 }
 		
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
@@ -1175,7 +1175,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 not_if_x_exists = { ca_mamelouks_slavons_1 ca_mamelouks_circas_1 ca_mamelouks_armenien_1 ca_mamelouks_soudanais_1 ca_mamelouks_turcs_1 }
 		
                 add_number_to_name = no 
-		gold_cost = 200
+		gold_cost = 100
 		build_time = 730
 
 retinuesize = 1500
