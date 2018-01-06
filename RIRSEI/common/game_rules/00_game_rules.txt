@@ -188,39 +188,6 @@ chinese_interactions = {
 	}
 }
 
-unjustified_wars = {
-	name = "RULE_UNJUSTIFIED_WARS"
-	dlc = "Jade Dragon"
-	group = "RULE_GROUP_WARFARE"
-	group = "RULE_GROUP_JD"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_UNJUSTIFIED_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_UNJUSTIFIED_OFF_DESC"
-	}
-}
-
-jade_dragon_cbs = {
-	name = "RULE_JD_CBS"
-	dlc = "Jade Dragon"
-	group = "RULE_GROUP_WARFARE"
-	group = "RULE_GROUP_JD"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "RULE_JD_CBS_ON_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "RULE_JD_CBS_OFF_DESC"
-	}
-}
 
 siege_assaults = {
 	name = "RULE_SIEGE_ASSAULTS"
@@ -340,6 +307,35 @@ conclave_education_focuses = {
 
 
 # Unmodifiable rules
+
+unjustified_wars = {
+	name = "RULE_UNJUSTIFIED_WARS"
+	dlc = "Jade Dragon"
+	group = "RULE_GROUP_WARFARE"
+	group = "RULE_GROUP_JD"
+	
+	option = {
+		name = off
+		achievements = no
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_UNJUSTIFIED_OFF_DESC"
+	}
+}
+
+jade_dragon_cbs = {
+	name = "RULE_JD_CBS"
+	dlc = "Jade Dragon"
+	group = "RULE_GROUP_WARFARE"
+	group = "RULE_GROUP_JD"
+	
+	option = {
+		name = off
+		achievements = no
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_JD_CBS_OFF_DESC"
+	}
+}
+
 epidemics = {
 	name = "RULE_EPIDEMICS"
 	dlc = "The Reaper's Due"
