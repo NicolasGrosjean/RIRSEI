@@ -9,6 +9,7 @@ Tous les pseudos renvoient à ceux utilisés sur le forum Mundus Bellicus (http:
 #################
 # Remerciements #
 #################
+- FriztVicari pour avoir accepté l'utilisation de ses oeuvres graphiques dans ce mod
 - Mouchi pour avoir proposé de mettre à jour le mod et de corriger des bugs
 - Arko de RJS pour avoir eu la patience et la gentillesse d'avoir "nettoyé" mon mod pour qu'il soit plus léger et plus compatible !
 - Namrand pour les blasons des regni francorum
