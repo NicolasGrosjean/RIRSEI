@@ -56,12 +56,12 @@ technology = {
 	
 	1066 = {
 	
-		military = 2.0
+		military = 3.0
 		economy = 2.0
 		culture = 2.0
 		
-		TECH_FORTIFICATIONS_CONSTRUCTION = 2.0
-		TECH_CASTLE_CONSTRUCTION = 2.0
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3.0
+		TECH_CASTLE_CONSTRUCTION = 3.0
 	}
 		
 	1337 = {
