@@ -114,4 +114,20 @@
  petit_georgien = { knights = 50 horse_archers = 50 }
  normal_georgien = { knights = 250 horse_archers = 250 }
  grand_georgien = { knights = 500 horse_archers = 500 }
+ #Dar Al Islam
+ petit_berbere = { light_cavalry = 60 horse_archers = 40 }
+ normal_berbere = { light_cavalry = 300 horse_archers = 200 }
+ grand_berbere = { light_cavalry = 600 horse_archers = 400 }
+ #Mujdhaiddin
+ normal_moujd = { light_infantry = 800 levy_size = 1 }
+ #Volontaires de la foi
+ petit_volonfoi = { heavy_infantry = 80  light_infantry = 20 levy_size = 1 }
+ normal_volonfoi = { heavy_infantry = 400  light_infantry = 100 levy_size = 1 }
+ grand_volonfoi = { heavy_infantry = 1000  light_infantry = 400 levy_size = 1 }
+ #Daylamites
+ petit_daylamite = { heavy_infantry = 60 knights = 10 archers = 30 }
+ normal_daylamite = { heavy_infantry = 300 knights = 50 archers = 150 }
+ grand_daylamite = { heavy_infantry = 600 knights = 100 archers = 300 }
+ #Ghazi 
+ ghazi_turcs = { light_cavalry = 500 horse_archers = 500 knights = 150 levy_size = 1 }
  
