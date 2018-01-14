@@ -1549,6 +1549,7 @@ RETTYPE_GALLOW_RIR;;Gall óglaigh;;;;x;;;;;;;;;;
 RETTYPE_CUL_MESNA_RIR;;Mesnata Regis;;;;;;x;;;;;;;;;;
 RETTYPE_CUL_POLUN_RIR;;Loricati;;;;;;x;;;;;;;;;;
 RETTYPE_CUL_POLDEUX_RIR;;Milites Cubicularium;;;;x;;;;;;;;;;
+RETTYPE_CUL_RUSSDRUZ_RIR;Druzhinniki;Druzhinniki;;;;;;;;x;;;;;;;;;;
 RETTYPE_CUL_BOHEME_RIR;;Milites Gentilis;;;;;;x;;;;;;;;;;
 RETTYPE_LANCES_RIR;;Vingt lances d'ordonnance;;;;;;;x;;;;;;;;
 RETTYPE_LANCESANG_RIR;;Twenty lances;;;;;;;x;;;;;;;;

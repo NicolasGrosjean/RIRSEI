@@ -1091,7 +1091,7 @@ has_building = ca_culture_boheme_systfed_3
 
 #Druzhina cheval/archers russes
 
-RETTYPE_CUL_POLDEUX_RIR = 
+RETTYPE_CUL_RUSSDRUZ_RIR = 
 {
 	first_type = 4
 	first_amount = 50
