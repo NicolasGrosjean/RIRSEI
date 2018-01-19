@@ -1,5 +1,6 @@
 42.1.1={
  holder = 145292
+set_global_flag = running_RIRSEI
 } # Peter's first visit to Rome
 
 64.10.13={
