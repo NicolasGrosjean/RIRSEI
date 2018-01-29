@@ -2677,7 +2677,7 @@
 }
 
 3040 = {
-	name="Alp Arslan"
+	name="Alp Arslan"
 	dynasty=613
 	martial=10
 	diplomacy=8
@@ -2701,7 +2701,7 @@ trait = sultan_sultan
 	}
 	1060.1.1={
 		wealth=300
-		decadence = -25
+		
 	}
 	1066.9.14 = {
 		raise_levies = {

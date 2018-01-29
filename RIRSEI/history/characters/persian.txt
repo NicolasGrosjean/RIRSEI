@@ -2940,7 +2940,6 @@
 	
 	867.1.1={
 		effect = {
-			decadence = -25
 			spawn_unit = {
 				province = 902 # Dashhowuz
 				owner = ROOT
@@ -3047,7 +3046,6 @@
 		add_claim = d_bhakkar
 		add_claim = d_sauvira
 		effect = {
-			decadence = -25
 			spawn_unit = {
 				province = 906 # Birjand
 				owner = ROOT
