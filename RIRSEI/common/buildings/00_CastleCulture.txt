@@ -25,14 +25,29 @@ castle = {
 	ca_culture_saxon_english_1 = {
 		desc = ca_culture_saxon_english_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = english
+				culture = welsh
+				has_building = ca_culture_saxon_english_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = english
+					culture = welsh
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
 				OR = {
 					culture = english
 					culture = welsh
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -45,14 +60,30 @@ castle = {
 	ca_culture_saxon_english_2 = {
 		desc = ca_culture_saxon_english_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = english
+				culture = welsh
+				has_building = ca_culture_saxon_english_1
+				has_building = ca_culture_saxon_english_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = english
+					culture = welsh
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
 				OR = {
 					culture = english
 					culture = welsh
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_saxon_english_1
 		gold_cost = 300
 		build_time = 1095
@@ -65,14 +96,31 @@ castle = {
 	ca_culture_saxon_english_3 = {
 		desc = ca_culture_saxon_english_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = english
+				culture = welsh
+				has_building = ca_culture_saxon_english_1
+				has_building = ca_culture_saxon_english_2
+				has_building = ca_culture_saxon_english_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = english
+					culture = welsh
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
 				OR = {
 					culture = english
 					culture = welsh
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_saxon_english_2
 		gold_cost = 400
 		build_time = 2190
@@ -85,14 +133,32 @@ castle = {
 	ca_culture_saxon_english_4 = {
 		desc = ca_culture_saxon_english_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = english
+				culture = welsh
+				has_building = ca_culture_saxon_english_1
+				has_building = ca_culture_saxon_english_2
+				has_building = ca_culture_saxon_english_3
+				has_building = ca_culture_saxon_english_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = english
+					culture = welsh
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
 				OR = {
 					culture = english
 					culture = welsh
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
 		upgrades_from = ca_culture_saxon_english_3
 		gold_cost = 500
 		build_time = 2190
@@ -107,11 +173,22 @@ castle = {
 	ca_culture_scottish_1 = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = scottish
+				has_building = ca_culture_scottish_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = scottish
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = scottish
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -124,11 +201,23 @@ castle = {
 	ca_culture_scottish_2 = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = scottish
+				has_building = ca_culture_scottish_1
+				has_building = ca_culture_scottish_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = scottish
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				culture = scottish
+			}
+		}
 		upgrades_from = ca_culture_scottish_1
 		gold_cost = 300
 		build_time = 1095
@@ -141,11 +230,24 @@ castle = {
 	ca_culture_scottish_3 = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = scottish
+				has_building = ca_culture_scottish_1
+				has_building = ca_culture_scottish_2
+				has_building = ca_culture_scottish_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = scottish
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = scottish
+			}
+		}
 		upgrades_from = ca_culture_scottish_2
 		gold_cost = 400
 		build_time = 2190
@@ -158,11 +260,25 @@ castle = {
 	ca_culture_scottish_4 = {
 		desc = ca_culture_scottish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = scottish
+				has_building = ca_culture_scottish_1
+				has_building = ca_culture_scottish_2
+				has_building = ca_culture_scottish_3
+				has_building = ca_culture_scottish_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = scottish
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = scottish
+			}
+		}
 		upgrades_from = ca_culture_scottish_3
 		gold_cost = 500
 		build_time = 2190
@@ -177,14 +293,29 @@ castle = {
 	ca_culture_group_baltic_1 = {
 		desc = ca_culture_group_baltic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = baltic
+				culture_group = finno_ugric
+				has_building = ca_culture_group_baltic_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = baltic
 					culture_group = finno_ugric
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture_group = baltic
+					culture_group = finno_ugric
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -197,14 +328,30 @@ castle = {
 	ca_culture_group_baltic_2 = {
 		desc = ca_culture_group_baltic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = baltic
+				culture_group = finno_ugric
+				has_building = ca_culture_group_baltic_1
+				has_building = ca_culture_group_baltic_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = baltic
 					culture_group = finno_ugric
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = baltic
+					culture_group = finno_ugric
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_baltic_1
 		gold_cost = 300
 		build_time = 1095
@@ -217,14 +364,31 @@ castle = {
 	ca_culture_group_baltic_3 = {
 		desc = ca_culture_group_baltic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = baltic
+				culture_group = finno_ugric
+				has_building = ca_culture_group_baltic_1
+				has_building = ca_culture_group_baltic_2
+				has_building = ca_culture_group_baltic_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = baltic
 					culture_group = finno_ugric
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				OR = {
+					culture_group = baltic
+					culture_group = finno_ugric
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_baltic_2
 		gold_cost = 400
 		build_time = 2190
@@ -237,14 +401,32 @@ castle = {
 	ca_culture_group_baltic_4 = {
 		desc = ca_culture_group_baltic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = baltic
+				culture_group = finno_ugric
+				has_building = ca_culture_group_baltic_1
+				has_building = ca_culture_group_baltic_2
+				has_building = ca_culture_group_baltic_3
+				has_building = ca_culture_group_baltic_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = baltic
 					culture_group = finno_ugric
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = baltic
+					culture_group = finno_ugric
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_baltic_3
 		gold_cost = 500
 		build_time = 2190
@@ -259,14 +441,74 @@ castle = {
 	ca_culture_group_altaic_1 = {
 		desc = ca_culture_group_altaic_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				custom_tooltip = {
+					OR = {
+						culture = turkish
+						culture = pecheneg
+						culture = cuman
+						culture = khazar
+						culture = bolghar
+						culture = avar
+						culture = karluk
+						culture = kirghiz
+						culture = uyghur
+						culture = mongol
+						culture = khitan
+					}
+					text = ALTAIC_BUT_NOT_JURCHEN_TT
+				}
+				culture_group = iranian
+				has_building = ca_culture_group_altaic_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture_group = altaic
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
 					culture_group = iranian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
+					culture_group = iranian
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -282,14 +524,75 @@ castle = {
 	ca_culture_group_altaic_2 = {
 		desc = ca_culture_group_altaic_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				custom_tooltip = {
+					OR = {
+						culture = turkish
+						culture = pecheneg
+						culture = cuman
+						culture = khazar
+						culture = bolghar
+						culture = avar
+						culture = karluk
+						culture = kirghiz
+						culture = uyghur
+						culture = mongol
+						culture = khitan
+					}
+					text = ALTAIC_BUT_NOT_JURCHEN_TT
+				}
+				culture_group = iranian
+				has_building = ca_culture_group_altaic_1
+				has_building = ca_culture_group_altaic_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture_group = altaic
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
 					culture_group = iranian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
+					culture_group = iranian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_altaic_1
 		gold_cost = 300
 		build_time = 1095
@@ -305,14 +608,76 @@ castle = {
 	ca_culture_group_altaic_3 = {
 		desc = ca_culture_group_altaic_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				custom_tooltip = {
+					OR = {
+						culture = turkish
+						culture = pecheneg
+						culture = cuman
+						culture = khazar
+						culture = bolghar
+						culture = avar
+						culture = karluk
+						culture = kirghiz
+						culture = uyghur
+						culture = mongol
+						culture = khitan
+					}
+					text = ALTAIC_BUT_NOT_JURCHEN_TT
+				}
+				culture_group = iranian
+				has_building = ca_culture_group_altaic_1
+				has_building = ca_culture_group_altaic_2
+				has_building = ca_culture_group_altaic_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture_group = altaic
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}					
 					culture_group = iranian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
+					culture_group = iranian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_altaic_2
 		gold_cost = 400
 		build_time = 2190
@@ -328,14 +693,77 @@ castle = {
 	ca_culture_group_altaic_4 = {
 		desc = ca_culture_group_altaic_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				custom_tooltip = {
+					OR = {
+						culture = turkish
+						culture = pecheneg
+						culture = cuman
+						culture = khazar
+						culture = bolghar
+						culture = avar
+						culture = karluk
+						culture = kirghiz
+						culture = uyghur
+						culture = mongol
+						culture = khitan
+					}
+					text = ALTAIC_BUT_NOT_JURCHEN_TT
+				}
+				culture_group = iranian
+				has_building = ca_culture_group_altaic_1
+				has_building = ca_culture_group_altaic_2
+				has_building = ca_culture_group_altaic_3
+				has_building = ca_culture_group_altaic_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture_group = altaic
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
 					culture_group = iranian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					custom_tooltip = {
+						OR = {
+							culture = turkish
+							culture = pecheneg
+							culture = cuman
+							culture = khazar
+							culture = bolghar
+							culture = avar
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							culture = mongol
+							culture = khitan
+						}
+						text = ALTAIC_BUT_NOT_JURCHEN_TT
+					}
+					culture_group = iranian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_altaic_3
 		gold_cost = 500
 		build_time = 2190
@@ -353,7 +781,17 @@ castle = {
 	ca_culture_frank_norman_german_1 = {
 		desc = ca_culture_frank_norman_german_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				has_building = ca_culture_frank_norman_german_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -363,7 +801,18 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -376,7 +825,18 @@ castle = {
 	ca_culture_frank_norman_german_2 = {
 		desc = ca_culture_frank_norman_german_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				has_building = ca_culture_frank_norman_german_1
+				has_building = ca_culture_frank_norman_german_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -386,7 +846,18 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+				}
+			}
+		}
 		upgrades_from = ca_culture_frank_norman_german_1
 		gold_cost = 300
 		build_time = 1095
@@ -399,7 +870,19 @@ castle = {
 	ca_culture_frank_norman_german_3 = {
 		desc = ca_culture_frank_norman_german_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				has_building = ca_culture_frank_norman_german_1
+				has_building = ca_culture_frank_norman_german_2
+				has_building = ca_culture_frank_norman_german_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -409,8 +892,18 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = ca_culture_frank_norman_german_2
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+				}
+			}
+		}		upgrades_from = ca_culture_frank_norman_german_2
 		gold_cost = 400
 		build_time = 2190
 		knights = 25
@@ -422,7 +915,20 @@ castle = {
 	ca_culture_frank_norman_german_4 = {
 		desc = ca_culture_frank_norman_german_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = german
+				culture = breton
+				has_building = ca_culture_frank_norman_german_1
+				has_building = ca_culture_frank_norman_german_2
+				has_building = ca_culture_frank_norman_german_3
+				has_building = ca_culture_frank_norman_german_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -432,7 +938,18 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = frankish
+					culture = occitan
+					culture = norman
+					culture = german
+					culture = breton
+				}
+			}
+		}
 		upgrades_from = ca_culture_frank_norman_german_3
 		gold_cost = 500
 		build_time = 2190
@@ -447,9 +964,22 @@ castle = {
 	ca_culture_group_iberian_1 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			OR = { 
+				culture_group = iberian 
+				has_building = ca_culture_group_iberian_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = iberian
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -462,9 +992,23 @@ castle = {
 	ca_culture_group_iberian_2 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			OR = { 
+				culture_group = iberian 
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = iberian
+			}
+		}
 		upgrades_from = ca_culture_group_iberian_1
 		gold_cost = 300
 		build_time = 1095
@@ -477,9 +1021,24 @@ castle = {
 	ca_culture_group_iberian_3 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			OR = { 
+				culture_group = iberian 
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+				has_building = ca_culture_group_iberian_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = iberian
+			}
+		}
 		upgrades_from = ca_culture_group_iberian_2
 		gold_cost = 400
 		build_time = 2190
@@ -492,9 +1051,25 @@ castle = {
 	ca_culture_group_iberian_4 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			FROM = { culture_group = iberian }
+			OR = { 
+				culture_group = iberian 
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+				has_building = ca_culture_group_iberian_3
+				has_building = ca_culture_group_iberian_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = iberian
+			}
+		}
 		upgrades_from = ca_culture_group_iberian_3
 		gold_cost = 500
 		build_time = 2190
@@ -509,9 +1084,22 @@ castle = {
 	ca_culture_italian_1 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			OR = { 
+				culture = italian 
+				has_building = ca_culture_italian_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = italian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = italian
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -524,9 +1112,23 @@ castle = {
 	ca_culture_italian_2 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			OR = { 
+				culture = italian 
+				has_building = ca_culture_italian_1
+				has_building = ca_culture_italian_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = italian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = italian
+			}
+		}
 		upgrades_from = ca_culture_italian_1
 		gold_cost = 300
 		build_time = 1095
@@ -539,9 +1141,24 @@ castle = {
 	ca_culture_italian_3 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			OR = { 
+				culture = italian 
+				has_building = ca_culture_italian_1
+				has_building = ca_culture_italian_2
+				has_building = ca_culture_italian_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = italian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = italian
+			}
+		}
 		upgrades_from = ca_culture_italian_2
 		gold_cost = 400
 		build_time = 2190
@@ -554,9 +1171,25 @@ castle = {
 	ca_culture_italian_4 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			OR = { 
+				culture = italian 
+				has_building = ca_culture_italian_1
+				has_building = ca_culture_italian_2
+				has_building = ca_culture_italian_3
+				has_building = ca_culture_italian_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = italian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = italian
+			}
+		}
 		upgrades_from = ca_culture_italian_3
 		gold_cost = 500
 		build_time = 2190
@@ -571,9 +1204,22 @@ castle = {
 	ca_culture_russian_1 = {
 		desc = ca_culture_russian_1_desc
 		potential = {
-			FROM = { culture_group = east_slavic }
+			OR = { 
+				culture_group = east_slavic 
+				has_building = ca_culture_russian_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -586,9 +1232,23 @@ castle = {
 	ca_culture_russian_2 = {
 		desc = ca_culture_russian_1_desc
 		potential = {
-			FROM = { culture_group = east_slavic }
+			OR = { 
+				culture_group = east_slavic 
+				has_building = ca_culture_russian_1
+				has_building = ca_culture_russian_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
 		upgrades_from = ca_culture_russian_1
 		gold_cost = 300
 		build_time = 1095
@@ -601,9 +1261,24 @@ castle = {
 	ca_culture_russian_3 = {
 		desc = ca_culture_russian_1_desc
 		potential = {
-			FROM = { culture_group = east_slavic }
+			OR = { 
+				culture_group = east_slavic 
+				has_building = ca_culture_russian_1
+				has_building = ca_culture_russian_2
+				has_building = ca_culture_russian_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
 		upgrades_from = ca_culture_russian_2
 		gold_cost = 400
 		build_time = 2190
@@ -616,9 +1291,25 @@ castle = {
 	ca_culture_russian_4 = {
 		desc = ca_culture_russian_1_desc
 		potential = {
-			FROM = { culture_group = east_slavic }
+			OR = { 
+				culture_group = east_slavic 
+				has_building = ca_culture_russian_1
+				has_building = ca_culture_russian_2
+				has_building = ca_culture_russian_3
+				has_building = ca_culture_russian_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = east_slavic
+			}
+		}
 		upgrades_from = ca_culture_russian_3
 		gold_cost = 500
 		build_time = 2190
@@ -633,7 +1324,16 @@ castle = {
 	ca_culture_group_north_germanic_1 = {
 		desc = ca_culture_group_north_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = north_germanic
+				culture = saxon
+				culture = old_saxon
+				culture = frisian
+				has_building = ca_culture_group_north_germanic_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
@@ -642,7 +1342,17 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture_group = north_germanic
+					culture = saxon
+					culture = old_saxon
+					culture = frisian
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -655,7 +1365,17 @@ castle = {
 	ca_culture_group_north_germanic_2 = {
 		desc = ca_culture_group_north_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = north_germanic
+				culture = saxon
+				culture = old_saxon
+				culture = frisian
+				has_building = ca_culture_group_north_germanic_1
+				has_building = ca_culture_group_north_germanic_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
@@ -664,7 +1384,17 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = north_germanic
+					culture = saxon
+					culture = old_saxon
+					culture = frisian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_north_germanic_1
 		gold_cost = 300
 		build_time = 1095
@@ -677,7 +1407,18 @@ castle = {
 	ca_culture_group_north_germanic_3 = {
 		desc = ca_culture_group_north_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = north_germanic
+				culture = saxon
+				culture = old_saxon
+				culture = frisian
+				has_building = ca_culture_group_north_germanic_1
+				has_building = ca_culture_group_north_germanic_2
+				has_building = ca_culture_group_north_germanic_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
@@ -686,7 +1427,17 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = north_germanic
+					culture = saxon
+					culture = old_saxon
+					culture = frisian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_north_germanic_2
 		gold_cost = 400
 		build_time = 2190
@@ -699,7 +1450,19 @@ castle = {
 	ca_culture_group_north_germanic_4 = {
 		desc = ca_culture_group_north_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = north_germanic
+				culture = saxon
+				culture = old_saxon
+				culture = frisian
+				has_building = ca_culture_group_north_germanic_1
+				has_building = ca_culture_group_north_germanic_2
+				has_building = ca_culture_group_north_germanic_3
+				has_building = ca_culture_group_north_germanic_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
@@ -708,7 +1471,17 @@ castle = {
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = north_germanic
+					culture = saxon
+					culture = old_saxon
+					culture = frisian
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_north_germanic_3
 		gold_cost = 500
 		build_time = 2190
@@ -723,14 +1496,29 @@ castle = {
 	ca_culture_hungarian_1 = {
 		desc = ca_culture_hungarian_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = hungarian
+				culture_group = west_slavic
+				has_building = ca_culture_hungarian_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture = hungarian
 					culture_group = west_slavic
+					culture = hungarian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture_group = west_slavic
+					culture = hungarian
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -743,14 +1531,30 @@ castle = {
 	ca_culture_hungarian_2 = {
 		desc = ca_culture_hungarian_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = hungarian
+				culture_group = west_slavic
+				has_building = ca_culture_hungarian_1
+				has_building = ca_culture_hungarian_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture = hungarian
 					culture_group = west_slavic
+					culture = hungarian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = west_slavic
+					culture = hungarian
+				}
+			}
+		}
 		upgrades_from = ca_culture_hungarian_1
 		gold_cost = 300
 		build_time = 1095
@@ -763,14 +1567,31 @@ castle = {
 	ca_culture_hungarian_3 = {
 		desc = ca_culture_hungarian_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = hungarian
+				culture_group = west_slavic
+				has_building = ca_culture_hungarian_1
+				has_building = ca_culture_hungarian_2
+				has_building = ca_culture_hungarian_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture = hungarian
 					culture_group = west_slavic
+					culture = hungarian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = west_slavic
+					culture = hungarian
+				}
+			}
+		}
 		upgrades_from = ca_culture_hungarian_2
 		gold_cost = 400
 		build_time = 2190
@@ -783,14 +1604,32 @@ castle = {
 	ca_culture_hungarian_4 = {
 		desc = ca_culture_hungarian_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = hungarian
+				culture_group = west_slavic
+				has_building = ca_culture_hungarian_1
+				has_building = ca_culture_hungarian_2
+				has_building = ca_culture_hungarian_3
+				has_building = ca_culture_hungarian_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
-					culture = hungarian
 					culture_group = west_slavic
+					culture = hungarian
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = west_slavic
+					culture = hungarian
+				}
+			}
+		}
 		upgrades_from = ca_culture_hungarian_3
 		gold_cost = 500
 		build_time = 2190
@@ -805,13 +1644,32 @@ castle = {
 	ca_culture_group_arabic_1 = {
 		desc = ca_culture_group_arabic_1_desc
 		potential = {
-			FROM = {
-				culture_group = arabic
-				NOT = { culture = andalusian_arabic }
-				NOT = { culture = maghreb_arabic }
+			OR = {
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				has_building = ca_culture_group_arabic_1
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -824,13 +1682,33 @@ castle = {
 	ca_culture_group_arabic_2 = {
 		desc = ca_culture_group_arabic_1_desc
 		potential = {
-			FROM = {
-				culture_group = arabic
-				NOT = { culture = andalusian_arabic }
-				NOT = { culture = maghreb_arabic }
+			OR = {
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				has_building = ca_culture_group_arabic_1
+				has_building = ca_culture_group_arabic_2
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_arabic_1
 		gold_cost = 300
 		build_time = 1095
@@ -843,13 +1721,34 @@ castle = {
 	ca_culture_group_arabic_3 = {
 		desc = ca_culture_group_arabic_1_desc
 		potential = {
-			FROM = {
-				culture_group = arabic
-				NOT = { culture = andalusian_arabic }
-				NOT = { culture = maghreb_arabic }
+			OR = {
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				has_building = ca_culture_group_arabic_1
+				has_building = ca_culture_group_arabic_2
+				has_building = ca_culture_group_arabic_3
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_arabic_2
 		gold_cost = 400
 		build_time = 2190
@@ -862,13 +1761,35 @@ castle = {
 	ca_culture_group_arabic_4 = {
 		desc = ca_culture_group_arabic_1_desc
 		potential = {
-			FROM = {
-				culture_group = arabic
-				NOT = { culture = andalusian_arabic }
-				NOT = { culture = maghreb_arabic }
+			OR = {
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = egyptian_arabic
+				has_building = ca_culture_group_arabic_1
+				has_building = ca_culture_group_arabic_2
+				has_building = ca_culture_group_arabic_3
+				has_building = ca_culture_group_arabic_4
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = bedouin_arabic
+					culture = levantine_arabic
+					culture = egyptian_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_group_arabic_3
 		gold_cost = 500
 		build_time = 2190
@@ -883,9 +1804,22 @@ castle = {
 	ca_culture_group_byzantine_1 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			FROM = { culture_group = byzantine }
+			OR = { 
+				culture_group = byzantine 
+				has_building = ca_culture_group_byzantine_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -900,9 +1834,23 @@ castle = {
 	ca_culture_group_byzantine_2 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			FROM = { culture_group = byzantine }
+			OR = { 
+				culture_group = byzantine
+				has_building = ca_culture_group_byzantine_1
+				has_building = ca_culture_group_byzantine_2 
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
 		upgrades_from = ca_culture_group_byzantine_1
 		gold_cost = 300
 		build_time = 1095
@@ -917,9 +1865,24 @@ castle = {
 	ca_culture_group_byzantine_3 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			FROM = { culture_group = byzantine }
+			OR = { 
+				culture_group = byzantine 
+				has_building = ca_culture_group_byzantine_1
+				has_building = ca_culture_group_byzantine_2
+				has_building = ca_culture_group_byzantine_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
 		upgrades_from = ca_culture_group_byzantine_2
 		gold_cost = 400
 		build_time = 2190
@@ -934,9 +1897,25 @@ castle = {
 	ca_culture_group_byzantine_4 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			FROM = { culture_group = byzantine }
+			OR = { 
+				culture_group = byzantine 
+				has_building = ca_culture_group_byzantine_1
+				has_building = ca_culture_group_byzantine_2
+				has_building = ca_culture_group_byzantine_3
+				has_building = ca_culture_group_byzantine_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = byzantine
+			}
+		}
 		upgrades_from = ca_culture_group_byzantine_3
 		gold_cost = 500
 		build_time = 2190
@@ -953,9 +1932,22 @@ castle = {
 	ca_culture_irish_1 = {
 		desc = ca_culture_irish_1_desc
 		potential = {
-			FROM = { culture = irish }
+			OR = { 
+				culture = irish 
+				has_building = ca_culture_irish_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = irish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = irish
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -968,9 +1960,23 @@ castle = {
 	ca_culture_irish_2 = {
 		desc = ca_culture_irish_1_desc
 		potential = {
-			FROM = { culture = irish }
+			OR = { 
+				culture = irish 
+				has_building = ca_culture_irish_1
+				has_building = ca_culture_irish_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = irish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = irish
+			}
+		}
 		upgrades_from = ca_culture_irish_1
 		gold_cost = 300
 		build_time = 1095
@@ -983,9 +1989,24 @@ castle = {
 	ca_culture_irish_3 = {
 		desc = ca_culture_irish_1_desc
 		potential = {
-			FROM = { culture = irish }
+			OR = { 
+				culture = irish 
+				has_building = ca_culture_irish_1
+				has_building = ca_culture_irish_2
+				has_building = ca_culture_irish_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = irish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = irish
+			}
+		}
 		upgrades_from = ca_culture_irish_2
 		gold_cost = 400
 		build_time = 2190
@@ -998,9 +2019,25 @@ castle = {
 	ca_culture_irish_4 = {
 		desc = ca_culture_irish_1_desc
 		potential = {
-			FROM = { culture = irish }
+			OR = { 
+				culture = irish 
+				has_building = ca_culture_irish_1
+				has_building = ca_culture_irish_2
+				has_building = ca_culture_irish_3
+				has_building = ca_culture_irish_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = irish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = irish
+			}
+		}
 		upgrades_from = ca_culture_irish_3
 		gold_cost = 500
 		build_time = 2190
@@ -1015,9 +2052,22 @@ castle = {
 	ca_culture_ethiopian_1 = {
 		desc = ca_culture_ethiopian_1_desc
 		potential = {
-			FROM = { culture = ethiopian }
+			OR = { 
+				culture = ethiopian 
+				has_building = ca_culture_ethiopian_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = ethiopian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = ethiopian
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1030,9 +2080,23 @@ castle = {
 	ca_culture_ethiopian_2 = {
 		desc = ca_culture_ethiopian_1_desc
 		potential = {
-			FROM = { culture = ethiopian }
+			OR = { 
+				culture = ethiopian 
+				has_building = ca_culture_ethiopian_1
+				has_building = ca_culture_ethiopian_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = ethiopian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = ethiopian
+			}
+		}
 		upgrades_from = ca_culture_ethiopian_1
 		gold_cost = 300
 		build_time = 1095
@@ -1045,9 +2109,24 @@ castle = {
 	ca_culture_ethiopian_3 = {
 		desc = ca_culture_ethiopian_1_desc
 		potential = {
-			FROM = { culture = ethiopian }
+			OR = { 
+				culture = ethiopian 
+				has_building = ca_culture_ethiopian_1
+				has_building = ca_culture_ethiopian_2
+				has_building = ca_culture_ethiopian_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = ethiopian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = ethiopian
+			}
+		}
 		upgrades_from = ca_culture_ethiopian_2
 		gold_cost = 400
 		build_time = 2190
@@ -1060,9 +2139,25 @@ castle = {
 	ca_culture_ethiopian_4 = {
 		desc = ca_culture_ethiopian_1_desc
 		potential = {
-			FROM = { culture = ethiopian }
+			OR = { 
+				culture = ethiopian 
+				has_building = ca_culture_ethiopian_1
+				has_building = ca_culture_ethiopian_2
+				has_building = ca_culture_ethiopian_3
+				has_building = ca_culture_ethopian_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = ethiopian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = ethiopian
+			}
+		}
 		upgrades_from = ca_culture_ethiopian_3
 		gold_cost = 500
 		build_time = 2190
@@ -1077,9 +2172,22 @@ castle = {
 	ca_culture_somali_1 = {
 		desc = ca_culture_somali_1_desc
 		potential = {
-			FROM = { culture = somali }
+			OR = { 
+				culture = somali 
+				has_building = ca_culture_somali_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = somali
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = somali
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1092,9 +2200,23 @@ castle = {
 	ca_culture_somali_2 = {
 		desc = ca_culture_somali_1_desc
 		potential = {
-			FROM = { culture = somali }
+			OR = { 
+				culture = somali 
+				has_building = ca_culture_somali_1
+				has_building = ca_culture_somali_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = somali
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = somali
+			}
+		}
 		upgrades_from = ca_culture_somali_1
 		gold_cost = 300
 		build_time = 1095
@@ -1107,9 +2229,24 @@ castle = {
 	ca_culture_somali_3 = {
 		desc = ca_culture_somali_1_desc
 		potential = {
-			FROM = { culture = somali }
+			OR = { 
+				culture = somali 
+				has_building = ca_culture_somali_1
+				has_building = ca_culture_somali_2
+				has_building = ca_culture_somali_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = somali
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = somali
+			}
+		}
 		upgrades_from = ca_culture_somali_2
 		gold_cost = 400
 		build_time = 2190
@@ -1122,9 +2259,25 @@ castle = {
 	ca_culture_somali_4 = {
 		desc = ca_culture_somali_1_desc
 		potential = {
-			FROM = { culture = somali }
+			OR = { 
+				culture = somali 
+				has_building = ca_culture_somali_1
+				has_building = ca_culture_somali_2
+				has_building = ca_culture_somali_3
+				has_building = ca_culture_somali_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = somali
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = somali
+			}
+		}
 		upgrades_from = ca_culture_somali_3
 		gold_cost = 500
 		build_time = 2190
@@ -1139,9 +2292,22 @@ castle = {
 	ca_culture_west_african_1 = {
 		desc = ca_culture_west_african_1_desc
 		potential = {
-			FROM = { culture_group = west_african }
+			OR = { 
+				culture_group = west_african 
+				has_building = ca_culture_west_african_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = west_african
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1155,9 +2321,23 @@ castle = {
 	ca_culture_west_african_2 = {
 		desc = ca_culture_west_african_1_desc
 		potential = {
-			FROM = { culture_group = west_african }
+			OR = { 
+				culture_group = west_african 
+				has_building = ca_culture_west_african_1
+				has_building = ca_culture_west_african_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = west_african
+			}
+		}
 		upgrades_from = ca_culture_west_african_1
 		gold_cost = 300
 		build_time = 1095
@@ -1171,9 +2351,24 @@ castle = {
 	ca_culture_west_african_3 = {
 		desc = ca_culture_west_african_1_desc
 		potential = {
-			FROM = { culture_group = west_african }
+			OR = { 
+				culture_group = west_african 
+				has_building = ca_culture_west_african_1
+				has_building = ca_culture_west_african_2
+				has_building = ca_culture_west_african_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = west_african
+			}
+		}
 		upgrades_from = ca_culture_west_african_2
 		gold_cost = 400
 		build_time = 2190
@@ -1187,9 +2382,25 @@ castle = {
 	ca_culture_west_african_4 = {
 		desc = ca_culture_west_african_1_desc
 		potential = {
-			FROM = { culture_group = west_african }
+			OR = { 
+				culture_group = west_african 
+				has_building = ca_culture_west_african_1
+				has_building = ca_culture_west_african_2
+				has_building = ca_culture_west_african_3
+				has_building = ca_culture_west_african_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = west_african
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				culture_group = west_african
+			}
+		}
 		upgrades_from = ca_culture_west_african_3
 		gold_cost = 500
 		build_time = 2190
@@ -1205,9 +2416,22 @@ castle = {
 	ca_culture_group_south_slavic_1 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			FROM = { culture_group = south_slavic }
+			OR = { 
+				culture_group = south_slavic 
+				has_building = ca_culture_group_south_slavic_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1222,9 +2446,23 @@ castle = {
 	ca_culture_group_south_slavic_2 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			FROM = { culture_group = south_slavic }
+			OR = { 
+				culture_group = south_slavic 
+				has_building = ca_culture_group_south_slavic_1
+				has_building = ca_culture_group_south_slavic_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
 		upgrades_from = ca_culture_group_south_slavic_1
 		gold_cost = 300
 		build_time = 1095
@@ -1239,9 +2477,24 @@ castle = {
 	ca_culture_group_south_slavic_3 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			FROM = { culture_group = south_slavic }
+			OR = { 
+				culture_group = south_slavic 
+				has_building = ca_culture_group_south_slavic_1
+				has_building = ca_culture_group_south_slavic_2
+				has_building = ca_culture_group_south_slavic_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
 		upgrades_from = ca_culture_group_south_slavic_2
 		gold_cost = 400
 		build_time = 2190
@@ -1256,9 +2509,25 @@ castle = {
 	ca_culture_group_south_slavic_4 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			FROM = { culture_group = south_slavic }
+			OR = { 
+				culture_group = south_slavic 
+				has_building = ca_culture_group_south_slavic_1
+				has_building = ca_culture_group_south_slavic_2
+				has_building = ca_culture_group_south_slavic_3
+				has_building = ca_culture_group_south_slavic_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = south_slavic
+			}
+		}
 		upgrades_from = ca_culture_group_south_slavic_3
 		gold_cost = 500
 		build_time = 2190
@@ -1275,9 +2544,22 @@ castle = {
 	ca_culture_dutch_1 = {
 		desc = ca_culture_dutch_1_desc
 		potential = {
-			FROM = { culture = dutch }
+			OR = { 
+				culture = dutch 
+				has_building = ca_culture_dutch_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = dutch
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = dutch
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1292,9 +2574,23 @@ castle = {
 	ca_culture_dutch_2 = {
 		desc = ca_culture_dutch_1_desc
 		potential = {
-			FROM = { culture = dutch }
+			OR = { 
+				culture = dutch 
+				has_building = ca_culture_dutch_1
+				has_building = ca_culture_dutch_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = dutch
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = dutch
+			}
+		}
 		upgrades_from = ca_culture_dutch_1
 		gold_cost = 300
 		build_time = 1095
@@ -1309,9 +2605,24 @@ castle = {
 	ca_culture_dutch_3 = {
 		desc = ca_culture_dutch_1_desc
 		potential = {
-			FROM = { culture = dutch }
+			OR = { 
+				culture = dutch 
+				has_building = ca_culture_dutch_1
+				has_building = ca_culture_dutch_2
+				has_building = ca_culture_dutch_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = dutch
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = dutch
+			}
+		}
 		upgrades_from = ca_culture_dutch_2
 		gold_cost = 400
 		build_time = 2190
@@ -1326,9 +2637,25 @@ castle = {
 	ca_culture_dutch_4 = {
 		desc = ca_culture_dutch_1_desc
 		potential = {
-			FROM = { culture = dutch }
+			OR = { 
+				culture = dutch 
+				has_building = ca_culture_dutch_1
+				has_building = ca_culture_dutch_2
+				has_building = ca_culture_dutch_3
+				has_building = ca_culture_dutch_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = dutch
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = dutch
+			}
+		}
 		upgrades_from = ca_culture_dutch_3
 		gold_cost = 500
 		build_time = 2190
@@ -1345,9 +2672,22 @@ castle = {
 	ca_culture_nahuatl_1 = {
 		desc = ca_culture_nahuatl_1_desc
 		potential = {
-			FROM = { culture = nahuatl }
+			OR = { 
+				culture = nahuatl 
+				has_building = ca_culture_nahuatl_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nahuatl
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = nahuatl
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1360,9 +2700,23 @@ castle = {
 	ca_culture_nahuatl_2 = {
 		desc = ca_culture_nahuatl_1_desc
 		potential = {
-			FROM = { culture = nahuatl }
+			OR = { 
+				culture = nahuatl 
+				has_building = ca_culture_nahuatl_1
+				has_building = ca_culture_nahuatl_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nahuatl
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = nahuatl
+			}
+		}
 		upgrades_from = ca_culture_nahuatl_1
 		gold_cost = 300
 		build_time = 1095
@@ -1375,9 +2729,24 @@ castle = {
 	ca_culture_nahuatl_3 = {
 		desc = ca_culture_nahuatl_1_desc
 		potential = {
-			FROM = { culture = nahuatl }
+			OR = { 
+				culture = nahuatl 
+				has_building = ca_culture_nahuatl_1
+				has_building = ca_culture_nahuatl_2
+				has_building = ca_culture_nahuatl_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nahuatl
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = nahuatl
+			}
+		}
 		upgrades_from = ca_culture_nahuatl_2
 		gold_cost = 400
 		build_time = 2190
@@ -1390,9 +2759,25 @@ castle = {
 	ca_culture_nahuatl_4 = {
 		desc = ca_culture_nahuatl_1_desc
 		potential = {
-			FROM = { culture = nahuatl }
+			OR = { 
+				culture = nahuatl 
+				has_building = ca_culture_nahuatl_1
+				has_building = ca_culture_nahuatl_2
+				has_building = ca_culture_nahuatl_3
+				has_building = ca_culture_nahuatl_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nahuatl
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = nahuatl
+			}
+		}
 		upgrades_from = ca_culture_nahuatl_3
 		gold_cost = 500
 		build_time = 2190
@@ -1406,11 +2791,22 @@ castle = {
 	ca_culture_jewish_1 = {
 		desc = ca_culture_jewish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = israelite
+				has_building = ca_culture_jewish_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = israelite
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = israelite
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1423,11 +2819,23 @@ castle = {
 	ca_culture_jewish_2 = {
 		desc = ca_culture_jewish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = israelite
+				has_building = ca_culture_jewish_1
+				has_building = ca_culture_jewish_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = israelite
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = israelite
+			}
+		}
 		upgrades_from = ca_culture_jewish_1
 		gold_cost = 300
 		build_time = 1095
@@ -1440,11 +2848,24 @@ castle = {
 	ca_culture_jewish_3 = {
 		desc = ca_culture_jewish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = israelite
+				has_building = ca_culture_jewish_1
+				has_building = ca_culture_jewish_2
+				has_building = ca_culture_jewish_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = israelite
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = israelite
+			}
+		}
 		upgrades_from = ca_culture_jewish_2
 		gold_cost = 400
 		build_time = 2190
@@ -1457,11 +2878,25 @@ castle = {
 	ca_culture_jewish_4 = {
 		desc = ca_culture_jewish_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = israelite
+				has_building = ca_culture_jewish_1
+				has_building = ca_culture_jewish_2
+				has_building = ca_culture_jewish_3
+				has_building = ca_culture_jewish_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = israelite
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = israelite
+			}
+		}
 		upgrades_from = ca_culture_jewish_3
 		gold_cost = 500
 		build_time = 2190
@@ -1475,14 +2910,29 @@ castle = {
 	ca_culture_indian_1 = {
 		desc = ca_culture_indian_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				has_building = ca_culture_indian_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = indo_aryan_group
 					culture_group = dravidian_group
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1495,14 +2945,30 @@ castle = {
 	ca_culture_indian_2 = {
 		desc = ca_culture_indian_2_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				has_building = ca_culture_indian_1
+				has_building = ca_culture_indian_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = indo_aryan_group
 					culture_group = dravidian_group
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
 		upgrades_from = ca_culture_indian_1
 		gold_cost = 300
 		build_time = 1095
@@ -1516,14 +2982,31 @@ castle = {
 	ca_culture_indian_3 = {
 		desc = ca_culture_indian_3_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				has_building = ca_culture_indian_1
+				has_building = ca_culture_indian_2
+				has_building = ca_culture_indian_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = indo_aryan_group
 					culture_group = dravidian_group
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
 		upgrades_from = ca_culture_indian_2
 		gold_cost = 400
 		build_time = 2190
@@ -1537,14 +3020,32 @@ castle = {
 	ca_culture_indian_4 = {
 		desc = ca_culture_indian_4_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture_group = indo_aryan_group
+				culture_group = dravidian_group
+				has_building = ca_culture_indian_1
+				has_building = ca_culture_indian_2
+				has_building = ca_culture_indian_3
+				has_building = ca_culture_indian_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture_group = indo_aryan_group
 					culture_group = dravidian_group
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
 		upgrades_from = ca_culture_indian_3
 		gold_cost = 500
 		build_time = 2190
@@ -1560,9 +3061,22 @@ castle = {
 	ca_culture_nubian_1 = {
 		desc = ca_culture_nubian_1_desc
 		potential = {
-			FROM = { culture = nubian }
+			OR = { 
+				culture = nubian 
+				has_building = ca_culture_nubian_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nubian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = nubian
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1577,9 +3091,23 @@ castle = {
 	ca_culture_nubian_2 = {
 		desc = ca_culture_nubian_1_desc
 		potential = {
-			FROM = { culture = nubian }
+			OR = { 
+				culture = nubian 
+				has_building = ca_culture_nubian_1
+				has_building = ca_culture_nubian_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nubian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = nubian
+			}
+		}
 		upgrades_from = ca_culture_nubian_1
 		gold_cost = 300
 		build_time = 1095
@@ -1594,9 +3122,24 @@ castle = {
 	ca_culture_nubian_3 = {
 		desc = ca_culture_nubian_1_desc
 		potential = {
-			FROM = { culture = nubian }
+			OR = { 
+				culture = nubian 
+				has_building = ca_culture_nubian_1
+				has_building = ca_culture_nubian_2
+				has_building = ca_culture_nubian_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nubian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = nubian
+			}
+		}
 		upgrades_from = ca_culture_nubian_2
 		gold_cost = 400
 		build_time = 2190
@@ -1611,9 +3154,25 @@ castle = {
 	ca_culture_nubian_4 = {
 		desc = ca_culture_nubian_1_desc
 		potential = {
-			FROM = { culture = nubian }
+			OR = { 
+				culture = nubian 
+				has_building = ca_culture_nubian_1
+				has_building = ca_culture_nubian_2
+				has_building = ca_culture_nubian_3
+				has_building = ca_culture_nubian_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = nubian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = nubian
+			}
+		}
 		upgrades_from = ca_culture_nubian_3
 		gold_cost = 500
 		build_time = 2190
@@ -1630,14 +3189,29 @@ castle = {
 	ca_culture_germanic_1 = {
 		desc = ca_culture_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = lombard
+				culture = old_frankish
+				has_building = ca_culture_germanic_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = lombard
 					culture = old_frankish
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = lombard
+					culture = old_frankish
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1650,14 +3224,30 @@ castle = {
 	ca_culture_germanic_2 = {
 		desc = ca_culture_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = lombard
+				culture = old_frankish
+				has_building = ca_culture_germanic_1
+				has_building = ca_culture_germanic_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = lombard
 					culture = old_frankish
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = lombard
+					culture = old_frankish
+				}
+			}
+		}
 		upgrades_from = ca_culture_germanic_1
 		gold_cost = 300
 		build_time = 1095
@@ -1670,14 +3260,31 @@ castle = {
 	ca_culture_germanic_3 = {
 		desc = ca_culture_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = lombard
+				culture = old_frankish
+				has_building = ca_culture_germanic_1
+				has_building = ca_culture_germanic_2
+				has_building = ca_culture_germanic_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = lombard
 					culture = old_frankish
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = lombard
+					culture = old_frankish
+				}
+			}
+		}
 		upgrades_from = ca_culture_germanic_2
 		gold_cost = 400
 		build_time = 2190
@@ -1690,14 +3297,32 @@ castle = {
 	ca_culture_germanic_4 = {
 		desc = ca_culture_germanic_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = lombard
+				culture = old_frankish
+				has_building = ca_culture_germanic_1
+				has_building = ca_culture_germanic_2
+				has_building = ca_culture_germanic_3
+				has_building = ca_culture_germanic_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = lombard
 					culture = old_frankish
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = lombard
+					culture = old_frankish
+				}
+			}
+		}
 		upgrades_from = ca_culture_germanic_3
 		gold_cost = 500
 		build_time = 2190
@@ -1712,9 +3337,22 @@ castle = {
 	ca_culture_pictish_1 = {
 		desc = ca_culture_pictish_1_desc
 		potential = {
-			FROM = { culture = pictish }
+			OR = { 
+				culture = pictish 
+				has_building = ca_culture_pictish_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = pictish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = pictish
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1728,9 +3366,23 @@ castle = {
 	ca_culture_pictish_2 = {
 		desc = ca_culture_pictish_1_desc
 		potential = {
-			FROM = { culture = pictish }
+			OR = { 
+				culture = pictish 
+				has_building = ca_culture_pictish_1
+				has_building = ca_culture_pictish_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = pictish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = pictish
+			}
+		}
 		upgrades_from = ca_culture_pictish_1
 		gold_cost = 300
 		build_time = 1095
@@ -1744,9 +3396,24 @@ castle = {
 	ca_culture_pictish_3 = {
 		desc = ca_culture_pictish_1_desc
 		potential = {
-			FROM = { culture = pictish }
+			OR = { 
+				culture = pictish 
+				has_building = ca_culture_pictish_1
+				has_building = ca_culture_pictish_2
+				has_building = ca_culture_pictish_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = pictish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = pictish
+			}
+		}
 		upgrades_from = ca_culture_pictish_2
 		gold_cost = 400
 		build_time = 2190
@@ -1760,9 +3427,25 @@ castle = {
 	ca_culture_pictish_4 = {
 		desc = ca_culture_pictish_1_desc
 		potential = {
-			FROM = { culture = pictish }
+			OR = { 
+				culture = pictish 
+				has_building = ca_culture_pictish_1
+				has_building = ca_culture_pictish_2
+				has_building = ca_culture_pictish_3
+				has_building = ca_culture_pictish_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = pictish
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = pictish
+			}
+		}
 		upgrades_from = ca_culture_pictish_3
 		gold_cost = 500
 		build_time = 2190
@@ -1778,9 +3461,22 @@ castle = {
 	ca_culture_suebi_1 = {
 		desc = ca_culture_suebi_1_desc
 		potential = {
-			FROM = { culture = suebi }
+			OR = { 
+				culture = suebi 
+				has_building = ca_culture_suebi_1
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+			ROOT = {
+				culture = suebi
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = suebi
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1795,9 +3491,23 @@ castle = {
 	ca_culture_suebi_2 = {
 		desc = ca_culture_suebi_1_desc
 		potential = {
-			FROM = { culture = suebi }
+			OR = { 
+				culture = suebi 
+				has_building = ca_culture_suebi_1
+				has_building = ca_culture_suebi_2
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			ROOT = {
+				culture = suebi
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = suebi
+			}
+		}
 		upgrades_from = ca_culture_suebi_1
 		gold_cost = 300
 		build_time = 1095
@@ -1812,9 +3522,24 @@ castle = {
 	ca_culture_suebi_3 = {
 		desc = ca_culture_suebi_1_desc
 		potential = {
-			FROM = { culture = suebi }
+			OR = { 
+				culture = suebi 
+				has_building = ca_culture_suebi_1
+				has_building = ca_culture_suebi_2
+				has_building = ca_culture_suebi_3
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+			ROOT = {
+				culture = suebi
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = suebi
+			}
+		}
 		upgrades_from = ca_culture_suebi_2
 		gold_cost = 400
 		build_time = 2190
@@ -1829,9 +3554,25 @@ castle = {
 	ca_culture_suebi_4 = {
 		desc = ca_culture_suebi_1_desc
 		potential = {
-			FROM = { culture = suebi }
+			OR = { 
+				culture = suebi 
+				has_building = ca_culture_suebi_1
+				has_building = ca_culture_suebi_2
+				has_building = ca_culture_suebi_3
+				has_building = ca_culture_suebi_4
+			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+			ROOT = {
+				culture = suebi
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = suebi
+			}
+		}
 		upgrades_from = ca_culture_suebi_3
 		gold_cost = 500
 		build_time = 2190
@@ -1848,14 +3589,29 @@ castle = {
 	ca_culture_moors_1 = {
 		desc = ca_culture_moors_1_desc
 		potential = {
-			FROM = { 
+			OR = {
+				culture = andalusian_arabic
+				culture = maghreb_arabic
+				has_building = ca_culture_moors_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = andalusian_arabic
 					culture = maghreb_arabic
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = andalusian_arabic
+					culture = maghreb_arabic
+				}
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1871,14 +3627,30 @@ castle = {
 	ca_culture_moors_2 = {
 		desc = ca_culture_moors_1_desc
 		potential = {
-			FROM = { 
+			OR = {
+				culture = andalusian_arabic
+				culture = maghreb_arabic
+				has_building = ca_culture_moors_1
+				has_building = ca_culture_moors_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = andalusian_arabic
 					culture = maghreb_arabic
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = andalusian_arabic
+					culture = maghreb_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_moors_1
 		gold_cost = 300
 		build_time = 1095
@@ -1894,14 +3666,31 @@ castle = {
 	ca_culture_moors_3 = {
 		desc = ca_culture_moors_1_desc
 		potential = {
-			FROM = { 
+			OR = {
+				culture = andalusian_arabic
+				culture = maghreb_arabic
+				has_building = ca_culture_moors_1
+				has_building = ca_culture_moors_2
+				has_building = ca_culture_moors_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = andalusian_arabic
 					culture = maghreb_arabic
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = andalusian_arabic
+					culture = maghreb_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_moors_2
 		gold_cost = 400
 		build_time = 2190
@@ -1917,14 +3706,32 @@ castle = {
 	ca_culture_moors_4 = {
 		desc = ca_culture_moors_1_desc
 		potential = {
-			FROM = { 
+			OR = {
+				culture = andalusian_arabic
+				culture = maghreb_arabic
+				has_building = ca_culture_moors_1
+				has_building = ca_culture_moors_2
+				has_building = ca_culture_moors_3
+				has_building = ca_culture_moors_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				OR = {
 					culture = andalusian_arabic
 					culture = maghreb_arabic
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = andalusian_arabic
+					culture = maghreb_arabic
+				}
+			}
+		}
 		upgrades_from = ca_culture_moors_3
 		gold_cost = 500
 		build_time = 2190
@@ -1942,11 +3749,22 @@ castle = {
 	ca_culture_chinese_han_1 = {
 		desc = ca_culture_chinese_han_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = han
+				has_building = ca_culture_chinese_han_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = han
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = han
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -1959,11 +3777,23 @@ castle = {
 	ca_culture_chinese_han_2 = {
 		desc = ca_culture_chinese_han_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = han
+				has_building = ca_culture_chinese_han_1
+				has_building = ca_culture_chinese_han_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = han
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = han
+			}
+		}
 		upgrades_from = ca_culture_chinese_han_1
 		gold_cost = 300
 		build_time = 1095
@@ -1976,11 +3806,24 @@ castle = {
 	ca_culture_chinese_han_3 = {
 		desc = ca_culture_chinese_han_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = han
+				has_building = ca_culture_chinese_han_1
+				has_building = ca_culture_chinese_han_2
+				has_building = ca_culture_chinese_han_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = han
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = han
+			}
+		}
 		upgrades_from = ca_culture_chinese_han_2
 		gold_cost = 400
 		build_time = 2190
@@ -1993,11 +3836,25 @@ castle = {
 	ca_culture_chinese_han_4 = {
 		desc = ca_culture_chinese_han_1_desc
 		potential = {
-			FROM = {
+			OR = {
+				culture = han
+				has_building = ca_culture_chinese_han_1
+				has_building = ca_culture_chinese_han_2
+				has_building = ca_culture_chinese_han_3
+				has_building = ca_culture_chinese_han_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = han
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = han
+			}
+		}
 		upgrades_from = ca_culture_chinese_han_3
 		gold_cost = 500
 		build_time = 2190
@@ -2012,11 +3869,22 @@ castle = {
 	ca_culture_altaic_jurchen_1 = {
 		desc = ca_culture_altaic_jurchen_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = jurchen
+				has_building = ca_culture_altaic_jurchen_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = jurchen
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = jurchen
+			}
+		}
 		prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -2032,11 +3900,23 @@ castle = {
 	ca_culture_altaic_jurchen_2 = {
 		desc = ca_culture_altaic_jurchen_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = jurchen
+				has_building = ca_culture_altaic_jurchen_1
+				has_building = ca_culture_altaic_jurchen_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = jurchen
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = jurchen
+			}
+		}
 		upgrades_from = ca_culture_altaic_jurchen_1
 		gold_cost = 300
 		build_time = 1095
@@ -2052,11 +3932,24 @@ castle = {
 	ca_culture_altaic_jurchen_3 = {
 		desc = ca_culture_altaic_jurchen_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = jurchen
+				has_building = ca_culture_altaic_jurchen_1
+				has_building = ca_culture_altaic_jurchen_2
+				has_building = ca_culture_altaic_jurchen_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = jurchen
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = jurchen
+			}
+		}
 		upgrades_from = ca_culture_altaic_jurchen_2
 		gold_cost = 400
 		build_time = 2190
@@ -2072,11 +3965,25 @@ castle = {
 	ca_culture_altaic_jurchen_4 = {
 		desc = ca_culture_altaic_jurchen_1_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture = jurchen
+				has_building = ca_culture_altaic_jurchen_1
+				has_building = ca_culture_altaic_jurchen_2
+				has_building = ca_culture_altaic_jurchen_3
+				has_building = ca_culture_altaic_jurchen_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture = jurchen
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = jurchen
+			}
+		}
 		upgrades_from = ca_culture_altaic_jurchen_3
 		gold_cost = 500
 		build_time = 2190
@@ -2094,11 +4001,22 @@ castle = {
 	ca_culture_tibetan_1 = {
 		desc = ca_culture_tibetan_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture_group = tibetan_group
+				has_building = ca_culture_tibetan_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = tibetan_group
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = tibetan_group
+			}
+		}
 		#prerequisites = { ca_wall_2 }
 		gold_cost = 200
 		build_time = 730
@@ -2116,11 +4034,23 @@ castle = {
 	ca_culture_tibetan_2 = {
 		desc = ca_culture_tibetan_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture_group = tibetan_group
+				has_building = ca_culture_tibetan_1
+				has_building = ca_culture_tibetan_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = tibetan_group
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = tibetan_group
+			}
+		}
 		upgrades_from = ca_culture_tibetan_1
 		gold_cost = 300
 		build_time = 1095
@@ -2138,11 +4068,24 @@ castle = {
 	ca_culture_tibetan_3 = {
 		desc = ca_culture_tibetan_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture_group = tibetan_group
+				has_building = ca_culture_tibetan_1
+				has_building = ca_culture_tibetan_2
+				has_building = ca_culture_tibetan_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = tibetan_group
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = tibetan_group
+			}
+		}
 		upgrades_from = ca_culture_tibetan_2
 		gold_cost = 400
 		build_time = 2190
@@ -2160,11 +4103,25 @@ castle = {
 	ca_culture_tibetan_4 = {
 		desc = ca_culture_tibetan_desc
 		potential = {
-			FROM = { 
+			OR = { 
+				culture_group = tibetan_group
+				has_building = ca_culture_tibetan_1
+				has_building = ca_culture_tibetan_2
+				has_building = ca_culture_tibetan_3
+				has_building = ca_culture_tibetan_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
 				culture_group = tibetan_group
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = tibetan_group
+			}
+		}
 		upgrades_from = ca_culture_tibetan_3
 		gold_cost = 500
 		build_time = 2190
@@ -2183,12 +4140,17 @@ castle = {
 	ca_government_monastery_1 = {
 		desc = ca_government_monastery_1_desc
 		potential = {
-			FROM = { 
-				government = theocratic_feudal_government
+			OR = { 
+				FROM = { government = theocratic_feudal_government }
+				has_building = ca_government_monastery_1
 			}
+		}
+		is_active_trigger = {
+			owner = { government = theocratic_feudal_government }
 		}
 		trigger = {
 			TECH_TEMPLE_CONSTRUCTION = 0
+			FROM = { government = theocratic_feudal_government }
 		}
 		gold_cost = 150
 		build_time = 547
@@ -2205,12 +4167,18 @@ castle = {
 	ca_government_monastery_2 = {
 		desc = ca_government_monastery_1_desc
 		potential = {
-			FROM = { 
-				government = theocratic_feudal_government
+			OR = { 
+				FROM = { government = theocratic_feudal_government }
+				has_building = ca_government_monastery_1
+				has_building = ca_government_monastery_2
 			}
 		}
+		is_active_trigger = {
+			owner = { government = theocratic_feudal_government }
+		}
 		trigger = {
-			TECH_TEMPLE_CONSTRUCTION = 0
+			TECH_TEMPLE_CONSTRUCTION = 1
+			FROM = { government = theocratic_feudal_government }
 		}
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_government_monastery_1
@@ -2229,12 +4197,19 @@ castle = {
 	ca_government_monastery_3 = {
 		desc = ca_government_monastery_1_desc
 		potential = {
-			FROM = { 
-				government = theocratic_feudal_government
+			OR = { 
+				FROM = { government = theocratic_feudal_government }
+				has_building = ca_government_monastery_1
+				has_building = ca_government_monastery_2
+				has_building = ca_government_monastery_3
 			}
+		}
+		is_active_trigger = {
+			owner = { government = theocratic_feudal_government }
 		}
 		trigger = {
 			TECH_TEMPLE_CONSTRUCTION = 2
+			FROM = { government = theocratic_feudal_government }
 		}
 		upgrades_from = ca_government_monastery_2
 		gold_cost = 300
@@ -2252,12 +4227,20 @@ castle = {
 	ca_government_monastery_4 = {
 		desc = ca_government_monastery_1_desc
 		potential = {
-			FROM = { 
-				government = theocratic_feudal_government
+			OR = { 
+				FROM = { government = theocratic_feudal_government }
+				has_building = ca_government_monastery_1
+				has_building = ca_government_monastery_2
+				has_building = ca_government_monastery_3
+				has_building = ca_government_monastery_4
 			}
+		}
+		is_active_trigger = {
+			owner = { government = theocratic_feudal_government }
 		}
 		trigger = {
 			TECH_TEMPLE_CONSTRUCTION = 4
+			FROM = { government = theocratic_feudal_government }
 		}
 		upgrades_from = ca_government_monastery_3
 		gold_cost = 400

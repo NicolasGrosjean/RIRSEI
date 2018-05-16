@@ -1923,6 +1923,12 @@ character_event = {
 				holy_order = no
 			}
 		}
+		liege = {
+			NOT = { has_landed_title = d_bektashi }
+			liege = {
+				NOT = { has_landed_title = d_bektashi }
+			}
+		}
 		
 		has_dlc = "Sons of Abraham"
 		
