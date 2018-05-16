@@ -465,6 +465,9 @@ set_global_flag = reforme_gregorienne
 	holder = 11034
 }
 1058.3.29={
+	holder = 7939
+}
+1059.1.24={
 	holder = 7940
 }
 1061.7.27=

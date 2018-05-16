@@ -609,6 +609,9 @@ RETTYPE_CUL_PAPE_RIR =
 		independent = yes
 		
 NOT = { religion_group = muslim }
+		NOT = {
+			culture = jurchen
+		}
 	}
 	
 	modifier = {

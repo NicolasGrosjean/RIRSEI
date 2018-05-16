@@ -1503,6 +1503,8 @@ trait = "byz_autocrator"
 1742 = {
 	name="Alexios"
 	dynasty=634 trait="aristos"
+	dna = rpxfoxiongk
+	properties = ai0a00000000000000
 	martial=9
 	diplomacy=9
 	intrigue=8
@@ -4790,6 +4792,8 @@ trait = "byz_autocrator"
 
 215674 = {
 	name="Theodoros"
+	dna = dycdfntnwwf
+	properties = cj0b00000000000000
 	dynasty=101107
 	martial=7
 	diplomacy=7
@@ -4985,6 +4989,8 @@ trait = "byz_autocrator"
 223023 = {
 	name="Ioannes"
 	dynasty=634 trait="aristos"
+	dna = rpxfkxjonck
+	properties = ai0aj00000000000000
 	martial=7
 	diplomacy=7
 	intrigue=6
@@ -14028,6 +14034,7 @@ trait = "byz_autocrator"
 
 73495 = {
 	name="Ioannes"
+	dynasty = 5061088
 	religion="orthodox"
 	culture="greek"
 	1098.1.1={
@@ -14040,6 +14047,7 @@ trait = "byz_autocrator"
 
 73496 = {
 	name="Gregorios"
+	dynasty = 5061088
 	religion="orthodox"
 	culture="greek"
 	1111.1.1={
@@ -14054,6 +14062,8 @@ trait = "byz_autocrator"
 	name="Sergios"
 	religion="orthodox"
 	culture="greek"
+	dynasty = 5061088
+	father = 73495
 	1128.1.1={
 		birth="1128.1.1"
 	}

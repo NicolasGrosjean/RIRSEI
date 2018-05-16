@@ -6246,6 +6246,8 @@
 
 20289 = {
 	name="Werner"
+	dna = hvhqbxzrpro
+	properties = 0a0cik000000000000
 	dynasty=51
 	martial=6
 	diplomacy=6
@@ -48245,6 +48247,8 @@ add_claim = e_hre
 
 167219 = {  	
 	name="Heinrich"
+	dna = jmigenyaeyy
+	properties = lo0agd000000000000
 	dynasty=9511
 	religion="catholic"
 	culture="german"
@@ -53178,6 +53182,8 @@ add_claim = e_hre
 }
 190228 = {
 	name="Tassilo" #Tassilo III of Bavaria
+	dna = hnnhhngovak
+	properties = ac00bb000000000000
 	dynasty=1044033 #Agilolfing (Bavaria)
 	religion="catholic"
 	culture="german"

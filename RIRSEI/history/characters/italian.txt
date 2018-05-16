@@ -1728,7 +1728,7 @@
 
 213025 = {
 	name="Doménico"
-	dynasty=100350
+	dynasty=5061089
 	religion="catholic"
 	culture="italian"
 	1132.1.1 = {
@@ -2372,6 +2372,8 @@
 
 213601 = {
 	name="Enrico"
+	dna = fhxirzswvcj
+	properties = le0e0k0000a0000000
 	dynasty=13027
 	martial=6
 	diplomacy=6
@@ -12261,7 +12263,7 @@
 
 71011 = {
 	name="Artaluccio"
-	dynasty=8685
+	dynasty=5062097
 	martial=6
 	diplomacy=5
 	intrigue=7
@@ -15049,6 +15051,8 @@
 
 71157 = {
 	name="Oberto" # capitano del popolo Oberto Doria "Dorino"
+	dna = nzvxyeojlpf
+	properties = li00id0000000000
 	dynasty=13041 # Doria
 	religion="catholic"
 	culture="italian"
@@ -21483,6 +21487,34 @@ trait = proud
 		death="1108.1.1"
 	}
 }
+7939 = {
+	name="Giovanni" #Benedictus X
+	dynasty=100349
+	martial=6
+	diplomacy=7
+	intrigue=8
+	stewardship=8
+	religion="catholic"
+	culture="italian"
+	trait="diligent"
+	trait="deceitful"
+	trait="ambitious"
+	trait="charismatic_negotiator"
+	father=7935
+	1020.1.1 = {
+		birth="1020.1.1"
+	}
+	1058.3.29={
+		name="Benedictus"
+	}
+	1059.1.24={
+		add_trait="monk"
+	}
+	1079.5.4 = {
+		death="1079.5.4"
+	}
+}
+
 
 91143 = {
 	name="Béatrice" #Béatrice de Montferrat
@@ -23856,6 +23888,8 @@ trait = proud
 
 7757 = {
 	name="Matilda"
+	dna = fabmmzztpmr
+	properties = cl0cjd0000000000000000000000000
 	female=yes
 	dynasty=101556
 	martial=6
@@ -25696,6 +25730,7 @@ trait = proud
 	name="Giordano"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
 	1153.1.1={
 		birth="1153.1.1"
 	}
@@ -25708,6 +25743,8 @@ trait = proud
 	name="Adalberto"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73498
 	1170.1.1={
 		birth="1170.1.1"
 	}
@@ -25720,6 +25757,8 @@ trait = proud
 	name="Luigi"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73498
 	1188.1.1={
 		birth="1188.1.1"
 	}
@@ -25732,6 +25771,8 @@ trait = proud
 	name="Rafaello"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73499
 	1201.1.1={
 		birth="1201.1.1"
 	}
@@ -25744,6 +25785,8 @@ trait = proud
 	name="Leone"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73501
 	1223.1.1={
 		birth="1223.1.1"
 	}
@@ -25756,6 +25799,8 @@ trait = proud
 	name="Emmanuele"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73502
 	1250.1.1={
 		birth="1250.1.1"
 	}
@@ -25768,6 +25813,8 @@ trait = proud
 	name="Orlando"
 	religion="catholic"
 	culture="italian"
+	dynasty=5061090
+	father = 73503
 	1275.1.1={
 		birth="1275.1.1"
 	}

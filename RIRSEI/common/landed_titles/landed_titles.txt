@@ -6716,7 +6716,61 @@ k_saxony = {
 				color={ 129 129 129 }
 				color2={ 255 255 255 }
 			
+<<<<<<< HEAD
 				b_mainz = {
+=======
+			c_roma = {
+				color={ 242 233 156 }
+				color2={ 220 220 1 }
+				
+				christian = 5000 # Crusade target weight
+				aztec_reformed = 1000
+
+				holy_site = catholic
+				holy_site = aztec
+				holy_site = aztec_reformed
+				holy_site = hellenic_pagan
+				holy_site = pagan
+				
+				italian = Roma
+				castillan = Roma
+				catalan = Roma
+				basque = Roma
+				portuguese = Roma
+				visigothic = Roma
+				roman = Roma
+				norse = Rom
+				swedish = Rom
+				danish = Rom
+				norwegian = Rom
+				german = Rom
+				lombard = Rom
+				old_frankish = Rom
+				suebi = Rom
+				saxon = Rom
+				old_saxon = Rom
+				
+				b_roma = {
+					pentarchy = yes
+					used_for_dynasty_names = no
+					
+					italian = Roma
+					castillan = Roma
+					catalan = Roma
+					basque = Roma
+					portuguese = Roma
+					visigothic = Roma
+					roman = Roma
+					swedish = Rom
+					danish = Rom
+					norwegian = Rom
+					german = Rom
+					lombard = Rom
+					old_frankish = Rom
+					suebi = Rom
+					saxon = Rom
+					old_saxon = Rom
+>>>>>>> paradox
 				}
 				b_frankfurt = {
 				}
@@ -20282,8 +20336,55 @@ e_tartaria = {
 				}
 			}
 		}
+<<<<<<< HEAD
 		d_khangai = {
 			color = { 100 120 240 }
+=======
+	}
+}
+	
+e_france = {
+	color={ 11 22 170 }
+	color2={ 255 255 20 }
+	
+	capital = 112 # Ile de France
+	
+	culture = frankish
+	
+	allow = {
+		hidden_tooltip = {
+			OR = {
+				ai = no
+				culture = frankish
+				culture = norman
+				culture = occitan
+			}
+		}
+		any_demesne_title = {
+			tier = king
+			NOT = { title = k_france }
+			NOT = { title = k_aquitaine }
+			NOT = { title = k_brittany }
+			NOT = { title = k_burgundy }
+		}
+	}
+
+	k_france = {
+		color={ 15 27 187 }
+		color2={ 255 255 20 }
+		capital = 112 # Ile de France
+		dignity = 30 # Counted as having this many more counties than it does
+		
+		culture = frankish
+		
+		catholic = 5000 # Crusade target weight
+		norse_pagan_reformed = 100 # Crusade target weight
+		aztec_reformed = 500
+		
+		d_berry = {
+			color={ 24 52 226 }
+			color2={ 255 255 255 }
+>>>>>>> paradox
 			
 			capital = 1457 # Kara-khorum
 			
@@ -23098,6 +23199,7 @@ e_persia = {
 				b_roudavar = {
 				}
 			}
+<<<<<<< HEAD
 			c_rayy = {
 				color={ 193 234 121 }
 				color2={ 255 255 255 }
@@ -23117,6 +23219,29 @@ e_persia = {
 				b_karaj = {
 				}
 				b_pakdasht = {
+=======
+		}
+	}
+	
+	k_andalusia = {
+		color = { 31 138 40 }
+		color2={ 255 255 255 }
+		
+		capital = 181 # Cordoba
+		
+		culture = andalusian_arabic
+		
+		catholic = 100 # Crusade target weight
+		muslim = 50 # Crusade target weight
+		west_african_pagan_reformed = 50
+		aztec_reformed = 2000
+		
+		allow = {
+			hidden_tooltip = {
+				OR = {
+					ai = no
+					culture_group = arabic
+>>>>>>> paradox
 				}
 			}
 			c_zanjan_abhar = {
@@ -26118,8 +26243,27 @@ croatian = "Regnum Babilioniae"
 				}
 			}
 		}
+<<<<<<< HEAD
 		d_nefoud = {
 			color={ 17 228 10 }
+=======
+	}
+	
+	k_mauretania = {
+		color={ 58 188 41 }
+		color2={ 255 255 255 }
+		
+		capital = 843 # Marrakech
+		
+		culture = maghreb_arabic
+		
+		muslim = 100 # Crusade target weight
+		west_african_pagan_reformed = 100
+		aztec_reformed = 500
+	
+		d_marrakech = {
+			color={ 43 150 32 }
+>>>>>>> paradox
 			color2={ 255 255 255 }
 			
 			capital = 863 # Hajr
@@ -28166,7 +28310,13 @@ croatian = "Principatus Antiochenus"
 		color={ 58 188 41 }
 		color2={ 255 255 255 }
 		
+<<<<<<< HEAD
 		capital = 843 # Marrakech
+=======
+		catholic = 300 # Crusade target weight
+		norse_pagan_reformed = 200 # Crusade target weight
+		aztec_reformed = 500
+>>>>>>> paradox
 		
 		culture = maghreb_arabic
 		
@@ -31302,7 +31452,7 @@ d_nestorian = {
 	color={ 180 137 97 }
 	color2={ 220 220 0 }
 	
-	capital = 764 # Antioch
+	capital = 693 # Baghdad
 	
 	title = "PATRIARCH_IN_THE_EAST"
 	foa = "ECUMENICAL_PATRIARCH_FOA"
@@ -31731,6 +31881,21 @@ b_gaulo = {
 	religion = catholic
 }
 
+b_silvio = {
+	culture = italian
+	religion = catholic
+}
+
+b_mastropiero = {
+	culture = italian
+	religion = catholic
+}
+
+b_tiepolo = {
+	culture = italian
+	religion = catholic
+}
+
 # GENOA:
 
 b_doria = {
@@ -31888,6 +32053,32 @@ b_sorrenti = {
 
 b_ravelli = {
 	culture = italian
+	religion = catholic
+}
+
+#Ancona
+b_kastriotis = {
+	culture = greek
+	religion = catholic
+}
+
+b_skleros = {
+	culture = italian
+	religion = catholic
+}
+
+b_monomachos = {
+	culture = italian 
+	religion = catholic
+}
+
+b_kourkoas = {
+	culture = greek
+	religion = catholic
+}
+
+b_scarponnois = {
+	culture = german
 	religion = catholic
 }
 

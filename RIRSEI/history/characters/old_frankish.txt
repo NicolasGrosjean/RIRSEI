@@ -3925,7 +3925,7 @@ trait = roi_oint
 }
 
 131719 = {
-	name="Drogo" # Duke of Champagne and Burgundy
+	name="Dreux" # Duke of Champagne and Burgundy
 	# AKA Dreux
 	dynasty=25061
 	martial=5

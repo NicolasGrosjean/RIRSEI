@@ -9498,6 +9498,8 @@ trait = Vs_sancti_petri
 
 159137 = {
 	name="Álmos" # Ruler of the Magyars in 845
+	dna = eegxbhtirbv
+	properties = fc00id000000000000
 	dynasty=708
 	religion="tengri_pagan"
 	culture="hungarian"
