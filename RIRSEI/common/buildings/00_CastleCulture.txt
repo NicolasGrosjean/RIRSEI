@@ -26,31 +26,11 @@ castle = {
 	ca_culture_Francais_syst_1 = {
 		desc = Francais_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian 
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                           
-=======
-			OR = {
-				culture = english
-				culture = welsh
-				has_building = ca_culture_saxon_english_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = english
-					culture = welsh
-				}
-			}
-		} 
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -65,14 +45,9 @@ culture = GalloB
 
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
 		gold_cost = 10
-=======
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 knights = 15
 heavy_infantry = 40
@@ -84,76 +59,16 @@ heavy_infantry_morale = 0.10
 tax_income = 1
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_saxon_english_2 = {
-		desc = ca_culture_saxon_english_1_desc
-		potential = {
-			OR = {
-				culture = english
-				culture = welsh
-				has_building = ca_culture_saxon_english_1
-				has_building = ca_culture_saxon_english_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = english
-					culture = welsh
-				}
-			}
-		} 
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1 
-			ROOT = {
-				OR = {
-					culture = english
-					culture = welsh
-				}
-			}
-		}
-		upgrades_from = ca_culture_saxon_english_1
-		gold_cost = 300
-		build_time = 1095
-		archers_offensive = 0.15
-		archers = 80
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
 	ca_culture_Francais_syst_2 = {
 		desc = Francais_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
 is_feudal = yes
-=======
-			OR = {
-				culture = english
-				culture = welsh
-				has_building = ca_culture_saxon_english_1
-				has_building = ca_culture_saxon_english_2
-				has_building = ca_culture_saxon_english_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = english
-					culture = welsh
-				}
-			}
-		} 
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2 
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -167,7 +82,6 @@ culture = GalloB
 				}
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Francais_syst_1
@@ -181,47 +95,16 @@ light_infantry = -2
 tax_income = -1
 		ai_creation_factor = 101
 		
-=======
-		upgrades_from = ca_culture_saxon_english_2
-		gold_cost = 400
-		build_time = 2190
-		archers_offensive = 0.15
-		archers = 100
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 	ca_culture_Francais_syst_3 = {
 		desc = Francais_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
 is_feudal = yes
-=======
-			OR = {
-				culture = english
-				culture = welsh
-				has_building = ca_culture_saxon_english_1
-				has_building = ca_culture_saxon_english_2
-				has_building = ca_culture_saxon_english_3
-				has_building = ca_culture_saxon_english_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = english
-					culture = welsh
-				}
-			}
-		} 
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = frankish
 					culture = occitan
@@ -234,7 +117,6 @@ culture = GalloB
 				}
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Francais_syst_2
@@ -252,14 +134,6 @@ heavy_infantry_offensive = -0.10
 heavy_infantry_morale = -0.10
 		ai_creation_factor = 101
 		
-=======
-		upgrades_from = ca_culture_saxon_english_3
-		gold_cost = 500
-		build_time = 2190
-		archers_offensive = 0.15
-		archers = 120
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	
@@ -269,7 +143,6 @@ heavy_infantry_morale = -0.10
 ca_culture_Francais_sysfed_1 = {
 		desc = ca_culture_Francais_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -301,29 +174,6 @@ light_infantry = 30
 knights_offensive = 0.20
 knights_morale = 0.20
 knights_defensive = 0.10
-=======
-			OR = {
-				culture = scottish
-				has_building = ca_culture_scottish_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = scottish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = scottish
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 30
-		pikemen_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -332,7 +182,6 @@ knights_defensive = 0.10
 ca_culture_Francais_sysfed_2 = {
 		desc = ca_culture_Francais_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -378,26 +227,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Francais_sysfed_1
-=======
-			OR = {
-				culture = scottish
-				has_building = ca_culture_scottish_1
-				has_building = ca_culture_scottish_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = scottish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1 
-			ROOT = {
-				culture = scottish
-			}
-		}
-		upgrades_from = ca_culture_scottish_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -413,7 +242,6 @@ tax_income = 2
 ca_culture_Francais_sysfed_3 = {
 		desc = ca_culture_Francais_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 is_feudal = yes
@@ -456,27 +284,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Francais_sysfed_2
-=======
-			OR = {
-				culture = scottish
-				has_building = ca_culture_scottish_1
-				has_building = ca_culture_scottish_2
-				has_building = ca_culture_scottish_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = scottish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = scottish
-			}
-		}
-		upgrades_from = ca_culture_scottish_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -70
@@ -495,49 +302,15 @@ tax_income = -6
 retinuesize = 3000
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_scottish_4 = {
-		desc = ca_culture_scottish_1_desc
-		potential = {
-			OR = {
-				culture = scottish
-				has_building = ca_culture_scottish_1
-				has_building = ca_culture_scottish_2
-				has_building = ca_culture_scottish_3
-				has_building = ca_culture_scottish_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = scottish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = scottish
-			}
-		}
-		upgrades_from = ca_culture_scottish_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 80
-		pikemen_defensive = 0.15
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}	
 	
 	
-#Bretons : Oenach Fiann + S.D "à la française"
+#Bretons : Oenach Fiann + S.D "? la fran?aise"
 
 ca_culture_Bretons_syst_1 = {
 		desc = Bretons_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -562,36 +335,6 @@ pikemen = 20
 
 
 
-=======
-			OR = {
-				culture_group = baltic
-				culture_group = finno_ugric
-				has_building = ca_culture_group_baltic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -638,31 +381,10 @@ knights_offensive = 0.20
 	ca_culture_Espagnes_syst_1 = {
 		desc = Espagnes_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central } 
-=======
-			OR = {
-				culture_group = baltic
-				culture_group = finno_ugric
-				has_building = ca_culture_group_baltic_1
-				has_building = ca_culture_group_baltic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = catalan
 					culture = castillan
@@ -674,7 +396,6 @@ culture = andalusian_arabic
 				}
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
 		gold_cost = 30
@@ -689,45 +410,15 @@ light_infantry_morale = 0.20
 
 		ai_creation_factor = 101
 		
-=======
-		upgrades_from = ca_culture_group_baltic_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
 	ca_culture_Espagnes_syst_2 = {
 		desc = Espagnes_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central } 
-=======
-			OR = {
-				culture_group = baltic
-				culture_group = finno_ugric
-				has_building = ca_culture_group_baltic_1
-				has_building = ca_culture_group_baltic_2
-				has_building = ca_culture_group_baltic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2 
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = catalan
 					culture = castillan
@@ -739,7 +430,6 @@ culture = andalusian_arabic
 				}
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Espagnes_syst_1
@@ -752,47 +442,16 @@ light_infantry = -10
 
 		ai_creation_factor = 101
 		
-=======
-		upgrades_from = ca_culture_group_baltic_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 	ca_culture_Espagnes_syst_3 = {
 		desc = Espagnes_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central } 
 
-=======
-			OR = {
-				culture_group = baltic
-				culture_group = finno_ugric
-				has_building = ca_culture_group_baltic_1
-				has_building = ca_culture_group_baltic_2
-				has_building = ca_culture_group_baltic_3
-				has_building = ca_culture_group_baltic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
->>>>>>> paradox
 				OR = {
 					culture = catalan
 					culture = castillan
@@ -804,7 +463,6 @@ culture = andalusian_arabic
 				}
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Espagnes_syst_2
@@ -823,14 +481,6 @@ knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = -0.10
 		ai_creation_factor = 101
-=======
-		upgrades_from = ca_culture_group_baltic_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 		extra_tech_building_start = 0.8
 	}
@@ -841,7 +491,6 @@ knights_defensive = -0.10
 ca_culture_Espagnes_sysfed_1 = {
 		desc = ca_culture_Espagnes_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -858,78 +507,10 @@ has_global_flag = central
 culture = basque
 culture = andalusian_arabic
 
-=======
-			OR = { 
-				custom_tooltip = {
-					OR = {
-						culture = turkish
-						culture = pecheneg
-						culture = cuman
-						culture = khazar
-						culture = bolghar
-						culture = avar
-						culture = karluk
-						culture = kirghiz
-						culture = uyghur
-						culture = mongol
-						culture = khitan
-					}
-					text = ALTAIC_BUT_NOT_JURCHEN_TT
-				}
-				culture_group = iranian
-				has_building = ca_culture_group_altaic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
->>>>>>> paradox
 				}
 
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
                 add_number_to_name = no 
 		gold_cost = 10
@@ -942,16 +523,6 @@ knights_offensive = 0.10
 knights_morale = 0.10
 light_cavalry_offensive = 0.20
 light_cavalry_morale = 0.20
-=======
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_cavalry = 10
-		knights = 5
-		horse_archers = 10
-		horse_archers_offensive = 0.1
-		horse_archers_morale = 0.05
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -959,7 +530,6 @@ light_cavalry_morale = 0.20
 ca_culture_Espagnes_sysfed_2 = {
 		desc = ca_culture_Espagnes_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -978,79 +548,10 @@ has_global_flag = central
 culture = basque
 culture = andalusian_arabic
 
-=======
-			OR = { 
-				custom_tooltip = {
-					OR = {
-						culture = turkish
-						culture = pecheneg
-						culture = cuman
-						culture = khazar
-						culture = bolghar
-						culture = avar
-						culture = karluk
-						culture = kirghiz
-						culture = uyghur
-						culture = mongol
-						culture = khitan
-					}
-					text = ALTAIC_BUT_NOT_JURCHEN_TT
-				}
-				culture_group = iranian
-				has_building = ca_culture_group_altaic_1
-				has_building = ca_culture_group_altaic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
->>>>>>> paradox
 				}
 
 			}
 		}
-<<<<<<< HEAD
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
 OR = {
 FROM = {
@@ -1074,9 +575,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Espagnes_sysfed_1
-=======
-		upgrades_from = ca_culture_group_altaic_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 
@@ -1093,7 +591,6 @@ tax_income = -2
 ca_culture_Espagnes_sysfed_3 = {
 		desc = ca_culture_Espagnes_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -1112,80 +609,10 @@ has_global_flag = central
 culture = basque
 culture = andalusian_arabic
 
-=======
-			OR = { 
-				custom_tooltip = {
-					OR = {
-						culture = turkish
-						culture = pecheneg
-						culture = cuman
-						culture = khazar
-						culture = bolghar
-						culture = avar
-						culture = karluk
-						culture = kirghiz
-						culture = uyghur
-						culture = mongol
-						culture = khitan
-					}
-					text = ALTAIC_BUT_NOT_JURCHEN_TT
-				}
-				culture_group = iranian
-				has_building = ca_culture_group_altaic_1
-				has_building = ca_culture_group_altaic_2
-				has_building = ca_culture_group_altaic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}					
-					culture_group = iranian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
->>>>>>> paradox
 				}
 
 			}
 		}
-<<<<<<< HEAD
 
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
 OR = {
@@ -1207,9 +634,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Espagnes_sysfed_2
-=======
-		upgrades_from = ca_culture_group_altaic_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -30
@@ -1238,7 +662,6 @@ retinuesize = 3000
 ca_culture_Ang_syst_1 = {
 		desc = Ang_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
@@ -1262,94 +685,11 @@ fort_level = 1.0
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				custom_tooltip = {
-					OR = {
-						culture = turkish
-						culture = pecheneg
-						culture = cuman
-						culture = khazar
-						culture = bolghar
-						culture = avar
-						culture = karluk
-						culture = kirghiz
-						culture = uyghur
-						culture = mongol
-						culture = khitan
-					}
-					text = ALTAIC_BUT_NOT_JURCHEN_TT
-				}
-				culture_group = iranian
-				has_building = ca_culture_group_altaic_1
-				has_building = ca_culture_group_altaic_2
-				has_building = ca_culture_group_altaic_3
-				has_building = ca_culture_group_altaic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					custom_tooltip = {
-						OR = {
-							culture = turkish
-							culture = pecheneg
-							culture = cuman
-							culture = khazar
-							culture = bolghar
-							culture = avar
-							culture = karluk
-							culture = kirghiz
-							culture = uyghur
-							culture = mongol
-							culture = khitan
-						}
-						text = ALTAIC_BUT_NOT_JURCHEN_TT
-					}
-					culture_group = iranian
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_altaic_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 20
-		knights = 10
-		horse_archers = 20
-		horse_archers_offensive = 0.1
-		horse_archers_morale = 0.05
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	ca_culture_Ang_syst_2 = {
 		desc = Ang_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
@@ -1368,45 +708,6 @@ heavy_infantry = 15
 light_cavalry = 5
 light_infantry = -20		
 fort_level = -0.5
-=======
-			OR = {
-				culture = frankish
-				culture = occitan
-				culture = norman
-				culture = german
-				culture = breton
-				has_building = ca_culture_frank_norman_german_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		knights = 15
-		knights_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -1414,7 +715,6 @@ fort_level = -0.5
 	ca_culture_Ang_syst_3 = {
 		desc = Ang_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
@@ -1438,47 +738,6 @@ heavy_infantry = -40
 heavy_infantry_offensive = -0.10
 heavy_infantry_morale = -0.05
 		ai_creation_factor = 101
-=======
-			OR = {
-				culture = frankish
-				culture = occitan
-				culture = norman
-				culture = german
-				culture = breton
-				has_building = ca_culture_frank_norman_german_1
-				has_building = ca_culture_frank_norman_german_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		upgrades_from = ca_culture_frank_norman_german_1
-		gold_cost = 300
-		build_time = 1095
-		knights = 20
-		knights_offensive = 0.15
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 		extra_tech_building_start = 0.8
 	}
@@ -1486,7 +745,6 @@ heavy_infantry_morale = -0.05
 ca_culture_Ang_sysfed_1 = {
 		desc = ca_culture_Ang_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -1514,53 +772,11 @@ knights_morale = 0.10
 knights_defensive = 0.20
 		ai_creation_factor = 101
 		
-=======
-			OR = {
-				culture = frankish
-				culture = occitan
-				culture = norman
-				culture = german
-				culture = breton
-				has_building = ca_culture_frank_norman_german_1
-				has_building = ca_culture_frank_norman_german_2
-				has_building = ca_culture_frank_norman_german_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}		upgrades_from = ca_culture_frank_norman_german_2
-		gold_cost = 400
-		build_time = 2190
-		knights = 25
-		knights_offensive = 0.15
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 ca_culture_Ang_sysfed_2 = {
 		desc = ca_culture_Ang_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -1612,78 +828,6 @@ light_infantry = -50
 light_cavalry = 20
 heavy_infantry = 20	
 tax_income = -3
-=======
-			OR = {
-				culture = frankish
-				culture = occitan
-				culture = norman
-				culture = german
-				culture = breton
-				has_building = ca_culture_frank_norman_german_1
-				has_building = ca_culture_frank_norman_german_2
-				has_building = ca_culture_frank_norman_german_3
-				has_building = ca_culture_frank_norman_german_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture = frankish
-					culture = occitan
-					culture = norman
-					culture = german
-					culture = breton
-				}
-			}
-		}
-		upgrades_from = ca_culture_frank_norman_german_3
-		gold_cost = 500
-		build_time = 2190
-		knights = 30
-		knights_offensive = 0.15
-		ai_creation_factor = 98
-		
-		extra_tech_building_start = 0.8
-	}	
-	
-	#Iberian Fast horse breeders
-	ca_culture_group_iberian_1 = {
-		desc = ca_culture_group_iberian_1_desc
-		potential = {
-			OR = { 
-				culture_group = iberian 
-				has_building = ca_culture_group_iberian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_cavalry = 30
-		light_cavalry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -1692,7 +836,6 @@ tax_income = -3
 ca_culture_Ang_sysfed_3 = {
 		desc = ca_culture_Ang_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -1743,31 +886,6 @@ tax_income = -2
 retinuesize = 2000
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = iberian 
-				has_building = ca_culture_group_iberian_1
-				has_building = ca_culture_group_iberian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		upgrades_from = ca_culture_group_iberian_1
-		gold_cost = 300
-		build_time = 1095
-		light_cavalry = 40
-		light_cavalry_offensive = 0.15
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
 
@@ -1779,7 +897,6 @@ retinuesize = 2000
 	ca_culture_Saxon_syst_1 = {
 		desc = Ang_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 
@@ -1804,38 +921,11 @@ fort_level = 1.0
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = iberian 
-				has_building = ca_culture_group_iberian_1
-				has_building = ca_culture_group_iberian_2
-				has_building = ca_culture_group_iberian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		upgrades_from = ca_culture_group_iberian_2
-		gold_cost = 400
-		build_time = 2190
-		light_cavalry = 50
-		light_cavalry_offensive = 0.15
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 	ca_culture_Saxon_syst_2 = {
 		desc = Ang_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 
@@ -1855,40 +945,12 @@ light_infantry = -20
 fort_level = -0.5
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = iberian 
-				has_building = ca_culture_group_iberian_1
-				has_building = ca_culture_group_iberian_2
-				has_building = ca_culture_group_iberian_3
-				has_building = ca_culture_group_iberian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = iberian
-			}
-		}
-		upgrades_from = ca_culture_group_iberian_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 60
-		light_cavalry_offensive = 0.15
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	
 	ca_culture_Saxon_syst_3 = {
 		desc = Ang_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 
@@ -1911,29 +973,6 @@ light_infantry = -20
 heavy_infantry = -40		
 heavy_infantry_offensive = -0.10
 heavy_infantry_morale = -0.05
-=======
-			OR = { 
-				culture = italian 
-				has_building = ca_culture_italian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = italian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = italian
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 30
-		pikemen_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -1943,7 +982,6 @@ heavy_infantry_morale = -0.05
 ca_culture_Saxon_sysfed_2 = {
 		desc = ca_culture_Ang_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -1983,26 +1021,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Saxon_syst_3
-=======
-			OR = { 
-				culture = italian 
-				has_building = ca_culture_italian_1
-				has_building = ca_culture_italian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = italian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = italian
-			}
-		}
-		upgrades_from = ca_culture_italian_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 		
@@ -2023,7 +1041,6 @@ tax_income = -3
 ca_culture_Saxon_sysfed_3 = {
 		desc = ca_culture_Ang_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -2061,27 +1078,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Saxon_sysfed_2
-=======
-			OR = { 
-				culture = italian 
-				has_building = ca_culture_italian_1
-				has_building = ca_culture_italian_2
-				has_building = ca_culture_italian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = italian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = italian
-			}
-		}
-		upgrades_from = ca_culture_italian_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -35
@@ -2104,7 +1100,6 @@ retinuesize = 2000
 	ca_culture_THEME_syst_1 = {
 		desc = THEME_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 e_byzantium = {
 has_law = theme_byz
 		}
@@ -2144,39 +1139,11 @@ fort_level = 1.0
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture = italian 
-				has_building = ca_culture_italian_1
-				has_building = ca_culture_italian_2
-				has_building = ca_culture_italian_3
-				has_building = ca_culture_italian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = italian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = italian
-			}
-		}
-		upgrades_from = ca_culture_italian_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 60
-		pikemen_morale = 0.15
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	ca_culture_THEME_syst_2 = {
 		desc = THEME_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
@@ -2206,29 +1173,6 @@ pikemen = 5
 heavy_infantry_morale = 0.05
 pikemen_morale = 0.05
 fort_level = 0.5
-=======
-			OR = { 
-				culture_group = east_slavic 
-				has_building = ca_culture_russian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -2236,7 +1180,6 @@ fort_level = 0.5
 	ca_culture_THEME_syst_3 = {
 		desc = THEME_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
@@ -2272,37 +1215,11 @@ pikemen_morale = 0.05
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = east_slavic 
-				has_building = ca_culture_russian_1
-				has_building = ca_culture_russian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		upgrades_from = ca_culture_russian_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
 ca_culture_PRONOIA_syst_1 = {
 		desc = PRONOIA_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 e_byzantium = {
 has_law = pronoia_byz
 		}
@@ -2337,38 +1254,11 @@ knights_defensive = 0.20
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = east_slavic 
-				has_building = ca_culture_russian_1
-				has_building = ca_culture_russian_2
-				has_building = ca_culture_russian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		upgrades_from = ca_culture_russian_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 	ca_culture_PRONOIA_syst_2 = {
 		desc = PRONOIA_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
@@ -2401,33 +1291,6 @@ knights_defensive = 0.05
 knights_morale = 0.15
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture_group = east_slavic 
-				has_building = ca_culture_russian_1
-				has_building = ca_culture_russian_2
-				has_building = ca_culture_russian_3
-				has_building = ca_culture_russian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = east_slavic
-			}
-		}
-		upgrades_from = ca_culture_russian_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	
@@ -2435,7 +1298,6 @@ knights_morale = 0.15
 	add_number_to_name = no 
 		desc = ca_culture_byz_noumeroi_desc
 		potential = {
-<<<<<<< HEAD
 		FROMFROM = { title = b_constantinople }
 			FROM = {
 			
@@ -2448,39 +1310,6 @@ has_landed_title = e_byzantium
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
 		gold_cost = 10
 		prestige_cost = 0
-=======
-			OR = {
-				culture_group = north_germanic
-				culture = saxon
-				culture = old_saxon
-				culture = frisian
-				has_building = ca_culture_group_north_germanic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 		light_infantry = 500
 		archers = 600
@@ -2527,7 +1356,6 @@ retinuesize = 4000
 	ca_culture_Tagmata_syst_2 = {
 		desc = Tagmata_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			
 
 			FROMFROM = { title = b_constantinople }
@@ -2608,43 +1436,6 @@ heavy_infantry_defensive = -0.10
 heavy_infantry_morale = 0.10
 
 
-=======
-			OR = {
-				culture_group = north_germanic
-				culture = saxon
-				culture = old_saxon
-				culture = frisian
-				has_building = ca_culture_group_north_germanic_1
-				has_building = ca_culture_group_north_germanic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_north_germanic_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 
 		
@@ -2653,7 +1444,6 @@ heavy_infantry_morale = 0.10
 	ca_culture_Lomb_syst_2 = {
 		desc = Lomb_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
@@ -2677,44 +1467,6 @@ heavy_infantry_offensive = 0.05
 heavy_infantry_defensive = 0.10
 heavy_infantry_morale = 0.05
 tax_income = -2
-=======
-			OR = {
-				culture_group = north_germanic
-				culture = saxon
-				culture = old_saxon
-				culture = frisian
-				has_building = ca_culture_group_north_germanic_1
-				has_building = ca_culture_group_north_germanic_2
-				has_building = ca_culture_group_north_germanic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_north_germanic_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -2722,7 +1474,6 @@ tax_income = -2
 	ca_culture_Lomb_syst_3 = {
 		desc = Lomb_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
@@ -2746,45 +1497,6 @@ light_infantry_offensive = 0.1
 fort_level = 1.0
 retinuesize = 100
 tax_income = -1
-=======
-			OR = {
-				culture_group = north_germanic
-				culture = saxon
-				culture = old_saxon
-				culture = frisian
-				has_building = ca_culture_group_north_germanic_1
-				has_building = ca_culture_group_north_germanic_2
-				has_building = ca_culture_group_north_germanic_3
-				has_building = ca_culture_group_north_germanic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture_group = north_germanic
-					culture = saxon
-					culture = old_saxon
-					culture = frisian
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_north_germanic_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -2795,7 +1507,6 @@ tax_income = -1
 	ca_culture_Lomb_sysfed_1 = {
 		desc = Lomb_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -2822,36 +1533,6 @@ light_infantry_offensive = 0.1
 fort_level = 1.0
 retinuesize = 100
 tax_income = -1
-=======
-			OR = { 
-				culture = hungarian
-				culture_group = west_slavic
-				has_building = ca_culture_hungarian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_cavalry = 30
-		light_cavalry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -2860,7 +1541,6 @@ tax_income = -1
 ca_culture_Lomb_sysfed_2 = {
 		desc = ca_culture_Italie_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -2897,33 +1577,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Lomb_sysfed_1
-=======
-			OR = { 
-				culture = hungarian
-				culture_group = west_slavic
-				has_building = ca_culture_hungarian_1
-				has_building = ca_culture_hungarian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		upgrades_from = ca_culture_hungarian_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -2937,7 +1590,6 @@ tax_income = 4
 ca_culture_Lomb_sysfed_3 = {
 		desc = ca_culture_Italie_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -2972,34 +1624,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Lomb_sysfed_2
-=======
-			OR = { 
-				culture = hungarian
-				culture_group = west_slavic
-				has_building = ca_culture_hungarian_1
-				has_building = ca_culture_hungarian_2
-				has_building = ca_culture_hungarian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		upgrades_from = ca_culture_hungarian_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -45
@@ -3013,46 +1637,6 @@ tax_income = -6
 retinuesize = 1500
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_hungarian_4 = {
-		desc = ca_culture_hungarian_1_desc
-		potential = {
-			OR = { 
-				culture = hungarian
-				culture_group = west_slavic
-				has_building = ca_culture_hungarian_1
-				has_building = ca_culture_hungarian_2
-				has_building = ca_culture_hungarian_3
-				has_building = ca_culture_hungarian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture_group = west_slavic
-					culture = hungarian
-				}
-			}
-		}
-		upgrades_from = ca_culture_hungarian_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 60
-		light_cavalry_defensive = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 	
@@ -3061,7 +1645,6 @@ retinuesize = 1500
 	ca_culture_Italie_sysfed_1 = {
 		desc = ca_culture_Italie_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -3085,39 +1668,6 @@ tax_income = 1
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
-=======
-			OR = {
-				culture = bedouin_arabic
-				culture = levantine_arabic
-				culture = egyptian_arabic
-				has_building = ca_culture_group_arabic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		camel_cavalry = 30
-		camel_cavalry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -3126,7 +1676,6 @@ knights_defensive = 0.10
 ca_culture_Italie_sysfed_2 = {
 		desc = ca_culture_Italie_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -3163,36 +1712,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Italie_sysfed_1
-=======
-			OR = {
-				culture = bedouin_arabic
-				culture = levantine_arabic
-				culture = egyptian_arabic
-				has_building = ca_culture_group_arabic_1
-				has_building = ca_culture_group_arabic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_arabic_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -3206,7 +1725,6 @@ tax_income = 4
 ca_culture_Italie_sysfed_3 = {
 		desc = ca_culture_Italie_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -3241,37 +1759,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Italie_sysfed_2
-=======
-			OR = {
-				culture = bedouin_arabic
-				culture = levantine_arabic
-				culture = egyptian_arabic
-				has_building = ca_culture_group_arabic_1
-				has_building = ca_culture_group_arabic_2
-				has_building = ca_culture_group_arabic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_arabic_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -45
@@ -3287,12 +1774,11 @@ retinuesize = 1500
 		
 		
 	}
-#Arméniens, Nakharars et latinisation
+#Arm?niens, Nakharars et latinisation
 
 	ca_culture_Arme_syst_1 = {
 		desc = Arme_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 religion_group = christian					
@@ -3305,69 +1791,6 @@ culture = armenian
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 30
-=======
-			OR = {
-				culture = bedouin_arabic
-				culture = levantine_arabic
-				culture = egyptian_arabic
-				has_building = ca_culture_group_arabic_1
-				has_building = ca_culture_group_arabic_2
-				has_building = ca_culture_group_arabic_3
-				has_building = ca_culture_group_arabic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
-			ROOT = {
-				OR = {
-					culture = bedouin_arabic
-					culture = levantine_arabic
-					culture = egyptian_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_group_arabic_3
-		gold_cost = 500
-		build_time = 2190
-		camel_cavalry = 60
-		camel_cavalry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	
-	# Byzantine Cataphracts
-	ca_culture_group_byzantine_1 = {
-		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			OR = { 
-				culture_group = byzantine 
-				has_building = ca_culture_group_byzantine_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 
 knights = 20
@@ -3385,45 +1808,11 @@ retinuesize = 100
 
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_group_byzantine_2 = {
-		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			OR = { 
-				culture_group = byzantine
-				has_building = ca_culture_group_byzantine_1
-				has_building = ca_culture_group_byzantine_2 
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		upgrades_from = ca_culture_group_byzantine_1
-		gold_cost = 300
-		build_time = 1095
-		knights = 15
-		horse_archers = 10
-		knights_offensive = 0.075
-		horse_archers_offensive = 0.075
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 	ca_culture_Arme_syst_2 = {
 		desc = Arme_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 culture = armenian
@@ -3452,33 +1841,6 @@ knights_morale = 0.20
 knights_offensive = 0.20
 kinghts_defensive = -0.10
 
-=======
-			OR = { 
-				culture_group = byzantine 
-				has_building = ca_culture_group_byzantine_1
-				has_building = ca_culture_group_byzantine_2
-				has_building = ca_culture_group_byzantine_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		upgrades_from = ca_culture_group_byzantine_2
-		gold_cost = 400
-		build_time = 2190
-		knights = 15
-		horse_archers = 20
-		knights_offensive = 0.075
-		horse_archers_offensive = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -3487,7 +1849,6 @@ kinghts_defensive = -0.10
 	ca_culture_Arme_syst_3 = {
 		desc = Arme_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 religion_group = christian
 culture = armenian
@@ -3529,34 +1890,6 @@ light_infantry = -20
 archers = -15	
 retinuesize = 200
 
-=======
-			OR = { 
-				culture_group = byzantine 
-				has_building = ca_culture_group_byzantine_1
-				has_building = ca_culture_group_byzantine_2
-				has_building = ca_culture_group_byzantine_3
-				has_building = ca_culture_group_byzantine_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = byzantine
-			}
-		}
-		upgrades_from = ca_culture_group_byzantine_3
-		gold_cost = 500
-		build_time = 2190
-		knights = 20
-		horse_archers = 20
-		knights_offensive = 0.075
-		horse_archers_offensive = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -3567,7 +1900,6 @@ retinuesize = 200
 	ca_culture_Galles_syst_1 = {
 		desc = Galles_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian                            
@@ -3593,92 +1925,8 @@ retinuesize = 200
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture = irish 
-				has_building = ca_culture_irish_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = irish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = irish
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_irish_2 = {
-		desc = ca_culture_irish_1_desc
-		potential = {
-			OR = { 
-				culture = irish 
-				has_building = ca_culture_irish_1
-				has_building = ca_culture_irish_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = irish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = irish
-			}
-		}
-		upgrades_from = ca_culture_irish_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_irish_3 = {
-		desc = ca_culture_irish_1_desc
-		potential = {
-			OR = { 
-				culture = irish 
-				has_building = ca_culture_irish_1
-				has_building = ca_culture_irish_2
-				has_building = ca_culture_irish_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = irish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = irish
-			}
-		}
-		upgrades_from = ca_culture_irish_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
-<<<<<<< HEAD
 	ca_culture_Galles_syst_2 = {
 		desc = Galles_syst_2_desc
 potential = {
@@ -3707,35 +1955,6 @@ has_global_flag = central
 		pikemen_defensive = 0.3
 		retinuesize = 100
 
-=======
-	ca_culture_irish_4 = {
-		desc = ca_culture_irish_1_desc
-		potential = {
-			OR = { 
-				culture = irish 
-				has_building = ca_culture_irish_1
-				has_building = ca_culture_irish_2
-				has_building = ca_culture_irish_3
-				has_building = ca_culture_irish_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = irish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = irish
-			}
-		}
-		upgrades_from = ca_culture_irish_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -3744,7 +1963,6 @@ has_global_flag = central
 	ca_culture_Galles_syst_3 = {
 		desc = ca_culture_Ang_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -3795,59 +2013,6 @@ tax_income = -6
 retinuesize = 1700
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture = ethiopian 
-				has_building = ca_culture_ethiopian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_infantry = 60
-		light_infantry_offensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_ethiopian_2 = {
-		desc = ca_culture_ethiopian_1_desc
-		potential = {
-			OR = { 
-				culture = ethiopian 
-				has_building = ca_culture_ethiopian_1
-				has_building = ca_culture_ethiopian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		upgrades_from = ca_culture_ethiopian_1
-		gold_cost = 300
-		build_time = 1095
-		light_infantry = 80
-		light_infantry_offensive = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 
@@ -3856,7 +2021,6 @@ retinuesize = 1700
 	ca_culture_Ecosse_syst_1 = {
 		desc = Ecosse_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -3884,36 +2048,10 @@ pikemen_morale = 0.2
 heavy_infantry_morale = 0.2
 retinuesize = 200
 
-=======
-			OR = { 
-				culture = ethiopian 
-				has_building = ca_culture_ethiopian_1
-				has_building = ca_culture_ethiopian_2
-				has_building = ca_culture_ethiopian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		upgrades_from = ca_culture_ethiopian_2
-		gold_cost = 400
-		build_time = 2190
-		light_infantry = 100
-		light_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
 	}
-<<<<<<< HEAD
 	ca_culture_Ecosse_syst_2 = {
 		desc = Ecosse_syst_2_desc
 potential = {
@@ -3949,35 +2087,6 @@ archers_defensive = 0.2
 archers_offensive = -0.1		
 heavy_infantry_morale = -0.2
 retinuesize = -200
-=======
-	ca_culture_ethiopian_4 = {
-		desc = ca_culture_ethiopian_1_desc
-		potential = {
-			OR = { 
-				culture = ethiopian 
-				has_building = ca_culture_ethiopian_1
-				has_building = ca_culture_ethiopian_2
-				has_building = ca_culture_ethiopian_3
-				has_building = ca_culture_ethopian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = ethiopian
-			}
-		}
-		upgrades_from = ca_culture_ethiopian_3
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 120
-		light_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -3988,7 +2097,6 @@ retinuesize = -200
 ca_culture_Ecosse_sysfed_1 = {
 		desc = Ecosse_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -4023,29 +2131,6 @@ archers_defensive = 0.2
 archers_offensive = -0.1
 pikemen_morale = 0.2
 pikemen_offensive = -0.1	
-=======
-			OR = { 
-				culture = somali 
-				has_building = ca_culture_somali_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = somali
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = somali
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_infantry = 60
-		light_infantry_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -4053,7 +2138,6 @@ pikemen_offensive = -0.1
 ca_culture_Ecosse_sysfed_2 = {
 		desc = ca_culture_Ecosse_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4094,26 +2178,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Ecosse_sysfed_1
-=======
-			OR = { 
-				culture = somali 
-				has_building = ca_culture_somali_1
-				has_building = ca_culture_somali_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = somali
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = somali
-			}
-		}
-		upgrades_from = ca_culture_somali_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 		
@@ -4139,7 +2203,6 @@ tax_income = -3
 ca_culture_Ecosse_sysfed_3 = {
 		desc = ca_culture_Ecosse_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4178,27 +2241,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Ecosse_sysfed_2
-=======
-			OR = { 
-				culture = somali 
-				has_building = ca_culture_somali_1
-				has_building = ca_culture_somali_2
-				has_building = ca_culture_somali_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = somali
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = somali
-			}
-		}
-		upgrades_from = ca_culture_somali_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -40
@@ -4214,39 +2256,6 @@ tax_income = -2
 retinuesize = 2000
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_somali_4 = {
-		desc = ca_culture_somali_1_desc
-		potential = {
-			OR = { 
-				culture = somali 
-				has_building = ca_culture_somali_1
-				has_building = ca_culture_somali_2
-				has_building = ca_culture_somali_3
-				has_building = ca_culture_somali_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = somali
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = somali
-			}
-		}
-		upgrades_from = ca_culture_somali_3
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 120
-		light_infantry_defensive = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 
@@ -4255,7 +2264,6 @@ retinuesize = 2000
 	ca_culture_Eire_syst_1 = {
 		desc = Eire_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian                            
@@ -4283,30 +2291,6 @@ light_cavalry_offensive = 0.1
 light_cavalry_defensive = 0.2
 retinuesize = 200
 
-=======
-			OR = { 
-				culture_group = west_african 
-				has_building = ca_culture_west_african_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_infantry = 30
-		archers = 30
-		light_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -4315,7 +2299,6 @@ retinuesize = 200
 	ca_culture_Eire_syst_2 = {
 		desc = Eire_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4337,26 +2320,6 @@ has_global_flag = central
 		
                 add_number_to_name = no
 upgrades_from = ca_culture_Eire_syst_1
-=======
-			OR = { 
-				culture_group = west_african 
-				has_building = ca_culture_west_african_1
-				has_building = ca_culture_west_african_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		upgrades_from = ca_culture_west_african_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 		heavy_infantry = -10
@@ -4367,45 +2330,11 @@ upgrades_from = ca_culture_Eire_syst_1
 
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_west_african_3 = {
-		desc = ca_culture_west_african_1_desc
-		potential = {
-			OR = { 
-				culture_group = west_african 
-				has_building = ca_culture_west_african_1
-				has_building = ca_culture_west_african_2
-				has_building = ca_culture_west_african_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		upgrades_from = ca_culture_west_african_2
-		gold_cost = 400
-		build_time = 2190
-		light_infantry = 50
-		archers = 50
-		light_infantry_offensive = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 	ca_culture_Eire_syst_3 = {
 		desc = Eire_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4450,33 +2379,6 @@ light_infantry = -60
 pikemen = -20
 tax_income = -3
 retinuesize = 1600
-=======
-			OR = { 
-				culture_group = west_african 
-				has_building = ca_culture_west_african_1
-				has_building = ca_culture_west_african_2
-				has_building = ca_culture_west_african_3
-				has_building = ca_culture_west_african_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
-			ROOT = {
-				culture_group = west_african
-			}
-		}
-		upgrades_from = ca_culture_west_african_3
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 60
-		archers = 60
-		light_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -4487,7 +2389,6 @@ retinuesize = 1600
 ca_culture_Germ_sysfed_1 = {
 		desc = ca_culture_Germ_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -4511,31 +2412,6 @@ light_infantry = 15
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
-=======
-			OR = { 
-				culture_group = south_slavic 
-				has_building = ca_culture_group_south_slavic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		knights = 5
-		light_cavalry = 20
-		knights_defensive = 0.075
-		light_cavalry_defensive = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -4544,7 +2420,6 @@ knights_defensive = 0.10
 ca_culture_Germ_sysfed_2 = {
 		desc = ca_culture_Germ_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4584,26 +2459,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Germ_sysfed_1
-=======
-			OR = { 
-				culture_group = south_slavic 
-				has_building = ca_culture_group_south_slavic_1
-				has_building = ca_culture_group_south_slavic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		upgrades_from = ca_culture_group_south_slavic_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = -30
@@ -4621,7 +2476,6 @@ tax_income = 3
 ca_culture_Germ_sysfed_3 = {
 		desc = ca_culture_Germ_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4659,27 +2513,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Germ_sysfed_2
-=======
-			OR = { 
-				culture_group = south_slavic 
-				has_building = ca_culture_group_south_slavic_1
-				has_building = ca_culture_group_south_slavic_2
-				has_building = ca_culture_group_south_slavic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		upgrades_from = ca_culture_group_south_slavic_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -40
@@ -4704,7 +2537,6 @@ retinuesize = 1500
 ca_culture_Scandi_syst_1 = {
 		desc = Scandi_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
                     is_feudal = yes
 					OR = {
@@ -4735,34 +2567,6 @@ heavy_infantry_morale = 0.15
 retinuesize = 75
 fort_level = 0.5
 extra_tech_building_start = -10
-=======
-			OR = { 
-				culture_group = south_slavic 
-				has_building = ca_culture_group_south_slavic_1
-				has_building = ca_culture_group_south_slavic_2
-				has_building = ca_culture_group_south_slavic_3
-				has_building = ca_culture_group_south_slavic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = south_slavic
-			}
-		}
-		upgrades_from = ca_culture_group_south_slavic_3
-		gold_cost = 500
-		build_time = 2190
-		knights = 15
-		light_cavalry = 30
-		knights_defensive = 0.075
-		light_cavalry_defensive = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -4771,7 +2575,6 @@ extra_tech_building_start = -10
 ca_culture_Scandi_syst_2 = {
 		desc = Scandi_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4813,25 +2616,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Scandi_syst_1
-=======
-			OR = { 
-				culture = dutch 
-				has_building = ca_culture_dutch_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = dutch
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = dutch
-			}
-		}
-		prerequisites = { ca_wall_2 }
->>>>>>> paradox
 		gold_cost = 200
 		build_time = 720
 knights = 25
@@ -4847,46 +2631,12 @@ heavy_infantry_morale = -0.15
 tax_income = 1
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_dutch_2 = {
-		desc = ca_culture_dutch_1_desc
-		potential = {
-			OR = { 
-				culture = dutch 
-				has_building = ca_culture_dutch_1
-				has_building = ca_culture_dutch_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = dutch
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = dutch
-			}
-		}
-		upgrades_from = ca_culture_dutch_1
-		gold_cost = 300
-		build_time = 1095
-		pikemen = 20
-		light_infantry = 40
-		light_infantry_offensive = 0.075
-		pikemen_offensive = 0.075
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 
 ca_culture_Scandi_syst_3 = {
 		desc = Scandi_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -4925,27 +2675,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Scandi_syst_2
-=======
-			OR = { 
-				culture = dutch 
-				has_building = ca_culture_dutch_1
-				has_building = ca_culture_dutch_2
-				has_building = ca_culture_dutch_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = dutch
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = dutch
-			}
-		}
-		upgrades_from = ca_culture_dutch_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -25
@@ -4969,12 +2698,11 @@ retinuesize = 1425
 		
 	}
 
-# gâ saxon païen : un niveau
+# g? saxon pa?en : un niveau
 
 ca_culture_saxpai_syst_1 = {
 		desc = saxpaien_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 			is_feudal = yes
 NOT = { religion_group = christian }
@@ -4999,45 +2727,16 @@ heavy_infantry_morale = 0.10
 light_infantry_defensive = 0.10
 light_infantry_morale = 0.10
 extra_tech_building_start = -10
-=======
-			OR = { 
-				culture = dutch 
-				has_building = ca_culture_dutch_1
-				has_building = ca_culture_dutch_2
-				has_building = ca_culture_dutch_3
-				has_building = ca_culture_dutch_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = dutch
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = dutch
-			}
-		}
-		upgrades_from = ca_culture_dutch_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 30
-		light_infantry = 60
-		light_infantry_offensive = 0.075
-		pikemen_offensive = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
 	}
 
-#saami/suomi païen : un niveau
+#saami/suomi pa?en : un niveau
 
 ca_culture_saamitri_syst_1 = {
 		desc = saamitrib_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 			is_feudal = yes
 NOT = { religion_group = christian }
@@ -5052,26 +2751,6 @@ NOT = { religion_group = muslim }
 		
 		trigger = { TECH_RECRUITMENT = 0 }
 		gold_cost = 30
-=======
-			OR = { 
-				culture = nahuatl 
-				has_building = ca_culture_nahuatl_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 
 
@@ -5093,7 +2772,6 @@ extra_tech_building_start = -10
 ca_culture_polak_syst_1 = {
 		desc = polak_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
                     is_feudal = yes					
 					culture = polish
@@ -5120,30 +2798,6 @@ heavy_infantry = 20
 retinuesize = 125
 fort_level = 0.5
 extra_tech_building_start = -10
-=======
-			OR = { 
-				culture = nahuatl 
-				has_building = ca_culture_nahuatl_1
-				has_building = ca_culture_nahuatl_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		upgrades_from = ca_culture_nahuatl_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5152,7 +2806,6 @@ extra_tech_building_start = -10
 ca_culture_polak_syst_2 = {
 		desc = polak_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = polish
@@ -5183,31 +2836,6 @@ knights_offensive = 0.15
 knights_defensive = 0.10
 retinuesize = -125
 tax_income = -1
-=======
-			OR = { 
-				culture = nahuatl 
-				has_building = ca_culture_nahuatl_1
-				has_building = ca_culture_nahuatl_2
-				has_building = ca_culture_nahuatl_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		upgrades_from = ca_culture_nahuatl_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5216,7 +2844,6 @@ tax_income = -1
 ca_culture_polak_syst_3 = {
 		desc = polak_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = polish
@@ -5257,32 +2884,6 @@ light_infantry = 30
 archers = 25
 archers_offensive = 0.20
 tax_income = -2
-=======
-			OR = { 
-				culture = nahuatl 
-				has_building = ca_culture_nahuatl_1
-				has_building = ca_culture_nahuatl_2
-				has_building = ca_culture_nahuatl_3
-				has_building = ca_culture_nahuatl_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = nahuatl
-			}
-		}
-		upgrades_from = ca_culture_nahuatl_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5291,7 +2892,6 @@ tax_income = -2
 ca_culture_polak_syst_4 = {
 		desc = polak_syst_4_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -5346,29 +2946,6 @@ knights_morale = -0.15
 knights_defensive = -0.10		
 tax_income = -5
 retinuesize = 1800
-=======
-			OR = {
-				culture_group = israelite
-				has_building = ca_culture_jewish_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5378,7 +2955,6 @@ retinuesize = 1800
 ca_culture_pomeranie_syst_1 = {
 		desc = pomeranie_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
                     is_feudal = yes					
 					culture = pommeranian
@@ -5404,30 +2980,6 @@ heavy_infantry = 10
 retinuesize = 125
 fort_level = 0.5
 extra_tech_building_start = -10
-=======
-			OR = {
-				culture_group = israelite
-				has_building = ca_culture_jewish_1
-				has_building = ca_culture_jewish_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		upgrades_from = ca_culture_jewish_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5436,7 +2988,6 @@ extra_tech_building_start = -10
 ca_culture_pomeranie_syst_2 = {
 		desc = pomeranie_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = pommeranian
@@ -5467,31 +3018,6 @@ knights_offensive = 0.15
 knights_defensive = 0.10
 retinuesize = -125
 tax_income = -1
-=======
-			OR = {
-				culture_group = israelite
-				has_building = ca_culture_jewish_1
-				has_building = ca_culture_jewish_2
-				has_building = ca_culture_jewish_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		upgrades_from = ca_culture_jewish_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5500,7 +3026,6 @@ tax_income = -1
 ca_culture_pomeranie_syst_3 = {
 		desc = pomeranie_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = pommeranian
@@ -5541,32 +3066,6 @@ light_infantry = 30
 archers = 25
 archers_offensive = 0.20
 tax_income = -2
-=======
-			OR = {
-				culture_group = israelite
-				has_building = ca_culture_jewish_1
-				has_building = ca_culture_jewish_2
-				has_building = ca_culture_jewish_3
-				has_building = ca_culture_jewish_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = israelite
-			}
-		}
-		upgrades_from = ca_culture_jewish_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5575,7 +3074,6 @@ tax_income = -2
 ca_culture_pomeranie_syst_4 = {
 		desc = pomeranie_syst_4_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -5630,36 +3128,6 @@ knights_morale = -0.15
 knights_defensive = -0.10		
 tax_income = -5
 retinuesize = 1800
-=======
-			OR = {
-				culture_group = indo_aryan_group
-				culture_group = dravidian_group
-				has_building = ca_culture_indian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		war_elephants = 6
-		war_elephants_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5672,7 +3140,6 @@ retinuesize = 1800
 ca_culture_boheme_syst_1 = {
 		desc = boheme_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 	
        		
 			FROM = {
@@ -5704,38 +3171,6 @@ knights = 10
 retinuesize = 125
 fort_level = 0.5
 extra_tech_building_start = -10
-=======
-			OR = {
-				culture_group = indo_aryan_group
-				culture_group = dravidian_group
-				has_building = ca_culture_indian_1
-				has_building = ca_culture_indian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		upgrades_from = ca_culture_indian_1
-		gold_cost = 300
-		build_time = 1095
-		war_elephants = 10
-		war_elephants_offensive = 0.05
-		war_elephants_defensive = 0.10
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5744,7 +3179,6 @@ extra_tech_building_start = -10
 ca_culture_boheme_syst_2 = {
 		desc = boheme_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = bohemian
@@ -5776,39 +3210,6 @@ knights_offensive = 0.15
 knights_defensive = 0.10
 retinuesize = -125
 fort_level = -0.5
-=======
-			OR = {
-				culture_group = indo_aryan_group
-				culture_group = dravidian_group
-				has_building = ca_culture_indian_1
-				has_building = ca_culture_indian_2
-				has_building = ca_culture_indian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		upgrades_from = ca_culture_indian_2
-		gold_cost = 400
-		build_time = 2190
-		war_elephants = 22
-		war_elephants_offensive = 0.05
-		war_elephants_defensive = 0.10
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5819,7 +3220,6 @@ fort_level = -0.5
 	ca_culture_boheme_systfed_1 = {
 		desc = boheme_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 	
        		
 			FROM = {
@@ -5851,40 +3251,6 @@ knights_offensive = 0.15
 knights_defensive = 0.10
 
 extra_tech_building_start = -10
-=======
-			OR = {
-				culture_group = indo_aryan_group
-				culture_group = dravidian_group
-				has_building = ca_culture_indian_1
-				has_building = ca_culture_indian_2
-				has_building = ca_culture_indian_3
-				has_building = ca_culture_indian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture_group = indo_aryan_group
-					culture_group = dravidian_group
-				}
-			}
-		}
-		upgrades_from = ca_culture_indian_3
-		gold_cost = 500
-		build_time = 2190
-		war_elephants = 22
-		war_elephants_offensive = 0.05
-		war_elephants_defensive = 0.10
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -5893,7 +3259,6 @@ extra_tech_building_start = -10
 	ca_culture_boheme_systfed_2 = {
 		desc = boheme_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = bohemian
@@ -5926,25 +3291,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_boheme_systfed_1
-=======
-			OR = { 
-				culture = nubian 
-				has_building = ca_culture_nubian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nubian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = nubian
-			}
-		}
-		prerequisites = { ca_wall_2 }
->>>>>>> paradox
 		gold_cost = 200
 		build_time = 720
 knights = 20
@@ -5960,7 +3306,6 @@ tax_income = 2
 	ca_culture_boheme_systfed_3 = {
 		desc = boheme_syst_4_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = bohemian
@@ -6008,32 +3353,6 @@ light_infantry_defensive = 0.40
 light_infantry_morale = 0.20
 
 
-=======
-			OR = { 
-				culture = nubian 
-				has_building = ca_culture_nubian_1
-				has_building = ca_culture_nubian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nubian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = nubian
-			}
-		}
-		upgrades_from = ca_culture_nubian_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 15
-		light_infantry = 25
-		archers = 25
-		archers_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6044,7 +3363,6 @@ light_infantry_morale = 0.20
 	ca_culture_lithca_syst_1 = {
 		desc = lith_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 OR = {
 culture = lithuanian
@@ -6074,33 +3392,6 @@ light_cavalry_offensive = 0.15
 fort_level = 0.5	
 
 
-=======
-			OR = { 
-				culture = nubian 
-				has_building = ca_culture_nubian_1
-				has_building = ca_culture_nubian_2
-				has_building = ca_culture_nubian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nubian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = nubian
-			}
-		}
-		upgrades_from = ca_culture_nubian_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 15
-		light_infantry = 30
-		archers = 30
-		archers_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6108,7 +3399,6 @@ fort_level = 0.5
 	ca_culture_lithca_syst_2 = {
 		desc = lith_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 			
 OR = {
@@ -6131,34 +3421,6 @@ archers = -15
 light_infantry = -30	
 light_cavalry = 30
 knights = 15
-=======
-			OR = { 
-				culture = nubian 
-				has_building = ca_culture_nubian_1
-				has_building = ca_culture_nubian_2
-				has_building = ca_culture_nubian_3
-				has_building = ca_culture_nubian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = nubian
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = nubian
-			}
-		}
-		upgrades_from = ca_culture_nubian_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 20
-		light_infantry = 40
-		archers = 40
-		archers_defensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -6167,7 +3429,6 @@ knights = 15
 	ca_culture_lithca_syst_3 = {
 		desc = lithca_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -6221,36 +3482,6 @@ heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10	
 tax_income = -4
 retinuesize = 1500
-=======
-			OR = {
-				culture = lombard
-				culture = old_frankish
-				has_building = ca_culture_germanic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6261,7 +3492,6 @@ retinuesize = 1500
 	ca_culture_prussca_syst_1 = {
 		desc = lith_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture = prussian
@@ -6289,37 +3519,6 @@ fort_level = 0.5
 retinuesize = 110	
 
 
-=======
-			OR = {
-				culture = lombard
-				culture = old_frankish
-				has_building = ca_culture_germanic_1
-				has_building = ca_culture_germanic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		upgrades_from = ca_culture_germanic_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6327,7 +3526,6 @@ retinuesize = 110
 	ca_culture_prussca_syst_2 = {
 		desc = prussca_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 			
 culture = prussian
@@ -6349,38 +3547,6 @@ light_infantry = -10
 light_cavalry = 30
 knights = 15
 retinuesize = -110
-=======
-			OR = {
-				culture = lombard
-				culture = old_frankish
-				has_building = ca_culture_germanic_1
-				has_building = ca_culture_germanic_2
-				has_building = ca_culture_germanic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		upgrades_from = ca_culture_germanic_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -6389,7 +3555,6 @@ retinuesize = -110
 	ca_culture_prussca_syst_3 = {
 		desc = lithca_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -6441,39 +3606,6 @@ heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10	
 tax_income = -4
 retinuesize = 1500
-=======
-			OR = {
-				culture = lombard
-				culture = old_frankish
-				has_building = ca_culture_germanic_1
-				has_building = ca_culture_germanic_2
-				has_building = ca_culture_germanic_3
-				has_building = ca_culture_germanic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture = lombard
-					culture = old_frankish
-				}
-			}
-		}
-		upgrades_from = ca_culture_germanic_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_offensive = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6485,7 +3617,6 @@ retinuesize = 1500
 ca_culture_russ_syst_1 = {
 		desc = russ_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
                     is_feudal = yes					
 					culture_group = east_slavic 
@@ -6500,26 +3631,6 @@ ca_culture_russ_syst_1 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		add_number_to_name = no
 		gold_cost = 30
-=======
-			OR = { 
-				culture = pictish 
-				has_building = ca_culture_pictish_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = pictish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = pictish
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 
 archers = 80
@@ -6530,45 +3641,12 @@ retinuesize = 125
 extra_tech_building_start = -10
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_pictish_2 = {
-		desc = ca_culture_pictish_1_desc
-		potential = {
-			OR = { 
-				culture = pictish 
-				has_building = ca_culture_pictish_1
-				has_building = ca_culture_pictish_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = pictish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = pictish
-			}
-		}
-		upgrades_from = ca_culture_pictish_1
-		gold_cost = 300
-		build_time = 1095
-		light_infantry = 40
-		heavy_infantry = 20
-		light_infantry_morale = 0.15
-		ai_creation_factor = 101
->>>>>>> paradox
 		
 	}
 
 ca_culture_russ_syst_2 = {
 		desc = russ_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture_group = east_slavic
@@ -6611,32 +3689,6 @@ light_infantry = -40
 archers = -20
 retinuesize = -30
 
-=======
-			OR = { 
-				culture = pictish 
-				has_building = ca_culture_pictish_1
-				has_building = ca_culture_pictish_2
-				has_building = ca_culture_pictish_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = pictish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = pictish
-			}
-		}
-		upgrades_from = ca_culture_pictish_2
-		gold_cost = 400
-		build_time = 2190
-		light_infantry = 50
-		heavy_infantry = 25
-		light_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6645,7 +3697,6 @@ retinuesize = -30
 ca_culture_russ_syst_3 = {
 		desc = russ_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 culture_group = east_slavic
@@ -6687,33 +3738,6 @@ archers = 50
 archers_offensive = 0.20
 archers_defensive = 0.20
 retinuesize = -95
-=======
-			OR = { 
-				culture = pictish 
-				has_building = ca_culture_pictish_1
-				has_building = ca_culture_pictish_2
-				has_building = ca_culture_pictish_3
-				has_building = ca_culture_pictish_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = pictish
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = pictish
-			}
-		}
-		upgrades_from = ca_culture_pictish_3
-		gold_cost = 500
-		build_time = 2190
-		light_infantry = 60
-		heavy_infantry = 30
-		light_infantry_morale = 0.15
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6724,7 +3748,6 @@ retinuesize = -95
 ca_culture_Hongrois_sysfed_1 = {
 		desc = ca_culture_Hongrois_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 
@@ -6749,31 +3772,6 @@ light_infantry = 50
 light_infantry_defensive = 0.20
 light_infantry_offensive = -0.20			
 fort_level = 1.0
-=======
-			OR = { 
-				culture = suebi 
-				has_building = ca_culture_suebi_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = suebi
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = suebi
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 15
-		light_infantry = 30
-		light_infantry_morale = 0.075
-		pikemen_morale = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6781,7 +3779,6 @@ fort_level = 1.0
 	ca_culture_Hongrois_sysfed_2 = {
 		desc = ca_culture_Hongrois_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -6818,26 +3815,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Hongrois_sysfed_1
-=======
-			OR = { 
-				culture = suebi 
-				has_building = ca_culture_suebi_1
-				has_building = ca_culture_suebi_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = suebi
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = suebi
-			}
-		}
-		upgrades_from = ca_culture_suebi_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = 50
@@ -6861,7 +3838,6 @@ archers = 30
 ca_culture_Hongrois_sysfed_3 = {
 		desc = ca_culture_Hongrois_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -6896,27 +3872,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_Hongrois_sysfed_2
-=======
-			OR = { 
-				culture = suebi 
-				has_building = ca_culture_suebi_1
-				has_building = ca_culture_suebi_2
-				has_building = ca_culture_suebi_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = suebi
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = suebi
-			}
-		}
-		upgrades_from = ca_culture_suebi_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 knights = -50
@@ -6941,7 +3896,6 @@ retinuesize = 2000
 	ca_culture_croate_syst_1 = {
 		desc = croate_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 NOT = { has_global_flag = mutare }
@@ -6960,34 +3914,6 @@ archers = 50
 light_infantry = 50		
 extra_tech_building_start = -1
 
-=======
-			OR = { 
-				culture = suebi 
-				has_building = ca_culture_suebi_1
-				has_building = ca_culture_suebi_2
-				has_building = ca_culture_suebi_3
-				has_building = ca_culture_suebi_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = suebi
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = suebi
-			}
-		}
-		upgrades_from = ca_culture_suebi_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 30
-		light_infantry = 60
-		light_infantry_morale = 0.075
-		pikemen_morale = 0.075
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -6998,7 +3924,6 @@ extra_tech_building_start = -1
 ca_culture_croate_sysfed_1 = {
 		desc = ca_culture_croate_sysfed_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -7022,39 +3947,6 @@ heavy_infantry = 20
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
-=======
-			OR = {
-				culture = andalusian_arabic
-				culture = maghreb_arabic
-				has_building = ca_culture_moors_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_cavalry = 15
-		horse_archers = 15
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		light_cavalry_morale = 0.1
->>>>>>> paradox
 		ai_creation_factor = 101
 		
 		
@@ -7062,7 +3954,6 @@ knights_defensive = 0.10
 	ca_culture_croate_sysfed_2 = {
 		desc = ca_culture_croate_sysfed_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -7099,33 +3990,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_croate_sysfed_1
-=======
-			OR = {
-				culture = andalusian_arabic
-				culture = maghreb_arabic
-				has_building = ca_culture_moors_1
-				has_building = ca_culture_moors_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_moors_1
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 knights = 15
@@ -7143,7 +4007,6 @@ light_infantry = -10
 	ca_culture_croate_sysfed_3 = {
 		desc = ca_culture_croate_sysfed_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -7178,34 +4041,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_croate_sysfed_2
-=======
-			OR = {
-				culture = andalusian_arabic
-				culture = maghreb_arabic
-				has_building = ca_culture_moors_1
-				has_building = ca_culture_moors_2
-				has_building = ca_culture_moors_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_moors_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 
@@ -7220,49 +4055,6 @@ tax_income = -5
 
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_moors_4 = {
-		desc = ca_culture_moors_1_desc
-		potential = {
-			OR = {
-				culture = andalusian_arabic
-				culture = maghreb_arabic
-				has_building = ca_culture_moors_1
-				has_building = ca_culture_moors_2
-				has_building = ca_culture_moors_3
-				has_building = ca_culture_moors_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = {
-					culture = andalusian_arabic
-					culture = maghreb_arabic
-				}
-			}
-		}
-		upgrades_from = ca_culture_moors_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 30
-		horse_archers = 30
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		light_cavalry_morale = 0.1
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 
@@ -7273,7 +4065,6 @@ tax_income = -5
 	ca_culture_serb_syst_1 = {
 		desc = serb_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 OR = {
@@ -7287,26 +4078,6 @@ culture = serbian
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
 		gold_cost = 10
-=======
-			OR = {
-				culture = han
-				has_building = ca_culture_chinese_han_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = han
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = han
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 heavy_infantry = 5
 archers = 35
@@ -7326,7 +4097,6 @@ extra_tech_building_start = -1
 	ca_culture_serb_sysprono_1 = {
 		desc = ca_culture_serb_sysprono_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -7353,38 +4123,12 @@ knights_defensive = 0.20
 extra_tech_building_start = -1
 		ai_creation_factor = 101
 		
-=======
-			OR = {
-				culture = han
-				has_building = ca_culture_chinese_han_1
-				has_building = ca_culture_chinese_han_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = han
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = han
-			}
-		}
-		upgrades_from = ca_culture_chinese_han_1
-		gold_cost = 300
-		build_time = 1095
-		archers_offensive = 0.15
-		archers = 100
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
 	
 	ca_culture_serb_sysprono_2 = {
 		desc = ca_culture_serb_sysprono_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -7431,39 +4175,12 @@ knights_offensive = 0.15
 tax_income = 3
 		ai_creation_factor = 101
 		
-=======
-			OR = {
-				culture = han
-				has_building = ca_culture_chinese_han_1
-				has_building = ca_culture_chinese_han_2
-				has_building = ca_culture_chinese_han_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = han
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = han
-			}
-		}
-		upgrades_from = ca_culture_chinese_han_2
-		gold_cost = 400
-		build_time = 2190
-		archers_offensive = 0.15
-		archers = 120
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
 	
 	ca_culture_serb_sysprono_3 = {
 		desc = ca_culture_serb_sysprono_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -7506,33 +4223,6 @@ tax_income = -6
 
 		ai_creation_factor = 101
 		
-=======
-			OR = {
-				culture = han
-				has_building = ca_culture_chinese_han_1
-				has_building = ca_culture_chinese_han_2
-				has_building = ca_culture_chinese_han_3
-				has_building = ca_culture_chinese_han_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = han
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = han
-			}
-		}
-		upgrades_from = ca_culture_chinese_han_3
-		gold_cost = 500
-		build_time = 2190
-		archers_offensive = 0.15
-		archers = 150
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	
@@ -7542,7 +4232,6 @@ tax_income = -6
 	ca_culture_bulg_syst_1 = {
 		desc = bulg_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 NOT = { religion_group = christian }
@@ -7557,26 +4246,6 @@ culture = bolghar
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
 		gold_cost = 10
-=======
-			OR = { 
-				culture = jurchen
-				has_building = ca_culture_altaic_jurchen_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 horse_archers = 50
 light_cavalry = 40
@@ -7587,48 +4256,13 @@ extra_tech_building_start = -1
 
 		ai_creation_factor = 101
 		
-<<<<<<< HEAD
-=======
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_altaic_jurchen_2 = {
-		desc = ca_culture_altaic_jurchen_1_desc
-		potential = {
-			OR = { 
-				culture = jurchen
-				has_building = ca_culture_altaic_jurchen_1
-				has_building = ca_culture_altaic_jurchen_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		upgrades_from = ca_culture_altaic_jurchen_1
-		gold_cost = 300
-		build_time = 1095
-		light_cavalry = 20
-		knights = 5
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		light_cavalry_morale = 0.1
-		ai_creation_factor = 100
->>>>>>> paradox
 		
 	}
-#Bulgares chrétiens ANTEPRONOIA	
+#Bulgares chr?tiens ANTEPRONOIA	
 
 ca_culture_bulg_syst_2 = {
 		desc = bulg_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -7657,43 +4291,13 @@ extra_tech_building_start = -1
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture = jurchen
-				has_building = ca_culture_altaic_jurchen_1
-				has_building = ca_culture_altaic_jurchen_2
-				has_building = ca_culture_altaic_jurchen_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		upgrades_from = ca_culture_altaic_jurchen_2
-		gold_cost = 400
-		build_time = 2190
-		light_cavalry = 25
-		knights = 5
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		light_cavalry_morale = 0.1
-		ai_creation_factor = 99
->>>>>>> paradox
 		
 	}
-	#Bulgares chrétiens PRONOIA	
+	#Bulgares chr?tiens PRONOIA	
 
 ca_culture_bulg_syst_3 = {
 		desc = bulg_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian
@@ -7723,36 +4327,6 @@ extra_tech_building_start = -1
 
 		ai_creation_factor = 101
 		
-=======
-			OR = { 
-				culture = jurchen
-				has_building = ca_culture_altaic_jurchen_1
-				has_building = ca_culture_altaic_jurchen_2
-				has_building = ca_culture_altaic_jurchen_3
-				has_building = ca_culture_altaic_jurchen_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = jurchen
-			}
-		}
-		upgrades_from = ca_culture_altaic_jurchen_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 30
-		knights = 5
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		light_cavalry_morale = 0.1
-		ai_creation_factor = 98
->>>>>>> paradox
 		
 	}
 	
@@ -7762,7 +4336,6 @@ extra_tech_building_start = -1
 	ca_culture_vlach_syst_1 = {
 		desc = vlach_syst_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
  
@@ -7775,26 +4348,6 @@ NOT = { year = 1030 }
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
                 add_number_to_name = no 
 		gold_cost = 10
-=======
-			OR = { 
-				culture_group = tibetan_group
-				has_building = ca_culture_tibetan_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		#prerequisites = { ca_wall_2 }
-		gold_cost = 200
->>>>>>> paradox
 		build_time = 730
 
 archers = 50
@@ -7814,12 +4367,11 @@ extra_tech_building_start = -1
 		
 		
 	}
-	#Valaques après 1100 (hospodars)
+	#Valaques apr?s 1100 (hospodars)
 	
 	ca_culture_vlach_syst_2 = {
 		desc = vlach_syst_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
  
@@ -7847,34 +4399,6 @@ extra_tech_building_start = -1
 
 
 		ai_creation_factor = 101
-=======
-			OR = { 
-				culture_group = tibetan_group
-				has_building = ca_culture_tibetan_1
-				has_building = ca_culture_tibetan_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		upgrades_from = ca_culture_tibetan_1
-		gold_cost = 300
-		build_time = 1095
-		
-		light_cavalry = 15
-		light_infantry = 65
-		light_infantry_offensive = 0.1
-		light_infantry_defensive = 0.1
-		light_infantry_morale = 0.1
->>>>>>> paradox
 		
 		
 	}
@@ -7882,7 +4406,6 @@ extra_tech_building_start = -1
 	ca_culture_vlach_syst_3 = {
 		desc = vlach_syst_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -7911,27 +4434,6 @@ has_law = centralization_4
 }		} }
                 add_number_to_name = no
        upgrades_from = ca_culture_vlach_syst_2
-=======
-			OR = { 
-				culture_group = tibetan_group
-				has_building = ca_culture_tibetan_1
-				has_building = ca_culture_tibetan_2
-				has_building = ca_culture_tibetan_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		upgrades_from = ca_culture_tibetan_2
->>>>>>> paradox
 		gold_cost = 400
 		build_time = 720
 
@@ -7957,7 +4459,6 @@ tax_income = -7
 	ca_culture_georgiens_1 = {
 		desc = ca_culture_georgiens_1_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 is_feudal = yes
 religion_group = christian                    
@@ -7969,30 +4470,6 @@ culture = georgian
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-=======
-			OR = { 
-				culture_group = tibetan_group
-				has_building = ca_culture_tibetan_1
-				has_building = ca_culture_tibetan_2
-				has_building = ca_culture_tibetan_3
-				has_building = ca_culture_tibetan_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture_group = tibetan_group
-			}
-		}
-		upgrades_from = ca_culture_tibetan_3
-		gold_cost = 500
-		build_time = 2190
->>>>>>> paradox
 		
 heavy_infantry = 40
 heavy_infantry_morale = 0.15
@@ -8015,7 +4492,6 @@ extra_tech_building_start = -1
 	ca_culture_georgiens_2 = {
 		desc = ca_culture_georgiens_2_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -8051,80 +4527,6 @@ has_law = centralization_4
 		} }
                 add_number_to_name = no
 upgrades_from = ca_culture_georgiens_1
-=======
-			OR = { 
-				FROM = { government = theocratic_feudal_government }
-				has_building = ca_government_monastery_1
-			}
-		}
-		is_active_trigger = {
-			owner = { government = theocratic_feudal_government }
-		}
-		trigger = {
-			TECH_TEMPLE_CONSTRUCTION = 0
-			FROM = { government = theocratic_feudal_government }
-		}
-		gold_cost = 150
-		build_time = 547
-		levy_size = 0.05
-		garrison_size = 0.05
-		tech_growth_modifier = 0.025
-		culture_techpoints = 0.01
-		ai_creation_factor = 96
-		add_number_to_name = no
-		liege_piety = 0.05
-
-		extra_tech_building_start = 0.2
-	}
-	ca_government_monastery_2 = {
-		desc = ca_government_monastery_1_desc
-		potential = {
-			OR = { 
-				FROM = { government = theocratic_feudal_government }
-				has_building = ca_government_monastery_1
-				has_building = ca_government_monastery_2
-			}
-		}
-		is_active_trigger = {
-			owner = { government = theocratic_feudal_government }
-		}
-		trigger = {
-			TECH_TEMPLE_CONSTRUCTION = 1
-			FROM = { government = theocratic_feudal_government }
-		}
-		prerequisites = { ca_wall_1 }
-		upgrades_from = ca_government_monastery_1
-		gold_cost = 200
-		build_time = 730
-		levy_size = 0.05
-		garrison_size = 0.05
-		tech_growth_modifier = 0.05
-		culture_techpoints = 0.02
-		ai_creation_factor = 95
-		add_number_to_name = no
-		liege_piety = 0.05
-		
-		extra_tech_building_start = 0.2
-	} 
-	ca_government_monastery_3 = {
-		desc = ca_government_monastery_1_desc
-		potential = {
-			OR = { 
-				FROM = { government = theocratic_feudal_government }
-				has_building = ca_government_monastery_1
-				has_building = ca_government_monastery_2
-				has_building = ca_government_monastery_3
-			}
-		}
-		is_active_trigger = {
-			owner = { government = theocratic_feudal_government }
-		}
-		trigger = {
-			TECH_TEMPLE_CONSTRUCTION = 2
-			FROM = { government = theocratic_feudal_government }
-		}
-		upgrades_from = ca_government_monastery_2
->>>>>>> paradox
 		gold_cost = 300
 		build_time = 720
 		
@@ -8145,7 +4547,6 @@ tax_income = -2
 	ca_culture_georgiens_3 = {
 		desc = ca_culture_georgiens_3_desc
 		potential = {
-<<<<<<< HEAD
 			FROM = {
 
 
@@ -8164,33 +4565,6 @@ FROM = {
 top_liege = {
 primary_title = {
 has_law = centralization_4
-=======
-			OR = { 
-				FROM = { government = theocratic_feudal_government }
-				has_building = ca_government_monastery_1
-				has_building = ca_government_monastery_2
-				has_building = ca_government_monastery_3
-				has_building = ca_government_monastery_4
-			}
-		}
-		is_active_trigger = {
-			owner = { government = theocratic_feudal_government }
-		}
-		trigger = {
-			TECH_TEMPLE_CONSTRUCTION = 4
-			FROM = { government = theocratic_feudal_government }
-		}
-		upgrades_from = ca_government_monastery_3
-		gold_cost = 400
-		build_time = 1460
-		levy_size = 0.05
-		garrison_size = 0.05
-		tech_growth_modifier = 0.1
-		culture_techpoints = 0.04
-		ai_creation_factor = 93
-		add_number_to_name = no
-		liege_piety = 0.05
->>>>>>> paradox
 
 }
 }
