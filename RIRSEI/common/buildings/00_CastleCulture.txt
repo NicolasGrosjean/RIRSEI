@@ -41,11 +41,42 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = GalloB
+ROOT = { has_building = ca_culture_Francais_syst_1 }
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -79,10 +110,41 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = GalloB
+ROOT = { has_building = ca_culture_Francais_syst_2 }
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}		
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 2		
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Francais_syst_1
 
@@ -114,10 +176,41 @@ culture = german
 culture = old_saxon
 culture = italian
 culture = GalloB
+ROOT = { has_building = ca_culture_Francais_syst_3 }
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Francais_syst_2
 
@@ -158,12 +251,43 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+ROOT = { has_building = ca_culture_Francais_sysfed_1 }
 
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -199,12 +323,41 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+ROOT = { has_building = ca_culture_Francais_sysfed_2 }
 
 				}
 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
 OR = {
 FROM = {
 top_liege = {
@@ -258,13 +411,42 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+ROOT = { has_building = ca_culture_Francais_sysfed_3 }
 
 				}
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+				OR = {
+					culture = frankish
+					culture = occitan
+                                        culture = norman
+                                        culture = old_frankish                                        
+culture = german
+culture = old_saxon
+culture = dutch
+culture = italian
+culture = GalloB
+}
+}
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -315,12 +497,25 @@ ca_culture_Bretons_syst_1 = {
 is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }                            
+NOT = { has_global_flag = central }  
+OR = {                          
 				culture = breton
+ROOT = { has_building = ca_culture_Bretons_syst_1 }
+}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = breton
+}
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = breton
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 400
@@ -347,12 +542,25 @@ potential = {
 is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }                            
+NOT = { has_global_flag = central }   
+OR = {                         
 culture = breton
+ROOT = { has_building = ca_culture_Bretons_syst_2 }
+}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+culture = breton
+}
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+culture = breton
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Bretons_syst_1
 
@@ -393,10 +601,37 @@ NOT = { has_global_flag = central }
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
+ROOT = { has_building = ca_culture_Espagnes_syst_1 }
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 730
@@ -427,10 +662,38 @@ NOT = { has_global_flag = central }
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
+ROOT = { has_building = ca_culture_Espagnes_syst_2 }
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+  }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Espagnes_syst_1
 		gold_cost = 50
@@ -460,10 +723,38 @@ NOT = { has_global_flag = central }
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
+ROOT = { has_building = ca_culture_Espagnes_syst_3 }
 				}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+  }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Espagnes_syst_2
 gold_cost = 50
@@ -506,12 +797,39 @@ has_global_flag = central
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
-
+ROOT = { has_building = ca_culture_Espagnes_sysfed_1 }
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+  }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -547,12 +865,38 @@ has_global_flag = central
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
-
+ROOT = { has_building = ca_culture_Espagnes_sysfed_2 }
 				}
 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
 OR = {
 FROM = {
 top_liege = {
@@ -608,13 +952,39 @@ has_global_flag = central
                                         culture = ibero
 culture = basque
 culture = andalusian_arabic
-
+ROOT = { has_building = ca_culture_Espagnes_sysfed_3 }
 				}
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+				OR = {
+					culture = catalan
+					culture = castillan
+                                        culture = visigothic
+                                        culture = portuguese
+                                        culture = ibero
+culture = basque
+culture = andalusian_arabic
+}
+}
+ 
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -666,13 +1036,24 @@ ca_culture_Ang_syst_1 = {
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
-				
+OR = {				
 					culture = english
-                                       
+ROOT = { has_building = ca_culture_Ang_syst_1 }
+}                                     
 				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = english
+}
+}
 		gold_cost = 30
 		build_time = 730
 
@@ -694,12 +1075,25 @@ fort_level = 1.0
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
-				
+OR = {				
 					culture = english
+ROOT = { has_building = ca_culture_Ang_syst_2 }
+} 
 				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 2 
+FROM = {
+culture = english
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Ang_syst_1
 		gold_cost = 50
@@ -719,13 +1113,26 @@ fort_level = -0.5
 religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }
-				
+OR = {				
 					culture = english
+ROOT = { has_building = ca_culture_Ang_syst_3 }
+} 
                                        
 				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+
+		}
+		trigger = { 
+		TECH_CASTLE_CONSTRUCTION = 3 
+FROM = {
+culture = english
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Ang_syst_2
 gold_cost = 50
@@ -751,15 +1158,25 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-				
+}
+OR = {				
 					culture = english
-
-				
-
+ROOT = { has_building = ca_culture_Ang_sysfed_1 }
+} 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+
+		}
+		trigger = {
+		TECH_CASTLE_CONSTRUCTION = 2 
+FROM = {
+culture = english
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -785,15 +1202,24 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-		
-			culture = english
-
-				
-
+}
+OR = {				
+					culture = english
+ROOT = { has_building = ca_culture_Ang_sysfed_2 }
+} 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = english
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -844,16 +1270,25 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-				
+}
+OR = {				
 					culture = english
-
-				
-
+ROOT = { has_building = ca_culture_Ang_sysfed_3 }
+} 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = english
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = english
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -900,14 +1335,23 @@ retinuesize = 2000
 			FROM = {
 religion_group = christian
 
-				
+OR = {				
 					culture = saxon
-				
-                                       
-				
+ROOT = { has_building = ca_culture_Saxon_syst_1 }
+} 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = saxon
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = saxon
+}
+}
 		add_number_to_name = no 
 		gold_cost = 30
 		build_time = 730
@@ -929,12 +1373,23 @@ fort_level = 1.0
 			FROM = {
 religion_group = christian
 
-			
+OR = {				
 					culture = saxon
-				
+ROOT = { has_building = ca_culture_Saxon_syst_2 }
+} 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = saxon
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 
+FROM = {
+culture = saxon
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Saxon_syst_1
 		gold_cost = 50
@@ -953,15 +1408,23 @@ fort_level = -0.5
 		potential = {
 			FROM = {
 religion_group = christian
-
-				
+OR = {				
 					culture = saxon
-				
-                                       
-				
+ROOT = { has_building = ca_culture_Saxon_syst_3 }
+} 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+FROM = {
+culture = saxon
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 
+FROM = {
+culture = saxon
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Saxon_syst_2
 gold_cost = 50
@@ -990,15 +1453,25 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-		
-			culture = saxon
+}
 
-				
-
+OR = {				
+					culture = saxon
+ROOT = { has_building = ca_culture_Saxon_sysfed_2 }
+} 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = saxon
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = saxon
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -1049,16 +1522,26 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-				
+} 
+
+OR = {				
 					culture = saxon
-
-				
-
+ROOT = { has_building = ca_culture_Saxon_sysfed_3 }
+} 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = saxon
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = saxon
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -1107,17 +1590,24 @@ NOT = { FROMFROM = { title = b_constantinople } }
 
 
 			FROM = {
-
-				
+OR = {				
 					culture = greek
-					
-                                       
-				
+ROOT = { has_building = ca_culture_THEME_syst_1 }
+} 
 			}
 
 }
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+
+		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = greek
+}
 
  }
                 add_number_to_name = no 
@@ -1147,16 +1637,22 @@ fort_level = 1.0
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
-
-				
+OR = {				
 					culture = greek
-					
-                                       
-				
+ROOT = { has_building = ca_culture_THEME_syst_2 }
+} 
 			}
+		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
 		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = greek
+}
 e_byzantium = {
 has_law = theme_byz
 has_law = crown_authority_3
@@ -1177,21 +1673,28 @@ fort_level = 0.5
 		
 		
 	}
+	
 	ca_culture_THEME_syst_3 = {
 		desc = THEME_syst_3_desc
 		potential = {
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
-
-				
+OR = {				
 					culture = greek
-					
-                                       
-				
+ROOT = { has_building = ca_culture_THEME_syst_3 }
+} 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+FROM = {
+culture = greek
+}
 e_byzantium = {
 has_law = theme_byz
 has_law = emp_autocrate
@@ -1227,17 +1730,23 @@ NOT = { FROMFROM = { title = b_constantinople } }
 
 
 			FROM = {
-
-				
+OR = {				
 					culture = greek
-					
-                                       
-				
+ROOT = { has_building = ca_culture_PRONOIA_syst_1 }
+} 
 			}
 
 }
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = greek
+}
  }
                 add_number_to_name = no 
 		gold_cost = 30
@@ -1262,16 +1771,22 @@ knights_defensive = 0.20
 
 NOT = { FROMFROM = { title = b_constantinople } }
 			FROM = {
-
-				
+OR = {				
 					culture = greek
-					
-                                       
-				
+ROOT = { has_building = ca_culture_PRONOIA_syst_2 }
+}
 			}
+		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
 		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 5
+FROM = {
+culture = greek
+}
 e_byzantium = {
 has_law = pronoia_byz
 
@@ -1302,12 +1817,23 @@ knights_morale = 0.15
 			FROM = {
 			
 religion_group = christian
+OR = {				
 has_landed_title = e_byzantium 
-		
+ROOT = { has_building = ca_culture_byz_noumeroi }
+}	
 		 }
 		}
 
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
+		trigger = { TECH_CITY_CONSTRUCTION = 0
+FROM = {
+culture = greek
+}
+ }		
 		gold_cost = 10
 		prestige_cost = 0
 		build_time = 730
@@ -1338,7 +1864,15 @@ tax_income = 4
 
 		
 		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
 		trigger = { TECH_RECRUITMENT = 0
+FROM = {
+culture = greek
+}
 FROM = {
 has_landed_title = e_byzantium }
 		
@@ -1362,7 +1896,15 @@ retinuesize = 4000
 
 		
 		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
 		trigger = { TECH_RECRUITMENT = 4
+FROM = {
+culture = greek
+}
 FROM = {
 has_landed_title = e_byzantium } }
 		upgrades_from = ca_culture_Tagmata_syst_1
@@ -1383,7 +1925,15 @@ has_landed_title = e_byzantium }
 			FROMFROM = { title = b_constantinople }
 		
 		}
+		is_active_trigger = {
+FROM = {
+culture = greek
+}
+		}
 		trigger = { TECH_RECRUITMENT = 7
+FROM = {
+culture = greek
+}
 FROM = {
 has_landed_title = e_byzantium }
 e_byzantium = {
@@ -1416,14 +1966,22 @@ religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
 			FROM = {
-
-					culture = lombard
-					
-                                       
-				
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_syst_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = lombard
+}
+ }
 		gold_cost = 30
 		build_time = 730
 
@@ -1448,14 +2006,23 @@ religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
 			FROM = {
-
-					culture = lombard
-					
-                                       
-				
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_syst_2 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+culture = lombard
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Lomb_syst_1
 		gold_cost = 50
@@ -1478,14 +2045,23 @@ religion_group = christian
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  
 			FROM = {
-
-					culture = lombard
-					
-                                       
-				
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_syst_3 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+culture = lombard
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Lomb_syst_2
 gold_cost = 50
@@ -1513,12 +2089,24 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-				culture = lombard
-
+}
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_sysfed_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+culture = lombard
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -1549,12 +2137,24 @@ religion_group = christian
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}                          
-				culture = lombard
-
+} 
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_sysfed_2 }
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = lombard
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -1599,12 +2199,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-			culture = lombard
-
+OR = {				
+culture = lombard
+ROOT = { has_building = ca_culture_Lomb_sysfed_3 }
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = lombard
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = lombard
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -1652,11 +2264,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = italian
-
+OR = {				
+culture = italian
+ROOT = { has_building = ca_culture_Italie_sysfed_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+culture = italian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+culture = italian
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -1685,11 +2309,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = italian
-
+OR = {				
+culture = italian
+ROOT = { has_building = ca_culture_Italie_sysfed_2 }
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = italian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = italian
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -1734,12 +2370,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-			culture = italian
-
+OR = {				
+culture = italian
+ROOT = { has_building = ca_culture_Italie_sysfed_3 }
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = italian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = italian
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -1782,14 +2430,23 @@ retinuesize = 1500
 			FROM = {
 
 religion_group = christian					
+OR = {				
 culture = armenian
-
-					
-                                       
-				
+ROOT = { has_building = ca_culture_Arme_syst_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = armenian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = armenian
+}
+}
 		gold_cost = 30
 		build_time = 730
 
@@ -1815,14 +2472,23 @@ retinuesize = 100
 		potential = {
 			FROM = {
 religion_group = christian
+OR = {				
 culture = armenian
-
-					
-                                       
-				
+ROOT = { has_building = ca_culture_Arme_syst_2 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+FROM = {
+culture = armenian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = armenian
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Arme_syst_1
 		gold_cost = 50
@@ -1851,14 +2517,23 @@ kinghts_defensive = -0.10
 		potential = {
 			FROM = {
 religion_group = christian
+OR = {				
 culture = armenian
-
-					
-                                       
-				
+ROOT = { has_building = ca_culture_Arme_syst_3 }
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = armenian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+FROM = {
+culture = armenian
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -1903,11 +2578,23 @@ retinuesize = 200
 			FROM = {
 is_feudal = yes
 religion_group = christian                            
-				culture = welsh
-
+OR = {				
+culture = welsh
+ROOT = { has_building = ca_culture_Galles_syst_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = welsh
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = welsh
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 400
@@ -1937,11 +2624,22 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                            
-				culture = welsh
-
+OR = {				
+culture = welsh
+ROOT = { has_building = ca_culture_Galles_syst_2 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		is_active_trigger = {
+FROM = {
+culture = welsh
+}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = welsh
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Galles_syst_1
 
@@ -1972,15 +2670,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				
-					culture = welsh
-
-				
-
+OR = {				
+culture = welsh
+ROOT = { has_building = ca_culture_Galles_syst_3 }
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = welsh
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = welsh
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2028,13 +2735,30 @@ NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                            
 				OR = {
 					culture = scottish
-					culture = pictish			
+					culture = pictish	
+ROOT = { has_building = ca_culture_Ecosse_syst_1 }	
                      
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+} 
+}
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 400
@@ -2063,12 +2787,28 @@ NOT = { has_global_flag = central }
 				OR = {
 					culture = scottish
 					culture = pictish
+ROOT = { has_building = ca_culture_Ecosse_syst_2 }	
                      
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_Ecosse_syst_1
 
@@ -2107,12 +2847,29 @@ has_global_flag = central
 				OR = {
 					culture = scottish
 					culture = pictish
+ROOT = { has_building = ca_culture_Ecosse_sysfed_1 }	
 
 				}
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -2150,12 +2907,29 @@ has_global_flag = central
 				OR = {
 			culture = scottish
 			culture = pictish
+ROOT = { has_building = ca_culture_Ecosse_sysfed_2 }	
 
 				}
 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -2215,13 +2989,30 @@ has_global_flag = central
 				OR = {
                     culture = scottish
 					culture = pictish
+ROOT = { has_building = ca_culture_Ecosse_sysfed_3 }	
 
 				}
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+				OR = {
+					culture = scottish
+					culture = pictish
+				}
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2267,15 +3058,23 @@ retinuesize = 2000
 			FROM = {
 is_feudal = yes
 religion_group = christian                            
-				
-					culture = irish
-					
-                     
-				
-
+OR = {
+culture = irish
+ROOT = { has_building = ca_culture_Eire_syst_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+				culture = irish
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+				culture = irish
+}
+}
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 400
@@ -2308,15 +3107,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				
-			culture = irish
-			
-
-				
-
+OR = {
+culture = irish
+ROOT = { has_building = ca_culture_Eire_syst_2 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 5}
+		is_active_trigger = {
+FROM = {
+				culture = irish
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5
+FROM = {
+				culture = irish
+}
+}
 		
                 add_number_to_name = no
 upgrades_from = ca_culture_Eire_syst_1
@@ -2344,12 +3151,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = irish
-
+OR = {
+culture = irish
+ROOT = { has_building = ca_culture_Eire_syst_3 }	
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+				culture = irish
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+				culture = irish
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2399,10 +3218,27 @@ has_global_flag = central
 OR = {                         
 			culture = german
 			culture = old_saxon
+ROOT = { has_building = ca_culture_Germ_sysfed_1 }	
 }
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		is_active_trigger = {
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -2432,11 +3268,28 @@ has_global_flag = central
 		OR = {                         
 			culture = german
 			culture = old_saxon
+ROOT = { has_building = ca_culture_Germ_sysfed_2 }	
 }
 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -2488,12 +3341,29 @@ has_global_flag = central
 				OR = {                         
 			culture = german
 			culture = old_saxon
+ROOT = { has_building = ca_culture_Germ_sysfed_3 }	
 }
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+OR = {                         
+			culture = german
+			culture = old_saxon
+}
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2545,6 +3415,7 @@ ca_culture_Scandi_syst_1 = {
 					religion = catholic
 					}
 					culture_group = north_germanic
+ROOT = { has_building = ca_culture_Scandi_syst_1 }	
 					}
 					NOT = { religion_group = muslim } 
 
@@ -2554,7 +3425,29 @@ ca_culture_Scandi_syst_1 = {
 				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+ }
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -2587,11 +3480,34 @@ has_global_flag = central
 OR = {                  
 		culture_group = north_germanic
 		culture_group = finno_ugric
+ROOT = { has_building = ca_culture_Scandi_syst_2 }	
 
 			}
 		}
 		}
+		is_active_trigger = {
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 5
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -2649,13 +3565,35 @@ has_global_flag = central
 			OR = {                  
 		culture_group = north_germanic
 		culture_group = finno_ugric
-
+ROOT = { has_building = ca_culture_Scandi_syst_3 }	
 			}
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+OR = {                         
+	AND = {
+		culture_group = finno_ugric
+		religion = catholic
+	}
+	culture_group = north_germanic
+}
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2707,15 +3645,24 @@ ca_culture_saxpai_syst_1 = {
 			is_feudal = yes
 NOT = { religion_group = christian }
 NOT = { religion_group = muslim }
-					culture = old_saxon
-
-					
-                                       
-				
+OR = {
+culture = old_saxon
+ROOT = { has_building = ca_culture_saxpai_syst_1 }	
+}
 			}
 		}
 		
-		trigger = { TECH_RECRUITMENT = 0 }
+		is_active_trigger = {
+FROM = {
+culture = old_saxon
+}
+
+		}
+		trigger = { TECH_RECRUITMENT = 0 
+FROM = {
+culture = old_saxon
+}
+}
 		gold_cost = 30
 		build_time = 730
 
@@ -2741,15 +3688,24 @@ ca_culture_saamitri_syst_1 = {
 			is_feudal = yes
 NOT = { religion_group = christian }
 NOT = { religion_group = muslim }
-					culture_group = finno_ugric
-
-					
-                                       
-				
+OR = {
+culture_group = finno_ugric
+ROOT = { has_building = ca_culture_saamitri_syst_1 }	
+}
 			}
 		}
 		
-		trigger = { TECH_RECRUITMENT = 0 }
+		is_active_trigger = {
+FROM = {
+culture_group = finno_ugric
+}
+
+		}
+		trigger = { TECH_RECRUITMENT = 0 
+FROM = {
+culture_group = finno_ugric
+}
+}
 		gold_cost = 30
 		build_time = 730
 
@@ -2773,17 +3729,25 @@ ca_culture_polak_syst_1 = {
 		desc = polak_syst_1_desc
 		potential = {
 			FROM = {
-                    is_feudal = yes					
-					culture = polish
+                    is_feudal = yes	
 					NOT = { religion_group = muslim } 
-
-
-					
-                                       
-				
+OR = {
+culture = polish
+ROOT = { has_building = ca_culture_polak_syst_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+FROM = {
+culture = polish
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
+FROM = {
+culture = polish
+}
+ }
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -2808,14 +3772,27 @@ ca_culture_polak_syst_2 = {
 		potential = {
 			FROM = {
 
+OR = {
 culture = polish
+ROOT = { has_building = ca_culture_polak_syst_2 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = polish
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = polish
+}
+
 
 		} 
                 add_number_to_name = no
@@ -2846,14 +3823,27 @@ ca_culture_polak_syst_3 = {
 		potential = {
 			FROM = {
 
+OR = {
 culture = polish
+ROOT = { has_building = ca_culture_polak_syst_3 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = polish
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = polish
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -2901,12 +3891,25 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-			culture = polish
 
+OR = {
+culture = polish
+ROOT = { has_building = ca_culture_polak_syst_4 }	
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = polish
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = polish
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -2956,17 +3959,25 @@ ca_culture_pomeranie_syst_1 = {
 		desc = pomeranie_syst_1_desc
 		potential = {
 			FROM = {
-                    is_feudal = yes					
-					culture = pommeranian
+                    is_feudal = yes	
 					NOT = { religion_group = muslim } 
-
-
-					
-                                       
-				
+OR = {
+culture = pommeranian
+ROOT = { has_building = ca_culture_pomeranie_syst_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+FROM = {
+culture = pommeranian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 
+FROM = {
+culture = pommeranian
+}
+}
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -2989,15 +4000,27 @@ ca_culture_pomeranie_syst_2 = {
 		desc = pomeranie_syst_2_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = pommeranian
+ROOT = { has_building = ca_culture_pomeranie_syst_2 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = pommeranian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = pommeranian
+}
+
 
 		} 
                 add_number_to_name = no
@@ -3027,15 +4050,27 @@ ca_culture_pomeranie_syst_3 = {
 		desc = pomeranie_syst_3_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = pommeranian
+ROOT = { has_building = ca_culture_pomeranie_syst_3 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = pommeranian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = pommeranian
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -3083,12 +4118,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-			culture = pommeranian
-
+OR = {
+culture = pommeranian
+ROOT = { has_building = ca_culture_pomeranie_syst_4 }	
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = pommeranian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = pommeranian
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -3146,17 +4193,25 @@ ca_culture_boheme_syst_1 = {
                     is_feudal = yes
 								
 NOT = { has_global_flag = mutare }
-NOT = { has_global_flag = central }  					
-					culture = bohemian
+NOT = { has_global_flag = central }
 					NOT = { religion_group = muslim } 
-
-
-					
-                                       
-				
+OR = {
+culture = bohemian
+ROOT = { has_building = ca_culture_boheme_syst_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = bohemian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = bohemian
+}
+}
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -3180,8 +4235,10 @@ ca_culture_boheme_syst_2 = {
 		desc = boheme_syst_2_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = bohemian
+ROOT = { has_building = ca_culture_boheme_syst_2 }	
+}
 is_feudal = yes
 religion_group = christian
 NOT = { has_global_flag = mutare }
@@ -3190,7 +4247,17 @@ NOT = { has_global_flag = central }
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = bohemian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3
+FROM = {
+culture = bohemian
+}
+
 
 		} 
                 add_number_to_name = no
@@ -3228,16 +4295,25 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }  					
-					culture = bohemian
+OR = {
+culture = bohemian
+ROOT = { has_building = ca_culture_boheme_systfed_1 }	
+}
 					religion_group = christian
 
-
-					
-                                       
-				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+FROM = {
+culture = bohemian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 
+FROM = {
+culture = bohemian
+}
+}
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -3260,15 +4336,27 @@ extra_tech_building_start = -10
 		desc = boheme_syst_3_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = bohemian
+ROOT = { has_building = ca_culture_boheme_systfed_2 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture = bohemian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = bohemian
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -3307,8 +4395,10 @@ tax_income = 2
 		desc = boheme_syst_4_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = bohemian
+ROOT = { has_building = ca_culture_boheme_systfed_3 }	
+}
 is_feudal = yes
 religion_group = christian
      
@@ -3316,7 +4406,17 @@ religion_group = christian
 		}
 		}
 		
+		is_active_trigger = {
+FROM = {
+culture = bohemian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = bohemian
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -3367,6 +4467,7 @@ light_infantry_morale = 0.20
 OR = {
 culture = lithuanian
 culture = lettigallish
+ROOT = { has_building = ca_culture_lithca_syst_1 }	
 }
 is_feudal = yes
 
@@ -3375,7 +4476,23 @@ is_feudal = yes
 				
 			}
 		}
+		is_active_trigger = {
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+
+		}
 		trigger = { TECH_RECRUITMENT = 0
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+
  }
                 add_number_to_name = no 
 				
@@ -3404,6 +4521,7 @@ fort_level = 0.5
 OR = {
 culture = lithuanian
 culture = lettigallish
+ROOT = { has_building = ca_culture_lithca_syst_2 }	
 }
 is_feudal = yes
 
@@ -3412,7 +4530,23 @@ is_feudal = yes
 				
 			}
 		}
-		trigger = { TECH_RECRUITMENT = 5 }
+		is_active_trigger = {
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+
+		}
+		trigger = { TECH_RECRUITMENT = 5 
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+}
                 add_number_to_name = no 
 		upgrades_from = ca_culture_lithca_syst_1
 gold_cost = 50
@@ -3441,12 +4575,29 @@ has_global_flag = central
 OR = {
 culture = lithuanian
 culture = lettigallish
+ROOT = { has_building = ca_culture_lithca_syst_3 }	
 }
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -3493,9 +4644,10 @@ retinuesize = 1500
 		desc = lith_syst_3_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture = prussian
-
+ROOT = { has_building = ca_culture_prussca_syst_1 }	
+}
 is_feudal = yes
 
 					
@@ -3503,7 +4655,16 @@ is_feudal = yes
 				
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = prussian
+}
+
+		}
 		trigger = { TECH_RECRUITMENT = 0
+FROM = {
+culture = prussian
+}
  }
                 add_number_to_name = no 
 				
@@ -3527,9 +4688,10 @@ retinuesize = 110
 		desc = prussca_syst_1_desc
 		potential = {
 			FROM = {
-			
+OR = {
 culture = prussian
-
+ROOT = { has_building = ca_culture_prussca_syst_2 }	
+}
 is_feudal = yes
 
 					
@@ -3537,7 +4699,17 @@ is_feudal = yes
 				
 			}
 		}
-		trigger = { TECH_RECRUITMENT = 6 }
+		is_active_trigger = {
+FROM = {
+culture = prussian
+}
+ 
+		}
+		trigger = { TECH_RECRUITMENT = 6 
+FROM = {
+culture = prussian
+}
+ }
                 add_number_to_name = no 
 		upgrades_from = ca_culture_prussca_syst_1
 gold_cost = 50
@@ -3564,13 +4736,25 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }     
-                     
+OR = {
 culture = prussian
+ROOT = { has_building = ca_culture_prussca_syst_3 }	
+}
 
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = prussian
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = prussian
+}
+ 
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -3618,8 +4802,11 @@ ca_culture_russ_syst_1 = {
 		desc = russ_syst_1_desc
 		potential = {
 			FROM = {
-                    is_feudal = yes					
-					culture_group = east_slavic 
+                    is_feudal = yes	
+OR = {
+culture_group = east_slavic
+ROOT = { has_building = ca_culture_russ_syst_1 }	
+}
 					NOT = { religion_group = muslim } 
 
 
@@ -3628,7 +4815,17 @@ ca_culture_russ_syst_1 = {
 				
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture_group = east_slavic
+}
+ 
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture_group = east_slavic
+}
+ }
 		add_number_to_name = no
 		gold_cost = 30
 		build_time = 730
@@ -3648,15 +4845,27 @@ ca_culture_russ_syst_2 = {
 		desc = russ_syst_2_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture_group = east_slavic
+ROOT = { has_building = ca_culture_russ_syst_2 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture_group = east_slavic
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 5
+FROM = {
+culture_group = east_slavic
+}
+ 
 		OR = {
 FROM = {
 top_liege = {
@@ -3698,15 +4907,27 @@ ca_culture_russ_syst_3 = {
 		desc = russ_syst_3_desc
 		potential = {
 			FROM = {
-
+OR = {
 culture_group = east_slavic
+ROOT = { has_building = ca_culture_russ_syst_3 }	
+}
 is_feudal = yes
 religion_group = christian
      
 
 		}
 		}
+		is_active_trigger = {
+FROM = {
+culture_group = east_slavic
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+FROM = {
+culture_group = east_slavic
+}
+ 
 		OR = {
 FROM = {
 top_liege = {
@@ -3750,13 +4971,24 @@ ca_culture_Hongrois_sysfed_1 = {
 		potential = {
 			FROM = {
 is_feudal = yes
-
-                    
-culture_group = magyar				
+OR = {
+culture_group = magyar
+ROOT = { has_building = ca_culture_Hongrois_sysfed_1 }	
+}			
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture_group = magyar
+}
+ 
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture_group = magyar
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -3788,11 +5020,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture_group = magyar				
-
+OR = {
+culture_group = magyar
+ROOT = { has_building = ca_culture_Hongrois_sysfed_2 }	
+}	
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture_group = magyar
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture_group = magyar
+}
+ 
 OR = {
 FROM = {
 top_liege = {
@@ -3847,12 +5091,25 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture_group = magyar		
 
+OR = {
+culture_group = magyar
+ROOT = { has_building = ca_culture_Hongrois_sysfed_3 }	
+}	
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture_group = magyar
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture_group = magyar
+}
+ 
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -3900,11 +5157,23 @@ retinuesize = 2000
 is_feudal = yes
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                           
-culture = croatian		
-
+OR = {
+culture = croatian
+ROOT = { has_building = ca_culture_croate_syst_1 }	
+}	
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = croatian
+}
+ 
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = croatian
+}
+  }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -3931,11 +5200,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian
-
+OR = {
+culture = croatian
+ROOT = { has_building = ca_culture_croate_sysfed_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		is_active_trigger = {
+FROM = {
+culture = croatian
+}
+ 
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 
+FROM = {
+culture = croatian
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -3963,11 +5244,23 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian
-
+OR = {
+culture = croatian
+ROOT = { has_building = ca_culture_croate_sysfed_2 }	
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = croatian
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
+FROM = {
+culture = croatian
+}
+ 
 OR = {
 FROM = {
 top_liege = {
@@ -4016,12 +5309,24 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian		
-
+OR = {
+culture = croatian
+ROOT = { has_building = ca_culture_croate_sysfed_3 }	
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = croatian
+}
+ 
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = croatian
+}
+ 
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -4070,12 +5375,24 @@ is_feudal = yes
 OR = {
 NOT = { year = 1100 }
 NOT = { religion_group = christian }
-}                        
-culture = serbian		
-
+}            		
+OR = {
+culture = serbian
+ROOT = { has_building = ca_culture_serb_syst_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = serbian
+}
+ 
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = serbian
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -4101,11 +5418,23 @@ extra_tech_building_start = -1
 is_feudal = yes
 religion_group = christian
 year = 1100                      
-				culture = serbian
-
+OR = {
+culture = serbian
+ROOT = { has_building = ca_culture_serb_sysprono_1 }	
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = serbian
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = serbian
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -4132,12 +5461,23 @@ extra_tech_building_start = -1
 			FROM = {
 is_feudal = yes
 religion_group = christian
-                     
-				culture = serbian
-
+OR = {
+culture = serbian
+ROOT = { has_building = ca_culture_serb_sysprono_2 }	
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = serbian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+FROM = {
+culture = serbian
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -4186,13 +5526,24 @@ tax_income = 3
 
 is_feudal = yes
 religion_group = christian
-                         
-				culture = serbian		
-
+OR = {
+culture = serbian
+ROOT = { has_building = ca_culture_serb_sysprono_3 }	
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = serbian
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = serbian
+}
+
 OR = {
 FROM = {
 NOT = { tier = duke }
@@ -4239,11 +5590,28 @@ NOT = { religion_group = christian }
 OR = { 
 culture = bulgarian	
 culture = bolghar
+ROOT = { has_building = ca_culture_bulg_syst_1 }
 }	
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -4270,12 +5638,29 @@ religion_group = christian
 OR = { 
 culture = bulgarian	
 culture = bolghar
+ROOT = { has_building = ca_culture_bulg_syst_2 }
 }
 NOT = { year = 1100 }	
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -4305,12 +5690,29 @@ religion_group = christian
 OR = { 
 culture = bulgarian	
 culture = bolghar
+ROOT = { has_building = ca_culture_bulg_syst_3 }
 }
 year = 1100	
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+OR = { 
+culture = bulgarian	
+culture = bolghar
+}
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -4338,14 +5740,26 @@ extra_tech_building_start = -1
 		potential = {
 			FROM = {
 is_feudal = yes
- 
+OR = {
 culture = romanian	
+ROOT = { has_building = ca_culture_vlach_syst_1 }
+}
 NOT = { year = 1030 }
 	
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = romanian	
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = romanian	
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
@@ -4374,14 +5788,27 @@ extra_tech_building_start = -1
 		potential = {
 			FROM = {
 is_feudal = yes
- 
+
+OR = {
 culture = romanian	
+ROOT = { has_building = ca_culture_vlach_syst_2 }
+}
 religion_group = christian
 year = 1050	
 
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = romanian	
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0
+FROM = {
+culture = romanian	
+}
+ }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 300
@@ -4411,13 +5838,24 @@ extra_tech_building_start = -1
 
 is_feudal = yes
 religion_group = christian
-                         
-				culture = romanian		
-
+OR = {
+culture = romanian	
+ROOT = { has_building = ca_culture_vlach_syst_3 }
+}
 			}
 		}
 
+		is_active_trigger = {
+FROM = {
+culture = romanian	
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
+FROM = {
+culture = romanian	
+}
+
 OR = {
 FROM = {
 liege = {
@@ -4462,11 +5900,23 @@ tax_income = -7
 			FROM = {
 is_feudal = yes
 religion_group = christian                    
-culture = georgian
-
+OR = {
+culture = georgian	
+ROOT = { has_building = ca_culture_georgiens_1 }
+}
 			}
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		is_active_trigger = {
+FROM = {
+culture = georgian	
+}
+
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
+FROM = {
+culture = georgian	
+}
+}
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
@@ -4497,14 +5947,23 @@ extra_tech_building_start = -1
 
 is_feudal = yes
 religion_group = christian                       
-		
-			culture = georgian
-
-				
-
+OR = {
+culture = georgian	
+ROOT = { has_building = ca_culture_georgiens_2 }
+}
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = georgian	
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4
+FROM = {
+culture = georgian	
+}
+
 OR = {
 FROM = {
 top_liege = {
@@ -4552,14 +6011,24 @@ tax_income = -2
 
 is_feudal = yes
 religion_group = christian                       
-		
-			culture = georgian
-
-				
+OR = {
+culture = georgian	
+ROOT = { has_building = ca_culture_georgiens_3 }
+}	
 
 			}
 		}
+		is_active_trigger = {
+FROM = {
+culture = georgian	
+}
+
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
+FROM = {
+culture = georgian	
+}
+
 OR = {
 FROM = {
 top_liege = {
