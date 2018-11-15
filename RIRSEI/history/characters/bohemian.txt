@@ -987,6 +987,12 @@
 	931.1.1={
 		add_spouse = 507
 	}
+	935.9.28={
+		create_bloodline = {
+			type = premyslid
+			has_dlc = "Holy Fury"
+		}
+	}
 	972.1.1={
 		death="972.1.1"
 	}
@@ -2816,37 +2822,6 @@
 		death="815.1.1"
 	}
 }
-187011 = {
-	name="Pribina"
-	# AKA: Pribina z Nitrava
-	dynasty=7509
-	religion="slavic_pagan"
-	culture="bohemian"
-	800.1.1={
-		birth="800.1.1"
-	}
-	831.1.1={
-		religion="catholic"
-	}
-	861.1.1={
-		death="861.1.1"
-	}
-}
-
-187012 = {
-	name="Kocel"
-	# AKA: Kocel z Nitrava
-	dynasty=7509
-	religion="catholic"
-	culture="bohemian"
-	father=187011
-	833.1.1={
-		birth="833.1.1"
-	}
-	876.1.1={
-		death="876.1.1"
-	}
-}
 
 168344 = {
 	name="Slavibor"
@@ -3162,38 +3137,6 @@
 	}
 }
 
-168580 = {
-	name="Slavomir"
-	#placeholder 
-	dynasty=9603
-	religion="catholic"
-	culture="bohemian"
-	845.1.1 = {
-		birth=yes
-	}
-	
-	895.1.1 = {
-		death=yes
-	}
-}
-
-
-
-168581 = {
-	name="Draslav"
-	#placeholder 
-	dynasty=9604
-	religion="catholic"
-	culture="bohemian"
-	845.1.1 = {
-		birth=yes
-	}
-	
-	899.1.1 = {
-		death=yes
-	}
-}
-
 168617 = {
 	name="Diepold" 
 	dynasty=506
@@ -3278,4 +3221,51 @@
 		death=yes
 	}
 }
-
+260041 = {		# Placeholder Krems 769
+	name = "Bocek"
+	dynasty = 1062023
+	religion = "slavic_pagan"
+	culture = "bohemian"
+	735.1.1 = {
+		birth = yes
+	}
+	784.1.1 = {
+		death = yes
+	}
+}
+260042 = {		# Placeholder Krems 867
+	name = "Smil"
+	dynasty = 1062024
+	religion = "catholic"
+	culture = "bohemian"
+	837.1.1 = {
+		birth = yes
+	}
+	878.1.1 = {
+		death = yes
+	}
+}
+260053 = {		# Placeholder Freistadt 769
+	name = "Svatobor"
+	dynasty = 1062027
+	religion = "slavic_pagan"
+	culture = bohemian
+	732.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+260054 = {		# Placeholder Freistadt 867
+	name = "Pawel"
+	dynasty = 1062028
+	religion = "catholic"
+	culture = bohemian
+	821.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}

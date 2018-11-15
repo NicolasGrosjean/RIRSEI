@@ -11,7 +11,7 @@ b_souvigny = temple
 
 #b_lancy = castle
 #b_montpensier = castle
-#b_murat = castle
+#b_montlucon = castle
 #b_vichy = city
 
 #Misc

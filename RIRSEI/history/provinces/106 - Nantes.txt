@@ -11,7 +11,6 @@ b_redon = temple
 
 #b_chateaubriant = castle
 #b_guerande = city
-#b_clisson = castle
 #b_la_roche-bernard = city
 #b_donges = castle
 #b_st_nazaire = temple
@@ -26,4 +25,3 @@ religion = catholic
 	b_nantes = ca_militia_barracks_1
 	b_nantes = ca_wall_1
 }
-1200.1.1  = { b_clisson = city }

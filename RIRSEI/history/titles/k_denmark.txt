@@ -7,8 +7,14 @@
 
 793.1.1 = {
 	effect = {
-		enable_prepared_invasion = norse_pagan ## Important Viking age effect
-		enable_prepared_invasion = norse_pagan_reformed ## Important Viking age effect
+		if = {
+			limit = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+			enable_prepared_invasion = norse_pagan ## Important Viking age effect
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Holy Fury" } }
+			enable_prepared_invasion = norse_pagan_reformed ## Important Viking age effect
+		}
 	}
 }
 

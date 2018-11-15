@@ -5,6 +5,7 @@ title = c_blois
 
 # Settlements
 max_settlements = 4
+
 b_blois = castle
 b_staignan = temple
 b_beaugency = city 

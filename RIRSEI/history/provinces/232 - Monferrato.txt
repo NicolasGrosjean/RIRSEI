@@ -10,7 +10,6 @@ b_asti = city
 b_casale = temple
 #b_acqui = castle
 #b_tortona = castle
-#b_biella = castle
 #b_alba = castle
 #b_canelli = castle
 

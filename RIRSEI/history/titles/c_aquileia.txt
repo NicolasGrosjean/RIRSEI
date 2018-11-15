@@ -59,7 +59,7 @@
 	holder = 190262 #Peter
 }
 863.1.1={
-	liege = "d_verona"
+	liege = "d_friuli"
 }
 863.1.1={
 	holder = 167804

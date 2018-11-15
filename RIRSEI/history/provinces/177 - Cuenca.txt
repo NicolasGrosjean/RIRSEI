@@ -6,14 +6,12 @@ title = c_cuenca
 # Settlements
 max_settlements = 4
 b_cuenca = castle
-b_guadalajara = city
-b_siguenza = temple
+b_tarancon = city
+b_sisante = temple
 #b_villanuevadelajara = castle
 #b_ucles = castle
 #b_motadelcuervo = castle
 #b_laspedroneras = castle
-#b_tarancon = city
-#b_sisante
 
 culture = visigothic
 religion = catholic

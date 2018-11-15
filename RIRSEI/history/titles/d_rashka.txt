@@ -45,14 +45,6 @@
 1083.1.1={
 	holder=20538
 }
-1091.1.1={
-	liege="e_byzantium"
-	vice_royalty = yes
-}
-1101.1.1={
-	liege=0
-	vice_royalty = no
-}
 1112.1.1={
 	holder=218510
 }

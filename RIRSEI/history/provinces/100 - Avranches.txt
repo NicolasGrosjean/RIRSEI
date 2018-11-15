@@ -5,16 +5,15 @@ title = c_avranches
 
 # Settlements
 max_settlements = 5
-b_mortain = castle
-b_caen = city #for gp reason, in fact a castle
-b_bayeux = temple #for gp reason, in fact a castle
 
-#b_avranches = castle
-#b_barfleur = city
-#b_cherbourg = city
-#b_coutances = castle
-#b_domfront = castle
-#b_mortain = castle
+b_mortain = castle
+b_avranches = city
+b_barfleur = temple
+
+#b_cherbourg
+#b_coutances
+#b_carentan
+#b_barneville-carteret
 
 # Misc
 culture = old_frankish
@@ -23,11 +22,7 @@ religion = catholic
 # History
 790.1.1 = { culture = frankish }
 911.1.1 = { # Viking takeover
-	#remove_settlement = b_caen
-	#remove_settlement = b_bayeux
-	b_avranches = castle
-	#b_caen = city
-	#b_bayeux = temple
+	b_cherbourg = castle
 
 	b_mortain = ca_keep_1
 	b_mortain = ca_training_grounds_1
@@ -37,7 +32,7 @@ religion = catholic
 	b_mortain = ca_militia_barracks_1
 	b_mortain = ca_barracks_1
 	b_mortain = ca_town_1
-	b_caen = ct_port_1
+	b_avranches = ct_port_1
 }
 
 960.1.1 = {
@@ -45,12 +40,10 @@ religion = catholic
 }
 
 1066.1.1 = {
-	b_caen = ct_wall_1
-	b_caen = ct_wall_2
-	b_caen = ct_port_2
-	b_caen = ct_port_3
+	b_avranches = ct_wall_1
+	b_avranches = ct_wall_2
+	b_avranches = ct_port_2
+	b_avranches = ct_port_3
 }
 
-
 1100.11.11 = { culture = frankish }
-#1236.1.1  = { b_avranches = city } #become a city

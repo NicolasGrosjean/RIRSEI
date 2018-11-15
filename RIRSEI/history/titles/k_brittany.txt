@@ -39,6 +39,9 @@
 	holder = 159666 #Salomon II
 }
 630.1.1={
+	holder = 159667 #Iudicael
+}
+658.12.17={
 	holder = 159680 #Alan II
 }
 690.1.1={

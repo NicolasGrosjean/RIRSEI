@@ -13,9 +13,12 @@ technology = {
 		d_lower_lorraine
 		d_alsace
 		d_bavaria
+		d_salzburg
 		d_osterreich
+		d_styria
 		d_tyrol
 		d_carinthia
+		d_carniola
 		d_brunswick
 		d_thuringia
 		d_koln
@@ -41,6 +44,25 @@ technology = {
 		d_savoie
 		d_dauphine
 		d_upper_burgundy
+		d_thurgau
+		d_raetia
+		d_franche_comte
+		d_bremen
+		d_bohemia
+		d_moravia
+		d_cumbria
+		d_hampshire
+		d_gwent
+		d_penthievre
+		d_picardie
+		d_loire
+		d_rhine
+		d_angria
+		d_lausitz
+		d_hesse
+		d_munster_germany
+		d_nordgau
+		d_trier
 	}
 
 	769 = {
@@ -89,6 +111,7 @@ technology = {
 		d_sicily
 		d_venice
 		d_verona
+		d_friuli
 		d_susa
 		d_lombardia
 		d_genoa
@@ -101,6 +124,7 @@ technology = {
 		d_latium
 		d_sardinia
 		d_corsica
+		d_abruzzo
 	}
 	769 = {
 		military = 0.75

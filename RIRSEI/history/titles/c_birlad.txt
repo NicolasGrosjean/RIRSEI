@@ -1,5 +1,5 @@
 632.1.1={
-	liege="d_moldau"
+	liege="d_bessarabia"
 	holder=159117
 }
 665.1.1={
@@ -38,11 +38,9 @@
 
 1066.1.1=
 {
-	liege=d_moldau
-}
-1066.1.1=
-{
-	holder=20635
+	liege=k_pechenegs
+	holder=256066
+	historical_nomad = yes
 }
 1091.1.1=
 {
@@ -60,6 +58,7 @@
 {
 	liege="d_moldau"
 	holder=34826
+	historical_nomad = no
 }
 1187.1.1=
 {

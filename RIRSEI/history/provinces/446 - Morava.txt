@@ -6,8 +6,7 @@ title = c_znojmo
 # Settlements
 max_settlements = 4
 
-b_znojmo = castle
-b_mikulov = city
+b_znojmo = tribal
 b_trebic = temple
 
 #b_trebic = temple
@@ -25,6 +24,11 @@ religion = slavic_pagan
 # History
 
 831.1.1 = { religion = catholic }
+
+900.1.1 = {
+	b_znojmo = castle
+	b_mikulov = city
+}
 
 #german colonization of southern parts
 1160.1.1 = { culture = german }
