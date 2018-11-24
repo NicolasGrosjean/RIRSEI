@@ -18,7 +18,6 @@
 }
 864.1.1={
 	holder = 159506
-	de_jure_liege = e_maghreb
 }
 1051.1.1 = {
 	holder=32964
