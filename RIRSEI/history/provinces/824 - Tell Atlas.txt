@@ -6,12 +6,10 @@ title = c_tell_atlas
 # Settlements
 max_settlements = 3
 
-b_tiziouzou = castle
-b_zaoula = city
+b_setif = castle
+b_ikjan = city
 
-#b_akaoudj = temple
-
-#b_mirabeau = castle
+#b_zaoula = temple
 #b_nacina = castle
 #b_draaelmizan = castle
 #b_tagoughalt = castle
@@ -22,8 +20,5 @@ culture = maghreb_arabic
 religion = khadjirite
 
 # History
-
 909.1.1 = { religion = khadjirite }
-
 1187.1.1 = { b_mechreck = castle }
-

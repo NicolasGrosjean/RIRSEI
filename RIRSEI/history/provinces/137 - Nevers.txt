@@ -13,7 +13,6 @@ b_courtenay = city
 #b_donzy = temple
 #b_vandenesse = castle
 #b_clamecy = city
-#b_cosne = city
 
 #Misc
 religion = catholic

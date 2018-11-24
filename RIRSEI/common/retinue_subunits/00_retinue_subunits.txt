@@ -8,6 +8,205 @@
 # 6 - Special troops
 
 
+# Tribal Retinues
+
+TRIBAL_PIETY_RET_1 = {
+	first_type = 5
+	first_amount = 50
+	
+	second_type = 1
+	second_amount = 50
+	
+	potential = {
+		is_tribal = yes
+		OR = {
+			religion = baltic_pagan_reformed
+			religion = baltic_pagan
+			religion = finnish_pagan_reformed
+			religion = finnish_pagan
+			religion = slavic_pagan_reformed
+			religion = slavic_pagan
+			religion = west_african_pagan_reformed
+			religion = west_african_pagan
+			religion = bon
+			religion = bon_reformed
+		}
+	}
+	
+	hire_cost = 75
+	costs_piety = yes
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.4
+		archers_morale = 0.2
+		heavy_infantry_defensive = 0.2
+		heavy_infantry_morale = 0.1
+	}
+}
+
+TRIBAL_PIETY_RET_2 = {
+	first_type = 0
+	first_amount = 75
+	
+	second_type = 5
+	second_amount = 75
+	
+	potential = {
+		is_tribal = yes
+		OR = {
+			religion = baltic_pagan_reformed
+			religion = baltic_pagan
+			religion = finnish_pagan_reformed
+			religion = finnish_pagan
+			religion = slavic_pagan_reformed
+			religion = slavic_pagan
+			religion = west_african_pagan_reformed
+			religion = west_african_pagan
+			religion = bon
+			religion = bon_reformed
+		}
+	}
+	
+	hire_cost = 50
+	costs_piety = yes
+	
+	modifier = {
+		light_infantry_defensive = 0.6
+		light_infantry_morale = 0.4
+		archers_defensive = 0.4
+		archers_morale = 0.2
+	}
+}
+
+TRIBAL_RET_1 = {
+	first_type = 0
+	first_amount = 150
+	
+	potential = {
+		is_tribal = yes
+	}
+	
+	hire_cost = 25
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
+	modifier = {
+		light_infantry_offensive = 0.2
+		light_infantry_defensive = 0.5
+		light_infantry_morale = 0.2
+	}
+}
+
+TRIBAL_RET_2 = {
+	first_type = 0
+	first_amount = 100
+	
+	second_type = 5
+	second_amount = 50
+	
+	potential = {
+		is_tribal = yes
+	}
+	
+	hire_cost = 50
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
+	modifier = {
+		light_infantry_defensive = 0.6
+		light_infantry_morale = 0.3
+		archers_offensive = 0.4
+		archers_defensive = 0.2
+		archers_morale = 0.1
+	}
+}
+
+TRIBAL_RET_3 = {
+	first_type = 0
+	first_amount = 100
+	
+	second_type = 3
+	second_amount = 50
+	
+	potential = {
+		is_tribal = yes
+	}
+	
+	hire_cost = 75
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
+	modifier = {
+		light_infantry_offensive = 0.6
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.1	
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+	}
+}
+
+TRIBAL_RET_4 = {
+	first_type = 0
+	first_amount = 100
+	
+	second_type = 1
+	second_amount = 50
+	
+	potential = {
+		is_tribal = yes
+	}
+	
+	hire_cost = 75
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
+	modifier = {
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.3
+		light_infantry_morale = 0.3
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+	}
+}
+
+TRIBAL_RET_5 = {
+	first_type = 3
+	first_amount = 50
+	
+	second_type = 6
+	second_amount = 25
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_tribal = yes
+		OR = {
+			culture_group = altaic
+			culture = alan
+			culture = hungarian
+		}
+		NOT = {
+			culture = jurchen
+		}
+	}
+	
+	hire_cost = 75
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
+	modifier = {
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		horse_archers_defensive = 0.1
+	}
+}
+
 #Compagnies d'Ordonnance
 
 #France
@@ -252,6 +451,7 @@ RETTYPE_CUL_FRA_RIR =
 	NOT = { has_global_flag = central }
                  independent = yes
 		is_nomadic = no
+		is_tribal = no
 		OR = {
 		culture = old_frankish
 		culture = frankish
@@ -277,6 +477,7 @@ RETTYPE_CUL_FRAN_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		OR = {
 		culture = frankish
@@ -305,6 +506,7 @@ RETTYPE_CUL_FRANSCT_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		year = 1400
 		independent = yes
@@ -337,6 +539,7 @@ RETTYPE_CUL_CHESANGL_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central		
 		independent = yes
 		culture = english
@@ -372,6 +575,7 @@ RETTYPE_CUL_SCTFR_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		independent = yes
 		OR = {
@@ -406,6 +610,7 @@ RETTYPE_CUL_SAX_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		culture = saxon
 		independent = yes
 NOT = { religion_group = muslim }
@@ -436,6 +641,7 @@ RETTYPE_CUL_LOMB_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		culture = lombard
 		
 NOT = { religion_group = muslim }
@@ -467,6 +673,7 @@ RETTYPE_CUL_ALL_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		culture = german
 		independent = yes
@@ -498,8 +705,12 @@ RETTYPE_CUL_ITA_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
-		culture = italian
+		OR = {
+			culture = italian
+			culture = dalmatian
+		}
 		NOT = { is_republic = yes }
 		
 NOT = { religion_group = muslim }
@@ -521,6 +732,29 @@ has_building = ct_provisionati
 	}
 }
 
+RETTYPE_CUL_ROMAN = 
+{
+	first_type = 2
+	first_amount = 400
+	second_type = 1
+	second_amount = 150
+	
+	potential = {
+		is_nomadic = no
+		culture = roman
+	}
+	
+	modifier = {
+		pikemen_offensive = 0.2
+		pikemen_defensive = 0.2
+		pikemen_morale = 0.4
+		heavy_infantry_offensive = 0.25
+		heavy_infantry_defensive = 0.25
+		heavy_infantry_morale = 0.2
+	}
+}
+
+
 # Fanti des républiques
 
 RETTYPE_CUL_FANTI_RIR = 
@@ -530,6 +764,7 @@ RETTYPE_CUL_FANTI_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		is_republic = yes
 		OR = {
 independent = yes
@@ -565,6 +800,7 @@ RETTYPE_CUL_ARSEN_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		is_republic = yes
 		has_landed_title = k_venice
 		any_demesne_province = {
@@ -605,6 +841,7 @@ RETTYPE_CUL_PAPE_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_landed_title = k_papal_state
 		independent = yes
 		
@@ -630,6 +867,7 @@ RETTYPE_CUL_ASTU_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		culture = visigothic
 NOT = { religion_group = muslim }
 independent = yes
@@ -656,6 +894,7 @@ RETTYPE_CUL_MESNA_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		OR = {
 		culture = catalan
 		culture = castillan                                        
@@ -688,6 +927,7 @@ RETTYPE_CUL_TEULUG_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 culture = welsh
 NOT = { religion_group = muslim }
 
@@ -711,6 +951,7 @@ RETTYPE_CUL_TEULUGD_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 culture = welsh
 NOT = { religion_group = muslim }
 
@@ -749,6 +990,7 @@ RETTYPE_CUL_HONGR_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		culture_group = magyar
 NOT = { religion_group = muslim }
@@ -779,8 +1021,12 @@ RETTYPE_CUL_BYZ_RIR =
 	
 	potential = {
 		is_nomadic = no
-		culture = greek
-NOT = { religion_group = muslim }
+		is_tribal = no
+		culture_group = byzantine
+		NOT = { culture = coptic }
+		NOT = { culture = alan }
+		NOT = { culture = assyrian }
+		NOT = { religion_group = muslim }
 	}
 	
 	modifier = {
@@ -804,6 +1050,7 @@ RETTYPE_CUL_SERB_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture = serbian
 		year = 1100
 NOT = { religion_group = muslim }
@@ -826,6 +1073,7 @@ RETTYPE_CUL_SERBMILES_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		has_global_flag = central
 		culture = serbian
 NOT = { religion_group = muslim }
@@ -848,6 +1096,7 @@ RETTYPE_CUL_SERBCHONSA_RIR =
 	potential = {
             
 		is_nomadic = no
+		is_tribal = no
 		NOT = { year = 1100 }
 		culture = serbian
 NOT = { religion_group = muslim }
@@ -869,6 +1118,7 @@ RETTYPE_CUL_NORTHM_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 NOT = { religion_group = muslim }
 NOT = { FROM = {
 				 any_demesne_province = {
@@ -953,6 +1203,7 @@ RETTYPE_CUL_NORTHMRSS_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 NOT = { religion_group = muslim }
 year = 810
 NOT = { year = 1100 }
@@ -985,6 +1236,7 @@ RETTYPE_CUL_SLV_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 OR = {
 		culture_group = east_slavic
 culture_group = south_slavic
@@ -1012,6 +1264,7 @@ RETTYPE_CUL_POLUN_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		OR = {
 culture = polish
 culture = bohemian
@@ -1041,6 +1294,7 @@ RETTYPE_CUL_POLDEUX_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 culture = polish
 NOT = { religion_group = muslim }
 FROM = {
@@ -1072,6 +1326,7 @@ RETTYPE_CUL_BOHEME_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 culture = bohemian
 NOT = { religion_group = muslim }
 FROM = {
@@ -1106,6 +1361,7 @@ RETTYPE_CUL_RUSSDRUZ_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 culture_group = east_slavic
 NOT = { religion_group = muslim }
 FROM = {
@@ -1138,6 +1394,7 @@ RETTYPE_HUSCARLS_CELT_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 year = 850
 NOT = { year = 1150 }
 OR = {
@@ -1163,6 +1420,7 @@ RETTYPE_GALLOW_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 year = 1150
 culture = irish
 	}
@@ -1183,7 +1441,8 @@ RETTYPE_MAM_TURC =
 	
 	potential = {
                  
-		is_nomadic = no		
+		is_nomadic = no	
+		is_tribal = no	
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1213,7 +1472,8 @@ RETTYPE_MAM_SLV =
 	
 	potential = {
                  
-		is_nomadic = no		
+		is_nomadic = no	
+		is_tribal = no	
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1243,7 +1503,8 @@ RETTYPE_MAM_CIRC =
 	
 	potential = {
                  
-		is_nomadic = no		
+		is_nomadic = no	
+		is_tribal = no	
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1273,7 +1534,8 @@ RETTYPE_MAM_ARM =
 	
 	potential = {
                  
-		is_nomadic = no		
+		is_nomadic = no
+		is_tribal = no		
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1304,6 +1566,7 @@ RETTYPE_MAM_SOUD =
 	potential = {
                  
 		is_nomadic = no		
+		is_tribal = no
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1334,6 +1597,7 @@ RETTYPE_MAM_FRC =
 	potential = {
                  
 		is_nomadic = no		
+		is_tribal = no
 religion_group = muslim
 any_demesne_province = {
 OR = {
@@ -1467,6 +1731,7 @@ HORDE_RETTYPE_CAV7 =
 	
 	potential = {
 		is_nomadic = yes
+		NOT = { has_character_modifier = invading_population_halt } # This stops the Mongol Empire from spending all their money on super-expensive retinues
 	}
 		modifier = {
 		
@@ -1474,6 +1739,159 @@ HORDE_RETTYPE_CAV7 =
         horse_archers_morale = 0.30
         horse_archers_defensive = -0.15
         			}
+}
+
+
+HORDE_RETTYPE_PAGAN =
+{
+	first_type = 3
+	first_amount = 125
+	second_type = 6
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 50
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = pagan_group
+	}
+	modifier = {
+		light_cavalry_defensive = 0.5
+		light_cavalry_offensive = -0.3
+		horse_archers_offensive = 0.25
+		horse_archers_defensive = 0.5
+	}
+}
+
+HORDE_RETTYPE_MUSLIM =
+{
+	first_type = 6
+	first_amount = 125
+	second_type = 5
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 50
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = muslim
+	}
+	modifier = {
+		archers_offensive = 0.25
+		archers_defensive = 0.5
+		horse_archers_offensive = 0.25
+		horse_archers_defensive = 0.5
+	}
+}
+
+HORDE_RETTYPE_CHRISTIAN =
+{
+	first_type = 2
+	first_amount = 125
+	second_type = 6
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 75
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = christian
+	}
+	modifier = {
+		pikemen_defensive = 0.25
+		horse_archers_offensive = 0.25
+		horse_archers_defensive = 0.5
+	}
+}
+
+HORDE_RETTYPE_ZOROASTRIAN =
+{
+	first_type = 1
+	first_amount = 125
+	second_type = 6
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 75
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = zoroastrian_group
+	}
+	modifier = {
+		heavy_infantry_defensive = 0.25
+		horse_archers_offensive = 0.25
+		horse_archers_defensive = 0.5
+	}
+}
+
+HORDE_RETTYPE_JEWISH =
+{
+	first_type = 3
+	first_amount = 125
+	second_type = 1
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 50
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = jewish_group
+	}
+	modifier = {
+		heavy_infantry_defensive = 0.25
+		light_cavalry_defensive = 0.75
+	}
+}
+
+HORDE_RETTYPE_EASTERN =
+{
+	first_type = 0
+	first_amount = 125
+	second_type = 3
+	second_amount = 125
+	
+	special_troops = horse_archers
+	
+	hire_cost = 50
+	costs_piety = yes
+	
+	maintenance_multiplier = 0.25
+	
+	potential = {
+		is_nomadic = yes
+		religion_group = indian_group
+	}
+	modifier = {
+		light_infantry_offensive = 0.25
+		light_infantry_defensive = 0.5
+		light_cavalry_defensive = 0.5
+		light_cavalry_offensive = -0.3
+	}
 }
 
 # Khevsureti georgiens
@@ -1485,6 +1903,7 @@ RETTYPE_CUL_GEORGUN_RIR =
 	
 	potential = {               
 		is_nomadic = no
+		is_tribal = no
 		culture = georgian		
 NOT = { religion_group = muslim }
 	}
@@ -1510,6 +1929,7 @@ RETTYPE_CUL_GEORGDEUX_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture = georgian
 		independent = yes
 NOT = { religion_group = muslim }
@@ -1543,6 +1963,7 @@ RETTYPE_CUL_ARMELOL_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture = armenian
 		
 NOT = { religion_group = muslim }
@@ -1570,6 +1991,7 @@ RETTYPE_CUL_IRACATA_RIR =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 religion_group = zoroastrian_group
 	}
 	
@@ -1594,6 +2016,7 @@ RETTYPE_CUL_HAN =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture = han
 	}
 	
@@ -1613,6 +2036,7 @@ RETTYPE_CUL_TIBET =
 	
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture_group = tibetan_group
 	}
 	
@@ -1635,6 +2059,7 @@ RETTYPE_CUL_JURCHEN =
 
 	potential = {
 		is_nomadic = no
+		is_tribal = no
 		culture = jurchen
 	}
 	
@@ -1643,5 +2068,40 @@ RETTYPE_CUL_JURCHEN =
 		light_cavalry_morale = 0.1
 		knights_offensive = 0.1
 		knights_defensive = 0.1
+	}
+}
+
+# Patch 3.0 (Holy Fury)
+RETTYPE_CUL_ASSYRIAN = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture = assyrian
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.2
+		heavy_infantry_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_COPTIC = 
+{
+	first_type = 2
+	first_amount = 200
+	second_type = 5
+	second_amount = 100
+
+	potential = {
+		is_nomadic = no
+		culture = coptic
+	}
+	
+	modifier = {
+		archers_defensive = 0.3
+		pikemen_defensive = 0.2
 	}
 }

@@ -6,6 +6,12 @@
 999.1.1={
 	holder = 0
 }
+1137.1.1={
+	holder = 214710 #Owain ap Gruffyd
+}#Ruled as "Prince of the Welsh"
+1170.1.1={
+	holder = 0
+}
 1301.2.9={
 	holder = 454520
 }

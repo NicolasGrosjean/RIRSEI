@@ -3065,6 +3065,10 @@
 	}
 	1108.7.29 = {
 		give_nickname=nick_the_fat
+		effect={
+		set_variable = { which = physique_variable value = 15 }
+		}
+		trait = is_fat
 	}
 	1115.3.28 = {
 		add_spouse=213118 #Adèle de Savoie
@@ -3166,6 +3170,10 @@
 	}
 	1190.6.24 = {
 		trait="crusader"
+		create_bloodline = {
+			type = philippe_capet
+			has_dlc = "Holy Fury"
+		}
 	}
 	1191.4.21 = {
 		trait="ill"
@@ -5966,7 +5974,7 @@ trait ="Imp_regn"
 }
 
 206509 = {
-	name="Margueritetha"
+	name="Margaretha"
 	female=yes
 	dynasty=295
 	martial=5
@@ -13766,6 +13774,7 @@ trait ="Imp_regn"
 	culture="frankish"
 	trait="diligent"
 	trait="thrifty_clerk"
+	trait="lunatic"
 	father=418
 	mother=40409
 	1060.1.2 = {
@@ -29575,7 +29584,7 @@ add_claim = e_hre
 }
 
 94012 = {
-	name="Margueritetha"
+	name="Margaretha"
 	female=yes
 	dynasty=742 #de Sémur en Brionnais
 	religion="catholic"
@@ -29589,7 +29598,7 @@ add_claim = e_hre
 }
 
 94024 = {
-	name="Margueritetha"
+	name="Margaretha"
 	female=yes
 	dynasty=724
 	religion="catholic"
@@ -33095,7 +33104,7 @@ add_claim = e_hre
 
 40028 = {
 	name="Raoul" #de Mauléon
-	dynasty=5097 #father is dynasty 79
+	dynasty=79 #mother is dynasty 5097
 	religion="catholic"
 	culture="frankish"
 	father=40026 #Aimery IV de Thouars

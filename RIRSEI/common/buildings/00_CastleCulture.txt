@@ -251,6 +251,7 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+										culture = outremer
 ROOT = { has_building = ca_culture_Francais_sysfed_1 }
 
 				}
@@ -323,6 +324,7 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+										culture = outremer
 ROOT = { has_building = ca_culture_Francais_sysfed_2 }
 
 				}
@@ -411,6 +413,7 @@ has_global_flag = central
                                         culture = breton
 										culture = dutch
 										culture = GalloB
+										culture = outremer
 ROOT = { has_building = ca_culture_Francais_sysfed_3 }
 
 				}
@@ -2266,19 +2269,26 @@ has_global_flag = central
 }                          
 OR = {				
 culture = italian
+culture = dalmatian
 ROOT = { has_building = ca_culture_Italie_sysfed_1 }
 }
 			}
 		}
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
  }
                 add_number_to_name = no 
@@ -2311,19 +2321,26 @@ has_global_flag = central
 }                          
 OR = {				
 culture = italian
+culture = dalmatian
 ROOT = { has_building = ca_culture_Italie_sysfed_2 }
 }
 			}
 		}
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
 
 OR = {
@@ -2372,6 +2389,7 @@ has_global_flag = central
 }                          
 OR = {				
 culture = italian
+culture = dalmatian
 ROOT = { has_building = ca_culture_Italie_sysfed_3 }
 }
 			}
@@ -2379,13 +2397,19 @@ ROOT = { has_building = ca_culture_Italie_sysfed_3 }
 
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
 FROM = {
+OR = {
 culture = italian
+culture = dalmatian
+}
 }
 
 OR = {
@@ -6060,5 +6084,252 @@ tax_income = -3
 		ai_creation_factor = 101
 		
 		
+	}
+	
+	##################################
+	# Paradox 3.0 (Holy Fury) update #
+
+	#Roman Heavy Infantry camps
+	ca_culture_roman_1 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = roman
+				has_building = ca_culture_roman_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = roman
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_2 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = roman
+			}
+		}
+		upgrades_from = ca_culture_roman_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_3 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+				has_building = ca_culture_roman_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = roman
+			}
+		}
+		upgrades_from = ca_culture_roman_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 50
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_4 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+				has_building = ca_culture_roman_3
+				has_building = ca_culture_roman_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = roman
+			}
+		}
+		upgrades_from = ca_culture_roman_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 60
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+
+	# Coptic Spearmen
+	ca_culture_coptic_1 = {
+		desc = ca_culture_coptic_1_desc
+		potential = {
+			OR = {
+				culture = coptic
+				has_building = ca_culture_coptic_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = coptic
+			}
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = coptic
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_coptic_2 = {
+		desc = ca_culture_coptic_1_desc
+		potential = {
+			OR = {
+				culture = coptic
+				has_building = ca_culture_coptic_1
+				has_building = ca_culture_coptic_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = coptic
+			}
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				culture = coptic
+			}
+		}
+		upgrades_from = ca_culture_coptic_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_defensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_coptic_3 = {
+		desc = ca_culture_coptic_1_desc
+		potential = {
+			OR = {
+				culture = coptic
+				has_building = ca_culture_coptic_1
+				has_building = ca_culture_coptic_2
+				has_building = ca_culture_coptic_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = coptic
+			}
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				culture = coptic
+			}
+		}
+		upgrades_from = ca_culture_coptic_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 60
+		pikemen_defensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_coptic_4 = {
+		desc = ca_culture_coptic_1_desc
+		potential = {
+			OR = {
+				culture = coptic
+				has_building = ca_culture_coptic_1
+				has_building = ca_culture_coptic_2
+				has_building = ca_culture_coptic_3
+				has_building = ca_culture_coptic_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = coptic
+			}
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				culture = coptic
+			}
+		}
+		upgrades_from = ca_culture_coptic_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 80
+		pikemen_defensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
 	}
 }

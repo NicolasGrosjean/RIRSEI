@@ -4,39 +4,50 @@
 title = c_novgorod
 
 # Settlements
-max_settlements = 6
-b_borovichi = tribal
+max_settlements = 5
 
-#b_novgorod = city
+b_novgorod = tribal
+b_soltsy = temple
 
-b_tikhvin = temple # Slavic and Finnish Holy Site
-
-#b_chudovo = castle
-#b_okulovka = castle
-#b_boldorki = castle
-#b_luga = city
-#b_pestovo = castle
+#b_pankovka
+#b_chudovo
+#b_luga
+#b_batetsky
+#b_shimsk
 
 # Misc
 culture = ilmenian
 religion = slavic_pagan
 
 # History
-867.1.1 = {
+859.1.1 = {
 	culture = russian
+	b_novgorod = tb_hillfort_1
+	b_novgorod = tb_market_town_1
 }
-988.1.1 = { religion = orthodox }
+988.1.1 = {
+	religion = orthodox
+	b_novgorod = castle
+	b_novgorod = ca_keep_1
+	b_novgorod = ca_wall_1
+	b_novgorod = ca_barracks_1
+	b_novgorod = ca_militia_barracks_1
+	b_novgorod = ca_stable_1
+}
 1136.1.1 = {
-	b_chudovo = city #Novgorod republic founded
-	b_borovichi = castle
-	b_novgorod = city
-	b_borovichi = ca_keep_1
-	b_borovichi = ca_wall_1
+	b_novgorod = city #Novgorod republic founded
 	b_novgorod = ct_marketplace_1
 	b_novgorod = ct_wall_1
 	b_novgorod = ct_wall_q_1
-
-	capital = b_novgorod
+	b_novgorod = ct_training_grounds_1
+	b_novgorod = ct_barracks_1
+	b_novgorod = ct_guard_1
+	
+	b_pankovka = castle	#anachronistic, but to pimp up gameplaywise
+	b_pankovka = ca_keep_1
+	b_pankovka = ca_wall_1
+	b_pankovka = ca_barracks_1
+	b_pankovka = ca_militia_barracks_1
+	b_pankovka = ca_stable_1
 }
 1250.1.1 = { b_luga = city } #Hanseatic kontor
-1250.1.1 = { b_okulovka = city }

@@ -9,9 +9,8 @@ b_alcolea = castle
 b_cordoba = temple
 b_lucena = city
 b_cabra = temple
-b_andujar = castle
+b_belalcazar = castle
 #b_martos = temple
-#b_belalcazar = castle
 #b_canetedelastorres = castle
 
 culture = ibero
@@ -26,11 +25,13 @@ religion = sunni
 
 1070.1.1 = { capital = b_alcolea }
 
-1236.1.1 = { b_cordoba = castle }
-
-1236.1.1 = { capital = b_andujar }
-
-1236.1.1 = { remove_settlement = b_alcolea }
+1236.1.1 = { 
+	b_cordoba = castle
+	capital = b_belalcazar
+	
+	# VERY IMPORTANT: remove_settlement must always be scripted AFTER a 'capital' switch away from the same settlement
+	remove_settlement = b_alcolea
+}
 
 1251.1.1 = {
 	culture = castillan

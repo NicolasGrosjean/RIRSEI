@@ -5,15 +5,15 @@ title = c_bourges
 
 # Settlements
 max_settlements = 5
+
 b_bourges = castle
 b_deols = temple
 b_chateauroux = city
 
-#b_issoudun = castle
-#b_stsatur = temple
-#b_sancerre = castle
-#b_mehun = city
-#b_vierzon = temple
+#b_issoudun
+#b_stsatur
+#b_mehun
+#b_vierzon
 
 #Misc
 religion = catholic
@@ -21,4 +21,4 @@ culture = gallo
 
 # History
 790.1.1 = { culture = frankish }
-1151.1.1 = { b_sancerre = castle }
+1151.1.1 = { b_issoudun = castle }

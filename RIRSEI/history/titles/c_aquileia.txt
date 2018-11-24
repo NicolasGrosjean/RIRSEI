@@ -60,8 +60,8 @@ de_jure_liege = "d_verona"
 	holder = 190262 #Peter
 }
 863.1.1={
-	liege = "d_verona"
-de_jure_liege = "d_verona"
+	liege = "d_friuli"
+de_jure_liege = "d_friuli"
 }
 863.1.1={
 	holder = 167804

@@ -4,23 +4,20 @@
 title = c_trent
 
 # Settlements
-max_settlements = 4
+max_settlements = 3
 
 b_trento = temple
-
-b_meran = castle
-b_bozen = city
+b_rovereto = castle
+b_riva = city
 
 #b_brixen = temple
 #b_schlanders = castle
 #b_bruneck = castle 
-#b_riva = castle
-#b_rovereto = castle
 
 # Misc
 culture = lombard
 religion = catholic
 
 # History
-790.1.1 = { culture = italian }
-1187.1.1 = { b_brixen = temple } 
+905.1.1 = { culture = italian }
+1187.1.1 = { b_brixen = temple }

@@ -1,5 +1,5 @@
 700.1.1 = {
-
+	de_jure_liege = e_wendish_empire
 }
 
 
@@ -12,6 +12,7 @@ de_jure_liege = e_hre
 	liege = "e_hre"
 	law = agnatic_succession
 	law = succ_seniority
+	law = centralization_2
 }
 1198.9.1={
 	law = succ_primogeniture

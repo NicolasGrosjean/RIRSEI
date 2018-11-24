@@ -4,17 +4,12 @@
 title = c_figuig
 
 # Settlements
-max_settlements = 5
+max_settlements = 2
 
 b_figuig = castle
-b_bouarfa = city
-b_safsaf = temple
-b_benitajjit = castle
 
-#b_ainechchair = castle
-#b_ich = castle
-#b_bechar = castle
-#b_boudnib = castle
+#b_bouarfa
+#b_ich
 
 # Misc
 culture = maghreb_arabic

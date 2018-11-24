@@ -5,7 +5,8 @@
 # rule_token = {
 #	name = "TEXT_KEY_FOR_NAME"
 #	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups
+#	alt_start_default = option_name					# Default value in alt start. If not set, defaults  
 #	option = {										# please note that the first option is always the default option
 #		name = option_token
 #		text = "TEXT_KEY_FOR_OPTION_NAME"
@@ -13,9 +14,11 @@
 #	}
 # }
 
-# NOTA : In RIRSEI, we use 'achievements = no' to separe the modifiable from unmodifiable rules
+# NOTA : In RIRSEI, we use 'achievements = no' to separe the editable from non editable rules
 
-# Modifiable rules
+##################
+# Editable rules #
+##################
 aztec_invasion = {
 	name = "RULE_AZTEC_INVASION"
 	dlc = "Sunset Invasion"
@@ -54,6 +57,21 @@ shattered_retreat = {
 		name = off
 		text = "RULE_OPTION_OFF"
 		desc = "RULE_SHATTERED_RETREAT_OFF_DESC"
+	}
+}
+
+army_movement_lock = {
+	name = "RULE_MOVEMENT_LOCK"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_MOVEMENT_LOCK_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_MOVEMENT_LOCK_OFF_DESC"
 	}
 }
 
@@ -114,11 +132,11 @@ dueling = {
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_DUELING_DEFAULT_DESC"
 	}
-	option = {
-		name = restricted
-		text = "RULE_OPTION_RESTRICTED"
-		desc = "RULE_DUELING_RESTRICTED_DESC"
-	}
+	#option = {
+	#	name = restricted
+	#	text = "RULE_OPTION_RESTRICTED"
+	#	desc = "RULE_DUELING_RESTRICTED_DESC"
+	#}
 	option = {
 		name = unrestricted
 		text = "RULE_OPTION_UNRESTRICTED"
@@ -179,6 +197,11 @@ chinese_interactions = {
 		name = within_range
 		text = "RULE_OPTION_WITHIN_RANGE"
 		desc = "RULE_WITHIN_RANGE_DESC"
+	}
+	option = {
+		name = restricted
+		text = "RULE_OPTION_RESTRICTED"
+		desc = "RULE_RESTRICTED_DESC"
 	}
 	option = {
 		name = all
@@ -305,8 +328,287 @@ conclave_education_focuses = {
 	}
 }
 
+generate_families = {
+	name = "RULE_GENERATE_FAMILIES"
+	group = "RULE_GROUP_VARIOUS"
+	alt_start_default = off
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_GENERATE_FAMILIES_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_GENERATE_FAMILIES_OFF_DESC"
+	}
+	option = {
+		name = ai_only
+		text = "RULE_OPTION_AI_ONLY"
+		desc = "RULE_GENERATE_FAMILIES_AI_ONLY_DESC"
+	}
+}
 
-# Unmodifiable rules
+exclave_purge = {
+	name = "RULE_EXCLAVE_PURGE"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_OFF_DESC"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_LIMITED_DESC"
+	}
+	option = {
+		name = limited_naval
+		text = "RULE_OPTION_LIMITED_NAVAL"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_LIMITED_NAVAL_DESC"
+	}
+	option = {
+		name = significant
+		text = "RULE_OPTION_SIGNIFICANT"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_SIGNIFICANT_DESC"
+	}
+	option = {
+		name = harsh
+		text = "RULE_OPTION_HARSH"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_HARSH_DESC"
+	}
+	option = {
+		name = total
+		text = "RULE_OPTION_TOTAL"
+		desc = "RULE_OPTION_EXCLAVE_PURGE_TOTAL_DESC"
+	}
+}
+
+silly_events = {
+	name = "RULE_SILLY"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SILLY_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SILLY_OFF_DESC"
+	}
+	option = {
+		name = unrestricted
+		text = "RULE_OPTION_UNRESTRICTED"
+		desc = "RULE_SILLY_UNRESTRICTED_DESC"
+	}
+}
+dynamic_crusader_states = {
+	name = "RULE_CRUSADER_STATES"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = default
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_DYNAMIC_CRUSADER_STATES_ON"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_DYNAMIC_CRUSADER_STATES_LIMITED"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_DYNAMIC_CRUSADER_STATES_OFF"
+	}
+}
+
+shepherds_crusade = {
+	name = "RULE_SHEPHERDS_CRUSADE"
+	dlc = "Sons of Abraham"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SHEPHERDS_CRUSADE_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SHEPHERDS_CRUSADE_OFF"
+	}
+}
+
+fourth_crusade = {
+	name = "RULE_FOURTH_CRUSADE"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_FOURTH_CRUSADE_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_FOURTH_CRUSADE_OFF"
+	}
+}
+
+childrens_crusade = {
+	name = "RULE_CHILDRENS_CRUSADE"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_CHILDRENS_CRUSADE_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_CHILDRENS_CRUSADE_OFF"
+	}
+}
+
+northern_crusade = {
+	name = "RULE_NORTHERN_CRUSADE"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_NORTHERN_CRUSADE_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_NORTHERN_CRUSADE_OFF"
+	}
+}
+
+reconquista = {
+	name = "RULE_RECONQUISTA"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_CRUSADE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_RECONQUISTA_ON"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_RECONQUISTA_LIMITED"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_RECONQUISTA_OFF"
+	}
+}
+
+child_of_destiny = {
+	name = "RULE_CHILD_OF_DESTINY"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_CHILD_OF_DESTINY_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_CHILD_OF_DESTINY_OFF"
+	}
+}
+
+pregnancy_flavor = {
+	name = "RULE_PREGNANCY_FLAVOR"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_PREGNANCY_FLAVOR_ON"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_PREGNANCY_FLAVOR_LIMITED"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_PREGNANCY_FLAVOR_OFF"
+	}
+}
+
+martial_headgear = {
+	name = "RULE_MARTIAL_HEADGEAR"
+	dlc = "Holy Fury"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_MARTIAL_HEADGEAR_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_MARTIAL_HEADGEAR_OFF"
+	}
+}
+
+non_aggression_pacts_block_factions = {
+	name = "RULE_NAP_BLOCK_FACTIONS"
+	group = "RULE_GROUP_WARFARE"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_NAP_BLOCK_FACTIONS_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_NAP_BLOCK_FACTIONS_OFF"
+	}
+}
+
+blood_splatter_rule = {
+	name = "RULE_BLOOD_SPLATTER"
+	group = "RULE_GROUP_VARIOUS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_BLOOD_SPLATTER_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_BLOOD_SPLATTER_OFF"
+	}
+}
+
+hellenism_rule = {
+	name = "RULE_HELLENISM"
+	group = "RULE_GROUP_RELIGION"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_HELLENISM_ON"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_HELLENISM_OFF"
+	}
+}
+
+######################
+# NON editable rules #
+######################
 
 unjustified_wars = {
 	name = "RULE_UNJUSTIFIED_WARS"

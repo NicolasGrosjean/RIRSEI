@@ -2475,6 +2475,10 @@ trait = roi_oint
 	father=168670
 	410.1.1 = {
 		birth=yes
+		create_bloodline = {
+			type = merovingian
+			has_dlc = "Holy Fury"
+		}
 	}
 	
 	457.1.1 = {
@@ -3877,6 +3881,10 @@ trait = roi_oint
 	}
 	732.11.1 = {
 		give_nickname = nick_the_hammer
+		create_bloodline = {
+			type = carolingian
+			has_dlc = "Holy Fury"
+		}
 	}
 	741.1.23 = {
 		death="741.1.23"
@@ -4314,4 +4322,51 @@ trait = roi_oint
    828.1.1={
      death=yes
    }
+}
+
+245000 = { #Placeholder for early Escuens
+	name="Bernard"
+	religion="catholic"
+	culture="old_frankish"
+	735.1.1={
+		birth=yes
+	}
+	790.1.1={
+		death=yes
+	}
+}
+245001 = { #Placeholder for early Escuens
+	name = "Guy"
+	religion = "catholic"
+	culture = "old_frankish"
+	843.1.1={
+		birth = yes
+	}
+	901.1.1={
+		death=yes
+	}
+}
+
+245002 = { #Placeholder for early Amous
+	name = "Lambert"
+	religion = "catholic"
+	culture = "old_frankish"
+	728.1.1={
+		birth=yes
+	}
+	782.1.1={
+		death=ye
+	}
+}
+
+245003 = {
+	name = "Adelelme"
+	religion = "catholic"
+	culture = "old_frankish"
+	832.1.1 = {
+		birth = yes
+	}
+	891.1.1={
+		death=yes
+	}
 }

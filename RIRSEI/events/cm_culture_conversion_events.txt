@@ -27,6 +27,7 @@ province_event = {
 	picture = GFX_evt_stone_church
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		culture = pictish
 		owner = {
 			NOT = {	culture = pictish }
@@ -74,6 +75,7 @@ province_event = {
 	picture = GFX_evt_stone_church
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		culture = lombard
 		region = world_europe_south_italy
 		any_province_holding = {
@@ -117,6 +119,7 @@ province_event = {
 	picture = GFX_evt_tribal_lands
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		county = { region = custom_frisia }
 		OR = {
 			culture = old_frankish
@@ -184,6 +187,7 @@ province_event = {
 	picture = GFX_evt_tribal_lands
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		culture = old_saxon
 		has_global_flag = widukind_spawned
 		NOT = { region = custom_frisia }
@@ -244,6 +248,7 @@ province_event = {
 	picture = GFX_evt_stone_church
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		year = 776
 		culture = gallo
 		NOT = { region = custom_frisia }
@@ -295,6 +300,7 @@ province_event = {
 
 	trigger = {
 		culture = ibero
+		should_evolve_cultures_trigger = yes
 		NOT = { religion_group = muslim }
 		region = world_europe_west_francia
 		NOT = {
@@ -353,6 +359,7 @@ province_event = {
 
 	trigger = {
 		culture = ibero
+		should_evolve_cultures_trigger = yes
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_castillian
@@ -417,6 +424,7 @@ province_event = {
 
 	trigger = {
 		culture = ibero
+		should_evolve_cultures_trigger = yes
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_catalan
@@ -481,6 +489,7 @@ province_event = {
 
 	trigger = {
 		culture = ibero
+		should_evolve_cultures_trigger = yes
 		NOT = { religion_group = muslim }
 		OR = {
 			region = custom_portuguese
@@ -529,6 +538,7 @@ province_event = {
 
 	trigger = {
 		culture = ibero
+		should_evolve_cultures_trigger = yes
 		religion_group = muslim
 		OR = {
 			region = custom_andalusian
@@ -592,6 +602,7 @@ province_event = {
 	picture = GFX_evt_tribal_lands
 
 	trigger = {
+		should_evolve_cultures_trigger = yes
 		culture_group = east_slavic
 		NOT = { culture = russian }
 		owner = {

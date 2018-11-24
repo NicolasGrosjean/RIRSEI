@@ -5,15 +5,15 @@ title = c_amiens
 
 # Settlements
 max_settlements = 5
+
 b_peronne = castle
 b_amiens = city
-b_beauvais = temple
+b_noyon = temple
 
-#b_soissons = castle
-#b_corbie = castle
-#b_montdidier = city
-#b_noyon = temple
-#b_breteuil = castle
+#b_corbie
+#b_montdidier
+#b_breteuil
+#b_nesle
 
 culture = gallo
 religion = catholic

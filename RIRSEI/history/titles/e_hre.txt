@@ -137,7 +137,7 @@ set_global_flag = compromis_serhre
 }
 1024.7.13={
 	holder = 1312 #Konrad II
-	law = succ_feudal_elective
+	law = succ_hre_elective
 	law = agnatic_succession
 	law = investiture_law_1
 }

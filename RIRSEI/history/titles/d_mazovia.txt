@@ -1,3 +1,6 @@
+765.2.8 = {
+	holder = 256021
+}
 820.1.1={
 	holder = 82248
 }
@@ -73,5 +76,6 @@ liege = "k_polandball"
 }
 
 1313.4.20={
+	liege=0
 	holder = 125991
 }

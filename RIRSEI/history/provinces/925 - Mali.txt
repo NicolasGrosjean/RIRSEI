@@ -4,12 +4,12 @@
 title = c_mali
 
 # Settlements
-max_settlements = 4
-b_boure = tribal
-b_bamako = temple
+max_settlements = 5
+b_niani = tribal
+b_selegon = temple
 
-#b_niani = city
-
+#b_kamaro
+#b_tabou
 #b_safo = castle
 #b_baguineda = castle
 #b_dialakoro = castle
@@ -21,8 +21,9 @@ culture = manden
 religion = west_african_pagan
 
 # History
-1250.1.1 = {
-	b_boure = castle
-	b_niani = city
-}
 1050.1.1 = { religion = sunni }
+1250.1.1 = {
+	b_niani = castle
+	b_kamaro = city
+}
+

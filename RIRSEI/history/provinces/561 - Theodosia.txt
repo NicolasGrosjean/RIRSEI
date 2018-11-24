@@ -17,7 +17,7 @@ b_theodosia = tribal
 #b_lusta = castle
 
 # Misc
-culture = greek
+culture = crimean_gothic
 religion = orthodox
 
 # History

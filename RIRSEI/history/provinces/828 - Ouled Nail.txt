@@ -4,12 +4,11 @@
 title = c_ouled_nail
 
 # Settlements
-max_settlements = 3
+max_settlements = 2
 
-b_tubirett = castle
-b_msila = city
-b_sidiheg = temple
+b_al_aghwat = castle
 
+#b_tilghemt
 #b_roumana = castle
 #b_ainzia = castle
 #b_sidinhar = castle
@@ -21,6 +20,4 @@ culture = maghreb_arabic
 religion = khadjirite
 
 # History
-
 909.1.1 = { religion = sunni }
-

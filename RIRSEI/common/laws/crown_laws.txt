@@ -73,14 +73,14 @@ add_law_w_cooldown = centralization_3
 
 
 			
-#			set_appoint_generals = no
-#			set_appoint_regents = no
+			#set_appoint_generals = no
+			#set_appoint_regents = no
 			set_the_kings_peace = no
 			set_the_kings_full_peace = no
 			set_protected_inheritance = no
 			set_allow_title_revokation = no
 			set_allow_free_infidel_revokation = no
-#			set_allow_free_revokation = no
+			#set_allow_free_revokation = no
 		}
 		
 		city_vassal_min_levy = 0.0
@@ -181,14 +181,14 @@ has_law = centralization_4
 revoke_law = centralization_4
 add_law_w_cooldown = centralization_3
 }
-#			set_appoint_generals = yes
-#			set_appoint_regents = no
+			#set_appoint_generals = yes
+			#set_appoint_regents = no
 			set_the_kings_peace = no
 			set_the_kings_full_peace = no
 			set_protected_inheritance = no
 			set_allow_title_revokation = no
 			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = no
+			#set_allow_free_revokation = no
 		}
 		
 		city_vassal_min_levy = 0.2
@@ -218,6 +218,7 @@ trait = crowned_by_pope
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -287,14 +288,14 @@ has_law = imperial_administration
 }
 set_law = feudal_administration
 }
-#			set_appoint_generals = yes
-#			set_appoint_regents = no
+			#set_appoint_generals = yes
+			#set_appoint_regents = no
 			set_the_kings_peace = yes
 			set_the_kings_full_peace = no
 			set_protected_inheritance = no
 			set_allow_title_revokation = yes
 			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = no
+			#set_allow_free_revokation = no
 		}
 		
 		city_vassal_min_levy = 0.4
@@ -335,6 +336,7 @@ trait = crowned_by_pope
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -402,14 +404,14 @@ trait = crowned_by_pope
 				revoke_law = crown_authority_3
 				revoke_law = crown_authority_4
 			}
-#			set_appoint_generals = yes
-#			set_appoint_regents = yes
+			#set_appoint_generals = yes
+			#set_appoint_regents = yes
 			set_the_kings_peace = yes
 			set_the_kings_full_peace = no
 			set_protected_inheritance = yes
 			set_allow_title_revokation = yes
 			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = no
+			#set_allow_free_revokation = no
 		}
 		
 		city_vassal_min_levy = 0.6
@@ -454,6 +456,7 @@ has_landed_title = d_ibadi
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -518,14 +521,14 @@ has_landed_title = d_ibadi
 				revoke_law = crown_authority_3
 				revoke_law = crown_authority_4
 			}
-#			set_appoint_generals = yes
-#			set_appoint_regents = yes
+			#set_appoint_generals = yes
+			#set_appoint_regents = yes
 			set_the_kings_peace = yes
 			set_the_kings_full_peace = yes
 			set_protected_inheritance = yes
 			set_allow_title_revokation = yes
 			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = yes
+			#set_allow_free_revokation = yes
 		}
 		
 		city_vassal_min_levy = 0.8
@@ -548,6 +551,11 @@ has_landed_title = d_ibadi
 				}
 				is_tribal = no
 				is_nomadic = no
+				NOT = {
+					rightful_religious_head_scope = {
+						character = ROOT
+					}
+				}
 			}
 		}
 		allow = {
@@ -590,9 +598,15 @@ NOT = { has_landed_title = e_hre }
 				}
 				is_tribal = no
 				is_nomadic = no
+				NOT = {
+					rightful_religious_head_scope = {
+						character = ROOT
+					}
+				}
 			}
 		}
 allow = {
+			holy_order = no
 			OR = {
 				NOT = { has_global_flag = que_investvic }
 				has_global_flag = emp_vic_quer

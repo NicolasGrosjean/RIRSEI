@@ -2702,6 +2702,10 @@
 	}
 	1243.1.1={
 		give_nickname = nick_the_conqueror
+		create_bloodline = {
+			type = james
+			has_dlc = "Holy Fury"
+		}
 	}
 	1276.7.27={
 		add_spouse=71697
@@ -10713,7 +10717,7 @@
 	1220.1.1={
 		birth="1220.1.1"
 	}
-	1249.1.1 = {
+	1266.1.1 = {
 		employer=457621
 	}
 	1250.1.1 = {

@@ -12,7 +12,6 @@ b_lisieux = temple
 #b_honfleur = city
 #b_falaise = castle
 #b_sees = temple
-#b_verneuil = castle
 
 # Misc
 culture = gallo

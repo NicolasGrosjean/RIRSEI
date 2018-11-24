@@ -4,15 +4,16 @@
 title = c_troyes
 
 # Settlements
-max_settlements = 4
-b_troyes = castle
-b_langres = temple
-b_chaumont = city
-b_brienne = castle
+max_settlements = 5
 
-#b_clairvaux = temple
-#b_chacenay = castle
-#b_rosnay = city 
+b_troyes = castle
+b_brienne = city
+b_langres = temple
+b_chaumont = castle
+
+#b_clairvaux
+#b_rosnay
+#b_chacenay
 
 culture = gallo
 religion = catholic
