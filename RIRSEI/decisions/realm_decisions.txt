@@ -734,7 +734,10 @@ completely_controls = d_latium
 		potential = {
 			is_playable = yes
 			independent = yes
-			is_female = no
+			OR = {
+				is_female = no
+				gender_equality_trigger = yes
+			}
 			prisoner = no
 			is_adult = yes
 			NOT = { trait = incapable }
@@ -811,6 +814,43 @@ letter_event = { id = RIRSEBYZ.111135 }
 }
 			prestige = -300
 			wealth = -300
+			activate_title = { title = d_varangian_guard status = yes }
+			hidden_tooltip = {
+				narrative_event = { id = TOG.3100 }
+				if = {
+					limit = {
+						gender_equality_trigger = yes
+					}
+					create_character = {
+						random_traits = yes
+						religion = norse_pagan
+						culture = norse
+						dynasty = NONE
+						female = 50
+						age = 34
+						trait = skilled_tactician
+					}
+				}
+				else = {
+					create_character = {
+						random_traits = yes
+						religion = norse_pagan
+						culture = norse
+						dynasty = NONE
+						female = no
+						age = 34
+						trait = skilled_tactician
+					}
+				}
+				new_character = {
+					add_trait = varangian
+					set_character_flag = is_chosen_varangian_leader
+					d_varangian_guard = {
+						grant_title = PREV
+					}
+					set_defacto_liege = ROOT
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

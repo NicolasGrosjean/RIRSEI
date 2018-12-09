@@ -8672,7 +8672,7 @@ trait = sultan_sultan
 # Thugluq
 
 170256 = {
-	name="Thugluq"
+	name="Tughluq"
 	dynasty=1040208
 	religion="sunni"
 	culture="turkish"
@@ -8685,7 +8685,7 @@ trait = sultan_sultan
 }
 
 170257 = {
-	name="Thugluq" #Ghiyath al-Din Tughluq
+	name="Tughluq" #Ghiyath al-Din Tughluq
 	dynasty=1040208
 	religion="sunni"
 	culture="turkish"
