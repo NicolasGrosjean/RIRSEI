@@ -2345,595 +2345,6 @@ e_terra_imperii = {
 			}
 		}
 	}
-	
-	k_bavaria = {
-		color={ 91 100 100 }
-		color2={ 220 220 20 }
-		
-		culture = german
-		
-		roman = "Raetia"
-
-		capital = 1700 # Regensburg
-		
-		catholic = 2000 # Crusade target weight
-		
-		d_bavaria = {
-			color={ 128 121 121 }
-			color2={ 255 255 255 }
-			
-			capital = 1700 # Regensburg
-			
-			c_passau = {
-				color={ 54 54 54 }
-				color2={ 255 255 255 }
-		
-				b_passau = {
-				}
-				b_ortenburg = {
-				}
-				b_schaumberg = {
-				}
-				b_formbach = {
-				}
-				b_ulrichsberg = {
-				}
-				b_raab = {
-				}
-				b_freyung = {
-				}
-			}
-			c_oberbayern = {
-				color={ 66 66 66 }
-				color2={ 255 255 255 }
-			
-				b_munchen = {
-				}
-				b_dachau = {
-				}
-				b_freising = {
-				}
-				b_andechs = {
-				}
-				b_diessen = {
-				}
-				b_dingolfing = {
-				}
-				b_pfaffenberg = {
-				}
-				b_ebersberg = {
-				}
-			}
-			c_regensburg = {
-				color={ 70 50 70 }
-				color2={ 255 255 255 }
-
-				b_regensburg = {
-				}
-				b_landshut = {
-				}
-				b_ingolstadt = {
-				}
-				b_straubing = {
-				}
-				b_rohrbach = {
-				}
-				b_lerchenfeld = {}
-				b_kelheim = {}
-			}
-			c_niederbayern = {
-				color={ 60 60 60 }
-				color2={ 255 255 255 }
-		
-				b_regenstauf = {}
-				b_cham = {
-				}
-				b_schwandorf = {}
-				b_kirchroth = {
-				}
-				b_sankt_englmar = {}
-				b_roding = {}
-				b_wittelsbach = {
-				}
-			}
-		}
-		d_nordgau = {
-			color={ 57 57 70 }
-			color2={ 255 255 255 }
-
-			capital = 314 # Nurnberg
-
-			c_nurnberg = {
-				color={ 57 57 57 }
-				color2={ 255 255 255 }
-		
-				b_nurnberg = {
-				}
-				b_ellwangen = {
-				}
-				b_furth = {
-				}
-				b_kulmbach = {
-				}
-				b_hohenburg = {
-				}
-				b_nordlingen = {
-				}
-				b_erlangen = {
-				}
-			}
-			c_eichstadt = {
-				color={ 57 57 40 }
-				color2={ 255 255 255 }
-
-				b_eichstadt = {}
-				b_weissenburg = {}
-				b_abenberg = {}
-				b_lechtgemund = {}
-				b_trubendingen = {}
-				b_hirschberg = {}
-				b_pollenfeld = {}
-			}
-		}
-		d_salzburg = {
-			color={ 180 190 200 }
-			color2= { 255 255 255 }
-
-			capital = 448 # Salzburg
-
-			c_salzburg = {
-				color={ 63 63 63 }
-				color2={ 255 255 255 }
-
-				carantanian = "Solnograd"
-			
-				b_salzburg = {
-					carantanian = "Solnograd"
-				}
-				b_durmberg = {
-				}
-				b_waging = {
-				}
-				b_plain = {}
-				b_berchtesgaden = {
-				}
-				b_tittmoning = {
-				}
-				b_laufen = {
-				}
-				b_muhldorf = {
-				}
-				b_gastein = {
-				}
-			}
-			c_pongau = {
-				color={ 68 68 68 }
-				color2 = { 255 255 255 }
-
-				b_pongau = {}
-				b_zelle = {}
-				b_taemswich = {}
-				b_salvet = {}
-				b_mittersill = {}
-				b_hoven = {}
-				b_st_maximillian = {}
-			}
-		}
-		d_osterreich = { 
-			color={ 191 182 182 }
-			color2={ 255 255 255 }
-			
-			capital = 449 #Österreich
-
-			roman = "Noricum"
-		
-			c_steiermark = {
-				color={ 45 45 45 }
-				color2={ 255 255 255 }
-
-				carantanian = "Stajerska"
-				
-				b_steyr = {
-				}
-				b_losenstein = {}
-				b_garstina = {}
-				b_ternberg = {}
-				b_rubinicha = {}
-				b_behamberg = {}
-				b_grobraming = {}
-			}
-			c_traungau = {
-				color={ 60 40 80 }
-				color2={ 255 255 255 }
-
-				carantanian = "Traun"
-
-				b_enisiburg = {}
-				b_linz = {
-					carantanian = "Linec"
-					bohemian = "Linec"
-				}
-				b_wels = {}
-				b_eferding = {}
-				b_gmunden = {}
-				b_hallstatt = {}
-				b_pons_veckelahe = {}
-				b_ebensee = {}
-			}
-			c_krems = {
-				color={ 40 50 40 }
-				color2={ 255 255 255 }
-
-				german = Krems
-				old_saxon = Krems
-
-				b_krems = {}
-				b_gars = {}
-				b_eggenburg = {}
-				b_kuenring = {}
-				b_horn_krems = {}
-				b_zwettl = {}
-				b_retz = {}
-			}
-			c_osterreich = {
-				color={ 48 48 48 }
-				color2={ 255 255 255 }
-
-				dutch = Wenen
-				frisian = Wenen
-				carantanian = "Dunaj"
-				bohemian = "Víden"
-				croatian = "Bec"
-			
-				b_wien = {
-					norse = Wien
-					swedish = Wien
-					danish = Wien
-					norwegian = Wien
-					german = Wien
-					lombard = Wien
-					old_frankish = Wien
-					suebi = Wien
-					dutch = Wenen
-					frisian = Wenen
-					saxon = Wien
-					old_saxon = Wien
-					carantanian = "Dunaj"
-					bohemian = "Víden"
-					croatian = "Bec"
-				}
-				b_wagram = {
-				}
-				b_klosterneuburg = {}
-				b_baden_wien = {}
-				b_korneuburg = {}
-				b_modling = {}
-				b_heiligenkreuz = {}
-			}
-			c_freistadt = {
-				color={ 30 40 30 }
-				color2={ 255 255 255 }
-
-				bohemian = "Zahlow"
-				pommeranian = "Zahlow"
-				croatian = "Zahlow"
-				carantanian = "Zahlow"
-
-				b_freistadt = {}
-				b_steyregg = {}
-				b_grein = {}
-				b_pergkirchen = {}
-				b_zell = {}
-				b_aschach = {}
-				b_taversheim = {}
-			}
-			c_medelike = {
-				color={ 25 35 45 }
-				color2={ 255 255 255 }
-
-				b_zelking = {}
-				b_melk = {}
-				b_stpolten = {}
-				b_ybbs = {}
-				b_waidhofen = {}	
-				b_gaming = {}
-				b_pochlarn = {}
-				b_lilienfeld = {}
-			}
-		}
-
-		d_styria = {
-			color={ 150 140 140 }
-			color2={ 255 255 255 }
-
-			capital = 1693
-
-			german = "Steiermark"
-			carantanian = "Gradec"
-
-			c_leoben = {
-				color={ 50 30 40 }
-				color2={ 255 255 255 }
-
-				b_eppenstein = {}
-				b_leoben = {}
-				b_neuberg = {}
-				b_judenburg = {}
-				b_gallenstein = {}
-				b_rottenmann = {}
-				b_bruck_leoben = {}
-			}
-			c_graz = {
-				color={ 150 120 150 }
-				color2={ 255 255 255 }
-
-				carantanian = "Gradec"
-				croatian = "Gradec"
-
-				b_graz = {
-					carantanian = "Gradec"
-					croatian = "Gradec"
-				}
-				b_radkersburg = {
-				}
-				b_leibnitz = {
-				}
-				b_reun = {}
-				b_friedberg_graz = {}
-				b_voitsberg = {}
-				b_stainz = {}
-				b_feldbach = {}
-
-			}
-			c_pitten = {
-				color={ 120 150 120 }
-				color2={ 255 255 255 }
-
-				b_pitten = {}
-				b_fischau = {}
-				b_wr_neustadt = {}
-				b_neunkirchen = {}
-				b_edelz = {}
-				b_ternitz = {}
-				b_gloggnitz = {}
-			}
-		}
-		
-		d_tyrol = {  
-			color={ 157 154 154 }
-			color2={ 255 255 255 }
-			
-			capital = 316 #Tirol
-		
-			c_tirol = {
-				color={ 90 90 90 }
-				color2={ 255 255 255 }
-			
-				b_bregenz = {
-				}
-				b_landeck = {
-				}
-				b_stanton = {
-				}
-				b_imst = {
-				}
-				b_sterzing = {
-				}
-				b_ried = {
-				}
-				b_dornbirn = {
-				}
-				b_nenzing = {
-				}
-			}
-			c_innsbruck = {
-				color={ 84 84 84 }
-				color2={ 255 255 255 }
-
-				carantanian = "Inomost"
-			
-				b_innsbruck = {
-					carantanian = "Inomost"
-				}
-				b_kufstein = {
-				}
-				b_stams = {
-				}
-				b_schwaz = {
-				}
-				b_kitzbuhel = {
-				}
-				b_jenbach = {
-				}
-				b_fugen = {
-				}
-			}
-			c_trent = {
-
-				german = "Trient"
-				italian = "Trento"
-
-				color={ 253 239 228 }
-				color2={ 255 255 255 }
-	
-				b_trento = {
-				}
-				b_brixen = {
-				}
-				b_molven = {
-				}
-				b_schlanders = {
-				}
-				b_bruneck = {
-				} 
-				b_riva = {
-				}
-				b_rovereto = {
-				}
-			}
-			c_bolzano = {
-
-				german = "Bozen"
-
-				color = { 210 250 180 }
-				color2 = { 255 255 255 }
-
-				b_eppan = {
-				}
-				b_bozen = {
-				}
-				b_meran = {
-				}
-				b_st_jacob = {
-				}
-				b_dolladitz = {
-				}
-				b_cortina = {
-				}
-				b_st_helena = {
-				}
-				b_florian = {
-				}
-			}
-		}
-
-		d_carniola = {
-			color={ 150 200 230 }
-			color2={ 255 255 255 }
-
-			capital = 457
-
-			croatian = "Kranj"
-			carantanian = "Kranj"
-			bosnian = "Kranj"
-			german = "Krain"
-
-			c_istria = {
-				color={ 165 245 200 }
-				color2={ 255 255 255 }
-				
-				b_mitterburg = {
-					croatian = "Pazin"
-					serbian = "Pazin"
-					carantanian = "Pazin"
-					bosnian = "Pazin"
-					italian = "Pisino"
-					greek = "Pisino"
-				}
-				b_fiume = {
-					croatian = "Rijeka"
-					carantanian = "Reka"
-					bosnian = "Rijeka"
-				}
-				b_lovrana = {
-				}
-				b_wolauska = {
-				}
-				b_karstberg = {
-				}
-				b_duino = {
-				}
-				b_pula = {
-				}
-			}
-			c_krain = {
-				color={ 145 225 190 }
-				color2={ 255 255 255 }
-				
-				croatian = "Kranj"
-				carantanian = "Kranj"
-				bosnian = "Kranj"
-				german = "Krain"
-
-				b_gorz = {
-					carantanian = "Gorica"
-					croatian = "Gorizia"
-					bosnian = "Gorizia"
-				}
-				b_krainburg = {
-					croatian = "Kranj"
-					carantanian = "Kranj"
-					bosnian = "Kranj"
-				}
-				b_gurk = {
-				}
-				b_stain = {
-				}
-				b_guetenegg = {
-				}
-				b_auersperg = {
-				}
-				b_zerknitz = {
-				}
-				b_stveit = {
-				}
-			}
-			c_pettau = {
-				color={ 140 200 220 }
-				color2={ 255 255 255 }
-
-				croatian = "Ptuj"
-				carantanian = "Ptuj"
-				bosnian = "Ptuj"
-				roman = "Poetovio"
-				greek = "Poetovio"
-				dalmatian = "Poetovio"
-
-				b_marburg_pettau = {}
-				b_pettau = {}
-				b_friedau = {}
-				b_bistrica = {}
-				b_weitenstein = {}
-				b_studenitz = {}
-				b_seitz = {}
-			}
-		}
-
-		d_carinthia = {
-			color={ 165 255 250 }
-			color2={ 255 255 255 }
-			
-			capital = 456 # Villach
-
-			german = "Kärnten"
-			carantanian = "Carantania"
-
-			c_karnten = {
-				color={ 125 225 195 }
-				color2={ 255 255 255 }
-
-				carantanian = "Beljak"
-				
-				b_villach = {
-					carantanian = "Beljak"
-				}
-				b_klagenfurt = {
-					carantanian = "Celovec"
-				}
-				b_treffen = {
-				}
-				b_lienz = {}
-				b_spittl = {}
-				b_greifenburg = {}
-				b_vorelach = {}
-			}
-			c_friesach = {
-				color={ 150 240 250 }
-				color2={ 255 255 255 }
-
-				carantanian = "Breze"
-
-				b_petersberg = {}
-				b_sankt_veit = {}
-				b_sankt_lambrecht = {}
-				b_wolfsberg = {
-				}
-				b_micheldorf = {}
-				b_althofen = {}
-				b_st_nicholas_friesach = {}
-			}
-		}
-	}
 
 	k_france = {
 		color={ 15 27 187 }
@@ -8427,6 +7838,585 @@ e_terra_nullius = {
 
 			allow = {
 				is_theocracy = yes
+			}
+		}
+		
+		d_bavaria = {
+			color={ 128 121 121 }
+			color2={ 255 255 255 }
+			
+			capital = 1700 # Regensburg
+			
+			c_passau = {
+				color={ 54 54 54 }
+				color2={ 255 255 255 }
+		
+				b_passau = {
+				}
+				b_ortenburg = {
+				}
+				b_schaumberg = {
+				}
+				b_formbach = {
+				}
+				b_ulrichsberg = {
+				}
+				b_raab = {
+				}
+				b_freyung = {
+				}
+			}
+			c_oberbayern = {
+				color={ 66 66 66 }
+				color2={ 255 255 255 }
+			
+				b_munchen = {
+				}
+				b_dachau = {
+				}
+				b_freising = {
+				}
+				b_andechs = {
+				}
+				b_diessen = {
+				}
+				b_dingolfing = {
+				}
+				b_pfaffenberg = {
+				}
+				b_ebersberg = {
+				}
+			}
+			c_regensburg = {
+				color={ 70 50 70 }
+				color2={ 255 255 255 }
+
+				b_regensburg = {
+				}
+				b_landshut = {
+				}
+				b_ingolstadt = {
+				}
+				b_straubing = {
+				}
+				b_rohrbach = {
+				}
+				b_lerchenfeld = {}
+				b_kelheim = {}
+			}
+			c_niederbayern = {
+				color={ 60 60 60 }
+				color2={ 255 255 255 }
+		
+				b_regenstauf = {}
+				b_cham = {
+				}
+				b_schwandorf = {}
+				b_kirchroth = {
+				}
+				b_sankt_englmar = {}
+				b_roding = {}
+				b_wittelsbach = {
+				}
+			}
+		}
+		
+		d_nordgau = {
+			color={ 57 57 70 }
+			color2={ 255 255 255 }
+
+			capital = 314 # Nurnberg
+
+			c_nurnberg = {
+				color={ 57 57 57 }
+				color2={ 255 255 255 }
+		
+				b_nurnberg = {
+				}
+				b_ellwangen = {
+				}
+				b_furth = {
+				}
+				b_kulmbach = {
+				}
+				b_hohenburg = {
+				}
+				b_nordlingen = {
+				}
+				b_erlangen = {
+				}
+			}
+			c_eichstadt = {
+				color={ 57 57 40 }
+				color2={ 255 255 255 }
+
+				b_eichstadt = {}
+				b_weissenburg = {}
+				b_abenberg = {}
+				b_lechtgemund = {}
+				b_trubendingen = {}
+				b_hirschberg = {}
+				b_pollenfeld = {}
+			}
+		}
+		
+		d_salzburg = {
+			color={ 180 190 200 }
+			color2= { 255 255 255 }
+
+			capital = 448 # Salzburg
+
+			c_salzburg = {
+				color={ 63 63 63 }
+				color2={ 255 255 255 }
+
+				carantanian = "Solnograd"
+			
+				b_salzburg = {
+					carantanian = "Solnograd"
+				}
+				b_durmberg = {
+				}
+				b_waging = {
+				}
+				b_plain = {}
+				b_berchtesgaden = {
+				}
+				b_tittmoning = {
+				}
+				b_laufen = {
+				}
+				b_muhldorf = {
+				}
+				b_gastein = {
+				}
+			}
+			c_pongau = {
+				color={ 68 68 68 }
+				color2 = { 255 255 255 }
+
+				b_pongau = {}
+				b_zelle = {}
+				b_taemswich = {}
+				b_salvet = {}
+				b_mittersill = {}
+				b_hoven = {}
+				b_st_maximillian = {}
+			}
+		}
+		
+		d_osterreich = { 
+			color={ 191 182 182 }
+			color2={ 255 255 255 }
+			
+			capital = 449 #Österreich
+
+			roman = "Noricum"
+		
+			c_steiermark = {
+				color={ 45 45 45 }
+				color2={ 255 255 255 }
+
+				carantanian = "Stajerska"
+				
+				b_steyr = {
+				}
+				b_losenstein = {}
+				b_garstina = {}
+				b_ternberg = {}
+				b_rubinicha = {}
+				b_behamberg = {}
+				b_grobraming = {}
+			}
+			c_traungau = {
+				color={ 60 40 80 }
+				color2={ 255 255 255 }
+
+				carantanian = "Traun"
+
+				b_enisiburg = {}
+				b_linz = {
+					carantanian = "Linec"
+					bohemian = "Linec"
+				}
+				b_wels = {}
+				b_eferding = {}
+				b_gmunden = {}
+				b_hallstatt = {}
+				b_pons_veckelahe = {}
+				b_ebensee = {}
+			}
+			c_krems = {
+				color={ 40 50 40 }
+				color2={ 255 255 255 }
+
+				german = Krems
+				old_saxon = Krems
+
+				b_krems = {}
+				b_gars = {}
+				b_eggenburg = {}
+				b_kuenring = {}
+				b_horn_krems = {}
+				b_zwettl = {}
+				b_retz = {}
+			}
+			c_osterreich = {
+				color={ 48 48 48 }
+				color2={ 255 255 255 }
+
+				dutch = Wenen
+				frisian = Wenen
+				carantanian = "Dunaj"
+				bohemian = "Víden"
+				croatian = "Bec"
+			
+				b_wien = {
+					norse = Wien
+					swedish = Wien
+					danish = Wien
+					norwegian = Wien
+					german = Wien
+					lombard = Wien
+					old_frankish = Wien
+					suebi = Wien
+					dutch = Wenen
+					frisian = Wenen
+					saxon = Wien
+					old_saxon = Wien
+					carantanian = "Dunaj"
+					bohemian = "Víden"
+					croatian = "Bec"
+				}
+				b_wagram = {
+				}
+				b_klosterneuburg = {}
+				b_baden_wien = {}
+				b_korneuburg = {}
+				b_modling = {}
+				b_heiligenkreuz = {}
+			}
+			c_freistadt = {
+				color={ 30 40 30 }
+				color2={ 255 255 255 }
+
+				bohemian = "Zahlow"
+				pommeranian = "Zahlow"
+				croatian = "Zahlow"
+				carantanian = "Zahlow"
+
+				b_freistadt = {}
+				b_steyregg = {}
+				b_grein = {}
+				b_pergkirchen = {}
+				b_zell = {}
+				b_aschach = {}
+				b_taversheim = {}
+			}
+			c_medelike = {
+				color={ 25 35 45 }
+				color2={ 255 255 255 }
+
+				b_zelking = {}
+				b_melk = {}
+				b_stpolten = {}
+				b_ybbs = {}
+				b_waidhofen = {}	
+				b_gaming = {}
+				b_pochlarn = {}
+				b_lilienfeld = {}
+			}
+		}
+
+		d_styria = {
+			color={ 150 140 140 }
+			color2={ 255 255 255 }
+
+			capital = 1693
+
+			german = "Steiermark"
+			carantanian = "Gradec"
+
+			c_leoben = {
+				color={ 50 30 40 }
+				color2={ 255 255 255 }
+
+				b_eppenstein = {}
+				b_leoben = {}
+				b_neuberg = {}
+				b_judenburg = {}
+				b_gallenstein = {}
+				b_rottenmann = {}
+				b_bruck_leoben = {}
+			}
+			c_graz = {
+				color={ 150 120 150 }
+				color2={ 255 255 255 }
+
+				carantanian = "Gradec"
+				croatian = "Gradec"
+
+				b_graz = {
+					carantanian = "Gradec"
+					croatian = "Gradec"
+				}
+				b_radkersburg = {
+				}
+				b_leibnitz = {
+				}
+				b_reun = {}
+				b_friedberg_graz = {}
+				b_voitsberg = {}
+				b_stainz = {}
+				b_feldbach = {}
+
+			}
+			c_pitten = {
+				color={ 120 150 120 }
+				color2={ 255 255 255 }
+
+				b_pitten = {}
+				b_fischau = {}
+				b_wr_neustadt = {}
+				b_neunkirchen = {}
+				b_edelz = {}
+				b_ternitz = {}
+				b_gloggnitz = {}
+			}
+		}
+		
+		d_tyrol = {  
+			color={ 157 154 154 }
+			color2={ 255 255 255 }
+			
+			capital = 316 #Tirol
+		
+			c_tirol = {
+				color={ 90 90 90 }
+				color2={ 255 255 255 }
+			
+				b_bregenz = {
+				}
+				b_landeck = {
+				}
+				b_stanton = {
+				}
+				b_imst = {
+				}
+				b_sterzing = {
+				}
+				b_ried = {
+				}
+				b_dornbirn = {
+				}
+				b_nenzing = {
+				}
+			}
+			c_innsbruck = {
+				color={ 84 84 84 }
+				color2={ 255 255 255 }
+
+				carantanian = "Inomost"
+			
+				b_innsbruck = {
+					carantanian = "Inomost"
+				}
+				b_kufstein = {
+				}
+				b_stams = {
+				}
+				b_schwaz = {
+				}
+				b_kitzbuhel = {
+				}
+				b_jenbach = {
+				}
+				b_fugen = {
+				}
+			}
+			c_trent = {
+
+				german = "Trient"
+				italian = "Trento"
+
+				color={ 253 239 228 }
+				color2={ 255 255 255 }
+	
+				b_trento = {
+				}
+				b_brixen = {
+				}
+				b_molven = {
+				}
+				b_schlanders = {
+				}
+				b_bruneck = {
+				} 
+				b_riva = {
+				}
+				b_rovereto = {
+				}
+			}
+			c_bolzano = {
+
+				german = "Bozen"
+
+				color = { 210 250 180 }
+				color2 = { 255 255 255 }
+
+				b_eppan = {
+				}
+				b_bozen = {
+				}
+				b_meran = {
+				}
+				b_st_jacob = {
+				}
+				b_dolladitz = {
+				}
+				b_cortina = {
+				}
+				b_st_helena = {
+				}
+				b_florian = {
+				}
+			}
+		}
+
+		d_carniola = {
+			color={ 150 200 230 }
+			color2={ 255 255 255 }
+
+			capital = 457
+
+			croatian = "Kranj"
+			carantanian = "Kranj"
+			bosnian = "Kranj"
+			german = "Krain"
+
+			c_istria = {
+				color={ 165 245 200 }
+				color2={ 255 255 255 }
+				
+				b_mitterburg = {
+					croatian = "Pazin"
+					serbian = "Pazin"
+					carantanian = "Pazin"
+					bosnian = "Pazin"
+					italian = "Pisino"
+					greek = "Pisino"
+				}
+				b_fiume = {
+					croatian = "Rijeka"
+					carantanian = "Reka"
+					bosnian = "Rijeka"
+				}
+				b_lovrana = {
+				}
+				b_wolauska = {
+				}
+				b_karstberg = {
+				}
+				b_duino = {
+				}
+				b_pula = {
+				}
+			}
+			c_krain = {
+				color={ 145 225 190 }
+				color2={ 255 255 255 }
+				
+				croatian = "Kranj"
+				carantanian = "Kranj"
+				bosnian = "Kranj"
+				german = "Krain"
+
+				b_gorz = {
+					carantanian = "Gorica"
+					croatian = "Gorizia"
+					bosnian = "Gorizia"
+				}
+				b_krainburg = {
+					croatian = "Kranj"
+					carantanian = "Kranj"
+					bosnian = "Kranj"
+				}
+				b_gurk = {
+				}
+				b_stain = {
+				}
+				b_guetenegg = {
+				}
+				b_auersperg = {
+				}
+				b_zerknitz = {
+				}
+				b_stveit = {
+				}
+			}
+			c_pettau = {
+				color={ 140 200 220 }
+				color2={ 255 255 255 }
+
+				croatian = "Ptuj"
+				carantanian = "Ptuj"
+				bosnian = "Ptuj"
+				roman = "Poetovio"
+				greek = "Poetovio"
+				dalmatian = "Poetovio"
+
+				b_marburg_pettau = {}
+				b_pettau = {}
+				b_friedau = {}
+				b_bistrica = {}
+				b_weitenstein = {}
+				b_studenitz = {}
+				b_seitz = {}
+			}
+		}
+
+		d_carinthia = {
+			color={ 165 255 250 }
+			color2={ 255 255 255 }
+			
+			capital = 456 # Villach
+
+			german = "Kärnten"
+			carantanian = "Carantania"
+
+			c_karnten = {
+				color={ 125 225 195 }
+				color2={ 255 255 255 }
+
+				carantanian = "Beljak"
+				
+				b_villach = {
+					carantanian = "Beljak"
+				}
+				b_klagenfurt = {
+					carantanian = "Celovec"
+				}
+				b_treffen = {
+				}
+				b_lienz = {}
+				b_spittl = {}
+				b_greifenburg = {}
+				b_vorelach = {}
+			}
+			c_friesach = {
+				color={ 150 240 250 }
+				color2={ 255 255 255 }
+
+				carantanian = "Breze"
+
+				b_petersberg = {}
+				b_sankt_veit = {}
+				b_sankt_lambrecht = {}
+				b_wolfsberg = {
+				}
+				b_micheldorf = {}
+				b_althofen = {}
+				b_st_nicholas_friesach = {}
 			}
 		}
 	}
