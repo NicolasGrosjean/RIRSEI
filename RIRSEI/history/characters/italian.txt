@@ -23900,6 +23900,7 @@
 	trait="diligent"
 	trait="patient"
 	trait="zealous"
+	trait="stubborn"
 	trait="charismatic_negotiator"
 	father=7756
 	mother=7755

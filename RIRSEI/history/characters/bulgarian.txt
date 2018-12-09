@@ -2223,16 +2223,3 @@
 		death="889.1.1"
 	}
 }
-145818 = {
-	name="Senko"
-	dynasty=1022274
-	religion="slavic_pagan"
-	culture="bulgarian"
-
-	733.1.1={
-		birth="733.1.1"
-	}
-	791.1.1={
-		death="791.1.1"
-	}
-}

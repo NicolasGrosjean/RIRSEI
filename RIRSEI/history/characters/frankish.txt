@@ -30642,6 +30642,9 @@
 	give_nickname = nick_the_devil 
 	father=40052 #Hugues V de Lusignan
 	mother=325   #Almodis de la Marche
+	trait = "wroth"
+	trait = "cynical"
+	trait = "brave"
 	1039.1.1 = {
 		birth="1039.1.1"
 	}
@@ -31602,6 +31605,8 @@
 	religion="catholic"
 	culture="frankish"
 	trait="underhanded_rogue"
+	trait = "just"
+	trait = "charitable"
 	father=223520
 	mother=215560
 	1171.1.2 = {
