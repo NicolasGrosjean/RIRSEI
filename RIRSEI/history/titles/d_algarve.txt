@@ -1,3 +1,8 @@
+711.1.1 = {
+de_jure_liege =k_andalusia
+}
+
+
 867.1.1={
 	holder=73684
 	liege=k_andalusia
@@ -5,9 +10,6 @@
 886.1.1={
 	holder=0
 	liege=0
-}
-1147.10.25={
-	de_jure_liege=k_andalusia
 }
 1249.1.1={
 de_jure_liege=k_portugal

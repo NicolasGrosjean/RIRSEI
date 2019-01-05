@@ -47,6 +47,4 @@ holder=0
 1257.3.14 = {
 	holder = 0
 }
-1291.7.15={
-	de_jure_liege = k_switzerland
-}
+

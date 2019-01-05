@@ -1,3 +1,6 @@
+711.1.1 = {
+de_jure_liege =k_andalusia
+}
 761.1.1={
 	holder=200035 # Abdallah Aslamid
 	liege=k_andalusia
@@ -36,6 +39,7 @@
 }
 1147.10.25={
 	liege="k_portugal"
+	de_jure_liege =k_portugal
 	holder=209503
 	law = succ_primogeniture
 	law = cognatic_succession

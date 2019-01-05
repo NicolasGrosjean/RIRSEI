@@ -25,11 +25,7 @@ religion = shiite
 	b_wazeqqur = city
 
 	b_tadla = ca_keep_1
-	b_tadla = ca_training_grounds_1
 	b_tadla = ca_keep_2
-	b_tadla = ca_stable_1
-	b_tadla = ca_barracks_1
-	b_tadla = ca_militia_barracks_1
 	b_tadla = ca_wall_1
 	b_tadla = ca_wall_2
 }

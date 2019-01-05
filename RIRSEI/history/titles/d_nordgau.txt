@@ -94,6 +94,7 @@
 }
 976.1.1={
 	holder = 7965
+	de_jure_liege=k_germany
 }
 983.1.1={
 	holder = 7972
