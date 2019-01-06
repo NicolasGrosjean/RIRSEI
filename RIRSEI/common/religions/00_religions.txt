@@ -947,6 +947,14 @@ high_god_name = GOD_ALLAH
 landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
 		uses_jizya_tax = yes
+
+		intermarry = sunni
+		intermarry = zikri
+		intermarry = yazidi
+		intermarry = ibadi
+		intermarry = kharijite
+		intermarry = shiite
+		intermarry = druze
 	}
 ibadi = {
 		graphical_culture = muslimgfx
@@ -968,6 +976,14 @@ ibadi = {
 landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
 		uses_jizya_tax = yes
+
+		intermarry = sunni
+		intermarry = zikri
+		intermarry = yazidi
+		intermarry = ibadi
+		intermarry = kharijite
+		intermarry = shiite
+		intermarry = druze
 	}
 }
 
@@ -2015,7 +2031,7 @@ pagan_group = {
 		interface_skin = { hellenic_interface }
 		
 		#pre_reformed = yes
-		reformed = hellenic_pagan_reformed
+
 
 		icon = 37
 		heresy_icon = 14
