@@ -456,4 +456,11 @@ custom_coeur_nomade = {
 	duchies = {
 		 d_zhetysu d_kirghiz d_kumul d_altay d_otuken d_khangai d_ikh_bogd d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_bulgar d_mordvins d_alania d_turkestan d_syr_darya
 	}
+	
+custom_languedoc = {
+duchies = {
+        d_aquitaine d_toulouse d_gascogne d_auvergne d_bourbon d_provence d_dauphine d_barcelona
+    }
+counties = { c_lusignan c_saintonge c_poitiers
+           }
 }
