@@ -8,205 +8,6 @@
 # 6 - Special troops
 
 
-# Tribal Retinues
-
-TRIBAL_PIETY_RET_1 = {
-	first_type = 5
-	first_amount = 50
-	
-	second_type = 1
-	second_amount = 50
-	
-	potential = {
-		is_tribal = yes
-		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = bon
-			religion = bon_reformed
-		}
-	}
-	
-	hire_cost = 75
-	costs_piety = yes
-	
-	modifier = {
-		archers_offensive = 0.2
-		archers_defensive = 0.4
-		archers_morale = 0.2
-		heavy_infantry_defensive = 0.2
-		heavy_infantry_morale = 0.1
-	}
-}
-
-TRIBAL_PIETY_RET_2 = {
-	first_type = 0
-	first_amount = 75
-	
-	second_type = 5
-	second_amount = 75
-	
-	potential = {
-		is_tribal = yes
-		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = bon
-			religion = bon_reformed
-		}
-	}
-	
-	hire_cost = 50
-	costs_piety = yes
-	
-	modifier = {
-		light_infantry_defensive = 0.6
-		light_infantry_morale = 0.4
-		archers_defensive = 0.4
-		archers_morale = 0.2
-	}
-}
-
-TRIBAL_RET_1 = {
-	first_type = 0
-	first_amount = 150
-	
-	potential = {
-		is_tribal = yes
-	}
-	
-	hire_cost = 25
-	costs_prestige = yes
-	
-	maintenance_multiplier = 0.75
-	
-	modifier = {
-		light_infantry_offensive = 0.2
-		light_infantry_defensive = 0.5
-		light_infantry_morale = 0.2
-	}
-}
-
-TRIBAL_RET_2 = {
-	first_type = 0
-	first_amount = 100
-	
-	second_type = 5
-	second_amount = 50
-	
-	potential = {
-		is_tribal = yes
-	}
-	
-	hire_cost = 50
-	costs_prestige = yes
-	
-	maintenance_multiplier = 0.75
-	
-	modifier = {
-		light_infantry_defensive = 0.6
-		light_infantry_morale = 0.3
-		archers_offensive = 0.4
-		archers_defensive = 0.2
-		archers_morale = 0.1
-	}
-}
-
-TRIBAL_RET_3 = {
-	first_type = 0
-	first_amount = 100
-	
-	second_type = 3
-	second_amount = 50
-	
-	potential = {
-		is_tribal = yes
-	}
-	
-	hire_cost = 75
-	costs_prestige = yes
-	
-	maintenance_multiplier = 0.75
-	
-	modifier = {
-		light_infantry_offensive = 0.6
-		light_infantry_defensive = 0.2
-		light_infantry_morale = 0.1	
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-	}
-}
-
-TRIBAL_RET_4 = {
-	first_type = 0
-	first_amount = 100
-	
-	second_type = 1
-	second_amount = 50
-	
-	potential = {
-		is_tribal = yes
-	}
-	
-	hire_cost = 75
-	costs_prestige = yes
-	
-	maintenance_multiplier = 0.75
-	
-	modifier = {
-		light_infantry_offensive = 0.3
-		light_infantry_defensive = 0.3
-		light_infantry_morale = 0.3
-		heavy_infantry_offensive = 0.1
-		heavy_infantry_defensive = 0.1
-	}
-}
-
-TRIBAL_RET_5 = {
-	first_type = 3
-	first_amount = 50
-	
-	second_type = 6
-	second_amount = 25
-
-	special_troops = horse_archers
-	
-	potential = {
-		is_tribal = yes
-		OR = {
-			culture_group = altaic
-			culture = alan
-			culture = hungarian
-		}
-		NOT = {
-			culture = jurchen
-		}
-	}
-	
-	hire_cost = 75
-	costs_prestige = yes
-	
-	maintenance_multiplier = 0.75
-	
-	modifier = {
-		light_cavalry_offensive = 0.1
-		light_cavalry_defensive = 0.1
-		horse_archers_defensive = 0.1
-	}
-}
-
 #Compagnies d'Ordonnance
 
 #France
@@ -270,7 +71,7 @@ archers_morale = 0.3
 	}
 }
 
-#Lances BrisÃ©es d'Italie
+#Lances Brisées d'Italie
 
 RETTYPE_LANCESITA_RIR = 
 {
@@ -386,7 +187,7 @@ archers_morale = 0.35
 	}
 }
 
-#Hongrie (ArmÃ©e Noire)
+#Hongrie (Armée Noire)
 
 RETTYPE_ARMEENOIRE_RIR = 
 {
@@ -467,7 +268,7 @@ NOT = { religion_group = muslim }
 	}
 }
 
-#Chevaliers de l'Ostel franÃ§ais
+#Chevaliers de l'Ostel français
 
 RETTYPE_CUL_FRAN_RIR = 
 {
@@ -496,7 +297,7 @@ has_building = ca_culture_Francais_sysfed_3
 	}
 }
 
-#Garde Ã©cossaise
+#Garde écossaise
 
 RETTYPE_CUL_FRANSCT_RIR = 
 {
@@ -565,7 +366,7 @@ has_building = ca_culture_Ecosse_sysfed_3
 	}
 }
 
-# Chevaliers franÃ§ais des Ã©cossais
+# Chevaliers français des écossais
 
 RETTYPE_CUL_SCTFR_RIR = 
 {
@@ -732,30 +533,7 @@ has_building = ct_provisionati
 	}
 }
 
-RETTYPE_CUL_ROMAN = 
-{
-	first_type = 2
-	first_amount = 400
-	second_type = 1
-	second_amount = 150
-	
-	potential = {
-		is_nomadic = no
-		culture = roman
-	}
-	
-	modifier = {
-		pikemen_offensive = 0.2
-		pikemen_defensive = 0.2
-		pikemen_morale = 0.4
-		heavy_infantry_offensive = 0.25
-		heavy_infantry_defensive = 0.25
-		heavy_infantry_morale = 0.2
-	}
-}
-
-
-# Fanti des rÃ©publiques
+# Fanti des républiques
 
 RETTYPE_CUL_FANTI_RIR = 
 {
@@ -885,7 +663,7 @@ has_building = ca_culture_Espagnes_sysfed_3
 	}
 }
 
-# Mesnie des rois ibÃ©riques
+# Mesnie des rois ibériques
 
 RETTYPE_CUL_MESNA_RIR = 
 {
@@ -918,7 +696,7 @@ has_building = ca_culture_Espagnes_sysfed_3
 	}
 }
 
-#Teulu gallois : lÃ©gers puis lourds
+#Teulu gallois : légers puis lourds
 
 RETTYPE_CUL_TEULUG_RIR = 
 {
@@ -1021,12 +799,9 @@ RETTYPE_CUL_BYZ_RIR =
 	
 	potential = {
 		is_nomadic = no
-		is_tribal = no
-		culture_group = byzantine
-		NOT = { culture = coptic }
-		NOT = { culture = alan }
-		NOT = { culture = assyrian }
-		NOT = { religion_group = muslim }
+		is_tribal = no		
+culture = greek
+NOT = { religion_group = muslim }
 	}
 	
 	modifier = {
@@ -1227,7 +1002,7 @@ has_building = ca_culture_russ_syst_3
 	}
 }
 
-#Druzina Ã  pied slave
+#Druzina à pied slave
 
 RETTYPE_CUL_SLV_RIR = 
 {
@@ -1255,7 +1030,7 @@ has_building = ca_culture_polak_syst_4
 	}
 }
 
-#Druzina Ã  cheval polonaise & tcheques
+#Druzina à cheval polonaise & tcheques
 
 RETTYPE_CUL_POLUN_RIR = 
 {
@@ -1282,7 +1057,7 @@ has_building = ca_culture_boheme_syst_1
 	
 	modifier = {
 		knights_offensive = 0.3
-	        knights_defensive = 0.3
+	    knights_defensive = 0.3
 		knights_morale = 0.3
 	}
 }
@@ -1741,159 +1516,6 @@ HORDE_RETTYPE_CAV7 =
         			}
 }
 
-
-HORDE_RETTYPE_PAGAN =
-{
-	first_type = 3
-	first_amount = 125
-	second_type = 6
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 50
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = pagan_group
-	}
-	modifier = {
-		light_cavalry_defensive = 0.5
-		light_cavalry_offensive = -0.3
-		horse_archers_offensive = 0.25
-		horse_archers_defensive = 0.5
-	}
-}
-
-HORDE_RETTYPE_MUSLIM =
-{
-	first_type = 6
-	first_amount = 125
-	second_type = 5
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 50
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = muslim
-	}
-	modifier = {
-		archers_offensive = 0.25
-		archers_defensive = 0.5
-		horse_archers_offensive = 0.25
-		horse_archers_defensive = 0.5
-	}
-}
-
-HORDE_RETTYPE_CHRISTIAN =
-{
-	first_type = 2
-	first_amount = 125
-	second_type = 6
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 75
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = christian
-	}
-	modifier = {
-		pikemen_defensive = 0.25
-		horse_archers_offensive = 0.25
-		horse_archers_defensive = 0.5
-	}
-}
-
-HORDE_RETTYPE_ZOROASTRIAN =
-{
-	first_type = 1
-	first_amount = 125
-	second_type = 6
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 75
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = zoroastrian_group
-	}
-	modifier = {
-		heavy_infantry_defensive = 0.25
-		horse_archers_offensive = 0.25
-		horse_archers_defensive = 0.5
-	}
-}
-
-HORDE_RETTYPE_JEWISH =
-{
-	first_type = 3
-	first_amount = 125
-	second_type = 1
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 50
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = jewish_group
-	}
-	modifier = {
-		heavy_infantry_defensive = 0.25
-		light_cavalry_defensive = 0.75
-	}
-}
-
-HORDE_RETTYPE_EASTERN =
-{
-	first_type = 0
-	first_amount = 125
-	second_type = 3
-	second_amount = 125
-	
-	special_troops = horse_archers
-	
-	hire_cost = 50
-	costs_piety = yes
-	
-	maintenance_multiplier = 0.25
-	
-	potential = {
-		is_nomadic = yes
-		religion_group = indian_group
-	}
-	modifier = {
-		light_infantry_offensive = 0.25
-		light_infantry_defensive = 0.5
-		light_cavalry_defensive = 0.5
-		light_cavalry_offensive = -0.3
-	}
-}
-
 # Khevsureti georgiens
 
 RETTYPE_CUL_GEORGUN_RIR = 
@@ -2068,211 +1690,5 @@ RETTYPE_CUL_JURCHEN =
 		light_cavalry_morale = 0.1
 		knights_offensive = 0.1
 		knights_defensive = 0.1
-	}
-}
-
-# Patch 3.0 (Holy Fury)
-RETTYPE_CUL_ASSYRIAN = 
-{
-	first_type = 1
-	first_amount = 200
-	
-	potential = {
-		is_nomadic = no
-		culture = assyrian
-	}
-	
-	modifier = {
-		heavy_infantry_defensive = 0.2
-		heavy_infantry_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_COPTIC = 
-{
-	first_type = 2
-	first_amount = 200
-	second_type = 5
-	second_amount = 100
-
-	potential = {
-		is_nomadic = no
-		culture = coptic
-	}
-	
-	modifier = {
-		archers_defensive = 0.3
-		pikemen_defensive = 0.2
-	}
-}
-
-RETTYPE_CUL_HORSE = 
-{
-	first_type = 3
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture_group = horse_group
-	}
-	
-	modifier = {
-		light_cavalry_defensive = 0.75
-		light_cavalry_morale = 0.75
-	}
-}
-
-RETTYPE_CUL_CAT = 
-{
-	first_type = 0
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture_group = cat_group
-	}
-	
-	modifier = {
-		light_infantry_morale = 0.25
-		light_infantry_offensive = 2
-	}
-}
-
-RETTYPE_CUL_BEAR = 
-{
-	first_type = 1
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture_group = bear_group
-	}
-	
-	modifier = {
-		heavy_infantry_morale = 0.25
-		heavy_infantry_offensive = 1
-	}
-}
-
-RETTYPE_CUL_HEDGEHOG = 
-{
-	first_type = 2
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture_group = hedgehog_group
-	}
-	
-	modifier = {
-		pikemen_morale = 0.25
-		pikemen_defensive = 1
-	}
-}
-
-RETTYPE_CUL_DUCK = 
-{
-	first_type = 1
-	first_amount = 300
-	
-	potential = {
-		is_nomadic = no
-		culture_group = duck_group
-	}
-	
-	modifier = {
-		heavy_infantry_morale = 0.5
-		heavy_infantry_defensive = 0.5
-		heavy_infantry_offensive = 0.5
-	}
-}
-
-RETTYPE_CUL_DOG = 
-{
-	first_type = 4
-	first_amount = 150
-	
-	potential = {
-		is_nomadic = no
-		culture_group = dog_group
-	}
-	
-	modifier = {
-		knights_morale = 1
-		knights_defensive = 0.75
-	}
-}
-
-RETTYPE_CUL_ELEPHANT = 
-{
-	first_type = 6
-	first_amount = 100
-	
-	special_troops = war_elephants
-	
-	potential = {
-		is_nomadic = no
-		culture_group = elephant_group
-	}
-	
-	modifier = {
-		war_elephants_offensive = 0.5
-		war_elephants_defensive = 0.25
-	}
-}
-
-RETTYPE_CUL_DRAGON = 
-{
-	first_type = 4
-	first_amount = 150
-	
-	potential = {
-		is_nomadic = no
-		culture_group = dragon_group
-	}
-	
-	modifier = {
-		knights_morale = 1
-		knights_offensive = 0.75
-	}
-}
-
-RETTYPE_CUL_OUTREMER = 
-{
-	first_type = 4
-	first_amount = 100
-	
-	second_type = 6
-	second_amount = 150
-	
-	special_troops = camel_cavalry
-	
-	potential = {
-		is_nomadic = no
-		culture = outremer
-	}
-	
-	modifier = {
-		camel_cavalry_offensive = 0.2
-		camel_cavalry_morale = 0.1
-		knights_offensive = 0.1
-		knights_morale = 0.1
-	}
-}
-
-RETTYPE_CUL_ARBERIAN = 
-{
-	first_type = 3
-	first_amount = 200
-
-	potential = {
-		is_nomadic = no
-		culture = arberian
-	}
-	
-	modifier = {
-		light_cavalry_defensive = 0.2
-		light_cavalry_offensive = 0.2
-		light_cavalry_morale = 0.4
 	}
 }
