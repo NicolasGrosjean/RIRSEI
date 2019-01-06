@@ -2549,10 +2549,13 @@ change_feudal_elective_succession_law = {
 	on_success_title = {
 		if = { 
 			limit = {
+OR = {
+NOT = { has_global_flag = bulledor }
 				NOR = { 
 					title = e_hre 
 					has_title_flag = alternate_hre
 				}
+              }
 			}
 			add_law_w_cooldown = succ_feudal_elective
 			#succession_w_cooldown = {
@@ -2562,6 +2565,7 @@ change_feudal_elective_succession_law = {
 		}
 		if = { 
 			limit = {
+                has_global_flag = bulledor
 				OR = { 
 					title = e_hre 
 					has_title_flag = alternate_hre
