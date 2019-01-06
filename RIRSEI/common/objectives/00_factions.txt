@@ -2099,20 +2099,6 @@ faction_succ_feudal_elective = {
 		NOT = { trait = incapable }
 		liege = {
 			NOT = { government = chinese_imperial_government }
-			OR = {
-				primary_title = { title = e_hre }
-				primary_title = { has_title_flag = alternate_hre }
-				primary_title = {
-					has_law = law_voting_power_1
-					has_law = banish_voting_power_1
-					has_law = execution_voting_power_1
-					has_law = revoke_title_voting_power_1
-					has_law = grant_title_voting_power_1
-					has_law = imprison_voting_power_1
-					has_law = war_voting_power_1
-				}
-				NOT = { has_dlc = "Zeus" }
-			}
 			is_vice_royalty = no
 			is_feudal = yes 
 			OR = {
@@ -2230,24 +2216,6 @@ faction_succ_feudal_elective = {
 	chance = {
 		factor = 1
 		
-		modifier = {
-			factor = 1.5
-			liege = {  
-				primary_title = { title = e_hre }
-			}
-		}
-		modifier = {
-			factor = 1.5
-			liege = {  
-				primary_title = { has_title_flag = alternate_hre }
-			}
-		}
-		modifier = {
-			factor = 0.5
-			liege = {  
-				any_owned_bloodline = { has_bloodline_flag = bloodline_less_factions }
-			}
-		}
 		modifier = {
 			factor = 0.2
 			FROM = { pacifist = yes }
