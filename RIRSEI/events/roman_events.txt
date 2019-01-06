@@ -309,7 +309,6 @@ narrative_event = {
 		completely_controls = d_auvergne
 		completely_controls = d_bourbon
 		completely_controls = d_loire
-		completely_controls = d_penthievre
 		completely_controls = d_brittany
 		completely_controls = d_provence
 		completely_controls = d_savoie
@@ -1192,48 +1191,5 @@ character_event = {
 	option = {
 		name = EVTOPTALoR.46
 		remove_trait = augustus
-	}
-}
-
-#On_death Augustus Trait inheritance
-character_event = {
-	id = LoR.47
-	hide_window = yes
-	
-	only_playable = yes
-	has_global_flag = rome_restored
-	has_dlc = "Legacy of Rome"
-	
-	trigger = {
-		has_landed_title = e_roman_empire
-	}
-	
-	is_triggered_only = yes
-	
-	
-	immediate = {
-		e_roman_empire = { current_heir = { character_event = { id = LoR.45 days = 2 } } }
-	}
-}
-
-#On_title_usurped Augustus Trait inheritance
-character_event = {
-	id = LoR.48
-	hide_window = yes
-	
-	only_playable = yes
-	has_global_flag = rome_restored
-	has_dlc = "Legacy of Rome"
-	
-	trigger = {
-		FROM = { title = e_roman_empire }
-		NOT = { trait = augustus }
-	}
-	
-	is_triggered_only = yes
-	
-	
-	immediate = {
-		ROOT = { character_event = { id = LoR.45 days = 2 } }
 	}
 }
