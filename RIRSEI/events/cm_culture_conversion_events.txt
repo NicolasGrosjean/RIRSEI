@@ -251,6 +251,7 @@ province_event = {
 		should_evolve_cultures_trigger = yes
 		year = 776
 		culture = gallo
+        NOT = { region = custom_languedoc }
 		NOT = { region = custom_frisia }
 		owner = {
 			OR = {
@@ -292,42 +293,32 @@ province_event = {
 	}
 }
 
-# ibero province converts to Occitan
+# gallo province converts to Occitan
 province_event = {
 	id = OC.6
 	desc = EVTDESC_CM_6
 	picture = GFX_evt_stone_church
 
 	trigger = {
-		culture = ibero
+		culture = gallo
 		should_evolve_cultures_trigger = yes
 		NOT = { religion_group = muslim }
-		region = world_europe_west_francia
-		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = visigothic 
-					OR = {
-						tier = emperor
-						num_of_king_titles = 2
-					}
-				} 
+		region = custom_languedoc
+		year = 776
+				owner = {
+			OR = {
+				culture_group = latin
+				culture = old_frankish
 			}
 		}
-		NOT = {
-			owner = { 
-				religion_head = { culture = visigothic }
-			}
-		}
-		year = 850
 	}
 	
 	mean_time_to_happen = {
-		months = 3600
+		months = 1200
 		modifier = {
 			factor = 0.5
 			owner = {
-				culture = occitan
+				culture_group = latin
 			}
 		}
 		modifier = {
