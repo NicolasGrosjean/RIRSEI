@@ -17,7 +17,7 @@ b_tilburg = temple
 #b_horn = castle
 
 # Misc
-culture = german
+culture = old_frankish
 religion = catholic
 
 # History
