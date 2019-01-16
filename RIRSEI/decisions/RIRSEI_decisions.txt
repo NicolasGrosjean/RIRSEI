@@ -67,6 +67,7 @@ sacreroifrance = {
 		potential = {
 			
 			age = 14
+			NOT = { has_character_flag = flag_preparing_coronation }
 			NOT = { trait = incapable }
 			NOT = { trait = roi_oint}
 			has_landed_title = k_france
@@ -76,11 +77,21 @@ sacreroifrance = {
 allow = {
 	 completely_controls = c_reims
 NOT = { trait = crowned_by_pope }
+
 		}
 		
 		effect = {
+		if = {
+		limit = { NOT = { has_dlc = "Holy Fury" } }
 			  character_event = { id = RIRSEI.424242 tooltip = EVTTOOLTIPRIRSEI.424242 }
 		}
+		if = {
+		limit = { has_dlc = "Holy Fury" }
+		character_event = { id = RIRSEIHF.20300 tooltip = EVTTOOLTIPRIRSEI.424242 }
+		set_character_flag = flag_preparing_coronation
+		}
+		
+	}
 		ai_will_do = {
 			factor = 1
 		}
@@ -551,7 +562,7 @@ NOT = { has_landed_title = e_byzantium }
 			has_landed_title = k_france
 			religion_group = christian
                         independent = yes
-                        completely_controls = c_besancon
+                        completely_controls = d_franche_comte
                         
                         
 		}
@@ -576,7 +587,7 @@ opinion = {
 		}
 		effect = {
 			  
-                          c_besancon = { de_jure_liege = d_burgundy }
+                          d_franche_comte = { de_jure_liege = k_france }
                           set_global_flag = bourgo_dejure
 		}
 		ai_will_do = {
@@ -1634,8 +1645,6 @@ NOT = { demesne_size = 5 }
                          piety = 500
                          demesne_size = 6
 completely_controls = k_bulgaria
-
-
 completely_controls = d_thessalonika
 completely_controls = d_epirus
 completely_controls = d_dyrrachion
@@ -2730,6 +2739,7 @@ NOT = { has_landed_title = e_roman_empire }
 			completely_controls = d_bavaria
 completely_controls = d_osterreich
 completely_controls = d_tyrol
+completely_controls = d_salzburg
 	
 		}
 		effect = {
@@ -2766,6 +2776,10 @@ bav_inte = {
                           d_tyrol = { de_jure_liege = k_germany }
                           d_osterreich = { de_jure_liege = k_germany }
                           d_carinthia = { de_jure_liege = k_germany }
+						  d_nordgau = { de_jure_liege = k_germany }
+						  d_carniola = { de_jure_liege = k_germany }
+						  d_styria = { de_jure_liege = k_germany }
+						  d_salzburg = { de_jure_liege = k_germany }
 k_bavaria = {
 			destroy_landed_title = THIS
 		}
