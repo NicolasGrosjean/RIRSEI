@@ -286,6 +286,16 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\troupesturcs.tga"
 		allwaystransparent = yes
 	}
+		spriteType = {
+		name = "GFX_evt_ecrouelles"
+		texturefile = "gfx\\event_pictures\ecrouelles.tga"
+		allwaystransparent = yes
+	}
+		spriteType = {
+		name = "GFX_evt_reimscathe"
+		texturefile = "gfx\\event_pictures\reimscathe.tga"
+		allwaystransparent = yes
+	}
 }
 
 
