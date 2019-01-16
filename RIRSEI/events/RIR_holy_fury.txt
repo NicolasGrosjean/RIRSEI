@@ -1,0 +1,1080 @@
+
+#####Si DLC Holy Fury, le sacre du roi de France emprunte un peu au couronnement "normal"###
+####Coronation sponsor found, now decide how much money to invest in it. (REVISED WITH SCALED WEALTH)
+namespace = RIRSEIHF
+character_event = {
+	id = RIRSEIHF.20300
+    title = EVTTITLERIR20300
+	desc = EVTDESCHFRIR20300
+	picture = GFX_evt_reimscathe
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	immediate = {
+		save_event_target_as = coronation_ruler
+		add_character_modifier = {
+			name = out_traveling
+			duration = 66
+			hidden = yes #Make the character inaccessible, the ruler himself is not actually out, he's still at court.
+		}
+	}
+
+	option = {
+		name = EVTOPTAHFRIR20300
+		trigger = { war = no }
+		set_character_flag = flag_extravagant_coronation
+		custom_tooltip = { text = send_extracoronation_invitations }
+		if = { 
+			limit = { ai = no } #Cheaty AI...
+			scaled_wealth = { value = -1 min = -250 max = -1000 }
+		}
+		hidden_tooltip = {
+			character_event = { id = RIRSEIHF.20305 days = 11 } #Ceremony actually starts
+			any_vassal = {
+				limit =  {
+					prisoner = no
+					NOT = { has_character_flag = do_not_disturb }
+					NOT = { has_character_modifier = holding_large_feast }
+					is_adult = yes
+					NOT = { trait = incapable }
+					NOT = { is_inaccessible_trigger = yes }
+					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+				}
+				character_event = { id = RIRSEIHF.20301 } #Send Invitations
+			}
+			any_independent_ruler = {
+				limit = { 
+					war = no
+					prisoner = no
+					is_theocracy = no
+					NOT = { has_character_flag = do_not_disturb }
+					NOT = { has_character_modifier = holding_large_feast }
+					is_adult = yes
+					NOT = { trait = incapable }
+					NOT = { is_inaccessible_trigger = yes }
+					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+					religion = ROOT 	
+					is_within_diplo_range = ROOT
+					higher_real_tier_than = DUKE
+					NOT = { distance_from_realm = { who = ROOT value = 120 } }
+				}
+				character_event = { id = RIRSEIHF.20302 } #Send Invitations to other Catholic neighbors
+			}
+		}
+		ai_chance = { 
+			factor = 30 
+			modifier = { 
+				factor = 0.5
+				NOT = { scaled_wealth = 1 } 
+			} 
+			modifier = { 
+				factor = 0.5
+				NOT = { scaled_wealth = 0.5 } 
+			} 
+			modifier = { 
+				factor = 0.25
+				NOT = { wealth = 0 } 
+			} 
+			modifier = { 
+				factor = 0
+				NOT = { wealth = -100 } 
+			} 
+			modifier = { 
+				factor = 3
+				tier = EMPEROR
+			} 
+			modifier = { 
+				factor = 0.75
+				trait = greedy
+			} 
+		}
+	}
+	option = {
+		name = EVTOPTBHFRIR20300
+		trigger = { war = no }
+		set_character_flag = flag_regular_coronation
+		custom_tooltip = { text = send_coronation_invitations }
+		hidden_tooltip = {
+			character_event = { id = RIRSEIHF.20305 days = 11 } #Ceremony actually starts
+			any_vassal = {
+				limit =  {
+					prisoner = no
+					NOT = { has_character_flag = do_not_disturb }
+					NOT = { has_character_modifier = holding_large_feast }
+					is_adult = yes
+					NOT = { trait = incapable }
+					NOT = { is_inaccessible_trigger = yes }
+					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+				}
+				character_event = { id = RIRSEIHF.20301 } #Send Invitations
+			}
+		}
+		if = { 
+			limit = { ai = no } #Cheaty AI...
+			scaled_wealth = { value = -0.5 min = -100 max = -500 }
+		}
+		ai_chance = { 
+			factor = 40 
+			modifier = { 
+				factor = 0.5
+				NOT = { scaled_wealth = 0.5 } 
+			} 
+			modifier = { 
+				factor = 0.5
+				NOT = { scaled_wealth = 0.25 } 
+			} 
+			modifier = { 
+				factor = 0.25
+				NOT = { wealth = 0 } 
+			} 
+			modifier = { 
+				factor = 0
+				NOT = { wealth = -100 } 
+			} 
+			modifier = { 
+				factor = 0.5
+				tier = EMPEROR
+			} 
+			modifier = { 
+				factor = 0.75
+				trait = greedy
+			} 
+		}
+	}
+	option = {
+		name = {
+			text = EVTOPTCHFRIR20300
+			trigger = {
+				war = no
+			}
+		}
+		name = {
+			text = EVTOPTCHFRIR20300_B
+			trigger = {
+				war = yes
+			}
+		}
+		set_character_flag = flag_secluded_coronation
+		custom_tooltip = { text = send_seclcoronation_invitations }
+		if = { 
+			limit = { ai = no } #Cheaty AI...
+			scaled_wealth = { value = -0.05 min = -10 max = -150 }
+		}
+		hidden_tooltip = {
+			character_event = { id = RIRSEIHF.20305 days = 11 } #Ceremony actually starts
+			any_courtier = {
+				limit = { 
+					is_councillor = yes 
+					prisoner = no
+					NOT = { has_character_flag = do_not_disturb }
+					NOT = { has_character_modifier = holding_large_feast }
+					is_adult = yes
+					NOT = { trait = incapable }
+					NOT = { is_inaccessible_trigger = yes }
+					NOT = { has_any_opinion_modifier = opinion_coronation_guest }
+				}
+				character_event = { id = RIRSEIHF.20301 } #Send Invitations
+			}
+		}
+		ai_chance = { 
+			factor = 10
+			modifier = { 
+				factor = 3
+				NOT = { wealth = -200 } 
+			} 
+ 
+		}
+	}
+}
+#Vassal: King is inviting you to his coronation.
+letter_event = {
+	id = RIRSEIHF.20301
+	desc = EVTDESCHFA20301
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = EVTOPTAHF20301
+		hidden_tooltip = { FROM = { character_event = { id = RIRSEIHF.20303 days = 3 random = 5 } } } #Notification.
+		opinion = {
+			modifier = opinion_coronation_guest
+			months = 4
+			who = FROM
+		}
+		add_character_modifier = {
+			name = out_traveling #Vassal travel is short, so no regent needed.
+			duration = 45
+		}
+		ai_chance = { 
+			factor = 70 
+		}
+	}
+	option = {	#End of the line
+		name = EVTOPTBHF20301
+		hidden_tooltip = { FROM = { character_event = { id = RIRSEIHF.20304 days = 3 random = 5 } } } #Notification.
+		FROM = { 
+				show_scope_change = no	
+			opinion = {
+				modifier = opinion_dislike
+				years = 10
+				who = ROOT
+			}
+		}
+		ai_chance = { 
+			factor = 30 
+			modifier = {		#Of course he will be present.
+				factor = 0
+				event_target:coronation_priest = { character = ROOT }
+			} 
+			modifier = {
+				factor = 0.3
+				opinion = { who = from value = 100 }
+			}
+			modifier = {
+				factor = 0.4
+				opinion = { who = from value = 80 }
+			}
+			modifier = {
+				factor = 0.5
+				opinion = { who = from value = 60 }
+			}
+			modifier = {
+				factor = 0.65
+				opinion = { who = from value = 40 }
+			}
+			modifier = {
+				factor = 0.75
+				opinion = { who = from value = 20 }
+			}
+			modifier = {
+				factor = 0.85
+				opinion = { who = from value = 0 }
+			}
+			modifier = {
+				factor = 1.15
+				NOT = { opinion = { who = from value = 0 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = from value = -20 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = from value = -40 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = from value = -60 } }
+			}
+			modifier = {
+				factor = 1.75
+				NOT = { opinion = { who = from value = -80 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = from value = -100 } }
+			}
+		}
+	}
+}
+#Foreign King: King is inviting you to his coronation.
+letter_event = {
+	id = RIRSEIHF.20302
+	desc = EVTDESCHFA20302
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	
+	
+	option = {
+		name = EVTOPTAHF20302
+		hidden_tooltip = { FROM = { character_event = { id = RIRSEIHF.20303 days = 5 random = 5 } } } #Notification.
+		FROM = { 
+			prestige = 75	# Prestigious guests bring prestige.
+		}
+		opinion = {
+			modifier = opinion_coronation_guest
+			months = 4
+			who = FROM
+		}
+		add_trait = travelling #Foreign King's travel is longer, it needs a regent, as if it were a pilgrimage.
+		#add_character_modifier = {
+		#	name = out_traveling
+		#	duration = 45
+		#}
+		ai_chance = { 
+			factor = 70 
+		}
+	}
+	option = {	#End of the line
+		name = EVTOPTBHF20302
+		hidden_tooltip = { FROM = { character_event = { id = RIRSEIHF.20304 days = 5 random = 5 } } } #Notification.
+		FROM = { 
+				show_scope_change = no	
+			opinion = {
+				modifier = opinion_dislike
+				years = 10
+				who = ROOT
+			}
+		}
+		ai_chance = { 
+			factor = 30
+			modifier = {		#Of course he will be present.
+				factor = 0
+				event_target:coronation_priest = { character = ROOT }
+			} 
+			modifier = {
+				factor = 0.3
+				opinion = { who = from value = 100 }
+			}
+			modifier = {
+				factor = 0.4
+				opinion = { who = from value = 80 }
+			}
+			modifier = {
+				factor = 0.5
+				opinion = { who = from value = 60 }
+			}
+			modifier = {
+				factor = 0.65
+				opinion = { who = from value = 40 }
+			}
+			modifier = {
+				factor = 0.75
+				opinion = { who = from value = 20 }
+			}
+			modifier = {
+				factor = 0.85
+				opinion = { who = from value = 0 }
+			}
+			modifier = {
+				factor = 1.15
+				NOT = { opinion = { who = from value = 0 } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { opinion = { who = from value = -20 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = from value = -40 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = from value = -60 } }
+			}
+			modifier = {
+				factor = 1.75
+				NOT = { opinion = { who = from value = -80 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = from value = -100 } }
+			}
+		}
+	}
+}
+#King Notification: Vassal will come to the Coronation Ceremony
+letter_event = {
+	id = RIRSEIHF.20303
+	desc = EVTDESCHF20303
+
+
+	notification = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20303
+	}
+}
+#King Notification: Vassal will not come to the Coronation Ceremony
+letter_event = {
+	id = RIRSEIHF.20304
+	desc = EVTDESCHF20304
+
+
+	notification = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20304
+	}
+}
+
+#King: Day 11 from budget, ceremony starts.
+character_event = {
+	id = RIRSEIHF.20305
+	desc = {
+		trigger = {
+			has_character_flag = flag_extravagant_coronation 
+			war = no
+		}
+		text = EVTDESCHFARIR20305
+	}
+	desc = {
+		trigger = {
+			has_character_flag = flag_regular_coronation
+			war = no
+		}
+		text = EVTDESCHFBRIR20305
+	}
+	desc = {
+		trigger = {
+			has_character_flag = flag_secluded_coronation
+			war = no
+		}
+		text = EVTDESCHFCRIR20305
+	}
+
+	desc = {
+		trigger = {
+			war = yes
+		}
+		text = EVTDESDHFD20305
+		picture = GFX_evt_mounted_combat_day_hf
+	}
+
+	picture = GFX_evt_reimscathe
+	border = GFX_event_normal_frame_religion
+
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20305
+
+		hidden_tooltip = {
+        character_event = { id = RIRSEIHF.20366 days = 12 }				
+		 if = { 
+		 limit = { has_character_flag = flag_extravagant_coronation }
+        random = {
+        chance = 70
+        character_event = { id = RIRSEIHF.20306 days = 2 }
+                  }
+		      } 
+	     if = { 
+		 limit = { has_character_flag = flag_extravagant_coronation }
+        random = {
+        chance = 20
+        character_event = { id = RIRSEIHF.20310 days = 3 }
+                  }
+		      } 
+			  
+	    if = { 
+		 limit = { has_character_flag = flag_regular_coronation }
+
+        character_event = { id = RIRSEIHF.20310 days = 3 }
+                  }
+		 if = { 
+		 limit = { has_character_flag = flag_secluded_coronation }
+
+        character_event = { id = RIRSEIHF.20356 days = 3 }
+                  }
+		       
+		
+		} 
+		
+	}
+}
+
+#King has chance to befriend foreign ruler.
+character_event = {
+	id = RIRSEIHF.20306
+	desc = EVTDESCHFA20306
+	hide_new = yes 
+
+	picture = GFX_evt_fancy_feast
+	border = GFX_event_normal_frame_diplomacy
+
+
+	is_triggered_only = yes
+	
+	immediate = { 
+		event_target:coronation_ruler = { set_character_flag = flag_coronation_foreign_friendship } #to avoid the same event happening twice during the coronation.
+
+		random_independent_ruler = { 
+			limit = { 
+				has_opinion_modifier = { 
+					who = ROOT 
+					modifier = opinion_coronation_guest 
+				}
+				NOT = { is_rival = ROOT } 
+				NOT = { is_friend = ROOT } 
+				NOT = { is_lover = ROOT } 
+				NOT = { is_married = ROOT }
+				NOT = { num_of_friends = 3 }
+				opinion = { who = from value = -20 }
+			} 
+			save_event_target_as = potential_friend
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHF20306
+		show_portrait = event_target:potential_friend
+		event_target:potential_friend = { 
+			character_event = { id = RIRSEIHF.20307 tooltip = EVTTOOLTIPAHF20307 }
+		}
+		ai_chance = { 	
+			factor = 90
+			modifier = { 
+				factor = 0.5
+				trait = shy
+			}	
+			modifier = { 
+				factor = 0.5
+				trait = paranoid
+			}	
+		}
+	}
+	option = {
+		name = EVTOPTBHF20306
+		ai_chance = { 	
+			factor = 10	
+		}
+	}
+
+}
+
+#Foreign ruler/Vassal: King wants to become your friend.
+character_event = {
+	id = RIRSEIHF.20307
+	desc = EVTDESCHFA20307
+	hide_new = yes 
+
+	picture = GFX_evt_fancy_feast
+	border = GFX_event_normal_frame_diplomacy
+
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20307
+		add_friend = FROM
+		hidden_tooltip = { FROM = { character_event = { id = RIRSEIHF.20308 } } }
+		ai_chance = { 	
+			factor = 90
+			modifier = { 
+				factor = 0.8
+				FROM = { trait = shy }
+			}	
+			modifier = { 
+				factor = 0.75
+				FROM = { trait = cruel }
+				NOT = { trait = cruel }
+			}	
+			modifier = { 
+				factor = 0.5
+				trait = envious
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBHF20307
+		FROM = { character_event = { id = RIRSEIHF.20309 tooltip = EVTTOOLTIPAHF20309 } }
+		ai_chance = { 	
+			factor = 10	
+		}
+	}
+}
+
+#King: you've acquired a new friend.
+character_event = {
+	id = RIRSEIHF.20308
+	desc = EVTDESCHFA20308
+	desc = {
+		trigger = {
+			FROM = { NOT = { vassal_of = ROOT } }
+		}
+		text = EVTDESCHFA20308
+	}
+	desc = {
+		trigger = {
+			FROM = { vassal_of = ROOT }
+		}
+		text = EVTDESCHFB20308
+	}
+	hide_new = yes 
+
+	picture = GFX_evt_fancy_feast
+	border = GFX_event_normal_frame_diplomacy
+
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20308
+		add_friend = FROM
+		ai_chance = { 	
+			factor = 100
+		}
+	}
+}
+
+#King: you have not acquired a new friend.
+character_event = {
+	id = RIRSEIHF.20309
+	desc = EVTDESCHFA20309
+	hide_new = yes 
+
+	picture = GFX_evt_fancy_feast
+	border = GFX_event_normal_frame_diplomacy
+
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20309
+		ai_chance = { 	
+			factor = 100
+		}
+	}
+}
+
+#King has chance to befriend one of his vassals.
+character_event = {
+	id = RIRSEIHF.20310
+	desc = EVTDESCHFA20310
+	hide_new = yes 
+
+	picture = GFX_evt_fancy_feast
+	border = GFX_event_normal_frame_diplomacy
+
+
+	is_triggered_only = yes
+	
+	immediate = { 
+		event_target:coronation_ruler = { set_character_flag = flag_coronation_vassal_friendship } #to avoid the same event happening twice during the coronation.
+		random_vassal = { 
+			limit = { 
+				has_opinion_modifier = { 
+					who = ROOT 
+					modifier = opinion_coronation_guest 
+				}
+				NOT = { is_rival = ROOT } 
+				NOT = { is_friend = ROOT } 
+				NOT = { is_lover = ROOT } 
+				NOT = { is_married = ROOT }
+				NOT = { num_of_friends = 3 }
+				opinion = { who = from value = -20 }
+			} 
+			save_event_target_as = potential_friend
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHF20310
+		show_portrait = event_target:potential_friend
+		event_target:potential_friend = {  
+			character_event = { id = RIRSEIHF.20307 tooltip = EVTTOOLTIPAHF20307 }
+		}
+		ai_chance = { 	
+			factor = 90
+			modifier = { 
+				factor = 0.5
+				trait = shy
+			}	
+			modifier = { 
+				factor = 0.5
+				trait = paranoid
+			}	
+		}
+	}
+	option = {
+		name = EVTOPTBHF20310
+		ai_chance = { 	
+			factor = 10	
+		}
+	}
+	
+}
+
+
+
+#Secluded King: poor coronation makes the uninvited vassals unhappy.
+character_event = {
+	id = RIRSEIHF.20356
+	desc = {
+		trigger = { 
+			war = no 
+		}
+		text = EVTDESCHFA20356
+	}
+	desc = {
+		trigger = { 
+			war = yes
+		}
+		text = EVTDESCHFB20356
+		picture = GFX_evt_mounted_combat_day_hf
+	}
+	hide_new = yes 
+
+	picture = GFX_evt_bad_news
+	border = GFX_event_normal_frame_diplomacy
+
+	immediate = { 
+		event_target:coronation_ruler = { set_character_flag = flag_coronation_secluded_vassals } #to avoid the same event happening twice during the coronation.
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20356
+		custom_tooltip = { text = tooltip_EVTHF20356_A }
+		prestige = -35
+		hidden_tooltip = { 
+			any_vassal = { 
+				limit = {
+					NOT = { is_councillor = yes }
+				} 
+				character_event = { id = RIRSEIHF.20357 }
+			}
+		}
+		ai_chance = { 	 
+			factor = 100
+		}
+	}
+	after = { hidden_tooltip = { event_target:coronation_ruler = { character_event = { id = RIRSEIHF.20365 days = 3 random = 5 } } } } #Second row of random events, else coronation itself.
+}
+
+#Uninvited vassal of secluded coronation is unhappy with his liege.
+character_event = {
+	id = RIRSEIHF.20357
+	desc = {
+		trigger = { 
+			war = no 
+		}
+		text = EVTDESCHFA20357
+	}
+	desc = {
+		trigger = { 
+			war = yes
+		}
+		text = EVTDESCHFB20357
+		picture = GFX_evt_mounted_combat_day_hf
+	}
+	hide_new = yes 
+
+	picture = GFX_evt_bad_news
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = { 
+		
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests).
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF20357
+			opinion = {
+				who = FROM
+				modifier = opinion_offended
+				months = 60
+			}
+		ai_chance = { 	 
+			factor = 100
+		}
+	}
+}
+
+
+#CORONATION EVENT
+character_event = {
+	id = RIRSEIHF.20366
+	title = EVTNAME_RIRSEI_424242
+	desc = "EVTDESC_RIRSEI_424242"		
+	picture = GFX_evt_sacre
+	border = GFX_event_normal_frame_religion
+	hide_new = yes
+
+
+	is_triggered_only = yes
+
+	immediate = { 
+
+		if = {
+			limit = {
+				has_character_flag = flag_secluded_coronation
+				war = no
+			}
+			sound_effect = coronation_barn
+		}
+		else_if = {
+			limit = {
+				has_character_flag = flag_extravagant_coronation
+			}
+			sound_effect = coronation_extravagant
+		}
+		else = {
+			sound_effect = coronation_normal
+		}
+		ROOT = {
+			remove_character_modifiers = { modifier = uncrowned_modifier amount = 30 } 
+			set_variable = { which = uncrowned_count value = 0 }
+			set_character_flag = flag_being_coronated #Safety check to avoid double event.
+		}
+		
+	} 
+	 
+	
+	option = {
+		name = EVTOPTA_RIRSEI_424242
+				hidden_tooltip = { remove_character_modifier = out_traveling }
+		hidden_tooltip = { remove_trait = travelling }
+		hidden_tooltip = { set_variable = { which = coronation_count value = 0 } }
+
+		clr_character_flag = flag_preparing_coronation 
+		clr_character_flag = flag_antipope_for_coronation 
+		clr_character_flag = flag_excommunicated_for_coronation 
+		clr_character_flag = flag_pepin_for_coronation 
+		clr_character_flag = flag_extravagant_coronation
+		clr_character_flag = flag_regular_coronation
+		clr_character_flag = flag_secluded_coronation
+
+		clr_character_flag = flag_crowned_by_priest
+		clr_character_flag = flag_crowned_by_bishop
+		clr_character_flag = flag_crowned_by_pope
+
+		clr_character_flag = flag_coronation_foreign_friendship
+		clr_character_flag = flag_coronation_vassal_friendship
+		clr_character_flag = flag_coronation_diplomacy_boost
+		clr_character_flag = flag_coronation_learning_boost
+		clr_character_flag = flag_coronation_guest_opinions
+		clr_character_flag = flag_coronation_gain_diligent 
+		clr_character_flag = flag_coronation_gain_ambitious 
+		clr_character_flag = flag_coronation_haughty_child 
+		clr_character_flag = flag_coronation_priest_approves 
+		clr_character_flag = flag_coronation_hre_talk 
+		clr_character_flag = flag_coronation_pope_talk 
+		clr_character_flag = flag_coronation_foreign_teacher 
+		clr_character_flag = flag_coronation_priest_disapproves 
+		clr_character_flag = flag_coronation_diplomatic_incident 
+		clr_character_flag = flag_coronation_cynic_taunts 
+		clr_character_flag = flag_coronation_wandering_knight 
+		clr_character_flag = flag_coronation_wandering_priest
+		clr_character_flag = flag_coronation_random_rivalry 
+		clr_character_flag = flag_coronation_secluded_embarassed 
+		clr_character_flag = flag_coronation_secluded_vassals 
+		clr_character_flag = flag_coronation_secluded_priest 
+		clr_character_flag = flag_coronation_secluded_ambitious 
+		clr_character_flag = flag_coronation_secluded_proud 
+		clr_character_flag = flag_coronation_secluded_steward 
+		add_trait = roi_oint
+		if = {
+     limit = { has_global_flag = rex_imperator_fr }
+     add_trait = Imp_regn
+             }
+    character_event = { id = RIRSEIHF.00001 days = 3 } #ecrouelles 
+        prestige = 300
+		#Assign possible modifier.
+		if = { 
+			limit = { 
+				war = no
+				has_character_flag = flag_secluded_coronation 
+				NOT = { has_character_flag = flag_crowned_by_pope } 
+			} 
+			add_character_modifier = {
+				name = crowned_in_barn
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				war = yes
+				has_character_flag = flag_secluded_coronation 
+			} 
+			add_character_modifier = {
+				name = crowned_in_war
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				has_character_flag = flag_extravagant_coronation 
+				NOT = { has_character_flag = flag_crowned_by_priest } 
+			} 
+			add_character_modifier = {
+				name = extravagant_coronation
+				days = 1800
+			}
+		}
+		#Notify all guests, then conclude the ceremony.
+		hidden_tooltip = {           		
+			character_event = { id = HF.20369 days = 3 random = 3 } #wrap up, clear all flags.
+			any_vassal = { 
+				limit = { 
+					has_opinion_modifier = { 
+						who = ROOT 
+						modifier = opinion_coronation_guest 
+					}
+				}
+				character_event = { id = RIRSEIHF.20367 } #Coronation event for guests.
+				character_event = { id = HF.20370 days = 3 random = 3 } #wrap up, clear all flags.
+			}
+			any_vassal = { 
+				limit = { 
+					NOT = { 
+						has_opinion_modifier = { 
+							who = ROOT 
+							modifier = opinion_coronation_guest 
+						}
+					}
+				}
+				character_event = { id = HF.20368 } #Smaller notification for vassals who did not attend to the ceremony.
+			}
+			any_independent_ruler = { 
+				limit = { 
+					has_opinion_modifier = { 
+						who = ROOT 
+						modifier = opinion_coronation_guest 
+					}
+				}
+				character_event = { id = RIRSEIHF.20367 } #Coronation event for guests.
+				character_event = { id = HF.20370 days = 3 random = 3 } #wrap up, clear all flags.
+			} 
+		} 
+		ai_chance = { 	
+			factor = 95		
+		}
+	}
+	after= { 	
+		hidden_tooltip = { remove_character_modifier = coronation_request_cooldown }
+		clr_character_flag = flag_being_coronated
+	}
+}
+
+#CORONATION EVENT (for guests)
+character_event = {
+	id = RIRSEIHF.20367
+	title = EVTNAME_RIRSEI_424242
+	text = EVTDESC_RIRSEIHF_00002		
+	picture = GFX_evt_sacre
+	border = GFX_event_normal_frame_religion
+
+	trigger = { 
+		event_target:coronation_ruler = { is_alive = yes } #Check if the ruler supposed to be crowned is still alive. (check for guests)
+		has_opinion_modifier = { 
+			who = event_target:coronation_ruler 
+			modifier = opinion_coronation_guest 
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				FROM = { war = no has_character_modifier = crowned_in_barn }
+			}
+			sound_effect = coronation_barn
+		}
+		else_if = {
+			limit = {
+				FROM = { has_character_modifier = extravagant_coronation }
+			}
+			sound_effect = coronation_extravagant
+		}
+		else = {
+			sound_effect = coronation_normal
+		}
+	}
+
+	option = {
+		name = EVTOPTA_RIRSEI_424242
+
+		#Assign scaled piety.
+		if = { 
+			limit = { 
+				FROM = { has_character_flag = flag_crowned_by_pope } 
+			} 
+			piety = 10
+		}
+		if = { 
+			limit = { 
+				FROM = { has_character_flag = flag_crowned_by_bishop } 
+			} 
+			piety = 20
+		}
+		if = { 
+			limit = { 
+				FROM = { has_character_flag = flag_crowned_by_priest } 
+			} 
+			piety = 30
+		}
+
+		#Assign scaled prestige.
+		if = { 
+			limit = { 
+				FROM = { 
+					has_character_flag = flag_secluded_coronation 
+					NOT = { has_character_flag = flag_crowned_by_pope } 
+				}  
+			} 
+			prestige = -10
+		}
+		if = { 
+			limit = { 
+				FROM = { has_character_flag = flag_regular_coronation }  
+			} 
+			prestige = 20
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					has_character_flag = flag_extravagant_coronation 
+					NOT = { has_character_flag = flag_crowned_by_pope } 
+				} 
+			} 
+			prestige = 30
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					has_character_flag = flag_extravagant_coronation 
+					has_character_flag = flag_crowned_by_pope 
+				}
+			} 
+			prestige = 100
+		}
+		ai_chance = { 	
+			factor = 100		
+		}
+	}
+}
+
+# Ecrouelles	
+character_event = {
+    id = RIRSEIHF.00001
+	title = EVTNAME_RIRSEIHF_00001
+	desc = "EVTDESC_RIRSEIHF_00001"
+	
+	sound = church_bells
+	picture = GFX_evt_ecrouelles
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = "EVTOPTA_RIRSEIHF_00001"
+piety = 200
+hidden_tooltip = {
+random = { 
+chance = 1 
+add_trait = has_tuberculosis } }
+
+}
+}
+
+
+
+
+
+
