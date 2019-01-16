@@ -89,6 +89,7 @@ if = {
 }
 }
 }
+
 # Le roi est empereur en son royaume France
 character_event = {
         id = RIRSEI.454545
@@ -1096,6 +1097,13 @@ character_event = {
 		name = "EVTOPTA_RIRSEI_727272"	
 		prestige = 500
                 add_trait = crowned_by_pope
+				if = {
+				limit = {
+				has_dlc = has_dlc = "Holy Fury" }
+				remove_trait = crowned_by_priest
+			    remove_trait = crowned_by_bishop
+			    remove_trait = roi_des_romains
+			}
 		
 	}
 }
@@ -1131,6 +1139,8 @@ d_ostlandet = { de_jure_liege = k_normannia }
 d_trondelag = { de_jure_liege = k_normannia }
 d_jamtland = { de_jure_liege = k_normannia }
 d_iceland = { de_jure_liege = k_normannia }
+d_agder = { de_jure_liege = k_normannia }
+d_oppland = { de_jure_liege = k_normannia }
 
 			}
 		}
@@ -1750,7 +1760,6 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_RIRSEI_929292
                 prestige = 1500
-	
 		e_latin_empire = {
 			grant_title = ROOT
 			
@@ -2258,6 +2267,7 @@ narrative_event = {
                           d_tyrol = { de_jure_liege = k_bavaria }
                           d_osterreich = { de_jure_liege = k_bavaria }
                           d_carinthia = { de_jure_liege = k_bavaria }
+						  d_salzburg = { de_jure_liege = k_bavaria }
 			}
 		}
 		k_bavaria = {
@@ -2574,6 +2584,17 @@ option = {
 			copy_title_laws = d_bohemia
 			copy_title_history = d_bohemia
 		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
 e_hre = {
 holder_scope = { set_defacto_vassal = ROOT } 
 }
@@ -2652,7 +2673,18 @@ option = {
  
  
  prestige = 1500
-
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}
+			
 		k_bohemia = {
 			grant_title = ROOT
 			copy_title_laws = d_bohemia
@@ -2686,6 +2718,17 @@ option = {
 			copy_title_laws = d_croatia
 			copy_title_history = d_croatia
 		}
+		if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}
 
 
 
@@ -2790,7 +2833,17 @@ give_nickname = nick_premiercour
                    limit = { has_landed_title = e_byzantium }
 				letter_event = { id = RIRSEI.454647}
 }
-
+		if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}
  
 	          
 }
@@ -2842,7 +2895,6 @@ k_serbia = {
 			grant_title = ROOT
 }
 give_nickname = nick_premiercour
- 
 	
 	          
 }
