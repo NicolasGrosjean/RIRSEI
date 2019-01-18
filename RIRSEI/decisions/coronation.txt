@@ -45,11 +45,11 @@ decisions = {
 			wealth = -100
 if = {
      limit = { NOT = { has_global_flag = emp_vic_quer } }
-			character_event = { id = RIRSEI.2002000 }
+			character_event = { id = RIRSEIVD.2002000 }
 }
 if = {
      limit = { has_global_flag = emp_vic_quer }
-			character_event = { id = RIRSEI.2002050 }
+			character_event = { id = RIRSEIVD.2002050 }
 }
 			hidden_tooltip = {
 				#character_event = { id = 2002050 days = 60 } # Coronation by pope
