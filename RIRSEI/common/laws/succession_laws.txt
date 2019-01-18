@@ -678,7 +678,6 @@ succession_laws = {
 			conditional_tooltip = {
 				trigger = {
 					NOT = { has_dlc = "Conclave" }
-					NOT = { has_law = succ_hre_elective }
 				}
 				OR = {
 					holder_scope = { # Viceroyalties can always have primogeniture if not muslim
@@ -834,10 +833,6 @@ succession_laws = {
 			}
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
-			NOR = {  #Special Elective.
-				title = e_hre 
-				has_title_flag = alternate_hre
-			}
 		}
 		allow = {
 			custom_tooltip = {
@@ -864,6 +859,7 @@ succession_laws = {
 		vassal_opinion = 15
 		vassal_limit = 20
 		potential = {
+		has_global_flag = bulledor
 			NAND = { 
 				has_law = succ_byzantine_elective 
 				OR = { 
