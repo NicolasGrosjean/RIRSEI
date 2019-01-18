@@ -32,6 +32,7 @@ technology = {
 		d_orleans
 		d_champagne
 		d_valois
+		d_picardie
 		d_burgundy
 		d_aquitaine
 		d_toulouse
@@ -53,9 +54,6 @@ technology = {
 		d_cumbria
 		d_hampshire
 		d_gwent
-		d_penthievre
-		d_picardie
-		d_loire
 		d_rhine
 		d_angria
 		d_lausitz
@@ -66,14 +64,14 @@ technology = {
 	}
 
 	769 = {
-		military = 0.5
+		military = 1.0
 		economy = 0.85
 		culture = 1.0
 		
 		TECH_LIGHT_INFANTRY = 1
 		TECH_HEAVY_INFANTRY = 0.75
-		TECH_FORTIFICATIONS_CONSTRUCTION = 0.90
-		TECH_CASTLE_CONSTRUCTION = 0.90
+		TECH_FORTIFICATIONS_CONSTRUCTION = 1.0
+		TECH_CASTLE_CONSTRUCTION = 1.0
 	}
 	
 	1066 = {
@@ -111,7 +109,6 @@ technology = {
 		d_sicily
 		d_venice
 		d_verona
-		d_friuli
 		d_susa
 		d_lombardia
 		d_genoa
@@ -127,10 +124,11 @@ technology = {
 		d_abruzzo
 	}
 	769 = {
-		military = 0.75
+		military = 1.0
 		economy = 1.0
 		culture = 1.0
 		
+		TECH_CASTLE_CONSTRUCTION = 1.0
 		TECH_RELIGIOUS_CUSTOMS = 2
 		TECH_LIGHT_INFANTRY = 1
 	}
@@ -180,9 +178,9 @@ technology = {
 	}
 	
 	769 = {
-		military = 0.5
-		economy = 0.70
-		culture = 0.75
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
 		
 		TECH_LIGHT_INFANTRY = 1
 		TECH_HEAVY_INFANTRY = 0.75
@@ -223,8 +221,8 @@ technology = {
 	}
 
 	769 = {
-		military = 0.5
-		economy = 0.85
+		military = 1.0
+		economy = 1.0
 		culture = 1.0
 		
 		TECH_LIGHT_INFANTRY = 1
@@ -262,7 +260,7 @@ technology = {
 	}
 
 	769 = {
-		military = 0.75
+		military = 1.0
 		economy = 1.2
 		culture = 1.5
 		
