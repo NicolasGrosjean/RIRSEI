@@ -9,10 +9,10 @@
 # Written by Van Diemen
 
 # Coronation inform Emperor
-namespace = RIRSEI
+namespace = RIRSEIVD
 
 character_event = {
-	id = RIRSEI.2002000
+	id = RIRSEIVD.2002000
 	desc = "EVTDESC_RIRSEI_2002000"
 	picture = "GFX_evt_pope"
 	#border = "GFX_event_normal_frame_religion"
@@ -23,7 +23,7 @@ character_event = {
 		name = "EVTOPTA_RIRSEI_2002000" # I will ask the pope
 		hidden_tooltip = {
 			rightful_religious_head_scope = {
-				letter_event = { id = RIRSEI.2002005 }
+				letter_event = { id = RIRSEIVD.2002005 }
 			}
 		}
 	}
@@ -31,7 +31,7 @@ character_event = {
 
 # Asking the pope for coronation
 letter_event = {
-	id = RIRSEI.2002005
+	id = RIRSEIVD.2002005
 	desc = "EVTDESC_RIRSEI_2002005"
 	
 	is_triggered_only = yes
@@ -40,7 +40,7 @@ letter_event = {
 		name = "EVTOPTA_RIRSEI_2002005"	# Accept
 		wealth = 100
 		FROM = {
-			letter_event = { id = RIRSEI.2002010 }
+			letter_event = { id = RIRSEIVD.2002010 }
 		}
 		ai_chance = {
 			factor = 0.5
@@ -122,7 +122,7 @@ modifier = {
 	option = {
 		name = "EVTOPTA_RIRSEI_2002005"	# Reject
 		FROM = {
-			letter_event = { id = RIRSEI.2002015 }
+			letter_event = { id = RIRSEIVD.2002015 }
 		}
 		ROOT = {
 			opinion = {
@@ -155,7 +155,7 @@ modifier = {
 
 # Inform Emperor Pope accepts coronation + send out the invites to realm lords
 letter_event = {
-	id = RIRSEI.2002010
+	id = RIRSEIVD.2002010
 	desc = "EVTDESC_RIRSEI_2002010"
 	
 	is_triggered_only = yes
@@ -182,16 +182,16 @@ letter_event = {
 					prisoner = no
 					NOT = { is_female = yes	}
 				}
-				letter_event = { id = RIRSEI.2002020 } # Invitation to coronation
+				letter_event = { id = RIRSEIVD.2002020 } # Invitation to coronation
 			}			
-		character_event = { id = RIRSEI.250 days = 60 } # Coronation by pope		
+		character_event = { id = RIRSEIVD.250 days = 60 } # Coronation by pope		
 		}
 	}
 }
 
 # Inform Emperor pope rejects coronation
 letter_event = {
-	id = RIRSEI.2002015
+	id = RIRSEIVD.2002015
 	desc = "EVTDESC_RIRSEI_2002015"
 	
 	is_triggered_only = yes
@@ -212,7 +212,7 @@ letter_event = {
 
 # Coronation invites to realm lords
 letter_event = {
-	id = RIRSEI.2002020
+	id = RIRSEIVD.2002020
 	desc = "EVTDESC_RIRSEI_2002020"
 	#picture = GFX_evt_heretic
 	
@@ -280,7 +280,7 @@ letter_event = {
 			}
 		}
 		FROM = {
-			letter_event = { id = RIRSEI.2002025 }
+			letter_event = { id = RIRSEIVD.2002025 }
 		}
 		ai_chance = {
 			factor = 0.2
@@ -381,7 +381,7 @@ letter_event = {
 
 # Inform Emperor of not attending ceremony
 letter_event = {
-	id = RIRSEI.2002025
+	id = RIRSEIVD.2002025
 	desc = "EVTDESC_RIRSEI_2002025"
 	
 	is_triggered_only = yes
@@ -400,7 +400,7 @@ letter_event = {
 
 # Emperor crowned by pope
 character_event = {
-	id = RIRSEI.250
+	id = RIRSEIVD.250
 	title = "EVTNAME_RIRSEI_2002050"
 	desc = "EVTDESC_RIRSEI_2002050"
 	picture = "GFX_evt_empdeux"
@@ -427,7 +427,7 @@ remove_trait = roi_oint
 				limit = {
 					has_character_flag = attend_coronation
 				}
-				character_event = { id = RIRSEI.251 }
+				character_event = { id = RIRSEIVD.251 }
 				opinion = {
 					modifier = opinion_attended_ceremony # should maybe be a new opinion called "Crowned by Pope"
 					who = ROOT
@@ -438,17 +438,17 @@ remove_trait = roi_oint
 				limit = {
 					not = { has_character_flag = attend_coronation }
 				}
-				letter_event = { id = RIRSEI.252 }
+				letter_event = { id = RIRSEIVD.252 }
 			}
 			clr_character_flag = wants_coronation
-			narrative_event = { id = RIRSEI.253 }
+			narrative_event = { id = RIRSEIVD.253 }
 		}
 	}
 }
 
 # Emperor crowned by pope - attended realm lord inform ceremony
 character_event = {
-	id = RIRSEI.251
+	id = RIRSEIVD.251
 	desc = "EVTDESC_RIRSEI_2002055"
 	picture = "GFX_evt_empdeux"
 	
@@ -463,7 +463,7 @@ character_event = {
 
 # Emperor crowned by pope - non-attended realm lord inform
 letter_event = {
-	id = RIRSEI.252
+	id = RIRSEIVD.252
 	desc = "EVTDESC_RIRSEI_2002060"
 	
 	is_triggered_only = yes
@@ -473,7 +473,7 @@ letter_event = {
 	}
 }
 narrative_event = {
-	id = RIRSEI.253
+	id = RIRSEIVD.253
 	title = "EVTNAME_RIRSEI_2002065"
 	desc = "EVTDESC_RIRSEI_2002065"
 	picture = "GFX_evt_empdeux"
