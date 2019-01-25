@@ -11127,6 +11127,7 @@ character_event = {
 			trait = crowned_by_pope
 			trait = crowned_by_myself
 			trait = roi_oint
+			trait = roi_des_romains
 		}
 		OR = { 
 			religion = catholic
@@ -11171,6 +11172,7 @@ character_event = {
 			trait = crowned_by_pope
 			trait = crowned_by_myself
 			trait = roi_oint
+			trait = roi_des_romains
 		}
 		OR = { 
 			religion = catholic
@@ -12738,6 +12740,7 @@ character_event = {
 			trait = crowned_by_pope
 			trait = crowned_by_myself
 			trait = roi_oint
+			trait = roi_des_romains
 			has_character_flag = flag_crowned_by_priest
 			has_character_flag = flag_crowned_by_bishop
 			has_character_flag = flag_crowned_by_pope
