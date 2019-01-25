@@ -40,6 +40,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_1 }
 				}
@@ -57,6 +58,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 }
 }
@@ -73,6 +75,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 }
 }
@@ -109,6 +112,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_2 }
 				}
@@ -125,6 +129,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 }
 }		
@@ -175,6 +180,7 @@ is_feudal = yes
 culture = german
 culture = old_saxon
 culture = italian
+culture = dalmatian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_3 }
 				}
@@ -191,6 +197,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 }
 }
@@ -207,6 +214,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = dalmatian
 culture = GalloB
 }
 }
@@ -264,12 +272,11 @@ FROM = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 		}
@@ -280,12 +287,11 @@ FROM = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 		}
@@ -337,12 +343,11 @@ FROM = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 		}
@@ -352,12 +357,11 @@ FROM = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 OR = {
@@ -424,15 +428,14 @@ ROOT = { has_building = ca_culture_Francais_sysfed_3 }
 		is_active_trigger = {
 FROM = {
 				OR = {
-					culture = frankish
+				culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 		}
@@ -442,12 +445,11 @@ FROM = {
 					culture = frankish
 					culture = occitan
                                         culture = norman
-                                        culture = old_frankish                                        
-culture = german
-culture = old_saxon
-culture = dutch
-culture = italian
-culture = GalloB
+                                        culture = old_frankish
+                                        culture = breton
+										culture = dutch
+										culture = GalloB
+										culture = outremer
 }
 }
 OR = {
