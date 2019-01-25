@@ -6873,8 +6873,7 @@ bid_for_independence = {
 		}
 
 		FROM = {
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
+	
 				any_demesne_title = { # All titles
 					limit = {
 						OR = {
@@ -6901,7 +6900,7 @@ bid_for_independence = {
 						add_law = crown_authority_3
 					}
 				}
-			}
+			
 		}
 
 		hidden_tooltip = {
@@ -7058,8 +7057,6 @@ depose_liege = {
 	on_success = {
 		FROM = {
 			prestige = -500
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
 				any_demesne_title = { # All titles
 					limit = {
 						OR = {
@@ -7086,7 +7083,7 @@ depose_liege = {
 						add_law = crown_authority_3
 					}
 				}
-			}
+			
 
 			abdicate_to_most_liked_by = ROOT
 		}
@@ -7223,8 +7220,6 @@ overthrow_ruler = {
 				who = ROOT
 				modifier = declared_war
 			}
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
 				any_demesne_title = { # All titles
 					limit = {
 						OR = {
@@ -7251,7 +7246,7 @@ overthrow_ruler = {
 						add_law = crown_authority_2
 					}
 				}
-			}
+			
 			if = {
 				limit = { has_dlc = "Zeus" }
 				any_demesne_title = { # All titles
@@ -7434,8 +7429,6 @@ overthrow_ruler_no_calls = {
 				who = ROOT
 				modifier = declared_war
 			}
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
 				any_demesne_title = { # All titles
 					limit = {
 						OR = {
@@ -7462,7 +7455,7 @@ overthrow_ruler_no_calls = {
 						add_law = crown_authority_2
 					}
 				}
-			}
+			
 			abdicate = yes
 		}
 
@@ -7589,8 +7582,6 @@ change_gavelkind_succession_law = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
 				any_demesne_title = { # All titles
 					if = {
 						limit = {
@@ -7619,7 +7610,7 @@ change_gavelkind_succession_law = {
 						}
 					}
 				}
-			}
+			
 		}
 		
 		ROOT = {
@@ -7738,7 +7729,6 @@ lower_crown_authority_law = {
 		ROOT = {
 			vassal_of = FROM
 		}
-		NOT = { has_dlc = "Zeus" }
 	}
 	
 	can_use_title = {
@@ -8565,8 +8555,7 @@ weaken_vassal_plot = {
 			participation_scaled_prestige = 100
 		}
 		FROM = {
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
+
 				any_demesne_title = { # All titles
 					limit = {
 						OR = {
@@ -8593,7 +8582,7 @@ weaken_vassal_plot = {
 						add_law = crown_authority_3
 					}
 				}
-			}
+			
 		}
 	}
 	
@@ -8735,8 +8724,6 @@ decadence_invasion = {
 		}
 		
 		FROM = {
-			if = {
-				limit = { NOT = { has_dlc = "Zeus" } }
 				any_demesne_title = { # All titles
 					if = {
 						limit = {
@@ -8749,7 +8736,7 @@ decadence_invasion = {
 						add_law = crown_authority_0
 					}
 				}
-			}
+			
 		}
 		
 		ROOT = {
@@ -13528,7 +13515,13 @@ dejure_county_claim = {
 
 	can_use_title = {
 		tier = count
-		
+		NOT = { 
+		    ROOT = {
+			primary_title = {
+			has_law = crown_authority_0
+					}
+					}
+					}
 		OR = {
 			FROM = {
 				has_landed_title = PREV
@@ -16508,6 +16501,10 @@ tributary_cb = {
 			NAND = {
 				holy_order = yes
 				religion = FROM
+			}
+				NAND = {
+				religion_group = christian
+				religion_group = FROM
 			}
 			independent = yes
 		}
