@@ -342,7 +342,7 @@ saxon_band_composition = {
 }
 
 varangian_guard_composition = {		
-	heavy_infantry = 6000
+	heavy_infantry = 2000
 }
 
 mamluks_composition = {
