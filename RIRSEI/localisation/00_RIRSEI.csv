@@ -2583,6 +2583,30 @@ SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut pas être changé !§!;;;;;;;;;;;;x
 #;;;;;;;;;;;;x;;;;;;;;;; 
 dejure_duchy_rirsei_claim;;Vous pouvez réclamer ce duché, car il appartient de jure à votre royaume;;;;;x;;;;;;;;
+carolingian;;Sang de Pépin le Bref;;;;;;;x;;
+carolingian_desc;;La dynastie de Pépin le Bref a été béni par le Pape, interdisant aux Francs "d'oser jamais élire à l'avenir un roi issu d'autres reins que ceux-ci".;;;;;;;x;;
+philippe_capet;;Sang de Saint Louis;;;;;;;x
+philippe_capet_desc;;Courageux, juste et pieux, Saint Louis représente le modèle parfait du roi chrétien. Sa nombreuse descendance profite directement de sa canonisation.;;;;;;;x
+boleslaw_the_brave;;Sang de Piast le Charron;;;;;;;;x;;;;;;;;;;
+boleslaw_the_brave_desc;;Piast le Charron est le fondateur légendaire de la dynastie des Piast qui régna sur la Pologne.;;;;;;;;x;;;;;;;;;; 
+premyslid;;Sang de Premysl le Laboureur;;;;;;x;;;;;;;;;;  
+premyslid_desc;;Premysl le Laboureur est le fondateur légendaire de la dynastie des Premyslides qui régna sur la Bohême.;;;;;;x;;;;;;;;;;
+saint_olaf;;Sang de Saint Olaf;;;;;;x;;;;;;;;;;
+saint_olaf_desc;;Saint Olaf établit définitivement le christianisme en Norvège. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
+saint_knut;;Sang de Knut le Saint;;;;;;x;;;;;;;;;;
+saint_knut_desc;;Saint Knut était connu pour sa prodigalité envers l'Eglise et les miracles qu'il effectua. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
+saint_eric;;Sang de Saint Eric;;;;;;x;;;;;;;;;;
+saint_eric_desc;;Saint Eric favorisa le christianisme et mourut en martyr durant la messe. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
+baibars;;Sang de Qala'ûn;;;;x;;;;;;;;;;
+baibars_desc;;Qala'ûn est un important sultan mamelouk qui lutta victorieusement contre les Francs et les Mamelouks. Ses succès et sa gloire favorisent la légitimité de ses descendants.;;;;x;;;;;;;;;;
+Omeyades;;Sang de 'Ummayah;;;;x;;;;;;;;;;
+Omeyades_desc;;Les Banu 'Ummayah forment l'un des clans les plus importants du monde musulman. Ils tirent leur légitimité de 'Ummayah, grand oncle du prophète.;;;;x;;;;;;;;;;
+Abbassides;;Sang de Al-Abbas;;;;x;;;;;;;;;;
+Abbassides_desc;;Les Abbassides forment l'une des familles les plus importantes du monde musulman. Ils tirent leur légitimité de Al-Abbas, oncle du prophète.;;;;x;;;;;;;;;; 
+Alides;;Sang d'Ali & Fatima;;;;x;;;;;;;;;;
+Alides_desc;;Les descendants d'Ali, cousin du Prophète, et de Fatima, fille du prophète, tirent leur légitimité de ces deux aieux. Ce sont les dirigeants naturels de l'Islam pour tous les shiites.;;;;x;;;;;;;;;; 
+saladin;;Sang d'Ayyub;;;;x;;;;;;;;;;
+saladin_desc;;Ayyub est le fondateur de la dynastie des Ayyoubides. Dynastie kurde et légataires des Zenguides, ils sont les grands partisans du Djihad.;;;;x;;;;;;;;;;          
 #;;;;;;;;;;;;x;;;;;;;;;; 
 #;CHINA;;;;;;;;;;;x;;;;;;;;;; 
 #;;;;;;;;;;;;x;;;;;;;;;; 
