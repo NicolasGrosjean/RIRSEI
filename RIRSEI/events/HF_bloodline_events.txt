@@ -1,0 +1,1589 @@
+# Written by Flavio (HF.24000 - HF.24239)
+
+
+namespace=HF
+
+character_event = { # Great warrior character chance
+	id = HF.99
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+
+	trigger = {
+		any_owned_bloodline = {
+			has_bloodline_flag = bloodline_heroes
+			bloodline_is_active_for = PREV
+			founder = {
+				NOT = {
+					character = ROOT
+				}
+				religion = ROOT
+			}
+		}
+		NOT = {
+			any_courtier_or_vassal = {
+				count = 4
+				has_character_flag = bloodline_great_hero
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			80 = {
+				modifier = {
+					factor = 0.75
+					NOT = {
+						higher_tier_than = COUNT
+					}
+				}
+				modifier = {
+					factor = 0.75
+					NOT = {
+						higher_tier_than = DUKE
+					}
+				}
+				modifier = {
+					factor = 0.75
+					any_courtier_or_vassal = {
+						count = 2
+						has_character_flag = bloodline_great_hero
+					}
+				}
+				modifier = {
+					factor = 0.75
+					any_courtier_or_vassal = {
+						count = 3
+						has_character_flag = bloodline_great_hero
+					}
+				}
+				character_event = { id = HF.100 }
+			}
+			20 = {
+				modifier = {
+					factor = 3
+					ai = yes
+				}
+			}
+		}
+	}
+}
+
+character_event = { # Great warrior character arrives
+	id = HF.100
+	desc = HF_100_DESC
+	picture = GFX_placeholder
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	immediate = {
+		random_owned_bloodline = {
+			limit = {
+				has_bloodline_flag = bloodline_heroes
+				founder = {
+					NOT = {
+						character = ROOT
+					}
+					religion = ROOT
+				}
+			}
+			founder = {
+				save_event_target_as = target_bloodline_founder
+			}
+		}
+		spawn_fantastic_commander_effect = yes
+		event_target:invited_character = {
+			set_character_flag = bloodline_great_hero
+			set_character_flag = hero_knight
+		}
+	}
+	
+	option = {
+		name = MNM.70013.o
+		
+		trigger = {
+			any_realm_character = {
+				NOT = {
+					higher_tier_than = BARON
+				}
+				liege = { character = ROOT }
+				has_minor_title = title_commander
+				NOT = {
+					martial = 12
+				}
+			}
+			OR = {
+				AND = {
+					tier = COUNT
+					any_realm_character = {
+						count = 2
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = DUKE
+					any_realm_character = {
+						count = 4
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = no
+					any_realm_character = {
+						count = 6
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = no
+					any_realm_character = {
+						count = 8
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = yes
+					any_realm_character = {
+						count = 2
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = yes
+					any_realm_character = {
+						count = 4
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+			}
+		}
+		
+		random_realm_character = {
+			limit = {
+				NOT = {
+					higher_tier_than = BARON
+				}
+				liege = { character = ROOT }
+				has_minor_title = title_commander
+				NOT = {
+					martial = 12
+				}
+			}
+			remove_title = title_commander
+			opinion = {
+				modifier = insulted
+				who = ROOT
+				years = 2
+			}
+		}
+		
+		event_target:invited_character = {
+			give_minor_title = title_commander
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_NE_1
+		
+		trigger = {
+			OR = { 
+				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
+				NOT = { #...Or there are no valid vassal candidates that can be commanders.
+					any_vassal = { 
+						higher_real_tier_than = BARON
+						NOT = { 
+							primary_title = { temporary = yes } 
+						}
+						OR = {
+							AND = {
+								OR = {
+									male_can_hold_minor_title_trigger = yes
+									female_can_hold_minor_commander_title_trigger = yes
+								}
+								OR = {
+									NOT = { religion = hindu }
+									trait = kshatriya
+								}
+								is_adult = yes
+							}
+							has_character_flag = special_marshal
+						}
+				
+						prisoner = no
+						NOT = { trait = incapable }
+						NOT = { is_inaccessible_trigger = yes }
+						NOT = { has_character_flag = guru }
+						NOT = { has_character_modifier = refusing_to_lead }
+						NOR = {
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+							has_minor_title = title_commander
+						}
+					} 
+				}
+			}
+			event_target:invited_character = { has_character_flag = invited_soldier }
+			OR = {
+				AND = {
+					tier = COUNT
+					NOT = {
+						any_realm_character = {
+							count = 2
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = DUKE
+					NOT = {
+						any_realm_character = {
+							count = 4
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = no
+					NOT = {
+						any_realm_character = {
+							count = 6
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = no
+					NOT = {
+						any_realm_character = {
+							count = 8
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = yes
+					NOT = {
+						any_realm_character = {
+							count = 2
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = yes
+					NOT = {
+						any_realm_character = {
+							count = 4
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+			}
+		}
+		
+		event_target:invited_character = {
+			give_minor_title = title_commander
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	
+	option = {
+		name = FANTASTIC
+		event_target:invited_character = {
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_HF_100
+		
+		hidden_tooltip = {
+			event_target:invited_character = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
+	}
+}
+
+character_event = { # Sympathy for founder group
+	id = HF.110
+	desc = HF_110_DESC
+	picture = GFX_placeholder
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	trigger = {
+		NOT = {
+			has_character_flag = no_sympathy_bloodline
+		}
+		any_owned_bloodline = {
+			bloodline_is_active_for = PREV
+			founder = {
+				NOT = {
+					character = ROOT
+				}
+				is_alive = no
+				OR = {
+					AND = {
+						religion_group = pagan_group
+						ROOT = {
+							NOR = {
+								religion_group = pagan_group
+								trait = sympathy_pagans
+							}
+						}
+					}
+					AND = {
+						religion_group = christian
+						ROOT = {
+							NOR = {
+								religion_group = christian
+								trait = sympathy_christendom
+							}
+						}
+					}
+					AND = {
+						religion_group = muslim
+						ROOT = {
+							NOR = {
+								religion_group = muslim
+								trait = sympathy_islam
+							}
+						}
+					}
+					AND = {
+						religion_group = zoroastrian_group
+						ROOT = {
+							NOR = {
+								religion_group = zoroastrian_group
+								trait = sympathy_zoroastrianism
+							}
+						}
+					}
+					AND = {
+						religion_group = jewish_group
+						ROOT = {
+							NOR = {
+								religion_group = jewish_group
+								trait = sympathy_judaism
+							}
+						}
+					}
+					AND = {
+						religion_group = indian_group
+						ROOT = {
+							NOR = {
+								religion_group = indian_group
+								trait = sympathy_indian
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_owned_bloodline = {
+			limit ={
+				founder = {
+					NOT = {
+						character = ROOT
+					}
+					is_alive = no
+					OR = {
+						AND = {
+							religion_group = pagan_group
+							ROOT = {
+								NOR = {
+									religion_group = pagan_group
+									trait = sympathy_pagans
+								}
+							}
+						}
+						AND = {
+							religion_group = christian
+							ROOT = {
+								NOR = {
+									religion_group = christian
+									trait = sympathy_christendom
+								}
+							}
+						}
+						AND = {
+							religion_group = muslim
+							ROOT = {
+								NOR = {
+									religion_group = muslim
+									trait = sympathy_islam
+								}
+							}
+						}
+						AND = {
+							religion_group = zoroastrian_group
+							ROOT = {
+								NOR = {
+									religion_group = zoroastrian_group
+									trait = sympathy_zoroastrianism
+								}
+							}
+						}
+						AND = {
+							religion_group = jewish_group
+							ROOT = {
+								NOR = {
+									religion_group = jewish_group
+									trait = sympathy_judaism
+								}
+							}
+						}
+						AND = {
+							religion_group = indian_group
+							ROOT = {
+								NOR = {
+									religion_group = indian_group
+									trait = sympathy_indian
+								}
+							}
+						}
+					}
+				}
+			}
+			founder = {
+				save_event_target_as = target_bloodline_founder
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_HF_110
+		tooltip_info = lunatic
+		
+		trigger = {
+			trait = lunatic
+			NOT = {
+				trait = zealous
+			}
+			event_target:target_bloodline_founder = {
+				NOR = {
+					religion = pagan
+					religion = hellenic_pagan
+				}
+			}
+		}
+		
+		piety = -250
+		religion = event_target:target_bloodline_founder
+		add_trait = zealous
+		set_character_flag = ai_flag_refuse_conversion
+		
+		ai_chance = {
+        	factor = 5
+        }
+	}
+	
+	option = {
+		name = EVTOPTA_HF_110
+		if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = pagan_group
+				}
+			}
+			add_trait = sympathy_pagans
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = christian
+				}
+			}
+			add_trait = sympathy_christendom
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = muslim
+				}
+			}
+			add_trait = sympathy_islam
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = jewish_group
+				}
+			}
+			add_trait = sympathy_judaism
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = zoroastrian_group
+				}
+			}
+			add_trait = sympathy_zoroastrianism
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = indian_group
+				}
+			}
+			add_trait = sympathy_indian
+		}
+		
+		ai_chance = {
+        	factor = 45
+        }
+	}
+	
+	option = {
+		name = EVTOPTB_HF_110
+		set_character_flag = no_sympathy_bloodline
+		piety = 5
+		
+		ai_chance = {
+        	factor = 50
+        }
+	}
+}
+
+character_event = { # Chance of gaining a personality trait of Founder
+	id = HF.120
+	desc = HF_120_DESC
+	picture = GFX_placeholder
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	trigger = {
+		NOT = {
+			has_character_flag = had_bloodline_personality_event
+		}
+		any_owned_bloodline = {
+			bloodline_is_active_for = PREV
+			OR = {
+				NOT = {
+					has_bloodline_flag = saintly_bloodline
+				}
+				ROOT = {
+					religion_group = christian
+				}
+			}
+			founder = {
+				NOT = {
+					character = ROOT
+				}
+				is_alive = no
+				ROOT = {
+					can_copy_personality_trait_from = PREV
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		set_character_flag = had_bloodline_personality_event
+		random_owned_bloodline = {
+			limit ={
+				OR = {
+					NOT = {
+						has_bloodline_flag = saintly_bloodline
+					}
+					ROOT = {
+						religion_group = christian
+					}
+				}
+				founder = {
+					NOT = {
+						character = ROOT
+					}
+					is_alive = no
+					ROOT = {
+						can_copy_personality_trait_from = PREV
+					}
+				}
+			}
+			founder = {
+				save_event_target_as = target_bloodline_founder
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_HF_120
+		tooltip_info = lunatic
+		trigger = {
+			trait = lunatic
+			NOT = {
+				trait = cannibal_trait
+			}
+			event_target:target_bloodline_founder = {
+				trait = cannibal_trait
+			}
+		}
+		add_trait = cannibal_trait
+	}
+	
+	option = {
+		name = EVTOPTC_HF_120
+		tooltip_info = possessed
+		trigger = {
+			trait = possessed
+			NOR = {
+				trait = cannibal_trait
+				trait = lunatic
+			}
+			event_target:target_bloodline_founder = {
+				trait = cannibal_trait
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_HF_120
+		
+		copy_random_personality_trait = event_target:target_bloodline_founder
+		add_character_modifier = {
+			name = emulating_legend
+			years = 5
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_HF_120
+	}
+}
+
+
+#
+
+#on_war_ended_victory: check for war variable.
+# From = Attacker, Root = Defender
+character_event = {
+	id = HF.24018
+	hide_window = yes
+	trigger = { 
+		has_dlc = "Holy Fury"
+		FROM = { 
+			NOR = {
+				trait = heresiarch
+				trait = peasant_leader
+				trait = adventurer
+				has_character_flag = flag_about_to_war_bloodline
+			}
+		}
+		ROOT = { 
+			NOR = {
+				trait = heresiarch
+				trait = peasant_leader
+				trait = adventurer
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		FROM = { 
+			hidden_tooltip = { change_variable = { which = bloodline_won_wars value = 1 } }
+			if = { #Pure War Bloodline.
+				limit = { 
+					check_variable = { which = bloodline_won_wars value = 15 } 
+					has_ambition = obj_forge_bloodline
+				}
+				set_character_flag = flag_about_to_war_bloodline
+				character_event = { id = HF.24031 days = 25 random = 25 }
+			}
+		}
+	}
+}
+
+#on_war_ended_defeat: check for war variable.
+# From = Attacker, Root = Defender
+character_event = {
+	id = HF.24019
+	hide_window = yes
+	trigger = { 
+		has_dlc = "Holy Fury"
+		FROM = { 
+			NOR = {
+				trait = heresiarch
+				trait = peasant_leader
+				trait = adventurer
+			}
+		}
+		ROOT = { 
+			NOR = {
+				trait = heresiarch
+				trait = peasant_leader
+				trait = adventurer
+				has_character_flag = flag_about_to_war_bloodline
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		ROOT = { 
+			hidden_tooltip = { change_variable = { which = bloodline_won_wars value = 1 } }
+			if = { #Pure War Bloodline.
+				limit = { 
+					check_variable = { which = bloodline_won_wars value = 15 } 
+					has_ambition = obj_forge_bloodline
+				}
+				set_character_flag = flag_about_to_war_bloodline
+				character_event = { id = HF.24031 days = 25 random = 25 }
+			}
+		}
+	}
+}
+
+#Pure War Bloodline crossroad.
+character_event = {
+	id = HF.24031
+	hide_window = yes
+
+	trigger = { 
+			religion_group = christian 
+			is_evil_trigger = no 
+			OR = {
+				is_female = no
+				has_religion_feature = religion_matriarchal 	#AltStart
+				has_religion_feature = religion_equal
+			}
+		has_dlc = "Holy Fury"
+		NOT = {
+			any_owned_bloodline = { 
+				has_bloodline_flag = created_bloodline
+			}
+		}
+		has_ambition = obj_forge_bloodline
+	}
+	
+	is_triggered_only = yes
+
+	immediate = { 
+		if = { #First check if qualifies for Deaht little helper flavor.
+			limit = { 
+				OR = { 
+					NOT = { age = 16 }
+					AND = { 
+						has_character_flag = flag_forge_bloodline_was_child 
+						NOT = { age = 35 } #Should still be somewhat young.
+					}
+				}
+			}
+			narrative_event = { id = HF.24032 }
+		}
+		else = { 
+			character_event = { id = HF.24033 } #Otherwise let player decide the flavor.
+		}
+	}
+}
+
+
+#Adult crossroad for pure War Bloodline.
+character_event = {
+	id = HF.24033
+	desc = EVTDESCAHF24033
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	trigger = { 
+		has_dlc = "Holy Fury"
+		NOT = {
+			any_owned_bloodline = { 
+				has_bloodline_flag = created_bloodline
+			}
+		}
+		has_ambition = obj_forge_bloodline
+	}
+
+	is_triggered_only = yes
+	
+	# Knightly speech.
+	# Craving for more land and blood.
+	# Discussing about tactics.
+
+	option = {
+		name = EVTOPTAHF24033
+		trigger = { 
+			religion_group = christian 
+			is_evil_trigger = no 
+			OR = {
+				is_female = no
+				has_religion_feature = religion_matriarchal 	#AltStart
+				has_religion_feature = religion_equal
+			}
+		}
+		custom_tooltip = { text = TT_EVTOPTAHF24033 }
+		if = { 
+			limit = { NOT = { trait = brave } } 
+			add_trait = brave
+		}
+		if = { 
+			limit = { 
+				this_has_super_cool_nickname_trigger = no 
+				is_female = no
+			}
+			ROOT = { give_nickname = nick_the_white_knight }
+		}
+		if = { 
+			limit = { 
+				this_has_super_cool_nickname_trigger = no 
+				is_female = yes
+			}
+			ROOT = { give_nickname = nick_the_virago }
+		}
+		tooltip = { #Show bloodline effects
+			create_bloodline = {
+				type = pure_war_bloodline_02
+			}		
+		}
+		hidden_tooltip = { narrative_event = { id = HF.24034 } }
+		ai_chance = { 
+			factor = 20
+		}
+	}
+}
+
+#Adult gains pure War Bloodline (Perfect Knight)
+narrative_event = {
+	id = HF.24034
+	title = EVTTITLEHF24034
+	desc = EVTDESCHF24034
+	picture = GFX_evt_joust
+	border = GFX_event_narrative_frame_war
+	sound = bloodline_added
+	hide_from = yes
+	show_from_from = no
+	
+	is_triggered_only = yes
+
+	trigger = { 
+		has_dlc = "Holy Fury"
+		NOT = {
+			any_owned_bloodline = { 
+				has_bloodline_flag = created_bloodline
+			}
+		}
+		has_ambition = obj_forge_bloodline
+	}
+	
+	option = { #Gain War bloodline.
+		name = EVTOPTAHF24034
+		hidden_tooltip = {
+		add_artifact = crown_winged_helmet
+			new_artifact = {
+				set_description = crown_winged_helmet_bloodline_desc_1
+				set_name = crown_winged_helmet_bloodline_name_1
+			}
+		}
+		if = { 
+			limit = { is_female = no }
+			create_bloodline = {
+				type = pure_war_bloodline_02
+			}		
+		}
+		if = { 
+			limit = { is_female = yes }
+			create_bloodline = {
+				type = pure_war_bloodline_02
+				inheritance = matrilineal
+			}		
+		}
+		ai_chance = { 
+			factor = 100
+		}
+	}
+}
+##################################################################
+##################################################################
+# Forge Bloodline Ambition events
+
+
+
+#Event-based Bloodlines.
+
+########################################################
+# Custom Bloodlines Special effects
+
+# Knight Bloodline
+# Bards/Knights arriving at court.
+character_event = { 
+	id = HF.24129
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+
+	trigger = {
+		piety = 50
+		any_owned_bloodline = {
+			has_bloodline_flag = bloodline_knights
+			bloodline_is_active_for = PREV
+			founder = {
+				NOT = {
+					character = ROOT
+				}
+				religion_group = christian
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			60 = { #Knight
+				character_event = { id = HF.24130 }
+			}
+			60 = { #Bard
+				character_event = { id = HF.24131 }
+			}
+			80 = {
+				modifier = {
+					factor = 3
+					ai = yes
+				}
+				modifier = {
+					factor = 1.35
+					NOT = {
+						higher_tier_than = COUNT
+					}
+				}
+				modifier = {
+					factor = 1.35
+					NOT = {
+						higher_tier_than = DUKE
+					}
+				}
+				modifier = {
+					factor = 1.75
+					is_evil_trigger = yes
+				}
+				modifier = {
+					factor = 0.65
+					is_benevolent_trigger = yes
+				}
+				modifier = {
+					factor = 1.35
+					any_courtier_or_vassal = {
+						count = 2
+						has_bloodline_flag = bloodline_knights
+					}
+				}
+				modifier = {
+					factor = 1.35
+					any_courtier_or_vassal = {
+						count = 3
+						has_bloodline_flag = bloodline_knights
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = { # Knight character arrives
+	id = HF.24130
+	desc = EVTDESCHF24130
+	picture = GFX_evt_western_knights_byzantine
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	immediate = {
+		spawn_fantastic_commander_effect = yes
+		event_target:invited_character = {
+			set_character_flag = bloodline_great_hero
+			set_character_flag = hero_knight
+			remove_trait = cruel
+			remove_trait = craven
+			add_trait = kind
+			add_trait = cavalry_leader
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHF24130
+		
+		trigger = {
+			OR = { 
+				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
+				NOT = { #...Or there are no valid vassal candidates that can be commanders.
+					any_vassal = { 
+						higher_real_tier_than = BARON
+						NOT = { 
+							primary_title = { temporary = yes } 
+						}
+						OR = {
+							AND = {
+								OR = {
+									male_can_hold_minor_title_trigger = yes
+									female_can_hold_minor_commander_title_trigger = yes
+								}
+								OR = {
+									NOT = { religion = hindu }
+									trait = kshatriya
+								}
+								is_adult = yes
+							}
+							has_character_flag = special_marshal
+						}
+				
+						prisoner = no
+						NOT = { trait = incapable }
+						NOT = { is_inaccessible_trigger = yes }
+						NOT = { has_character_flag = guru }
+						NOT = { has_character_modifier = refusing_to_lead }
+						NOR = {
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+							has_minor_title = title_commander
+						}
+					} 
+				}
+			}
+			any_realm_character = {
+				NOT = {
+					higher_tier_than = BARON
+				}
+				liege = { character = ROOT }
+				has_minor_title = title_commander
+				NOT = {
+					martial = 12
+				}
+			}
+			OR = {
+				AND = {
+					tier = COUNT
+					any_realm_character = {
+						count = 2
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = DUKE
+					any_realm_character = {
+						count = 4
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = no
+					any_realm_character = {
+						count = 6
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = no
+					any_realm_character = {
+						count = 8
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = yes
+					any_realm_character = {
+						count = 2
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = yes
+					any_realm_character = {
+						count = 4
+						liege = { character = ROOT }
+						has_minor_title = title_commander
+					}
+				}
+			}
+		}
+		
+		random_realm_character = {
+			limit = {
+				NOT = {
+					higher_tier_than = BARON
+				}
+				liege = { character = ROOT }
+				has_minor_title = title_commander
+				NOT = {
+					martial = 12
+				}
+			}
+			remove_title = title_commander
+			opinion = {
+				modifier = insulted
+				who = ROOT
+				years = 2
+			}
+		}
+		
+		event_target:invited_character = {
+			give_minor_title = title_commander
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTAHF24130
+		
+		trigger = {
+			OR = { 
+				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
+				NOT = { #...Or there are no valid vassal candidates that can be commanders.
+					any_vassal = { 
+						higher_real_tier_than = BARON
+						NOT = { 
+							primary_title = { temporary = yes } 
+						}
+						OR = {
+							AND = {
+								OR = {
+									male_can_hold_minor_title_trigger = yes
+									female_can_hold_minor_commander_title_trigger = yes
+								}
+								OR = {
+									NOT = { religion = hindu }
+									trait = kshatriya
+								}
+								is_adult = yes
+							}
+							has_character_flag = special_marshal
+						}
+				
+						prisoner = no
+						NOT = { trait = incapable }
+						NOT = { is_inaccessible_trigger = yes }
+						NOT = { has_character_flag = guru }
+						NOT = { has_character_modifier = refusing_to_lead }
+						NOR = {
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+							has_minor_title = title_commander
+						}
+					} 
+				}
+			}
+			event_target:invited_character = { has_character_flag = invited_soldier }
+			OR = {
+				AND = {
+					tier = COUNT
+					NOT = {
+						any_realm_character = {
+							count = 2
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = DUKE
+					NOT = {
+						any_realm_character = {
+							count = 4
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = no
+					NOT = {
+						any_realm_character = {
+							count = 6
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = no
+					NOT = {
+						any_realm_character = {
+							count = 8
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = KING
+					is_nomadic = yes
+					NOT = {
+						any_realm_character = {
+							count = 2
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = yes
+					NOT = {
+						any_realm_character = {
+							count = 4
+							liege = { character = ROOT }
+							has_minor_title = title_commander
+						}
+					}
+				}
+			}
+		}
+		
+		event_target:invited_character = {
+			give_minor_title = title_commander
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	
+	option = {
+		name = FANTASTIC
+		event_target:invited_character = {
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTCHF24130
+		
+		hidden_tooltip = {
+			event_target:invited_character = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
+	}
+}
+
+character_event = { # Bard character arrives
+	id = HF.24131
+	desc = EVTDESCHF24131
+	picture = GFX_evt_jugglers
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	only_playable = yes
+	only_capable = yes
+	prisoner = no
+	min_age = 16
+	
+	immediate = {
+		spawn_fantastic_diplomat_effect = yes
+		event_target:invited_character = {
+			add_trait = poet
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHF24131
+		event_target:invited_character = {
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCHF24130
+		
+		hidden_tooltip = {
+			event_target:invited_character = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
+	}
+}
+
+#Landless ladies of same religion might ask for protection.
+character_event = { 
+	id = HF.24132
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	only_women = yes
+	min_age = 16
+	max_age = 30
+	only_capable = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		is_female = yes
+		NOT = { has_religion_feature = religion_matriarchal }
+		religion_group = christian
+		is_married = no
+		NOT = { num_of_children = 1 }
+		NOT = { num_of_lovers = 1 }
+		NOT = { num_of_friends = 1 }
+		NOR = { 
+			trait = nun 
+			trait = brave
+			trait = content
+		}
+		NOT = { has_character_flag = special_marshal }
+		liege = {  
+			OR = { 
+				NOT = { religion = ROOT }
+				NOT = { reverse_opinion = { who = ROOT value = -40 } }
+				is_rival = ROOT
+			}
+			any_neighbor_independent_ruler = {  
+				age = 16
+				NOT = { trait = incapable }
+				any_owned_bloodline = { 
+					has_bloodline_flag = bloodline_knights
+					bloodline_is_active_for = PREV
+				}
+				religion = ROOT
+			}
+		}
+
+	}
+
+	immediate = {
+		random = {
+			chance = 5 
+			random_neighbor_independent_ruler = {  
+				limit = {  
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_knights
+						bloodline_is_active_for = PREV
+					}
+					religion = ROOT
+				}
+				character_event = { id = HF.24133 }
+			}
+		}
+	}
+}
+
+character_event = { # Woman asks for assistance
+	id = HF.24133
+	desc = EVTDESCHF24133
+	picture = GFX_evt_homage_hf
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
+	
+	#Marry her.
+	#Host her.
+	#Refuse her.
+	
+	option = {
+		name = EVTOPTAHF24133
+		trigger = {
+			is_benevolent_trigger = yes
+			is_married = no
+			is_female = no
+			FROM = { is_married = no }
+		}
+		FROM = {
+			show_scope_change = no
+			liege = {
+				show_scope_change = no
+				opinion = {
+					modifier = opinion_outraged
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+		FROM = {
+			show_scope_change = no
+			opinion = {
+				modifier = opinion_saved_me
+				who = ROOT
+				years = 100
+			}
+			move_character = ROOT
+			if = {
+				limit = {
+					is_betrothed = yes
+				}
+				break_betrothal = yes
+			}
+			if = {
+				limit = {
+					is_married = yes #Multiplayer delay
+				}
+				remove_spouse = yes
+			}
+			add_spouse = ROOT
+			add_lover = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTBHF24133
+		FROM = {
+			show_scope_change = no
+			liege = {
+				show_scope_change = no
+				opinion = {
+					modifier = opinion_outraged
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+		FROM = {
+			show_scope_change = no
+			opinion = {
+				modifier = opinion_saved_me
+				who = ROOT
+				years = 100
+			}
+			move_character = ROOT
+			if = {
+				limit = {
+					is_betrothed = yes
+				}
+				break_betrothal = yes
+			}
+			if = {
+				limit = {
+					is_married = yes #Multiplayer delay
+				}
+				remove_spouse = yes
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCHF24133
+		tiered_piety_negative_effect = yes
+		FROM = {
+			opinion = {
+				modifier = opinion_dishonorable_scum
+				who = ROOT
+				years = 100
+			}
+		}
+	}
+}
+
+
+
+########################
+
+
+
+#########################
+
+
+
+###########################################################
+
+
+
+
+
+###################
+
