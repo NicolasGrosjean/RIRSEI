@@ -984,12 +984,7 @@
 	931.1.1={
 		add_spouse = 507
 	}
-	935.9.28={
-		create_bloodline = {
-			type = premyslid
-			has_dlc = "Holy Fury"
-		}
-	}
+
 	972.1.1={
 		death="972.1.1"
 	}
@@ -2851,6 +2846,12 @@ trait = Vs_sancti_petri
 	culture="bohemian"
 	694.1.1={
 		birth="694.1.1"
+	
+		create_bloodline = {
+			type = premyslid
+			has_dlc = "Holy Fury"
+		}
+	
 	}
 	
 	745.1.1={

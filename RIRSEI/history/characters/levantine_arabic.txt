@@ -2677,10 +2677,7 @@
 		birth="1138.1.1"
 	}
 	1187.10.2= {
-		create_bloodline = {
-			type = saladin
-			has_dlc = "Holy Fury"
-		}
+
 	}
 	1193.3.4={
 		death="1193.3.4"

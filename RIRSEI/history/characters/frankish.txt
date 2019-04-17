@@ -3170,10 +3170,6 @@
 	}
 	1190.6.24 = {
 		trait="crusader"
-		create_bloodline = {
-			type = philippe_capet
-			has_dlc = "Holy Fury"
-		}
 	}
 	1191.4.21 = {
 		trait="ill"
@@ -15479,7 +15475,7 @@ trait=roi_oint
 }
 
 455404 = {
-	name="Louis"
+	name="Louis IX"
 	dynasty=743
 	martial=7
 	diplomacy=6
@@ -15507,6 +15503,11 @@ trait=roi_oint
 
 	1270.8.25 = {
 		death="1270.8.25"
+		   create_bloodline = {
+			type = philippe_capet
+			has_dlc = "Holy Fury"
+			
+		}
 	}
 }
 

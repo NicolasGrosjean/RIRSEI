@@ -3881,10 +3881,7 @@ trait = roi_oint
 	}
 	732.11.1 = {
 		give_nickname = nick_the_hammer
-		create_bloodline = {
-			type = carolingian
-			has_dlc = "Holy Fury"
-		}
+
 	}
 	741.1.23 = {
 		death="741.1.23"
@@ -3909,6 +3906,12 @@ trait = roi_oint
 	736.1.1={
 		add_spouse=190429
 	}
+	754.7.28 = {
+			create_bloodline = {
+			type = carolingian
+			has_dlc = "Holy Fury"
+		}
+		}
 	768.9.24 = {
 		death="768.9.24"
 	}

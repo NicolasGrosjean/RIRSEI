@@ -2336,10 +2336,7 @@
 	mother=509
 	967.1.2={
 		birth="967.1.2"
-		create_bloodline = {
-			type = boleslaw_the_brave
-			has_dlc = "Holy Fury"
-		}
+
 	}
 	985.1.2={
 		add_spouse=463
@@ -4806,6 +4803,10 @@
 	father=171010
 	835.1.1={
 		birth="835.1.1"
+		create_bloodline = {
+			type = boleslaw_the_brave
+			has_dlc = "Holy Fury"
+		}
 	}
 	862.1.2={
 		add_spouse = 82234

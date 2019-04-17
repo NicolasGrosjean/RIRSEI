@@ -954,12 +954,6 @@
 	1223.7.19={
 		birth="1223.7.19"
 	}
-	1260.10.24={
-		create_bloodline = {
-			type = baibars
-			has_dlc = "Holy Fury"
-		}
-	}
 	1277.7.1={
 		death="1277.7.1"
 	}
@@ -1020,6 +1014,10 @@
 	}
 	1291.11.10={
 		death="1291.11.10"
+				create_bloodline = {
+			type = baibars
+			has_dlc = "Holy Fury"
+		}
 	}
 }
 
