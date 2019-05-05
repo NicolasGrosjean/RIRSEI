@@ -3331,13 +3331,19 @@ mon_catho_iresp = {
 opinion = -50
 }
 
-
 choc_attent_ana = {
 opinion = -75
 }
 
 refus_charte_ville = { opinion = -80
                years = 10  }
+			   
+refus_nego_byz = {
+opinion = -30
+}	
+patriarche_demis = {
+opinion = -100
+}		   
 
 #Torture & humiliation
 opinion_tortured_me = {
