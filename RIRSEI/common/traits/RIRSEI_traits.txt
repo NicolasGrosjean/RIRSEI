@@ -34,9 +34,8 @@ vassal_opinion = -10
 monthly_character_prestige = 0.5
 }
 stupor_mundi = {
-church_opinion = 15
 vassal_opinion = 15
-#rel_head_opinion = -20 # NOT ALLOWED IN OPINION. USE CHARACTER MODIFIER INSTEAD
+church_opinion = -20 
 monthly_character_prestige = 1.0
 }
 relique_jacques = {
@@ -99,7 +98,7 @@ byz_autocrator = {
 	
 	martial = 8
 intrigue = 5
- stewardship = 10
+ stewardship = 7
 demesne_size = 5
 monthly_character_prestige = 1.0
 	
@@ -108,6 +107,14 @@ command_modifier = {
 		morale_offence = 0.15
 	}
 }
+
+byz_couronne = {
+	 		
+	monthly_character_prestige = 1.0
+	monthly_character_piety = 1.0
+	stewardship = 4
+}
+
 Malikite = {
 	martial = 3
 	
