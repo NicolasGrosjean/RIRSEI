@@ -487,3 +487,541 @@ narrative_event = {
 		name = "EVTOPTA_RIRSEI_2002060"	# This is the happiest day of my life
 	}
 }
+
+##########scriptcouronnement#############
+
+####faceauxmilitaires#######
+
+####empereurdunatos########
+narrative_event = {
+	id = RIRSEIVD.11145
+	title = "EVTNAME_RIRSEIVD_11145"
+	desc = "EVTDESC_RIRSEIVD_11145"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11145"
+
+prestige = -100
+narrative_event = { id = RIRSEIVD.11148 days = 3 } 
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = nego_aristos
+years = 5 }
+}
+}
+
+	}
+		option = {
+		name = "EVTOPTB_RIRSEIVD_11145"
+narrative_event = { id = RIRSEIVD.11148 days = 3 }
+set_character_flag = pas_de_militaires
+		any_vassal = {
+		limit = { trait = aristos }
+			        opinion = {
+				modifier = refus_nego_byz
+				who = FROM
+                years = 5
+				
+}
+		}
+		}
+
+	}
+############empereuraristos######################
+narrative_event = {
+	id = RIRSEIVD.11146
+	title = "EVTNAME_RIRSEIVD_11146"
+	desc = "EVTDESC_RIRSEIVD_11146"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11146"
+narrative_event = { id = RIRSEIVD.11149 }
+	
+
+	}
+}
+##################empereurautocrate#############
+
+narrative_event = {
+	id = RIRSEIVD.11147
+	title = "EVTNAME_RIRSEIVD_11147"
+	desc = "EVTDESC_RIRSEIVD_11147"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11147"
+religion_head = {
+narrative_event = { id = RIRSEIVD.11150 }
+}
+	
+
+	}
+}
+
+###############faceauxcivils#################
+
+#############empereurdunatos##############
+narrative_event = {
+	id = RIRSEIVD.11148
+	title = "EVTNAME_RIRSEIVD_11148"
+	desc = "EVTDESC_RIRSEIVD_11148"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11148"
+religion_head = {
+narrative_event = { id = RIRSEIVD.11150 }
+} 		
+
+	}
+}
+###################empereuraristos##########
+narrative_event = {
+	id = RIRSEIVD.11149
+	title = "EVTNAME_RIRSEIVD_11149"
+	desc = "EVTDESC_RIRSEIVD_11149"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11149"
+
+prestige = -100
+religion_head = {
+narrative_event = { id = RIRSEIVD.11150 }
+} 
+ROOT = {
+any_realm_province  = {
+add_province_modifier = { name = nego_dunatos
+years = 5 }
+}
+}
+
+	}
+		option = {
+		name = "EVTOPTB_RIRSEIVD_11149"
+religion_head = {
+narrative_event = { id = RIRSEIVD.11150 }
+}
+set_character_flag = pas_de_senat 
+		any_vassal = {
+		limit = { trait = dunatos }
+			        opinion = {
+				modifier = refus_nego_byz
+				who = FROM
+                years = 5
+				
+}
+		}
+		}
+
+	}
+#################faceaupatriarche############
+
+narrative_event = {
+	id = RIRSEIVD.11150
+	title = "EVTNAME_RIRSEIVD_11150"
+	desc = "EVTDESC_RIRSEIVD_11150"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11150"
+FROM = {
+narrative_event = { id = RIRSEIVD.11151 }
+}
+		ai_chance = {
+			factor = 0.2
+modifier = {
+				factor = 2.0
+				ROOT = { trait = zealous }
+			}
+modifier = {
+				factor = 6.0
+				ROOT = { trait = ambitious }
+			}		
+}
+
+
+	}
+		option = {
+		name = "EVTOPTB_RIRSEIVD_11150"
+FROM = {
+narrative_event = { id = RIRSEIVD.11152 }
+}
+		ai_chance = {
+			factor = 0.8
+										
+		
+}
+		}
+
+	}
+############reponsedubasileus############
+
+narrative_event = {
+	id = RIRSEIVD.11151
+	title = "EVTNAME_RIRSEIVD_11151"
+	desc = "EVTDESC_RIRSEIVD_11151"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11151"
+				if = {
+limit = { NOT = { has_character_flag = pas_de_senat }
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11154 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_militaires
+          NOT = { has_character_flag = pas_de_senat } }				
+narrative_event = { id = RIRSEIVD.11155 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11156 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          has_character_flag = pas_de_militaires } 				
+narrative_event = { id = RIRSEIVD.11157 days = 3 }
+}
+piety = 50
+prestige = -200
+religion_authority = { modifier = patriarche_demis_rel }
+
+
+
+	}
+		option = {
+		name = "EVTOPTB_RIRSEIVD_11151"
+		piety = -150
+		FROM = { abdicate = yes }
+religion_authority = { modifier = patriarche_content_rel }
+		FROM = {
+		  opinion = {
+				modifier = patriarche_demis
+				who = FROM
+                years = 20
+				}
+				}
+				
+				if = {
+limit = { NOT = { has_character_flag = pas_de_senat }
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11154 days = 10 }
+}
+if = {
+limit = { has_character_flag = pas_de_militaires
+          NOT = { has_character_flag = pas_de_senat } }				
+narrative_event = { id = RIRSEIVD.11155 days = 10 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11156 days = 10 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          has_character_flag = pas_de_militaires } 				
+narrative_event = { id = RIRSEIVD.11157 days = 10 }
+}
+				
+		ai_chance = {
+			factor = 0.8
+										
+		
+}
+		
+
+	
+	}
+}
+	
+narrative_event = {
+	id = RIRSEIVD.11152
+	title = "EVTNAME_RIRSEIVD_11152"
+	desc = "EVTDESC_RIRSEIVD_11152"
+	
+	picture = "GFX_evt_theme_aristo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11152"
+				if = {
+limit = { NOT = { has_character_flag = pas_de_senat }
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11154 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_militaires
+          NOT = { has_character_flag = pas_de_senat } }				
+narrative_event = { id = RIRSEIVD.11155 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          NOT = { has_character_flag = pas_de_militaires } }				
+narrative_event = { id = RIRSEIVD.11156 days = 3 }
+}
+if = {
+limit = { has_character_flag = pas_de_senat
+          has_character_flag = pas_de_militaires } 				
+narrative_event = { id = RIRSEIVD.11157 days = 3 }
+}
+
+	}
+	}
+
+########################################
+###########ceremonienormale/pasaristosdunatos/pasdunatosaristos/pasaristos/pasdunatos#######
+narrative_event = {
+	id = RIRSEIVD.11154
+	title = "EVTNAME_RIRSEIVD_11154"
+	desc = "EVTDESC_RIRSEIVD_11154"
+	
+	picture = "GFX_evt_courbyzun"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11154"
+narrative_event = { id = RIRSEIVD.11158 }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11158
+	title = "EVTNAME_RIRSEIVD_11158"
+	desc = "EVTDESC_RIRSEIVD_11158"
+	
+	picture = "GFX_evt_courbyzdeux"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11158"
+narrative_event = { id = RIRSEIVD.11159 }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11159
+	title = "EVTNAME_RIRSEIVD_11159"
+	desc = "EVTDESC_RIRSEIVD_11159"
+	
+	picture = "GFX_evt_courbyztrois"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11159"
+add_trait = byz_couronne
+prestige = 150
+clr_character_flag = pas_de_senat
+clr_character_flag = pas_de_militaires
+clr_character_flag = couronnement_en_cours
+any_vassal = { narrative_event = { id = RIRSEIVD.11153 } }
+		
+
+	}
+}
+###########################################################
+narrative_event = {
+	id = RIRSEIVD.11155
+	title = "EVTNAME_RIRSEIVD_11155"
+	desc = "EVTDESC_RIRSEIVD_11155"
+	
+	picture = "GFX_evt_courbyzun"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11155"
+narrative_event = { id = RIRSEIVD.11160 }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11160
+	title = "EVTNAME_RIRSEIVD_11160"
+	desc = "EVTDESC_RIRSEIVD_11160"
+	
+	picture = "GFX_evt_courbyzdeux"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11160"
+narrative_event = { id = RIRSEIVD.11159 }
+		
+
+	}
+}
+################################################
+narrative_event = {
+	id = RIRSEIVD.11156
+	title = "EVTNAME_RIRSEIVD_11156"
+	desc = "EVTDESC_RIRSEIVD_11156"
+	
+	picture = "GFX_evt_courbyzun"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11156"
+narrative_event = { id = RIRSEIVD.11161 }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11161
+	title = "EVTNAME_RIRSEIVD_11161"
+	desc = "EVTDESC_RIRSEIVD_11161"
+	
+	picture = "GFX_evt_courbyzdeux"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11161"
+narrative_event = { id = RIRSEIVD.11159 }
+		
+
+	}
+}
+
+################################################
+narrative_event = {
+	id = RIRSEIVD.11157
+	title = "EVTNAME_RIRSEIVD_11157"
+    desc = "EVTDESC_RIRSEIVD_11157"
+	
+	picture = "GFX_evt_courbyzun"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11157"
+narrative_event = { id = RIRSEIVD.11161 }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11162
+	title = "EVTNAME_RIRSEIVD_11162"
+	desc = "EVTDESC_RIRSEIVD_11162"
+	
+	picture = "GFX_evt_courbyzdeux"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11162"
+narrative_event = { id = RIRSEIVD.11159 }
+
+		
+
+	}
+}
+
+################################################
+narrative_event = {
+	id = RIRSEIVD.11153
+	title = "EVTNAME_RIRSEIVD_11153"
+	desc = "EVTDESC_RIRSEIVD_11153"
+	
+	picture = "GFX_evt_courbyztrois"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11153"
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11163
+	title = "EVTNAME_RIRSEIVD_11163"
+	desc = "EVTDESC_RIRSEIVD_11163"
+	
+	picture = "GFX_evt_courbyztrois"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11163"
+FROM = { narrative_event = { id = RIRSEIVD.11164 } }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11164
+	title = "EVTNAME_RIRSEIVD_11164"
+	desc = "EVTDESC_RIRSEIVD_11164"
+	
+	picture = "GFX_evt_courbyztrois"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_111"
+		add_trait = byz_couronne
+        prestige = 150
+        any_vassal = { narrative_event = { id = RIRSEIVD.11165 } }
+		
+
+	}
+}
+
+narrative_event = {
+	id = RIRSEIVD.11165
+	title = "EVTNAME_RIRSEIVD_11165"
+	desc = "EVTDESC_RIRSEIVD_11165"
+	
+	picture = "GFX_evt_courbyztrois"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_RIRSEIVD_11165"
+		
+
+	}
+}

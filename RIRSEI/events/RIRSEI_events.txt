@@ -1099,7 +1099,7 @@ character_event = {
                 add_trait = crowned_by_pope
 				if = {
 				limit = {
-				has_dlc = has_dlc = "Holy Fury" }
+				has_dlc = "Holy Fury" }
 				remove_trait = crowned_by_priest
 			    remove_trait = crowned_by_bishop
 			    remove_trait = roi_des_romains
