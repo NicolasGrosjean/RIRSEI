@@ -296,6 +296,22 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\reimscathe.tga"
 		allwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "GFX_evt_courbyzun"
+		texturefile = "gfx\\event_pictures\courbyzun.tga"
+		allwaystransparent = yes
+	}
+		spriteType = {
+		name = "GFX_evt_courbyzdeux"
+		texturefile = "gfx\\event_pictures\courbyzdeux.tga"
+		allwaystransparent = yes
+	}
+		spriteType = {
+		name = "GFX_evt_courbyztrois"
+		texturefile = "gfx\\event_pictures\courbyztrois.tga"
+		allwaystransparent = yes
+	}
 }
 
 
