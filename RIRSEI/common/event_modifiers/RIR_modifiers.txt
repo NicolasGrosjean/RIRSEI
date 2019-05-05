@@ -53,3 +53,23 @@ muz_asab_faible = {
     temple_tax_modifier = -0.3
     icon = 22
 }
+
+nego_aristos = {
+castle_levy_size = 0.1
+	city_levy_size = 0.1
+	temple_levy_size = 0.1
+city_tax_modifier = -0.20
+	castle_tax_modifier = -0.20
+	temple_tax_modifier = -0.20
+	icon = 13
+}
+
+nego_dunatos = {
+castle_levy_size = -0.2
+	city_levy_size = -0.2
+	temple_levy_size = -0.2
+city_tax_modifier = 0.1
+	castle_tax_modifier = 0.1
+	temple_tax_modifier = 0.1
+	icon = 13
+}
