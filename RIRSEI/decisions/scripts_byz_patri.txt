@@ -406,9 +406,20 @@ e_roman_empire = {
 
 		}
 		allow = {
-prestige = 1000 
-                    
-                       
+OR = {
+AND = {
+has_minor_title = title_commander
+prestige = 600
+}
+AND = {
+prestige = 1000
+primary_title = { higher_tier_than = BARON } 
+} 
+AND = {
+has_minor_title = title_regent
+prestige = 500
+}
+}                                         
 		}
 		effect = {
 add_claim = e_byzantium
@@ -964,5 +975,65 @@ narrative_event = { id = RIRSEBYZ.111144 }
 			factor = 1
 		}
 }
+
+#############scriptcouronnement#########
+
+decision_couronnement_byz = {
+		is_high_prio = yes
+		potential = {
+			has_landed_title = e_byzantium
+			prisoner = no
+			age = 15
+			OR = {
+			religion = orthodox
+	
+		religion = miaphysite
+		religion = nestorian
+		religion = monophysite
+		religion = bogomilist
+		religion = monothelite
+		religion = iconoclast
+		religion = paulician
+		religion = messalian 
+			}
+			NOT = { trait = byz_couronne }
+			NOT = { has_character_flag = couronnement_en_cours }
+			OR = {
+			trait = aristos
+			trait = dunatos
+			trait = byz_autocrator
+			}
+		}
+		allow = {
+		
+OR = { 
+                        any_realm_lord = { has_landed_title = c_byzantion }
+                        has_landed_title = c_byzantion
+}
+		}
+		
+		effect ={
+		
+		hidden_tooltip = {
+		set_character_flag = couronnement_en_cours
+		if = {
+		limit = { trait = dunatos }
+narrative_event = { id = RIRSEIVD.11145 }			
+		}
+				if = {
+		limit = { trait = aristos }
+narrative_event = { id = RIRSEIVD.11146 }			
+		}
+				if = {
+		limit = { trait = byz_autocrator }
+narrative_event = { id = RIRSEIVD.11147 }			
+		
+		}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	}
 
 }  
