@@ -34,3 +34,13 @@ que_emp_victorieux  = {
 	authority = -15
 	years = 100
 }
+
+patriarche_demis_rel = {
+   authority = -5
+   years = 5
+}
+
+patriarche_content_rel = {
+   authority = 5
+   years = 5
+}
