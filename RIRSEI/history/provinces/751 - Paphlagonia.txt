@@ -31,6 +31,10 @@ religion = paulician
 
 1187.1.1 = { b_safranbolu = castle } 
 
+ # Fourth Crusade
 
-
+1204.5.16 = { 
+	culture = turkish
+	religion = sunni 
+}
 

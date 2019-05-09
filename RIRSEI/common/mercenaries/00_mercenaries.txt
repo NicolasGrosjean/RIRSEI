@@ -346,7 +346,7 @@ varangian_guard_composition = {
 }
 
 mamluks_composition = {
-	levy_size = 6
+	levy_size = 2
 	horse_archers = 225
 	light_cavalry = 300
 	archers = 150
@@ -355,7 +355,7 @@ mamluks_composition = {
 }
 
 ghilman_composition = {
-	levy_size = 6
+	levy_size = 2
 	horse_archers = 225
 	light_cavalry = 350
 	archers = 150

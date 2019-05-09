@@ -48360,3 +48360,16 @@ d_luxembourg = {
 	color={ 110 110 155 }
 	color2={ 255 255 255 }
 }
+
+e_russian_empire = {	
+	color={ 220 60 70 }
+	color2={ 255 255 255 }
+	
+	capital = 582 # Vladimir
+	
+	culture = russian
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
