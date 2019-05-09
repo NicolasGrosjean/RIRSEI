@@ -9,8 +9,10 @@ On the other hand, several kingdoms now have unique and dynamic scripts around t
 This mod has been worked for both the date of 867 and 1066. So I hope you'll enjoy this mod.
 
 This mod was created by Faras on the [Mundus Bellicus forum](http://www.mundusbellicus.fr/forum/grande-strat%C3%A9gie/crusader-kings-ii/mods-modding-af/rex-in-regno-suo-est-imperator).
-This mod is presented in English on the [Paradox forum](https://forum.paradoxplaza.com/forum/index.php?threads/mod-rex-in-regno-suo-est-imperator-historical-overhaul.781434/)
-We help him to maintain his mod over patches.
+This mod is presented in English on the [Paradox forum](https://forum.paradoxplaza.com/forum/index.php?threads/mod-rex-in-regno-suo-est-imperator-historical-overhaul.781434/).
+The objective of this repository is to help him to maintain his mod over patches.
+
+![Main image of the mod](Image.jpg)
 
 ### Players & Followers
 
