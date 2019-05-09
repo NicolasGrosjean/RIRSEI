@@ -309,8 +309,8 @@
 	}
 }
 
-10096 = {
-	name="Jutta"
+10096 = { 
+	name="Jutta" # Judith, Duchess of Bavaria
 	female=yes
 	dynasty=247
 	martial=4
@@ -2181,7 +2181,7 @@
 }
 
 1292 = {
-	name="Heinrich"
+	name="Heinrich" # Henry I, Duke of Bavaria
 	dynasty=669
 	martial=6
 	diplomacy=6
@@ -2197,7 +2197,7 @@
 	918.1.2 = {
 		birth="918.1.2"
 	}
-	925.1.1 = {
+	937.1.1 = {
 		add_spouse=10096
 	}
 	955.1.2 = {
@@ -35491,7 +35491,7 @@
 }
 
 33142 = {
-	name="Heinrich"
+	name="Heinrich" # Henry II, Duke of Limburg
 	dynasty=287
 	religion="catholic"
 	culture="german"
@@ -35501,7 +35501,7 @@
 		birth="1111.1.1"
 	}
 	1153.1.1 = {
-		add_spouse=212592
+		add_spouse=129015 #Laurette d'Alsace
 	}
 	1167.8.19 = {
 		death="1167.8.19"
@@ -56537,6 +56537,8 @@
 	religion = catholic
 	culture = german
 	dynasty = 1062191
+	father = 260472
+	mother = 260469
 	1252.1.1 = {
 		birth = yes
 	}
@@ -56549,6 +56551,7 @@
 	religion = catholic
 	culture = german
 	dynasty = 1062191
+	father = 260473
 	1278.1.1 = {
 		birth = yes
 	}
@@ -56561,6 +56564,7 @@
 	religion = catholic
 	culture = german
 	dynasty = 1062191
+	father = 260474
 	1305.1.1 = {
 		birth = yes
 	}

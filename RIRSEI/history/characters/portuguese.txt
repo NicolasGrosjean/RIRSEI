@@ -119,6 +119,12 @@
 	religion="catholic"
 	culture="portuguese"
 	father=109604
+	trait="charismatic_negotiator"
+	trait="greedy"
+	trait="brave"
+	trait="stubborn"
+	trait="gregarious"
+	disallow_random_traits = yes
 	1033.1.1={
 		birth="1033.1.1"
 	}
@@ -875,7 +881,7 @@
 	1260.1.1={
 		birth="1260.1.1"
 	}
-	1278.1.1={
+	1301.1.1={
 		add_spouse=459531
 		dynasty=1020118 #de Sousa Arronches
 	}
@@ -20766,9 +20772,9 @@
 	1148.1.1={
 		birth=yes
 	}
-	1169.1.1={
-		add_spouse=72381
-	}
+#	1169.1.1={
+#		add_spouse=72381      # Only born in 1251, so the wrong character
+#	}
 	1199.1.1={
 		death=yes
 	}
@@ -22189,10 +22195,10 @@
 	religion=catholic
 	culture=portuguese
 
-	1205.1.1={
+	1215.1.1={
 		birth=yes
 	}
-	1267.1.1={
+	1274.1.1={
 		death=yes
 	}
 }

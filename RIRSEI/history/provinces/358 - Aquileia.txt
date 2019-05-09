@@ -7,7 +7,7 @@ title = c_aquileia
 max_settlements = 4
 b_grado = castle
 b_aquileia = temple
-b_portoguaro = city
+b_trieste = city
 
 # Misc
 culture = lombard

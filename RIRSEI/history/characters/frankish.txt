@@ -20460,7 +20460,7 @@
 }
 
 462098 = {
-	name="Guillaumette"
+	name="Guillaumette" # Wife of Renaud de Chalon, Graf von Mömpelgard 
 	female=yes
 	dynasty=87
 	religion="catholic"
@@ -21652,7 +21652,7 @@
 	1085.1.1 = {
 		birth="1085.1.1"
 	}
-	1090.1.1 = {
+	1125.1.1 = {
 		add_spouse=91127 #Éléonore de Blois
 	}
 	1142.1.1 = {
@@ -25528,7 +25528,7 @@
 }
 
 7654 = {
-	name="Renaud"
+	name="Renaud" # Renaud de Chalon, Graf von Mömpelgard 
 	dynasty=681
 	religion="catholic"
 	culture="frankish"
@@ -25537,7 +25537,7 @@
 	1249.1.1 = {
 		birth="1249.1.1"
 	}
-	1269.1.1 = {
+	1281.1.1 = {
 		add_spouse=462098
 	}	
 	1322.8.9 = {
@@ -27192,7 +27192,12 @@
 	dynasty=25061
 	religion="catholic"
 	culture="frankish"
+	trait="grey_eminence"
 	trait="stutter"
+	trait="feeble"
+	trait="charitable"
+	trait="just"
+	disallow_random_traits = yes
 	father=90104
 	mother=167830
 	843.1.2 = {
@@ -39090,7 +39095,7 @@
 }
 
 34311 = {
-	name="Renaud"
+	name="Renaud"   # Reginald_of_Bar_(bishop_of_Chartres)
 	dynasty=88
 	religion="catholic"
 	culture="frankish"
@@ -39108,7 +39113,7 @@
 }
 
 34312 = {
-	name="Hugues"
+	name="Hugues"  # Canon of Chartres
 	dynasty=88
 	religion="catholic"
 	culture="frankish"
@@ -39117,9 +39122,9 @@
 	1160.1.1 = {
 		birth="1160.1.1"
 	}	
-	1182.1.1 = {
-		employer=34311
-	}	
+#	1182.1.1 = {
+#		employer=34311   # Bishpos can not employ characters
+#	}	
 	1192.7.25 = {
 		death="1192.7.25"
 	}

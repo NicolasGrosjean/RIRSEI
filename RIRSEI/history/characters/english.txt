@@ -2418,7 +2418,7 @@
 }
 
 204690 = {
-	name="William"
+	name="William" # William de Ferrers, 3rd Earl of Derby
 	dynasty=352
 	martial=4
 	diplomacy=6
@@ -2432,11 +2432,11 @@
 	1140.1.1 = {
 		birth="1140.1.1"
 	}
-	1150.1.1 = {
+	1163.1.1 = {
 		add_spouse = 204692
 	}
-	1199.1.1 = {
-		death="1199.1.1"
+	1190.1.1 = {  # During the Third Crusade, at the siege of Acre
+		death="1190.1.1"
 	}
 }
 
@@ -2475,8 +2475,8 @@
 	trait="amateurish_plotter"
 	father=204000
 	mother=204623
-	1150.1.2 = {
-		birth="1150.1.2"
+	1146.1.2 = {
+		birth="1146.1.2"
 	}
 	1200.1.2 = {
 		death="1200.1.2"
@@ -2637,7 +2637,7 @@
 }
 
 204700 = {
-	name="Robert"
+	name="Robert" # Robert de Ferrers, 2nd Earl of Derby
 	dynasty=352
 	martial=4
 	diplomacy=7
