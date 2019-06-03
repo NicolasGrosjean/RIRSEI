@@ -24,4 +24,12 @@ religion = catholic
 	b_nantes = ca_keep_1
 	b_nantes = ca_militia_barracks_1
 	b_nantes = ca_wall_1
+	b_nantes = ca_shipyard_1
+	b_guerande = ct_shipyard_1
+	b_redon = tp_shipyard_1
+}
+936.1.1 = {
+	b_nantes = ca_shipyard_2
+	b_guerande = ct_shipyard_2
+	b_redon = tp_shipyard_2
 }

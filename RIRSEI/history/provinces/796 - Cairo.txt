@@ -4,7 +4,7 @@
 title = c_cairo
 
 # Settlements
-max_settlements = 7
+max_settlements = 5
 b_fustat = castle
 b_helwan = castle
 b_heliopolis = temple
@@ -23,6 +23,7 @@ religion = sunni
 769.1.1 = { name = "b_fustat" }
 909.1.1 = { religion = shiite }
 969.1.1 = {
+	max_settlements = 7
 	name = "PROV796"
 	b_cairo = castle
 	capital = b_cairo

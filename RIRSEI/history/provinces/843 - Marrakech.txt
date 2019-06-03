@@ -3,6 +3,10 @@
 # County Title
 title = c_marrakech
 
+# Terrain
+terrain = plains
+
+
 # Settlements
 max_settlements = 7
 

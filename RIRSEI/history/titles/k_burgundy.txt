@@ -29,6 +29,10 @@ holder=7984
 {
 holder=1144
 }
+933.1.1 = {
+	name = ARLES
+	adjective = ARLES_ADJ
+}
 937.12.1=
 {
 holder=1146

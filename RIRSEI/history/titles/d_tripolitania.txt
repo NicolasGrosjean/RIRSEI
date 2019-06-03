@@ -1,18 +1,24 @@
 768.1.1={
 	holder=210031
 }
-866.1.1={
-	liege="k_africa"
+850.1.1={	
+	liege = k_africa
+	holder = 273136
 }
-866.1.1={
-	holder = 163147
+866.1.1 = {
+	holder = 273137
 }
-877.1.1={
+903.1.1 = {
 	liege = 0
+	set_tribute_suzerain = { who = k_africa type = permanent }
+	holder = 273139
 }
-1001.1.1=
-{
-holder=155123
+940.1.1 = {
+	holder = 273140
+}
+1001.1.1 = {
+	clear_tribute_suzerain = k_africa
+	holder=155123
 }
 1009.1.1=
 {

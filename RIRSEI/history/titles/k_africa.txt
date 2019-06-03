@@ -83,6 +83,13 @@
 	holder = 163096
 	de_jure_liege = e_maghreb
 }
+# Fatimids
+909.1.1 = {
+	holder = 32900
+}
+934.1.1 = {
+	holder = 32901
+}
 #Zirids
 1045.1.1=
 {

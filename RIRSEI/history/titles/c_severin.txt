@@ -26,8 +26,17 @@
 895.1.1={
 	holder=248665
 }
+920.1.1={
+	liege=0
+	holder=261395
+}
 935.1.1={
-	holder=168287
+	set_tribute_suzerain = { who = k_hungary type = nomadic }
+}
+937.1.1 = {
+	holder = 260685
+	liege = d_oltenia
+	clear_tribute_suzerain = k_hungary
 }
 970.1.1={
 	holder=248668

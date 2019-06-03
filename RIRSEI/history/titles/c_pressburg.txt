@@ -1,34 +1,21 @@
-731.1.1={
-	liege="d_esztergom"
-	holder=146137
-}
-770.1.1={
-	holder=146138
-}
-780.1.1={
-	holder=146139
-}
-785.1.1={
-	holder=146140
-}
-804.1.1={
+741.1.1={
 	liege="d_moravia"
-	holder=146177
+	holder = 187000
+}
+782.1.1={
+	holder = 146176
+}
+801.1.1={
+	holder = 146177
 }
 809.1.1={
-	holder=187001
-}
-830.1.1={
-	liege = "k_moravia"
+	holder = 187001
 }
 846.8.15={
-	holder=187002
+	holder = 187002
 }
 869.1.1={
-	holder=187003
-}
-871.1.1={
-	holder=187004
+	holder = 187004
 }
 871.12.1={
 	holder=187003
@@ -40,8 +27,11 @@
 	liege="d_esztergom"
 	holder=159136
 }
-1063.12.1={
-holder=476
+936.1.1 = {
+	holder = 261315
+}
+1063.12.1 = {
+	holder=476
 }
 1083.8.15={
 holder=474

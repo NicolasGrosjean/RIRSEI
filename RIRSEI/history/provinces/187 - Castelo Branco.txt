@@ -5,14 +5,13 @@ title = c_castelo_branco
 
 # Settlements
 max_settlements = 4
-b_castelobranco = castle
-b_covilha = city
-b_guarda = temple
-#b_acores = castle
+b_guarda = castle
+b_lamego = temple
 #b_trancoso = castle
 #b_sabugal = city
 #b_pinhel = castle
 #b_almeida = castle
+#b_acores = castle
 
 # Misc
 culture = suebi

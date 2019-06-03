@@ -64,6 +64,10 @@
 863.1.1={
 	holder = 167804
 }
+936.1.1 = {
+	holder = 260631
+	liege = d_susa
+}
 1063.1.1={
 	liege="e_hre"
 	holder=7700

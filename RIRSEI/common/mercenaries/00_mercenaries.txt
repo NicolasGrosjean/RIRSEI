@@ -359,6 +359,12 @@ varangian_guard_composition = {
 	archers = 50
 }
 
+Scholae_Palatinae_composition = {
+	levy_size = 2
+	knights = 310
+	horse_archers = 90
+}
+
 mamluks_composition = {
 	levy_size = 2
 	horse_archers = 225

@@ -35,7 +35,7 @@ religion = catholic
 	b_avranches = ct_port_1
 }
 
-960.1.1 = {
+936.1.1 = {
 	culture = norman
 }
 

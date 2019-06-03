@@ -38,6 +38,7 @@
 }
 936.7.2={
 	holder = 1282 #Otto I
+	law = succ_feudal_elective
 }
 973.5.7={
 	holder = 1286 #Otto II

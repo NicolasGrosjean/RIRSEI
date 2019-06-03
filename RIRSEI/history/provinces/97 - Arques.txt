@@ -47,7 +47,7 @@ religion = catholic
 	b_arques = ct_marketplace_1
 }
 
-960.1.1 = {
+930.1.1 = {
 	culture = norman
 }
 

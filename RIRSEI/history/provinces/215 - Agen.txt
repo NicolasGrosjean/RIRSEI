@@ -21,3 +21,9 @@ religion = catholic
 culture = occitan
 
 # History
+936.1.1 = {
+	capital = b_luzech
+}
+1066.1.1 ={
+	capital = b_agen
+}

@@ -1,9 +1,9 @@
 741.1.1={
-	liege="d_moravia"
+	liege="d_nyitra"
 	holder = 187000
 }
 764.1.1={
-	holder = 146176
+	holder = 273060
 }
 801.1.1={
 	holder = 146177
@@ -29,6 +29,9 @@
 902.1.1={
 	liege="d_nyitra"
 	holder=0
+}
+930.1.1 = {
+	holder = 273019
 }
 1066.1.1=
 {

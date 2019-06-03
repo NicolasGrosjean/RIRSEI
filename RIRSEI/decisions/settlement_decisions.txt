@@ -47,15 +47,22 @@ settlement_decisions = {
 			}
 			conditional_tooltip = {
 				trigger = {
-					NOT = { has_landed_title = e_russian_empire }
+					FROM = {
+						NOT = {
+							has_landed_title = e_russian_empire }
+						}
 				}
 				has_building = tb_hillfort_4
 			}
 			conditional_tooltip = {
 				trigger = {
-					has_landed_title = e_russian_empire 
+					FROM = {
+						has_landed_title = e_russian_empire
+					}
 				}
-				has_landed_title = e_russian_empire
+				FROM = {
+					has_landed_title = e_russian_empire
+				}
 				has_building = tb_hillfort_1
 			}
 		}

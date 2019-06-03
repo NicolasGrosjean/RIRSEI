@@ -19,6 +19,6 @@ b_ghardaia = castle
 
 # Misc
 culture = maghreb_arabic
-religion = kharijite
+religion = ibadi
 
 # History

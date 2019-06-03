@@ -13,7 +13,9 @@
 911.1.1={
 	holder = 82238
 }
-
+936.1.1 = {
+	holder = 0
+}
 962.1.1={
 	liege="k_poland"
 	#law = agnatic_succession

@@ -17288,7 +17288,7 @@
 }
 
 73034={
-	name="Oveco"
+	name="Oveco" #Oveco Vermudez or Bermudez de Vela
 	dynasty=8779
 
 	father=73032
@@ -17299,8 +17299,8 @@
 	1002.1.1={
 		birth=yes
 	}
-	1047.1.1={
-		add_spouse=73045
+	1036.1.1={
+		add_spouse=73044  #Elvira Suarez
 	}
 	1052.1.1={
 		death=yes

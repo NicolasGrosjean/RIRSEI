@@ -41,6 +41,7 @@
 }
 893.1.1={
 	holder = 7563
+	liege = 0
 }
 920.1.1={
 	holder= 7562
@@ -65,6 +66,9 @@
 }
 1039.3.10 = {
 	holder = 127056 #Bernard d'Armagnac
+}
+1053.1.1 = {
+	liege = k_france
 }
 1063.1.1 = {
 	holder = 240 #Guillaume VIII d'Aquitaine

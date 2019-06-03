@@ -1218,6 +1218,9 @@
 	1100.1.1 = {
 		add_spouse=171162
 	}
+	1106.9.28 = { #Battle of Tinchebray
+		effect = { imprison = 202992 } # by Henry I
+	}
 	1134.2.3 = {
 		death="1134.2.3"
 	}
@@ -1993,6 +1996,7 @@
 	mother=202995
 	1102.2.7 = {
 		birth="1102.2.7"
+		effect = { set_character_flag = is_matilda_daughter_of_Henry_I }
 	}
 	1135.12.2 = {
 		add_claim=k_england
@@ -2026,12 +2030,14 @@
 	}
 	1087.9.9 = {
 		add_claim = k_england
+		effect = { set_character_flag = is_king_henry_I }
 	}
 	1100.11.11 = {
 		add_spouse=202995
 	}
 	1122.1.29 = {
 		add_spouse=206857 #Adelheid Reginar
+		add_trait = lovers_pox #It is believed that Henry contracted some kind of venereal disease, thus having no more children after 1123.
 	}
 	1135.12.1 = {
 		death=yes
@@ -2816,6 +2822,10 @@
 	mother=241
 	914.1.2 = {
 		birth="914.1.2"
+	}
+	936.1.1 = {
+		give_nickname = "nick_longsword"
+		add_spouse = 411
 	}
 	942.12.17 = {
 		death="942.12.17"
@@ -7712,6 +7722,7 @@
 	mother=205898
 	1096.1.1={
 		birth="1096.1.1"
+		effect = { set_character_flag = is_stephen }
 	}
 	1125.1.1={
 		add_spouse=205860 #Mathilde de Boulogne
@@ -8257,4 +8268,33 @@
 		death=yes
 	}
 }
-
+260555 = {
+	name = "Bernard" # the Dane
+	dynasty = 710
+	religion = catholic
+	culture = norman
+	trait = skilled_tactician
+	trait = viking
+	875.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		give_nickname = nick_the_dane
+	}
+	951.1.1 = {
+		death = yes
+	}
+}
+260556 = {
+	name = "Torf" # le Riche
+	dynasty = 710
+	religion = catholic
+	culture = norman
+	father = 260555
+	905.1.1 = {
+		birth = yes
+	}
+	973.1.1 = {
+		death = yes
+	}
+}

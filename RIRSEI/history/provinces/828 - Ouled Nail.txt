@@ -17,7 +17,7 @@ b_al_aghwat = castle
 
 # Misc
 culture = maghreb_arabic
-religion = kharijite
+religion = ibadi
 
 # History
 909.1.1 = { religion = sunni }

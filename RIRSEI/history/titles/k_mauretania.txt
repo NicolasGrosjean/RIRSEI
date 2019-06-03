@@ -20,6 +20,18 @@
 	holder = 159506
 	de_jure_liege = e_maghreb
 }
+909.1.1 = { # al-Mahdi settles down as ruler in the east
+	set_tribute_suzerain = {
+		who = k_africa
+		type = permanent
+	}
+}
+936.1.1 = {
+	holder = 159516
+}
+944.1.1 = { # Abu Yazid's revolt
+	clear_tribute_suzerain = k_africa
+}
 1051.1.1 = {
 	holder=32964
 	law = crown_authority_2

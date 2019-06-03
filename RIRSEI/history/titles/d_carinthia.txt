@@ -20,8 +20,11 @@
 	holder = 0
 	clear_tribute_suzerain = k_bavaria
 }
+936.1.1 = {
+	holder = 32002
+	liege = k_germany
+}
 976.1.1={
-liege="k_germany"
 #law = agnatic_succession
 #law = succ_primogeniture
 }

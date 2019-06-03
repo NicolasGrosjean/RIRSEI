@@ -82,18 +82,14 @@
 877.1.1={
 	holder = 50008 # Alain the Great
 }
-907.1.1={
-	holder = 159699 # Rudalt
-}
-917.1.1={
-	holder = 50007 # Malhuedoc
+907.1.1 = {
+	holder = 260602
+	liege = d_loire
 }
 #House of Nantes
-930.1.1 = {
-	liege = "d_brittany"
-}
-931.1.1={
+936.1.1={
 	holder=50002 #Alain II 'Barbe-Torte'
+	liege = d_brittany
 }
 952.1.1={
 	holder=50003 #Drogo
