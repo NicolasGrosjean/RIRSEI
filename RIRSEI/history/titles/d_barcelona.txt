@@ -48,7 +48,13 @@ liege = k_aquitaine
 	liege=k_france
 }
 888.1.13={
-	
+	liege = 0
+	set_tribute_suzerain = {
+		who = k_france
+		type = permanent
+	}
+	law = agnatic_succession
+	law = succ_primogeniture
 }
 898.8.11={
 	holder=70152
@@ -58,6 +64,9 @@ liege = k_aquitaine
 }
 954.10.15={
 	holder=110538
+}
+988.1.1 = {
+	clear_tribute_suzerain = k_france
 }
 993.9.30={
 	holder=110540

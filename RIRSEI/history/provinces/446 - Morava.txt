@@ -18,7 +18,7 @@ b_trebic = temple
 #b_ivancice = castle
 
 # Misc
-culture = bohemian
+culture = slovieni
 religion = slavic_pagan
 
 # History
@@ -28,6 +28,10 @@ religion = slavic_pagan
 900.1.1 = {
 	b_znojmo = castle
 	b_mikulov = city
+}
+
+1103.1.1 = {
+	culture = bohemian
 }
 
 #german colonization of southern parts

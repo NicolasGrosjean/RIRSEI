@@ -34,7 +34,7 @@ castle = {
 		fort_level = 0.5
 		ai_creation_factor = 79
 
-		extra_tech_building_start = 0.6
+		extra_tech_building_start = 1.4
 	}
 	ca_wall_q_3 = {
 		desc = ca_wall_q_3_desc
@@ -45,7 +45,7 @@ castle = {
 		fort_level = 0.5
 		ai_creation_factor = 78
 		
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.2
 	}
 	ca_wall_q_4 = {
 		desc = ca_wall_q_4_desc
@@ -56,7 +56,7 @@ castle = {
 		fort_level = 1.0
 		ai_creation_factor = 77
 		
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 0.8
 	}
 	ca_wall_q_5 = {
 		desc = ca_wall_q_5_desc
@@ -67,7 +67,7 @@ castle = {
 		fort_level = 1.0
 		ai_creation_factor = 76
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 0.4
 	}
 	
 	#Walls, gives fortlevel, levysize and income
@@ -94,7 +94,7 @@ castle = {
 		tax_income = 0.2
 		ai_creation_factor = 89
 		
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.4
 	}
 	ca_wall_3 = {
 		desc = ca_wall_3_desc
@@ -107,7 +107,7 @@ castle = {
 		tax_income = 0.2
 		ai_creation_factor = 88
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.2
 	}
 	ca_wall_4 = {
 		desc = ca_wall_4_desc
@@ -120,7 +120,7 @@ castle = {
 		tax_income = 0.2
 		ai_creation_factor = 87
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 0.8
 	}
 	ca_wall_5 = {
 		desc = ca_wall_5_desc
@@ -133,7 +133,7 @@ castle = {
 		tax_income = 0.5
 		ai_creation_factor = 86
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 0.4
 	}
 	ca_con_wall_6 = { # Theodosian Walls
 		potential = {
@@ -143,7 +143,8 @@ castle = {
 		upgrades_from = ca_wall_5
 		gold_cost = 150
 		build_time = 1460 #4y
-		fort_level = 4.0
+		fort_level = 6.0
+		garrison_size = 1.00
 		ai_creation_factor = 86
 
 		extra_tech_building_start = 0.0
@@ -172,7 +173,7 @@ castle = {
 		garrison_size = 0.1
 		ai_creation_factor = 101
 
-		extra_tech_building_start = 2.0
+		extra_tech_building_start = 2.2
 	}
 	ca_keep_3 = {
 		desc = ca_keep_1_desc
@@ -185,7 +186,7 @@ castle = {
 		garrison_size = 0.15
 		ai_creation_factor = 100
 		
-		extra_tech_building_start = 1.0
+		extra_tech_building_start = 1.6
 	}
 	ca_keep_4 = {	
 		desc = ca_keep_1_desc
@@ -197,7 +198,7 @@ castle = {
 		garrison_size = 0.2
 		ai_creation_factor = 99
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.0
 	}
 	ca_keep_5 = {
 		desc = ca_keep_1_desc
@@ -209,7 +210,7 @@ castle = {
 		garrison_size = 0.2
 		ai_creation_factor = 98
 
-		extra_tech_building_start = 0.2
+		extra_tech_building_start = 1.0
 	}
 	ca_keep_6 = {
 		desc = ca_keep_1_desc
@@ -233,6 +234,7 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 100
 		
+		court_size_modifier = 1
 		extra_tech_building_start = 0.5
 	}
 	ca_town_2 = {
@@ -245,6 +247,7 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 99
 
+		court_size_modifier = 1
 		extra_tech_building_start = 1.0
 	}
 	ca_town_3 = {
@@ -257,7 +260,8 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 98
 
-		extra_tech_building_start = 0.2
+		court_size_modifier = 1
+		extra_tech_building_start = 1.2
 	}
 	ca_town_4 = {
 		desc = ca_town_4_desc
@@ -268,7 +272,8 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 97
 
-		extra_tech_building_start = 0.2
+		court_size_modifier = 1
+		extra_tech_building_start = 1.2
 	}
 	ca_town_5 = {
 		desc = ca_town_4_desc
@@ -279,7 +284,8 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 96
 
-		extra_tech_building_start = 0.2
+		court_size_modifier = 1
+		extra_tech_building_start = 1.0
 	}
 	ca_town_6 = {
 		desc = ca_town_5_desc
@@ -290,6 +296,7 @@ castle = {
 		tax_income = 2
 		ai_creation_factor = 96
 
+		court_size_modifier = 1
 		extra_tech_building_start = 0.2
 	}
 	

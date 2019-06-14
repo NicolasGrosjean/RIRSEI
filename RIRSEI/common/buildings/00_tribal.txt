@@ -117,6 +117,7 @@ tribal = {
 		ai_feudal_modifier = -10
 		ai_republic_modifier = 10
 		
+		court_size_modifier = 1
 		extra_tech_building_start = 2
 	}
 	
@@ -135,6 +136,7 @@ tribal = {
 		convert_to_castle = ca_town_2
 		convert_to_city = ct_marketplace_2
 		
+		court_size_modifier = 1
 		extra_tech_building_start = 2.5
 	}
 	

@@ -108,6 +108,10 @@ holder=470
 1063.12.1={
 holder=476
 }
+936.1.1 = {
+	holder = 159135
+	liege = k_hungary
+}
 1063.12.1={
 holder=476
 }

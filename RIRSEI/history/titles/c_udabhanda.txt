@@ -6,7 +6,10 @@
 860.1.1={
 	holder=178021
 }
-
+936.1.1 = {
+	liege=d_gandhara
+	holder = 261103
+}
 1021.1.1={
 	liege = d_lahore
 	holder = 144125

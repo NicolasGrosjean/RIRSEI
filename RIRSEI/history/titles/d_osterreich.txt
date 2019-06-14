@@ -1,3 +1,7 @@
+936.1.1 = {
+	holder = 260666
+	liege = k_hungary
+}
 976.1.1={
 liege=k_germany
 #law = agnatic_succession

@@ -29,7 +29,7 @@ religion = catholic
 	b_forges = ct_port_1
 }
 
-960.1.1 = {
+936.1.1 = {
 	culture = norman
 }
 

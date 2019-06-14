@@ -700,6 +700,7 @@ muslim = {
 		intermarry = shiite
 		intermarry = druze
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	zikri = {
 		graphical_culture = muslimgfx
@@ -729,6 +730,7 @@ muslim = {
 		intermarry = shiite
 		intermarry = druze
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
@@ -772,6 +774,7 @@ muslim = {
 		intermarry = shiite
 		intermarry = druze
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	Almohade = {
 		graphical_culture = muslimgfx
@@ -815,6 +818,7 @@ attacking_same_religion_piety_loss = yes
 		intermarry = shiite
 		intermarry = druze
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	shiite = {
 		graphical_culture = muslimgfx
@@ -857,6 +861,7 @@ attacking_same_religion_piety_loss = yes
 		intermarry = kharijite
 		intermarry = druze
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	druze = {
 		graphical_culture = muslimgfx
@@ -886,6 +891,7 @@ attacking_same_religion_piety_loss = yes
 		intermarry = kharijite
 		intermarry = shiite
 		intermarry = hurufi
+		intermarry = qarmatian
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
@@ -915,6 +921,38 @@ landed_kin_prestige_bonus = yes
 		intermarry = kharijite
 		intermarry = shiite
 		intermarry = druze
+		intermarry = qarmatian
+	}
+	qarmatian = {
+		graphical_culture = muslimgfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 4
+		heresy_icon = 9
+
+		color = { 0.2 0.7 0.1 }
+		parent = shiite
+
+		crusade_name = JIHAD
+
+		priests_can_marry = yes
+		psc_marriage = no
+		can_call_crusade = yes
+		max_wives = 4
+		matrilineal_marriages = no
+		allow_looting = yes
+
+		landed_kin_prestige_bonus = no
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = no
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+
+		intermarry = zoroastrian_group
+		intermarry = shiite
+		intermarry = druze
+		intermarry = hurufi
 	}
 
 khadjirite = {
@@ -1400,6 +1438,8 @@ pagan_group = {
 		intermarry = norse_pagan
 		intermarry = slavic_pagan
 		intermarry = baltic_pagan_reformed
+		intermarry = finnish_pagan
+
 	}	
 	
 	finnish_pagan_reformed = {
@@ -1464,6 +1504,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		allow_in_ruler_designer = no
+
+		intermarry = finnish_pagan
 	}	
 	
 	finnish_pagan = {
@@ -1531,6 +1573,11 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 		can_demand_religious_conversion = no
+
+		intermarry = norse_pagan
+		intermarry = slavic_pagan
+		intermarry = baltic_pagan
+		intermarry = finnish_pagan_reformed
 	}
 	
 	aztec_reformed = {
@@ -1753,6 +1800,7 @@ pagan_group = {
 
 		intermarry = baltic_pagan
 		intermarry = norse_pagan
+		intermarry = finnish_pagan
 	}
 	
 	west_african_pagan_reformed = {

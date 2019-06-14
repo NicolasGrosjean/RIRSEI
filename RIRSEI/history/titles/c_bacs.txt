@@ -20,8 +20,6 @@
 804.1.1={
 	liege="d_temes"
 }
-
-
 852.1.1={
 	liege = "k_bulgaria"
 }
@@ -71,13 +69,9 @@ holder=470
 1063.12.1={
 holder=476
 }
-1066.1.1=
-{
-liege="k_hungary"
-}
-1066.1.1=
-{
-holder=20363
+1066.1.1 = {
+	liege = k_hungary
+	holder=20363
 }
 1068.1.1=
 {

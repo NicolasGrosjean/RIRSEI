@@ -20,7 +20,6 @@ culture = levantine_arabic
 religion = khadjirite
 
 # History
-
 900.1.1 = {
-religion = sunni
+	religion = sunni
 }

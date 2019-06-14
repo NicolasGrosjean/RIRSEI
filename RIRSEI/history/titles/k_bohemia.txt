@@ -1,11 +1,8 @@
 700.1.1 = {
 
 }
-
-
-898.1.1 = {
-#	liege = "e_hre"
-de_jure_liege = e_hre	
+1002.1.1 = {
+	de_jure_liege = e_hre
 }
 
 1045.1.1={

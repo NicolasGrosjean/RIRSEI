@@ -6,15 +6,15 @@
 	diplomacy=6
 	intrigue=6
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="diligent"
 	trait="just"
 	trait="ambitious"
 	trait="patient"
 	trait="charismatic_negotiator"
-	father=221522
-	mother=218512
+	father = 221522
+	mother = 218512
 	1136.1.1={
 		birth="1136.1.1"
 	}
@@ -30,13 +30,13 @@
 	diplomacy=6
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="kind"
 	trait="paranoid"
 	trait="skilled_tactician"
-	father=212872
-	mother=219533
+	father = 212872
+	mother = 219533
 	1128.1.1={
 		birth="1128.1.1"
 	}
@@ -61,13 +61,13 @@
 	diplomacy=6
 	intrigue=7
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="craven"
 	trait="envious"
 	trait="flamboyant_schemer"
-	father=212851
-	mother=212852
+	father = 212851
+	mother = 212852
 	1141.1.1={
 		birth="1141.1.1"
 	}
@@ -86,13 +86,13 @@
 	diplomacy=5
 	intrigue=5
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="brave"
 	trait="slothful"
 	trait="skilled_tactician"
-	father=212861
-	mother=212862
+	father = 212861
+	mother = 212862
 	1110.10.2={
 		birth="1110.10.2"
 	}
@@ -116,12 +116,12 @@
 	diplomacy=8
 	intrigue=4
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="kind"
 	trait="underhanded_rogue"
-	father=212850
-	mother=219512
+	father = 212850
+	mother = 219512
 	1168.1.1={
 		birth="1168.1.1"
 	}
@@ -138,13 +138,13 @@
 	diplomacy=5
 	intrigue=4
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="charitable"
 	trait="temperate"
 	trait="scholarly_theologian"
-	father=212850
-	mother=219512
+	father = 212850
+	mother = 219512
 	1170.1.1={
 		birth="1170.1.1"
 	}
@@ -161,14 +161,14 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="proud"
 	trait="lustful"
 	trait="quick"
 	trait="intricate_webweaver"
-	father=212851
-	mother=212441
+	father = 212851
+	mother = 212441
 	1155.1.1={
 		birth="1155.1.1"
 	}
@@ -191,13 +191,13 @@
 	diplomacy=7
 	intrigue=6
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="just"
 	trait="humble"
 	trait="fortune_builder"
-	father=212851
-	mother=212441
+	father = 212851
+	mother = 212441
 	1160.1.1={
 		birth="1160.1.1"
 	}
@@ -213,13 +213,13 @@
 	diplomacy=4
 	intrigue=6
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="stutter"
 	trait="temperate"
 	trait="martial_cleric"
-	father=212851
-	mother=212852
+	father = 212851
+	mother = 212852
 	1145.1.1={
 		birth="1145.1.1"
 	}
@@ -236,12 +236,12 @@
 	diplomacy=8
 	intrigue=6
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="ambitious"
 	trait="scholarly_theologian"
-	father=212851
-	mother=212852
+	father = 212851
+	mother = 212852
 	1148.1.1={
 		birth="1148.1.1"
 	}
@@ -259,13 +259,13 @@
 	diplomacy=4
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="lustful"
 	trait="deceitful"
 	trait="scholarly_theologian"
-	father=212851
-	mother=212441
+	father = 212851
+	mother = 212441
 	1162.1.1={
 		birth="1162.1.1"
 	}
@@ -281,12 +281,12 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="trusting"
 	trait="tough_soldier"
-	father=522
-	mother=765
+	father = 522
+	mother = 765
 	1065.1.1={
 		birth="1065.1.1"
 	}
@@ -305,13 +305,13 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="content"
 	trait="diligent"
 	trait="skilled_tactician"
-	father=212861
-	mother=212862
+	father = 212861
+	mother = 212862
 	1113.1.1={
 		birth="1113.1.1"
 	}
@@ -330,13 +330,13 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="chaste"
 	trait="patient"
 	trait="skilled_tactician"
-	father=212863
-	mother=212033
+	father = 212863
+	mother = 212033
 	1155.1.1={
 		birth="1155.1.1"
 	}
@@ -354,13 +354,13 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="proud"
 	trait="lustful"
 	trait="scholarly_theologian"
-	father=212863
-	mother=212033
+	father = 212863
+	mother = 212033
 	1155.1.1={
 		birth="1155.1.1"
 	}
@@ -376,12 +376,12 @@
 	diplomacy=4
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="wroth"
 	trait="just"
 	trait="martial_cleric"
-	father=212864
+	father = 212864
 	1170.10.2={
 		birth="1170.10.2"
 	}
@@ -401,12 +401,12 @@
 	diplomacy=4
 	intrigue=4
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="humble"
 	trait="indulgent_wastrel"
-	father=212861
-	mother=212862
+	father = 212861
+	mother = 212862
 	1116.1.1={
 		birth="1116.1.1"
 	}
@@ -423,12 +423,12 @@
 	diplomacy=7
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="zealous"
 	trait="diligent"
 	trait="scholarly_theologian"
-	father=212868
+	father = 212868
 	1151.1.1={
 		birth="1151.1.1"
 	}
@@ -446,12 +446,12 @@
 	diplomacy=5
 	intrigue=5
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="kind"
 	trait="deceitful"
 	trait="scholarly_theologian"
-	father=212868
+	father = 212868
 	1161.1.1={
 		birth="1161.1.1"
 	}
@@ -469,12 +469,12 @@
 	diplomacy=5
 	intrigue=5
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="harelip"
 	trait="proud"
 	trait="naive_appeaser"
-	father=212868
+	father = 212868
 	1165.1.1={
 		birth="1165.1.1"
 	}
@@ -490,13 +490,13 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="brave"
 	trait="patient"
 	trait="brilliant_strategist"
-	father=522
-	mother=765
+	father = 522
+	mother = 765
 	1075.1.1={
 		birth="1075.1.1"
 	}
@@ -515,12 +515,12 @@
 	diplomacy=4
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="just"
 	trait="amateurish_plotter"
-	father=212872
-	mother=219533
+	father = 212872
+	mother = 219533
 	1134.1.1={
 		birth="1134.1.1"
 	}
@@ -540,11 +540,11 @@
 	diplomacy=4
 	intrigue=4
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="amateurish_plotter"
-	father=212872
-	mother=219533
+	father = 212872
+	mother = 219533
 	1137.1.1={
 		birth="1137.1.1"
 	}
@@ -562,14 +562,14 @@
 	diplomacy=6
 	intrigue=4
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="charitable"
 	trait="humble"
 	trait="patient"
 	trait="detached_priest"
-	father=522
-	mother=477
+	father = 522
+	mother = 477
 	1056.1.1={
 		birth="1056.1.1"
 	}
@@ -586,8 +586,8 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian	
 	trait="tough_soldier"
 	father = 526
 	mother = 531
@@ -609,13 +609,13 @@
 	diplomacy=5
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="fair"
 	trait="skilled_tactician"
 	give_nickname = nick_the_handsome
-	father=518
-	mother=1437
+	father = 518
+	mother = 1437
 	1045.1.1={
 		birth="1045.1.1"
 	}
@@ -634,11 +634,11 @@
 	diplomacy=5
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="tough_soldier"
-	father=96009
-	mother=96073
+	father = 96009
+	mother = 96073
 	1122.1.1={
 		birth="1122.1.1"
 	}
@@ -655,12 +655,12 @@
 	diplomacy=5
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="wroth"
 	trait="diligent"
 	trait="tough_soldier"
-	father=212893
+	father = 212893
 	1145.1.1={
 		birth="1145.1.1"
 	}
@@ -676,13 +676,13 @@
 	diplomacy=5
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="chaste"
 	trait="patient"
 	trait="diligent"
 	trait="scholarly_theologian"
-	father=212893
+	father = 212893
 	1148.1.1={
 		birth="1148.1.1"
 	}
@@ -699,13 +699,13 @@
 	diplomacy=7
 	intrigue=4
 	stewardship=6	
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="lustful"
 	trait="quick"
 	trait="charismatic_negotiator"
-	father=221522
-	mother=218512
+	father = 221522
+	mother = 218512
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -722,12 +722,12 @@
 	diplomacy=7
 	intrigue=4
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="ambitious"
 	trait="thrifty_clerk"
-	father=212889
-	mother=212890
+	father = 212889
+	mother = 212890
 	1111.1.1={
 		birth="1111.1.1"
 	}
@@ -748,12 +748,12 @@
 	diplomacy=5
 	intrigue=4
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="patient"
 	trait="flamboyant_schemer"
-	father=212850
-	mother=219512
+	father = 212850
+	mother = 219512
 	1158.1.1={
 		birth="1158.1.1"
 	}
@@ -773,15 +773,15 @@
 	diplomacy=7
 	intrigue=6
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="just"
 	trait="stressed"
 	trait="proud"
 	trait="fair"
 	trait="martial_cleric"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1292.1.20={
 		birth="1292.1.20"
 	}
@@ -797,8 +797,8 @@
 	diplomacy=6
 	intrigue=4
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="chaste"
 	trait="tough_soldier"
 	1270.1.1={
@@ -819,14 +819,14 @@
 	diplomacy=8
 	intrigue=6
 	stewardship=5
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	trait="deceitful"
 	trait="cynical"
 	trait="harelip"
 	trait="fortune_builder"
-	father=168352
-	mother=168356
+	father = 168352
+	mother = 168356
 	852.1.1={
 		birth="852.1.1"
 	}
@@ -834,7 +834,7 @@
 		add_spouse = 501
 	}
 	883.1.1={
-		religion="catholic"
+		religion = catholic
 
 	}
 	890.1.1={
@@ -850,18 +850,18 @@
 	diplomacy=7
 	intrigue=5
 	stewardship=8
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	trait="just"
 	trait="zealous"
 	trait="kind"
 	trait="scholarly_theologian"
-	father=168344
+	father = 168344
 	858.1.1={
 		birth="858.1.1"
 	}
 	883.1.1={
-		religion="catholic"
+		religion = catholic
 
 	}
 	921.9.15={
@@ -877,18 +877,18 @@
 	diplomacy=4
 	intrigue=5
 	stewardship=8
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="patient"
 	trait="deceitful"
 	trait="skilled_tactician"
-	father=500
-	mother=501
+	father = 500
+	mother = 501
 	875.1.1={
 		birth="875.1.1"
 	}
 	883.1.1={
-		religion="catholic"
+		religion = catholic
 
 	}
 	915.1.1={
@@ -903,12 +903,12 @@
 	diplomacy=6
 	intrigue=8
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="humble"
 	trait="martial_cleric"
-	father=500
-	mother=501
+	father = 500
+	mother = 501
 	888.1.1={
 		birth="888.1.1"
 	}
@@ -928,12 +928,12 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="temperate"
 	trait="skilled_tactician"
-	father=504
-	mother=505
+	father = 504
+	mother = 505
 	907.1.1={
 		birth="907.1.1"
 	}
@@ -949,8 +949,8 @@
 	diplomacy=6
 	intrigue=4
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="diligent"
 	trait="cynical"
 	trait="amateurish_plotter"
@@ -969,15 +969,15 @@
 	diplomacy=7
 	intrigue=6
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="lisp"
 	trait="kinslayer"
 	trait="envious"
 	trait="flamboyant_schemer"
 	give_nickname = nick_the_cruel
-	father=504
-	mother=505
+	father = 504
+	mother = 505
 	915.1.1={
 		birth="915.1.1"
 	}
@@ -999,13 +999,13 @@
 	diplomacy=8
 	intrigue=5
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="proud"
 	trait="cynical"
 	trait="scholarly_theologian"
-	father=508
-	mother=507
+	father = 508
+	mother = 507
 	933.1.1={
 		birth="933.1.1"
 	}
@@ -1021,14 +1021,14 @@
 	diplomacy=6
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="kind"
 	trait="just"
 	trait="fortune_builder"
 	give_nickname = nick_the_pious
-	father=508
-	mother=507
+	father = 508
+	mother = 507
 	932.1.1={
 		birth="932.1.1"
 	}
@@ -1051,12 +1051,12 @@
 	diplomacy=6
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="patient"
 	trait="tough_soldier"
-	father=510
-	mother=511
+	father = 510
+	mother = 511
 	965.1.1={
 		birth="965.1.1"
 	}
@@ -1073,13 +1073,13 @@
 	diplomacy=7
 	intrigue=5
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="honest"
 	trait="maimed"
 	trait="tough_soldier"
-	father=510
-	mother=513
+	father = 510
+	mother = 513
 	978.1.1={
 		birth="978.1.1"
 	}
@@ -1095,12 +1095,12 @@
 	diplomacy=8
 	intrigue=6
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="lustful"
 	trait="tough_soldier"
-	father=510
-	mother=513
+	father = 510
+	mother = 513
 	980.1.1={
 		birth="980.1.1"
 	}
@@ -1120,7 +1120,7 @@
 	intrigue=6
 	stewardship=6
 	religion="baltic_pagan"
-	culture="bohemian"
+	culture = bohemian
 	trait="amateurish_plotter"
 	985.1.1={
 		birth="985.1.1"
@@ -1137,12 +1137,12 @@
 	diplomacy=4
 	intrigue=6
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="deceitful"
 	trait="tough_soldier"
-	father=516
-	mother=517
+	father = 516
+	mother = 517
 	1002.1.1={
 		birth="1002.1.1"
 	}
@@ -1161,11 +1161,11 @@
 	diplomacy=4
 	intrigue=8
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="tough_soldier"
-	father=518
-	mother=1437
+	father = 518
+	mother = 1437
 	1031.1.1={
 		birth="1031.1.1"
 	}
@@ -1184,14 +1184,14 @@
 	diplomacy=5
 	intrigue=4
 	stewardship=7
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="just"
 	trait="diligent"
 	trait="wroth"
 	trait="skilled_tactician"
-	father=518
-	mother=1437
+	father = 518
+	mother = 1437
 	1032.1.1={
 		birth="1032.1.1"
 	}
@@ -1214,14 +1214,14 @@
 	diplomacy=4
 	intrigue=4
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="charitable"
 	trait="proud"
 	trait="honest"
 	trait="tough_soldier"
-	father=518
-	mother=1437
+	father = 518
+	mother = 1437
 	1035.1.1={
 		birth="1035.1.1"
 	}
@@ -1241,14 +1241,14 @@
 	diplomacy=5
 	intrigue=7
 	stewardship=5
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="arbitrary"
 	trait="slothful"
 	trait="hunter"
 	trait="martial_cleric"
-	father=518
-	mother=1437
+	father = 518
+	mother = 1437
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -1264,14 +1264,14 @@
 	diplomacy=6
 	intrigue=3
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="patient"
 	trait="honest"
 	trait="charitable"
 	trait="thrifty_clerk"
-	father=522
-	mother=477
+	father = 522
+	mother = 477
 	1058.1.13={
 		birth="1058.1.13"
 	}
@@ -1292,11 +1292,11 @@
 	diplomacy=5
 	intrigue=2
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="martial_cleric"
-	father=520
-	mother=532
+	father = 520
+	mother = 532
 	1055.1.1={
 		birth="1055.1.1"
 	}
@@ -1312,12 +1312,12 @@
 	diplomacy=4
 	intrigue=4
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="diligent"
 	trait="thrifty_clerk"
-	father=522
-	mother=765
+	father = 522
+	mother = 765
 	1063.1.15={
 		birth="1063.1.15"
 	}
@@ -1334,11 +1334,11 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=6
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="martial_cleric"
-	father=522
-	mother=477
+	father = 522
+	mother = 477
 	1060.1.1={
 		birth="1060.1.1"
 	}
@@ -1354,13 +1354,13 @@
 	diplomacy=6
 	intrigue=7
 	stewardship=2
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="greedy"
 	trait="trusting"
 	trait="misguided_warrior"
-	father=522
-	mother=765
+	father = 522
+	mother = 765
 	1064.1.1={
 		birth="1064.1.1"
 	}
@@ -1380,14 +1380,14 @@
 	name="Václav"
 	# AKA: Vaclav
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="arbitrary"
 	trait="patient"
 	trait="trusting"
 	trait="charismatic_negotiator"
-	father=212855
-	mother=219503
+	father = 212855
+	mother = 219503
 	1205.1.1={
 		birth="1205.1.1"
 	}
@@ -1409,16 +1409,16 @@
 	name="Premysl"
 	# AKA: Otakar
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="ambitious"
 	trait="wroth"
 	trait="just"
 	trait="brave"
 	trait="quick"
 	trait="midas_touched"
-	father=96000
-	mother=30777
+	father = 96000
+	mother = 30777
 	1233.1.1={
 		birth="1233.1.1"
 	}
@@ -1446,15 +1446,15 @@ add_claim = e_hre
 	name="Václav"
 	# AKA: Vaclav
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="poet"
 	trait="lustful"
 	trait="charitable"
 	trait="proud"
 	trait="charismatic_negotiator"
-	father=96001
-	mother=98016
+	father = 96001
+	mother = 98016
 	1271.9.27={
 		birth="1271.9.27"
 	}
@@ -1477,14 +1477,14 @@ trait = Vs_sancti_petri
 	name="Václav"
 	# AKA: Vaclav
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="hedonist"
 	trait="slothful"
 	trait="thrifty_clerk"
     trait="twin"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1289.10.6={
 		birth="1289.10.6"
 	}
@@ -1502,9 +1502,9 @@ trait = Vs_sancti_petri
 96004 = {
 	name="Vratislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96012
+	religion = catholic
+	culture = bohemian
+	father = 96012
 	1112.1.1={
 		birth="1112.1.1"
 	}
@@ -1516,9 +1516,9 @@ trait = Vs_sancti_petri
 96005 = {
 	name="Spytihnev"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96004
+	religion = catholic
+	culture = bohemian
+	father = 96004
 	1143.1.1={
 		birth="1143.1.1"
 	}
@@ -1530,9 +1530,9 @@ trait = Vs_sancti_petri
 96006 = {
 	name="Svatopluk"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96004
+	religion = catholic
+	culture = bohemian
+	father = 96004
 	1145.1.1={
 		birth="1145.1.1"
 	}
@@ -1545,9 +1545,9 @@ trait = Vs_sancti_petri
 	name="Václav"
 	# AKA: Vaclav Jindrich
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96011
+	religion = catholic
+	culture = bohemian
+	father = 96011
 	1107.1.1={
 		birth="1107.1.1"
 	}
@@ -1560,10 +1560,10 @@ trait = Vs_sancti_petri
 	name="Eufemie"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96012
-	mother=96073
+	religion = catholic
+	culture = bohemian
+	father = 96012
+	mother = 96073
 	1115.1.1={
 		birth="1115.1.1"
 	}
@@ -1575,14 +1575,14 @@ trait = Vs_sancti_petri
 96009 = {
 	name="Ota"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="wroth"
 	trait="proud"
 	trait="trusting"
 	trait="tough_soldier"
-	father=212892
-	mother=473
+	father = 212892
+	mother = 473
 	1085.1.1={
 		birth="1085.1.1"
 	}
@@ -1598,9 +1598,9 @@ trait = Vs_sancti_petri
 	name="Svatava"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212893
+	religion = catholic
+	culture = bohemian
+	father = 212893
 	1144.1.1={
 		birth="1144.1.1"
 	}
@@ -1612,13 +1612,13 @@ trait = Vs_sancti_petri
 96011 = {
 	name="Svatopluk"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="patient"
 	trait="diligent"
 	trait="tough_soldier"
-	father=212892
-	mother=473
+	father = 212892
+	mother = 473
 	1067.1.1={
 		birth="1067.1.1"
 	}
@@ -1630,12 +1630,12 @@ trait = Vs_sancti_petri
 96012 = {
 	name="Oldrich"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="deceitful"
 	trait="tough_soldier"
-	father=526
-	mother=531
+	father = 526
+	mother = 531
 	1076.1.1={
 		birth="1076.1.1"
 	}
@@ -1648,9 +1648,9 @@ trait = Vs_sancti_petri
 	name="Eufemie"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212893
+	religion = catholic
+	culture = bohemian
+	father = 212893
 	1149.1.1={
 		birth="1149.1.1"
 	}
@@ -1663,9 +1663,9 @@ trait = Vs_sancti_petri
 	name="Hedvika"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96009
+	religion = catholic
+	culture = bohemian
+	father = 96009
 	1126.1.1={
 		birth="1126.1.1"
 	}
@@ -1678,9 +1678,9 @@ trait = Vs_sancti_petri
 	name="Marie"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212893
+	religion = catholic
+	culture = bohemian
+	father = 212893
 	1151.1.1={
 		birth="1151.1.1"
 	}
@@ -1692,10 +1692,10 @@ trait = Vs_sancti_petri
 96017 = {
 	name="Bretislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=530
-	#mother=Lukarta von Bogen
+	religion = catholic
+	culture = bohemian
+	father = 530
+	#mother = Lukarta von Bogen
 	1095.6.30={
 		birth="1095.6.30"
 	}
@@ -1708,12 +1708,12 @@ trait = Vs_sancti_petri
 	name="Jaromír"
 	# AKA: Jaromir
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="hunter"
 	trait="tough_soldier"
-	father=8504
-	mother=183188 #Gerberga von Babenberg
+	father = 8504
+	mother = 183188 #Gerberga von Babenberg
 	1101.1.1={
 		birth="1101.1.1"
 	}
@@ -1725,10 +1725,10 @@ trait = Vs_sancti_petri
 96019 = {
 	name="Spytihnev"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=8504
-	mother=183188 #Gerberga von Babenberg
+	religion = catholic
+	culture = bohemian
+	father = 8504
+	mother = 183188 #Gerberga von Babenberg
 	1101.1.1={
 		birth="1101.1.1"
 	}
@@ -1741,10 +1741,10 @@ trait = Vs_sancti_petri
 	name="Litold"
 	# AKA: Lupold
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=8504
-	mother=183188 #Gerberga von Babenberg
+	religion = catholic
+	culture = bohemian
+	father = 8504
+	mother = 183188 #Gerberga von Babenberg
 	1102.1.1={
 		birth="1102.1.1"
 	}
@@ -1758,10 +1758,10 @@ trait = Vs_sancti_petri
 	# AKA: Richza
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=8504
-	mother=183188 #Gerberga von Babenberg
+	religion = catholic
+	culture = bohemian
+	father = 8504
+	mother = 183188 #Gerberga von Babenberg
 	1103.1.1={
 		birth="1103.1.1"
 	}
@@ -1773,10 +1773,10 @@ trait = Vs_sancti_petri
 96022 = {
 	name="Albrecht"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=8504
-	mother=183188 #Gerberga von Babenberg
+	religion = catholic
+	culture = bohemian
+	father = 8504
+	mother = 183188 #Gerberga von Babenberg
 	1104.1.1={
 		birth="1104.1.1"
 	}
@@ -1789,10 +1789,10 @@ trait = Vs_sancti_petri
 	name="Judita"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=522
-	mother=765
+	religion = catholic
+	culture = bohemian
+	father = 522
+	mother = 765
 	1067.1.1={
 		birth="1067.1.1"
 	}
@@ -1804,10 +1804,10 @@ trait = Vs_sancti_petri
 96024 = {
 	name="Vladislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212872
-	mother=219533
+	religion = catholic
+	culture = bohemian
+	father = 212872
+	mother = 219533
 	1124.1.1={
 		birth="1124.1.1"
 	}
@@ -1820,10 +1820,10 @@ trait = Vs_sancti_petri
 	name="Marie"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212872
-	mother=219533
+	religion = catholic
+	culture = bohemian
+	father = 212872
+	mother = 219533
 	1125.1.1={
 		birth="1125.1.1"
 	}
@@ -1836,10 +1836,10 @@ trait = Vs_sancti_petri
 	name="Svatava"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212861
-	mother=212862
+	religion = catholic
+	culture = bohemian
+	father = 212861
+	mother = 212862
 	1111.10.2={
 		birth="1111.10.2"
 	}
@@ -1851,11 +1851,11 @@ trait = Vs_sancti_petri
 96027 = {
 	name="Diepold"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="scholarly_theologian"
-	father=212866
-	mother=221540
+	father = 212866
+	mother = 221540
 	1196.10.2={
 		birth="1196.10.2"
 	}
@@ -1867,11 +1867,11 @@ trait = Vs_sancti_petri
 96028 = {
 	name="Boleslav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="tough_soldier"
-	father=212866
-	mother=221540
+	father = 212866
+	mother = 221540
 	1198.1.1={
 		birth="1198.1.1"
 	}
@@ -1883,10 +1883,10 @@ trait = Vs_sancti_petri
 96029 = {
 	name="Sobieslav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212866
-	mother=221540
+	religion = catholic
+	culture = bohemian
+	father = 212866
+	mother = 221540
 	1199.1.1={
 		birth="1199.1.1"
 	}
@@ -1898,10 +1898,10 @@ trait = Vs_sancti_petri
 96030 = {
 	name="Borivoj"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212866
-	mother=221540
+	religion = catholic
+	culture = bohemian
+	father = 212866
+	mother = 221540
 	1200.1.1={
 		birth="1200.1.1"
 	}
@@ -1913,10 +1913,10 @@ trait = Vs_sancti_petri
 96032 = {
 	name="Vratislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212850
-	mother=219512
+	religion = catholic
+	culture = bohemian
+	father = 212850
+	mother = 219512
 	1158.1.1={
 		birth="1158.1.1"
 	}
@@ -1929,10 +1929,10 @@ trait = Vs_sancti_petri
 	name="Olga"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212850
-	mother=219512
+	religion = catholic
+	culture = bohemian
+	father = 212850
+	mother = 219512
 	1159.1.1={
 		birth="1159.1.1"
 	}
@@ -1946,10 +1946,10 @@ trait = Vs_sancti_petri
 	# AKA: Marketa
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212850
-	mother=219512
+	religion = catholic
+	culture = bohemian
+	father = 212850
+	mother = 219512
 	1178.1.1={
 		birth="1178.1.1"
 	}
@@ -1961,11 +1961,11 @@ trait = Vs_sancti_petri
 96035 = {
 	name="Svatopluk"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="wroth"
-	father=212851
-	mother=212852
+	father = 212851
+	mother = 212852
 	1144.1.1={
 		birth="1144.1.1"
 	}
@@ -1980,11 +1980,11 @@ trait = Vs_sancti_petri
 96036 = {
 	name="Vratislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="misguided_warrior"
-	father=212855
-	mother=212044
+	father = 212855
+	mother = 212044
 	1186.1.1={
 		birth="1186.1.1"
 	}
@@ -2004,11 +2004,11 @@ trait = Vs_sancti_petri
 	# AKA: Marketa
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="gregarious"
-	father=212855
-	mother=212044
+	father = 212855
+	mother = 212044
 	1186.1.1={
 		birth="1186.1.1"
 	}
@@ -2021,10 +2021,10 @@ trait = Vs_sancti_petri
 	name="Bozislava"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212855
-	mother=212044
+	religion = catholic
+	culture = bohemian
+	father = 212855
+	mother = 212044
 	1196.1.1={
 		birth="1196.1.1"
 	}
@@ -2037,10 +2037,10 @@ trait = Vs_sancti_petri
 	name="Hedvika"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212855
-	mother=212044
+	religion = catholic
+	culture = bohemian
+	father = 212855
+	mother = 212044
 	1197.1.1={
 		birth="1197.1.1"
 	}
@@ -2052,10 +2052,10 @@ trait = Vs_sancti_petri
 96040 = {
 	name="Vratislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212855
-	mother=219503
+	religion = catholic
+	culture = bohemian
+	father = 212855
+	mother = 219503
 	1200.1.1={
 		birth="1200.1.1"
 	}
@@ -2068,10 +2068,10 @@ trait = Vs_sancti_petri
 	name="Judita"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212855
-	mother=219503
+	religion = catholic
+	culture = bohemian
+	father = 212855
+	mother = 219503
 	1201.1.1={
 		birth="1201.1.1"
 	}
@@ -2084,12 +2084,12 @@ trait = Vs_sancti_petri
 	name="Anna"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="diligent"
 	trait="martial_cleric"
-	father=212855
-	mother=219503
+	father = 212855
+	mother = 219503
 	1204.1.1={
 		birth="1204.1.1"
 	}
@@ -2101,10 +2101,10 @@ trait = Vs_sancti_petri
 96043 = {
 	name="Vladislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=212855
-	mother=219503
+	religion = catholic
+	culture = bohemian
+	father = 212855
+	mother = 219503
 	1207.1.1={
 		birth="1207.1.1"
 	}
@@ -2116,11 +2116,11 @@ trait = Vs_sancti_petri
 96044 = {
 	name="Premysl"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="ambitious"
-	father=212855
-	mother=219503
+	father = 212855
+	mother = 219503
 	1209.1.1={
 		birth="1209.1.1"
 	}
@@ -2136,14 +2136,14 @@ trait = Vs_sancti_petri
 	name="Anezka"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="humble"
 	trait="charitable"
 	trait="content"
 	trait="mastermind_theologian"
-	father=212855
-	mother=219503
+	father = 212855
+	mother = 219503
 	1211.1.1={
 		birth="1211.1.1"
 	}
@@ -2160,13 +2160,13 @@ trait = Vs_sancti_petri
 	# AKA: Vilemina
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="mystic"
 	trait="gregarious"
 	trait="martial_cleric"
-	father=212855
-	mother=219503
+	father = 212855
+	mother = 219503
 	1210.1.1={
 		birth="1210.1.1"
 	}
@@ -2178,10 +2178,10 @@ trait = Vs_sancti_petri
 96047 = {
 	name="Vladislav"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96000
-	mother=30777
+	religion = catholic
+	culture = bohemian
+	father = 96000
+	mother = 30777
 	1227.1.1={
 		birth="1227.1.1"
 	}
@@ -2197,10 +2197,10 @@ trait = Vs_sancti_petri
 	name="Anezka"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96000
-	mother=30777
+	religion = catholic
+	culture = bohemian
+	father = 96000
+	mother = 30777
 	1227.1.1={
 		birth="1227.1.1"
 	}
@@ -2213,10 +2213,10 @@ trait = Vs_sancti_petri
 	name="Bozena"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96000
-	mother=30777
+	religion = catholic
+	culture = bohemian
+	father = 96000
+	mother = 30777
 	1228.1.1={
 		birth="1228.1.1"
 	}
@@ -2229,11 +2229,11 @@ trait = Vs_sancti_petri
 	name="Kunhuta"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="detached_priest"
-	father=96001
-	mother=98016
+	father = 96001
+	mother = 98016
 	1265.1.1={
 		birth="1265.1.1"
 	}
@@ -2246,10 +2246,10 @@ trait = Vs_sancti_petri
 	name="Anezka"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96001
-	mother=98016
+	religion = catholic
+	culture = bohemian
+	father = 96001
+	mother = 98016
 	1269.9.5={
 		birth="1269.9.5"
 	}
@@ -2262,12 +2262,12 @@ trait = Vs_sancti_petri
 	name="Mikulás"
 	# AKA: Mikulas
 	dynasty=10110
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="bastard"
 	trait="just"
 	trait="skilled_tactician"
-	father=96001
+	father = 96001
 	1255.1.1={
 		birth="1255.1.1"
 	}
@@ -2280,9 +2280,9 @@ trait = Vs_sancti_petri
 	name="Mikulás"
 	# AKA: Mikulas
 	dynasty=10110
-	religion="catholic"
-	culture="bohemian"
-	father=96052
+	religion = catholic
+	culture = bohemian
+	father = 96052
 	1288.1.1={
 		birth="1288.1.1"
 	}
@@ -2297,10 +2297,10 @@ trait = Vs_sancti_petri
 96054 = {
 	name="Jan"
 	dynasty=10110
-	religion="catholic"
-	culture="bohemian"
-	father=96053
-	#mother=Anna Raciborska
+	religion = catholic
+	culture = bohemian
+	father = 96053
+	#mother = Anna Raciborska
 	1332.1.1={
 		birth="1332.1.1"
 	}
@@ -2312,13 +2312,13 @@ trait = Vs_sancti_petri
 96055 = {
 	name="Jan"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="bastard"
 	trait="cynical"
 	trait="gregarious"
 	trait="mastermind_theologian"
-	father=96001
+	father = 96001
 	1256.1.1={
 		birth="1256.1.1"
 	}
@@ -2330,10 +2330,10 @@ trait = Vs_sancti_petri
 96056 = {
 	name="Premysl"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1288.1.1={
 		birth="1288.1.1"
 	}
@@ -2346,11 +2346,11 @@ trait = Vs_sancti_petri
 	name="Anezka"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-    trait="twin"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian   
+	trait="twin"
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1289.10.6={
 		birth="1289.10.6"
 	}
@@ -2363,10 +2363,10 @@ trait = Vs_sancti_petri
 	name="Anna"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1290.10.15={
 		birth="1290.10.15"
 	}
@@ -2379,10 +2379,10 @@ trait = Vs_sancti_petri
 	name="Guta"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1293.1.1={
 		birth="1293.1.1"
 	}
@@ -2394,10 +2394,10 @@ trait = Vs_sancti_petri
 96060 = {
 	name="Jan"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1294.1.1={
 		birth="1294.1.1"
 	}
@@ -2411,12 +2411,12 @@ trait = Vs_sancti_petri
 	# AKA: Marketa
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="shy"
 	trait="content"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1296.2.21={
 		birth="1296.2.21"
 	}
@@ -2429,10 +2429,10 @@ trait = Vs_sancti_petri
 	name="Guta"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=7526 #Jutta von Habsburg
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 7526 #Jutta von Habsburg
 	1297.1.1={
 		birth="1297.1.1"
 	}
@@ -2445,10 +2445,10 @@ trait = Vs_sancti_petri
 	name="Anezka"
 	female = yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=96002
-	mother=125978 #Elzbieta Ryksa
+	religion = catholic
+	culture = bohemian
+	father = 96002
+	mother = 125978 #Elzbieta Ryksa
 	1305.6.15={
 		birth="1305.6.15"
 	}
@@ -2460,11 +2460,11 @@ trait = Vs_sancti_petri
 96064 = {
 	name="Jan"
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="bastard"
 	trait="scholarly_theologian"
-	father=96002
+	father = 96002
 	1296.1.1={
 		birth="1296.1.1"
 	}
@@ -2478,10 +2478,10 @@ trait = Vs_sancti_petri
 	# AKA: Marketa
 	female = yes
 	dynasty=10110
-	religion="catholic"
-	culture="bohemian"
-	father=96053
-	#mother=Anna Raciborska
+	religion = catholic
+	culture = bohemian
+	father = 96053
+	#mother = Anna Raciborska
 	1325.1.1={
 		birth="1325.1.1"
 	}
@@ -2493,8 +2493,8 @@ trait = Vs_sancti_petri
 96066 = {
 	name="Budivoj"
 	dynasty=10106
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	1220.1.1={
 		birth="1220.1.1"
 	}
@@ -2510,8 +2510,8 @@ trait = Vs_sancti_petri
 	name="Perchta"
 	female = yes
 	dynasty=10105
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	1222.1.1={
 		birth="1222.1.1"
 	}
@@ -2524,15 +2524,15 @@ trait = Vs_sancti_petri
 	name="Závis"
 	# AKA: Zavis
 	dynasty=10106
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="ambitious"
 	trait="poet"
 	trait="fair"
 	trait="gregarious"
 	trait="intricate_webweaver"
-	father=96066
-	mother=96067
+	father = 96066
+	mother = 96067
 	1250.1.1={
 		birth="1250.1.1"
 	}
@@ -2553,12 +2553,12 @@ trait = Vs_sancti_petri
 96069 = {
 	name="Jesek"
 	dynasty=10106
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="bastard"
 	trait="martial_cleric"
-	father=96068
-	mother=98016
+	father = 96068
+	mother = 98016
 	1282.1.1={
 		birth="1282.1.1"
 	}
@@ -2575,11 +2575,11 @@ trait = Vs_sancti_petri
 	diplomacy=6
 	intrigue=5
 	stewardship=4
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="martial_cleric"
-	father=212851
-	mother=212852
+	father = 212851
+	mother = 212852
 	1141.1.1={
 		birth="1141.1.1"
 	}
@@ -2592,10 +2592,10 @@ trait = Vs_sancti_petri
 	name="Eufemia"
 	female=yes
 	dynasty=10110
-	religion="catholic"
-	culture="bohemian"
-	father=96053
-	mother=125972
+	religion = catholic
+	culture = bohemian
+	father = 96053
+	mother = 125972
 	1319.1.2 = {
 			birth="1319.1.2"
 	}
@@ -2607,14 +2607,14 @@ trait = Vs_sancti_petri
 96070 = {
 	name="Radim-Gaudentius" 
 	dynasty=9588
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="bastard"
 	trait="scholarly_theologian"
 	trait="celibate"
 	trait="zealous"
 	trait="honest"
-	father=168360
+	father = 168360
 	970.1.1={
 		birth="970.1.1"
 	}
@@ -2626,8 +2626,8 @@ trait = Vs_sancti_petri
 
 96113 = {
 	name="Prokop"
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	1227.1.1={
 		birth="1227.1.1"
 	}
@@ -2639,8 +2639,8 @@ trait = Vs_sancti_petri
 221551 = {
 	name="Ludmila"
 	female = yes
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	1150.1.2={
 		birth="1150.1.2"
 	}
@@ -2649,184 +2649,12 @@ trait = Vs_sancti_petri
 	}
 }
 
-187000 = {
-	name="Mojmír"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-
-	720.1.1={
-		birth="720.1.1"
-	}
-	782.1.1={
-		death="782.1.1"
-	}
-} 
-
-187001 = {
-	name="Mojmír"
-	# AKA: Mojmír I Mojmírovci
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=146177
-	790.1.1={
-		birth="790.1.1"
-	}
-	831.1.1={
-		religion="catholic"
-	}
-	846.8.15={
-		death="846.8.15"
-	}
-}
-187002 = {
-	name="Rostislav"
-	# AKA: Rostislav Mojmírovci
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=187009
-	815.1.1={
-		birth="815.1.1"
-	}
-	831.1.1={
-		religion="catholic"
-	}
-	869.1.1={
-		death="869.1.1"
-	}
-}
-187003 = {
-	name="Svatopluk"
-	# AKA: Svatopluk Mojmírovci
-	dynasty=7508
-	religion="catholic"
-	culture="bohemian"
-	father=187010
-	840.1.1={
-		birth="840.1.1"
-	}
-	858.1.1={
-		add_spouse=168068
-	}
-	894.1.1={
-		death="894.1.1"
-	}
-} # Nephew of Rostislav
-
-187004 = {
-	name="Slavomír"
-	# AKA: Slavomír Mojmírovci
-	dynasty=7508
-	religion="catholic"
-	culture="bohemian"
-	father=187010
-	842.1.1={
-		birth="842.1.1"
-	}
-	871.12.1={
-		death="871.12.1"
-	}
-}
-
-#187005 = {
-#	name="Sventozizna"
-#	female = yes
-#	religion="catholic"
-#	culture="bohemian"
-#	840.1.1={
-#		birth="840.1.1"
-#	}
-#	894.12.31={
-#		death="894.1.1"
-#	}
-#}
-
-187006 = {
-	name="Mojmír"
-	# AKA: Mojmír II Mojmírovci
-	dynasty=7508
-	religion="catholic"
-	culture="bohemian"
-	father=187003
-	mother=168068
-	859.1.1={
-		birth="859.1.1"
-	}
-	907.7.4={
-		death="907.7.4"
-	}
-}
-
-187007 = {
-	name="Svatopluk"
-	# AKA: Svatopluk II Mojmírovci
-	dynasty=7508
-	religion="catholic"
-	culture="bohemian"
-	father=187003
-	mother=168068
-	860.1.1={
-		birth="860.1.1"
-	}
-	907.7.4={
-		death="907.7.4"
-	}
-}
-
-187008 = {
-	name="Predslav"
-	# AKA: Predslav Mojmírovci
-	dynasty=7508
-	religion="catholic"
-	culture="bohemian"
-	father=187003
-	mother=168068
-	861.1.1={
-		birth="861.1.1"
-	}
-	907.7.4={
-		death="907.7.4"
-	}
-}
-
-187009 = {
-	name="Svatopluk"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=146177
-	794.1.1={
-		birth="794.1.1"
-	}
-	819.1.1={
-		death="819.1.1"
-	}
-}
-
-187010 = {
-	name="Svetimír"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=187009
-	817.1.1={
-		birth="817.1.1"
-	}
-	831.1.1={
-		religion="catholic"
-	}
-	850.1.1={
-		death="815.1.1"
-	}
-}
-
 168344 = {
 	name="Slavibor"
 	dynasty=250
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
+	father = 273021
 	827.1.1={
 		birth="827.1.1"
 	}
@@ -2836,14 +2664,11 @@ trait = Vs_sancti_petri
 	}
 }
 
-
-
-
 168345 = {
 	name="Premysl"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	694.1.1={
 		birth="694.1.1"
 	
@@ -2862,9 +2687,9 @@ trait = Vs_sancti_petri
 168346 = {
 	name="Nezamysl"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168345
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168345
 	715.1.1={
 		birth="715.1.1"
 	}
@@ -2877,9 +2702,9 @@ trait = Vs_sancti_petri
 168347 = {
 	name="Mnata"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168346
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168346
 	732.1.1={
 		birth="732.1.1"
 	}
@@ -2892,9 +2717,9 @@ trait = Vs_sancti_petri
 168348 = {
 	name="Vojen"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168347
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168347
 	748.1.1={
 		birth="748.1.1"
 	}
@@ -2907,9 +2732,9 @@ trait = Vs_sancti_petri
 168349 = {
 	name="Unislav"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168348
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168348
 	764.1.1={
 		birth="764.1.1"
 	}
@@ -2922,9 +2747,9 @@ trait = Vs_sancti_petri
 168350 = {
 	name="Kresomysl"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168349
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168349
 	782.1.1={
 		birth="782.1.1"
 	}
@@ -2937,9 +2762,9 @@ trait = Vs_sancti_petri
 168351 = {
 	name="Neklan"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168350
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168350
 	800.1.1={
 		birth="800.1.1"
 	}
@@ -2954,10 +2779,10 @@ trait = Vs_sancti_petri
 168352 = {
 	name="Hostivit"
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168351
-	mother=168355
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168351
+	mother = 168355
 	820.1.1={
 		birth="820.1.1"
 	}
@@ -2974,9 +2799,9 @@ trait = Vs_sancti_petri
 168353 = {
 	name="Spytimir" #revolted against his kinsman Borivoj in 885
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168617
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168617
 	845.1.1={
 		birth="845.1.1"
 	}
@@ -2989,9 +2814,9 @@ trait = Vs_sancti_petri
 168354 = {
 	name="Strojmir" #revolted against his kinsmen Borivoj in 885
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168617
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168617
 	847.1.1={
 		birth="847.1.1"
 	}
@@ -3006,8 +2831,8 @@ trait = Vs_sancti_petri
 168355 = {
 	name="Ponislava"
 	female=yes
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	802.1.1={
 		birth="802.1.1"
 	}
@@ -3022,8 +2847,8 @@ trait = Vs_sancti_petri
 168356 = {
 	name="Miloslava"
 	female=yes
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	835.1.1={
 		birth="835.1.1"
 	}
@@ -3036,13 +2861,13 @@ trait = Vs_sancti_petri
 168357 = {
 	name="Vitislav"
 	dynasty=9588
-	religion="slavic_pagan"
-	culture="bohemian"
+	religion = slavic_pagan
+	culture = bohemian
 	850.1.1={
 		birth="850.1.1"
 	}
 	883.1.1={
-		religion="catholic"
+		religion = catholic
 	}
 	910.1.1={
 		death="910.1.1"
@@ -3052,9 +2877,9 @@ trait = Vs_sancti_petri
 168358 = {
 	name="Vok"
 	dynasty=9588
-	religion="catholic"
-	culture="bohemian"
-	father=168357
+	religion = catholic
+	culture = bohemian
+	father = 168357
 	890.1.1={
 		birth="890.1.1"
 	}
@@ -3067,9 +2892,9 @@ trait = Vs_sancti_petri
 168360 = {
 	name="Slavnik"
 	dynasty=9588
-	religion="catholic"
-	culture="bohemian"
-	father=168358
+	religion = catholic
+	culture = bohemian
+	father = 168358
 	920.1.1={
 		birth="920.1.1"
 	}
@@ -3087,10 +2912,10 @@ trait = Vs_sancti_petri
 	name="Strezislava"
 	female=yes
 	dynasty=506
-	religion="catholic"
-	culture="bohemian"
-	father=504
-	mother=505
+	religion = catholic
+	culture = bohemian
+	father = 504
+	mother = 505
 	920.1.1={
 		birth="920.1.1"
 	}
@@ -3104,8 +2929,8 @@ trait = Vs_sancti_petri
 168362 = {
 	name="Vojtech" #Saint Adalbert of Prague
 	dynasty=9588
-	religion="catholic"
-	culture="bohemian"
+	religion = catholic
+	culture = bohemian
 	trait="mastermind_theologian"
 	trait="celibate"
 	trait="zealous"
@@ -3113,8 +2938,8 @@ trait = Vs_sancti_petri
 	trait="just"
 	trait="diligent"
 	trait="temperate"
-	father=168360
-	mother=168361
+	father = 168360
+	mother = 168361
 	956.1.1={
 		birth="956.1.1"
 	}
@@ -3129,10 +2954,10 @@ trait = Vs_sancti_petri
 168363 = {
 	name="Sobeslav" 
 	dynasty=9588
-	religion="catholic"
-	culture="bohemian"
-	father=168360
-	mother=168361
+	religion = catholic
+	culture = bohemian
+	father = 168360
+	mother = 168361
 	952.1.1={
 		birth="952.1.1"
 	}
@@ -3145,10 +2970,10 @@ trait = Vs_sancti_petri
 168617 = {
 	name="Diepold" 
 	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168351
-	mother=168355
+	religion = slavic_pagan
+	culture = bohemian
+	father = 168351
+	mother = 168355
 	825.1.1={
 		birth=yes
 	}
@@ -3157,120 +2982,753 @@ trait = Vs_sancti_petri
 		death=yes
 	}
 }
-146174 = {
-	name="Kresomysl"
-	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=168345
-	722.1.1={
-		birth=yes
+
+261350 = {
+	name = "Hynek"
+	dynasty = 1062276
+	religion = catholic
+	culture = bohemian
+	880.1.1 = {
+		birth = yes
 	}
-	787.1.1={
-		death=yes
+	900.1.1 = {
+		add_spouse = 261351
+	}
+	932.1.1 = {
+		death = yes
+	}
+}
+261351 = {
+	name = "Bedriska"
+	female = yes
+	religion = catholic
+	culture = bohemian
+	882.1.1 = {
+		birth = yes
+	}
+	953.1.1 = {
+		death = yes
+	}
+}
+261352 = {
+	name = "Bozena"
+	female = yes
+	religion = catholic
+	culture = bohemian
+	906.1.1 = {
+		birth = yes
+	}
+	964.1.1 = {
+		death = yes
+	}
+}
+261353 = {
+	name = "Bavor"
+	dynasty = 1062276
+	religion = catholic
+	culture = bohemian
+	father = 260634
+	mother = 261352
+	928.1.1 = {
+		birth = yes
+	}
+	980.1.1 = {
+		death = yes
+	}
+}
+261354 = {
+	name = "Dobroslava"
+	dynasty = 1062276
+	religion = catholic
+	culture = bohemian
+	father = 260634
+	mother = 261352
+	931.1.1 = {
+		birth = yes
+	}
+	964.1.1 = {
+		death = yes
+	}
+}
+261355 = {
+	name = "Eufemie"
+	dynasty = 1062276
+	female = yes
+	religion = catholic
+	culture = bohemian
+	father = 261350
+	mother = 261351
+	903.1.1 = {
+		birth = yes
+	}
+	972.1.1 = {
+		death = yes
+	}
+}
+261356 = {
+	name = "Anezka"
+	female = yes
+	dynasty = 1062276
+	religion = catholic
+	culture = bohemian
+	father = 261350
+	mother = 261351
+	913.1.1 = {
+		birth = yes
+	}
+	955.1.1 = {
+		death = yes
+	}
+}
+261357 = {
+	name = "Bocek"
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	885.1.1 = {
+		birth = yes
+	}
+	905.1.1 = {
+		add_spouse = 261358
+	}
+	961.1.1 = {
+		death = yes
+	}
+}
+261358 = {
+	name = "Dorota"
+	female = yes
+	religion = catholic
+	culture = bohemian
+	888.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+}
+261359 = {
+	name = "Herman"
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	father = 260635
+	mother = 261352
+	932.1.1 = {
+		birth = yes
+	}
+	981.1.1 = {
+		death = yes
 	}
 }
 
-146175 = {
-	name="Strojmir"
-	dynasty=506
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=146174
-	742.1.1={
-		birth=yes
+261360 = {
+	name = "Prokop"
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	father = 260635
+	mother = 261352
+	933.1.1 = {
+		birth = yes
 	}
-	801.1.1={
-		death=yes
+	968.1.1 = {
+		death = yes
 	}
 }
-
-146176 = {
-	name="Predslav"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=187000
+261361 = {
+	name = "Boleslava"
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	father = 260635
+	mother = 261352
+	935.1.1.1 = {
+		birth = yes
+	}
+	995.1.1 = {
+		death = yes
+	}
+}
+261362 = {
+	name = "Strachkvas"
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	father = 261357
+	mother = 261358
+	916.1.1 = {
+		birth = yes
+	}
+	976.1.1 = {
+		death = yes
+	}
+}
+261363 = {
+	name = "Eliska"
+	female = yes
+	dynasty = 10100
+	religion = catholic
+	culture = bohemian
+	father = 261357
+	mother = 261358
+	918.1.1 = {
+		birth = yes
+	}
+	961.1.1 = {
+		death = yes
+	}
+}
+######### New characters
+273020 = { #prior of capitule of Litomerice, originaly German, but naturalized Bohemian 
+	name = "Lanž"
+	dynasty=7120
+	religion = catholic
+	culture = german
+	trait="scholarly_theologian"
+	1022.1.1 = {
+		birth = yes
+	}
+	1060.1.1 = {
+		culture = bohemian
+	}
+	1075.1.1 = {
+		death = yes
+	}
+}
+273021 = { #fantasy father of Slavibor ze Pšova
+	name="Veliš"
+	dynasty=250
+	religion = slavic_pagan
+	culture = bohemian
+	father = 273022
+	795.1.1={
+		birth = yes
+	}
+	843.1.1={
+		death = yes
+	}
+}
+273022 = { #fantasy rulers of Pšov
+	name="Slavibor"
+	dynasty=250
+	religion = slavic_pagan
+	culture = bohemian
+	father = 273023
+	765.1.1={
+		birth = yes
+	}
+	816.1.1={
+		death = yes
+	}
+}
+273023 = { #fantasy rulers of Pšov
+	name="Nemoj"
+	dynasty=250
+	religion = slavic_pagan
+	culture = bohemian
 	748.1.1={
-		birth=yes
+		birth = yes
 	}
-	801.1.1={
-		death=yes
+	793.1.1={
+		death = yes
 	}
 }
-
-146177 = {
-	name="Rostislav"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=187000
-	750.1.1={
-		birth=yes
+273024 = { #semi-legendary ruler of Zatec/Louny
+	name="Vlastislav"
+	dynasty=1069074 #z Loun
+	religion = slavic_pagan
+	culture = bohemian
+	735.1.1={
+		birth = yes
+	}
+	780.1.1={
+		death = yes
+	}
+}
+273052 = { #fantasy ruler of Zatec/Louny
+	name="Castohnev"
+	dynasty=1069074 #z Loun
+	religion = slavic_pagan
+	culture = bohemian
+	father = 273024
+	753.1.1={
+		birth = yes
 	}
 	809.1.1={
-		death=yes
+		death = yes
 	}
 }
+#Vršovci
+273025 = { #fictional forefather of the dynasty
+	name="Vrša" #fictional 
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	918.1.1={
+		birth = yes
+	}
+	976.1.1={
+		death = yes
+	}
+}
+273026 = {
+	name="Kochan" #unknown by name - a husband of daughter of Boleslav 
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273029
+	976.1.1={
+		birth = yes
+	}
+	999.1.1={
+		add_spouse = 273027
+	}
+	1003.2.9={
+		death = yes
+	}
+}
+273027 = {
+	name="Svatava"  #unknown daughter of Boleslav III.
+	female=yes
+	dynasty=506
+	religion = catholic
+	culture = bohemian
+	father = 512
+	mother = 273028
+	983.1.1={
+		birth = yes
+	}
+	999.1.1={
+		add_spouse = 273026
+	}
+	1035.1.1={
+		death = yes
+	}
+}
+273028 = {
+	name="Svatava"  #unknown wife of Boleslav III.
+	female=yes
+	religion = catholic
+	culture = bohemian
+	957.1.1={
+		birth = yes
+	}
+	981.1.1={
+		add_spouse = 512
+	}
+	1022.1.1={
+		death = yes
+	}
+}
+273029 = {
+	name="Kochan" #fictional 
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273025
+	950.1.1={
+		birth = yes
+	}
+	999.9.9={
+		death = yes
+	}
+}
+273030 = {
+	name="Bozej" #in 1014 the leader of Vršovci - at that date a possible Vršovic grandson of Boleslav III was still too young.
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273029
+	980.1.1={
+		birth = yes
+	}
+	1014.9.9={
+		death = yes
+	}
+}
+273031 = {
+	name="Kochan" #murderer of Jaromír Premyslid 
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273026
+	mother = 273027
+	1002.1.1={
+		birth = yes
+	}
+	1035.11.11={
+		death = yes
+	}
+}
+273032 = {
+	name="Czaslav" #fictional link between the first Vršovci and those massacred in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273031
+	1033.1.1={
+		birth = yes
+	}
+	1083.11.11={
+		death = yes
+	}
+}
+273033 = {
+	name="Nemoj" #in 1107 gave large territories to Vyšehrad kapitula
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273031
+	1034.1.1={
+		birth = yes
+	}
+	1107.11.11={
+		death = yes
+	}
+}
+273034 = {
+	name="Mutina" #1092-1096 and 1101-1108 Litomerice
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273032
+	1059.1.1={
+		birth = yes
+	}
+	1108.10.27={
+		death = yes
+	}
+}
+273035 = {
+	name="Mutina" #son of Mutina murdered in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273034
+	1083.1.1={
+		birth = yes
+	}
+	1108.10.27={
+		death = { death_reason=death_murder }
+	}
+}
+273036 = {
+	name="Nemoj" #son of Mutina murdered in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273034
+	1087.1.1={
+		birth = yes
+	}
+	1108.10.27={
+		death = { death_reason=death_murder }
+	}
+}
+273037 = {
+	name="Vnislav" #murdered in 1108 together with Mutina
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273033
+	1064.1.1={
+		birth = yes
+	}
+	1108.10.27={
+		death = { death_reason=death_murder }
+	}
+}
+273038 = {
+	name="Damaša" #murdered in 1108 together with Mutina
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273033
+	1066.1.1={
+		birth = yes
+	}
+	1108.10.27={
+		death = { death_reason=death_murder }
+	}
+}
+273039 = {
+	name="Neuša" #in 1108 was with Mutina, escaped, but was murdered later
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273033
+	1083.1.1={
+		birth = yes
+	}
+	1108.10.28={
+		death = { death_reason=death_murder }
+	}
+}
+273040 = {
+	name="Bozej"
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273031
+	1036.1.1={
+		birth = yes
+	}
+	1089.11.11={
+		death = yes
+	}
+}
+273041 = {
+	name="Bozej" #1092-1096 and 1101-1108 Zatec, Murdered in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273040
+	1065.1.1={
+		birth = yes
+	}
+	1108.10.29={
+		death = { death_reason=death_murder }
+	}
+}
+273042 = {
+	name="Czesta" #Murdered in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273040
+	1066.1.1={
+		birth = yes
+	}
+	1108.10.29={
+		death = { death_reason=death_murder }
+	}
+}
+273043 = {
+	name="Borut" #son of Bozej of Zatec, Murdered in 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273041
+	1093.1.1={
+		birth = yes
+	}
+	1108.10.29={
+		death = { death_reason=death_murder }
+	}
+}
+273044 = {
+	name="Jan" #son of Czesta (Èesta), the only one from Bohemian, who survived the massacre of 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273042
+	1092.1.1={
+		birth = yes
+	}
+	1144.10.10={
+		death = yes
+	}
+}
+#Moravian branch of Vršovci
+273045 = {
+	name="Hruta" #castellan of Bitov
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273033
+	1065.1.1={
+		birth = yes
+	}
+	1112.10.10={
+		death = yes
+	}
+}
+273046 = {
+	name="Detrich" #castellan of Bitov 1112-1155
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273045
+	1093.1.1={
+		birth = yes
+	}
+	1155.10.10={
+		death = yes
+	}
+}
+273047 = {
+	name="Detrich" #castellan of Bitov 1155-1170
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273046
+	1115.1.1={
+		birth = yes
+	}
+	1170.10.10={
+		death = yes
+	}
+}
+273048 = {
+	name="Hruta" #castellan of Bitov 1170-1192
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273046
+	1122.1.1={
+		birth = yes
+	}
+	1192.10.10={
+		death = yes
+	}
+}
+#descendants of the survivor Jan, governors in Litomerice and Zatec
+273049 = {
+	name="Nemoj" #fictional son of Jan, who survived the massacre of 1108
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273044
+	1110.1.1={
+		birth = yes
+	}
+	1154.10.10={
+		death = yes
+	}
+}
+273050 = {
+	name="Nemoj" # Nemoj II. in 1160 castellan of Litomerice, since 1160 also steward
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273049
+	1127.1.1={
+		birth = yes
+	}
+	1190.10.10={
+		death = yes
+	}
+}
+273051 = {
+	name="Jarohnev" # 1146-77 castellan of Zatec
+	dynasty=10107
+	religion = catholic
+	culture = bohemian
+	father = 273049
+	1128.1.1={
+		birth = yes
+	}
+	1177.10.10={
+		death = yes
+	}
+}
+#273052 already given to Castohnev z Loun
 
-146178 = {
-	name="Svetimir"
-	dynasty=7508
-	religion="slavic_pagan"
-	culture="bohemian"
-	father=187000
-	752.1.1={
-		birth=yes
-	}
-	814.1.1={
-		death=yes
-	}
-}
-260041 = {		# Placeholder Krems 769
-	name = "Bocek"
-	dynasty = 1062023
-	religion = "slavic_pagan"
-	culture = "bohemian"
-	735.1.1 = {
-		birth = yes
-	}
-	784.1.1 = {
-		death = yes
-	}
-}
-260042 = {		# Placeholder Krems 867
-	name = "Smil"
-	dynasty = 1062024
-	religion = "catholic"
-	culture = "bohemian"
-	837.1.1 = {
-		birth = yes
-	}
-	878.1.1 = {
-		death = yes
-	}
-}
-260053 = {		# Placeholder Freistadt 769
-	name = "Svatobor"
-	dynasty = 1062027
-	religion = "slavic_pagan"
+#Slavníkids
+273053 = {
+	name="Spytimir" 
+	dynasty=9588
+	religion = catholic
 	culture = bohemian
-	732.1.1 = {
+	father = 168360
+	mother = 168361
+	953.1.1={
 		birth = yes
 	}
-	780.1.1 = {
+	995.9.27={
 		death = yes
 	}
 }
-260054 = {		# Placeholder Freistadt 867
-	name = "Pawel"
-	dynasty = 1062028
-	religion = "catholic"
+273054 = {
+	name="Pobreslav" 
+	dynasty=9588
+	religion = catholic
 	culture = bohemian
-	821.1.1 = {
+	father = 168360
+	mother = 168361
+	955.1.1={
 		birth = yes
 	}
-	880.1.1 = {
+	995.9.27={
+		death = yes
+	}
+}
+273055 = {
+	name="Porej" 
+	dynasty=9588
+	religion = catholic
+	culture = bohemian
+	father = 168360
+	mother = 168361
+	957.1.1={
+		birth = yes
+	}
+	995.9.27={
+		death = yes
+	}
+}
+273056 = {
+	name="Caslav" 
+	dynasty=9588
+	religion = catholic
+	culture = bohemian
+	father = 168360
+	mother = 168361
+	959.1.1={
+		birth = yes
+	}
+	995.9.27={
+		death = yes
+	}
+}
+273066 = {
+	name="Mutina" 
+	dynasty=1069072
+	religion = slavic_pagan
+	culture = bohemian
+	750.1.1={
+		birth = yes
+	}
+	809.1.1={
+		death = yes
+	}
+}
+273067 = {
+	name="Radosta" 
+	dynasty=1069072
+	religion = slavic_pagan
+	culture = bohemian
+	father = 273066
+	792.1.1={
+		birth = yes
+	}
+	848.1.1={
+		death = yes
+	}
+}
+273068 = {
+	name="Dobeš" 
+	dynasty=1069072
+	religion = catholic
+	culture = bohemian
+	father = 273067
+	830.1.1={
+		birth = yes
+	}
+	887.1.1={
+		death = yes
+	}
+}
+273069 = {
+	name="Kojata" 
+	dynasty=1069073
+	religion = catholic
+	culture = bohemian
+	848.1.1={
+		birth = yes
+	}
+	903.1.1={
 		death = yes
 	}
 }

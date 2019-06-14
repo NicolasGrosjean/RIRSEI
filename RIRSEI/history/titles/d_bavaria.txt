@@ -3,13 +3,13 @@
 }
 895.1.1={
 	holder = 7969
-de_jure_liege=k_germany
 }
 907.1.1={
 	holder = 10097
 }
 937.7.14={
 	holder = 7970
+de_jure_liege=k_germany
 }
 938.1.1={
 	holder = 7971

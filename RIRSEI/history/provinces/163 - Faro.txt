@@ -10,7 +10,6 @@ b_tavira = city
 b_loule = temple
 #b_castromarim = castle
 #b_alcoutim = castle
-#b_aljezur = castle
 #b_saobrasdealportel = castle
 #b_olhao = castle
 

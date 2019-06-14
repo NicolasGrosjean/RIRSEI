@@ -25,6 +25,12 @@ religion = khurmazta
 	culture = turkish 
 	religion = tengri_pagan
 }
+900.1.1 = { 
+	culture = karluk 
+}
+1000.1.1 = {
+	culture = turkish
+}
 
 1227.1.1 = { religion = sunni } 
 
