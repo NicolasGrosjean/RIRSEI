@@ -1,5 +1,5 @@
 769.1.1 = {
-	de_jure_liege = e_carpathia
+	de_jure_liege = e_byzantium
 }
 925.1.1={
 	holder=8604
