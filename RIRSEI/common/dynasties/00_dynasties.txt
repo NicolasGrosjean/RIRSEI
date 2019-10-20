@@ -7589,6 +7589,20 @@
 	}
 }
 
+981 = {
+	name="Santos"
+	culture="portuguese"
+	religion="catholic"
+	is_modified=yes
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 23 14 1 3 1 0 14 14 1 3 4 0 0 9 1 3 2 0 0 14 1 3 2 
+		}
+		religion="catholic"
+	}
+}
 
 
 1002=
@@ -13003,7 +13017,7 @@
 8691=
 {
 	name="de Lacon"
-	culture="italian"
+	culture="sardinian"
 	religion="catholic"
 }
 8692=
@@ -34310,7 +34324,7 @@
 1042015=
 {
 	name="de Gunale"
-	culture="italian"
+	culture="sardinian"
 	religion="catholic"
 }
 1042017=
@@ -34888,7 +34902,7 @@
 1042808=
 {
 	name="de Callaris"
-	culture="italian"
+	culture="sardinian"
 	religion="catholic"
 }
 1043300=
@@ -40107,13 +40121,13 @@
 1022321=
 {
 	name="Oristani"
-	culture="italian"
+	culture="sardinian"
 	religion="catholic"
 }
 1022322=
 {
 	name="Sorrenti"
-	culture="italian"
+	culture="sardinian"
 	religion="catholic"
 }
 1022323=
@@ -45683,35 +45697,35 @@
 
 1040094 = {
    name="di Gallura"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 
 1040095 = {
    name="di Logudoro"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 
 1040096 = {
    name="di Agugliastra"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 
 1040097 ={
    name="Salusiu de Lacon"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040098 ={
    name="Torchitoriu de Ugunale"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040099 ={
    name="de Lacon Gunale"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040100 ={
@@ -45731,12 +45745,12 @@
 }
 1040103 ={
    name="de Lacon Zori"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040104 ={
    name="de Zori"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040105 ={
@@ -45746,7 +45760,7 @@
 }
 1040106 ={
    name="Bas Serra"
-   culture="italian"
+   culture="sardinian"
    religion="catholic"
 }
 1040107 ={
@@ -51951,11 +51965,6 @@
 	culture = german
 	religion = catholic
 }
-1062595={
-	name="Shahin"
-	culture="levantine_arabic"
-	religion="pagan"
-}
 1062594={
 	name="Khursid"
 	culture="persian"
@@ -52001,6 +52010,72 @@
 	name = "de Mortagne"
 	culture = frankish
 	religion = catholic
+}
+1062609 = {
+	name="Theoderisian"
+	culture="lombard"
+	religion="catholic"
+}
+1062610 = {
+	name="Botaneiates"
+	culture="greek"
+}
+1062611 = {
+	name="Shahin"
+	culture="levantine_arabic"
+	religion="pagan"
+}
+1062612 = {
+	name = "di Arborea"
+	culture = sardinian
+}
+1062613 = {
+	name = "di Casteddu"
+	culture = sardinian
+}
+1062614 = {
+	name = "di Santa Igia"
+	culture = sardinian
+}
+1062615 = {
+	name = "di Patiolla"
+	culture = sardinian
+}
+1062616 = {
+	name = "di Ogiastra"
+	culture = sardinian
+}
+1062617 = {
+	name = "di Torres"
+	culture = sardinian
+}
+1062618 = {
+	name = "di Ballau"
+	culture = sardinian
+}
+1062619 = {
+	name = "di Bosa"
+	culture = sardinian
+}
+1062620 = {
+	name = "di Caddura"
+	culture = sardinian
+}
+1062621 = {
+	name = "di Pasada"
+	culture = sardinian
+}
+1062622 = {
+	name = "di Durgali"
+	culture = sardinian
+}
+1062623 = {
+	name = "di Calvi"
+	culture = sardinian
+}
+1062624 = {
+	name = "di Sartena"
+	culture = sardinian
 }
 
 1069000 = {
