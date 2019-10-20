@@ -19,6 +19,7 @@ targetted_decisions = {
 		allow = {
 			NOT = { trait = zealous }
 			liege = { ROOTs_religion_is_playable_trigger = yes }
+			holy_order = no
 		}
 		effect = {
 			prestige = -500
@@ -658,6 +659,7 @@ targetted_decisions = {
 		}
 		allow = {
 			NOT = { trait = zealous }
+			holy_order = no
 		}
 		effect = {
 			prestige = -500
@@ -1161,6 +1163,7 @@ targetted_decisions = {
 		allow = {
 			NOT = { trait = zealous }
 			piety = 50
+			holy_order = no
 		}
 		effect = {
 			piety = -50
@@ -1345,6 +1348,7 @@ targetted_decisions = {
 				text = indian_has_not_converted
 				NOT = { has_character_flag = india_converted }
 			}
+			holy_order = no
 		}
 		effect = {
 			if = {
@@ -1452,6 +1456,7 @@ targetted_decisions = {
 		}
 		allow = {
 			is_adult = yes
+			holy_order = no
 			prestige = 500
 			NOT = { trait = zealous }
 			any_realm_province = {
@@ -2756,6 +2761,7 @@ targetted_decisions = {
 				}		
 			
 				religion = ROOT
+				abdicate_holy_order_if_religion_changes_effect = yes
 				
 				#When spouse is Hindu
 				if = {
@@ -2938,6 +2944,7 @@ decisions = {
 		effect = {
 			prestige = -500
 			piety = 100
+			abdicate_holy_order_if_religion_changes_effect = yes
 			
 			hidden_tooltip = {
 				any_war = {
