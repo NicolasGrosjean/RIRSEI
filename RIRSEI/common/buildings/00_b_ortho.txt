@@ -28,8 +28,8 @@ culture = bulgarian
 
 tax_income = 4
 levy_size = -1.5
-heavy_infantry = 100
-archers = 50
+heavy_infantry = 200
+archers = 100
 fort_level = 1.0
 land_morale = 0.10
 		ai_creation_factor = 101
@@ -53,11 +53,11 @@ culture = georgian
 		build_time = 730
 
 tax_income = 2
-light_infantry = 100
+light_infantry = 200
 light_infantry_defensive = 0.25
 light_infantry_morale = 0.25
 light_infantry_offensive = -0.10
-archers = 60
+archers = 120
 archers_defensive = 0.20
 archers_offensive = -0.10
 fort_level = 1.5
@@ -83,12 +83,12 @@ has_global_flag = christian_crusades_unlocked
 		build_time = 730
 
 tax_income = -3
-knights = 30
+knights = 60
 knights_morale = 0.20
-heavy_infantry = 70
+heavy_infantry = 140
 horse_archers_defensive = 0.30
-archers = 40
-light_infantry = -40
+archers = 80
+light_infantry = -80
 
 
 
@@ -114,15 +114,15 @@ culture = armenian
 
 tax_income = 2
 levy_size = -0.7
-heavy_infantry = 100
+heavy_infantry = 200
 heavy_infantry_morale = 0.15
-knights = 30
+knights = 60
 knights_morale = 0.15
-horse_archers = 30
+horse_archers = 60
 horse_archers_morale = 0.15
-light_cavalry = 30
+light_cavalry = 60
 light_cavalry_morale = 0.15
-archers = 50
+archers = 100
 archers_morale = 0.15
 fort_level = 1.0
 land_morale = 0.10

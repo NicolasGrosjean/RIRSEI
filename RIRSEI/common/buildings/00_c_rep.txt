@@ -21,19 +21,19 @@ tier = king
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }		
 		gold_cost = 10		
 		build_time = 400
-		light_infantry = 300
+		light_infantry = 500
 light_infantry_morale = -0.5
 light_infantry_offensive = -0.5
 light_infantry_defensive = -0.5
-heavy_infantry = 30
+heavy_infantry = 60
 heavy_infantry_offensive = -0.1
 heavy_infantry_morale = -0.2
-light_cavalry = 30
-knights = 10
+light_cavalry = 60
+knights = 20
 knights_offensive = -0.1
 light_cavalry_offensive = -0.1
 light_cavalry_morale = -0.2
-archers = 50
+archers = 100
 archers_morale = -0.2
 
 		
@@ -66,16 +66,16 @@ tier = king
 		upgrades_from = ct_mil_commun
 		gold_cost = 250		
 		build_time = 750
-		light_infantry = -150
-heavy_infantry = 100
+		light_infantry = -250
+heavy_infantry = 200
 heavy_infantry_offensive = -0.1
 heavy_infantry_defensive = 0.2
-archers = 50
+archers = 100
 archers_offensive = 0.25
-pikemen = 75
+pikemen = 150
 pikemen_morale = -0.2
 pikemen_defensive = 0.1
-knights = 20
+knights = 40
 knights_morale = -0.2
 tax_income = -6
 		
@@ -111,8 +111,8 @@ trigger = { TECH_CITY_CONSTRUCTION = 6 }
 		gold_cost = 200
 		build_time = 700
 		
-knights = -30
-light_cavalry = -30
+knights = -60
+light_cavalry = -60
 tax_income = 6
 
 		
@@ -149,8 +149,8 @@ trigger = { TECH_CITY_CONSTRUCTION = 6 }
 		gold_cost = 300
 		build_time = 700
 		
-knights = -30
-light_cavalry = -30
+knights = -60
+light_cavalry = -60
 tax_income = 4
 
 		
@@ -202,17 +202,17 @@ has_law = centralization_4
 upgrades_from = ct_condottea
 		gold_cost = 400
 		build_time = 720
-light_infantry = -125
-heavy_infantry = -40
+light_infantry = -250
+heavy_infantry = -80
 heavy_infantry_offensive = 0.1
 heavy_infantry_morale = 0.1
-archers = 150
+archers = 300
 archers_offensive = 0.25
 archers_morale = 0.2
-pikemen = 60
+pikemen = 120
 pikemen_morale = 0.1
 tax_income = -6
-retinuesize = 1500
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		

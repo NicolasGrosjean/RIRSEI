@@ -40,6 +40,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = sardinian
 culture = dalmatian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_1 }
@@ -58,6 +59,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = sardinian
 culture = dalmatian
 culture = GalloB
 }
@@ -76,6 +78,7 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 }
 }
@@ -83,11 +86,11 @@ culture = GalloB
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-knights = 15
-heavy_infantry = 40
-archers = 5
-light_cavalry = 5
-light_infantry = 5		
+knights = 30
+heavy_infantry = 80
+archers = 10
+light_cavalry = 10
+light_infantry = 10		
 heavy_infantry_offensive = 0.10
 heavy_infantry_morale = 0.10
 tax_income = 1
@@ -113,6 +116,7 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_2 }
 				}
@@ -130,6 +134,7 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 }
 }		
@@ -146,6 +151,7 @@ culture = german
 culture = old_saxon
 culture = dutch
 culture = italian
+culture = sardinian
 culture = GalloB
 }
 }
@@ -155,10 +161,10 @@ culture = GalloB
 
 		gold_cost = 50
 		build_time = 50
-		knights = 10
-heavy_infantry = 10
-archers = -2
-light_infantry = -2		
+		knights = 20
+heavy_infantry = 20
+archers = -4
+light_infantry = -4		
 tax_income = -1
 		ai_creation_factor = 101
 		
@@ -181,6 +187,7 @@ culture = german
 culture = old_saxon
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 ROOT = { has_building = ca_culture_Francais_syst_3 }
 				}
@@ -198,6 +205,7 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 }
 }
@@ -215,6 +223,7 @@ culture = old_saxon
 culture = dutch
 culture = italian
 culture = dalmatian
+culture = sardinian
 culture = GalloB
 }
 }
@@ -224,10 +233,10 @@ culture = GalloB
 
 gold_cost = 50
 		build_time = 50
-		knights = 30
-heavy_infantry = -50
-archers = 17
-light_infantry = 27		
+		knights = 60
+heavy_infantry = -100
+archers = 34
+light_infantry = 54		
 knights_offensive = 0.20
 knights_morale = 0.20
 knights_defensive = 0.10
@@ -281,7 +290,7 @@ FROM = {
 }
 		}
 		trigger = {
-		TECH_CASTLE_CONSTRUCTION = 2
+		TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 				OR = {
 					culture = frankish
@@ -298,10 +307,10 @@ FROM = {
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 55
-archers = 20
-light_cavalry = 5
-light_infantry = 30		
+knights = 110
+archers = 40
+light_cavalry = 10
+light_infantry = 60		
 knights_offensive = 0.20
 knights_morale = 0.20
 knights_defensive = 0.10
@@ -388,10 +397,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Francais_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 15
-archers = 15
-light_cavalry = 35
-light_infantry = 20		
+knights = 30
+archers = 30
+light_cavalry = 70
+light_infantry = 40		
 tax_income = 2
 		ai_creation_factor = 101
 		
@@ -473,12 +482,12 @@ has_law = centralization_4
 upgrades_from = ca_culture_Francais_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -70
-archers = 30
-light_cavalry = -40
+knights = -140
+archers = 60
+light_cavalry = -80
 archers_morale = 0.10
 archers_defensive = 0.10
-light_infantry = -50
+light_infantry = -100
 heavy_infantry = 40
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
@@ -525,13 +534,13 @@ culture = breton
 		gold_cost = 10
 		build_time = 400
 
-heavy_infantry = 20
-archers = 20
-light_cavalry = 40
+heavy_infantry = 40
+archers = 40
+light_cavalry = 80
 light_cavalry_offensive = 0.20
 light_cavalry_morale = 0.10
-light_infantry = 50		
-pikemen = 20
+light_infantry = 100		
+pikemen = 40
 
 
 
@@ -571,14 +580,14 @@ culture = breton
 
 		gold_cost = 100
 		build_time = 50
-knights = 25
-heavy_infantry = -20
-light_infantry = -20
-light_cavalry = -35
+knights = 50
+heavy_infantry = -40
+light_infantry = -40
+light_cavalry = -70
 light_cavalry_offensive = -0.20
 light_cavalry_morale = -0.10
-pikemen = -20
-knights = 55
+pikemen = -40
+knights = 110
 knights_morale = 0.20
 knights_defensive = 0.10
 knights_offensive = 0.20
@@ -640,11 +649,11 @@ culture = andalusian_arabic
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 730
-knights = 5
-heavy_infantry = 20
-archers = 10
-light_cavalry = 15
-light_infantry = 60		
+knights = 10
+heavy_infantry = 40
+archers = 20
+light_cavalry = 30
+light_infantry = 120		
 light_infantry_offensive = 0.20
 light_infantry_morale = 0.20
 
@@ -703,10 +712,10 @@ culture = andalusian_arabic
 		upgrades_from = ca_culture_Espagnes_syst_1
 		gold_cost = 50
 		build_time = 50
-		knights = 5
-heavy_infantry = 5
-light_cavalry = 5
-light_infantry = -10		
+		knights = 10
+heavy_infantry = 10
+light_cavalry = 10
+light_infantry = -20		
 
 		ai_creation_factor = 101
 		
@@ -764,11 +773,11 @@ culture = andalusian_arabic
 		upgrades_from = ca_culture_Espagnes_syst_2
 gold_cost = 50
 		build_time = 50
-knights = 20
-light_cavalry = 30
-archers = 10
-light_infantry = -10
-heavy_infantry = -25		
+knights = 40
+light_cavalry = 60
+archers = 20
+light_infantry = -20
+heavy_infantry = -50		
 light_cavalry_offensive = 0.20
 light_cavalry_morale = 0.20
 light_infantry_offensive = -0.20
@@ -822,7 +831,7 @@ culture = andalusian_arabic
  
 		}
 		trigger = { 
-		TECH_CASTLE_CONSTRUCTION = 2
+		TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 				OR = {
 					culture = catalan
@@ -838,10 +847,10 @@ culture = andalusian_arabic
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 30
-archers = 20
-light_cavalry = 50
-light_infantry = 40		
+knights = 60
+archers = 40
+light_cavalry = 100
+light_infantry = 80		
 knights_offensive = 0.10
 knights_morale = 0.10
 light_cavalry_offensive = 0.20
@@ -927,10 +936,10 @@ upgrades_from = ca_culture_Espagnes_sysfed_1
 		gold_cost = 300
 		build_time = 720
 
-archers = 10
-light_cavalry = 30
-light_infantry = 40
-heavy_infantry = 15		
+archers = 20
+light_cavalry = 60
+light_infantry = 80
+heavy_infantry = 30		
 tax_income = -2
 		ai_creation_factor = 101
 		
@@ -1011,13 +1020,13 @@ has_law = centralization_4
 upgrades_from = ca_culture_Espagnes_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -30
-light_cavalry = -30
-archers = 30
+knights = -60
+light_cavalry = -60
+archers = 60
 archers_offensive = 0.3
 archers_morale = 0.15
-heavy_infantry = 15
-light_infantry = 20
+heavy_infantry = 30
+light_infantry = 40
 light_infantry_morale = 0.15
 light_infantry_offensive = 0.10
 knights_offensive = -0.10
@@ -1062,9 +1071,9 @@ culture = english
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 45
-archers = 5
-light_infantry = 50		
+heavy_infantry = 90
+archers = 10
+light_infantry = 100		
 heavy_infantry_offensive = 0.10
 heavy_infantry_morale = 0.15
 fort_level = 1.0
@@ -1103,9 +1112,9 @@ culture = english
 		upgrades_from = ca_culture_Ang_syst_1
 		gold_cost = 50
 		build_time = 50
-heavy_infantry = 15
-light_cavalry = 5
-light_infantry = -20		
+heavy_infantry = 30
+light_cavalry = 10
+light_infantry = -40		
 fort_level = -0.5
 		ai_creation_factor = 101
 		
@@ -1142,11 +1151,11 @@ culture = english
 		upgrades_from = ca_culture_Ang_syst_2
 gold_cost = 50
 		build_time = 50
-knights = 25
-light_cavalry = 5
-archers = 5
-light_infantry = -20
-heavy_infantry = -40		
+knights = 50
+light_cavalry = 10
+archers = 10
+light_infantry = -40
+heavy_infantry = -80		
 heavy_infantry_offensive = -0.10
 heavy_infantry_morale = -0.05
 		ai_creation_factor = 101
@@ -1177,7 +1186,7 @@ culture = english
 
 		}
 		trigger = {
-		TECH_CASTLE_CONSTRUCTION = 2 
+		TECH_CASTLE_CONSTRUCTION = 1 
 FROM = {
 culture = english
 }
@@ -1185,10 +1194,10 @@ culture = english
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 45
-archers = 30
-light_cavalry = 5
-light_infantry = 50		
+knights = 90
+archers = 60
+light_cavalry = 10
+light_infantry = 100		
 knights_offensive = 0.15
 knights_morale = 0.10
 knights_defensive = 0.20
@@ -1250,14 +1259,14 @@ upgrades_from = ca_culture_Ang_sysfed_1
 		gold_cost = 300
 		build_time = 720
 		
-knights = -10
-archers = 90
+knights = -20
+archers = 180
 archers_offensive = 0.30
 archers_morale = 0.10
 archers_defensive = 0.20
-light_infantry = -50
-light_cavalry = 20
-heavy_infantry = 20	
+light_infantry = -100
+light_cavalry = 40
+heavy_infantry = 40	
 tax_income = -3
 		ai_creation_factor = 101
 		
@@ -1315,9 +1324,9 @@ has_law = centralization_4
 upgrades_from = ca_culture_Ang_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -35
-light_cavalry = -25
-heavy_infantry = 20
+knights = -70
+light_cavalry = -50
+heavy_infantry = 40
 archers_morale = 0.10
 knights_offensive = -0.15
 knights_morale = -0.10
@@ -1361,9 +1370,9 @@ culture = saxon
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 45
-archers = 5
-light_infantry = 50		
+heavy_infantry = 90
+archers = 10
+light_infantry = 100		
 heavy_infantry_offensive = 0.10
 heavy_infantry_morale = 0.15
 fort_level = 1.0
@@ -1399,9 +1408,9 @@ culture = saxon
 		upgrades_from = ca_culture_Saxon_syst_1
 		gold_cost = 50
 		build_time = 50
-heavy_infantry = 15
-light_cavalry = 5
-light_infantry = -20		
+heavy_infantry = 30
+light_cavalry = 10
+light_infantry = -40		
 fort_level = -0.5
 		ai_creation_factor = 101
 		
@@ -1434,11 +1443,11 @@ culture = saxon
 		upgrades_from = ca_culture_Saxon_syst_2
 gold_cost = 50
 		build_time = 50
-knights = 25
-light_cavalry = 5
-archers = 5
-light_infantry = -20
-heavy_infantry = -40		
+knights = 50
+light_cavalry = 10
+archers = 10
+light_infantry = -40
+heavy_infantry = -80		
 heavy_infantry_offensive = -0.10
 heavy_infantry_morale = -0.05
 		ai_creation_factor = 101
@@ -1502,14 +1511,14 @@ upgrades_from = ca_culture_Saxon_syst_3
 		gold_cost = 300
 		build_time = 720
 		
-knights = -10
-archers = 60
+knights = -20
+archers = 140
 archers_offensive = 0.30
 archers_morale = 0.10
 archers_defensive = 0.20
-light_infantry = -50
-light_cavalry = 20
-heavy_infantry = 10		
+light_infantry = -100
+light_cavalry = 40
+heavy_infantry = 20	
 tax_income = -3
 		ai_creation_factor = 101
 		
@@ -1568,9 +1577,9 @@ has_law = centralization_4
 upgrades_from = ca_culture_Saxon_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -35
-light_cavalry = -25
-heavy_infantry = 20
+knights = -70
+light_cavalry = -50
+heavy_infantry = 40
 archers_morale = 0.10
 knights_offensive = -0.15
 knights_morale = -0.10
@@ -1603,11 +1612,13 @@ ROOT = { has_building = ca_culture_THEME_syst_1 }
 
 }
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
+		}
 }
 
-		}
+		
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
 FROM = {
@@ -1619,13 +1630,13 @@ culture = greek
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 50
-archers = 25
-light_infantry = 25
-light_cavalry = 5
-pikemen = 25
-knights = 5
-horse_archers = 5	
+heavy_infantry = 100
+archers = 50
+light_infantry = 50
+light_cavalry = 10
+pikemen = 50
+knights = 10
+horse_archers = 10	
 heavy_infantry_defensive = 0.15
 pikemen_defensive = 0.15
 heavy_infantry_morale = 0.15
@@ -1649,10 +1660,11 @@ ROOT = { has_building = ca_culture_THEME_syst_2 }
 			}
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
 		}
+}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 4
 FROM = {
@@ -1667,10 +1679,10 @@ has_law = crown_authority_3
 		upgrades_from = ca_culture_THEME_syst_1
 		gold_cost = 50
 		build_time = 50
-heavy_infantry = 10
-archers = 5
-light_infantry = 5
-pikemen = 5	
+heavy_infantry = 20
+archers = 10
+light_infantry = 10
+pikemen = 10	
 heavy_infantry_morale = 0.05
 pikemen_morale = 0.05
 fort_level = 0.5
@@ -1692,9 +1704,10 @@ ROOT = { has_building = ca_culture_THEME_syst_3 }
 			}
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7
 FROM = {
@@ -1710,12 +1723,12 @@ has_global_flag = pe_pro_byz
 		upgrades_from = ca_culture_THEME_syst_2
 gold_cost = 50
 build_time = 50
-heavy_infantry = 40
-archers = -10
-light_infantry = 5
-pikemen = 20
-knights = -5
-horse_archers = -5	
+heavy_infantry = 80
+archers = -20
+light_infantry = 10
+pikemen = 30
+knights = -10
+horse_archers = -10	
 heavy_infantry_offensive = 0.10
 pikemen_offensive = 0.10
 heavy_infantry_morale = 0.05
@@ -1743,9 +1756,10 @@ ROOT = { has_building = ca_culture_PRONOIA_syst_1 }
 
 }
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 0
@@ -1757,11 +1771,11 @@ culture = greek
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 15
-archers = 20
-light_infantry = 20
-knights = 30
-horse_archers = 30		
+heavy_infantry = 30
+archers = 40
+light_infantry = 40
+knights = 60
+horse_archers = 60		
 horse_archers_morale = 0.10
 knights_defensive = 0.20
 
@@ -1783,9 +1797,10 @@ ROOT = { has_building = ca_culture_PRONOIA_syst_2 }
 			}
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { 
 TECH_CASTLE_CONSTRUCTION = 5
@@ -1801,11 +1816,11 @@ has_law = pronoia_byz
 		gold_cost = 50
 		build_time = 50
 
-heavy_infantry = -5
-archers = -5
-light_infantry = 10
-knights = 20
-horse_archers = 20		
+heavy_infantry = -10
+archers = -10
+light_infantry = 20
+knights = 40
+horse_archers = 40		
 horse_archers_morale = 0.10
 knights_defensive = 0.05
 knights_morale = 0.15
@@ -1830,9 +1845,10 @@ ROOT = { has_building = ca_culture_byz_noumeroi }
 		}
 
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 0
 FROM = {
@@ -1870,9 +1886,10 @@ tax_income = 4
 		
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { TECH_RECRUITMENT = 0
 FROM = {
@@ -1885,7 +1902,7 @@ has_landed_title = e_byzantium }
 		gold_cost = 30
 		build_time = 730
 add_number_to_name = no 
-retinuesize = 4000
+retinuesize = 5000
 
 
 		ai_creation_factor = 101
@@ -1902,9 +1919,10 @@ retinuesize = 4000
 		
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { TECH_RECRUITMENT = 4
 FROM = {
@@ -1916,7 +1934,7 @@ has_landed_title = e_byzantium } }
 		gold_cost = 50
 		build_time = 50
 add_number_to_name = no 
-retinuesize = 5000
+retinuesize = 7000
 		ai_creation_factor = 101
 		
 		
@@ -1931,9 +1949,10 @@ has_landed_title = e_byzantium }
 		
 		}
 		is_active_trigger = {
-FROM = {
+FROM = {		
+religion_group = christian
 culture = greek
-}
+		}
 		}
 		trigger = { TECH_RECRUITMENT = 7
 FROM = {
@@ -1954,7 +1973,7 @@ has_law = emp_autocrate
 gold_cost = 50
 build_time = 50
 add_number_to_name = no 
-retinuesize = 6000
+retinuesize = 9000
 
 		ai_creation_factor = 101
 		
@@ -1990,10 +2009,10 @@ culture = lombard
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 50
-archers = 5
-light_infantry = 40
-light_cavalry = 5		
+heavy_infantry = 100
+archers = 10
+light_infantry = 80
+light_cavalry = 10		
 heavy_infantry_offensive = 0.10
 heavy_infantry_defensive = -0.10
 heavy_infantry_morale = 0.10
@@ -2032,9 +2051,9 @@ culture = lombard
 		upgrades_from = ca_culture_Lomb_syst_1
 		gold_cost = 50
 		build_time = 50
-heavy_infantry = 30
-light_cavalry = 5
-light_infantry = -30		
+heavy_infantry = 60
+light_cavalry = 10
+light_infantry = -60		
 heavy_infantry_offensive = 0.05
 heavy_infantry_defensive = 0.10
 heavy_infantry_morale = 0.05
@@ -2071,12 +2090,12 @@ culture = lombard
 		upgrades_from = ca_culture_Lomb_syst_2
 gold_cost = 50
 		build_time = 50
-heavy_infantry = 25
-light_infantry = 30
+heavy_infantry = 50
+light_infantry = 60
 light_infantry_defensive = -0.1
 light_infantry_offensive = 0.1
 fort_level = 1.0
-retinuesize = 100
+retinuesize = 200
 tax_income = -1
 		ai_creation_factor = 101
 		
@@ -2107,7 +2126,7 @@ culture = lombard
 }
 
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 culture = lombard
 }
@@ -2115,16 +2134,16 @@ culture = lombard
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-heavy_infantry = 90
-archers = 5
-light_cavalry = 10
-light_infantry = 40
+heavy_infantry = 180
+archers = 10
+light_cavalry = 20
+light_infantry = 60
 heavy_infantry_offensive = 0.15
 heavy_infantry_morale = 0.15
 light_infantry_defensive = -0.1
 light_infantry_offensive = 0.1
 fort_level = 1.0
-retinuesize = 100
+retinuesize = 200
 tax_income = -1
 		ai_creation_factor = 101
 		
@@ -2184,8 +2203,8 @@ has_law = centralization_4
 upgrades_from = ca_culture_Lomb_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 15
-light_cavalry = -30		
+knights = 30
+light_cavalry = -60	
 tax_income = 4
 		ai_creation_factor = 101
 		
@@ -2243,10 +2262,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Lomb_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -45
-archers = -10
-light_cavalry = -30
-light_infantry = -20
+knights = -90
+archers = -20
+light_cavalry = -60
+light_infantry = -40
 knights_offensive = -0.10
 knights_morale = -0.10
 knights_defensive = -0.10		
@@ -2272,6 +2291,7 @@ has_global_flag = central
 OR = {				
 culture = italian
 culture = dalmatian
+culture = sardinian
 ROOT = { has_building = ca_culture_Italie_sysfed_1 }
 }
 			}
@@ -2281,25 +2301,27 @@ FROM = {
 OR = {
 culture = italian
 culture = dalmatian
+culture = sardinian
 }
 }
 
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 OR = {
 culture = italian
 culture = dalmatian
+culture = sardinian
 }
 }
  }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 30
-archers = 10
-light_cavalry = 60
-light_infantry = 20
+knights = 60
+archers = 20
+light_cavalry = 120
+light_infantry = 40
 tax_income = 1		
 knights_offensive = 0.10
 knights_morale = 0.10
@@ -2324,6 +2346,7 @@ has_global_flag = central
 OR = {				
 culture = italian
 culture = dalmatian
+culture = sardinian
 ROOT = { has_building = ca_culture_Italie_sysfed_2 }
 }
 			}
@@ -2342,6 +2365,7 @@ FROM = {
 OR = {
 culture = italian
 culture = dalmatian
+culture = sardinian
 }
 }
 
@@ -2369,8 +2393,8 @@ has_law = centralization_4
 upgrades_from = ca_culture_Italie_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 15
-light_cavalry = -30		
+knights = 30
+light_cavalry = -60		
 tax_income = 4
 		ai_creation_factor = 101
 		
@@ -2392,6 +2416,7 @@ has_global_flag = central
 OR = {				
 culture = italian
 culture = dalmatian
+culture = sardinian
 ROOT = { has_building = ca_culture_Italie_sysfed_3 }
 }
 			}
@@ -2402,6 +2427,7 @@ FROM = {
 OR = {
 culture = italian
 culture = dalmatian
+culture = sardinian
 }
 }
 
@@ -2411,6 +2437,7 @@ FROM = {
 OR = {
 culture = italian
 culture = dalmatian
+culture = sardinian
 }
 }
 
@@ -2435,10 +2462,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Italie_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -45
-archers = -10
-light_cavalry = -30
-light_infantry = -20
+knights = -90
+archers = -20
+light_cavalry = -60
+light_infantry = -40
 knights_offensive = -0.10
 knights_morale = -0.10
 knights_defensive = -0.10		
@@ -2476,18 +2503,18 @@ culture = armenian
 		gold_cost = 30
 		build_time = 730
 
-knights = 20
-horse_archers = 20		
+knights = 40
+horse_archers = 40		
 horse_archers_morale = 0.10
 horse_archers_offensive = 0.10
 horse_archers_defensive = 0.30
 knights_morale = 0.10
-light_infantry = 75
-archers = 60
+light_infantry = 150
+archers = 120
 light_infantry_offensive = 0.20
 light_infantry_defensive = 0.20
-heavy_infantry = 25
-retinuesize = 100
+heavy_infantry = 50
+retinuesize = 200
 
 		ai_creation_factor = 101
 		
@@ -2519,16 +2546,16 @@ culture = armenian
 		upgrades_from = ca_culture_Arme_syst_1
 		gold_cost = 50
 		build_time = 50
-knights = 30
-horse_archers = -15
+knights = 60
+horse_archers = -30
 horse_archers_morale = -0.10
 horse_archers_offensive = -0.10
 horse_archers_defensive = -0.30
-heavy_infantry = 10
-light_cavalry = 40
+heavy_infantry = 20
+light_cavalry = 80
 light_cavalry_offensive = 0.15
-light_infantry = -40
-archers = -30		
+light_infantry = -80
+archers = -60		
 knights_morale = 0.20
 knights_offensive = 0.20
 kinghts_defensive = -0.10
@@ -2584,11 +2611,11 @@ has_law = centralization_4
 		upgrades_from = ca_culture_Arme_syst_2
 		gold_cost = 50
 		build_time = 50
-knights = 30
-heavy_infantry = 80
-light_cavalry = 30
-light_infantry = -20
-archers = -15	
+knights = 60
+heavy_infantry = 160
+light_cavalry = 60
+light_infantry = -40
+archers = -30
 retinuesize = 200
 
 		ai_creation_factor = 101
@@ -2625,16 +2652,16 @@ culture = welsh
 		gold_cost = 30
 		build_time = 400
 		
-heavy_infantry = 20
-archers = 20
+heavy_infantry = 40
+archers = 40
 archers_offensive = 0.3
-light_cavalry = 30
+light_cavalry = 60
 light_cavalry_morale = 0.3
 light_cavalry_defensive = 0.3
-light_infantry = 100
+light_infantry = 200
 light_infantry_morale = 0.3
 light_infantry_defensive = 0.3	
-retinuesize = 200
+retinuesize = 300
 
 		ai_creation_factor = 101
 		
@@ -2671,13 +2698,13 @@ culture = welsh
 
 		gold_cost = 150
 		build_time = 400
-		heavy_infantry = -10
-		archers = 80
-		light_infantry = -40
-	    pikemen = 70
+		heavy_infantry = -20
+		archers = 160
+		light_infantry = -80
+	    pikemen = 140
 		pikemen_morale = 0.3
 		pikemen_defensive = 0.3
-		retinuesize = 100
+		retinuesize = 150
 
 		ai_creation_factor = 101
 		
@@ -2735,15 +2762,15 @@ has_law = centralization_4
 upgrades_from = ca_culture_Galles_syst_2
 		gold_cost = 400
 		build_time = 720
-pikemen = -50
-light_infantry = -40
-light_cavalry = -20
-archers = 30
+pikemen = -100
+light_infantry = -80
+light_cavalry = -40
+archers = 60
 archers_morale = 0.2
 archers_defensive = 0.2
-heavy_infantry = 30	
+heavy_infantry = 60	
 tax_income = -6
-retinuesize = 1700
+retinuesize = 1800
 		ai_creation_factor = 101
 		
 		
@@ -2788,15 +2815,15 @@ FROM = {
                 add_number_to_name = no 
 		gold_cost = 30
 		build_time = 400
-knights = 5
-heavy_infantry = 10
-archers = 20
-light_cavalry = 15
-light_infantry = 20		
-pikemen = 20
+knights = 10
+heavy_infantry = 20
+archers = 40
+light_cavalry = 30
+light_infantry = 40		
+pikemen = 40
 pikemen_morale = 0.2
 heavy_infantry_morale = 0.2
-retinuesize = 200
+retinuesize = 300
 
 		ai_creation_factor = 101
 		
@@ -2840,10 +2867,10 @@ FROM = {
 
 		gold_cost = 100
 		build_time = 50
-		knights = 25
-heavy_infantry = -5
-light_infantry = 40
-light_cavalry = 25
+		knights = 50
+heavy_infantry = -10
+light_infantry = 80
+light_cavalry = 50
 knights_morale = 0.20
 knights_defensive = 0.10
 knights_offensive = 0.10
@@ -2852,7 +2879,7 @@ light_infantry_offensive = -0.1
 archers_defensive = 0.2
 archers_offensive = -0.1		
 heavy_infantry_morale = -0.2
-retinuesize = -200
+retinuesize = -300
 		ai_creation_factor = 101
 		
 		
@@ -2888,7 +2915,7 @@ FROM = {
 }
 
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 				OR = {
 					culture = scottish
@@ -2899,12 +2926,12 @@ FROM = {
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 30
-archers = 20
-light_cavalry = 40
-light_infantry = 60
-heavy_infantry = 5
-pikemen = 20		
+knights = 60
+archers = 40
+light_cavalry = 80
+light_infantry = 120
+heavy_infantry = 10
+pikemen = 40		
 knights_morale = 0.20
 knights_defensive = 0.10
 knights_offensive = 0.10
@@ -2981,17 +3008,17 @@ upgrades_from = ca_culture_Ecosse_sysfed_1
 		gold_cost = 300
 		build_time = 720
 		
-knights = 10
+knights = 20
 knights_morale = -0.10
 knights_defensive = 0.10
-archers = 20
+archers = 40
 archers_offensive = 0.20
 archers_morale = 0.10
-light_infantry = -30
-light_cavalry = -15
+light_infantry = -60
+light_cavalry = -30
 light_infantry_offensive = 0.1
-heavy_infantry = -5
-pikemen = 60
+heavy_infantry = -10
+pikemen = 120
 pikemen_defensive = 0.2
 pikemen_offensive = 0.2	
 tax_income = -3
@@ -3060,17 +3087,17 @@ has_law = centralization_4
 upgrades_from = ca_culture_Ecosse_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -40
+knights = -80
 archers = 10
-light_cavalry = -25
-light_infantry = -30
-pikemen = -20
+light_cavalry = -50
+light_infantry = -60
+pikemen = -40
 knights_offensive = -0.10
 knights_morale = -0.10
 knights_defensive = -0.20
 pikemen_offensive = 0.1		
 tax_income = -2
-retinuesize = 2000
+retinuesize = 2500
 		ai_creation_factor = 101
 		
 		
@@ -3105,16 +3132,16 @@ FROM = {
 		gold_cost = 30
 		build_time = 400
 
-heavy_infantry = 10
-archers = 30
-light_cavalry = 40
-light_infantry = 60	
-pikemen = 10
+heavy_infantry = 20
+archers = 60
+light_cavalry = 80
+light_infantry = 120	
+pikemen = 20
 light_infantry_morale = 0.2
 light_cavalry_morale = 0.2
 light_cavalry_offensive = 0.1
 light_cavalry_defensive = 0.2
-retinuesize = 200
+retinuesize = 300
 
 		ai_creation_factor = 101
 		
@@ -3155,11 +3182,11 @@ FROM = {
 upgrades_from = ca_culture_Eire_syst_1
 		gold_cost = 300
 		build_time = 720
-		heavy_infantry = -10
-		light_cavalry = 20
+		heavy_infantry = -20
+		light_cavalry = 40
 		light_cavalry_offensive = 0.1
-		pikemen = 10
-		retinuesize = 200
+		pikemen = 20
+		retinuesize = 300
 
 		ai_creation_factor = 101
 		
@@ -3217,13 +3244,13 @@ upgrades_from = ca_culture_Eire_syst_2
 		gold_cost = 400
 		build_time = 720
 
-archers = -30
-light_cavalry = -60
-heavy_infantry = -10
-light_infantry = -60
-pikemen = -20
+archers = -60
+light_cavalry = -120
+heavy_infantry = -20
+light_infantry = -120
+pikemen = -40
 tax_income = -3
-retinuesize = 1600
+retinuesize = 1800
 		ai_creation_factor = 101
 		
 		
@@ -3257,7 +3284,7 @@ OR = {
 }
 
 		}
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1
 FROM = {
 OR = {                         
 			culture = german
@@ -3268,9 +3295,9 @@ OR = {
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 70
-archers = 10
-light_infantry = 15	
+knights = 140
+archers = 20
+light_infantry = 20	
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
@@ -3340,10 +3367,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Germ_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = -30
-heavy_infantry = 50
-light_cavalry = 10
-archers = 20
+knights = -60
+heavy_infantry = 100
+light_cavalry = 20
+archers = 40
 knights_morale = 0.10
 knights_offensive = 0.05	
 tax_income = 3
@@ -3411,18 +3438,18 @@ has_law = centralization_4
 upgrades_from = ca_culture_Germ_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -40
-archers = 40
-light_cavalry = -10
+knights = -60
+archers = 80
+light_cavalry = -20
 archers_morale = 0.10
 archers_defensive = 0.10
-light_infantry = -15
-pikemen = 25
+light_infantry = -30
+pikemen = 50
 knights_offensive = -0.15
 knights_morale = -0.20
 knights_defensive = -0.10		
 tax_income = -5
-retinuesize = 1500
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		
@@ -3478,12 +3505,12 @@ OR = {
 		gold_cost = 30
 		build_time = 730
 
-archers = 15
-light_infantry = 5
-heavy_infantry = 80
+archers = 20
+light_infantry = 10
+heavy_infantry = 160
 heavy_infantry_offensive = 0.10	
 heavy_infantry_morale = 0.15
-retinuesize = 75
+retinuesize = 150
 fort_level = 0.5
 extra_tech_building_start = -10
 		ai_creation_factor = 101
@@ -3560,10 +3587,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_Scandi_syst_1
 		gold_cost = 200
 		build_time = 720
-knights = 25
-heavy_infantry = -40
-light_infantry = 15
-archers = 20
+knights = 50
+heavy_infantry = -80
+light_infantry = 30
+archers = 40
 archers_offensive = 0.20
 knights_morale = 0.10
 knights_offensive = 0.10
@@ -3641,22 +3668,22 @@ has_law = centralization_4
 upgrades_from = ca_culture_Scandi_syst_2
 		gold_cost = 400
 		build_time = 720
-knights = -25
-archers = 80
+knights = -50
+archers = 160
 archers_morale = 0.10
 archers_defensive = 0.10
-light_infantry = -20
-pikemen = 50
+light_infantry = -40
+pikemen = 100
 pikemen_defensive = 0.10
 pikemen_morale = 0.10
-heavy_infantry = 60
+heavy_infantry = 120
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
 knights_offensive = -0.10
 knights_morale = -0.10
 knights_defensive = -0.10		
 tax_income = -7
-retinuesize = 1425
+retinuesize = 1550
 		ai_creation_factor = 101
 		
 		
@@ -3692,9 +3719,9 @@ culture = old_saxon
 		gold_cost = 30
 		build_time = 730
 
-heavy_infantry = 80
-archers = 40
-light_infantry = 40		
+heavy_infantry = 160
+archers = 80
+light_infantry = 80		
 heavy_infantry_defensive = 0.10
 heavy_infantry_morale = 0.10
 light_infantry_defensive = 0.10
@@ -3736,10 +3763,10 @@ culture_group = finno_ugric
 		build_time = 730
 
 
-archers = 180
+archers = 250
 archers_defensive = 0.15
 archers_morale = 0.20
-light_infantry = 110
+light_infantry = 250
 light_infantry_defensive = 0.15
 light_infantry_morale = 0.20
 fort_level = 1.0
@@ -3778,14 +3805,14 @@ culture = polish
 		gold_cost = 30
 		build_time = 730
 
-archers = 40
+archers = 80
 archers_offensive = -0.20
 archers_defensive = 0.20
-light_infantry = 70
+light_infantry = 140
 light_infantry_offensive = -0.20
 light_infantry_defensive = 0.20
-heavy_infantry = 20
-retinuesize = 125
+heavy_infantry = 40
+retinuesize = 200
 fort_level = 0.5
 extra_tech_building_start = -10
 		ai_creation_factor = 101
@@ -3825,19 +3852,19 @@ culture = polish
 upgrades_from = ca_culture_polak_syst_1
 		gold_cost = 40
 		build_time = 720
-knights = 45
-light_cavalry = 10
-heavy_infantry = -20
-light_infantry = -40
+knights = 90
+light_cavalry = 20
+heavy_infantry = -40
+light_infantry = -80
 light_infantry_offensive = 0.20
 light_infantry_defensive = -0.20
-archers = -20
+archers = -40
 archers_offensive = 0.20
 archers_defensive = -0.20
 knights_morale = 0.15
 knights_offensive = 0.15
 knights_defensive = 0.10
-retinuesize = -125
+retinuesize = -200
 tax_income = -1
 		ai_creation_factor = 101
 		
@@ -3894,10 +3921,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_polak_syst_2
 		gold_cost = 200
 		build_time = 720
-knights = 15
-light_cavalry = 10
-light_infantry = 30
-archers = 25
+knights = 30
+light_cavalry = 20
+light_infantry = 60
+archers = 50
 archers_offensive = 0.20
 tax_income = -2
 		ai_creation_factor = 101
@@ -3957,24 +3984,24 @@ has_law = centralization_4
 upgrades_from = ca_culture_polak_syst_3
 		gold_cost = 400
 		build_time = 720
-knights = -60
-archers = 70
+knights = -120
+archers = 140
 archers_morale = 0.10
 archers_defensive = 0.15
-light_infantry = -60
-light_cavalry = -20
-pikemen = 60
+light_infantry = -120
+light_cavalry = -40
+pikemen = 120
 pikemen_defensive = 0.15
 pikemen_offensive = -0.10
 pikemen_morale = 0.10
-heavy_infantry = 30
+heavy_infantry = 60
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
 knights_offensive = -0.15
 knights_morale = -0.15
 knights_defensive = -0.10		
 tax_income = -5
-retinuesize = 1800
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		
@@ -4008,13 +4035,13 @@ culture = pommeranian
 		gold_cost = 30
 		build_time = 730
 
-archers = 100
+archers = 200
 archers_offensive = 0.10
-light_infantry = 30
+light_infantry = 60
 light_infantry_offensive = -0.20
 light_infantry_defensive = 0.20
-heavy_infantry = 10
-retinuesize = 125
+heavy_infantry = 20
+retinuesize = 200
 fort_level = 0.5
 extra_tech_building_start = -10
 		ai_creation_factor = 101
@@ -4053,19 +4080,19 @@ culture = pommeranian
 upgrades_from = ca_culture_pomeranie_syst_1
 		gold_cost = 40
 		build_time = 720
-knights = 45
-light_cavalry = 10
-heavy_infantry = -10
-light_infantry = -20
+knights = 90
+light_cavalry = 20
+heavy_infantry = -20
+light_infantry = -30
 light_infantry_offensive = 0.20
 light_infantry_defensive = -0.20
-archers = -40
+archers = -80
 archers_offensive = 0.20
 archers_defensive = -0.20
 knights_morale = 0.15
 knights_offensive = 0.15
 knights_defensive = 0.10
-retinuesize = -125
+retinuesize = -200
 tax_income = -1
 		ai_creation_factor = 101
 		
@@ -4121,10 +4148,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_pomeranie_syst_2
 		gold_cost = 200
 		build_time = 720
-knights = 15
-light_cavalry = 10
-light_infantry = 30
-archers = 25
+knights = 30
+light_cavalry = 20
+light_infantry = 60
+archers = 50
 archers_offensive = 0.20
 tax_income = -2
 		ai_creation_factor = 101
@@ -4183,24 +4210,24 @@ has_law = centralization_4
 upgrades_from = ca_culture_pomeranie_syst_3
 		gold_cost = 400
 		build_time = 720
-knights = -60
-archers = 70
+knights = -120
+archers = 140
 archers_morale = 0.10
 archers_defensive = 0.15
-light_infantry = -60
-light_cavalry = -20
-pikemen = 60
+light_infantry = -120
+light_cavalry = -40
+pikemen = 120
 pikemen_defensive = 0.15
 pikemen_offensive = -0.10
 pikemen_morale = 0.10
-heavy_infantry = 30
+heavy_infantry = 60
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
 knights_offensive = -0.15
 knights_morale = -0.15
 knights_defensive = -0.10		
 tax_income = -5
-retinuesize = 1800
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		
@@ -4242,14 +4269,14 @@ culture = bohemian
 		gold_cost = 30
 		build_time = 730
 
-archers = 30
+archers = 60
 archers_offensive = -0.30
 archers_defensive = 0.20
-light_infantry = 80
+light_infantry = 190
 light_infantry_offensive = -0.10
 light_infantry_defensive = 0.20
-knights = 10
-retinuesize = 125
+knights = 20
+retinuesize = 200
 fort_level = 0.5
 extra_tech_building_start = -10
 		ai_creation_factor = 101
@@ -4290,18 +4317,18 @@ culture = bohemian
 upgrades_from = ca_culture_boheme_syst_1
 		gold_cost = 40
 		build_time = 720
-knights = 40
-light_cavalry = 10
-light_infantry = -60
+knights = 80
+light_cavalry = 20
+light_infantry = -120
 light_infantry_offensive = 0.10
 light_infantry_defensive = -0.20
-archers = -20
+archers = -40
 archers_offensive = 0.30
 archers_defensive = -0.20
 knights_morale = 0.15
 knights_offensive = 0.15
 knights_defensive = 0.10
-retinuesize = -125
+retinuesize = -200
 fort_level = -0.5
 		ai_creation_factor = 101
 		
@@ -4344,10 +4371,10 @@ culture = bohemian
 		gold_cost = 30
 		build_time = 730
 
-archers = 10
-light_infantry = 20
-light_cavalry = 10
-knights = 50
+archers = 20
+light_infantry = 40
+light_cavalry = 20
+knights = 100
 knights_morale = 0.15
 knights_offensive = 0.15
 knights_defensive = 0.10
@@ -4407,10 +4434,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_boheme_systfed_1
 		gold_cost = 200
 		build_time = 720
-knights = 20
+knights = 40
 knights_defensive = -0.10
-light_cavalry = 10
-archers = 20
+light_cavalry = 20
+archers = 40
 tax_income = 2
 
 		ai_creation_factor = 101
@@ -4464,17 +4491,17 @@ has_law = centralization_4
 upgrades_from = ca_culture_boheme_systfed_2
 		gold_cost = 200
 		build_time = 720
-knights = -45
-archers = 120
+knights = -90
+archers = 240
 archers_defensive = 0.40
 archers_offensive = 0.40
 archers_morale = 0.20
-pikemen = 40
+pikemen = 80
 pikemen_morale = 0.20
-heavy_infantry = 40
+heavy_infantry = 80
 heavy_infantry_defensive = 0.40
 heavy_infantry_morale = 0.20
-light_infantry = 60
+light_infantry = 120
 light_infantry_defensive = 0.40
 light_infantry_morale = 0.20
 
@@ -4525,11 +4552,11 @@ culture = lettigallish
 		gold_cost = 20
 		build_time = 50
 heavy_infantry = 10
-archers = 80
-light_infantry = 70
+archers = 160
+light_infantry = 140
 light_infantry_defensive = 0.10
 light_infantry_morale = 0.20
-light_cavalry = 30
+light_cavalry = 60
 light_cavalry_morale = 0.10
 light_cavalry_offensive = 0.15
 fort_level = 0.5	
@@ -4577,10 +4604,10 @@ culture = lettigallish
 		upgrades_from = ca_culture_lithca_syst_1
 gold_cost = 50
 		build_time = 50
-archers = -15
-light_infantry = -30	
-light_cavalry = 30
-knights = 15
+archers = -30
+light_infantry = -60	
+light_cavalry = 60
+knights = 30
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -4645,20 +4672,20 @@ has_law = centralization_4
 upgrades_from = ca_culture_lithca_syst_2
 		gold_cost = 400
 		build_time = 720
-knights = -15
-archers = 30
+knights = -30
+archers = 60
 archers_morale = 0.10
 archers_defensive = 0.15
-light_infantry = -40
-pikemen = 30
+light_infantry = -80
+pikemen = 60
 pikemen_defensive = 0.15
 pikemen_offensive = -0.10
 pikemen_morale = 0.10
-heavy_infantry = 30
+heavy_infantry = 60
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10	
 tax_income = -4
-retinuesize = 1500
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		
@@ -4696,14 +4723,14 @@ culture = prussian
 				
 		gold_cost = 20
 		build_time = 50
-heavy_infantry = 15
-archers = 30
-light_infantry = 40
+heavy_infantry = 30
+archers = 60
+light_infantry = 80
 light_infantry_defensive = 0.10
 light_infantry_morale = 0.20
-light_cavalry = 40
+light_cavalry = 80
 fort_level = 0.5
-retinuesize = 110	
+retinuesize = 200
 
 
 		ai_creation_factor = 101
@@ -4740,11 +4767,11 @@ culture = prussian
 		upgrades_from = ca_culture_prussca_syst_1
 gold_cost = 50
 		build_time = 50
-archers = 30
-light_infantry = -10	
-light_cavalry = 30
-knights = 15
-retinuesize = -110
+archers = 60
+light_infantry = -20	
+light_cavalry = 60
+knights = 30
+retinuesize = -200
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -4802,20 +4829,20 @@ has_law = centralization_4
 upgrades_from = ca_culture_prussca_syst_2
 		gold_cost = 400
 		build_time = 720
-knights = -15
-archers = 30
+knights = -30
+archers = 60
 archers_morale = 0.10
 archers_defensive = 0.15
-light_infantry = -30
-pikemen = 30
+light_infantry = -60
+pikemen = 60
 pikemen_defensive = 0.15
 pikemen_offensive = -0.10
 pikemen_morale = 0.10
-heavy_infantry = 30
+heavy_infantry = 60
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10	
 tax_income = -4
-retinuesize = 1500
+retinuesize = 2000
 		ai_creation_factor = 101
 		
 		
@@ -4856,11 +4883,11 @@ culture_group = east_slavic
 		gold_cost = 30
 		build_time = 730
 
-archers = 80
-light_infantry = 50
-light_cavalry = 15
-heavy_infantry = 10
-retinuesize = 125
+archers = 160
+light_infantry = 100
+light_cavalry = 30
+heavy_infantry = 20
+retinuesize = 200
 extra_tech_building_start = -10
 		ai_creation_factor = 101
 		
@@ -4918,10 +4945,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_russ_syst_1
 		gold_cost = 40
 		build_time = 720
-knights = 30
-horse_archers = 30
-light_infantry = -40
-archers = -20
+knights = 60
+horse_archers = 60
+light_infantry = -80
+archers = -40
 retinuesize = -30
 
 		ai_creation_factor = 101
@@ -4978,13 +5005,13 @@ has_law = centralization_4
 upgrades_from = ca_culture_russ_syst_2
 		gold_cost = 200
 		build_time = 720
-knights = 30
-horse_archers = -25
-heavy_infantry = 40
-archers = 50
+knights = 60
+horse_archers = -50
+heavy_infantry = 80
+archers = 100
 archers_offensive = 0.20
 archers_defensive = 0.20
-retinuesize = -95
+retinuesize = -170
 		ai_creation_factor = 101
 		
 		
@@ -5019,14 +5046,14 @@ culture_group = magyar
 		gold_cost = 10
 		build_time = 250
 
-archers = 20
+archers = 40
 archers_defensive = 0.20
 archers_offensive = -0.20
-light_cavalry = 60
+light_cavalry = 120
 light_cavalry_offensive = 0.15
 light_cavalry_morale = 0.10
-horse_archers = 50
-light_infantry = 50
+horse_archers = 100
+light_infantry = 100
 light_infantry_defensive = 0.20
 light_infantry_offensive = -0.20			
 fort_level = 1.0
@@ -5087,17 +5114,17 @@ has_law = centralization_4
 upgrades_from = ca_culture_Hongrois_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 50
+knights = 100
 knights_offensive = 0.10
 knights_defensive = 0.10
 knights_morale = 0.20
 light_infantry_defensive = -0.20
 light_infantry_offensive = 0.20
-light_infantry = -15
-light_cavalry = -30
-horse_archers = -30
+light_infantry = -30
+light_cavalry = -60
+horse_archers = -60
 archers_defensive = 0.30
-archers = 30
+archers = 60
 		
 
 		ai_creation_factor = 101
@@ -5157,20 +5184,20 @@ has_law = centralization_4
 upgrades_from = ca_culture_Hongrois_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -50
-archers = 120
+knights = -100
+archers = 240
 archers_offensive = 0.20
-light_cavalry = 60
+light_cavalry = 120
 light_cavalry_offensive = 0.15
-light_infantry = -15
-heavy_infantry = 20
+light_infantry = -30
+heavy_infantry = 40
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
 knights_offensive = -0.10
 knights_morale = -0.20
 knights_defensive = -0.10		
 tax_income = -6
-retinuesize = 2000
+retinuesize = 2200
 		ai_creation_factor = 101
 		
 		
@@ -5191,22 +5218,28 @@ ROOT = { has_building = ca_culture_croate_syst_1 }
 		}
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
   }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-knights = 10
-heavy_infantry = 10
-archers = 50
-light_infantry = 50		
+knights = 20
+heavy_infantry = 20
+archers = 100
+light_infantry = 100	
 extra_tech_building_start = -1
 
 		ai_creation_factor = 101
@@ -5228,29 +5261,36 @@ has_global_flag = central
 }                          
 OR = {
 culture = croatian
+culture = carantanian
 ROOT = { has_building = ca_culture_croate_sysfed_1 }	
 }
 			}
 		}
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 40
-archers = 60
-light_cavalry = 30
-light_infantry = 20
-heavy_infantry = 20		
+knights = 80
+archers = 120
+light_cavalry = 60
+light_infantry = 40
+heavy_infantry = 40		
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.10
@@ -5272,19 +5312,26 @@ has_global_flag = central
 }                          
 OR = {
 culture = croatian
+culture = carantanian
 ROOT = { has_building = ca_culture_croate_sysfed_2 }	
 }
 			}
 		}
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 OR = {
@@ -5311,13 +5358,13 @@ has_law = centralization_4
 upgrades_from = ca_culture_croate_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 15
-archers = -10
+knights = 30
+archers = -20
 archers_offensive = 0.20
-light_cavalry = 80
+light_cavalry = 190
 light_cavalry_offensive = 0.25
 light_cavalry_morale = 0.20
-light_infantry = -10		
+light_infantry = -20		
 
 		ai_creation_factor = 101
 		
@@ -5337,6 +5384,7 @@ has_global_flag = central
 }                          
 OR = {
 culture = croatian
+culture = carantanian
 ROOT = { has_building = ca_culture_croate_sysfed_3 }	
 }
 			}
@@ -5344,13 +5392,19 @@ ROOT = { has_building = ca_culture_croate_sysfed_3 }
 
 		is_active_trigger = {
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
 FROM = {
+OR = {
 culture = croatian
+culture = carantanian
+}
 }
  
 OR = {
@@ -5375,11 +5429,11 @@ upgrades_from = ca_culture_croate_sysfed_2
 		gold_cost = 400
 		build_time = 720
 
-archers = 120
+archers = 240
 archers_offensive = 0.20
-light_cavalry = 80
-light_infantry = -15
-heavy_infantry = 30
+light_cavalry = 160
+light_infantry = -30
+heavy_infantry = 60
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10	
 tax_income = -5
@@ -5422,14 +5476,14 @@ culture = serbian
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-heavy_infantry = 5
-archers = 35
+heavy_infantry = 10
+archers = 70
 archers_offensive = 0.15
 archers_morale = -0.15
-light_cavalry = 30
+light_cavalry = 60
 light_cavalry_offensive = 0.25
 light_cavalry_morale = 0.20
-light_infantry = 70		
+light_infantry = 140		
 extra_tech_building_start = -1
 
 		ai_creation_factor = 101
@@ -5465,14 +5519,14 @@ culture = serbian
 		gold_cost = 10
 		build_time = 250
 		
-heavy_infantry = 20
-archers = 40
-light_infantry = 10
-light_cavalry = 40
+heavy_infantry = 40
+archers = 80
+light_infantry = 20
+light_cavalry = 80
 light_cavalry_offensive = 0.25
 light_cavalry_morale = 0.20
-knights = 30
-horse_archers = 30		
+knights = 60
+horse_archers = 60		
 horse_archers_morale = 0.10
 knights_defensive = 0.20
 extra_tech_building_start = -1
@@ -5530,12 +5584,12 @@ has_law = centralization_4
 		gold_cost = 50
 		build_time = 50
 
-heavy_infantry = -10
-archers = 10
-light_infantry = -5
-horse_archers = -10
+heavy_infantry = -20
+archers = 20
+light_infantry = -10
+horse_archers = -20
 archers_offensive = 0.20
-knights = 30		
+knights = 60		
 horse_archers_morale = -0.10
 knights_offensive = 0.15
 tax_income = 3
@@ -5592,10 +5646,10 @@ upgrades_from = ca_culture_serb_sysprono_2
 		gold_cost = 400
 		build_time = 720
 
-archers = 60
-light_cavalry = 120
+archers = 120
+light_cavalry = 240
 light_cavalry_offensive = 0.10
-heavy_infantry = 60
+heavy_infantry = 120
 tax_income = -6
 
 		ai_creation_factor = 101
@@ -5641,10 +5695,10 @@ culture = bolghar
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-horse_archers = 50
-light_cavalry = 40
-knights = 10
-retinuesize = 50
+horse_archers = 100
+light_cavalry = 80
+knights = 20
+retinuesize = 100
 tax_income = -2
 extra_tech_building_start = -1
 
@@ -5690,14 +5744,14 @@ culture = bolghar
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-horse_archers = 10
-light_cavalry = 20
-knights = 50
-light_infantry = 40
+horse_archers = 20
+light_cavalry = 40
+knights = 100
+light_infantry = 80
 light_infantry_defensive = 0.10
 light_infantry_offensive = -0.10
-archers = 40
-retinuesize = 50
+archers = 80
+retinuesize = 100
 extra_tech_building_start = -1
 
 		ai_creation_factor = 101
@@ -5742,13 +5796,13 @@ culture = bolghar
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-heavy_infantry = 20
-archers = 50
+heavy_infantry = 40
+archers = 100
 archers_offensive = 0.20
-light_infantry = 10
-knights = 50
-horse_archers = 10
-light_cavalry = 45		
+light_infantry = 20
+knights = 100
+horse_archers = 20
+light_cavalry = 90		
 horse_archers_morale = 0.10
 knights_defensive = 0.20
 extra_tech_building_start = -1
@@ -5790,12 +5844,12 @@ culture = romanian
 		gold_cost = 10
 		build_time = 730
 
-archers = 50
+archers = 100
 archers_defensive = 0.20
 archers_morale = 0.20
 archers_offensive = -0.10
-light_cavalry = 30
-light_infantry = 120
+light_cavalry = 60
+light_infantry = 240
 light_infantry_morale = 0.20
 light_infantry_defensive = 0.20
 light_infantry_offensive = -0.10
@@ -5839,14 +5893,14 @@ culture = romanian
 		gold_cost = 10
 		build_time = 300
 
-knights = 30		
-archers = 50
-light_cavalry = 60
-light_infantry = 70
+knights = 60		
+archers = 100
+light_cavalry = 120
+light_infantry = 140
 light_infantry_morale = 0.20
 light_infantry_defensive = 0.20
 light_infantry_offensive = -0.10
-horse_archers = 10
+horse_archers = 20
 extra_tech_building_start = -1
 
 
@@ -5901,18 +5955,18 @@ has_law = centralization_4
 		gold_cost = 400
 		build_time = 720
 
-archers = 150
+archers = 300
 archers_morale = 0.20
-heavy_infantry = 100
+heavy_infantry = 200
 heavy_infantry_morale = 0.20
-light_infantry = 100
+light_infantry = 200
 light_infantry_morale = 0.20
-light_cavalry = 80
+light_cavalry = 160
 light_cavalry_morale = 0.20
-horse_archers = 80
+horse_archers = 160
 horse_archers_morale = 0.20
 horse_archers_defensive = 0.20
-knights = 45
+knights = 90
 tax_income = -7
 
 		ai_creation_factor = 101
@@ -5947,18 +6001,18 @@ culture = georgian
 		gold_cost = 10
 		build_time = 250
 		
-heavy_infantry = 40
+heavy_infantry = 80
 heavy_infantry_morale = 0.15
 heavy_infantry_defensive = 0.15
 heavy_infantry_offensive = -0.10
-archers = 50
+archers = 100
 archers_defensive = 0.20
 archers_offensive = -0.10
-light_infantry = 100
+light_infantry = 200
 light_infantry_defensive = 0.25
 light_infantry_morale = 0.20
 light_infantry_offensive = -0.10
-knights = 20
+knights = 40
 extra_tech_building_start = -1
 		ai_creation_factor = 101
 		
@@ -6015,15 +6069,15 @@ upgrades_from = ca_culture_georgiens_1
 		gold_cost = 300
 		build_time = 720
 		
-knights = 25
-horse_archers = 40
+knights = 50
+horse_archers = 80
 horse_archers_defensive = 0.30
-light_infantry = -30
-archers = -20
-heavy_infantry = 10
+light_infantry = -60
+archers = -40
+heavy_infantry = 20
 heavy_infantry_offensive = 0.10
 fort_level = 1.0
-retinuesize = 200	
+retinuesize = 300	
 tax_income = -2
 		ai_creation_factor = 101
 		
@@ -6076,734 +6130,17 @@ upgrades_from = ca_culture_georgiens_2
 		gold_cost = 300
 		build_time = 720
 		
-knights = 30
-horse_archers = 50
-light_infantry = 110
+knights = 60
+horse_archers = 100
+light_infantry = 220
 light_infantry_offensive = 0.10
-archers = 50
-heavy_infantry = 30
+archers = 100
+heavy_infantry = 60
 tax_income = -3
 		ai_creation_factor = 101
 		
 		
 	}
 	
-	##################################
-	# Paradox 3.0 (Holy Fury) update #
 
-	#Roman Heavy Infantry camps
-	ca_culture_roman_1 = {
-		desc = ca_culture_roman_1_desc
-		potential = {
-			OR = {
-				culture = roman
-				has_building = ca_culture_roman_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = roman
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = roman
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 30
-		pikemen_defensive = 0.07
-		pikemen_offensive = 0.07
-		ai_creation_factor = 101
-
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_roman_2 = {
-		desc = ca_culture_roman_1_desc
-		potential = {
-			OR = {
-				culture = roman
-				has_building = ca_culture_roman_1
-				has_building = ca_culture_roman_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = roman
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = roman
-			}
-		}
-		upgrades_from = ca_culture_roman_1
-		gold_cost = 300
-		build_time = 1095
-		pikemen = 40
-		pikemen_defensive = 0.07
-		pikemen_offensive = 0.07
-		ai_creation_factor = 100
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_roman_3 = {
-		desc = ca_culture_roman_1_desc
-		potential = {
-			OR = {
-				culture = roman
-				has_building = ca_culture_roman_1
-				has_building = ca_culture_roman_2
-				has_building = ca_culture_roman_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = roman
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = roman
-			}
-		}
-		upgrades_from = ca_culture_roman_2
-		gold_cost = 400
-		build_time = 2190
-		pikemen = 50
-		pikemen_defensive = 0.07
-		pikemen_offensive = 0.07
-		ai_creation_factor = 99
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_roman_4 = {
-		desc = ca_culture_roman_1_desc
-		potential = {
-			OR = {
-				culture = roman
-				has_building = ca_culture_roman_1
-				has_building = ca_culture_roman_2
-				has_building = ca_culture_roman_3
-				has_building = ca_culture_roman_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = roman
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = roman
-			}
-		}
-		upgrades_from = ca_culture_roman_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 60
-		pikemen_defensive = 0.07
-		pikemen_offensive = 0.07
-		ai_creation_factor = 98
-		
-		extra_tech_building_start = 0.8
-	}
-
-	# Coptic Spearmen
-	ca_culture_coptic_1 = {
-		desc = ca_culture_coptic_1_desc
-		potential = {
-			OR = {
-				culture = coptic
-				has_building = ca_culture_coptic_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = coptic
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				culture = coptic
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 30
-		pikemen_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_coptic_2 = {
-		desc = ca_culture_coptic_1_desc
-		potential = {
-			OR = {
-				culture = coptic
-				has_building = ca_culture_coptic_1
-				has_building = ca_culture_coptic_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = coptic
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 1 
-			ROOT = {
-				culture = coptic
-			}
-		}
-		upgrades_from = ca_culture_coptic_1
-		gold_cost = 300
-		build_time = 1095
-		pikemen = 40
-		pikemen_defensive = 0.15
-		ai_creation_factor = 100
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_coptic_3 = {
-		desc = ca_culture_coptic_1_desc
-		potential = {
-			OR = {
-				culture = coptic
-				has_building = ca_culture_coptic_1
-				has_building = ca_culture_coptic_2
-				has_building = ca_culture_coptic_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = coptic
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 2 
-			ROOT = {
-				culture = coptic
-			}
-		}
-		upgrades_from = ca_culture_coptic_2
-		gold_cost = 400
-		build_time = 2190
-		pikemen = 60
-		pikemen_defensive = 0.15
-		ai_creation_factor = 99
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_coptic_4 = {
-		desc = ca_culture_coptic_1_desc
-		potential = {
-			OR = {
-				culture = coptic
-				has_building = ca_culture_coptic_1
-				has_building = ca_culture_coptic_2
-				has_building = ca_culture_coptic_3
-				has_building = ca_culture_coptic_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = coptic
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4 
-			ROOT = {
-				culture = coptic
-			}
-		}
-		upgrades_from = ca_culture_coptic_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 80
-		pikemen_defensive = 0.15
-		ai_creation_factor = 98
-		
-		extra_tech_building_start = 0.8
-	}
-	
-		# Animal Farm
-	ca_culture_animal_1 = {
-		desc = ca_culture_animal_desc
-		potential = {
-			OR = { 
-				culture_group = horse_group 
-				culture_group = cat_group 
-				culture_group = bear_group 
-				culture_group = hedgehog_group 
-				culture_group = duck_group 
-				culture_group = dog_group 
-				culture_group = elephant_group 
-				culture_group = dragon_group 
-				has_building = ca_culture_animal_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		heavy_infantry = 30
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_animal_2 = {
-		desc = ca_culture_animal_desc
-		potential = {
-			OR = { 
-				culture_group = horse_group 
-				culture_group = cat_group 
-				culture_group = bear_group 
-				culture_group = hedgehog_group 
-				culture_group = duck_group 
-				culture_group = dog_group 
-				culture_group = elephant_group 
-				culture_group = dragon_group 
-				has_building = ca_culture_animal_1
-				has_building = ca_culture_animal_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		upgrades_from = ca_culture_animal_1
-		gold_cost = 300
-		build_time = 1095
-		heavy_infantry = 40
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_animal_3 = {
-		desc = ca_culture_animal_desc
-		potential = {
-			OR = { 
-				culture_group = horse_group 
-				culture_group = cat_group 
-				culture_group = bear_group 
-				culture_group = hedgehog_group 
-				culture_group = duck_group 
-				culture_group = dog_group 
-				culture_group = elephant_group 
-				culture_group = dragon_group 
-				has_building = ca_culture_animal_1
-				has_building = ca_culture_animal_2
-				has_building = ca_culture_animal_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		upgrades_from = ca_culture_animal_2
-		gold_cost = 400
-		build_time = 2190
-		heavy_infantry = 50
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_animal_4 = {
-		desc = ca_culture_animal_desc
-		potential = {
-			OR = { 
-				culture_group = horse_group 
-				culture_group = cat_group 
-				culture_group = bear_group 
-				culture_group = hedgehog_group 
-				culture_group = duck_group 
-				culture_group = dog_group 
-				culture_group = elephant_group 
-				culture_group = dragon_group 
-				has_building = ca_culture_animal_1
-				has_building = ca_culture_animal_2
-				has_building = ca_culture_animal_3
-				has_building = ca_culture_animal_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				OR = { 
-					culture_group = horse_group 
-					culture_group = cat_group 
-					culture_group = bear_group 
-					culture_group = hedgehog_group 
-					culture_group = duck_group 
-					culture_group = dog_group 
-					culture_group = elephant_group 
-					culture_group = dragon_group 
-				}
-			}
-		}
-		upgrades_from = ca_culture_animal_3
-		gold_cost = 500
-		build_time = 2190
-		heavy_infantry = 60
-		heavy_infantry_defensive = 0.15
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-
-	# Arberian cavalry
-	ca_culture_arberian_1 = {
-		desc = ca_culture_arberian_1_desc
-		potential = {
-			OR = {
-				culture = arberian
-				has_building = ca_culture_arberian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = arberian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 0
-			ROOT = {
-				culture = arberian
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		light_cavalry = 30
-		light_cavalry_defensive = 0.10
-		light_cavalry_offensive = 0.10
-		ai_creation_factor = 101
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_arberian_2 = {
-		desc = ca_culture_arberian_1_desc
-		potential = {
-			OR = {
-				culture = arberian
-				has_building = ca_culture_arberian_1
-				has_building = ca_culture_arberian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = arberian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = arberian
-			}
-		}
-		upgrades_from = ca_culture_arberian_1
-		gold_cost = 300
-		build_time = 1095
-		light_cavalry = 40
-		light_cavalry_defensive = 0.10
-		light_cavalry_offensive = 0.10
-		ai_creation_factor = 100
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_arberian_3 = {
-		desc = ca_culture_arberian_1_desc
-		potential = {
-			OR = {
-				culture = arberian
-				has_building = ca_culture_arberian_1
-				has_building = ca_culture_arberian_2
-				has_building = ca_culture_arberian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = arberian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = arberian
-			}
-		}
-		upgrades_from = ca_culture_arberian_2
-		gold_cost = 400
-		build_time = 2190
-		light_cavalry = 50
-		light_cavalry_defensive = 0.10
-		light_cavalry_offensive = 0.10
-		ai_creation_factor = 99
-		
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_arberian_4 = {
-		desc = ca_culture_arberian_1_desc
-		potential = {
-			OR = {
-				culture = arberian
-				has_building = ca_culture_arberian_1
-				has_building = ca_culture_arberian_2
-				has_building = ca_culture_arberian_3
-				has_building = ca_culture_arberian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = arberian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = arberian
-			}
-		}
-		upgrades_from = ca_culture_arberian_3
-		gold_cost = 500
-		build_time = 2190
-		light_cavalry = 60
-		light_cavalry_defensive = 0.10
-		light_cavalry_offensive = 0.10
-		ai_creation_factor = 98
-		
-		extra_tech_building_start = 0.8
-	}
-
-	# Sardinian Birrudo
-	ca_culture_sardinian_1 = {
-		desc = ca_culture_sardinian_1_desc
-		potential = {
-			OR = {
-				culture = sardinian
-				has_building = ca_culture_sardinian_1
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 0
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		prerequisites = { ca_wall_2 }
-		gold_cost = 200
-		build_time = 730
-		pikemen = 15
-		archers = 15
-		pikemen_defensive = 0.10
-		archers_defensive = 0.10
-		ai_creation_factor = 101
-
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_sardinian_2 = {
-		desc = ca_culture_sardinian_1_desc
-		potential = {
-			OR = {
-				culture = sardinian
-				has_building = ca_culture_sardinian_1
-				has_building = ca_culture_sardinian_2
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 1
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		upgrades_from = ca_culture_sardinian_1
-		gold_cost = 300
-		build_time = 1095
-		pikemen = 20
-		archers = 20
-		pikemen_defensive = 0.10
-		archers_defensive = 0.10
-		ai_creation_factor = 100
-
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_sardinian_3 = {
-		desc = ca_culture_sardinian_1_desc
-		potential = {
-			OR = {
-				culture = sardinian
-				has_building = ca_culture_sardinian_1
-				has_building = ca_culture_sardinian_2
-				has_building = ca_culture_sardinian_3
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 2
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		upgrades_from = ca_culture_sardinian_2
-		gold_cost = 400
-		build_time = 2190
-		pikemen = 25
-		archers = 25
-		pikemen_defensive = 0.10
-		archers_defensive = 0.10
-		ai_creation_factor = 99
-
-		extra_tech_building_start = 0.8
-	}
-	ca_culture_sardinian_4 = {
-		desc = ca_culture_sardinian_1_desc
-		potential = {
-			OR = {
-				culture = sardinian
-				has_building = ca_culture_sardinian_1
-				has_building = ca_culture_sardinian_2
-				has_building = ca_culture_sardinian_3
-				has_building = ca_culture_sardinian_4
-			}
-		}
-		is_active_trigger = {
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
-			ROOT = {
-				culture = sardinian
-			}
-		}
-		upgrades_from = ca_culture_sardinian_3
-		gold_cost = 500
-		build_time = 2190
-		pikemen = 30
-		archers = 30
-		pikemen_defensive = 0.10
-		archers_defensive = 0.10
-		ai_creation_factor = 98
-
-		extra_tech_building_start = 0.8
-	}
 }

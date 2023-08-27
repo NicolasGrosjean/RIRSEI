@@ -17,9 +17,9 @@ culture_group = north_germanic
 		gold_cost = 10
 		prestige_cost = 0
 		build_time = 730
-		light_infantry = 50
-		heavy_infantry = 30
-		archers = 120
+		light_infantry = 100
+		heavy_infantry = 60
+		archers = 240
 		levy_size = -1.5
 
 fort_level = 1.0
@@ -51,8 +51,8 @@ culture_group = south_slavic
 		gold_cost = 10
 		prestige_cost = 0
 		build_time = 730
-		light_infantry = 80		
-		archers = 140
+		light_infantry = 160		
+		archers = 280
 		levy_size = -1.5
 
 fort_level = 1.0

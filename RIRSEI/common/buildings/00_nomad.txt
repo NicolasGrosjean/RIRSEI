@@ -15,7 +15,7 @@ nomad = {
 		extra_tech_building_start = 1
 
 		liege_prestige = 0.25
-		horse_archers = 20
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -30,7 +30,7 @@ nomad = {
 		extra_tech_building_start = 2
 
 		liege_prestige = 0.25
-		horse_archers = 20
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -45,7 +45,7 @@ nomad = {
 		extra_tech_building_start = 3
 
 		liege_prestige = 0.25
-		horse_archers = 20
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -60,7 +60,7 @@ nomad = {
 		extra_tech_building_start = 4
 
 		liege_prestige = 0.25
-		horse_archers = 30
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -75,7 +75,7 @@ nomad = {
 		extra_tech_building_start = 4
 
 		liege_prestige = 0.25
-		horse_archers = 30
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -90,7 +90,7 @@ nomad = {
 		extra_tech_building_start = 4
 
 		liege_prestige = 0.25
-		horse_archers = 30
+		horse_archers = 40
 		archers = -10
 		light_infantry = -5
 	}
@@ -133,7 +133,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights = 100
+		knights = 200
 		knights_defensive = 0.30
 		knights_morale = 0.10
 		knights_offensive = 0.10
@@ -152,7 +152,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights = 150
+		knights = 200
 		
 	}
 	
@@ -169,7 +169,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights = 200
+		knights = 350
 		
 	}
 	
@@ -186,7 +186,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights = 350
+		knights = 500
 		
 	}
 	
@@ -203,7 +203,7 @@ nomad = {
 		ai_creation_factor = 97
 		extra_tech_building_start = 1
 
-		knights = 500
+		knights = 750
 		
 	}
 

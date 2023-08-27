@@ -129,12 +129,12 @@ TECH_CASTLE_CONSTRUCTION = 0
 
 fort_level = 3
 tax_income = -4
-heavy_infantry = 40
+heavy_infantry = 80
 heavy_infantry_morale = 0.10
-archers = 60
+archers = 120
 archers_morale = 0.10
-light_infantry = 100
-light_cavalry = 30
+light_infantry = 200
+light_cavalry = 60
 light_cavalry_morale = 0.10
 
 
@@ -201,7 +201,7 @@ TECH_CASTLE_CONSTRUCTION = 0
 
 
 tax_income = -2
-retinuesize = 250
+retinuesize = 500
 
 
 
@@ -265,7 +265,7 @@ TECH_CASTLE_CONSTRUCTION = 3
 
 
 tax_income = -2
-retinuesize = 750
+retinuesize = 800
 
 
 

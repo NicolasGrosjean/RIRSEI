@@ -57,7 +57,7 @@ culture_group = east_slavic
 		gold_cost = 20
 		prestige_cost = 0
 		build_time = 730
-		knights = 20
+		knights = 40
 		tax_income = 2
 		
 		ai_creation_factor = 101
@@ -117,7 +117,10 @@ culture_group = east_slavic
 }
 			}
 		}
-		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		trigger = { 
+		OR = { 
+		has_global_flag = tempschartes
+		TECH_CITY_CONSTRUCTION = 4 } }
 		upgrades_from = ct_Bannum_Ciuitatis
 		gold_cost = 0
 		prestige_cost = 0
@@ -200,7 +203,7 @@ culture_group = east_slavic
 		gold_cost = 0
 		prestige_cost = 150
 		build_time = 30
-		heavy_infantry = 300 
+		heavy_infantry = 450 
 		tax_income = 3
 		
 		ai_creation_factor = 90
@@ -279,7 +282,7 @@ culture_group = east_slavic
 		gold_cost = 0
 		prestige_cost = 200
 		build_time = 30
-		archers = 600 
+		archers = 900 
 		tax_income = 3
 		
 		ai_creation_factor = 85
@@ -357,7 +360,7 @@ culture_group = east_slavic
 		gold_cost = 20
 		prestige_cost = 150
 		build_time = 30
-		pikemen = 400 
+		pikemen = 600
 		tax_income = 3
 		
 		ai_creation_factor = 84
@@ -417,10 +420,10 @@ tier = king
 		gold_cost = 0
 		prestige_cost = 100
 		build_time = 30
-		archers = 700
+		archers = 1200
 		archers_defensive = 0.2
 		archers_offensive = 0.25
-		heavy_infantry = 100
+		heavy_infantry = 200
 		tax_income = 3
 		
 		ai_creation_factor = 100
@@ -476,11 +479,11 @@ tier = king
 		gold_cost = 0
 		prestige_cost = 100
 		build_time = 30
-		pikemen = 500
+		pikemen = 1000
 		pikemen_defensive = 0.1
 		pikemen_offensive = 0.1
 		pikemen_morale = 0.1
-		light_infantry = 100
+		light_infantry = 200
 		tax_income = 3
 		
 		ai_creation_factor = 100
@@ -537,7 +540,7 @@ tier = king
 		gold_cost = 0
 		prestige_cost = 100
 		build_time = 30		
-		heavy_infantry = 400
+		heavy_infantry = 600
 		heavy_infantry_offensive = 0.15
 		heavy_infantry_morale = 0.2
 		heavy_infantry_defensive = 0.2
@@ -568,9 +571,9 @@ culture = saxon
 		prestige_cost = 10
 		build_time = 730
 		
-heavy_infantry = 20
-archers = 5
-light_infantry = 80		
+heavy_infantry = 40
+archers = 10
+light_infantry = 160		
 fort_level = 0.5
 		
 		
@@ -599,8 +602,8 @@ culture = saxon
 		gold_cost = 100
 		prestige_cost = 0
 		build_time = 700
-		light_infantry = -50
-		heavy_infantry = 15
+		light_infantry = -100
+		heavy_infantry = 30
 		tax_income = 3
 
 fort_level = 1.0

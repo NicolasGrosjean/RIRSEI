@@ -27,10 +27,10 @@ NOT = { has_global_flag = central }
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 730
-heavy_infantry = 45
-archers = 20
-light_cavalry = 5
-light_infantry = 10		
+heavy_infantry = 90
+archers = 40
+light_cavalry = 10
+light_infantry = 20		
 heavy_infantry_offensive = 0.07
 heavy_infantry_morale = 0.08
 
@@ -60,10 +60,10 @@ has_global_flag = central
                 add_number_to_name = no 
 		gold_cost = 10
 		build_time = 250
-knights = 30
-archers = 30
-light_cavalry = 15
-light_infantry = 25		
+knights = 60
+archers = 60
+light_cavalry = 30
+light_infantry = 50		
 knights_offensive = 0.10
 knights_morale = 0.10
 knights_defensive = 0.05
@@ -116,10 +116,10 @@ has_law = centralization_4
 upgrades_from = ca_culture_chcat_sysfed_1
 		gold_cost = 300
 		build_time = 720
-knights = 15
-archers = 10
-light_cavalry = 20
-light_infantry = 25		
+knights = 30
+archers = 20
+light_cavalry = 40
+light_infantry = 50	
 
 		ai_creation_factor = 101
 		
@@ -167,16 +167,16 @@ has_law = centralization_4
 upgrades_from = ca_culture_chcat_sysfed_2
 		gold_cost = 400
 		build_time = 720
-knights = -45
-archers = 25
-light_cavalry = -35
+knights = -90
+archers = 50
+light_cavalry = -70
 archers_morale = 0.10
 archers_defensive = 0.10
-light_infantry = -50
-heavy_infantry = 20
+light_infantry = -100
+heavy_infantry = 40
 heavy_infantry_morale = 0.10
 heavy_infantry_defensive = 0.10
-pikemen = 20
+pikemen = 40
 pikemen_morale = 0.10
 pikemen_defensive = 0.10
 knights_offensive = -0.10
@@ -218,12 +218,12 @@ religion_group = christian
 		gold_cost = 10
 		build_time = 250
 		
-heavy_infantry = 10
-archers = 30
-light_infantry = 10
-light_cavalry = 10
-knights = 25
-horse_archers = 25		
+heavy_infantry = 20
+archers = 60
+light_infantry = 20
+light_cavalry = 20
+knights = 50
+horse_archers = 50		
 horse_archers_morale = 0.10
 knights_defensive = 0.20
 extra_tech_building_start = -1
@@ -279,10 +279,10 @@ has_law = centralization_4
 		gold_cost = 50
 		build_time = 50
 
-heavy_infantry = 20
-archers = 20
-horse_archers = 10
-knights = 30		
+heavy_infantry = 40
+archers = 40
+horse_archers = 20
+knights = 60		
 tax_income = 3
 		ai_creation_factor = 101
 		
@@ -335,12 +335,12 @@ upgrades_from = ca_culture_chrorth_sysprono_2
 		gold_cost = 400
 		build_time = 720
 
-archers = -20
-light_cavalry = -10
-light_infantry = -10
-knights = 10
-heavy_infantry = 10
-retinuesize = 200
+archers = -40
+light_cavalry = -20
+light_infantry = -20
+knights = 20
+heavy_infantry = 20
+retinuesize = 250
 tax_income = 3
 
 		ai_creation_factor = 101
@@ -355,13 +355,16 @@ tax_income = 3
 		potential = {
 			FROM = {
 is_feudal = yes
-NOT = { religion_group = christian
+NOT = { 
+religion_group = zoroastrian_group
+religion_group = christian
 religion_group = muslim
 religion = norse_pagan
 religion = baltic_pagan
 religion = finnish_pagan
 religion = slavic_pagan 
 culture_group = magyar
+culture = bolghar
 }        
 
 			}
@@ -371,11 +374,11 @@ culture_group = magyar
 		gold_cost = 10
 		build_time = 250
 		
-heavy_infantry = 30
-archers = 30
-light_infantry = 40
-light_cavalry = 10
-knights = 5
+heavy_infantry = 60
+archers = 60
+light_infantry = 80
+light_cavalry = 20
+knights = 10
 
 extra_tech_building_start = -1
 		ai_creation_factor = 101
@@ -388,13 +391,16 @@ extra_tech_building_start = -1
 		potential = {
 			FROM = {
 is_feudal = yes
-NOT = { religion_group = christian
+NOT = { 
+religion_group = zoroastrian_group
+religion_group = christian
 religion_group = muslim
 religion = norse_pagan
 religion = baltic_pagan
 religion = finnish_pagan
 religion = slavic_pagan
-culture_group = magyar 
+culture_group = magyar
+culture = bolghar 
 } 
 
 			}
@@ -426,9 +432,9 @@ has_law = centralization_4
 		gold_cost = 50
 		build_time = 50
 
-heavy_infantry = 30
-archers = 25
-knights = 10		
+heavy_infantry = 60
+archers = 50
+knights = 20		
 tax_income = 2
 		ai_creation_factor = 101
 		
@@ -442,13 +448,16 @@ tax_income = 2
 
 
 is_feudal = yes
-NOT = { religion_group = christian
+NOT = { 
+religion_group = zoroastrian_group
+religion_group = christian
 religion_group = muslim
 religion = norse_pagan
 religion = baltic_pagan
 religion = finnish_pagan
 religion = slavic_pagan
 culture_group = magyar 
+culture = bolghar
 } 		
 
 			}
@@ -477,11 +486,11 @@ upgrades_from = ca_culture_reste_2
 		gold_cost = 400
 		build_time = 720
 
-archers = 60
-light_cavalry = 40
-light_infantry = -20
-knights = 20
-heavy_infantry = 30
+archers = 120
+light_cavalry = 80
+light_infantry = -40
+knights = 40
+heavy_infantry = 60
 tax_income = 2
 
 		ai_creation_factor = 101

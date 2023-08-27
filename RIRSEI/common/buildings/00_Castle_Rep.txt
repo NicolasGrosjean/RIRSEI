@@ -19,8 +19,8 @@ is_republic = yes
 		gold_cost = 10
 		build_time = 730
 
-light_cavalry = 30
-light_infantry = 250
+light_cavalry = 60
+light_infantry = 500
 light_infantry_morale = -0.6
 light_infantry_offensive = -0.6
 light_infantry_defensive = -0.6	

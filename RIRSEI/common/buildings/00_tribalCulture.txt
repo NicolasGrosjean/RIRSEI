@@ -1,0 +1,842 @@
+tribal = {
+# Northmenn, leidangr précoce, Hird tardif
+
+	ca_culture_Northm_syst_1 = {
+		desc = Northm_syst_1_desc
+		potential = {
+			FROM = {
+
+					culture_group = north_germanic
+
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		add_number_to_name = no 
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 60
+archers = 40
+light_infantry = 60	
+heavy_infantry_offensive = 0.20
+heavy_infantry_morale = 0.10
+fort_level = 0.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Northm_syst_2 = {
+		desc = Northm_syst_2_desc
+		potential = {
+			FROM = {
+
+culture_group = north_germanic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Northm_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 80
+light_infantry = -20		
+heavy_infantry_offensive = 0.10
+heavy_infantry_morale = 0.10
+retinuesize = 200
+fort_level = -0.5
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Northm_syst_3 = {
+		desc = Northm_syst_3_desc
+		potential = {
+			FROM = {
+culture_group = north_germanic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Northm_syst_2
+gold_cost = 50
+		build_time = 50
+archers = -20
+light_infantry = -40
+heavy_infantry = 80		
+heavy_infantry_morale = 0.05
+retinuesize = 100
+fort_level = 0.5
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	# Saxons paiens
+	
+	ca_culture_saxpaien_syst_1 = {
+		desc = saxpaien_syst_1_desc
+		potential = {
+			FROM = {
+
+					culture = old_saxon
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 80
+archers = 60
+light_infantry = 60
+heavy_infantry_defensive = 0.10
+heavy_infantry_morale = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	#finlandais et saami
+	
+	ca_culture_saamitrib_syst_1 = {
+		desc = saamitrib_syst_1_desc
+		potential = {
+			FROM = {
+
+					culture_group = finno_ugric
+					NOT = { culture = ugricbaltic }
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 150
+archers_defensive = 0.40
+archers_morale = 0.25
+light_infantry = 100
+light_infantry_defensive = 0.40
+light_infantry_morale = 0.25
+fort_level = 1.5
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+
+
+# Slaves du sud, est, ouest
+
+	ca_culture_Sclav_syst_1 = {
+		desc = Sclav_syst_1_desc
+		potential = {
+			FROM = {
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 40
+archers = 120
+light_infantry = 150
+light_infantry_offensive = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Sclav_syst_2 = {
+		desc = Sclav_syst_2_desc
+		potential = {
+			FROM = {
+
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Sclav_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 40
+light_infantry = -40
+archers = -60	
+heavy_infantry_morale = 0.10
+light_infantry_offensive = 0.10
+retinuesize = 200
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Sclav_syst_3 = {
+		desc = Sclav_syst_3_desc
+		potential = {
+			FROM = {
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Sclav_syst_2
+gold_cost = 50
+		build_time = 50
+archers = 20
+light_infantry = -60
+heavy_infantry = 80		
+heavy_infantry_morale = 0.05
+retinuesize = 100
+fort_level = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	# Lithuaniens->Laukinka/Bajoras/Bajoras avec paysous
+
+	ca_culture_lith_syst_1 = {
+		desc = lith_syst_1_desc
+		potential = {
+			FROM = {
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 20
+archers = 100
+light_infantry = 150
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.20
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_lith_syst_2 = {
+		desc = lith_syst_2_desc
+		potential = {
+			FROM = {
+
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_lith_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 20
+archers = 120
+light_cavalry = 120
+light_cavalry_morale = 0.10
+light_cavalry_offensive = 0.15
+fort_level = 1.0	
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_lith_syst_3 = {
+		desc = lith_syst_3_desc
+		potential = {
+			FROM = {
+			
+OR = {
+culture = lithuanian
+culture = lettigallish
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 5 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_lith_syst_2
+gold_cost = 50
+		build_time = 50
+archers = -60
+light_infantry = -60	
+light_cavalry = 120
+knights = 40
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Prussiens Eptimanis/Launikis/koriatruc
+	
+	ca_culture_pruss_syst_1 = {
+		desc = pruss_syst_1_desc
+		potential = {
+			FROM = {
+			
+culture = prussian
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+heavy_infantry = 25
+archers = 120
+light_infantry = 120
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.20
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_pruss_syst_2 = {
+		desc = pruss_syst_2_desc
+		potential = {
+			FROM = {
+
+culture = prussian
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_pruss_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 40
+light_cavalry = 40
+retinuesize = 200
+fort_level = 1.0	
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_pruss_syst_3 = {
+		desc = pruss_syst_3_desc
+		potential = {
+			FROM = {
+			
+culture = prussian
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 5 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_pruss_syst_2
+gold_cost = 50
+		build_time = 50
+
+light_infantry = -40
+heavy_infantry = -20
+light_cavalry = 120
+retinuesize = 100
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Estonien : Comme les lithuaniens mais sans cavalerie
+	
+	ca_culture_esto_syst_1 = {
+		desc = esto_syst_1_desc
+		potential = {
+			FROM = {
+culture = ugricbaltic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 150
+light_infantry = 200
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.20
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_esto_syst_2 = {
+		desc = esto_syst_2_desc
+		potential = {
+			FROM = {
+
+culture = ugricbaltic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 3
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_esto_syst_1
+		gold_cost = 50
+		build_time = 50
+heavy_infantry = 20
+archers = 120
+light_infantry = 240
+light_infantry_defensive = 0.10
+fort_level = 0.5	
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_esto_syst_3 = {
+		desc = esto_syst_3_desc
+		potential = {
+			FROM = {
+			
+culture = ugricbaltic
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 5 }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_esto_syst_2
+gold_cost = 50
+		build_time = 50
+archers = -60
+light_infantry = -160	
+light_cavalry = 80
+knights = 20
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+
+# Bedouins musulmans
+
+ca_culture_Badawi_syst_1 = {
+		desc = Badawi_syst_1_desc
+		potential = {
+			FROM = {
+
+religion_group = muslim					
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 300
+horse_archers = 80
+horse_archers_morale = 0.15
+light_cavalry = 200
+light_cavalry_morale = 0.15
+archers = 40
+light_infantry = 240
+light_infantry_morale = 0.15		
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Badawi_syst_2 = {
+		desc = Badawi_syst_2_desc
+		potential = {
+			FROM = {
+
+religion_group = muslim
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0
+FROM = {
+primary_title = {
+has_law = tribal_organization_3
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Badawi_syst_1
+		gold_cost = 50
+		build_time = 50
+
+horse_archers = 40
+horse_archers_offensive = 0.10
+light_cavalry = 80
+light_cavalry_offensive = 0.10
+light_infantry = 200
+light_infantry_offensive = 0.10
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_Badawi_syst_3 = {
+		desc = Badawi_syst_3_desc
+		potential = {
+			FROM = {
+religion_group = muslim
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0
+FROM = {
+piety = 300
+primary_title = {
+has_law = tribal_organization_4
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_Badawi_syst_2
+gold_cost = 50
+		build_time = 50
+
+horse_archers = 80
+horse_archers_offensive = 0.05
+horse_archers_morale = 0.05
+light_cavalry = 80
+light_cavalry_offensive = 0.05
+light_cavalry_morale = 0.05
+light_infantry = 120
+light_infantry_offensive = 0.05
+light_infantry_morale = 0.05
+knights = 20
+		ai_creation_factor = 101
+		
+		
+	}
+
+# Celtes tribaux.
+
+	ca_culture_celt_syst_1 = {
+		desc = celt_syst_1_desc
+		potential = {
+			FROM = {
+OR= {
+culture = irish
+culture = scottish
+culture = pictish
+culture = welsh
+
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 50
+        extra_tech_building_start = -10
+light_cavalry = 60
+archers = 80
+light_infantry = 160
+light_infantry_offensive = 0.10
+light_infantry_defensive = 0.10
+light_infantry_morale = 0.10
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+	ca_culture_celt_syst_2 = {
+		desc = celt_syst_2_desc
+		potential = {
+			FROM = {
+
+OR= {
+culture = irish
+culture = scottish
+culture = pictish
+culture = welsh
+
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2
+FROM = {
+primary_title = {
+OR = {
+has_law = tribal_organization_3 
+has_law = tribal_organization_4 
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_celt_syst_1
+		gold_cost = 200
+		build_time = 700
+heavy_infantry = 10
+light_infantry = 60
+light_cavalry = 40
+archers = 20		
+light_infantry_morale = 0.20
+light_cavalry_morale = 0.20
+light_cavalry_offensive = 0.10
+
+
+		ai_creation_factor = 101
+		
+		
+	}
+# Autres tribaux
+
+	ca_culture_restetrib_syst_1 = {
+		desc = restetrib_syst_1_desc
+		potential = {
+			FROM = {
+			
+NOT = {			
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+religion_group = muslim
+culture = irish
+culture = scottish
+culture = pictish
+culture = welsh
+culture = ugricbaltic
+culture = prussian
+culture = lithuanian
+culture = lettigallish
+culture = old_saxon
+culture_group = north_germanic
+culture_group = finno_ugric
+}
+}
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 0 }
+		gold_cost = 30
+		build_time = 730
+
+
+archers = 120
+light_infantry = 160
+
+extra_tech_building_start = -10
+		ai_creation_factor = 101
+		
+		
+	}
+	
+	ca_culture_restetrib_syst_2 = {
+		desc = restetrib_syst_2_desc
+		potential = {
+			FROM = {
+
+OR= {
+culture_group = east_slavic
+culture_group = west_slavic
+culture_group = south_slavic
+}
+
+					
+                                       
+				
+			}
+		}
+		trigger = { TECH_RECRUITMENT = 2
+OR = {
+FROM = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+FROM = {
+top_liege = {
+OR = {
+tier = DUKE
+tier = KING
+}
+}
+}
+} }
+                add_number_to_name = no 
+		upgrades_from = ca_culture_restetrib_syst_1
+		gold_cost = 150
+		build_time = 50
+
+light_infantry = 60
+archers = 60		
+heavy_infantry = 20
+light_cavalry = 40
+
+		ai_creation_factor = 101
+		
+		
+	}
+
+
+
+}
+
+

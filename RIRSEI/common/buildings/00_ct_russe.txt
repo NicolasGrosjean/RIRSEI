@@ -15,12 +15,12 @@ culture_group = east_slavic
 		gold_cost = 10
 		prestige_cost = 0
 		build_time = 730
-		light_infantry = 200
+		light_infantry = 400
 light_infantry_morale = -0.3
 light_infantry_offensive = -0.3
-heavy_infantry = 50
+heavy_infantry = 100
 heavy_infantry_morale = -0.20
-archers = 50
+archers = 100
 fort_level = 1.0
 tax_income = -2
 		
@@ -55,15 +55,15 @@ is_republic = yes
 		prestige_cost = 0
 		build_time = 700
 		
-		light_infantry = -100
-knights = 30
+		light_infantry = -200
+knights = 60
 knights_morale = -0.20
-light_cavalry = 10
-heavy_infantry = 50
-archers = 150
+light_cavalry = 20
+heavy_infantry = 100
+archers = 300
 archers_offensive = 0.20
 archers_defensive = 0.20
-retinuesize = 150
+retinuesize = 300
 tax_income = -3
 
 		
