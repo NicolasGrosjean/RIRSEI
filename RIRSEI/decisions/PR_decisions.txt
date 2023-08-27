@@ -15,8 +15,10 @@ has_holder = no }
                         
 		}
 		allow = {
-
+OR = {
 trait = zealous
+trait = ambitious
+    }
 			year = 950
 				
 		}
@@ -55,7 +57,10 @@ has_holder = no }
                         
 		}
 		allow = {
+OR = {
 trait = zealous
+trait = ambitious
+    }
 			year = 950
 				
 		}

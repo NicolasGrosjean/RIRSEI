@@ -8,8 +8,9 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_landed_title = k_brittany }
+			NOT = { has_landed_title = k_france }
 			has_landed_title = d_brittany
-                        
+            war = no            
 			religion_group = christian
                         independent = yes
                       OR = {
@@ -38,8 +39,10 @@ royaume_aquitaine = {
 			age = 16
 			NOT = { trait = incapable }
 			NOT = { has_landed_title = k_aquitaine }
+			NOT = { has_landed_title = k_france }
 			has_landed_title = d_aquitaine
 			religion_group = christian
+			war = no
                         independent = yes
      k_aquitaine = {
 			has_holder = no
@@ -71,11 +74,12 @@ sacreroifrance = {
 			NOT = { trait = incapable }
 			NOT = { trait = roi_oint}
 			has_landed_title = k_france
+			war = no
 			religion = catholic
                         independent = yes
 		}
 allow = {
-	 completely_controls = c_reims
+	 completely_controls = b_reims	 
 NOT = { trait = crowned_by_pope }
 
 		}
@@ -111,6 +115,7 @@ OR = {
 }
 			religion_group = christian
                         independent = yes
+						war = no
                         
 		}
 		allow = {
@@ -216,16 +221,18 @@ NOT = { has_landed_title = e_byzantium }
                         not = { trait = excommunicated }
                         has_landed_title = k_france
                         trait = roi_oint
+						war = no
 			religion_group = christian
                         independent = yes
                         year = 1150
-                        demesne_size = 11
+                        
 
                         
 		}
 		allow = {
                         
 			prestige = 3000
+			demesne_size = 11
 			OR = {
                         has_law = crown_authority_3
                         has_law = crown_authority_4	
@@ -658,6 +665,7 @@ NOT = { has_landed_title = e_byzantium }
 			has_landed_title = k_poland
 			religion_group = christian
                         independent = yes
+						war = no
                         NOT = { trait = excommunicated }
 		}
 		allow = {
@@ -711,6 +719,7 @@ has_holder = yes
 			has_landed_title = e_hre
 			religion_group = christian
                         independent = yes
+						war = no
                         NOT = { completely_controls = k_poland }
                         OR = { 
                               has_law = crown_authority_3
@@ -832,6 +841,7 @@ reclamer_france = {
                	        has_landed_title = e_hre
 			religion_group = christian
                         independent = yes
+						war = no
                         OR = {
 trait = stupor_mundi
 dynasty = 25061
@@ -881,6 +891,7 @@ is_high_prio = yes
                         has_landed_title = e_hre
 			religion_group = christian
                         independent = yes
+						war = no
 OR = {
                         trait = stupor_mundi
                         dynasty = 25061
@@ -925,6 +936,7 @@ restore_roman_empire_hre = {
 		allow = {
 			prestige = 10000
 			completely_controls = k_france
+			war = no
 			OR = { 
 completely_controls = k_england
 completely_controls = k_britannia
@@ -980,6 +992,7 @@ has_landed_title = e_byzantium
 			prestige = 12000
 			completely_controls = k_germany
                         completely_controls = k_byzantium
+						war = no
 
  OR = { 
                               has_law = centralization_3
@@ -1031,6 +1044,7 @@ NOT = { demesne_size = 5 }
 
                          prestige = 8000
                          demesne_size = 10
+						 war = no
                          OR = { 
                               has_law = centralization_3
                               has_law = centralization_4
@@ -1085,6 +1099,7 @@ NOT = { demesne_size = 8 }
 
                          prestige = 5000
                          demesne_size = 6
+						 war = no
                          OR = { 
                               has_law = centralization_2
                               has_law = centralization_3
@@ -1272,6 +1287,7 @@ has_landed_title = k_norway
 		}
 		allow = {
 			prestige = 4000
+			war = no
 OR = {
                                  
                                  has_law = crown_authority_3
@@ -1326,6 +1342,7 @@ completely_controls = k_rus
                          prestige = 5000
                          piety = 500
                          demesne_size = 10
+						 war = no
                          OR = { 
                               has_law = crown_authority_3
                               has_law = crown_authority_4
@@ -1399,6 +1416,7 @@ NOT = { demesne_size = 5 }
                          prestige = 8000
                          piety = 500
                          demesne_size = 14
+						 war = no
                          OR = { 
                               has_law = crown_authority_3
                               has_law = crown_authority_4
@@ -1444,6 +1462,7 @@ creer_empire_serbie_det = {
 completely_controls = d_thessalonika
 completely_controls = d_epirus
 completely_controls = d_dyrrachion
+war = no
 
 
                          OR = { 
@@ -1522,7 +1541,7 @@ NOT = { demesne_size = 5 }
                          prestige = 8000
                          piety = 500
                          demesne_size = 6
-
+war = no
 completely_controls = k_serbia
 completely_controls = d_thessalonika
 completely_controls = d_epirus
@@ -1570,7 +1589,7 @@ creer_empire_bulgarie_det = {
                          prestige = 4000
                          piety = 500
                          completely_controls = k_bulgaria
-
+war = no
 completely_controls = d_thessalonika
 completely_controls = d_epirus
 completely_controls = d_dyrrachion
@@ -1649,7 +1668,7 @@ completely_controls = d_thessalonika
 completely_controls = d_epirus
 completely_controls = d_dyrrachion
 completely_controls = d_wallachia
-
+war = no
                          OR = { 
                               has_law = crown_authority_3
                               has_law = crown_authority_4
@@ -1684,6 +1703,7 @@ allow = {
                          prestige = 9000
                          piety = 500
                          demesne_size = 10
+						 war = no
                          completely_controls = c_byzantion
 OR = { 
                               has_law = crown_authority_3
@@ -2727,6 +2747,7 @@ royaume_baviere = {
 NOT = { has_landed_title = e_hre }
 NOT = { has_landed_title = e_roman_empire }
 			has_landed_title = d_bavaria
+			war = no
 			religion_group = christian
                         independent = yes
      k_bavaria = {
@@ -3499,17 +3520,18 @@ creer_pologne = {
                 is_high_prio = yes
 		potential = {
 			
-			age = 16
-			NOT = { trait = incapable }
-			NOT = { has_landed_title = k_polandball }
-                        NOT = { has_global_flag = rex_poloniae }
+age = 16
+NOT = { trait = incapable }
+NOT = { has_landed_title = k_polandball }
+NOT = { has_global_flag = rex_poloniae }
+NOT = { has_global_flag = polan_millesix } 
 NOT = { has_landed_title = e_hre }
 NOT = { has_landed_title = e_roman_empire }
 NOT = { has_landed_title = e_latin_empire }
 NOT = { has_landed_title = e_byzantium }
 NOT = { has_global_flag = rex_poloniae_huit }
-			has_landed_title = k_poland
-			religion = catholic
+has_landed_title = k_poland
+religion = catholic
                         independent = yes
                         NOT = { trait = excommunicated }
 		}
@@ -3543,9 +3565,9 @@ creer_pologne_ortho = {
 		potential = {
 			
 			age = 16
-			NOT = { trait = incapable }
-			NOT = { has_landed_title = k_polandball }
-                        NOT = { has_global_flag = rex_poloniae }
+NOT = { trait = incapable }
+NOT = { has_landed_title = k_polandball }
+NOT = { has_global_flag = rex_poloniae }
 NOT = { has_landed_title = e_hre }
 NOT = { has_landed_title = e_roman_empire }
 NOT = { has_landed_title = e_latin_empire }

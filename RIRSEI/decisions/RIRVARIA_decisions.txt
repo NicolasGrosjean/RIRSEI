@@ -1,0 +1,351 @@
+decisions = {
+Lotharingia_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_lotharingia }
+			NOT = { has_landed_title = k_france }
+			NOT = { has_landed_title = e_hre }
+            k_lotharingia = { has_holder = no }
+            NOT = { has_global_flag = couronne_lotharingie}
+			has_global_flag = central
+OR = { 
+has_landed_title = d_upper_lorraine
+has_landed_title = d_lower_lorraine
+has_landed_title = d_brabant
+has_landed_title = d_koln
+has_landed_title = d_alsace
+has_landed_title = d_trier
+}
+religion_group = christian
+top_liege = { has_landed_title = e_hre }
+NOT = { trait = excommunicated }
+		}
+		
+		allow = {
+			prestige = 2000
+			completely_controls = d_lower_lorraine
+			completely_controls = d_upper_lorraine
+			completely_controls = d_brabant
+			completely_controls = d_alsace
+			completely_controls = d_trier
+
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 70
+}
+}
+                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1                           
+}
+}	
+		}
+		effect = {
+			  narrative_event = { id = RIRSEVAR.0003 }
+                set_global_flag = couronne_lotharingie
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Lotharingia_roi_emp = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_lotharingia }
+			NOT = { has_landed_title = k_france }
+			NOT = { has_landed_title = e_hre }
+            k_lotharingia = { has_holder = no }
+            NOT = { has_global_flag = couronne_lotharingie}
+			has_global_flag = central
+OR = { 
+has_landed_title = d_upper_lorraine
+has_landed_title = d_lower_lorraine
+has_landed_title = d_brabant
+has_landed_title = d_koln
+has_landed_title = d_alsace
+has_landed_title = d_trier
+}
+religion_group = christian
+top_liege = { has_landed_title = e_hre }
+NOT = { trait = excommunicated }
+		}
+		
+		allow = {
+			prestige = 1500
+            completely_controls = d_lower_lorraine
+			completely_controls = d_upper_lorraine
+OR = {
+completely_controls = d_brabant
+completely_controls = d_alsace
+completely_controls = d_trier
+}
+
+
+e_hre = {
+                        
+                        holder_scope = {
+                        opinion = {
+          who = ROOT
+          value = 60
+}
+}
+}                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+                             has_law = crown_authority_3
+}
+}	
+		}
+		effect = {
+			  any_independent_ruler = {
+                   limit = { has_landed_title = e_hre }
+				letter_event = { id = RIRSEVAR.0004}
+
+}
+                
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Lotharingia_roi_pape_ind = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+NOT = { has_landed_title = k_lotharingia }
+NOT = { has_landed_title = k_france }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+k_lotharingia = {
+				has_holder = no
+			}
+
+NOT = { has_global_flag = couronne_lotharingie }
+has_global_flag = central
+OR = { 
+has_landed_title = d_upper_lorraine
+has_landed_title = d_lower_lorraine
+has_landed_title = d_brabant
+has_landed_title = d_koln
+has_landed_title = d_alsace
+has_landed_title = d_trier
+}
+			religion_group = christian
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 3000
+			completely_controls = d_lower_lorraine
+			completely_controls = d_upper_lorraine
+OR = {
+completely_controls = d_brabant
+completely_controls = d_alsace
+completely_controls = d_trier
+}
+
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 70
+}
+}
+                        
+                       
+		}
+		effect = {
+			  narrative_event = { id = RIRSEVAR.0005 }
+                set_global_flag = couronne_lotharingie
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Arles_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_burgundy }
+			NOT = { has_landed_title = k_france }
+			NOT = { has_landed_title = e_hre }
+            k_burgundy = { has_holder = no }
+            NOT = { has_global_flag = couronne_arles}
+			has_global_flag = central
+OR = {
+has_landed_title = d_provence
+has_landed_title = d_dauphine
+}
+
+religion_group = christian
+top_liege = { has_landed_title = e_hre }
+NOT = { trait = excommunicated }
+		}
+		
+		allow = {
+			prestige = 2000
+			completely_controls = d_provence
+			completely_controls = d_dauphine
+			completely_controls = d_savoie
+			completely_controls = d_franche_comte
+			completely_controls = d_upper_burgundy
+
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 70
+}
+}
+                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1                           
+}
+}	
+		}
+		effect = {
+			  narrative_event = { id = RIRSEVAR.0006 }
+                set_global_flag = couronne_arles
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Arles_roi_emp = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_burgundy }
+			NOT = { has_landed_title = k_france }
+			NOT = { has_landed_title = e_hre }
+            k_burgundy = { has_holder = no }
+            NOT = { has_global_flag = couronne_arles}
+			has_global_flag = central
+OR = {
+has_landed_title = d_provence
+has_landed_title = d_dauphine
+}
+
+religion_group = christian
+top_liege = { has_landed_title = e_hre }
+NOT = { trait = excommunicated }
+		}
+		
+		allow = {
+			prestige = 1500
+completely_controls = d_provence
+completely_controls = d_dauphine
+OR = {
+completely_controls = d_savoie
+completely_controls = d_franche_comte
+completely_controls = d_upper_burgundy
+}
+
+
+e_hre = {
+                        
+                        holder_scope = {
+                        opinion = {
+          who = ROOT
+          value = 60
+}
+}
+}                        
+                        e_hre = {
+                                OR = {
+                             has_law = crown_authority_0
+                             has_law = crown_authority_1
+                             has_law = crown_authority_2
+                             has_law = crown_authority_3
+}
+}	
+		}
+		effect = {
+			  any_independent_ruler = {
+                   limit = { has_landed_title = e_hre }
+				letter_event = { id = RIRSEVAR.0007}
+
+}
+                
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Arles_roi_pape_ind = {
+                is_high_prio = yes
+		potential = {
+			
+            age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_lotharingia }
+NOT = { has_landed_title = k_france }
+NOT = { has_landed_title = e_hre }
+NOT = { has_landed_title = e_roman_empire }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_byzantium }
+            k_burgundy = { has_holder = no }
+            NOT = { has_global_flag = couronne_arles }
+			has_global_flag = central
+OR = {
+has_landed_title = d_provence
+has_landed_title = d_dauphine
+}
+			religion_group = christian
+                        independent = yes
+                        NOT = { trait = excommunicated }
+		}
+		allow = {
+			prestige = 3000
+completely_controls = d_provence
+completely_controls = d_dauphine
+OR = {
+completely_controls = d_savoie
+completely_controls = d_franche_comte
+completely_controls = d_upper_burgundy
+}
+
+                        rightful_religious_head_scope = {
+                        opinion = {
+          who = ROOT
+          value = 70
+}
+}
+                        
+                       
+		}
+		effect = {
+			  narrative_event = { id = RIRSEVAR.0008 }
+                set_global_flag = couronne_arles
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+}
