@@ -5,34 +5,29 @@ title = c_zemigalians
 
 # Settlements
 max_settlements = 5
-b_bauska = tribal
-b_riga = temple
+b_mezotne = tribal
+#b_tervete = temple
+#b_dobele = city
 
-#b_selpils = city
-#b_skaistkalne = city
-
-#b_mezotne = castle
-#b_cruczeborch = castle
-#b_remigala = castle
-#b_jelgava = city
+#b_jelgawa = castle
+#b_sparnene = castle
+#b_dobe = castle
+#b_rakte = castle
 
 # Misc
 culture = lettigallish
 religion = baltic_pagan
 
 # History
-1199.1.1 = { b_cruczeborch = city }
-1199.1.1 = { capital = b_riga }
 1199.1.1 = {
 	religion = catholic
 
-	b_bauska = castle
-	b_selpils = city
+	b_mezotne = castle
+	b_tervete = temple
+	b_dobele = city
 
-	b_bauska = ca_keep_1
-	b_bauska = ca_wall_1
-	b_bauska = ca_wall_q_1
+	b_mezotne = ca_keep_1
+	b_mezotne = ca_wall_1
+	b_mezotne = ca_wall_q_1
 
 }
-1266.1.1 = { b_jelgava = castle } #Mitau castle
-1293.1.1= { trade_post = b_pat_luneburg }
