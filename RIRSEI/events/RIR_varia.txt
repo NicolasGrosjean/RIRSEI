@@ -1,0 +1,565 @@
+namespace = RIRSEVAR
+
+narrative_event = {    
+	id = RIRSEVAR.0001
+title = "EVTNAME_RIRSEVAR_0001"
+desc = "EVTDESC_RIRSEVAR_0001"
+	picture = "GFX_evt_septelecteurs"
+
+	trigger = {
+	
+has_landed_title = e_hre
+NOT = { has_landed_title = e_byzantium }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_global_flag = ren_imp }
+NOT = { has_global_flag = bulledor }
+
+e_hre = {
+        OR = {
+		       has_law = succ_feudal_elective
+			   has_law = succ_elective_gavelkind
+			 }
+	    }
+year = 1250
+independent = yes
+
+
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	
+	
+name = "EVTOPTA_RIRSEVAR_0001"
+set_global_flag = bulledor
+revoke_law = succ_feudal_elective
+revoke_law = succ_elective_gavelkind
+add_law_w_cooldown = succ_hre_elective
+any_vassal = { narrative_event = { id = RIRSEVAR.0002 } }
+any_independent_ruler = {
+                   limit = { religion = catholic }
+                   narrative_event = { id = RIRSEVAR.0002 = days = 10 }
+}
+}
+} 
+
+narrative_event = {    
+	id = RIRSEVAR.0002
+	title = "EVTNAME_RIRSEVAR_0002"
+    desc = "EVTDESC_RIRSEVAR_0002"
+	picture = "GFX_evt_septelecteurs"
+
+is_triggered_only = yes
+
+	
+
+	option = {
+name = "EVTOPTA_RIRSEVAR_0002"
+}
+}
+
+# Lotharingie, demande via le Pape
+
+narrative_event = {
+	id = RIRSEVAR.0003
+	title = EVTNAME_RIRSEVAR_0003
+	desc = EVTDESC_RIRSEVAR_0003
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0003"
+ 
+ 
+ prestige = 1000
+
+		k_lotharingia = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+e_hre = {
+holder_scope = { set_defacto_vassal = ROOT } 
+}
+any_independent_ruler = {
+                   limit = { has_landed_title = e_hre }
+				letter_event = { id = RIRSEVAR.0009}
+
+}
+		
+	          
+}
+}
+# L'empereur est informé pour la lotharingie
+letter_event = {
+	id = RIRSEVAR.0009
+	desc = "EVTDESC_RIRSEVAR_0009"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0009"
+               
+                prestige = -1500
+         ROOT = {
+	        opinion = {
+				modifier = Emp_lot_rex
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+
+# Lotharingie, accordé par l'empereur
+
+#l'empereur doit décider
+
+letter_event = {
+	id = RIRSEVAR.0004
+	title = EVTNAME_RIRSEVAR_0004
+	desc = EVTDESC_RIRSEVAR_0004
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0004"
+ prestige = -1000
+ set_global_flag = couronne_lotharingie
+FROM = { 
+narrative_event = { id = RIRSEVAR.0010}
+}
+ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_0 }
+				
+		}
+	}
+	          
+}
+
+option = {
+ name = "EVTOPTB_RIRSEVAR_0004"
+ prestige = 200
+FROM = { 
+letter_event = { id = RIRSEVAR.0011}
+}
+ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 1.3
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = cynical }
+			}
+            modifier = {
+				factor = 1.2
+				ROOT = { trait = ambitious }
+		}
+		    modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_2 }
+				
+		}
+		    modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+				
+		}
+		
+	
+}
+	          
+}
+}
+
+# Reponse positive, creation du royaume
+narrative_event = {
+	id = RIRSEVAR.0010
+	title = EVTNAME_RIRSEVAR_0010
+	desc = EVTDESC_RIRSEVAR_0010
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0010"
+ 
+ 
+ prestige = 100
+
+		k_lotharingia = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+e_hre = {
+holder_scope = { set_defacto_vassal = ROOT } 
+}		
+	          
+}
+}
+
+# Réponse négative, le prétendant n'est pas content...
+letter_event = {
+	id = RIRSEVAR.0011
+	desc = "EVTDESC_RIRSEVAR_0011"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0011"
+               
+                prestige = -250
+         ROOT = {
+	        opinion = {
+				modifier = Rex_lot_emp
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+
+#Creation de la lotharingie, pape + independance
+narrative_event = {
+	id = RIRSEVAR.0005
+	title = EVTNAME_RIRSEVAR_0005
+	desc = EVTDESC_RIRSEVAR_0005
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0005"
+ 
+ 
+ prestige = 1200
+
+		k_lotharingia = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+			
+}
+}
+
+# Arles, demande via le Pape
+
+narrative_event = {
+	id = RIRSEVAR.0006
+	title = EVTNAME_RIRSEVAR_0006
+	desc = EVTDESC_RIRSEVAR_0006
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0006"
+ 
+ 
+ prestige = 1000
+
+		k_burgundy = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+e_hre = {
+holder_scope = { set_defacto_vassal = ROOT } 
+}
+any_independent_ruler = {
+                   limit = { has_landed_title = e_hre }
+				letter_event = { id = RIRSEVAR.0012}
+
+}
+		
+	          
+}
+}
+# L'empereur est informé pour la bourgogne
+letter_event = {
+	id = RIRSEVAR.0012
+	desc = "EVTDESC_RIRSEVAR_0012"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0012"
+               
+                prestige = -1500
+         ROOT = {
+	        opinion = {
+				modifier = Emp_arl_rex
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+
+#Arles, accordé par l'empereur
+
+#l'empereur doit décider
+
+letter_event = {
+	id = RIRSEVAR.0007
+	title = EVTNAME_RIRSEVAR_0007
+	desc = EVTDESC_RIRSEVAR_0007
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0007"
+ prestige = -1000
+ set_global_flag = couronne_arles
+FROM = { 
+narrative_event = { id = RIRSEVAR.0013}
+}
+ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 80
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_0 }
+				
+		}
+	}
+	          
+}
+
+option = {
+ name = "EVTOPTB_RIRSEVAR_0007"
+ prestige = 200
+FROM = { 
+letter_event = { id = RIRSEVAR.0014}
+}
+ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 1.3
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = cynical }
+			}
+            modifier = {
+				factor = 1.2
+				ROOT = { trait = ambitious }
+		}
+		    modifier = {
+				factor = 1.2
+				e_hre = { has_law = crown_authority_2 }
+				
+		}
+		    modifier = {
+				factor = 1.3
+				e_hre = { has_law = crown_authority_3 }
+				
+		}
+		
+	
+}
+	          
+}
+}
+
+# Reponse positive, creation du royaume
+narrative_event = {
+	id = RIRSEVAR.0013
+	title = EVTNAME_RIRSEVAR_0013
+	desc = EVTDESC_RIRSEVAR_0013
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0013"
+ 
+ 
+ prestige = 100
+
+		k_burgundy = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+e_hre = {
+holder_scope = { set_defacto_vassal = ROOT } 
+}		
+	          
+}
+}
+
+# Réponse négative, le prétendant n'est pas content...
+letter_event = {
+	id = RIRSEVAR.0014
+	desc = "EVTDESC_RIRSEVAR_0014"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0014"
+               
+                prestige = -250
+         ROOT = {
+	        opinion = {
+				modifier = Rex_arl_emp
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+
+#Creation de la lotharingie, pape + independance
+narrative_event = {
+	id = RIRSEVAR.0008
+	title = EVTNAME_RIRSEVAR_0008
+	desc = EVTDESC_RIRSEVAR_0008
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0008"
+ 
+ 
+ prestige = 1200
+
+		k_burgundy = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+			
+}
+}
+ 

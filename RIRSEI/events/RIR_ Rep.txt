@@ -1,0 +1,88 @@
+namespace = RIRSEREP
+narrative_event = {    
+	id = RIRSEREP.00001
+	title = "EVTNAME_RIRSEREP_00001"
+desc = "EVTDESC_RIRSEREP_00001"
+	picture = "GFX_evt_elec1"
+
+	trigger = {	
+
+had_character_flag = { 
+flag = electionannuelle 
+days >= 365
+}
+has_character_flag = antibug
+NOT = { has_landed_title = k_venice }
+NOT = { has_landed_title = d_venice }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_roman_empire }
+government = merchant_republic_government
+OR = {
+independent = yes
+liege = {
+NOT = { government = merchant_republic_government }
+			}
+    }
+}
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEREP_00001"  
+player_heir = {
+			wealth = ROOT
+			ROOT = {
+				any_artifact = {
+					transfer_artifact = {
+					to = PREVPREV
+					from = ROOT
+					}
+				}
+			}
+		}
+		clear_wealth = yes
+		clr_character_flag = electionannuelle
+		clr_character_flag = antibug
+		abdicate = { move = no }
+}
+}
+
+narrative_event = {    
+	id = RIRSEREP.00002
+	title = "EVTNAME_RIRSEREP_00002"
+desc = "EVTDESC_RIRSEREP_00002"
+	picture = "GFX_evt_elec2"
+
+	trigger = {	
+
+NOT = { has_character_flag = electionannuelle }
+NOT = { has_landed_title = k_venice }
+NOT = { has_landed_title = d_venice }
+NOT = { has_landed_title = e_latin_empire }
+NOT = { has_landed_title = e_roman_empire }
+government = merchant_republic_government
+OR = {
+independent = yes
+liege = {
+NOT = { government = merchant_republic_government }
+			}
+    }
+    }
+
+	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+name = "EVTOPTA_RIRSEREP_00002"  
+set_character_flag = electionannuelle
+set_character_flag = antibug
+
+}
+}
