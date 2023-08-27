@@ -267,26 +267,6 @@ d_almomh = {
 	}
 }
 
-e_cordoba = {
-	color={ 255 218 185 }
-	color2={ 255 255 255 }
-
-	capital = 181 # Cordoba
-
-	title = "CALIPH"
-	title_female = "CALIPHA"
-	foa = "CALIPH_FOA"
-	#short_name = yes
-
-	religion = sunni
-
-	allow = {
-		always = no
-	}
-
-	caliphate = yes
-}
-
 d_shiite = {
 	color={ 60 190 60 }
 	color2={ 220 220 0 }
@@ -325,75 +305,6 @@ d_shiite = {
 			0 0 0 9 1 7 7
 		}
 		religion=shiite
-	}
-}
-
-d_qarmatian = {
-	color={ 60 190 60 }
-	color2={ 220 220 0 }
-	
-	capital = 652 # Al-Hasa
-	
-	creation_requires_capital = no
-	
-	dignity = 100 # Counted as having this many more counties than it does
-	
-	title = "CALIPH"
-	title_female = "CALIPHA"
-	foa = "CALIPH_FOA"
-	short_name = yes
-	
-	religion = qarmatian
-	
-	# Controls a religion
-	controls_religion = qarmatian
-	
-	allow = {
-		religion = qarmatian
-		piety = 500
-		OR = {
-			trait = mirza
-			trait = sayyid
-			piety = 1000
-			custom_tooltip = {
-				text = qarmatian_bloodline_TT
-
-				any_owned_bloodline = {
-					has_bloodline_flag = bloodline_qarmatian_leader
-					bloodline_is_active_for = PREV
-				}
-			}
-		}
-		OR = {
-			custom_tooltip = {
-				text = THREE_HOLY_SITES_TT
-				hidden_tooltip = {
-					any_realm_title = {
-						count = 3
-						is_holy_site = ROOT
-					}
-				}
-			}
-			custom_tooltip = {
-				text = qarmatian_bloodline_TT
-
-				any_owned_bloodline = {
-					has_bloodline_flag = bloodline_qarmatian_leader
-					bloodline_is_active_for = PREV
-				}
-			}
-		}
-	}
-
-	caliphate = yes
-	
-	coat_of_arms=
-	{
-		data=
-		{
-			0 0 0 9 1 7 7
-		}
-		religion = qarmatian
 	}
 }
 
@@ -1321,8 +1232,6 @@ d_varangian_guard = {
 	# Cannot be held as a secondary title
 	primary = yes
 	
-	strength_growth_per_century = 1.00
-	
 	mercenary_type = varangian_guard_composition
 }
 
@@ -1835,22 +1744,11 @@ e_terra_imperii = {
 		culture = frankish
 		
 		capital = 115 #Luxemburg
-
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					NAND = {
-						has_landed_title = k_germany
-						start_date = 936.8.7
-					}
-				}
-			}
-		}
 		
 		catholic = 5000 # Crusade target weight
 		
 		dignity = 17 # One more than Burgundy
+		allow = { NOT = { has_global_flag = central } }
 		
 				
 		d_brabant = {
@@ -3773,17 +3671,9 @@ e_terra_imperii = {
 				color2={ 255 255 255 }
 				
 				breton = Naoned
-				norse = Namsborg
-				norwegian = Namsborg
-				swedish = Namsborg
-				danish = Namsborg
 				
 				b_nantes = {
 					breton = Naoned
-					norse = Namsborg
-					norwegian = Namsborg
-					swedish = Namsborg
-					danish = Namsborg
 				}
 				b_chateaubriant = {
 					breton = Kastell-Briant
@@ -4023,6 +3913,8 @@ e_terra_imperii = {
 		roman = "Lugdunensis"
 		
 		catholic = 5000 # Crusade target weight
+		
+		allow = { NOT = { has_global_flag = central } }
 		
 		d_provence = {
 			color={ 145 37 20 }
@@ -4529,7 +4421,6 @@ e_terra_imperii = {
 				b_laufenberg = {
 					frankish = "Laufond"
 				}
-				b_habsburg = {}
 
 			}
 			c_vaud = {
@@ -5539,13 +5430,22 @@ e_terra_imperii = {
 				color = { 182 78 5 }
 				color2={ 255 255 255 }
 				
-				b_guarda = {}
-				b_lamego = {}
-				b_trancoso = {}
-				b_sabugal = {}
-				b_pinhel = {}
-				b_almeida = {}
-				b_acores = {}
+				b_castelobranco = {
+				}
+				b_guarda = {
+				}
+				b_covilha = {
+				}
+				b_acores = {
+				}
+				b_trancoso = {
+				}
+				b_sabugal = {
+				}
+				b_pinhel = {
+				}
+				b_almeida = {
+				}
 			}
 			c_coimbra = {
 				color = { 182 88 25 }
@@ -6513,7 +6413,7 @@ e_terra_imperii = {
 		capital = 64 # Gwynedd
 		
 		culture = welsh
-		
+		title = "princedegalles"
 		catholic = 300 # Crusade target weight
 		
 		allow = {
@@ -7792,23 +7692,11 @@ e_terra_nullius = {
 		}
 	}
 		
-	k_bavaria = {
+		k_bavaria = {
 		color={ 91 100 100 }
 		color2={ 220 220 20 }
 		
 		culture = german
-
-		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					NAND = {
-						has_landed_title = k_germany
-						start_date = 936.8.7
-					}
-				}
-			}
-		}
 		
 		capital = 360 #Oberbayern
 		greek = "Despotaton tès Pannonias"
@@ -13677,34 +13565,29 @@ always = no # Only created through special event
                 saxon = "Sudböhmen"
                 suebi = "Sudböhmen"
                 
-				b_prachen = {
-				}
-				b_doudleby = {
-				}
-				b_chynov = {
-				}
-				b_hohenfurth = {
-					bohemian = "Vyšší Brod"
-					slovieni = "Vyšší Brod"
-				}
-				b_rosenberg = {
-					bohemian = "Rožmberk"
-					slovieni = "Rožmberk"
-				}
-				b_budejovice = {
-					german = "Budweis"
-				}
-				b_pisek = {
-				}
-				b_krumlov = {
-					german = "Krumau"
-				}
-				b_goldenkron = {
-					bohemian = "Zlatá Koruna"
-					slovieni = "Zlatá Koruna"
-				}
-				b_resenberg = {}
-			}
+                b_prachen = {
+                }
+                b_doudleby = {
+                }
+                b_chynov = {
+                }
+                b_hohenfurth = {
+					bohemian = "Vyssi Brod"
+                }
+                b_rosenberg = {
+					bohemian = "Rozmberk"
+                }
+                b_budejovice = {
+                }
+                b_pisek = {
+                }
+                b_krumlov = {
+                }
+                b_goldenkron = {
+					bohemian = "Zlata Koruna"
+                }
+                b_resenberg = {}
+            }
             c_praha = {
                 color={ 199 114 15 }
                 color2={ 255 255 255 }
@@ -13771,13 +13654,12 @@ always = no # Only created through special event
                 }
                 b_kolin = {
                 }
-				b_stare_mesto = {
-				}
-				b_zbraslav = {
-				}
-				b_sazava = {
-					german = "Sassau"
-				}
+                b_stare_mesto = {
+                }
+                b_zbraslav = {
+                }
+                b_sazava = {
+                }
            	}
             c_litomerice = {
               	color={ 203 118 19 }
@@ -13789,96 +13671,90 @@ always = no # Only created through special event
 				danish = "Leitmeritz"
 				norwegian = "Leitmeritz"
               
-				b_litomerice = {
-					german = "Leitmeritz"
+              	b_litomerice = {
+			  		german = "Leitmeritz"
 					swedish = "Leitmeritz"
 					norse = "Leitmeritz"
 					danish = "Leitmeritz"
 					norwegian = "Leitmeritz"
-				}
-				b_melnik_bohemia = {}
-				b_mnichovo_hradiste = {}
-				b_zitava = {}
-				b_duba_litomerice = {}
-				b_decin = {}
-				b_ceskalipa = {}
-				b_boleslav = {}
-				b_nymburk = {}
+             	}
+              	b_melnik_bohemia = {}
+              	b_mnichovo_hradiste = {}
+              	b_zitava = {}
+              	b_duba_litomerice = {}
+              	b_decin = {}
+              	b_ceskalipa = {}
+              	b_boleslav = {}
+              	b_nymburk = {}
             }
 			c_hradec = {
                 color={ 200 104 38 }
             	color2={ 255 255 255 }
                 
-				b_hradeckralove = {
-					german = "Grätz"
-				}
+                b_hradeckralove = {
+                }
 				b_kladsko = {
-					german = "Glatz"
-					polish = "Klodzko"
 				}
 				b_zleby = {
-				}
+                }
 				b_chrudim = {
 				}
 				b_caslav = {
-				}
+                }
 				b_jaromer = {
-				}
-				b_litomysl = {
-				}
+                }
+                b_litomysl = {
+                }
             }
             c_plzen = {
                 color={ 205 120 21 }
                 color2={ 255 255 255 }
                 
-				german = Pilsen
+                german = Pilsen
 				swedish = Pilsen
 				norse = Pilsen
 				danish = Pilsen
 				norwegian = Pilsen
-			
-				b_plzen = {
-					german = Pilsen
+                
+                b_plzen = {
+                	german = Pilsen
 					swedish = Pilsen
 					norse = Pilsen
 					danish = Pilsen
 					norwegian = Pilsen
-				}
-				b_plasy = {
-				}
-				b_stribo = {
-				}
-				b_klatovy = {
-				}
-				b_kladruby = {
-				}
-				b_primda = {
-				}
-				b_domazlice = {
-				}
+                }
+                b_plasy = {
+                }
+                b_stribo = {
+                }
+                b_klatovy = {
+                }
+                b_kladruby = {
+                }
+                b_primda = {
+                }
+                b_domazlice = {
+                }
             }
-			c_zatec = {
-				color={ 155 105 30 }
-				color2={ 255 255 255 }
-			
-				german = "Saaz"
-			
-				b_zatec = {
-					german = "Saaz"
-				}
+  			c_zatec = {
+                color={ 155 105 30 }
+                color2={ 255 255 255 }
+                
+                b_zatec = {
+                }
 				b_osek = {
 				}
 				b_louny = {
-				}
+                }
 				b_bilina = {
 				}
 				b_kadan = {
-				}
+                }
 				b_teplice = {
-				}
-				b_chomutov = {
-				}
-			}
+                }
+                b_chomutov = {
+                }
+            }
         }
         d_moravia = {
             color={ 157 101 35 }
@@ -13889,11 +13765,8 @@ always = no # Only created through special event
 			c_znojmo = {
 				color={ 51 51 51 }
 				color2={ 255 255 255 }
-			
-				german = "Znaim"
 		
 				b_znojmo = {
-					german = "Znaim"
 				}
 				b_mikulov = {
 				}
@@ -13902,7 +13775,6 @@ always = no # Only created through special event
 				b_pohansko = {
 				}
 				b_jihlava = {
-					german = "Iglau"
 				}
 				b_bitov = {
 				}
@@ -13912,21 +13784,13 @@ always = no # Only created through special event
 				}
 				b_louka = {
 				}
-				b_eibenshitz = {
-					bohemian = "Ivancice"
-					slovieni = "Ivancice"
-				}
+				b_eibenshitz = {}
 			}
             c_olomouc = {
                 color={ 163 107 41 }
                 color2={ 255 255 255 }
                 
-				german = "Olmütz"
-				polish = Olomuniec
-				
                 b_olomouc = {
-					german = "Olmütz"
-					polish = Olomuniec
                 }
                 b_velehrad = {
                 }
@@ -13946,15 +13810,11 @@ always = no # Only created through special event
             c_brno = {
                 color={ 166 110 44 }
                 color2={ 255 255 255 }
-               	
-				german = "Brünn"
-				
+                
                 b_veligrad = {
-					slovieni = Velehrad
                 }
                 b_brno = {
-					german = "Brünn"
-				}
+                }
                 b_mikulcice = {
                 }
                 b_zdar = {
@@ -13973,13 +13833,8 @@ always = no # Only created through special event
             c_opava = {
                 color={ 163 110 44 }
                 color2={ 255 255 255 }
-				
-				german = "Troppau"
-				polish = "Opawa"
                 
                 b_opava = {
-					german = "Troppau"
-					polish = "Opawa"
                 }
                 b_krnov = {
                 }
@@ -17707,22 +17562,6 @@ always = no # Only created through special event
 		
 		capital	= 444 # Esztergom
 avar = "Avarlar Khanlik"
-
-		slovieni = Pannonia
-		frankish = Pannonia
-		bulgarian = Pannonia
-		bohemian = Pannonia
-		german = Pannonia
-		carantanian = Pannonia
-		croatian = Pannonia
-		polish = Pannonia
-		russian = Pannonia
-		romanian = Pannonia
-		serbian = Pannonia
-		greek = Pannonia
-		roman = Pannonia
-		bosnian = Pannonia
-		
 		allow = {
 			OR = {
 				culture_group = magyar
@@ -17740,11 +17579,8 @@ avar = "Avarlar Khanlik"
 			
 			capital = 452 # Pecs
 			
-
-			bohemian = Blatno
-			carantanian = Blatno
-			slovieni = Blatno
-			hungarian = Balaton
+			bohemian=Balaton
+			carantanian=Balaton
 			
 			c_pecs={
 				color={ 182 72 72 }
@@ -17752,102 +17588,46 @@ avar = "Avarlar Khanlik"
 
 				croatian = Pecuh
 				serbian = Pecuj
-				bosnian = Pecuh
+				bosnian = "Pecuh"
 				german = Fünfkirchen
-				bohemian = Petikostelí
-				carantanian = Patkostolie
-				slovieni = Patkostolie
+				bohemian=Balaton
+				carantanian=Balaton
+				carantanian=Balaton
 				
-				b_pecs = { 
-					slovieni = Patkostolie
-					bohemian = Petikostelí
-					german = Funfkirchen
-					croatian = Pecuh
+				b_pecs = {
 				}
-				b_kalocsa = { 
-					slovieni = Kaloca
-					bohemian = Kaloca
-					german = Kollotschau
+				b_kalocsa = {
 				}
-				b_mohacs = { 
-					slovieni = Mohác
-					bohemian = Mohác
-					german = Mohatsch
-					croatian = Mohác
+				b_mohacs = {
 				}
-				b_sasd = { 
-					slovieni = Šašd
-					bohemian = Šašd
-					german = Schaschd
-					croatian = Šardin
+				b_sasd = {
 				}
-				b_pecsvarad = { 
-					slovieni = Pecvar
-					bohemian = Pecvar
-					german = Petschwar
-					croatian = Pecvar
+				b_pecsvarad = {
 				}
-				b_siklos = { 
-					slovieni = Šikloš
-					bohemian = Šikloš
-					croatian = Šikloš
-					german = Sieglos
+				b_siklos = {
 				}
-				b_szentlorinc = { 
-					slovieni = "Svatý Vavrinec"
-					bohemian = "Svatý Vavrinec"
-					croatian = Selurinac
-					german = "Sankt Laurenz"
+				b_szentlorinc = {
 				}
-				b_darda = { 
-					slovieni = Darda
-					bohemian = Darda
-					german = Lanzenau
+				b_darda = {
 				}
 			}
 			c_szekezfehervar = {
 				color={ 189 74 74 }
 				color2={ 255 255 255 }
 				
-				croatian = Šomod
-				german = Schomodei
-				bohemian = Šomod
-				slovieni = Šomod
-				hungarian = Somogy
+				german = Stuhlweissenburg
 				
-				b_szekezfehervar = { 
-					croatian = Šomod
-					german = Schomodei
-					bohemian = Šomod
-					slovieni = Šomod
-					hungarian = Somogy
+				b_szekezfehervar = {
 				}
-				b_csurgo = { 
-					slovieni = Curgov
-					bohemian = Curgov
+				b_csurgo = {
 				}
-				b_kaposvar = { 
-					slovieni = Kapošvár
-					bohemian = Kapošvár
-					german= Kopisch
+				b_kaposvar = {
 				}
-				b_szigetvar = { 
-					slovieni = Sihot
-					bohemian = Sihot
-					croatian = Siget
-					german = Inselburg
+				b_szigetvar = {
 				}
-				b_barcs = { 
-					slovieni = Barc
-					bohemian = Barc
-					croatian = Barca
-					german = Bartsch
+				b_barcs = {
 				}
 				b_marcali = {
-					german = Martzal
-					croatian = Marcalin
-					slovieni = Marcalin
-					bohemian = Marcalin
 				}
 				b_nagyatad = {
 				}
@@ -17860,46 +17640,24 @@ avar = "Avarlar Khanlik"
 
 				german = Eisenburg
 				croatian = Zelezna
-				bosnian = Zelezna
-				carantanian = Zelezna
-				bohemian = Železna
-				slovieni = Železna
-				hungarian = Vas
+				bosnian = "Zelezna"
+				carantanian=Zelezna
 				
-				b_szombathely = { 
-					slovieni = Kamenec
-					german = Steinamanger
+				b_szombathely = {
 				}
-				b_szentgotthard = { 
-					slovieni = "Svatý Gothard"
-					bohemian = "Svatý Gothard"
-					carantanian = Monošter
-					german = "Sankt Gotthard"
+				b_szentgotthard = {
 				}
-				b_vasvar = { 
-					slovieni = "Železný hrad"
-					bohemian = "Železný hrad"
-					german = Eisenburg
-					carantanian = Železnograd
+				b_vasvar = {
 				}
 				b_sarvar = {
-					german = Kotenburg
 				}
 				b_celldomolk = {
-					german = Kleinmariazell
 				}
 				b_kormend = {
-					german = Kirment
 				}
-				b_koszeg = { 
-					slovieni = Kysek
-					bohemian = Kysek
-					german = Güns
-					croatian = Kiseg
+				b_koszeg = {
 				}
-				b_nemetujvar = { 
-					german = Güssing
-					croatian = Novigrad
+				b_nemetujvar = {
 				}
 			}
 			c_fejer = {
@@ -17907,34 +17665,25 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 				
 				german = Stuhlweiss
-				croatian = "Stolni Belegrad"
-				bosnian = "Stolni Belegrad"
-				carantanian = "Stolni Belegrad"
-				bohemian = "Stolicný Belehrad"
-				slovieni = "Stolicný Belehrad"
-
+				croatian = Bila
+				bosnian = "Bila"
+				carantanian=Bila
+				
 				b_sarbogard = {
-					german = Bochart
 				}
 				b_adony = {
-					german = Adam
 				}
 				b_mor = {
-					german = Moor
 				}
 				b_val = {
 				}
 				b_szekszard = {
-					german = Sechshard
 				}
 				b_dombovar = {
-					german = Dombowa
 				}
 				b_tamasi = {
-					german = Tammasching
 				}
 				b_bonyhad = {
-					german = Bonnhard
 				}
 			}
 		}
@@ -17946,54 +17695,31 @@ avar = "Avarlar Khanlik"
 
 			german = Gran
 			bohemian = Ostrihom
-			slovieni = Ostrihom
-			hungarian = Esztergom
 			croatian = Ostrogon
-			bosnian = Ostrogon
-			carantanian = Ostrogon
-			polish = Ostrzyhom
+			bosnian = "Ostrogon"
+			carantanian=Ostrogon
 			
 			c_sopron = {
 				color={ 211 63 63 }
 				color2={ 255 255 255 }
 				
 				german = Ödenburg
-				slovieni = Šopron
-				bohemian = Šopron
-
-				b_sopron = { 
-					slovieni = Šopron
-					bohemian = Šopron
-					german = Ödenburg
+				
+				b_sopron = {
 				}
 				b_gyor = {
-					slovieni = Ráb
-					german = Raab
-					bohemian = Ráb
 				}
 				b_csorna = {
-					german = Gschirnau
 				}
 				b_borsmonostor = {
-					german = Klostermarienberg
 				}
 				b_csepreg = {
-					german = Schapring
 				}
 				b_kapuvar = {
-					slovieni = Kapuvár
-					bohemian = Kapuvár
-					german = Kobrunn
 				}
 				b_kismarton = {
-					slovieni = Železno
-					bohemian = Železno
-					german = Eisenstadt
-					croatian = Željezno
 				}
 				b_nagymarton = {
-					german = Mattersburg
-					croatian = Materštof
 				}
 			}
 			c_esztergom = {
@@ -18002,99 +17728,49 @@ avar = "Avarlar Khanlik"
 				
 				german = Gran
 				bohemian = Ostrihom
-				slovieni = Ostrihom
-				hungarian = Esztergom
 				croatian = Ostrogon
-				bosnian = Ostrogon
-				carantanian = Ostrogon
-				polish = Ostrzyhom
+				bosnian = "Ostrogon"
+				carantanian=Ostrogon
 				
-				b_esztergom = { 
-					german = Gran
-					bohemian = Ostrihom
-					slovieni = Ostrihom
-					hungarian = Esztergom
-					croatian = Ostrogon
-					bosnian = Ostrogon
-					carantanian = Ostrogon
-					polish = Ostrzyhom
+				b_esztergom = {
 				}
-				b_komarom = { 
-					slovieni = Komárno
-					bohemian = Komárno
-					hungarian = Komárom
-					german = Komorn
+				b_komarom = {
 				}
-				b_kakath = { 
-					slovieni = Kokot
-					bohemian = Kokot
+				b_kakath = {
 				}
 				b_tatabanya = {
-					german = Totiserkolonie
 				}
 				b_nagyigmand = {
 				}
-				b_nemesocsa = { 
-					slovieni = "Zemianska Olca"
-					bohemian = "Zemianska Olca"
+				b_nemesocsa = {
 				}
-				b_ogylla = { 
-					slovieni = "Stará Dala"
-					bohemian = "Stará Dala"
-					german = Altdala
-					hungarian = Ogyalla
+				b_ogylla = {
 				}
 			}
 			c_pressburg = {
 				color={ 217 69 69 }
 				color2={ 255 255 255 }
 
-				german = Pressburg
-				hungarian = Pozsony
-				bohemian = Prešpurk
-				slovieni = Prešporok
 				
-				b_pressburg = { 
-					german = Pressburg
-					hungarian = Pozsony
-					bohemian = Prešpurk
-					slovieni = Prešporok
+				hungarian = Pozsony
+				bohemian = Presporok
+	
+				
+				b_pressburg = {
 				}
-				b_nagyszombat = { 
-					slovieni = Trnava
-					bohemian = Trnava
-					german = Tyrnau
+				b_nagyszombat = {
 				}
-				b_bazin = { 
-					slovieni = Devín
-					bohemian = Devin
-					hungarian = Dévény
-					german = Theben
+				b_bazin = {
 				}
-				b_modor = { 
-					slovieni = Modra
-					bohemian = Modra
-					german = Modern
+				b_modor = {
 				}
-				b_szentgyorgy = { 
-					slovieni = "Svatý Jur"
-					bohemian = "Svatý Jur"
-					german = "Sankt Georgen"
+				b_szentgyorgy = {
 				}
-				b_dunaszerdahely = { 
-					slovieni = "Dunajská Streda"
-					bohemian = "Dunajská Streda"
-					german = Niedermarkt
+				b_dunaszerdahely = {
 				}
-				b_galanta = { 
-					slovieni = Galanta
-					bohemian = Galanta
-					german = Gallandau
+				b_galanta = {
 				}
-				b_somorja = { 
-					slovieni = Šamorín
-					bohemian = Šamorín
-					german = Sommerein
+				b_somorja = {
 				}
 			}
 		}
@@ -18106,9 +17782,6 @@ avar = "Avarlar Khanlik"
 
 			german = Neutra
 			bohemian = Nitra
-			slovieni = Nitra
-			hungarian = Nyitra
-			polish = Nitra
 			
 			c_nitra = {
 				color={ 194 25 25 }
@@ -18116,162 +17789,66 @@ avar = "Avarlar Khanlik"
 
 				german = Neutra
 				bohemian = Nitra
-				slovieni = Nitra
-				hungarian = Nyitra
-				polish = Nitra
 				
-				b_nyitra = { 
-					german = Neutra
-					bohemian = Nitra
-					slovieni = Nitra
-					hungarian = Nyitra
-					polish = Nitra
+				b_nyitra = {
 				}
-				b_nagytapolcsany = { 
-					slovieni = Topolcany
-					bohemian = Topolcany
-					german = Topoltschan
+				b_nagytapolcsany = {
 				}
-				b_stbenedek = { 
-					slovieni = "Hronský Benadik"
-					bohemian = "Hronský Benadik"
-					german = "Sankt Benedikt"
+				b_stbenedek = {
 				}
-				b_nagysurany = { 
-					slovieni = "Velké Šurany"
-					bohemian = "Velké Šurany"
-					german = Schuran
+				b_nagysurany = {
 				}
-				b_galgoc = { 
-					slovieni = Hlohovec
-					bohemian = Hlohovec
-					german = Freistadt
+				b_galgoc = {
 				}
-				b_zabokreky = { 
-					slovieni = Žabokreky
-					bohemian = Žabokreky
-					hungarian = Zsámbokrét
+				b_zabokreky = {
 				}
-				b_postyen = { 
-					slovieni = Pieštany
-					bohemian = Pieštany
-					german = Pistyan
+				b_postyen = {
 				}
-				b_preuigan = { 
-					slovieni = Prievidza
-					bohemian = Prievidza
-					german = Priwitz
+				b_preuigan = {
 				}
 			}
 			c_trencin = {
 				color={ 198 29 29 }
 				color2={ 255 255 255 }
-
-				german = Trentschin
-				bohemian = Trencín
-				slovieni = Trencín
-				hungarian = Trencsen
-				polish = Trenczyn
 				
-				b_trencsen = { 
-					german = Trentschin
-					bohemian = Trencín
-					slovieni = Trencín
-					hungarian = Trencsen
-					polish = Trenczyn
+				b_trencsen = {
 				}
-				b_zilina = { 
-					slovieni = Žilina
-					bohemian = Žilina
-					german = Sillein
-					hungarian = Zsolna
+				b_zilina = {
 				}
-				b_turoc = { 
-					slovieni = Turiec
-					bohemian = Turiec
-					german = Turz
+				b_turoc = {
 				}
-				b_ban = { 
-					slovieni = Vyšehrad
-					bohemian = Vyšehrad
-					german = Plintenburg
-					hungarian = Visegrád
+				b_ban = {
 				}
-				b_illava = { 
-					slovieni = Ilava
-					bohemian = Ilava
-					german = Illau
+				b_illava = {
 				}
-				b_povazskabystrica = { 
-					slovieni = "Považská Bystrica"
-					bohemian = "Považská Bystrica"
-					german = Waagbistritz
-					hungarian = Vágbeszterce
+				b_povazskabystrica = {
 				}
-				b_congsberg = { 
-					slovieni = Beckov
-					bohemian = Beckov
-					german = Beckow
-					hungarian = Becko
+				b_congsberg = {
 				}
-				b_puho = { 
-					slovieni = Puchov
-					bohemian = Puchov
-					german = Puchau
+				b_puho = {
 				}
 			}
 			c_gemer = {
 				color={ 202 33 33 }
 				color2={ 255 255 255 }
 				
-				german = Gemer
-				bohemian = Gemer
-				slovieni = Gemer
 				hungarian = Gömör
-				polish = Gemer
 				
-				b_gomor = { 
-					german = Gemer
-					bohemian = Gemer
-					slovieni = Gemer
-					hungarian = Gömör
-					polish = Gemer
+				b_gomor = {
 				}
-				b_losonc = { 
-					slovieni = Lucenec
-					bohemian = Lucenec
-					german = Lizenz
+				b_losonc = {
 				}
-				b_dobsina = { 
-					slovieni = Dobšiná
-					bohemian = Dobšiná
-					german = Dobschau
+				b_dobsina = {
 				}
-				b_rozsnyo = { 
-					slovieni = Rožnava
-					bohemian = Rožnava
-					german = Rosenau
+				b_rozsnyo = {
 				}
-				b_balassagyarmat = { 
-					slovieni = "Balážske Darmoty"
-					bohemian = "Balážske Darmoty"
-					german = Jahrmarkt
+				b_balassagyarmat = {
 				}
-				b_jolsva = { 
-					slovieni = Jelšava
-					bohemian = Jelšava
-					german = Eltsch
+				b_jolsva = {
 				}
-				b_nagyroce = { 
-					slovieni = "Velká Revúca"
-					bohemian = "Velká Revúca"
-					german = Grossrauschenbach
+				b_nagyroce = {
 				}
-				b_nyustya = { 
-					slovieni = Zvolen
-					bohemian = Zvolen
-					hungarian = Zólyom
-					german =  Altsohl
+				b_nyustya = {
 				}
 			}
 			c_orava = {
@@ -18279,63 +17856,23 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 
 				german = Arwa
-				bohemian = Orava
-				slovieni = Orava
-				hungarian = Arva
-				polish = Orawa
+				hungarian = Árva
 				
-				b_arvavara = { 
-					german = Arwa
-					bohemian = Orava
-					slovieni = Orava
-					hungarian = Arva
-					polish = Orawa
+				b_arvavara = {
 				}
-				b_nameszto = { 
-					slovieni = Námestovo
-					bohemian = Námestovo
-					polish = Namiestowo
-					hungarian = Námeszto
+				b_nameszto = {
 				}
-				b_liptovskymikulas = { 
-					slovieni = "Liptovský Mikuláš"
-					bohemian = "Liptovský Mikuláš"
-					polish = "Liptowski Mikulasz"
-					german = "Liptau Nikolaus"
-					hungarian = Liptoszentmiklos
+				b_liptovskymikulas = {
 				}
-				b_zolyom = { 
-					slovieni = "Dolný Kubín"
-					bohemian = "Dolný Kubín"
-					hungarian = Alsókubin
-					german = Unterkubin
+				b_zolyom = {
 				}
-				b_trsztena = { 
-					slovieni = Trstená
-					bohemian = Trstená
-					polish = Trzciana
-					hungarian = Trsztena
-					german = Bingenstadt
+				b_trsztena = {
 				}
-				b_turdossin = { 
-					slovieni = Tvrdošín
-					bohemian = Tvrdošín
-					hungarian = Turdossin
-					german = Turdoschin
-					polish = Twardoszyn
+				b_turdossin = {
 				}
-				b_nemetlipcse = { 
-					slovieni = "Nemecká Lupca"
-					bohemian = "Nemecká Lupca"
-					german = Deutschliptsch
-					hungarian = Németlipcse
+				b_nemetlipcse = {
 				}
-				b_rozsahegy = { 
-					slovieni = Ružomberok
-					bohemian = Ružomberok
-					german = Rosenberg
-					hungarian = Rozsahegy
-					polish = Ruzomberk
+				b_rozsahegy = {
 				}
 			}
 		}
@@ -18345,71 +17882,30 @@ avar = "Avarlar Khanlik"
 			
 			capital = 538 # Abauj
 			
-			croatian = Užgorod
-			german = Ungwar
-			bohemian = Užhorod
-			slovieni = Užhorod
-			hungarian = Ungvár
-			polish = Uzhorod
+			croatian = Chrobatia
+			bohemian = Uzhorod	
 			
-			c_saris = { # "Spiš" in-game
+			c_saris = { # "Spis" in-game
 				color={ 158 17 17 }
 				color2={ 255 255 255 }
 				
-				german = Zips
-				bohemian = Spiš
-				slovieni = Spiš
-				hungarian = Szepes
-				polish = Spisz
+				german = Scharosch
 				
-				b_saris = { 
-					german = Zips
-					bohemian = Spiš
-					slovieni = Spiš
-					hungarian = Szepes
-					polish = Spisz
+				b_saris = {
 				}
-				b_bartfa = { 
-					slovieni = Bardejov
-					bohemian = Bardejov
-					polish = Bardejów
-					german = Bartfeld
-					hungarian = Bártfa
+				b_bartfa = {
 				}
-				b_kisszeben = { 
-					slovieni = Sabinov
-					bohemian = Sabinov
-					german = Zeben
-					hungarian = Kisszeben
+				b_kisszeben = {
 				}
-				b_eperjes = { 
-					slovieni = Prešov
-					bohemian = Prešov
-					german = Eperies
-					hungarian = Eperjes
-					polish = Preszów
+				b_eperjes = {
 				}
-				b_scyuidnyk = { 
-					slovieni = Svidník
-					bohemian = Svidník
-					german = Oberswidnik
-					hungarian = Felsovízkoz
+				b_scyuidnyk = {
 				}
-				b_giralth = { 
-					slovieni = Giraltovce
-					bohemian = Giraltovce
-					hungarian = Girált
+				b_giralth = {
 				}
-				b_hethars = { 
-					slovieni = Lipany
-					bohemian = Lipany
-					hungarian = Héthárs
-					german = Siebenlinden
+				b_hethars = {
 				}
-				b_lemesany = { 
-					slovieni = Lemešany
-					bohemian = Lemešany
-					hungarian = Lemes
+				b_lemesany = {
 				}
 			}
 			c_bereg = {
@@ -18417,38 +17913,22 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 
 				german = Berg
-				bohemian = Berehovo
-				slovieni = Berehovo
-				hungarian = Bereg
 				
-				b_beregszasz = { 
-					german = Berg
-					bohemian = Berehovo
-					slovieni = Berehovo
-					hungarian = Bereg
+				b_beregszasz = {
 				}
-				b_perecseny = { 
-					slovieni = Perecín
+				b_perecseny = {
 				}
-				b_munkacs = { 
-					slovieni = Mukacevo
-					german = Munkatsch
+				b_munkacs = {
 				}
-				b_ungvar = { 
-					slovieni = Užhorod
-					german = Ungwar
+				b_ungvar = {
 				}
-				b_ilosva = { 
-					slovieni = Iršava
+				b_ilosva = {
 				}
-				b_szolyva = { 
-					slovieni = Svalava
+				b_szolyva = {
 				}
-				b_szobranc = { 
-					slovieni = Sobrance
+				b_szobranc = {
 				}
-				b_kapos = { 
-					slovieni = Kapoš
+				b_kapos = {
 				}
 			}
 			c_abauj = {
@@ -18457,52 +17937,22 @@ avar = "Avarlar Khanlik"
 
 				german = Neuburg
 				bohemian = Abov
-				slovieni = Abov
-				hungarian = Abauj
 				
-				b_abauj = { 
-					german = Neuburg
-					bohemian = Abov
-					slovieni = Abov
-					hungarian = Abauj
+				b_abauj = {
 				}
-				b_satoraljaujhely = { 
-					slovieni = "Nové Mesto pod Šiatrom"
-					bohemian = "Nové Mesto pod Šiatrom"
+				b_satoraljaujhely = {
 				}
-				b_kassa = { 
-					slovieni = Košice
-					bohemian = Košice
-					polish = Koszyce
-					hungarian = Kassa
-					german = Kaschau
-					croatian = Kašava
+				b_kassa = {
 				}
-				b_szikszo = { 
-					slovieni = Siksov
-					bohemian = Siksov
+				b_szikszo = {
 				}
-				b_turna = { 
-					slovieni = Turna
-					bohemian = Turna
-					german = Tornau
-					hungarian = Torna
+				b_turna = {
 				}
-				b_szepsi = { 
-					slovieni = Moldava
-					bohemian = Moldava
-					hungarian = Szepsi
-					german = Sepschi
+				b_szepsi = {
 				}
-				b_sarospatak = { 
-					slovieni = Trebišov
-					bohemian = Trebišov
-					german = Trebischau
-					hungarian = Toketerebes
+				b_sarospatak = {
 				}
-				b_tokaj = { 
-					slovieni = Tokaj
-					bohemian = Tokaj
+				b_tokaj = {
 				}
 			}
 			c_marmaros = {
@@ -18510,30 +17960,20 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 				
 				german = Maramuresch
-				bohemian = Marmaroš
-				slovieni = Marmaroš
-				hungarian = Máramaros
 				
-				b_maramarossziget = { 
-					slovieni = "Marmarošská Sihot"
-					german = Marmaroschsiget
+				b_maramarossziget = {
 				}
-				b_nagybanya = { 
-					slovieni = "Velká Bana"
-					german = Neustadt
+				b_nagybanya = {
 				}
-				b_nagykaroly = { 
-					slovieni = Carei
+				b_nagykaroly = {
 				}
-				b_huszt = { 
-					slovieni = Chust
+				b_huszt = {
 				}
 				b_aknasugatag = {
 				}
 				b_tecso = {
 				}
-				b_raho = { 
-					slovieni = Rachiv
+				b_raho = {
 				}
 				b_felsoviso = {
 				}
@@ -18545,37 +17985,17 @@ avar = "Avarlar Khanlik"
 			
 			capital = 522 # Pest
 			
-			polish = Peszt
-			slovieni = Pešt
-			bohemian = Pešt
-			serbian = Pešta
-			german = Pest
-			
 			c_heves = {
 				color={ 173 64 64 }
 				color2={ 255 255 255 }
 				
-				german = Hewesch
-				slovieni = Heveš
-				bohemian = Heveš
-				hungarian = Heves
-
-				b_heves = { 
-					german = Hewesch
-					slovieni = Heveš
-					bohemian = Heveš
-					hungarian = Heves
+				b_heves = {
 				}
-				b_eger = { 
-					slovieni = Jáger
-					german = Erlau
+				b_eger = {
 				}
 				b_gyongyos = {
-					german = Gengess
 				}
-				b_miskolc = { 
-					slovieni = Miškovec
-					german = Mischkolz
+				b_miskolc = {
 				}
 				b_petervasara = {
 				}
@@ -18590,18 +18010,7 @@ avar = "Avarlar Khanlik"
 				color={ 176 67 67 }
 				color2={ 255 255 255 }
 				
-				german = Pest
-				slovieni = Pešt
-				bohemian = Pešt
-				hungarian = Pest
-				serbian = Pešta
-
 				b_pest = {
-					german = Pest
-					slovieni = Pešt
-					bohemian = Pešt
-					hungarian = Pest
-					serbian = Pešta
 				}
 				b_vac = {
 				}
@@ -18622,11 +18031,6 @@ avar = "Avarlar Khanlik"
 				color={ 179 70 70 }
 				color2={ 255 255 255 }
 				
-				german = Tschanad
-				slovieni = Canád
-				bohemian = Canád
-				hungarian = Csanád
-
 				b_csanad = {
 				}
 				b_szeged = {
@@ -18656,9 +18060,6 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 
 				german = Szeklerland
-				bohemian = Sikulsko
-				slovieni = Sikulsko
-				hungarian = Székelyfold
 				
 				b_csik = {
 				}
@@ -18682,9 +18083,6 @@ avar = "Avarlar Khanlik"
 				color2={ 255 255 255 }
 				
 				romanian = Bihor
-				german = Bihar
-				bohemian = Biharsko
-				slovieni = Biharsko
 				
 				b_bihar = {
 				}
@@ -18715,15 +18113,13 @@ avar = "Avarlar Khanlik"
 				b_arad = {
 				}
 				b_gyulafehervar = {
-					romanian = Balgrad
-					german = Karlsburg
+					romanian = "Balgrad"
 				}
 				b_elek = {
 				}
 				b_abrudbanya = {
 				}
 				b_nagyenyed = {
-					romanian = Aiud
 				}
 				b_vizakna = {
 				}
@@ -18737,11 +18133,8 @@ avar = "Avarlar Khanlik"
 			
 			capital = 517 # Temes
 
-			german = Temesch
 			romanian = Timis
 			serbian = Tamis
-			slovieni = Tamiš
-			bohemian = Tamiš
 			
 			c_temes = {
 				color={ 153 127 64 }
@@ -18770,14 +18163,8 @@ avar = "Avarlar Khanlik"
 			c_bacs = {
 				color={ 156 130 67 }
 				color2={ 255 255 255 }
-
-				hungarian = Bács
-				german = Batsch
-				bohemian = Bac
-				slovieni = Bac
-
+				
 				b_bacs = {
-					slovieni = Bac
 				}
 				b_apatin = {
 				}
@@ -20434,27 +19821,6 @@ avar = "Avarlar Khanlik"
 			}
 		}
 	}
-	
-	k_franconia_otto = {
-		color={ 105 135 105 }
-		color2={ 255 255 255 }
-
-		capital = 254 # Würzburg
-	}
-
-	k_thuringia_otto = {
-		color={ 212 211 231 }
-		color2={ 255 255 255 }
-
-		capital = 255 # Thuringen
-	}
-
-	k_swabia_otto = {
-		color={ 173 186 255 }
-		color2={ 255 255 255 }
-
-		capital = 249 # Schwaben
-	}	
 }
 #Fin Terra nullius
 
@@ -20485,9 +19851,6 @@ e_byzantium = {
 	capital = 496 # Byzantion
 	
 	short_name = yes
-	
-	title = "BASILEUS_TITLE"
-	title_female = "BASILEUS_TITLE_FEMALE"
 	
 	culture = greek
 	
@@ -20549,7 +19912,231 @@ religion = orthodox
 	
 	culture = italian
 }
-
+k_sardinia = {
+		color={ 210 165 255 }
+		color2={ 255 255 255 }
+		
+		capital = 326 # Cagliari
+		
+		culture = italian
+		
+		catholic = 500 # Crusade target weight
+		orthodox = 50
+		muslim = 10
+			allow = {
+                 culture = sardinian }
+				 
+		greek = "Archontaton tès Sardinias kai tès Korsikès"
+		#catalan = "Sardenya i Còrsega"	
+		#italian = "Sardegna e Corsica"
+		
+		d_sardinia = {
+			color={ 217 159 255 }
+			color2={ 255 255 255 }
+			
+			#catalan = "Sardenya"
+			#greek = "Sardhnia"
+			#italian = "Sardegna"
+			
+			capital = 326 # Cagliari
+		
+			c_arborea = {
+				color={ 170 182 225 }
+				color2={ 255 255 255 }
+				
+				italian = "Arboréa"
+				
+				b_oristano = {
+					catalan = "Oristany"
+					greek = "Aristanis"
+				}
+				b_tharros = {
+				}
+				b_sanluri = {
+				}
+				b_santa_giusta = {
+					greek = "Othoca"
+				}
+				b_pabillonis = {
+				}
+				b_cabras = {
+					catalan = "Cabres"
+				}
+				b_fordongianus = {
+					greek = "Hydata Hypsitana"
+				}
+				b_sorgono = {
+					catalan = "Sorgeixen"
+				}
+			}
+			c_cagliari = {
+				color={ 170 200 170 }
+				color2={ 255 255 255 }
+				
+				greek = "Karalis"
+				roman = "Caralis"
+				
+				b_cagliari = {
+					greek = "Karalis"
+					roman = "Caralis"
+				}
+				b_santaigia = {
+				}
+				b_assemini = {
+				}
+				b_dolianova = {
+				}
+				b_carbonia = {
+				}
+				b_capoterra = {
+				}
+				b_iglesias = {
+					catalan = "Esglésies"
+				}
+			}
+			c_ogliastra = {
+				color={ 169 195 170 }
+				color2={ 255 255 255 }
+				
+				
+				b_ogliastra = {
+				}
+				b_muravera = {
+					greek = "Sarcapos"
+				}
+				b_tortoli = {
+					greek = "Portus Ilii"
+				}
+				b_jerzu = {
+				}
+				b_bari_sardo = {
+				}
+				b_urzulei = {
+				}
+				b_ballao = {
+				}
+			}
+			c_torres = {
+				color={ 150 175 200 }
+				color2={ 255 255 255 }
+				
+				italian = "Logudoro"
+				
+				b_ardara = {
+				}
+				b_sassari = {
+					catalan = "Sàsser"
+				}
+				b_portotorres = {
+				}
+				b_ottana = {
+				}
+				b_oschiri = {
+				}
+				b_bosa = {
+				}
+				b_alghero = {
+					catalan = "L'Alguer"
+				}
+				b_valledoria = {
+				}
+			}
+			c_gallura = {
+				color={ 200 160 178 }
+				color2={ 255 255 255 }
+				
+				
+				b_olbia = {
+					catalan = "Civita"
+					greek = "Civita"
+					italian = "Civita"
+				}
+				b_nuoro = {
+				}
+				b_posada = {
+				}
+				b_lungone = {
+					greek = "Tibula"
+					italian = "Lungòni"
+				}
+				b_galtelli = {
+					italian = "Galtellì"
+				}
+				b_dorgali = {
+				}
+				b_bicinara = {
+					greek = "Bucina"
+				}
+				b_aggius = {
+					catalan = "Tempio Pausania"
+					greek = "Tempio Pausania"
+					italian = "Tempio Pausania"
+				}
+			}
+		}	
+		d_corsica = {
+			color={ 210 233 278 }
+			color2={ 255 255 255 }
+			
+			capital = 324 # Corsica
+			
+			catalan = "Còrsega"
+			frankish = "Corse"
+			greek = "Korsikn"
+		
+			c_corsica = {
+				color={ 226 248 251 }
+				color2={ 255 255 255 }
+				
+				catalan = "Còrsega"
+				frankish = "Corse"
+				greek = "Korsikn"
+				italian = "Cismonte"
+				lombard = "Cismonte"
+				
+				b_bastia = {
+				}
+				b_corte = {
+				}
+				b_aleria = {
+					catalan = "Aléria"
+				}
+				b_alando = {
+				}
+				b_morosaglia = {
+				}
+				b_luri = {
+				}
+				b_calvi_b = {
+				}
+				b_algajola = {
+				}
+			}
+			c_cinarca = {
+				color={ 250 243 220 }
+				color2={ 255 255 255 }
+				
+				b_ajaccio = {
+				}
+				b_bonifacio = {
+				}
+				b_portevecchio = {
+				}
+				b_filitosa = {
+				}
+				b_sartene = {
+					catalan = "Sartène"
+					italian = "Sartena"
+				}
+				b_bastelicaccia = {
+				}
+				b_cinarca = {
+				}
+				b_propriano = {
+				}
+			}
+		}
+	}
 	k_cyprus = {
 		color = { 85 138 236 }
 		capital = 757 # Famagusta
@@ -25627,213 +25214,7 @@ k_italy = {
 			b_rusellae = {
 			}
 		}
-	}
-	d_sardinia = {
-		color={ 217 159 255 }
-		color2={ 255 255 255 }
-		
-		#catalan = "Sardenya"
-		#greek = "Sardhnia"
-		#italian = "Sardegna"
-		
-		capital = 326 # Cagliari
-	
-		c_arborea = {
-			color={ 170 182 225 }
-			color2={ 255 255 255 }
-			
-			italian = "Arboréa"
-			
-			b_oristano = {
-				catalan = "Oristany"
-				greek = "Aristanis"
-			}
-			b_tharros = {
-			}
-			b_sanluri = {
-			}
-			b_santa_giusta = {
-				greek = "Othoca"
-			}
-			b_pabillonis = {
-			}
-			b_cabras = {
-				catalan = "Cabres"
-			}
-			b_fordongianus = {
-				greek = "Hydata Hypsitana"
-			}
-			b_sorgono = {
-				catalan = "Sorgeixen"
-			}
-		}
-		c_cagliari = {
-			color={ 170 200 170 }
-			color2={ 255 255 255 }
-			
-			greek = "Karalis"
-			roman = "Caralis"
-			
-			b_cagliari = {
-				greek = "Karalis"
-				roman = "Caralis"
-			}
-			b_santaigia = {
-			}
-			b_assemini = {
-			}
-			b_dolianova = {
-			}
-			b_carbonia = {
-			}
-			b_capoterra = {
-			}
-			b_iglesias = {
-				catalan = "Esglésies"
-			}
-		}
-		c_ogliastra = {
-			color={ 169 195 170 }
-			color2={ 255 255 255 }
-			
-			
-			b_ogliastra = {
-			}
-			b_muravera = {
-				greek = "Sarcapos"
-			}
-			b_tortoli = {
-				greek = "Portus Ilii"
-			}
-			b_jerzu = {
-			}
-			b_bari_sardo = {
-			}
-			b_urzulei = {
-			}
-			b_ballao = {
-			}
-		}
-		c_torres = {
-			color={ 150 175 200 }
-			color2={ 255 255 255 }
-			
-			italian = "Logudoro"
-			
-			b_ardara = {
-			}
-			b_sassari = {
-				catalan = "Sàsser"
-			}
-			b_portotorres = {
-			}
-			b_ottana = {
-			}
-			b_oschiri = {
-			}
-			b_bosa = {
-			}
-			b_alghero = {
-				catalan = "L'Alguer"
-			}
-			b_valledoria = {
-			}
-		}
-		c_gallura = {
-			color={ 200 160 178 }
-			color2={ 255 255 255 }
-			
-			
-			b_olbia = {
-				catalan = "Civita"
-				greek = "Civita"
-				italian = "Civita"
-			}
-			b_nuoro = {
-			}
-			b_posada = {
-			}
-			b_lungone = {
-				greek = "Tibula"
-				italian = "Lungòni"
-			}
-			b_galtelli = {
-				italian = "Galtellì"
-			}
-			b_dorgali = {
-			}
-			b_bicinara = {
-				greek = "Bucina"
-			}
-			b_aggius = {
-				catalan = "Tempio Pausania"
-				greek = "Tempio Pausania"
-				italian = "Tempio Pausania"
-			}
-		}
 	}	
-	d_corsica = {
-		color={ 210 233 278 }
-		color2={ 255 255 255 }
-		
-		capital = 324 # Corsica
-		
-		catalan = "Còrsega"
-		frankish = "Corse"
-		greek = "Korsikn"
-	
-		c_corsica = {
-			color={ 226 248 251 }
-			color2={ 255 255 255 }
-			
-			catalan = "Còrsega"
-			frankish = "Corse"
-			greek = "Korsikn"
-			italian = "Cismonte"
-			lombard = "Cismonte"
-			
-			b_bastia = {
-			}
-			b_corte = {
-			}
-			b_aleria = {
-				catalan = "Aléria"
-			}
-			b_alando = {
-			}
-			b_morosaglia = {
-			}
-			b_luri = {
-			}
-			b_calvi_b = {
-			}
-			b_algajola = {
-			}
-		}
-		c_cinarca = {
-			color={ 250 243 220 }
-			color2={ 255 255 255 }
-			
-			b_ajaccio = {
-			}
-			b_bonifacio = {
-			}
-			b_portevecchio = {
-			}
-			b_filitosa = {
-			}
-			b_sartene = {
-				catalan = "Sartène"
-				italian = "Sartena"
-			}
-			b_bastelicaccia = {
-			}
-			b_cinarca = {
-			}
-			b_propriano = {
-			}
-		}
-	}
 }
 
 e_tartaria = {
@@ -27166,6 +26547,7 @@ e_tartaria = {
 		color={ 187 70 70 }
 		culture = hungarian
         title="princemag"
+		capital = 522 # Pest
 	
 		allow = {
 			ai = no
@@ -29777,7 +29159,6 @@ e_persia = {
 
 				holy_site = zoroastrian # The Great Fire of Adur Farnbag
 				holy_site = yazidi
-				holy_site = qarmatian
 				
 				b_perozabad = {
 				}
@@ -31237,7 +30618,6 @@ e_persia = {
 				holy_site = yazidi
 				holy_site = zun_pagan
 				holy_site = zun_pagan_reformed
-				holy_site = qarmatian
 				
 				b_nishapur = {
 				}
@@ -31815,7 +31195,7 @@ hungarian = "Regnum Baeticae"
 			levantine_arabic = "Balata"
 			egyptian_arabic = "Balata"
 			andalusian_arabic = "Balata"
-			
+
 			c_lisboa = {
 				color = { 182 88 5 }
 				color2={ 255 255 255 }
@@ -31854,6 +31234,7 @@ hungarian = "Regnum Baeticae"
 				b_montijo = {}
 			}
 		}
+	
 	
 
 
@@ -32267,27 +31648,36 @@ hungarian = "Regnum Baeticae"
 		c_niebla = {
 			color = { 248 216 41 }
 			color2={ 255 255 255 }
-				
-			b_niebla = {}
-			b_nerva = {}
-			b_almonte = {}
-			b_lascrocinas = {}
-			b_pilas = {}
-			b_ostilia = {}
-			b_aroche = {}
+			
+			b_huelva = {
+			}
+			b_niebla = {
+			}
+			b_lepe = {
+			}
+			b_gibraleon = {
+			}
+			b_nerva = {
+			}
+			b_moguer = {
+			}
+			b_almonte = {
+			}
+			b_aljaraque = {
+			}
 		}
 		c_huelva = {
-			color={ 205 98 5 }
-			color2={ 255 255 255 }
+				color={ 205 98 5 }
+				color2={ 255 255 255 }
 
-			b_huelva = {}
-			b_lepe = {}
-			b_ayamonte = {}
-			b_gibraleon = {}
-			b_moguer = {}
-			b_aljaraque = {}
-			b_portichuelo = {}
-		}
+				b_huelva = {}
+				b_lepe = {}
+				b_ayamonte = {}
+				b_gibraleon = {}
+				b_moguer = {}
+				b_aljaraque = {}
+				b_portichuelo = {}
+			}
 	}
 	d_toledo = {
 		color = { 212 151 12 }
@@ -32609,7 +31999,7 @@ croatian = "Regnum Babilioniae"
 			color={ 95 180 35 }
 			color2={ 255 255 255 }
 			
-			capital = 712 # Rahbah
+			capital = 700 # Bira
 			
 			c_rahbah = {
 				color={ 41 238 26 }
@@ -32784,7 +32174,6 @@ croatian = "Regnum Babilioniae"
 				color2={ 255 255 255 }
 
 				holy_site = shiite
-				holy_site = qarmatian
 				
 				b_nadjaf = {
 				}
@@ -33543,8 +32932,6 @@ croatian = "Regnum Babilioniae"
 			c_al_hasa = {
 				color = { 30 112 20 }
 				color2={ 255 255 255 }
-
-				holy_site = qarmatian
 				
 				b_alhasa = {
 				}
@@ -33901,7 +33288,6 @@ croatian = "Regnum Babilioniae"
 		
 		culture = egyptian_arabic
 		
-		catholic = 450 # Crusade target weight	
 		orthodox = 20 # Crusade target weight
 		muslim = 400 # Crusade target weight
 		zoroastrian_group = 100 # Crusade target weight
@@ -33945,11 +33331,6 @@ croatian = "Regnum Aegypti"
 			capital = 802 # Alexandria
 			
 			coptic = "Rakote"
-			egyptian_arabic = "al-Iskandariyya"
-			bedouin_arabic = "al-Iskandariyya"
-			maghreb_arabic = "al-Iskandariyya"
-			levantine_arabic = "al-Iskandariyya"
-			andalusian_arabic = "al-Iskandariyya"
 			
 			c_alexandria = {
 				color={ 102 221 136 }
@@ -33991,7 +33372,6 @@ croatian = "Regnum Aegypti"
 				b_elkanoun = {
 				}
 			}
-			
 			c_gabiyaha = {
 				color={ 6 255 77 }
 				color2={ 255 255 255 }
@@ -35662,7 +35042,6 @@ croatian = "Principatus Antiochenus"
 				holy_site = jewish
 				holy_site = samaritan
 				holy_site = karaite
-				holy_site = qarmatian
 				
 				b_qsarbardawil = {
 				}
@@ -36554,12 +35933,6 @@ bohemian = "Regnum Africae"
 polish = "Regnum Africae"
 hungarian = "Regnum Africae"
 croatian = "Regnum Africae"
-
-		bedouin_arabic = Ifriqiya
-		maghreb_arabic = Ifriqiya
-		egyptian_arabic = Ifriqiya
-		levantine_arabic = Ifriqiya
-		andalusian_arabic = Ifriqiya
 		
 		d_tunis = {
 			color={ 45 255 3 }
@@ -36865,12 +36238,6 @@ croatian = "Regnum Africae"
 			color2={ 255 255 255 }
 			
 			capital = 806 # Cyrenaica
-
-			egyptian_arabic = "Barqa"
-			bedouin_arabic = "Barqa"
-			maghreb_arabic = "Barqa"
-			levantine_arabic = "Barqa"
-			andalusian_arabic = "Barqa"	
 		
 			c_cyrenaica = {
 				color={ 34 152 65 }
@@ -36917,12 +36284,6 @@ croatian = "Regnum Africae"
 			c_benghazi = {
 				color={ 38 156 69 }
 				color2={ 255 255 255 }
-
-				egyptian_arabic = "Barqa"
-				bedouin_arabic = "Barqa"
-				maghreb_arabic = "Barqa"
-				levantine_arabic = "Barqa"
-				andalusian_arabic = "Barqa"	
 			
 				b_benghazi = {
 				}
@@ -37148,7 +36509,7 @@ croatian = "Regnum Africae"
 			}
 		}
 	}
-
+}
 
 
 		
@@ -39763,16 +39124,6 @@ d_amalfi = {
 		is_republic = yes
 	}
 }
-d_pechina = {
-	color={ 230 135 10 }
-	color2={ 255 255 255 }
-
-	capital = 168 # Almeria
-
-	allow = {
-		is_republic = yes
-	}
-}
 d_ragusa = {
 	color={ 133 98 17 }
 	color2={ 255 255 255 }
@@ -39830,7 +39181,7 @@ allow = {
 	}
 }
 e_bulgaria = {
-	color={ 108 78 110 }
+	color={ 113 88 101 }
 	color2={ 255 255 255 }
 		
 		culture = bulgarian
@@ -40919,53 +40270,12 @@ b_scarponnois = {
 # Ragusa
 b_babalio = {
 	culture = dalmatian
-	religion = catholic
+	religion = orthodox
 }
 
 b_benessa = {
 	culture = dalmatian
-	religion = catholic
-}
-
-b_salvius = {
-	culture = dalmatian
-	religion = catholic
-}
-
-b_pius = {
-	culture = dalmatian
-	religion = catholic
-}
-
-b_bonda = {
-	culture = dalmatian
-	religion = catholic
-}
-
-# Pechina
-b_al_gassani = {
-	culture = bedouin_arabic
-	religion = sunni
-}
-
-b_ruayn = {
-	culture = bedouin_arabic
-	religion = sunni
-}
-
-b_banu_sarray = {
-	culture = maghreb_arabic
-	religion = sunni
-}
-
-b_aswadid = {
-	culture = andalusian_arabic
-	religion = sunni
-}
-
-b_yeshayahu = {
-	culture = sephardi
-	religion = jewish
+	religion = orthodox
 }
 
 # Pagan heads of religion
@@ -49437,35 +48747,4 @@ d_burtas = {
 d_luxembourg = {
 	color={ 110 110 155 }
 	color2={ 255 255 255 }
-}
-
-e_russian_empire = {	
-	color={ 220 60 70 }
-	color2={ 255 255 255 }
-	
-	capital = 582 # Vladimir
-	
-	culture = russian
-	
-	allow = {
-		always = no # Only created through special event
-	}
-}
-k_liao = {
-	color = { 33 202 156 }
-	color2= { 255 255 255 }
-
-	culture = khitan
-}
-d_guiyi = { # 
-	color={ 202 26 26 }
-	color2={ 255 255 255 }
-	
-	capital = 1448 # Dunhuang
-	
-	dignity = 200
-	
-	allow = {
-		always = no
-	}
 }
