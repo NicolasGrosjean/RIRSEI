@@ -327,7 +327,7 @@ emp_latin_dejure_desc;Even if we posess the imperial title, local population and
 restore_roman_empire_latin;Claim the Roman Empire;Revendiquer l'Empire romain;;;;;;x;;;;;;;;;;;;;;
 restore_roman_empire_latin_desc;By asserting our control over several historical sites of the Roman Empire, it is possible to fully reclaim its heritage.;En s'emparant de plusieurs lieux historiques de l'ancien empire romain, il est possible d'en réclamer totalement son héritage;;;;;;x;;;;;;;;;;;;;;
 EVTNAME_RIRSEI_939393;The Second Roman Era;Le Second Âge de Rome;;;;;;;;;;x;;;;;;;;;;
-EVTDESC_RIRSEI_939393;If some denounced our glorious ancestor as a pretender when he snatched the Eastern Imperial Crown from the Greeks, they would not have imagined that his decendants would restore the former glory of the Empire. Yes, we now guide Christendom! May the honour and glory of the ancient Romans, from Constantine to Charlemagne, be upon us !; Si certains ont pu traiter notre illustre aieul de parvenu lorsqu'il s'empara de la couronne impériale d'Orient aux mains des Grecs, ils étaient loin d'imaginer que c'était ses descendants qui restaurerait l'Empire dans toute sa dignité ! Oui, nous guidons désormais la chrétienté ! En avant, maintenant, que la gloire et l'honneur des anciens Romains, de Constantin et de Charlemagne nous accompagnent !;;;;;;;;;;x;;;;;;;;;;
+EVTDESC_RIRSEI_939393;If some denounced our glorious ancestor as a pretender when he snatched the Eastern Imperial Crown from the Greeks, they would not have imagined that his decendants would restore the former glory of the Empire. Yes, we now guide Christendom! May the honour and glory of the ancient Romans, from Constantine to Charlemagne, be upon us !; Si certains ont pu traiter notre illustre aieul de parvenu lorsqu'il s'empara de la couronne impériale d'Orient aux mains des Grecs, ils étaient loin d'imaginer que c'était ses descendants qui restaureraient l'Empire dans toute sa dignité ! Oui, nous guidons désormais la chrétienté ! En avant, maintenant, que la gloire et l'honneur des anciens Romains, de Constantin et de Charlemagne nous accompagnent !;;;;;;;;;;x;;;;;;;;;;
 EVTOPTA_RIRSEI_939393;Esto perpetua !; Esto perpetua !;;;;;;;;;;x;;;;;;;;;;
 EVTNAME_RIRSEI_949494;The Second Roman Era;Le Second Âge de Rome;;;;;;;;;;x;;;;;;;;;;
 EVTDESC_RIRSEI_949494;If some of us considered the Catholic monarch who usurped the Eastern Imperial crown as a baseless pretender, we were far from imagining that they would restore the Empire in all its former glory ! They now guide Christendom and claim all the prerogatives that Rome once enjoyed.; Si certains d'entre nous ont considéré le monarque catholique qui usurpa la couronne impériale d'Orient comme un parvenu, nous étions loin d'imaginer que c'était ses descendants qui restaureraient l'Empire dans toute sa dignité ! Ils guident désormais la chrétienté et réclament toutes les prérogatives de l'Empire romain.;;;;;;;;;;x;;;;;;;;;;
@@ -1637,7 +1637,7 @@ ct_Charte_Piquiers_Suisse_desc;;Face à la révolte sourde des classes urbaines, u
 ca_culture_Badawi_syst_1;Imad;Imad;;;;;;;;;x;;;;;;;;
 Badawi_syst_1_desc;;"Imad" signifie "piquets de tentes". C'est la grande différence entre les sédentaires et les "Badawi", les bédouins, dans le monde musulman. Les bédouins, qui désignent des forces tribales ou nomades, vivent simplement, sans luxe, et d'une façon très austère. Leur asabiyya, leur esprit de clan, est très forte. Ces guerriers sont armés légèrement, mais ils possèdent un moral hors norme.;;;;;;;x;;;;;;;;
 ca_culture_Badawi_syst_2;Sabiqua;Sabiqua;;;;;;;;;x;;;;;;;;
-Badawi_syst_2_desc;The Sabiqua determine the first moments of a construction to go beyond the tribe itself. The greatest problem with Badawi is that they generally spend more time in killing themselves in family, clanic or tribal strife rather than unite against others. With a sufficient level of tribal authority, we might be able to cease strifes and rise more warriors.;La Sabiqua détermine les premiers instants d'une construction pour aller au-delà de la simple tribu. Le grand défaut des Badawi, c'est qu'ils passent plus de temps à se tuer entre-eux lors de querelles familiales, claniques ou tribales qu'à s'unifier contre les autres. Avec un niveau d'autorité tribale suffisant, il est possible de faire cesser ces querelles, et ainsi lever plus de guerriers.;;;;;;;x;;;;;;;;
+Badawi_syst_2_desc;The Sabiqua determine the first moments of a construction to go beyond the tribe itself. The greatest problem with Badawi is that they generally spend more time in killing themselves in family, clanic or tribal strife rather than unite against others. With a sufficient level of tribal authority, we might be able to cease strifes and rise more warriors.;La Sabiqua détermine les premiers instants d'une construction politique pour aller au-delà de la simple tribu. Le grand défaut des Badawi, c'est qu'ils passent plus de temps à se tuer entre-eux lors de querelles familiales, claniques ou tribales qu'à s'unifier contre les autres. Avec un niveau d'autorité tribale suffisant, il est possible de faire cesser ces querelles, et ainsi lever plus de guerriers.;;;;;;;x;;;;;;;;
 ca_culture_Badawi_syst_3;Dawa;Dawa;;;;;;;;;x;;;;;;;;
 Badawi_syst_3_desc;The Dawa is a religious message. According to Ibn Khaldoun, a dawa in a Bedouin tribe strenghten considerably its Asabiyya. The message is often preached by a Mahdi or a shia missionnary during a pelerinage to Mecca. When a tribe possess a dawa, it becomes entirely focused on the propagation of this message, especially by military means.;La Dawa est le message religieux. Selon Ibn Khaldoun, une dawa dans une tribu bédouine renforce considérablement l'asabiyya de celle-ci. Ce message est souvent prêché par un Mahdi ou un missionnaire chiite, rencontré lors du pelerinage à la Mecque. Lorsqu'une tribu dispose d'une dawa, elle est toute entière tournée vers la propagation de ce message, y compris et surtout par les armes.;;;;;;;x;;;;;;;;
 muslim_government;Mulk;Mulk;;;;;x;;;;;;;;;;;;;
@@ -1749,7 +1749,7 @@ tp_culture_Hongrois_sysfed_2;;Bandiera;;;;;x;;;;;;;;
 ca_culture_Hongrois_sysfed_2_desc;;Au fil du temps, la société hongroise est désormais majoritairement sédentaire et féodalisé. L'influence française est très forte sur l'aristocratie et la noblesse hongroise. Ils ont adoptés le même équipement, la même tactique, et les mêmes valeurs chevaleresques. De même, les descendants des hospites, les chevaliers allemands et italiens du souverain, sont devenus des familles nobles puissantes. Pour contrôler les barons et les chevaliers, la couronne a crée un ordre de chevalerie, l'Ordre de Saint-Georges, liant le souverain à ses chevaliers. L'armée est désormais divisée en bandiera, ou bannières. Le souverain lève sa propre bannière sur son domaine royal, les barons amenant chacun la sienne propre. Ce système permet de déployer un grand nombre de cavaliers lourds, motivés et redoutables au combat.\nLes troupeaux de chevaux ont été petit-à-petit remplacés par du bétail. L'élément nomade de la société hongroise s'est considérablement tari. Il reste encore quelques cavaliers légers et quelques archers à cheval, souvent des nomades casés sur les frontières. Ils ne forment plus le coeur de l'armée, mais seulement des auxiliaires utiles.\nDu reste, la féodalisation a fait disparaître les jobbagy, les paysans libres. Toutefois, la couronne lève quelques hommes parmi les slaves ou les colons allemands : ils viennent à la guerre souvent comme arbalétriers.;;;;x;;;;;;;;
 ca_culture_Hongrois_sysfed_3;;Militia Portalis;;;;;x;;;;;;;;
 tp_culture_Hongrois_sysfed_3;;Militia Portalis;;;;;x;;;;;;;;
-ca_culture_Hongrois_sysfed_3_desc;;L'évolution militaire et la restauration de la puissance publique face aux pouvoirs féodaux permettent des changements drastiques dans l'organisation militaire du royaume. Tout d'abord, l'obligation militaire est étendue à l'ensemble de la population. La militia portalis est l'institution de cette volonté : pour chaque 20 paysans, l'un d'entre-eux doit venir à l'armée comme archer ou arbalétrier. De plus, les nobles doivent fournir un cavalier léger pour chaque 20 serfs en tenure. Ces cavaliers légers sont redoutables, rapides, armés à la légère, ne combattant qu'à cheval. Cette nouvelle cavalerie, les hussards, sont utiles mais trop légers pour former le coeur de l'armée.\nL'aristocratie hongroise s'est retiré du fait militaire, tant par envie que par la volonté du pouvoir d'écarter des barons parfois trop puissants. Pour pallier au besoin d'une cavalerie lourde digne de ce nom, le souverain a crée la Fekete Sereg, l'Armée Noire. C'est une armée permanente, constituée de mercenaires, qui sont soldés et équipés par le pouvoir. Cette armée est composée en grande partie de cavalerie lourde, des chevaliers, souvent allemands, leur charge est capable de remporter n'importe quelle bataille. Moins nombreuse, mais tout aussi importante est l'infanterie de l'Armée Noire. Elle mêle tant des pavesiers lourds que des piquiers suisses, appuyant un nombre impressionnant d'escopettier. C'est une infanterie polyvalente, capable de se défendre contre n'importe quelle menace.;;;;;;;x;;;;;;;;
+ca_culture_Hongrois_sysfed_3_desc;;L'évolution militaire et la restauration de la puissance publique face aux pouvoirs féodaux permettent des changements drastiques dans l'organisation militaire du royaume. Tout d'abord, l'obligation militaire est étendue à l'ensemble de la population. La militia portalis est l'institution de cette volonté : pour chaque 20 paysans, l'un d'entre-eux doit venir à l'armée comme archer ou arbalétrier. De plus, les nobles doivent fournir un cavalier léger pour chaque 20 serfs en tenure. Ces cavaliers légers sont redoutables, rapides, armés à la légère, ne combattant qu'à cheval. Cette nouvelle cavalerie, les hussards, sont utiles mais trop légers pour former le coeur de l'armée.\nL'aristocratie hongroise s'est retiré du fait militaire, tant par envie que par la volonté du pouvoir d'écarter des barons parfois trop puissants. Pour pallier au besoin d'une cavalerie lourde digne de ce nom, le souverain a crée la Fekete Sereg, l'Armée Noire. C'est une armée permanente, constituée de mercenaires, qui sont soldés et équipés par le pouvoir. Cette armée est composée en grande partie de cavalerie lourde, des chevaliers, souvent allemands, leur charge est capable de remporter n'importe quelle bataille. Moins nombreuse, mais tout aussi importante est l'infanterie de l'Armée Noire. Elle mêle tant des pavesiers lourds que des piquiers suisses, appuyant un nombre impressionnant d'escopettiers. C'est une infanterie polyvalente, capable de se défendre contre n'importe quelle menace.;;;;;;;x;;;;;;;;
 ca_culture_croate_syst_1;;Bannum Chroatorum;;;;;x;;;;;;;;
 tp_culture_croate_syst_1;;Bannum Chroatorum;;;;;x;;;;;;;;
 croate_syst_1_desc;;Les légendes racontent que les Croates vinrent sur leurs terres comme invités de l'empereur d'orient, Héraclius. Mais l'influence de Byzance est bien faible sur les pratiques militaires de ce peuple slave. Tout homme libre se doit d'aller à la guerre. La grande majorité de la population est très pauvrement armée : soit des fantassins légers, maniant seax et boucliers ronds, soit des frondeurs ou des archers. Ces individus forment de formidables pirates sur la mer adriatique. Mais la noblesse croate subit l'influence franque : elle importe des armes et armures pour combattre comme des milites ensiferes, des cavaliers lourds.;;;;;x;;;;;;;;
@@ -1871,7 +1871,7 @@ ca_culture_georgiens_3;Ganmgebeli da Qevisberi;;;;;;;;;;;x
 ca_culture_georgiens_3_desc;;Lorsque la puissance monarchique souhaite imposer son pouvoir sur les terres géorgiennes, ses deux principaux adversaires, les nobles (eristavi comme aznauri) et les clans montagnards (erisgani) forment aussi les principales réserves de guerriers. C'est pour cela que le souverain se doit plus de chercher à contrôler ces deux groupes plutôt que de les écraser.\nDu côté des erisgani, un pseudo-système féodal est implanté : ces clans doivent se rassembler et suivre un qevisberi, un chef local, parfois nommé par la couronne. Ce qevisberi dépend directement du souverain, court-cicuitant tout intermédiaire noble. Les erisgani combattent comme des fantassins légers, mais ils sont généralement bien équipés grâce au fer abondant du Caucase, et leur dureté au combat n'égale que celle de leur pays.\nDu côté des eristavi, ces derniers continuent à gérer leurs terres. Mais leur pouvoir militaire est limité par un fonctionnaire nommé par le roi, le ganmgebeli, qui seul, peut autoriser la levée des troupes. Le ganmgebeli est le supérieur des qevisberi et de gouverneurs plus locaux (généralement en charge d'une garnison), comme les cixistavi. Les Aznauri forment toujours une cavalerie lourde, mais l'influence de la steppe est de plus en plus forte: désormais, la plupart manient autant l'arc que la lance. Les Aznauri les plus pauvres préfèrent aussi combattre comme archers à cheval légers.\nPour parachever cette oeuvre administrative et militaire, la couronne a décidé d'imposer un service militaire obligatoire par communautés, villageoises ou montagnardes. Ces réformes intelligentes permettent s'asseoir considérablement la puissance du souverain dans tous ses états, tout en tirant un maximum de guerriers possible.;;;;;;;;;;x
 ca_culture_zoroastrien_syst_1;;Azadan o Paygan;;;;;x;;;;;;;;
 tp_culture_zoroastrien_syst_1;;Azadan o Paygan;;;;;x;;;;;;;;
-zoroastrien_syst_1_desc;;Après l'effondrement de l'état central sassanide, les rares structures subsistantes dans le Daylam ou jouxtant les périphéries turques sont foncièrement simples et locales. A la tête de petits et moyens domaines fonciers, qui peuvent englober plusieurs villages, se trouvent les Azadans, la noblesse. Ces nobles aiment exhiber leurs exploits équestres en jouant au polo, très populaire en Iran. Les Azadans ont une culture quasi-chevaleresque, rivalisant de bravoure et d'orgueil au combat. Mais les faibles structures administratives et fiscales ne leur permette pas de s'équiper comme des cataphractaires. Ils restent toutefois lourdement armés, avec des cottes de mailles ou d'écailles, et ils manient l'arc comme la lance. Les Azadans pauvres vont aussi au combat, mais souvent comme simple archers à cheval. /nDerrière les nobles rutilants viennent les plus piteux Paygan. Ce sont des paysans, des "serfs", conscrits de force par les nobles afin de faire nombre. Ils sont bien mal armés, un bouclier d'osier, une lance ridicule, et leur seul vêtement comme armure. Ils sont très rarement entraînés, et bien peu ont l'expérience du combat. Les Paygan sont contraints de se battre et sont méprisés, voires maltraités par les autres éléments de l'armée, nobles comme mercenaires. Ils ne servent uniquement qu'à faire nombre, et ils s'enfuiront devant la première difficulté. Seuls les archers, parfois issus de tribus ou de colons nomades, sont bien plus efficaces et estimés./nLorsqu'un état zoroastrien s'empare d'un nouveau territoire, il en donne tout d'abord la gestion aux azadans, sous forme de pseudo-fiefs, ce qui permet une exploitation rapide du territoire, notamment au niveau militaire.;;;;;x;;;;;;;;
+zoroastrien_syst_1_desc;;Après l'effondrement de l'état central sassanide, les rares structures subsistantes dans le Daylam ou jouxtant les périphéries turques sont foncièrement simples et locales. A la tête de petits et moyens domaines fonciers, qui peuvent englober plusieurs villages, se trouvent les Azadans, la noblesse. Ces nobles aiment exhiber leurs exploits équestres en jouant au polo, très populaire en Iran. Les Azadans ont une culture quasi-chevaleresque, rivalisant de bravoure et d'orgueil au combat. Mais les faibles structures administratives et fiscales ne leur permettent pas de s'équiper comme des cataphractaires. Ils restent toutefois lourdement armés, avec des cottes de mailles ou d'écailles, et ils manient l'arc comme la lance. Les Azadans pauvres vont aussi au combat, mais souvent comme simple archers à cheval. /nDerrière les nobles rutilants viennent les plus piteux Paygan. Ce sont des paysans, des "serfs", conscrits de force par les nobles afin de faire nombre. Ils sont bien mal armés, un bouclier d'osier, une lance ridicule, et leur seul vêtement comme armure. Ils sont très rarement entraînés, et bien peu ont l'expérience du combat. Les Paygan sont contraints de se battre et sont méprisés, voires maltraités par les autres éléments de l'armée, nobles comme mercenaires. Ils ne servent uniquement qu'à faire nombre, et ils s'enfuiront devant la première difficulté. Seuls les archers, parfois issus de tribus ou de colons nomades, sont bien plus efficaces et estimés./nLorsqu'un état zoroastrien s'empare d'un nouveau territoire, il en donne tout d'abord la gestion aux azadans, sous forme de pseudo-fiefs, ce qui permet une exploitation rapide du territoire, notamment au niveau militaire.;;;;;x;;;;;;;;
 ca_culture_zoroastrien_syst_2;;Spah;;;;;x;;;;;;;;
 tp_culture_zoroastrien_syst_2;;Spah;;;;;x;;;;;;;;
 zoroastrien_syst_2_desc;;Le spah désigne l'armée iranienne, structurée et organisée à l'image des sassanides. Un puissant shah ou shahenshah nomme un spahbod, une sorte de connétable/ministre de la guerre, à la la tête de l'armée. Des officiers existent à plusieurs échelons, notamment pour diriger l'infanterie et surtout la cavalerie.\nLe retour à une administration et une fiscalité digne de ce nom permet aux Azadans, la noblesse, de s'équiper lourdement comme cataphractaires. Les cataphractaires perses sont reconnus pour être les plus redoutables. Leur cheval, de race niséenne, grand et robuste est carapaçonné lourdement d'écailles de métal. Les cavaliers sont entièrement protégés, du sommet de la tête jusqu'aux doigts de pied, par une armure très lourde, en mailles ou en écailles. Les Azadans s'entraînent régulièrement et rivalisent d'agilité et de bravoure dans des jeux équestres, comme le polo. Ils manient la lance, l'arc, et leurs terribles masses contre lesquelles aucune armure n'est utile.Les cataphractaires azadans sont redoutables sur le champ de bataille, et bien peu de troupes peuvent resister à leur charge./nPour protéger ces cavaiers très lourds, les archers, qui criblent de flèches l'infanterie lourde comme la cavalerie adverse plus mobile, sont essentiels. Ils sont donc souvent équipés d'une armure, souvent des cottes de mailles. Enfin, ils disposent de la protection de l'infanterie légère, les Paygan, même si ces derniers, mal équipés et méprisés, s'enfuiront à la première occasion.;;;;;;;x;;;;;;;;
@@ -2505,107 +2505,107 @@ saxvieuxger;Herzog;Herzog;;;;;;x;;;;;;;;;;
 d_jewish;Ha-Cohen;Ha-Cohen;;;;x;;;;;;;;;;
 d_valois;Francie;Francie;;;;;;x;;;;;;;;;;
 duchy_of_norse;Jarldom of;Jarldom de;Grafschaft von;;Jarldom de;;;;;;;;;x;;
-duke_finnish_pagan;High Chief;Herttua;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-duke_female_finnish_pagan;High Chieftess;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+duke_finnish_pagan;Herttua;Herttua;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+duke_female_finnish_pagan;Herttuatar;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 duke_finnish_pagan_reformed;High Chief;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 duke_female_finnish_pagan_reformed;High Chieftess;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-king_finnish_pagan;High Chief;Kuningas;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-king_female_finnish_pagan;Kuninganna;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+king_finnish_pagan;Kuningas;Kuningas;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+king_female_finnish_pagan;Kuninganna;Kuninganna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 king_finnish_pagan_reformed;Kuningas;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 king_female_finnish_pagan_reformed;kuninganna;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-duchy_of_finnish_pagan;High Chiefdom of;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+duchy_of_finnish_pagan;Herttuakunta;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
 duchy_of_finnish_pagan_reformed;High Chiefdom of;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-duke_baltic_pagan;High Chief;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-duke_female_baltic_pagan;High Chieftess;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+duke_baltic_pagan;Hertsog;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+duke_female_baltic_pagan;Hertsoginna;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 duke_baltic_pagan_reformed;High Chief;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 duke_female_baltic_pagan_reformed;High Chieftess;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-duchy_of_baltic_pagan;High Chiefdom of;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+duchy_of_baltic_pagan;Hertsogkond;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
 duchy_of_baltic_pagan_reformed;High Chiefdom of;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duke_finnish_pagan;High Chief;Herttua;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-tribal_duke_female_finnish_pagan;High Chieftess;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+tribal_duke_finnish_pagan;Herttua;Herttua;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_duke_female_finnish_pagan;Herttuatar;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 tribal_duke_finnish_pagan_reformed;High Chief;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 tribal_duke_female_finnish_pagan_reformed;High Chieftess;Herttuatar;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-tribal_king_finnish_pagan;High Chief;Kuningas;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-tribal_king_female_finnish_pagan;Kuninganna;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+tribal_king_finnish_pagan;Kuningas;Kuningas;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_king_female_finnish_pagan;Kuninganna;Kuninganna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 tribal_king_finnish_pagan_reformed;Kuningas;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 tribal_king_female_finnish_pagan_reformed;kuninganna;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-tribal_duchy_of_finnish_pagan;High Chiefdom of;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duchy_of_finnish_pagan_reformed;High Chiefdom of;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duke_baltic_pagan;High Chief;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-tribal_duke_female_baltic_pagan;High Chieftess;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-tribal_duke_baltic_pagan_reformed;High Chief;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_duchy_of_finnish_pagan;Herttuakunta;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+tribal_duchy_of_finnish_pagan_reformed;Herttuakunta;Herttuakunta;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+tribal_duke_baltic_pagan;Hertsog;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_duke_female_baltic_pagan;Hertsoginna;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+tribal_duke_baltic_pagan_reformed;Hertsog;Hertsog;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 tribal_duke_female_baltic_pagan_reformed;High Chieftess;Hertsoginna;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-tribal_duchy_of_baltic_pagan;High Chiefdom of;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duchy_of_baltic_pagan_reformed;High Chiefdom of;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+tribal_duchy_of_baltic_pagan;Hertsogkond;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+tribal_duchy_of_baltic_pagan_reformed;Hertsogkond;Hertsogkond;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
 duke_tengri_pagan;High Chief;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 duke_female_tengri_pagan;High Chieftess;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 duke_tengri_pagan_reformed;High Chief;Haut Chef;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 duke_female_tengri_pagan_reformed;High Chieftess;Haute Cheftaine;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-duke_slavic_pagan;High Chief;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-duke_female_slavic_pagan;High Chieftess;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+duke_slavic_pagan;Ksiaze;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+duke_female_slavic_pagan;Ksiaze;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 duke_slavic_pagan_reformed;High Chief;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 duke_female_slavic_pagan_reformed;High Chieftess;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-duchy_of_slavic_pagan;High Chiefdom of;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+duchy_of_slavic_pagan;Ksiestwo;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
 duchy_of_slavic_pagan_reformed;High Chiefdom of;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duke_slavic_pagan;High Chief;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-tribal_duke_female_slavic_pagan;High Chieftess;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+tribal_duke_slavic_pagan;Ksiaze;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_duke_female_slavic_pagan;Ksiaze;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 tribal_duke_slavic_pagan_reformed;High Chief;Ksiaze;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
 tribal_duke_female_slavic_pagan_reformed;High Chieftess;Ksiaze;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
-tribal_duchy_of_slavic_pagan;High Chiefdom of;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
+tribal_duchy_of_slavic_pagan;Ksiestwo;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
 tribal_duchy_of_slavic_pagan_reformed;High Chiefdom of;Ksiestwo;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_duke_old_saxon;High Chief;Earl;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
-tribal_duke_female_old_saxon;High Chieftess;Quan;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
+tribal_duke_old_saxon;Earl;Earl;Hoher Häuptling;;Alto mandatario;;;;;;;;;x;;
+tribal_duke_female_old_saxon;Quan;Quan;Hohe Herrscherin;;Alto mandataria;;;;;;;;;x;;
 tribal_duchy_of_old_saxon;High Chiefdom of;Haute Chefferie de;Hochhäuptlingstum von;;Alto Cacicazgo de;;;;;;;;;x;;
-tribal_king_old_saxon;Grand Chief;Cyng;Großhäuptling;;Gran Mandatario;;;;;;;;;x;;
-tribal_king_female_old_saxon;Grand Chieftess;Quan;Großherrscherin;;Gran Mandataria;;;;;;;;;x;;
+tribal_king_old_saxon;Cyng;Cyng;Großhäuptling;;Gran Mandatario;;;;;;;;;x;;
+tribal_king_female_old_saxon;Quan;Quan;Großherrscherin;;Gran Mandataria;;;;;;;;;x;;
 tribal_kingdom_of_old_saxon;Grand Chiefdom of;Grande Chefferie de;Großhäuptlingstum von;;Gran Cacicazgo de;;;;;;;;;x;;
 tribal_duke_norse;Jarl;Jarl;Graf;;Jarl;;;;;;;;;x;;
-tribal_king_norse;Jarl;Konungr;Graf;;Jarl;;;;;;;;;x;;
-tribal_duke_russian;Jarl;Knyaz;Graf;;Jarl;;;;;;;;;x;;
-tribal_count_russian;Jarl;Boyar;Graf;;Jarl;;;;;;;;;x;;
-tribal_king_russian;Jarl;Velikii Knyaz;Graf;;Jarl;;;;;;;;;x;;
+tribal_king_norse;Konungr;Konungr;Graf;;Jarl;;;;;;;;;x;;
+tribal_duke_russian;Knyaz;Knyaz;Graf;;Jarl;;;;;;;;;x;;
+tribal_count_russian;Boyar;Boyar;Graf;;Jarl;;;;;;;;;x;;
+tribal_king_russian;Velikii Knyaz;Velikii Knyaz;Graf;;Jarl;;;;;;;;;x;;
 tribal_emperor_altaic;Khagan;Khagan;Khagan;;Gran Kan;;;;;;;;;x
 tribal_emperor_female_altaic;Khatun;Khatoun;Khatun;;Khatun;;;;;;;;;x
 tribal_empire_of_altaic;Khaganate of;Khaganat de;Großkhanat von;;Kaganato de;;;;;;;;;x
 tribal_king_altaic;Khan;Khan;Khan;;Kan;;;;;;;;;x
 tribal_king_female_altaic;Khanum;Khanoum;Khanum;;Khanum;;;;;;;;;x
 tribal_kingdom_of_altaic;Khanate of;Khanat;Khanat von;;Kanato de;;;;;;;;;x
-tribal_king_arabic;Sultan;Amîr;Sultan;;Sultán;;;;;;;;;x
-tribal_king_female_arabic;Sultana;Amîra;Sultanin;;Sultana;;;;;;;;;x
-tribal_kingdom_of_arabic;Sultanate of;Amîrat;Sultanat von;;Sultanato de;;;;;;;;;x
+tribal_king_arabic;Amîr;Amîr;Sultan;;Sultán;;;;;;;;;x
+tribal_king_female_arabic;Amîra;Amîra;Sultanin;;Sultana;;;;;;;;;x
+tribal_kingdom_of_arabic;Amîrat;Amîrat;Sultanat von;;Sultanato de;;;;;;;;;x
 tribal_emperor_arabic;Badshah;Badshah;Badshah;;Badshah;;;;;;;;;x
-tribal_emperor_russian;Tsar;Tsar Autokratôr;Zar;;Zar;;;;;;;;;x
-tribal_emperor_female_russian;Tsaritsa;Tsarina;Zarin;;Zarina;;;;;;;;;x
+tribal_emperor_russian;Tsar Autokratôr;Tsar Autokratôr;Zar;;Zar;;;;;;;;;x
+tribal_emperor_female_russian;Tsarina;Tsarina;Zarin;;Zarina;;;;;;;;;x
 d_franche_comte;Burgundy;Bourgogne;;;;;;;;;;x
 IMPOCCP;Imperium Romanorum Pars Occidentalis;Imperium Romanorum Pars Occidentalis;;;;;;x;;;;;;;;;;
 IMPORIP;Imperium Romanorum Pars Orientalis;Imperium Romanorum Pars Orientalis;;;;;;x;;;;;;;;;;
 SACRIMR;Sacrum Imperium Romanum;Sacrum Imperium Romanum;;;;;;x;;;;;;;;;;
 RULE_ACHIEVEMENTS_WARNINGS; §RThis setting can not be change!§!; §RCe réglage ne peut pas être changé !§!;;;;;;;;;;;;x
 #;;;;;;;;;;;;x;;;;;;;;;; 
-dejure_duchy_rirsei_claim;;Vous pouvez réclamer ce duché, car il appartient de jure à votre royaume;;;;;x;;;;;;;;
-carolingian;;Sang de Pépin le Bref;;;;;;;x;;
+dejure_duchy_rirsei_claim;You can claim this duchy, because you're the de jure liege;Vous pouvez réclamer ce duché, car il appartient de jure à votre royaume;;;;;x;;;;;;;;
+carolingian;Blood of Pepin;Sang de Pépin le Bref;;;;;;;x;;
 carolingian_desc;;La dynastie de Pépin le Bref a été béni par le Pape, interdisant aux Francs "d'oser jamais élire à l'avenir un roi issu d'autres reins que ceux-ci".;;;;;;;x;;
-philippe_capet;;Sang de Saint Louis;;;;;;;x
+philippe_capet;Blood of Saint Louis;Sang de Saint Louis;;;;;;;x
 philippe_capet_desc;;Courageux, juste et pieux, Saint Louis représente le modèle parfait du roi chrétien. Sa nombreuse descendance profite directement de sa canonisation.;;;;;;;x
-boleslaw_the_brave;;Sang de Piast le Charron;;;;;;;;x;;;;;;;;;;
+boleslaw_the_brave;Blood of Piast the Wheelwright;Sang de Piast le Charron;;;;;;;;x;;;;;;;;;;
 boleslaw_the_brave_desc;;Piast le Charron est le fondateur légendaire de la dynastie des Piast qui régna sur la Pologne.;;;;;;;;x;;;;;;;;;; 
-premyslid;;Sang de Premysl le Laboureur;;;;;;x;;;;;;;;;;  
+premyslid;Premysl the Ploughman;Sang de Premysl le Laboureur;;;;;;x;;;;;;;;;;  
 premyslid_desc;;Premysl le Laboureur est le fondateur légendaire de la dynastie des Premyslides qui régna sur la Bohême.;;;;;;x;;;;;;;;;;
-saint_olaf;;Sang de Saint Olaf;;;;;;x;;;;;;;;;;
+saint_olaf;Blood of Saint Olaf;Sang de Saint Olaf;;;;;;x;;;;;;;;;;
 saint_olaf_desc;;Saint Olaf établit définitivement le christianisme en Norvège. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
-saint_knut;;Sang de Knut le Saint;;;;;;x;;;;;;;;;;
+saint_knut;Blood of Kanute the Holy;Sang de Knut le Saint;;;;;;x;;;;;;;;;;
 saint_knut_desc;;Saint Knut était connu pour sa prodigalité envers l'Eglise et les miracles qu'il effectua. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
-saint_eric;;Sang de Saint Eric;;;;;;x;;;;;;;;;;
+saint_eric;Blood of Saint Eric;Sang de Saint Eric;;;;;;x;;;;;;;;;;
 saint_eric_desc;;Saint Eric favorisa le christianisme et mourut en martyr durant la messe. Tous ses descendants tirent gloire et fierté de sa canonisation.;;;;;;x;;;;;;;;;; 
-baibars;;Sang de Qala'ûn;;;;x;;;;;;;;;;
+baibars;Blood of Qala'ûn;Sang de Qala'ûn;;;;x;;;;;;;;;;
 baibars_desc;;Qala'ûn est un important sultan mamelouk qui lutta victorieusement contre les Francs et les Mamelouks. Ses succès et sa gloire favorisent la légitimité de ses descendants.;;;;x;;;;;;;;;;
-Omeyades;;Sang de 'Ummayah;;;;x;;;;;;;;;;
+Omeyades;Blood of 'Ummayah;Sang de 'Ummayah;;;;x;;;;;;;;;;
 Omeyades_desc;;Les Banu 'Ummayah forment l'un des clans les plus importants du monde musulman. Ils tirent leur légitimité de 'Ummayah, grand oncle du prophète.;;;;x;;;;;;;;;;
-Abbassides;;Sang de Al-Abbas;;;;x;;;;;;;;;;
+Abbassides;Blood of Al-Abbas;Sang de Al-Abbas;;;;x;;;;;;;;;;
 Abbassides_desc;;Les Abbassides forment l'une des familles les plus importantes du monde musulman. Ils tirent leur légitimité de Al-Abbas, oncle du prophète.;;;;x;;;;;;;;;; 
-Alides;;Sang d'Ali & Fatima;;;;x;;;;;;;;;;
+Alides;Blood of Ali & Fatima;Sang d'Ali & Fatima;;;;x;;;;;;;;;;
 Alides_desc;;Les descendants d'Ali, cousin du Prophète, et de Fatima, fille du prophète, tirent leur légitimité de ces deux aieux. Ce sont les dirigeants naturels de l'Islam pour tous les shiites.;;;;x;;;;;;;;;; 
-saladin;;Sang d'Ayyub;;;;x;;;;;;;;;;
+saladin;Blood of Ayyub;Sang d'Ayyub;;;;x;;;;;;;;;;
 saladin_desc;;Ayyub est le fondateur de la dynastie des Ayyoubides. Dynastie kurde et légataires des Zenguides, ils sont les grands partisans du Djihad.;;;;x;;;;;;;;;;          
 #;;;;;;;;;;;;x;;;;;;;;;; 
 #;CHINA;;;;;;;;;;;x;;;;;;;;;; 
@@ -2673,7 +2673,7 @@ EVTOPTA_RIRSEIVD_11148;;Très bien !;;;;;;;x
 EVTNAME_RIRSEIVD_11151;;La demande du Patriarche;;;;;;;x
 EVTDESC_RIRSEIVD_11151;;Le Patriarche de Constantinople joue un rôle primordial dans le couronnement du Basileus. Si cette cérémonie peut se passer des officiers et des sénateurs, elle ne peut pas se passer du Patriarche qui couronne et sanctifie le Basileus Autokrator tel un nouveau David. Malheureusement pour nous, le Patriarche actuel n'a pas accepté docilement notre requête, et il nous demande de faire un serment public de rester fidèle au Christ et à l'Eglise qui le représente. Depuis Constantin, le Basileus des Romains est considéré comme l'image de Dieu sur terre : une telle déclaration abaisserait notre prestige. Nous pouvons accepter, ou tout simplement déposer le Patriarche pour en choisir un autre plus commode;;;;;;;x
 EVTOPTA_RIRSEIVD_11151;;Bah, prêtons serment !;;;;;;;x
-EVTOPTB_RIRSEIVD_11151;;EIMI BASILEUS !;;;;;;;x
+EVTOPTB_RIRSEIVD_11151;EIMI BASILEUS;EIMI BASILEUS !;;;;;;;x
 EVTNAME_RIRSEIVD_11152;;Le soutien du Patriarche;;;;;;;x
 EVTDESC_RIRSEIVD_11152;;Le Patriarche de Constantinople joue un rôle primordial dans le couronnement du Basileus. Si cette cérémonie peut se passer des officiers et des sénateurs, elle ne peut pas se passer du Patriarche qui couronne et sanctifie le Basileus Autokrator tel un nouveau David. Le Patriarche actuel est heureux de participer à votre couronnement, et il priera avec ferveur pour que votre règne soit sanctifié par Dieu.;;;;;;;x
 EVTOPTA_RIRSEIVD_11152;;Bien !;;;;;;;x
@@ -2706,27 +2706,96 @@ EVTDESC_RIRSEIVD_11162;;Au métatorium, vous vous habillez enfin de la tenue impé
 EVTOPTA_RIRSEIVD_11162;;Que Dieu me garde !;;;;;;;x
 EVTNAME_RIRSEIVD_11153;;Le couronnement du Basileus;;;;;;;;x
 EVTDESC_RIRSEIVD_11153;;Dans l'ambon de Sainte-Sophie, le Patriarche de Constantinople a posé la couronne sur la tête de [Root.GetTitledFirstName] en exclamant : " Au Nom du Père, du Fils et du Saint-Esprit". Le Basileus couronné relève la tête et l'assistance s'est mise à chanter : "Hagios, Hagios, Hagios !" (Saint, Saint, Saint!). Que tous les Rhômaioi et les Chrétiens se réjouissent en ce jour !;;;;;;;;x
-EVTOPTA_RIRSEIVD_11153;;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
-byz_couronne;;Ennomos Basileus (empereur légitime);;;;;;x
+EVTOPTA_RIRSEIVD_11153;Mégalou Basileus kai Autokratoros polla ta étè !;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
+byz_couronne;Ennomos Basileus;Ennomos Basileus (empereur légitime);;;;;;x
 byz_couronne_desc;;Cette personne a été couronné dans la basilique Sainte-Sophie. Il est considéré comme le Ennomos Basileus (empereur légitime) de la Basiléia tôn Rhômaion;;;;;;x
 refus_nego_byz;;Outré par le refus de négocier de la part du Basileus;;;;;;;;;x
 patriarche_demis;;Ce patriarche a été démis par le Basileus !;;;;;;;;;x
 tooltip_empereur_legitime;;Il est Ennomos Basileus;;;;;;x
-title_sumbasileus;;Sumbasileus;;;;;;;x
+title_sumbasileus;Sumbasileus;Sumbasileus;;;;;;;x
 title_sumbasileus_desc;;Le Sumbasileus est le co-empereur, désigné et couronné par le Basileus lui-même. Il est considéré par tous comme l'héritier légitime de la Basileia tôn Rhômaion, même s'il n'est qu'un enfant.;;;;;;;x
 tooltip_feudal_elector_vote_sumbasileus;;est le Sumbasileus;;;;;x
 tooltip_feudal_elector_vote_regent;;Il est le régent, il tient déjà les rênes du pouvoir !;;;;;;;x
 tooltip_feudal_elector_vote_ennomos;;Il a déjà été couronné Basileus;;;;;x
 EVTNAME_RIRSEIVD_11163;;Couronnement du Sumbasileus;;;;;;x
-EVTDESC_RIRSEIVD_11163;;En couronnant [From.GetTitledFirstName], vous le désignez comme votre successeur légitime pour prendre la tête de la Basileia tôn Rhômaiôn. Après avoir convoqué les officiers de l'armée et les sénateurs lors d'une cérémonie dans Sainte-Sophie, le Patriarche amène et bénit le manteau et la fibule impériale. Il vous donne les vêtements impériaux, et vous habillez vous-même le futur Sumbasileus. Le Patriarche vous apporte ensuite une deuxième couronne, semblable à la votre. Après avoir prié pour le Salut des Rhômaiôi, il vous donne cette couronne. Au milieu de l'Ambon, vous posez délicatement la couronne sur [Root.GetTitledFirstName]. L'assistance crie "Digne!", tandis que les officiers, en habits de parade, abaissent leurs étendards en signe de reconnaissance du nouvel empereur des romains.;;;;;;;;x
-EVTOPTA_RIRSEIVD_11163;;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
+EVTDESC_RIRSEIVD_11163;;En couronnant [From.GetTitledFirstName], vous le désignez comme votre successeur légitime pour prendre la tête de la Basileia tôn Rhômaiôn. Après avoir convoqué les officiers de l'armée et les sénateurs lors d'une cérémonie dans Sainte-Sophie, le Patriarche amène et bénit le manteau et la fibule impériale. Il vous donne les vêtements impériaux, et vous habillez vous-même le futur Sumbasileus. Le Patriarche vous apporte ensuite une deuxième couronne, semblable à la votre. Après avoir prié pour le Salut des Rhômaiôi, il vous donne cette couronne. Au milieu de l'Ambon, vous posez délicatement la couronne sur [From.GetTitledFirstName]. L'assistance crie "Digne!", tandis que les officiers, en habits de parade, abaissent leurs étendards en signe de reconnaissance du nouvel empereur des romains.;;;;;;;;x
+EVTOPTA_RIRSEIVD_11163;Mégalou Basileus kai Autokratoros polla ta étè !;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
 EVTNAME_RIRSEIVD_11164;;Votre couronnement à Sainte-Sophie;;;;;;x
-EVTDESC_RIRSEIVD_11164;;[From.GetTitledFirstName] vous a choisi comme héritier et a décidé de vous couronnez afin d'assurer cette succession par la légalité. Il a convoqué les officiers de l'armée et les sénateurs lors d'une cérémonie dans Sainte-Sophie. Placé auprès du Basileus, dans l'ambon, vous voyez le Patriarche apporter et bénir le manteau et la fibule impériale. Il les passe ensuite au Basileus, qui vous habille lui-même de ces deux symboles de l'autorité impériale. Le Patriarche apporte ensuite une deuxième couronne, semblable à celle du Basileus. Après avoir prié pour le Salut des Rhômaiôi, il vous donne cette couronne à [Root.GetTitledFirstName]. Au milieu de l'Ambon, il vous couronne comme Sumbasileus, comme co-empereur. L'assistance crie "Digne!", tandis que les officiers, en habits de parade, abaissent leurs étendards en signe de reconnaissance du nouvel empereur des romains.;;;;;;;;x
-EVTOPTA_RIRSEIVD_11164;;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
+EVTDESC_RIRSEIVD_11164;;[From.GetTitledFirstName] vous a choisi comme héritier et a décidé de vous couronnez afin d'assurer cette succession par la légalité. Il a convoqué les officiers de l'armée et les sénateurs lors d'une cérémonie dans Sainte-Sophie. Placé auprès du Basileus, dans l'ambon, vous voyez le Patriarche apporter et bénir le manteau et la fibule impériale. Il les passe ensuite au Basileus, qui vous habille lui-même de ces deux symboles de l'autorité impériale. Le Patriarche apporte ensuite une deuxième couronne, semblable à celle du Basileus. Après avoir prié pour le Salut des Rhômaiôi, il donne cette couronne à [Root.GetTitledFirstName]. Au milieu de l'Ambon, il vous couronne comme Sumbasileus, comme co-empereur. L'assistance crie "Digne!", tandis que les officiers, en habits de parade, abaissent leurs étendards en signe de reconnaissance du nouvel empereur des romains.;;;;;;;;x
+EVTOPTA_RIRSEIVD_11164;Mégalou Basileus kai Autokratoros polla ta étè !;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
 EVTNAME_RIRSEIVD_11165;;Couronnement d'un Sumbasileus;;;;;;x
 EVTDESC_RIRSEIVD_11165;;[From.GetTitledFirstName] a été couronné Sumbasileus lors d'une cérémonie dans Sainte-Sophie. Il est désormais l'héritier légitime du Basileus, peu importe son âge ou ses qualités.;;;;;;;;x
-EVTOPTA_RIRSEIVD_11165;;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
+EVTOPTA_RIRSEIVD_11165;Mégalou Basileus kai Autokratoros polla ta étè !;Mégalou Basileus kai Autokratoros polla ta étè !;;;;;;;x
 nego_aristos;;Subsides militaires supplémentaires;;;;;;x
 nego_dunatos;;Subsides militaires réduits;;;;;;x
 patriarche_demis_rel;;Le Patriarche de Constantinople a été démis par le Basileus;;;;;;;;;x
 patriarche_content_rel;;Le Basileus a proclamé un serment sur la foi dicté par le Patriarche;;;;;;;;;x
+######RIRSEI VARIA (REP ET BULLE)#######
+EVTNAME_RIRSEREP_00002;Annual Elections;Elections annuelles;;;;;;x
+EVTDESC_RIRSEREP_00002;;Dans l'ensemble de l'Occident médiéval, les centres urbains ont préservé, sinon entretenu, les traditions civiques de la romanité. Ainsi, bien des Communes et autres villes (ciuitates) de l'Europe latine sont dirigées par des consuls, élus par des assemblées populaires (populus). Tout comme durant l'antique Respublica populi romani, les consuls (qui peuvent être plus de deux) sont élus annuellement. Même dans les pays de coutume orale, l'exemple romain et italien est assez pregnant pour que les magistrats locaux (syndics, bourgmestres, prévôts) soient élus annuellement.
+Une élection est donc prévue dans un an, avec interdiction de renouvellement de votre mandat. Préparez bien cette élection !;;;;;;x
+EVTOPTA_RIRSEREP_00002;;D'accord !;;;;;;x
+EVTNAME_RIRSEREP_00001;;Elections du nouveau [Root.Title];;;;;;x
+EVTDESC_RIRSEREP_00001;;Le peuple se réunit sur la place principale, travaillé intensément par les grandes familles aristocratiques, pour élire leurs nouveaux magistrats. Il ne vous reste plus à espérer que vous avez bien dépensé votre argent afin que votre héritier familial puisse reprendre les rênes de la cité !;;;;;;x
+EVTOPTA_RIRSEREP_00001;;Vox populi, vox dei;;;;;;x
+EVTNAME_RIRSEVAR_0001;Bulla aurea de electione regis romanorum;Bulla aurea de electione regis romanorum;;;;;;x
+EVTDESC_RIRSEVAR_0001;;Depuis les dynasties ottoniennes et saliennes, aucun Imperator Semper Augustus n'a réussi à imposer l'hérédité de sa famille au sein de la dignité impériale. De ce fait, les traditions électorales de l'Imperium romanum se sont installées et renforcées progressivement au fil du temps. Désormais, il semble impossible que l'Empire devienne une monarchie héréditaire à l'instar du royaume de France.
+Toutefois, il nous faut édicter des règles pour fixer définitivement le nombre et la qualité des électeurs du Rex romanorum et stabiliser ainsi les élections impériales.;;;;;;x
+EVTOPTA_RIRSEVAR_0001;Decernimus et presenti edicto imperiali perpetuo valituro...;Decernimus et presenti edicto imperiali perpetuo valituro...;;;;;;x
+EVTNAME_RIRSEVAR_0002;Bulla aurea de electione regis romanorum;Bulla aurea de electione regis romanorum;;;;;;x
+EVTDESC_RIRSEVAR_0002;;Depuis les dynasties ottoniennes et saliennes, aucun Imperator Semper Augustus n'a réussi à imposer l'hérédité de sa famille au sein de la dignité impériale. De ce fait, les traditions électorales de l'Imperium romanum se sont installées et renforcées progressivement au fil du temps. Désormais, il semble impossible que l'Empire devienne une monarchie héréditaire à l'instar du royaume de France.
+[From.GetTitledFirstName] a promulgué un édit perpétuel pour fixer définitivement le nombre et la qualité des électeurs du Rex romanorum et stabiliser ainsi les élections impériales.;;;;;;x
+EVTOPTA_RIRSEVAR_0002;;Intéressant...;;;;;;x
+Lotharingia_roi_pape;;Demander la couronne de Lothaire au Pape;;;;;x
+Lotharingia_roi_pape_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut déchiré par les intrigues du royaume de France et de Germanie, et nul roi indépendant ne put se réclamer pleinement de l'héritage de Lothaire. Toutefois, si nous réunissons autour de nous une grande partie de l'ancien royaume de Lothaire, il nous est possible de demander la couronne au Pape. Cependant, l'Empereur n'acceptera pas une telle atteinte à ses pouvoirs, sauf si son emprise est faible sur l'Imperium.;;;;;x
+EVTNAME_RIRSEVAR_0003;Renaissance du royaume de Lothaire;;;;;;x
+EVTDESC_RIRSEVAR_0003;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Lotharii Regnum. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par un légat papal.
+Réjouissons-nous aussi, et méfions-nous tout autant, car l'Empereur est fort mécontent de ce qu'il considère comme une atteinte à ses pouvoirs... ;;;;;;x
+EVTOPTA_RIRSEVAR_0003;;Gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0009;;[From.GetTitledFirstName], notre vassal, a su réunir autour de lui l'ensemble des terres qui forment le coeur de l'ancien royaume de Lothaire. Il a eu l'idée folle de demander une couronne au Pape ! Hélas, notre emprise dans l'Empire est trop faible pour s'opposer à ce coup de force...  ;;;;;;x
+EVTOPTA_RIRSEVAR_0009;;Patience, nous nous vengerons !;;;;;;x
+Lotharingia_roi_emp;;Demander la couronne de Lothaire à l'Empereur;;;;;x
+Lotharingia_roi_emp_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut déchiré par les intrigues du royaume de France et de Germanie, et nul roi indépendant ne put se réclamer pleinement de l'héritage de Lothaire. Toutefois, si nous réunissons autour de nous la majorité des anciens domaines du royaume, il nous est possible de demander la couronne à l'Empereur. Il reste difficilement crédible que l'Empereur accepte de perdre une partie de sa souveraineté sur Cologne ou Aix-la-Chapelle, même si nous entretenons d'excellentes relations avec lui et que nous ne paraissons pas comme une menace.;;;;;x
+EVTDESC_RIRSEVAR_0004;;[From.GetTitledFirstName], notre vassal, a su réunir autour de lui les terres qui forment le coeur de l'ancien royaume de Lothaire. Il nous a demandé une couronne royale. Que faire ?  ;;;;;;x
+EVTOPTB_RIRSEVAR_0004;;Le royaume de Lothaire appartient au passé !;;;;;;x
+EVTOPTA_RIRSEVAR_0004;;Un vassal puissant est un allié puissant;;;;;;x
+EVTNAME_RIRSEVAR_0010;Renaissance du royaume de Lothaire;;;;;;x
+EVTDESC_RIRSEVAR_0010;;[Root.GetTitledFirstName] a su réunir autour de lui le coeur des territoires du Lotharii Regnum. L'Empereur a reconnu la vertu et la puissance de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par l'archichancelier des Gaules pour l'Empire, l'archêveque de Trèves.;;;;;;x
+EVTOPTA_RIRSEVAR_0010;;Gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0011;;Cher [Root.GetTitledFirstName], nous estimons que votre demande inepte de recréer le royaume de Lothaire est sans doute due à quelque égarement de votre part...;;;;;;x
+EVTOPTA_RIRSEVAR_0011;;Quelle ordure !;;;;;;x
+Lotharingia_roi_pape_ind;;Demander la couronne de Lothaire au Pape;;;;;;;;;x
+Lotharingia_roi_pape_ind_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut déchiré par les intrigues du royaume de France et de Germanie, et nul roi indépendant ne put se réclamer pleinement de l'héritage de Lothaire. Toutefois, si nous réunissons autour de nous le coeur de l'ancien royaume de Lothaire, il nous est possible de demander la couronne au Pape. Etant donné que nous ne sommes pas inféodés, il sera plus facile de se faire accepter comme roi.;;;;;;;;;x
+EVTNAME_RIRSEVAR_0005;Renaissance du royaume de Lothaire;;;;;;x
+EVTDESC_RIRSEVAR_0005;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Lotharii Regnum. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par un légat papal.;;;;;;x
+EVTOPTA_RIRSEVAR_0005;;Gloire à nous !;;;;;;x
+Emp_lot_rex;;L'Empereur est furieux du couronnement du Rex Lotharingiae;;;;;;;;;x
+Rex_lot_emp;;Mécontent que l'Empereur lui ait refusé la couronne du Lotharii Regnum;;;;;;;;;x
+Arles_roi_pape;;Demander la couronne de Bourgogne au Pape;;;;;;;x
+Arles_roi_pape_desc;;Le royaume de Bourgogne ou le royaume d'Arles remonte au roi Rodolphe II, qui unifia la Provence et la Bourgogne jurane en un seul royaume, écho du vieil royaume des Burgondes qui s'étendait sur ces terres. Au début du XIème siècle, l'Empereur Conrad II annexa le royaume à l'Imperium Romanum. En réunissant l'ensemble des terres du Regnum Burgundiae, nous pouvons demander la couronne royale au Pape. Cependant, l'Empereur n'acceptera pas une telle atteinte à ses pouvoirs, sauf si son emprise est faible sur l'Imperium.;;;;;;;x
+EVTNAME_RIRSEVAR_0006;Renaissance du royaume d'Arles;;;;;;x
+EVTDESC_RIRSEVAR_0006;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Regnum Burgundiae. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale d'Arles. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi plus proche d'eux, couronné par un légat papal.
+Réjouissons-nous aussi, et méfions-nous tout autant, car l'Empereur est fort mécontent de ce qu'il considère comme une atteinte à ses pouvoirs... ;;;;;;x
+EVTOPTA_RIRSEVAR_0006;;Gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0012;;[From.GetTitledFirstName], notre vassal, a su réunir autour de lui l'ensemble des terres qui forment le coeur de l'ancien royaume d'Arles. Il a eu l'idée folle de demander une couronne au Pape ! Hélas, notre emprise dans l'Empire est trop faible pour s'opposer à ce coup de force...  ;;;;;;x
+EVTOPTA_RIRSEVAR_0012;;Patience, nous nous vengerons !;;;;;;x
+Arles_roi_emp;;Demander la couronne de Bourgogne à l'Empereur;;;;;;;x
+Arles_roi_emp_desc;;Le royaume de Bourgogne ou le royaume d'Arles remonte au roi Rodolphe II, qui unifia la Provence et la Bourgogne jurane en un seul royaume, écho du vieil royaume des Burgondes qui s'étendait sur ces terres. Au début du XIème siècle, l'Empereur Conrad II annexa le royaume à l'Imperium Romanum. En réunissant autour de nous l'essentiel des terres du Regnum Burgundiae, il nous est possible de demander la couronne à l'Empereur. Il reste difficilement crédible que l'Empereur accepte de perdre une partie de sa souveraineté, mais le royaume d'Arles a toujours été excentré dans l'Empire. Si nous entretenons d'excellentes relations avec lui et que nous ne paraissons pas comme une menace, il peut accepter notre demande.;;;;;;;x
+EVTDESC_RIRSEVAR_0007;;[From.GetTitledFirstName], notre vassal, a su réunir autour de lui les terres qui forment le coeur de l'ancien royaume de Bourgogne. Il nous a demandé une couronne royale. Que faire ?  ;;;;;;x
+EVTOPTB_RIRSEVAR_0007;;Le royaume d'Arles appartient au passé !;;;;;;x
+EVTOPTA_RIRSEVAR_0007;;Un vassal puissant est un allié puissant;;;;;;x
+Arles_roi_pape_ind;;Demander la couronne de Bourgogne au Pape;;;;;;;;;x
+Arles_roi_pape_ind_desc;;Le royaume de Bourgogne ou le royaume d'Arles remonte au roi Rodolphe II, qui unifia la Provence et la Bourgogne jurane en un seul royaume, écho du vieil royaume des Burgondes qui s'étendait sur ces terres. Au début du XIème siècle, l'Empereur Conrad II annexa le royaume à l'Imperium Romanum. En réunissant l'ensemble des terres du Regnum Burgundiae, nous pouvons demander la couronne royale au Pape. Etant donné que nous ne sommes pas inféodés, il sera plus plus facile de se faire accepter comme roi.;;;;;;;;;x
+EVTNAME_RIRSEVAR_0013;Renaissance du royaume d'Arles;;;;;;x
+EVTDESC_RIRSEVAR_0013;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Regnum Burgundiae. L'Empereur a reconnu la vertu et la puissance de [Root.GetTitledFirstName], lui accordant la couronne royale d'Arles. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi plus proche d'eux, couronné par l'archichancelier des Gaules pour l'Empire, l'archêveque de Trèves.;;;;;;x
+EVTOPTA_RIRSEVAR_0013;;Gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0014;;Cher [Root.GetTitledFirstName], nous estimons que votre demande inepte de recréer le royaume d'Arles est sans doute due à quelque égarement de votre part...;;;;;;x
+EVTOPTA_RIRSEVAR_0014;;Quelle ordure !;;;;;;x
+EVTDESC_RIRSEVAR_0008;;[Root.GetTitledFirstName] a su réunir autour de lui le coeur des territoires du Regnum Burgundiae. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale d'Arles. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi plus proche d'eux, couronné par un légat papal.;;;;;;x
+EVTOPTA_RIRSEVAR_0008;;Gloire à nous !;;;;;;x
+Emp_arl_rex;;L'Empereur est furieux du couronnement du Rex Burgundiae;;;;;;;;;x
+Rex_arl_emp;;Mécontent que l'Empereur lui ait refusé la couronne du Regnum Arelatense;;;;;;;;;x
+k_sardinia;Regnum Sardiniae et Corsicae;Regnum Sardiniae et Corsicae;;;;;;;;;;;x
+county_of_sardinian;Giudicato of;Judicat de;Beurteilt von;;Juzgado de;;;;;;;;;x
+count_sardinian;Iudex;Iudex;Richter;;Juez;;;;;;;;;x
+count_female_sardinian;Giudessa;Giudessa;Richtin;;Juezesa;;;;;;;;;x
