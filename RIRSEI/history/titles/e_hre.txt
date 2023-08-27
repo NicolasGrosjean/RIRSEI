@@ -164,6 +164,8 @@ set_global_flag = compromis_serhre
 }
 1152.2.15 = {
 	holder = 212501 #Friedrich I von Hohenstaufen
+	set_global_flag = bulledor
+	law = succ_hre_elective
 }
 1190.6.10 = {
 	holder = 212507 #Heinrich VI von Hohenstaufen
