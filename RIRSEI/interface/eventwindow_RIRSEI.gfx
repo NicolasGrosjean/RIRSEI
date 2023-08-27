@@ -312,6 +312,26 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\courbyztrois.tga"
 		allwaystransparent = yes
 	}
+			spriteType = {
+		name = "GFX_evt_elec1"
+		texturefile = "gfx\\event_pictures\elec1.tga"
+		allwaystransparent = yes
+	}
+		spriteType = {
+		name = "GFX_evt_elec2"
+		texturefile = "gfx\\event_pictures\elec2.tga"
+		allwaystransparent = yes
+	}
+			spriteType = {
+		name = "GFX_evt_septelecteurs"
+		texturefile = "gfx\\event_pictures\septelecteurs.tga"
+		allwaystransparent = yes
+	}
+    			spriteType = {
+		name = "GFX_evt_Courarles"
+		texturefile = "gfx\\event_pictures\Courarles.tga"
+		allwaystransparent = yes
+	}
 }
 
 
