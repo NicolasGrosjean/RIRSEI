@@ -10,12 +10,15 @@ Tous les pseudos renvoient à ceux utilisés sur le forum Mundus Bellicus (http:
 # Remerciements #
 #################
 - FriztVicari pour avoir accepté l'utilisation de ses oeuvres graphiques dans ce mod
-- Mouchi pour avoir proposé de mettre à jour le mod et de corriger des bugs
+- Mouchi pour avoir proposé de mettre à jour le mod (même après que je l'eusse abandonné !) et de corriger des bugs
 - Arko de RJS pour avoir eu la patience et la gentillesse d'avoir "nettoyé" mon mod pour qu'il soit plus léger et plus compatible !
 - Namrand pour les blasons des regni francorum
+- Van Diemen pour son mod sur le couronnement de l'Empereur
+- Fine pour son "Merchant Republic Overhaul" qui m'a inspiré pour les elections annuelles
 - supermenteur pour ses nombreux conseils pour les musulmans
 - Pol_ak pour la patience et les conseils qu'il m'a donné autant sur le fofo qu'IRL. Une grande partie de l'historicité est due à lui et je lui en remercie
 - Bombur pour les avis, conseils et son aide directe pour des zimages
 - Godwinsson pour ses avis et son conseil, notamment sur la Pologne
-- Angelus pour ses questions de merde
+- Angelus pour ses questions pourries
 - Bisthebis, Larkh, Flo, Hourstack, Musashi, mat, l'historien du dimanche, etc. qui m'ont suivi depuis le début, le milieu ou la fin (désolé si j'en oublie !)
+- In memoriam Elanionis siue Simonus Bierus, amicus meus
