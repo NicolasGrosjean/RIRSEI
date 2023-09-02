@@ -12,7 +12,7 @@ This mod was created by Faras on the [Mundus Bellicus forum](http://www.mundusbe
 This mod is presented in English on the [Paradox forum](https://forum.paradoxplaza.com/forum/index.php?threads/mod-rex-in-regno-suo-est-imperator-historical-overhaul.781434/).
 The objective of this repository is to help him to maintain his mod over patches.
 
-![Main image of the mod](Image.jpg)
+![Main image of the mod](RIRSEI/RIRSEI.jpg)
 
 ### Players & Followers
 
