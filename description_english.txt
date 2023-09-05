@@ -1,0 +1,35 @@
+Faras' loving historical conversion
+
+https://www.mundusbellicus.fr/forum/grande-strat%C3%A9gie/crusader-kings-ii/mods-modding-af/rex-in-regno-suo-est-imperator/10708-rirsei-rex-in-regno-suo-est-imperator-pr%C3%A9sentation-instructions-de-t%C3%A9l%C3%A9chargement
+
+[h1]Mod overview[/h1]
+
+This mod for CK2 (ask for Legacy of Rome to appreciate all its mechanisms) is based on an in-depth and comprehensive reworking of state and imperial mechanisms in the Christian and Muslim world. The mod's aim is to significantly enhance the historicity of the base game, while deepening uchronic options whose intentions and ideas are rooted in historical reality. This mod is therefore recommended for those who are fond of historicity, and for those who are looking for tough challenges to achieve, particularly at the end of the game. In addition, several kingdoms now feature unique scripts based on imperial dynamics. This mod has been designed for both 867 and 1066. 
+
+[h1]867: The Feudal Shift[/h1]
+
+The end of the 9th century was marked by what Georges Duby has called the "feudal revolution". Royal and imperial authority was collapsing, the counts and dukes had imposed the heredity of their office, and the missi dominici no longer had any hold over them. As time went on, even the great vassals lost power to the lords and barons. A new society emerged, based no longer on the authority of the state, but on loyal relationships between men. To simulate this change in society, you will not be able to go beyond the medium authority stage, and factions based on elective succession and weaker authority will be encouraged. This mutation comes to an end around 1020, a date symbolizing the Peace of God, the end of violence and the decomposition of authority.
+
+[h1]1066, Building a State[/h1]
+
+(If you start in 867, a message will inform you when the feudal mutation ends and it's time for you to build a state).
+Public authority, whether imperial or royal, has long since counted for little compared to the feudal relationships that bind suzerains and vassals. Authority has decomposed to such an extent that potestas, the right to justice, is now in the hands of the smallest squire. But feudal violence ceased a few decades ago, thanks to God's peace, and the Christian world is finally beginning to stabilize. If you are a suzerain, or manage to become one, you'll still need to overcome the power of the great vassals to restore public power around your crown! In this mod, taxes and military levies are linked to the development of the crown's authority, as are casus belli de jure (non-ducal). But don't forget that the great vassals will fiercely oppose any development of royal or imperial authority.
+
+For the full list of (many) changes, please see the link above to the Mundus Bellicus forum.
+
+[h1]Credits[/h1]
+[LIST]
+[*] FriztVicari for accepting the use of his graphic works in this mod
+[*] Mouchi for offering to update the mod (even after I'd abandoned it!) and fix bugs.
+[*] Arko from RJS for his patience and kindness in "cleaning up" my mod to make it lighter and more compatible!
+[*] Namrand for regni francorum coats of arms
+[*] Van Diemen for his mod on the Emperor's coronation
+[*] Fine for his "Merchant Republic Overhaul", which inspired me for the annual elections.
+[*] supermenteur for his many tips for Muslims
+[*] Pol_ak for the patience and advice he gave me both on the forum and IRL. A large part of the historicity is due to him and I thank him for that.
+[*] Bombur for opinions, advice and direct help with zimages
+[*] Godwinsson for his opinions and advice, particularly on Poland
+[*] Angelus for his rotten questions
+[*] Bisthebis, Larkh, Flo, Hourstack, Musashi, mat, l'historien du dimanche, etc. who have followed me from the beginning, middle or end (sorry if I've forgotten any!)
+[*] In memoriam Elanionis siue Simonus Bierus, amicus meus
+[/LIST]

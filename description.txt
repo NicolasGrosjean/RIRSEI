@@ -1,16 +1,16 @@
 Conversion totale historique faite avec amour par Faras
 
 https://www.mundusbellicus.fr/forum/grande-strat%C3%A9gie/crusader-kings-ii/mods-modding-af/rex-in-regno-suo-est-imperator/10708-rirsei-rex-in-regno-suo-est-imperator-pr%C3%A9sentation-instructions-de-t%C3%A9l%C3%A9chargement
-?
-Présentation générale du mod :
+
+[h1]Présentation générale du mod[/h1]
 
 Ce mod pour CK2 (demande Legacy of Rome pour en apprécier tous les mécanismes) repose sur un retravail en profondeur et en globalité sur les mécanismes étatiques et impériaux dans le monde chrétien et musulman. La volonté du mod est d'accroître singulièrement l'historicité du jeu de base, tout en approfondissant des options uchroniques mais dont les intentions et les idées sont ancrées dans une réalité historique. Ce mod est donc à conseiller pour les friands d'historicité, et pour ceux qui recherchent des challenges durs à réaliser, notamment en fin de jeu. D'autre part, plusieurs royaumes possèdent désormais des scripts uniques autour des dynamiques impériales. Ce mod a été travaillé à la fois pour la date de 867 et de 1066. 
 
-867 : La Mutation Féodale
+[h1]867 : La Mutation Féodale[/h1]
 
 La fin du IXème siècle est marquée toute entière par ce que Georges Duby a appelé la "révolution féodale". L'autorité royale et impériale s'effondre, les comtes et ducs ont imposé l'hérédité de leur fonction, et les missi dominici n'ont plus aucune emprise sur eux. Au fur et à mesure du temps, même les grands vassaux perdront du pouvoir par rapport aux châtelains et barons. Une nouvelle société apparaît, basée non plus sur l'autorité de l'Etat, mais sur des relations de fidélité d'homme à homme. Pour simuler cette mutation de société, il vous sera impossible de dépasser le stade de l'autorité moyenne, et les factions autour de la succession élective et d'une autorité plus faible seront encouragées. Cette mutation prend fin aux alentours de 1020, date symbolisant la Paix de Dieu, l'arrêt des violences et de la décomposition de l'autorité.
 
-1066, Construire un Etat
+[h1]1066, Construire un Etat[/h1]
 
 (Si vous commencez en 867, un message vous informera quand la mutation féodale terminera et qu'il sera temps pour vous de construire un Etat)
 Il y a longtemps que l'autorité publique, impériale ou royale, compte pour peu par rapport aux rapports féodaux qui lient suzerains et vassaux. L'autorité s'est tellement décomposée que la potestas, le droit de justice, est désormais entre les mains du moindre châtelain. Mais les violences féodales ont cessé il y a quelques dizaines d'années grâce aux paix de Dieu et le monde chrétien commence enfin à se stabiliser. Si vous êtes un suzerain ou que vous parvenez à l'être, il vous faudra toutefois vaincre le pouvoir des grands vassaux afin de restaurer la puissance publique autour de votre couronne ! Dans ce mod, les impôts et la levée militaire sont en relations avec le développement de l'autorité de la couronne, tout comme les casus belli de jure (non ducaux). Mais n'oubliez pas que les grands vassaux s'opposeront farouchement à tout développement d'une autorité royale ou impériale.
