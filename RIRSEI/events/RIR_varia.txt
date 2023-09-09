@@ -268,6 +268,7 @@ option = {
 		name = "EVTOPTA_RIRSEVAR_0011"
                
                 prestige = -250
+				set_character_flag = refus_emp_loth
          ROOT = {
 	        opinion = {
 				modifier = Rex_lot_emp
@@ -518,6 +519,7 @@ option = {
 		name = "EVTOPTA_RIRSEVAR_0014"
                
                 prestige = -250
+				set_character_flag = refus_emp_arles
          ROOT = {
 	        opinion = {
 				modifier = Rex_arl_emp
@@ -558,6 +560,340 @@ if = {
 			    trait = roi_des_romains
                 trait = roi_oint				} }
 				add_trait = crowned_by_bishop_rd
+			}		
+			
+}
+}
+
+#Le Pape reçoit la proposition pour la couronne de Sicile
+
+letter_event = {
+	id = RIRSEVAR.0015
+	title = EVTNAME_RIRSEVAR_0015
+	desc = EVTDESC_RIRSEVAR_0015
+	sound = church_bells
+	picture = GFX_evt_Courarles
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0015"
+ set_global_flag = couronne_sicile
+FROM = { 
+narrative_event = { id = RIRSEVAR.0016}
+}
+ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				FROM = {
+					religion = catholic
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					has_global_flag = agnani_att_pap
+				}
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = zealous }
+			}
+	}
+	          
+}
+
+option = {
+ name = "EVTOPTB_RIRSEVAR_0015"
+FROM = { 
+letter_event = { id = RIRSEVAR.0017}
+}
+ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 1.3
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = cynical }
+			}
+            modifier = {
+				factor = 1.1
+				ROOT = { trait = ambitious }
+		    }
+			modifier = {
+				factor = 1.2
+				FROM = {
+					religion = orthodox
+				}
+			}
+
+		
+	
+}
+	          
+}
+}
+
+#Creation de la sicile, pape
+narrative_event = {
+	id = RIRSEVAR.0016
+	title = EVTNAME_RIRSEVAR_0016
+	desc = EVTDESC_RIRSEVAR_0016
+	sound = church_bells
+	picture = GFX_evt_Cour_sicile
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0016"
+ 
+ 
+ prestige = 1000
+
+		k_sicily = {
+			usurp_title = ROOT
+		}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+			
+}
+}
+# Réponse négative, le prétendant n'est pas content...
+letter_event = {
+	id = RIRSEVAR.0017
+	desc = "EVTDESC_RIRSEVAR_0017"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0017"
+               
+                prestige = -150
+				set_character_flag = refus_pape_sicile
+         ROOT = {
+	        opinion = {
+				modifier = Rex_sic_pape
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+#L'Empereur reçoit la proposition pour la couronne de Sicile
+
+letter_event = {
+	id = RIRSEVAR.0018
+	title = EVTNAME_RIRSEVAR_0018
+	desc = EVTDESC_RIRSEVAR_0018
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0018"
+ set_global_flag = couronne_sicile
+FROM = { 
+narrative_event = { id = RIRSEVAR.0019}
+}
+ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				ROOT = {
+					opinion = {
+						who = FROM
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.4
+				FROM = {
+					religion = orthodox
+				}
+			}						
+			modifier = {
+				factor = 1.2
+				FROM = { culture = greek }
+			}
+	}
+	          
+}
+
+option = {
+ name = "EVTOPTB_RIRSEVAR_0018"
+FROM = { 
+letter_event = { id = RIRSEVAR.0020}
+}
+ai_chance = {
+			factor = 0.7
+set_character_flag = refus_emp_sicile
+			modifier = {
+				factor = 1.3
+				FROM = { trait = kinslayer }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = lunatic }
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { trait = cynical }
+			}
+            modifier = {
+				factor = 1.1
+				ROOT = { trait = ambitious }
+		    }
+            modifier = {
+				factor = 1.5
+				ROOT = { has_global_flag = Basileia_nova }
+		    }
+			modifier = {
+				factor = 1.2
+				e_byzantium = { has_law = emp_autocrate }
+		    }
+
+		
+	
+}
+	          
+}
+}
+#Creation de la sicile, emp
+narrative_event = {
+	id = RIRSEVAR.0019
+	title = EVTNAME_RIRSEVAR_0019
+	desc = EVTDESC_RIRSEVAR_0019
+	sound = church_bells
+	picture = GFX_evt_Cour_sicile
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0019"
+ 
+ 
+ prestige = 800
+
+		k_sicily = {
+			usurp_title = ROOT
+		}
+if = {
+    limit = { religion = catholic }
+	religion = orthodox
+	}
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_bishop_rd
+			}		
+			
+}
+}
+# Réponse négative, le prétendant n'est pas content...
+letter_event = {
+	id = RIRSEVAR.0020
+	desc = "EVTDESC_RIRSEVAR_0020"
+	border = GFX_event_letter_frame_diplomacy
+
+	is_triggered_only = yes
+	
+option = {
+		name = "EVTOPTA_RIRSEVAR_0020"
+               
+                prestige = -100
+				set_character_flag = refus_emp_sicile
+         ROOT = {
+	        opinion = {
+				modifier = Rex_sic_emp
+				who = FROM
+                years = 30
+				
+}
+}
+}
+}
+#Creation de la sicile, par le cb
+narrative_event = {
+	id = RIRSEVAR.0021
+	title = EVTNAME_RIRSEVAR_0021
+	desc = EVTDESC_RIRSEVAR_0021
+	sound = church_bells
+	picture = GFX_evt_Cour_sicile
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0021"
+ 
+ 
+ prestige = 500
+ set_global_flag = couronne_sicile
+
+		k_sicily = {
+			usurp_title = ROOT
+		}
+		
+if = {
+				limit = {
+				has_dlc = "Holy Fury"
+                NOR = { 	
+                trait = crowned_by_priest
+			    trait = crowned_by_bishop
+				trait = crowned_by_pope
+			    trait = roi_des_romains
+                trait = roi_oint				} }
+				add_trait = crowned_by_priest_rd
 			}		
 			
 }
