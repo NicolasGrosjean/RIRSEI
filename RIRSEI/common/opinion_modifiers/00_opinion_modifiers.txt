@@ -3243,6 +3243,12 @@ Rex_arl_emp = { opinion = -40
 
 Emp_stupor = { opinion = -40
                years = 10  }
+			   
+Rex_sic_emp = { opinion = -40
+               years = 30  }
+			   
+Rex_sic_pape = { opinion = -40
+               years = 30  }
 
 Emp_fr = { opinion = -50
                years = 10  }
