@@ -332,6 +332,11 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\Courarles.tga"
 		allwaystransparent = yes
 	}
+	    			spriteType = {
+		name = "GFX_evt_Cour_sicile"
+		texturefile = "gfx\\event_pictures\Cour_sicile.tga"
+		allwaystransparent = yes
+	}
 }
 
 
