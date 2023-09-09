@@ -2748,7 +2748,7 @@ EVTDESC_RIRSEVAR_0002;;Depuis les dynasties ottoniennes et saliennes, aucun Impe
 EVTOPTA_RIRSEVAR_0002;;Intéressant...;;;;;;x
 Lotharingia_roi_pape;;Demander la couronne de Lothaire au Pape;;;;;x
 Lotharingia_roi_pape_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut déchiré par les intrigues du royaume de France et de Germanie, et nul roi indépendant ne put se réclamer pleinement de l'héritage de Lothaire. Toutefois, si nous réunissons autour de nous une grande partie de l'ancien royaume de Lothaire, il nous est possible de demander la couronne au Pape. Cependant, l'Empereur n'acceptera pas une telle atteinte à ses pouvoirs, sauf si son emprise est faible sur l'Imperium.;;;;;x
-EVTNAME_RIRSEVAR_0003;Renaissance du royaume de Lothaire;;;;;;x
+EVTNAME_RIRSEVAR_0003;;Renaissance du royaume de Lothaire;;;;;;x
 EVTDESC_RIRSEVAR_0003;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Lotharii Regnum. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par un légat papal.
 Réjouissons-nous aussi, et méfions-nous tout autant, car l'Empereur est fort mécontent de ce qu'il considère comme une atteinte à ses pouvoirs... ;;;;;;x
 EVTOPTA_RIRSEVAR_0003;;Gloire à nous !;;;;;;x
@@ -2759,21 +2759,21 @@ Lotharingia_roi_emp_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut 
 EVTDESC_RIRSEVAR_0004;;[From.GetTitledFirstName], notre vassal, a su réunir autour de lui les terres qui forment le coeur de l'ancien royaume de Lothaire. Il nous a demandé une couronne royale. Que faire ?  ;;;;;;x
 EVTOPTB_RIRSEVAR_0004;;Le royaume de Lothaire appartient au passé !;;;;;;x
 EVTOPTA_RIRSEVAR_0004;;Un vassal puissant est un allié puissant;;;;;;x
-EVTNAME_RIRSEVAR_0010;Renaissance du royaume de Lothaire;;;;;;x
+EVTNAME_RIRSEVAR_0010;;Renaissance du royaume de Lothaire;;;;;;x
 EVTDESC_RIRSEVAR_0010;;[Root.GetTitledFirstName] a su réunir autour de lui le coeur des territoires du Lotharii Regnum. L'Empereur a reconnu la vertu et la puissance de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par l'archichancelier des Gaules pour l'Empire, l'archêveque de Trèves.;;;;;;x
 EVTOPTA_RIRSEVAR_0010;;Gloire à nous !;;;;;;x
 EVTDESC_RIRSEVAR_0011;;Cher [Root.GetTitledFirstName], nous estimons que votre demande inepte de recréer le royaume de Lothaire est sans doute due à quelque égarement de votre part...;;;;;;x
 EVTOPTA_RIRSEVAR_0011;;Quelle ordure !;;;;;;x
 Lotharingia_roi_pape_ind;;Demander la couronne de Lothaire au Pape;;;;;;;;;x
 Lotharingia_roi_pape_ind_desc;;Depuis la mort de Lothaire II, le Lotharii Regnum fut déchiré par les intrigues du royaume de France et de Germanie, et nul roi indépendant ne put se réclamer pleinement de l'héritage de Lothaire. Toutefois, si nous réunissons autour de nous le coeur de l'ancien royaume de Lothaire, il nous est possible de demander la couronne au Pape. Etant donné que nous ne sommes pas inféodés, il sera plus facile de se faire accepter comme roi.;;;;;;;;;x
-EVTNAME_RIRSEVAR_0005;Renaissance du royaume de Lothaire;;;;;;x
+EVTNAME_RIRSEVAR_0005;;Renaissance du royaume de Lothaire;;;;;;x
 EVTDESC_RIRSEVAR_0005;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Lotharii Regnum. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale de la Lotharingia. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi sur les terres ancestrales des carolingiens, couronné par un légat papal.;;;;;;x
 EVTOPTA_RIRSEVAR_0005;;Gloire à nous !;;;;;;x
 Emp_lot_rex;;L'Empereur est furieux du couronnement du Rex Lotharingiae;;;;;;;;;x
 Rex_lot_emp;;Mécontent que l'Empereur lui ait refusé la couronne du Lotharii Regnum;;;;;;;;;x
 Arles_roi_pape;;Demander la couronne de Bourgogne au Pape;;;;;;;x
 Arles_roi_pape_desc;;Le royaume de Bourgogne ou le royaume d'Arles remonte au roi Rodolphe II, qui unifia la Provence et la Bourgogne jurane en un seul royaume, écho du vieil royaume des Burgondes qui s'étendait sur ces terres. Au début du XIème siècle, l'Empereur Conrad II annexa le royaume à l'Imperium Romanum. En réunissant l'ensemble des terres du Regnum Burgundiae, nous pouvons demander la couronne royale au Pape. Cependant, l'Empereur n'acceptera pas une telle atteinte à ses pouvoirs, sauf si son emprise est faible sur l'Imperium.;;;;;;;x
-EVTNAME_RIRSEVAR_0006;Renaissance du royaume d'Arles;;;;;;x
+EVTNAME_RIRSEVAR_0006;;Renaissance du royaume d'Arles;;;;;;x
 EVTDESC_RIRSEVAR_0006;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Regnum Burgundiae. Sa sainteté le Pape a reconnu la puissance et la vertu de [Root.GetTitledFirstName], lui accordant la couronne royale d'Arles. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi plus proche d'eux, couronné par un légat papal.
 Réjouissons-nous aussi, et méfions-nous tout autant, car l'Empereur est fort mécontent de ce qu'il considère comme une atteinte à ses pouvoirs... ;;;;;;x
 EVTOPTA_RIRSEVAR_0006;;Gloire à nous !;;;;;;x
@@ -2786,7 +2786,7 @@ EVTOPTB_RIRSEVAR_0007;;Le royaume d'Arles appartient au passé !;;;;;;x
 EVTOPTA_RIRSEVAR_0007;;Un vassal puissant est un allié puissant;;;;;;x
 Arles_roi_pape_ind;;Demander la couronne de Bourgogne au Pape;;;;;;;;;x
 Arles_roi_pape_ind_desc;;Le royaume de Bourgogne ou le royaume d'Arles remonte au roi Rodolphe II, qui unifia la Provence et la Bourgogne jurane en un seul royaume, écho du vieil royaume des Burgondes qui s'étendait sur ces terres. Au début du XIème siècle, l'Empereur Conrad II annexa le royaume à l'Imperium Romanum. En réunissant l'ensemble des terres du Regnum Burgundiae, nous pouvons demander la couronne royale au Pape. Etant donné que nous ne sommes pas inféodés, il sera plus plus facile de se faire accepter comme roi.;;;;;;;;;x
-EVTNAME_RIRSEVAR_0013;Renaissance du royaume d'Arles;;;;;;x
+EVTNAME_RIRSEVAR_0013;;Renaissance du royaume d'Arles;;;;;;x
 EVTDESC_RIRSEVAR_0013;;[Root.GetTitledFirstName] a su réunir autour de lui l'essentiel des territoires du Regnum Burgundiae. L'Empereur a reconnu la vertu et la puissance de [Root.GetTitledFirstName], lui accordant la couronne royale d'Arles. Les nobles, le clergé, et le peuple se rejouissent de voir à nouveau un roi plus proche d'eux, couronné par l'archichancelier des Gaules pour l'Empire, l'archêveque de Trèves.;;;;;;x
 EVTOPTA_RIRSEVAR_0013;;Gloire à nous !;;;;;;x
 EVTDESC_RIRSEVAR_0014;;Cher [Root.GetTitledFirstName], nous estimons que votre demande inepte de recréer le royaume d'Arles est sans doute due à quelque égarement de votre part...;;;;;;x
@@ -2799,3 +2799,29 @@ k_sardinia;Regnum Sardiniae et Corsicae;Regnum Sardiniae et Corsicae;;;;;;;;;;;x
 county_of_sardinian;Giudicato of;Judicat de;Beurteilt von;;Juzgado de;;;;;;;;;x
 count_sardinian;Iudex;Iudex;Richter;;Juez;;;;;;;;;x
 count_female_sardinian;Giudessa;Giudessa;Richtin;;Juezesa;;;;;;;;;x
+Sicil_roi_pape;;Demander la couronne de Sicile au Pape;;;;;;;x
+Sicil_roi_pape_desc;;L'Italie du sud est une terre d'opportunité. Elle relève de jure du Basileus, et nombreux sont les monastères et les ciuitates qui datent selon les années de règne de l'empereur d'Orient. Mais l'emprise de Constantinople est de plus en plus faible en Italie, de nombreuses principautés émergent, entre autonomie et indépendance. Toutefois, même le Basileus reconnaît la juridiction du Pape sur ces régions, et le Saint Père utilise la donation de Constantin pour arguer d'une supériorité temporelle sur l'ensemble de ces terres. Un souverain puissant qui unifierait les pays relevant de l'Exarchat de Ravenne pourra demander au suprême pontife une couronne royale, celle de Sicile. Cependant, il nous faut entretenir d'excellentes relations avec le Saint Siège pour qu'il accepte notre demande.;;;;;;;x
+EVTNAME_RIRSEVAR_0016;;Création du Regnum Siciliae;;;;;;;x
+EVTDESC_RIRSEVAR_0016;;Vous entrez dans la cathédrale de Palerme, accompagné de vos serviteurs et grands féodaux. Vous fendez la foule cosmopolite et lorsque vous vous approchez de l'autel, le légat papal vous dépouille de vos insignes et vous fait jurer de préserver les libertés de l'Eglise romaine. Le légat vous couronne alors comme le légitime Rex Siciliae. Vous sortez de la cathédrale sous les acclamations prononcées dans plusieurs langues, assuré que personne n'oubliera cette journée où un glorieux royaume est né !;;;;;;;x
+EVTOPTA_RIRSEVAR_0016;;Malik, Rex, ou Regas, gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0017;;Cher [Root.GetTitledFirstName], nous refusons de vous donner une couronne sur des terres qui relèvent du patrimoine de Saint-Pierre, comme l'atteste la Donation de Constantin.;;;;;;x
+EVTOPTA_RIRSEVAR_0017;;Le Pape pliera devant le Basileus ou notre armée !;;;;;;x
+Rex_sic_pape;;Mécontent que le Pape lui ait refusé la couronne de Sicile;;;;;;;;;x
+EVTDESC_RIRSEVAR_0018;;[From.GetTitledFirstName] a réuni autour de lui assez de puissance dans les terres de l'Exarchat de Ravenne. Il nous demande une couronne royale. Que faire ?;;;;;;x
+EVTOPTA_RIRSEVAR_0018;;L'Italie est perdue, autant lui donner...;;;;;;x
+EVTOPTB_RIRSEVAR_0018;;Jamais ! L'Italie est le coeur de la Rhômania !;;;;;;x
+EVTNAME_RIRSEVAR_0019;;Création du Regnum Siciliae;;;;;;;x
+EVTDESC_RIRSEVAR_0019;;Vous entrez dans la cathédrale de Palerme, accompagné de vos serviteurs et grands féodaux. Vous fendez la foule cosmopolite, et accédez près de l'autel, où se trouvent un légat du Patriarche de Constantinople et un haut fonctionnaire impérial. Le logothèque tend la couronne au légat, qui la pose sur votre tête. Vous êtes le légitime Rex Siciliae. Vous sortez de la cathédrale sous les acclamations prononcées dans plusieurs langues, assuré que personne n'oubliera cette journée où un glorieux royaume est né !;;;;;;;x
+EVTOPTA_RIRSEVAR_0019;;Malik, Rex, ou Regas, gloire à nous !;;;;;;x
+EVTDESC_RIRSEVAR_0020;;Cher [Root.GetTitledFirstName], nous refusons de vous donner une couronne, car ces terres appartiennent de plein droit aux Romains.;;;;;;x
+EVTOPTA_RIRSEVAR_0020;;Il ne nous reste plus qu'à affronter le Pape...;;;;;;x
+EVTNAME_RIRSEVAR_0021;;Création du Regnum Siciliae;;;;;;;x
+EVTDESC_RIRSEVAR_0021;;Après une guerre contre le Saint-Siège lui-même, le Pape a dû reconnaître du bout des lèvres votre royauté. Vous entrez dans la cathédrale de Palerme, accompagné de vos serviteurs et grands féodaux. Vous fendez la foule cosmopolite et lorsque vous vous approchez de l'autel, le légat papal vous dépouille de vos insignes et vous fait jurer de préserver les libertés de l'Eglise romaine. Le légat vous couronne alors comme le légitime Rex Siciliae. Vous sortez de la cathédrale sous les acclamations prononcées dans plusieurs langues, assuré que personne n'oubliera cette journée où un glorieux royaume est né !;;;;;;;x
+EVTOPTA_RIRSEVAR_0021;;Malik, Rex, ou Regas, gloire à nous !;;;;;;x
+Sicil_roi_basileus;;Demander la couronne de Sicile au Basileus;;;;;;;x
+Sicil_roi_basileus_desc;;Pour diverses raisons, le Saint Père nous a refusé une couronne. Si l'option militaire reste ouverte, nous pouvons nous tourner vers le souverain légitime de ces terres, le Basileus. Prudence, toutefois, car le Basileus est orgueuilleux et rechigne à donner une parcelle de son pouvoir, même symbolique, sur la terre natale des Romains. Entretenir de bonnes relations avec l'Empereur et se rapprocher religieusement de Constantinople peuvent être de bonnes options pour qu'il accepte notre demande.;;;;;;;x
+Rex_sic_emp;;Mécontent que l'Empereur lui ait refusé la couronne de Sicile;;;;;;;;;x
+CB_NAME_SICILE_PAPE;Forcer le Pape à nous reconnaître la couronne de Sicile;Forcer le Pape à nous reconnaître la couronne de Sicile;;;;;;;;x;;;;;;;;;;;;
+WAR_NAME_SICILE_PAPE;$ORDER$ Sicilian war $FIRST_ADJ$-$SECOND_ADJ$;$ORDER$ Guerre de reconaissance pour la couronne de Sicile $FIRST_ADJ$-$SECOND_ADJ$;;;;;;;;;x;;;;;;;;;;;
+Sicile_pape;Forcer le Pape à nous reconnaître la couronne de Sicile;Forcer le Pape à nous reconnaître la couronne de Sicile;;;;;;;x;;;;;;;;;;;;;
+Sicile_pape_desc;;§Y$TARGET$§! refuse de reconnaître notre domination sur la Sicile en nous donnant une couronne. Une guerre permettra peut-être de faire changer d'avis le Saint Père !;;;;;;;;;x;;;;;;;;;;;
