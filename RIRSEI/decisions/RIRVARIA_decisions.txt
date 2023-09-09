@@ -66,6 +66,7 @@ Lotharingia_roi_emp = {
 			NOT = { has_landed_title = e_hre }
             k_lotharingia = { has_holder = no }
             NOT = { has_global_flag = couronne_lotharingie}
+			NOT = { has_character_flag = refus_emp_loth }
 			has_global_flag = central
 OR = { 
 has_landed_title = d_upper_lorraine
@@ -244,6 +245,7 @@ Arles_roi_emp = {
 			NOT = { has_landed_title = e_hre }
             k_burgundy = { has_holder = no }
             NOT = { has_global_flag = couronne_arles}
+			NOT = { has_character_flag = refus_emp_arles }
 			has_global_flag = central
 OR = {
 has_landed_title = d_provence
@@ -342,6 +344,122 @@ completely_controls = d_upper_burgundy
 		effect = {
 			  narrative_event = { id = RIRSEVAR.0008 }
                 set_global_flag = couronne_arles
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Sicil_roi_pape = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_sicily }
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_byzantium }
+            k_sicily = { has_holder = no }
+			k_naples = { has_holder = no }
+			k_trinacria = { has_holder = no }
+            NOT = { has_global_flag = couronne_sicile}
+			NOT = { has_character_flag = refus_pape_sicile }
+			
+OR = {
+has_landed_title = d_apulia
+has_landed_title = d_calabria
+has_landed_title = d_sicily
+has_landed_title = d_salerno
+has_landed_title = d_abruzzo
+has_landed_title = d_capua
+has_landed_title = d_benevento
+}
+
+religion_group = christian
+independent = yes
+NOT = { trait = excommunicated }
+		}
+		
+		allow = {
+			prestige = 1000
+completely_controls = d_sicily
+completely_controls = d_calabria
+completely_controls = d_apulia
+OR = {
+completely_controls = d_salerno
+completely_controls = d_abruzzo
+completely_controls = d_benevento
+completely_controls = d_capua
+}
+
+		}
+		
+		effect = {
+			  any_independent_ruler = {
+                   limit = { has_landed_title = k_papal_state }
+				letter_event = { id = RIRSEVAR.0015}
+
+}
+                
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+Sicil_roi_basileus = {
+                is_high_prio = yes
+		potential = {
+			
+			age = 16
+			NOT = { trait = incapable }
+			NOT = { has_landed_title = k_sicily }
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_byzantium }
+            e_byzantium = { has_holder = yes }
+			k_sicily = { has_holder = no }
+			k_naples = { has_holder = no }
+			k_trinacria = { has_holder = no }
+            NOT = { has_global_flag = couronne_sicile }
+			NOT = { has_character_flag = refus_emp_sicile }
+			has_character_flag = refus_pape_sicile
+			NOT = { has_global_flag = ser_compromis_huitdouze }
+
+OR = {
+has_landed_title = d_apulia
+has_landed_title = d_calabria
+has_landed_title = d_sicily
+has_landed_title = d_salerno
+has_landed_title = d_abruzzo
+has_landed_title = d_capua
+has_landed_title = d_benevento
+}
+
+religion_group = christian
+independent = yes
+		}
+		
+		allow = {
+			prestige = 1500
+completely_controls = d_sicily
+completely_controls = d_calabria
+completely_controls = d_apulia
+completely_controls = d_benevento
+OR = {
+completely_controls = d_salerno
+completely_controls = d_abruzzo
+completely_controls = d_capua
+}
+
+		}
+		
+		effect = {
+			  any_independent_ruler = {
+                   limit = { has_landed_title = e_byzantium }
+				letter_event = { id = RIRSEVAR.0018}
+
+}
+                
 
 		}
 		ai_will_do = {
