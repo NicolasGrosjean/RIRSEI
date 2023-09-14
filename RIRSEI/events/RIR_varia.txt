@@ -898,4 +898,246 @@ if = {
 			
 }
 }
+
+#Script pour la Sardaigne
+
+narrative_event = {
+        id = RIRSEVAR.0022
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+ ai_chance = {
+			factor = 1
+			}
+trigger = {
+		k_aragon = { has_holder = yes }
+		k_aragon = { holder_scope = { religion = catholic }}
+		NOT = { k_aragon = { holder_scope = { trait = excommunicated } } }
+		OR = {
+		k_aragon = { holder_scope = { completely_controls = d_barcelona } }
+		k_aragon = { holder_scope = { completely_controls = d_valencia } }
+		k_aragon = { holder_scope = { completely_controls = d_murcia } }
+		} 
+		}
+k_aragon = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+
+}
+option = {
+ name = EVTOPTB_RIRSEVAR_0022
+ trigger = {
+ 
+ NOT = {
+ 		OR = {
+		k_aragon = { holder_scope = { completely_controls = d_barcelona } }
+		k_aragon = { holder_scope = { completely_controls = d_valencia } }
+		k_aragon = { holder_scope = { completely_controls = d_murcia } }
+		}
+       }		
+ }
+ROOT = { narrative_event = { id = RIRSEVAR.0023 } }
+}
+}
+
+narrative_event = {
+        id = RIRSEVAR.0023
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+ ai_chance = {
+			factor = 1
+			}
+trigger = {
+		k_castille = { has_holder = yes }
+		k_castille = { holder_scope = { religion = catholic }}
+		NOT = { k_castille = { holder_scope = { trait = excommunicated } } }
+		OR = {
+		k_castille = { holder_scope = { completely_controls = d_barcelona } }
+		k_castille = { holder_scope = { completely_controls = d_valencia } }
+		k_castille = { holder_scope = { completely_controls = d_murcia } }
+		} 
+		}
+k_castille = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+
+}
+option = {
+ name = EVTOPTB_RIRSEVAR_0022
+ROOT = { narrative_event = { id = RIRSEVAR.0024 } }
+}
+}
+
+narrative_event = {
+        id = RIRSEVAR.0024
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+ ai_chance = {
+			factor = 1
+			}
+trigger = {
+		k_spain = { has_holder = yes }
+		k_spain = { holder_scope = { religion = catholic }}
+		NOT = { k_spain = { holder_scope = { trait = excommunicated } } }
+		OR = {
+		k_spain = { holder_scope = { completely_controls = d_barcelona } }
+		k_spain = { holder_scope = { completely_controls = d_valencia } }
+		k_spain = { holder_scope = { completely_controls = d_murcia } }
+		} 
+		}
+k_castille = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+
+}
+option = {
+ name = EVTOPTB_RIRSEVAR_0022
+ROOT = { narrative_event = { id = RIRSEVAR.0025 } }
+}
+}
+
+narrative_event = {
+        id = RIRSEVAR.0025
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+ ai_chance = {
+			factor = 1
+			}
+trigger = {
+		k_burgundy = { has_holder = yes }
+		k_burgundy = { holder_scope = { religion = catholic }}
+		NOT = { k_burgundy = { holder_scope = { trait = excommunicated } } }
+		OR = {
+		k_burgundy = { holder_scope = { completely_controls = c_provence } }
+		k_burgundy = { holder_scope = { completely_controls = c_nice } }
+		} 
+		}
+k_burgundy = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+
+}
+option = {
+ name = EVTOPTB_RIRSEVAR_0022
+ROOT = { narrative_event = { id = RIRSEVAR.0026 } }
+}
+}
+
+narrative_event = {
+        id = RIRSEVAR.0026
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+ ai_chance = {
+			factor = 1
+			}
+trigger = {
+		k_france = { has_holder = yes }
+		k_france = { holder_scope = { religion = catholic }}
+		k_france = { holder_scope = { completely_controls = d_toulouse } }
+		NOT = { k_france = { holder_scope = { trait = excommunicated } } }
+}
+
+k_france = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+}
+
+option = {
+ name = EVTOPTB_RIRSEVAR_0022
+ROOT = { narrative_event = { id = RIRSEVAR.0027 } }
+}
+}
+
+narrative_event = {
+        id = RIRSEVAR.0027
+	title = EVTNAME_RIRSEVAR_0022
+	desc = EVTDESC_RIRSEVAR_0022
+	sound = church_bells
+	picture = GFX_evt_unamsanct
+       
+       
+       
+is_triggered_only = yes
+
+option = {
+ name = EVTOPTA_RIRSEVAR_0022
+e_hre = { holder_scope = { narrative_event = { id = RIRSEVAR.0028 } } }
+
+}
+
+}
+
+#Don du ius invadendi de la Sardaigne
+
+narrative_event = {
+
+	id = RIRSEVAR.0028
+	title = EVTNAME_RIRSEVAR_0028
+	desc = EVTDESC_RIRSEVAR_0028
+	sound = church_bells
+	picture = GFX_evt_papesouvera
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0028"
+ prestige = 500
+
+		k_sardinia = {
+			usurp_title = ROOT
+		}
+
+			
+}
+}
+
+narrative_event = {
+
+	id = RIRSEVAR.0029
+	title = EVTNAME_RIRSEVAR_0029
+	desc = EVTDESC_RIRSEVAR_0029
+	sound = church_bells
+	picture = GFX_evt_papesouvera
+
+	is_triggered_only = yes
+	
+option = {
+ name = "EVTOPTA_RIRSEVAR_0029"
+ prestige = -500			
+}
+}
  

@@ -421,6 +421,7 @@ option = {
                 k_britannia = { de_jure_liege = e_hre }
                 k_wales = { de_jure_liege = e_hre }
                 k_spain = { de_jure_liege = e_hre }
+				k_sardinia = { de_jure_liege = e_hre }
                 any_independent_ruler = {
                    limit = { religion = catholic }
                   
