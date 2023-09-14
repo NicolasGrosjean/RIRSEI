@@ -466,4 +466,37 @@ completely_controls = d_capua
 			factor = 1
 		}
 }
+Pape_sardaigne = {
+                is_high_prio = yes
+		potential = {
+			has_landed_title = k_papal_state
+			NOT = { trait = incapable }
+			has_global_flag = que_investvic
+			NOT = { has_global_flag = Basileia_nova }
+			NOT = { has_global_flag = ren_imp }
+			e_roman_empire = { has_holder = no }
+			NOT = { has_global_flag = roi_sardaigne }
+		}
+		
+		allow = {
+            year = 1270
+			k_sardinia = { has_holder = no }
+			NOT = { e_byzantium = { holder_scope = {
+			completely_controls = d_sardinia } }
+			}
+
+		}
+		
+		effect = {
+		k_sardinia = { de_jure_liege = e_terra_imperii }
+		set_global_flag = roi_sardaigne
+		narrative_event = { id = RIRSEVAR.0022 }
+		e_byzantium = { holder_scope = { narrative_event = { id = RIRSEVAR.0029 } } }
+
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
 }
