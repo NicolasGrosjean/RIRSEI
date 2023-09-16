@@ -71,10 +71,10 @@ allow = {
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = assab_0
+			revoke_law = assab_0
 			revoke_law = assab_1
 			revoke_law = assab_2
-                        revoke_law = assab_3
+            revoke_law = assab_3
 			}
 		}
 		
@@ -147,7 +147,7 @@ allow = {
 			revoke_law = assab_0
 			revoke_law = assab_1
 			revoke_law = assab_2
-                        revoke_law = assab_3
+            revoke_law = assab_3
 		}
 
 }
@@ -179,10 +179,9 @@ allow = {
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
+				revoke_law = iqta_ta_0
+				revoke_law = iqta_ta_1
+				revoke_law = iqta_ta_2
 			}
 		}
 		castle_vassal_tax_modifier = 0.1
@@ -220,10 +219,9 @@ holder_scope = { has_law = assab_0 }
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
+				revoke_law = iqta_ta_0
+				revoke_law = iqta_ta_1
+				revoke_law = iqta_ta_2
 			}
 		}
 		
@@ -260,10 +258,9 @@ holder_scope = { has_law = assab_0 }
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
+				revoke_law = iqta_ta_0
+				revoke_law = iqta_ta_1
+				revoke_law = iqta_ta_2
 			}
 		}
 		castle_vassal_tax_modifier = 0.5
