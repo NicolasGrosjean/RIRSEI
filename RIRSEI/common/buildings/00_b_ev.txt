@@ -2414,8 +2414,11 @@ tp_culture_boheme_systfed_1 = {
 OR = { 
 has_global_flag = mutare 
 has_global_flag = central  
-}  					
-					culture = bohemian
+}
+OR = {  					
+culture = bohemian
+culture = slovieni
+}
 					religion_group = christian
 
 
@@ -2448,7 +2451,10 @@ extra_tech_building_start = -10
 		potential = {
 			FROM = {
 
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 
 religion_group = christian
      
@@ -2495,7 +2501,10 @@ tax_income = 2
 		potential = {
 			FROM = {
 
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 
 religion_group = christian
      
@@ -2952,7 +2961,10 @@ retinuesize = 2000
 
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                           
-culture = croatian		
+OR = { 
+culture = croatian
+culture = carantanian
+}		
 
 			}
 		}
@@ -2983,7 +2995,10 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian
+OR = { 
+culture = croatian
+culture = carantanian
+}	
 
 			}
 		}
@@ -3015,7 +3030,10 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian
+OR = { 
+culture = croatian
+culture = carantanian
+}	
 
 			}
 		}
@@ -3068,7 +3086,10 @@ OR = {
 has_global_flag = mutare 
 has_global_flag = central  
 }                          
-				culture = croatian		
+OR = { 
+culture = croatian
+culture = carantanian
+}	
 
 			}
 		}

@@ -35,6 +35,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -99,6 +100,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -180,6 +182,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -259,6 +262,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -338,6 +342,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -409,6 +414,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -468,6 +474,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 
@@ -529,6 +536,7 @@ tier = king
 					culture = lappish
 					culture = ugricbaltic
 					culture = croatian
+					culture = carantanian
 					culture = hungarian
 					culture = romanian
 

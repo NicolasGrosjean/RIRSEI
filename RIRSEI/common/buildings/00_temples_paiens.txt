@@ -402,9 +402,12 @@ extra_tech_building_start = -1
 								
 NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }  					
-					culture = bohemian
-					NOT = { religion_group = christian }
-					NOT = { religion_group = muslim } 
+OR = {  					
+culture = bohemian
+culture = slovieni
+}
+NOT = { religion_group = christian }
+NOT = { religion_group = muslim } 
 
 
 					

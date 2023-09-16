@@ -4250,19 +4250,26 @@ NOT = { has_global_flag = central }
 					NOT = { religion_group = muslim } 
 OR = {
 culture = bohemian
+culture = slovieni
 ROOT = { has_building = ca_culture_boheme_syst_1 }	
 }
 			}
 		}
 		is_active_trigger = {
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 }
 		add_number_to_name = no
@@ -4290,6 +4297,7 @@ ca_culture_boheme_syst_2 = {
 			FROM = {
 OR = {
 culture = bohemian
+culture = slovieni
 ROOT = { has_building = ca_culture_boheme_syst_2 }	
 }
 is_feudal = yes
@@ -4302,13 +4310,19 @@ NOT = { has_global_flag = central }
 		}
 		is_active_trigger = {
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 
@@ -4350,6 +4364,7 @@ has_global_flag = central
 }  					
 OR = {
 culture = bohemian
+culture = slovieni
 ROOT = { has_building = ca_culture_boheme_systfed_1 }	
 }
 					religion_group = christian
@@ -4358,13 +4373,19 @@ ROOT = { has_building = ca_culture_boheme_systfed_1 }
 		}
 		is_active_trigger = {
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 }
 		add_number_to_name = no
@@ -4391,6 +4412,7 @@ extra_tech_building_start = -10
 			FROM = {
 OR = {
 culture = bohemian
+culture = slovieni
 ROOT = { has_building = ca_culture_boheme_systfed_2 }	
 }
 is_feudal = yes
@@ -4401,13 +4423,19 @@ religion_group = christian
 		}
 		is_active_trigger = {
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 6
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 OR = {
@@ -4450,6 +4478,7 @@ tax_income = 2
 			FROM = {
 OR = {
 culture = bohemian
+culture = slovieni
 ROOT = { has_building = ca_culture_boheme_systfed_3 }	
 }
 is_feudal = yes
@@ -4461,13 +4490,19 @@ religion_group = christian
 		
 		is_active_trigger = {
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 8
 FROM = {
+OR = {  					
 culture = bohemian
+culture = slovieni
+}
 }
 
 OR = {
@@ -5212,6 +5247,7 @@ NOT = { has_global_flag = mutare }
 NOT = { has_global_flag = central }                           
 OR = {
 culture = croatian
+culture = carantanian
 ROOT = { has_building = ca_culture_croate_syst_1 }	
 }	
 			}
