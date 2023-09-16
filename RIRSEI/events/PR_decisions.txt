@@ -1,0 +1,884 @@
+decisions = {
+PR_dictatus_hre = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+			NOT = { has_global_flag = reforme_gregorienne }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+e_roman_empire = {
+has_holder = no }
+                        
+		}
+		allow = {
+OR = {
+trait = zealous
+trait = ambitious
+    }
+			year = 950
+				
+		}
+		effect = {
+		set_global_flag = reforme_gregorienne
+religion_authority = { modifier = ref_de_greg } 
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.901}
+}
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+PR_dictatus_no_hre = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = no }
+			NOT = { has_global_flag = reforme_gregorienne }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+			e_roman_empire = {
+has_holder = no }
+                        
+		}
+		allow = {
+OR = {
+trait = zealous
+trait = ambitious
+    }
+			year = 950
+				
+		}
+		effect = {
+set_global_flag = reforme_gregorienne
+set_global_flag = que_investvic
+set_character_flag = que_invest_winner
+religion_authority = { modifier = ref_de_greg } 
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.902}
+}
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+PR_test_invest = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+			has_global_flag = reforme_gregorienne
+NOT = { has_global_flag = test_inves_un }
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+e_roman_empire = {
+has_holder = no }
+                        
+		}
+		allow = {
+OR = {
+trait = proud
+trait = ambitious
+}			
+e_hre = { has_law = investiture_law_1 }
+				
+		}
+		effect = {
+		set_global_flag = test_inves_un
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.903}
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+	Emp_va_canossa = {
+		potential = {
+			has_landed_title = e_hre
+			has_character_flag = qi_emp_exco
+			NOT = { has_character_flag = emp_canossa }
+		}
+		allow = {
+			wealth = 10
+		}
+		effect = {
+			wealth = -10
+			custom_tooltip = { text = TOOLTIPempCanossa }
+			set_character_flag = emp_canossa			
+			narrative_event = { id = RIRPR.914 days = 30 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+Pape_relance_exco = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+			has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+NOT = { has_character_flag = qi_emp_exco }
+NOT = { trait = excommunicated }
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.912}
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_cinqans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 1800 } 
+NOT = { has_character_flag = c_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.913}
+set_character_flag = c_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_dixans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 3600 } 
+NOT = { has_character_flag = d_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.916}
+set_character_flag = d_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_quinans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 5400 } 
+NOT = { has_character_flag = qz_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.917}
+set_character_flag = qz_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_vingans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 7200 } 
+NOT = { has_character_flag = vg_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.918}
+set_character_flag = vg_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_vingcqans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 9000 } 
+NOT = { has_character_flag = vgcq_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.919}
+set_character_flag = vgcq_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_trtans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 10800 } 
+NOT = { has_character_flag = trt_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.920}
+set_character_flag = trt_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_trtcqans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 12600 } 
+NOT = { has_character_flag = trtcq_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.921}
+set_character_flag = trtcq_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+Pape_exco_quarans = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+has_global_flag = verif_emp_exco
+NOT = { has_global_flag = que_investvic }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = { holder_scope = {
+had_character_flag = { flag = qi_emp_exco days = 14400 } 
+NOT = { has_character_flag = quart_ans_exco }
+trait = excommunicated 
+}
+}
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.922}
+set_character_flag = quart_ans_exco
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_exco_vicem = {
+		is_high_prio = yes
+		potential = {
+			e_hre = {
+has_holder = yes }
+has_global_flag = reforme_gregorienne
+has_global_flag = test_inves_un
+NOT = { has_global_flag = emp_vic_quer }
+had_global_flag = { flag = verif_emp_exco days = 16200 } 
+NOT = { has_global_flag = que_investvic }
+NOT = { has_global_flag = decisempenvoq }
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+e_hre = {
+has_holder = yes }
+				
+		}
+		effect = {
+		
+e_hre = { holder_scope = {
+narrative_event = { id = RIRPR.923}
+set_global_flag = decisempenvoq
+
+}
+}
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+
+
+PR_annonc_victo = {
+		is_high_prio = yes
+		potential = {
+
+			has_global_flag = que_investvic 
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+NOT = { has_global_flag = ann_pr_vic }
+				
+		}
+		effect = {
+		set_global_flag = ann_pr_vic
+
+ any_independent_ruler = {
+                   limit = { 
+religion = catholic }
+
+
+				narrative_event = { id = RIRPR.925}
+}
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+
+dclr_vss_SP = {
+		potential = {
+			
+has_global_flag = que_investvic
+religion = catholic
+NOT = { trait = excommunicated }
+primary_title = { tier = KING }	
+NOT = { trait = Vs_sancti_petri }
+NOT = { has_landed_title = e_hre }
+NOT = { has_global_flag = agnani_att_pap }
+NOT = { has_global_flag = emp_vic_quer }	
+}		
+		allow = {
+NOT = { has_law = crown_authority_3 }
+NOT = { has_law = crown_authority_4 } 
+			
+		}
+		
+		effect = {
+		add_trait = Vs_sancti_petri	
+			wealth = 500
+prestige = -1000
+piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+				war = no
+			}
+			modifier = {
+				factor = 0
+				wealth = 5
+				war = yes
+			}
+                        modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+                        modifier = {
+				factor = 0.5
+				trait = ambitious
+			}
+                        modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+
+Nouveau_pape_verif = {
+		is_high_prio = yes
+		potential = {
+
+NOT = { has_global_flag = emp_vic_quer }
+has_global_flag = que_investvic 
+NOT = { trait = incapable }
+has_landed_title = k_papal_state
+religion_group = christian
+independent = yes
+NOT = { has_character_flag = que_invest_winner } 
+NOT = { has_character_flag = verip_pr_rex } 
+NOT = { has_global_flag = agnani_att_pap }                       
+		}
+		allow = {
+OR = {
+trait = proud
+trait = ambitious
+}
+				
+		}
+		effect = {
+		
+		any_independent_ruler = {
+limit = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+}
+narrative_event = { id = RIRPR.929}
+}
+set_character_flag = verip_pr_rex 
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_app_vs_att = {
+		is_high_prio = yes
+		potential = {
+
+NOT = { has_global_flag = emp_vic_quer }
+has_global_flag = que_investvic 
+NOT = { trait = incapable }
+has_landed_title = k_papal_state
+religion_group = christian
+independent = yes
+                        
+		}
+		allow = {
+war = yes
+is_primary_war_attacker = yes
+any_independent_ruler = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+}
+				
+		}
+		effect = {
+		any_independent_ruler = {
+limit = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+NOT = { trait = excommunicated }
+}
+narrative_event = { id = RIRPR.927}
+}
+
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+Pape_app_vs_def = {
+		is_high_prio = yes
+		potential = {
+
+NOT = { has_global_flag = emp_vic_quer }
+has_global_flag = que_investvic 
+NOT = { trait = incapable }
+has_landed_title = k_papal_state
+religion_group = christian
+independent = yes
+                        
+		}
+		allow = {
+war = yes
+is_primary_war_defender = yes
+any_independent_ruler = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+}
+				
+		}
+		effect = {
+		any_independent_ruler = {
+limit = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+NOT = { trait = excommunicated }
+}
+narrative_event = { id = RIRPR.928}
+}
+
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+
+Unam_bul_pap = {
+		is_high_prio = yes
+		potential = {
+
+NOT = { has_global_flag = emp_vic_quer }
+has_global_flag = que_investvic 
+NOT = { trait = incapable }
+has_landed_title = k_papal_state
+religion_group = christian
+independent = yes
+NOT = { has_global_flag = bulle_un_sct } 
+e_roman_empire = {
+has_holder = no }                       
+		}
+		allow = {
+OR = {
+trait = proud
+trait = ambitious
+}
+had_character_flag = { flag = verip_pr_rex days = 120 } 
+
+any_independent_ruler = {
+tier = KING
+trait = Vs_sancti_petri
+war = no
+count = 5
+} 
+				
+		}
+		effect = {
+set_global_flag = bulle_un_sct
+		any_independent_ruler = {
+limit = {
+OR = {
+tier = KING
+tier = EMPEROR
+}
+religion = ROOT
+}
+narrative_event = { id = RIRPR.931}
+}	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+Pape_vainqueur_total = {
+		is_high_prio = yes
+		potential = {
+			
+has_global_flag = que_investvic
+NOT = { has_global_flag = emp_vic_quer }
+NOT = { has_global_flag = theocr_pap }
+e_roman_empire = {
+has_holder = no }
+
+
+			NOT = { trait = incapable }
+			has_landed_title = k_papal_state
+
+			religion_group = christian
+                        independent = yes
+                        
+		}
+		allow = {
+
+had_global_flag = { flag = bulle_un_sct days = 120 } 
+NOT = { has_global_flag = agnani_att_pap }
+
+
+}
+				
+		
+		effect = {
+set_global_flag = theocr_pap
+		any_independent_ruler = {
+limit = {
+religion = ROOT
+}
+narrative_event = { id = RIRPR.933}
+}
+		
+
+
+
+
+	  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+}
