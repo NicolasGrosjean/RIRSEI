@@ -221,7 +221,6 @@ AND = {
 name = "EVTOPTA_RIRSEMUS_111115"  
 prestige = -1500
 piety = -500
-decadence = 15
 e_arabia = {
 			destroy_landed_title = THIS
 		 
@@ -828,11 +827,6 @@ title = EVTNAME_RIRSEMUS_111132
                 piety = 150
 add_trait = sultan_sultan
 
-
-
-
-		          
-		
 	}
 }
 
@@ -1343,10 +1337,9 @@ desc = "EVTDESC_RIRSEMUS_111145"
 
 	trigger = {	
 trait = amusl
-OR = {
 NOT = { tier = king }
 NOT = { tier = emperor }
-}
+
 
     }
 
