@@ -23182,7 +23182,7 @@ piety = -250
 clr_character_flag = { refus_pape_sicile }
 }
 ROOT = { usurp_title = k_sicily }
-ROOT = { narrative_event = { id = { RIRSEVAR.0021 } } }
+ROOT = { narrative_event = { id = RIRSEVAR.0021 } }
 
 FROM = { prestige = -500 }
 }		
