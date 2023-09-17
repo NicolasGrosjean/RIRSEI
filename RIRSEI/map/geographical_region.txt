@@ -29,7 +29,7 @@ world_europe_west_francia = {
 }
 world_europe_west_iberia = {
 	duchies = {
-		d_castilla d_aragon d_barcelona d_valencia d_mallorca d_navarra d_asturias d_leon d_galicia d_porto d_beja d_algarve d_cordoba d_murcia d_granada d_sevilla d_badajoz d_toledo d_balata
+		d_castilla d_aragon d_barcelona d_valencia d_mallorca d_navarra d_asturias d_leon d_galicia d_porto d_beja d_algarve d_cordoba d_murcia d_granada d_sevilla d_badajoz d_toledo
 	}
 }
 world_europe_west = {
@@ -54,7 +54,7 @@ world_europe_north = {
 world_europe_south_east = { 
 	duchies = {
 		#West ERE
-		d_thrace d_adrianopolis d_thessalonika d_dyrrachion d_epirus d_athens d_achaia d_krete d_cyprus d_vidin d_turnovo d_karvuna d_rashka d_dioclea d_slavonia d_bosnia d_croatia d_dalmatia d_strymon d_ohrid d_cephalonia d_syrmia d_ragusa
+		d_thrace d_adrianopolis d_thessalonika d_dyrrachion d_epirus d_athens d_achaia d_krete d_cyprus d_vidin d_turnovo d_karvuna d_rashka d_dioclea d_slavonia d_bosnia d_croatia d_dalmatia d_strymon d_ohrid d_cephalonia d_syrmia
 	}
 }
 world_europe_south_italy = { 
@@ -89,7 +89,6 @@ world_europe_east = {
 	}
 }
 world_asia_minor = {
-	inclusive = yes
 	duchies = {
 		d_nikaea d_samos d_cibyrrhaeot d_anatolia d_charsianon d_armeniacon d_paphlagonia d_trebizond d_armenia_minor d_armenia d_mesopotamia d_edessa d_coloneia d_kartli d_derbent d_abkhazia  d_thracesia d_aegean_islands d_abydos d_kakheti d_tao d_optimatoi d_bucellarian d_cappadocia
 	}
@@ -161,7 +160,6 @@ world_india_rajastan = {
 	}
 }
 world_persia = {
-	inclusive = yes
 	duchies = {
 		#Persia minus Mesopotamia
 		d_khorasan d_mazandaran d_esfahan d_kerman d_fars d_hamadan d_tabriz d_azerbaijan d_baluchistan d_sistan d_kabul d_zabulistan d_khiva d_samarkand d_merv d_dihistan d_herat d_balkh d_khuttal d_gilan d_khozistan d_ferghana d_kurdistan d_jibal d_mafaza
@@ -169,7 +167,7 @@ world_persia = {
 }
 world_africa_north = {
 	duchies = {
-		d_marrakech d_fes d_tangiers d_tlemcen d_alger d_kabylia d_tunis d_tripolitania d_cyrenaica d_alexandria d_damietta d_cairo d_aswan d_tahert d_sous d_sijilmasa d_mzab d_jerid d_syrte d_fezzan d_adrar d_faiyum d_asyut d_paraetonium
+		d_marrakech d_fes d_tangiers d_tlemcen d_alger d_kabylia d_tunis d_tripolitania d_cyrenaica d_alexandria d_damietta d_cairo d_aswan d_tahert d_sous d_sijilmasa d_mzab d_jerid d_syrte d_fezzan d_adrar
 	}
 }
 world_africa_west = {
@@ -219,32 +217,27 @@ world_steppe_east = {
 	}
 }
 world_steppe = {
-	inclusive = yes
 	regions = {
 		world_steppe_west world_steppe_east world_steppe_tarim
 	}
 }
 world_europe = {
-	inclusive = yes
 	regions = {
 		world_europe_west world_europe_south world_europe_east world_europe_north
 	}
 }
 world_middle_east = {
-	inclusive = yes
 	regions = {
 		world_middle_east_arabia world_middle_east_jerusalem
 	}
 }
 world_india = {
-	inclusive = yes
 	regions = {
 		world_india_deccan world_india_bengal world_india_rajastan
 	}
 }
 
 world_himalayas = {
-	inclusive = yes
 	duchies = {
 		d_lhasa d_yarlung d_shigatse d_nagchu d_sumparu d_bhutan d_purang d_ngari d_ladakh d_dege d_qamdo d_nyingchi d_kathmandu d_gorkha d_kashmir d_pamir d_uttaranchal d_qinghai d_nagormo d_nangqen
 	}
@@ -362,7 +355,7 @@ custom_galicia = {
 
 custom_beja = {
 	duchies = {
-		d_beja d_algarve d_balata
+		d_beja d_algarve
 	}
 }
 
@@ -463,7 +456,7 @@ custom_coeur_nomade = {
 	duchies = {
 		 d_zhetysu d_kirghiz d_kumul d_altay d_otuken d_khangai d_ikh_bogd d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_bulgar d_mordvins d_alania d_turkestan d_syr_darya
 	}
-	
+}	
 custom_languedoc = {
 duchies = {
         d_aquitaine d_toulouse d_gascogne d_auvergne d_bourbon d_provence d_dauphine d_barcelona
