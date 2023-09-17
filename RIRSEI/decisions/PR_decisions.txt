@@ -727,6 +727,7 @@ limit = {
 tier = KING
 trait = Vs_sancti_petri
 war = no
+NOT = { trait = excommunicated }
 }
 narrative_event = { id = RIRPR.927}
 }
@@ -768,6 +769,7 @@ limit = {
 tier = KING
 trait = Vs_sancti_petri
 war = no
+NOT = { trait = excommunicated }
 }
 narrative_event = { id = RIRPR.928}
 }
