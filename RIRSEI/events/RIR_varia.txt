@@ -43,7 +43,7 @@ add_law_w_cooldown = succ_hre_elective
 any_vassal = { narrative_event = { id = RIRSEVAR.0002 } }
 any_independent_ruler = {
                    limit = { religion = catholic }
-                   narrative_event = { id = RIRSEVAR.0002 = days = 10 }
+                   narrative_event = { id = RIRSEVAR.0002 }
 }
 }
 } 
